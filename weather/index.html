@@ -1,0 +1,1117 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Weather"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" type="image/png" href="icon-192.png"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Japan &amp; Hong Kong Trip Weather</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: master itinerary system. Monochrome ink on paper, leg patterns as identity,
+   summary first, a fortnight strip on one temperature scale, then a card per day. */
+:root{
+  --paper:#fff; --ink:#000; --mute:#4a4a4a; --line:#c4c4c4; --tint:#f3f3f3; --fair:#858585; --far:#c9c9c9;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --jp:"Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP","Noto Serif JP",serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4.2rem)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.5 var(--body);-webkit-text-size-adjust:100%}
+h1,h2,h3,h4,p,ul,ol,dl,dd{margin:0;padding:0}ul,ol{list-style:none}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{max-width:52rem;margin:0 auto;padding-inline:1.1rem}
+
+/* leg patterns, same language as the master itinerary */
+.pat{display:block;box-shadow:inset 0 0 0 1.5px var(--ink);background-color:var(--paper)}
+.pat-s{background:var(--ink)}
+.pat-k{background:repeating-linear-gradient(90deg,var(--ink) 0 3px,var(--paper) 3px 7px)}
+.pat-g{background:linear-gradient(var(--paper) 0 33%,var(--ink) 33% 67%,var(--paper) 67%)}
+.pat-h{background:repeating-linear-gradient(45deg,var(--ink) 0 2px,var(--paper) 2px 7px)}
+.band{display:flex;height:12px}.band .pat{flex:1}
+
+/* cover */
+.cover{padding-block:2.4rem 0}
+h1{font:800 clamp(2.7rem,12vw,5.6rem)/.9 var(--display);letter-spacing:-.035em;text-wrap:balance}
+h1 span{display:block;font-weight:300}
+.sub{margin-top:1rem;color:var(--mute);font-size:1.02rem;max-width:40rem}
+.checked{display:inline-flex;gap:.5rem;align-items:center;margin-top:1rem;font-weight:600;font-size:.9rem}
+.checked i{width:.6rem;height:.6rem;background:var(--ink);display:inline-block}
+
+/* top line */
+.top{margin-top:2rem;border:1.5px solid var(--ink)}
+.top .band{height:10px}
+.top-in{padding:1.1rem 1rem 1.3rem;display:grid;gap:1rem}
+.eyebrow{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.09em}
+.headline{font:700 clamp(1.35rem,5vw,1.85rem)/1.15 var(--display);letter-spacing:-.015em;text-wrap:balance}
+.points{display:grid;gap:.6rem}
+.points li{padding-left:1.15rem;position:relative;line-height:1.4}
+.points li::before{content:"";position:absolute;left:0;top:.45em;width:.45rem;height:.45rem;background:var(--ink)}
+.points b{font-weight:700}
+.legline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;border-top:1.5px solid var(--ink);padding-top:1rem}
+@media (min-width:40rem){.legline{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.lg{display:grid;gap:.25rem;min-width:0}
+.lg .pat{height:.9rem;width:3rem}
+.lg b{font:700 1.02rem/1.1 var(--display)}
+.lg span{font-size:.84rem;color:var(--mute);line-height:1.3}
+.lg strong{font:800 1.3rem/1 var(--display);font-variant-numeric:tabular-nums}
+
+/* section heads */
+.sec{font:800 1.65rem/1.1 var(--display);letter-spacing:-.02em;margin:2.8rem 0 .4rem}
+.secsub{color:var(--mute);font-size:.92rem;margin-bottom:1rem;max-width:40rem}
+
+/* fortnight strip */
+.strip{border-top:1.5px solid var(--ink)}
+.srow{display:grid;grid-template-columns:3rem 1.6rem minmax(0,1fr) 3.4rem;gap:.55rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.srow:hover{background:var(--tint)}
+.srow.scale{border-bottom:1.5px solid var(--ink);padding:.35rem 0}
+.sd{display:grid;grid-template-columns:.45rem 1fr;gap:.4rem;align-items:center}
+.sd .pat{height:2.1rem;width:.45rem}
+.sd b{display:block;font:800 1.2rem/1 var(--display);font-variant-numeric:tabular-nums}
+.sd small{display:block;font-size:.7rem;color:var(--mute);line-height:1.2}
+.ico{width:1.6rem;height:1.6rem;display:block}
+.tr{display:grid;grid-template-columns:2rem minmax(0,1fr) 2rem;gap:.35rem;align-items:center;font-variant-numeric:tabular-nums;font-size:.85rem}
+.tr .lo{text-align:right;color:var(--mute)}.tr .hi{font-weight:700}
+.track{position:relative;height:.6rem;background:var(--tint);border-radius:999px}
+.bar{position:absolute;top:0;bottom:0;border-radius:999px;background:var(--ink)}
+.bar.fair{background:var(--fair)}
+.bar.outlook{background:var(--far)}
+.horizon{display:flex;align-items:center;gap:.6rem;padding:.9rem 0 .35rem;font:700 .7rem var(--body);text-transform:uppercase;letter-spacing:.09em}
+.horizon::after{content:"";flex:1;height:1px;background:var(--ink)}
+.horizon i{width:1.4rem;height:.5rem;border-radius:999px;display:block;flex:0 0 auto}
+.horizon span{font-weight:400;text-transform:none;letter-spacing:0;color:var(--mute);font-size:.8rem}
+.ticks{position:relative;height:1rem;font-size:.68rem;color:var(--mute);font-variant-numeric:tabular-nums}
+.ticks span{position:absolute;transform:translateX(-50%)}
+.rn{display:grid;gap:.2rem;justify-items:end}
+.meter{display:flex;gap:2px}
+.meter i{width:.62rem;height:.62rem;box-shadow:inset 0 0 0 1.2px var(--ink);display:block}
+.meter i.on{background:var(--ink)}
+.rn small{font-size:.72rem;color:var(--mute);font-variant-numeric:tabular-nums;line-height:1}
+.wtag{display:inline-block;font:700 .64rem/1 var(--body);padding:.2rem .32rem;background:var(--ink);color:var(--paper);text-transform:uppercase;letter-spacing:.06em;margin-top:.25rem}
+.stripkey{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin-top:.8rem;font-size:.8rem;color:var(--mute);align-items:center}
+.stripkey span{display:inline-flex;gap:.4rem;align-items:center}
+.stripkey .bar{position:static;display:inline-block;width:1.6rem;height:.55rem}
+
+/* sticky day picker */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1.5px solid var(--ink);margin-top:2.4rem}
+.nav div{display:flex;gap:2px;overflow-x:auto;max-width:52rem;margin:0 auto;padding:.4rem 1.1rem;scrollbar-width:none}
+.nav div::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;min-width:2.5rem;text-align:center;text-decoration:none;font:700 1.05rem/1.1 var(--display);padding:.3rem .2rem 0;display:grid;gap:.25rem}
+.nav a small{display:block;font:400 .66rem var(--body);color:var(--mute)}
+.nav a .pat{height:5px;box-shadow:none}
+.nav a.watch{background:var(--ink);color:var(--paper)}.nav a.watch small{color:var(--paper)}
+.nav a.watch .pat{box-shadow:inset 0 0 0 1px var(--paper)}
+
+/* chapters */
+.chap{margin-top:3.4rem;padding-top:1rem;border-top:3px solid var(--ink)}
+.chap-top{display:flex;align-items:center;gap:.8rem}
+.swatch{width:5rem;height:1.4rem}
+.legno{font-weight:600;font-size:.92rem}
+.chap-main{display:flex;gap:1rem;align-items:flex-end;margin-top:1.1rem}
+.kanji{font:900 clamp(3.6rem,18vw,6.5rem)/.85 var(--jp);writing-mode:vertical-rl;letter-spacing:-.04em}
+.chap h2{font:800 clamp(1.9rem,7.5vw,3rem)/1 var(--display);letter-spacing:-.03em;text-wrap:balance}
+.meta{margin-top:.5rem;color:var(--mute);font-size:.92rem}
+.lede{margin-top:1rem;font-size:1.06rem;max-width:38rem}
+
+/* day card */
+.day{margin-top:2rem;border:1.5px solid var(--ink)}
+.day .band{height:10px}
+.din{padding:1rem 1rem 1.2rem;display:grid;gap:1rem}
+.dh{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+.date{display:flex;align-items:center;gap:.7rem}
+.num{font:800 3.4rem/.85 var(--display);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.dow{font-weight:600;line-height:1.25}.where{display:block;font-weight:400;color:var(--mute);font-size:.86rem}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;line-height:1;padding:.28rem .45rem;border:1.5px solid var(--ink);white-space:nowrap}
+.tag-f{background:var(--ink);color:var(--paper)}
+.tag-d{border-style:dashed;font-weight:600}
+.day h3{font:700 1.3rem/1.15 var(--display);letter-spacing:-.015em;text-wrap:balance}
+.wx{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.4rem 1rem;align-items:center;padding:1rem;background:var(--tint)}
+.wx .big{width:3.4rem;height:3.4rem}
+.temps{font:800 2.3rem/1 var(--display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.temps span{font-weight:300;color:var(--mute)}
+.cond{font-weight:600;line-height:1.3}
+.facts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;font-size:.86rem;color:var(--mute);border-top:1px solid var(--line);padding-top:.6rem}
+.facts b{color:var(--ink);font-weight:700}
+.rain{display:grid;gap:.55rem}
+.rain .when{font-weight:600;line-height:1.35}
+.rain .when span{font-weight:400;color:var(--mute)}
+.blocks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1.5px solid var(--ink)}
+.blk{display:grid;gap:.3rem;padding:.55rem .5rem .6rem;border-left:1px solid var(--line);min-width:0}
+.blk:first-child{border-left:0}
+.blk b{font:700 .78rem/1.1 var(--body)}
+.blk small{font-size:.68rem;color:var(--mute);font-variant-numeric:tabular-nums;line-height:1.1}
+.pc{height:2.6rem;background:var(--tint);position:relative}
+.pc i{position:absolute;left:0;right:0;bottom:0;background:var(--ink);display:block}
+.blk .v{font:700 .95rem/1 var(--display);font-variant-numeric:tabular-nums}
+.blk .mm{font-size:.74rem;color:var(--mute);font-variant-numeric:tabular-nums;line-height:1.15}
+.blk.wet .mm{color:var(--ink);font-weight:700}
+.nohours{font-size:.86rem;color:var(--mute);border:1.5px solid var(--line);padding:.6rem .7rem;line-height:1.4}
+.guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem 1rem;font-size:.88rem}
+@media (min-width:40rem){.guide{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.guide b{display:block;font:700 1rem var(--display)}
+.guide span{color:var(--mute);line-height:1.3}
+.call{display:grid;gap:.3rem}
+.call p{max-width:40rem;line-height:1.45}
+.rows{border-top:1.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:4.4rem minmax(0,1fr);gap:.2rem .8rem;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.t{color:var(--mute);font-variant-numeric:tabular-nums;font-size:.92rem;line-height:1.35}
+.p{font-weight:500;line-height:1.35}.n{color:var(--mute);font-size:.88rem;margin-top:.1rem;line-height:1.35}
+.src{font-size:.8rem;color:var(--mute);display:grid;gap:.15rem}
+.src b{color:var(--ink);font-weight:600}
+.swap{border:1.5px dashed var(--ink);padding:.7rem .8rem;font-size:.9rem;line-height:1.4}
+.swap b{display:block;font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem}
+
+/* footer */
+.box{margin-top:1rem;border:1.5px solid var(--ink);padding:1rem;display:grid;gap:.6rem}
+.box h4{font:700 1.1rem/1.2 var(--display)}
+.box p{color:var(--mute);font-size:.92rem;max-width:42rem}
+.conf{display:grid;gap:.5rem;font-size:.9rem}
+.conf div{display:grid;grid-template-columns:2.4rem 1fr;gap:.7rem;align-items:center}
+.conf .bar{position:static;display:block;height:.55rem}
+.sources{display:grid;gap:.35rem;font-size:.9rem}
+.sources a{text-underline-offset:2px}
+.sources .sn{color:var(--mute);font-size:.84rem}
+.end{margin-block:3rem 3.5rem;font-size:.82rem;color:var(--mute)}
+.empty{padding:2rem 0;color:var(--mute)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-sun" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="#000"/><g stroke="#000" stroke-width="2.2" stroke-linecap="round" fill="none"><path d="M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M6.8 25.2l2.8-2.8M22.4 9.6l2.8-2.8"/></g></symbol>
+    <symbol id="i-part" viewBox="0 0 32 32"><circle cx="12" cy="11" r="5" fill="#000"/><g stroke="#000" stroke-width="2" stroke-linecap="round" fill="none"><path d="M12 2v2.5M3 11h2.5M5.6 4.6l1.8 1.8M18.4 4.6l-1.8 1.8"/></g><path d="M10 26h15a5 5 0 0 0 0-10 7 7 0 0 0-13 2.2A4 4 0 0 0 10 26z" fill="#fff" stroke="#000" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 32 32"><path d="M8 25h16.5a5.5 5.5 0 0 0 0-11A8 8 0 0 0 9.2 16.3 4.4 4.4 0 0 0 8 25z" fill="#fff" stroke="#000" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shower" viewBox="0 0 32 32"><path d="M8 20h16.5a5.5 5.5 0 0 0 0-11A8 8 0 0 0 9.2 11.3 4.4 4.4 0 0 0 8 20z" fill="#fff" stroke="#000" stroke-width="2.2" stroke-linejoin="round"/><path d="M13 24l-1 3" stroke="#000" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-rain" viewBox="0 0 32 32"><path d="M8 19h16.5a5.5 5.5 0 0 0 0-11A8 8 0 0 0 9.2 10.3 4.4 4.4 0 0 0 8 19z" fill="#000" stroke="#000" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 23l-1.5 4M16 23l-1.5 4M22 23l-1.5 4" stroke="#000" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<main>
+  <header class="wrap cover">
+    <div class="band" aria-hidden="true"><span class="pat pat-s"></span><span class="pat pat-k"></span><span class="pat pat-g"></span><span class="pat pat-h"></span></div>
+    <h1 style="margin-top:1.6rem">Trip Weather<span>Japan &amp; Hong Kong</span></h1>
+    <p class="sub" id="sub"></p>
+    <p class="checked" id="checked"></p>
+  </header>
+
+  <section class="wrap" aria-labelledby="topline">
+    <div class="top">
+      <div class="band" aria-hidden="true"><span class="pat pat-s"></span><span class="pat pat-k"></span><span class="pat pat-g"></span><span class="pat pat-h"></span></div>
+      <div class="top-in">
+        <p class="eyebrow" id="topline">Top line</p>
+        <p class="headline" id="headline"></p>
+        <ul class="points" id="points"></ul>
+        <div class="legline" id="legline"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="fortnight">
+    <h2 class="sec" id="fortnight">The fortnight</h2>
+    <p class="secsub">Every bar sits on the same scale, coolest night to warmest afternoon. Tap a day for the detail.</p>
+    <div class="strip" id="strip"><p class="empty">Loading the forecast.</p></div>
+    <div class="stripkey">
+      <span>Bars fade the further out the day is</span>
+      <span><span class="meter"><i class="on"></i><i></i><i></i></span> Chance of rain</span>
+    </div>
+  </section>
+
+  <nav class="nav" aria-label="Days"><div id="nav"></div></nav>
+
+  <div class="wrap" id="legs"></div>
+
+  <section class="wrap" aria-labelledby="extra">
+    <h2 class="sec" id="extra">Watching</h2>
+    <div class="box" id="typhoon"></div>
+    <div class="box">
+      <h4>How much rain is that</h4>
+      <div class="guide">
+        <div><b>Under 1 mm</b><span>A trace. Spits at most.</span></div>
+        <div><b>1 to 5 mm</b><span>Light rain. Umbrella, carry on.</span></div>
+        <div><b>5 to 15 mm</b><span>Steady rain. Wet shoes, views gone.</span></div>
+        <div><b>Over 15 mm</b><span>Heavy. Move outdoor plans.</span></div>
+      </div>
+    </div>
+    <div class="box">
+      <h4>How sure is each day</h4>
+      <div class="conf">
+        <div><i class="bar"></i><span><b>Firm.</b> Within 5 days. Plan on it.</span></div>
+        <div><i class="bar fair"></i><span><b>Fair.</b> 6 to 10 days. The pattern is right, the timing of rain can shift a day.</span></div>
+        <div><i class="bar outlook"></i><span><b>Outlook.</b> 11 days or more. A trend from long-range models, not a forecast. Don't move anything yet.</span></div>
+      </div>
+      <p>Which source wins: far out, every source counts the same and a split is flagged. Inside about 5 days, the local forecasters lead: the Japan Meteorological Agency, Weathernews and the Japan Weather Association in Japan, the Hong Kong Observatory in Hong Kong. The Global Forecasting Model becomes a cross-check only.</p>
+    </div>
+    <div class="box">
+      <h4>Sources</h4>
+      <div class="sources" id="sources"></div>
+    </div>
+    <p class="end" id="end"></p>
+  </section>
+</main>
+
+<script type="application/json" id="wx">
+{
+ "checked": "2026-10-09T10:25:00+11:00",
+ "checkedLabel": "Fri 9 Oct, 10:25 Melbourne time",
+ "headline": "Mild in Tokyo, hot and sunny in Hong Kong. Watch Saturday afternoon in Shibuya and the Kyoto leg, where sources still disagree.",
+ "points": [
+  "<b>Sat 17, Shibuya, 15:00 to 21:00.</b> Sources split. the Global Forecasting Model has about 8 mm, steady rain over the Shibuya Sky slot. The Japan Weather Association (40%) and Weathernews (30%) have no measurable rain.",
+  "<b>Wed 21, Nara.</b> Three sources, three answers: rain at 80% (Japan Weather Association), cloudy at 40% (Weathernews), partly sunny (AccuWeather). Leaning dry. Umbrellas in the day bag.",
+  "<b>Fri 23, Kyoto.</b> AccuWeather has periods of rain, Weathernews has cloud and sun at 30%. Still the swap candidate with Thursday.",
+  "<b>Tue 20, Yokohama.</b> Weathernews now has rain at times, 50%. Low confidence. Monday is the dry-weather backup.",
+  "<b>Typhoons.</b> Nothing tracking toward Japan or Hong Kong."
+ ],
+ "legs": [
+  {
+   "id": "s",
+   "kanji": "渋谷",
+   "name": "Shibuya, Shinjuku and Yokohama",
+   "short": "Shibuya",
+   "dates": "Sat 17 to Wed 21 Oct",
+   "no": "Leg 1 of 4",
+   "range": "22–26°",
+   "line": "Mild, more cloud than sun",
+   "lede": "Highs of 22 to 26, a degree or two above normal. More cloud than sun but nothing heavy. The Japan Meteorological Agency gives 70% odds of a warmer than normal week."
+  },
+  {
+   "id": "k",
+   "kanji": "京都",
+   "name": "Kyoto, Nara and Osaka",
+   "short": "Kyoto",
+   "dates": "Wed 21 to Sat 24 Oct",
+   "no": "Leg 2 of 4",
+   "range": "19–25°",
+   "line": "Two wet signals",
+   "lede": "The leg to watch. Wet signals on Wed 21 and Fri 23, and the sources don't agree yet. Thursday looks the driest day, which matters because Thursday and Friday can swap."
+  },
+  {
+   "id": "g",
+   "kanji": "銀座",
+   "name": "Tokyo: Hibiya and Ginza",
+   "short": "Hibiya",
+   "dates": "Sat 24 to Tue 27 Oct",
+   "no": "Leg 3 of 4",
+   "range": "19–22°",
+   "line": "Cooler, cloudy",
+   "lede": "Cooler, highs of 19 to 22. Mostly cloudy with small rain chances. This is outlook only, 15 or more days away."
+  },
+  {
+   "id": "h",
+   "kanji": "香港",
+   "name": "Hong Kong",
+   "short": "Hong Kong",
+   "dates": "Tue 27 to Sat 31 Oct",
+   "no": "Leg 4 of 4",
+   "range": "28–29°",
+   "line": "Hot, sunny, humid",
+   "lede": "Hot and sunny, 28 to 29 by day and 23 at night, about 2 degrees above normal. The Hong Kong Observatory expects normal to below-normal rain for October. Wednesday to Friday can swap to suit the weather."
+  }
+ ],
+ "days": [
+  {
+   "d": 17,
+   "dow": "Saturday",
+   "leg": "s",
+   "where": "Shibuya",
+   "title": "Arrive and wander Shibuya",
+   "icon": "part",
+   "hi": 26,
+   "lo": 18,
+   "rain": 40,
+   "lvl": 1,
+   "cond": "Cloud and sun, a passing shower possible",
+   "sunset": "17:00",
+   "call": "Sources split on the afternoon. The Global Forecasting Model has about 8 mm between 15:00 and 21:00, which is steady rain right over Shibuya Sky. The Japan Weather Association has a 40% chance and no measurable rain. Shibuya Sky is fixed, so if the wet version holds by Wed 14, check how they handle a closed rooftop. The morning walk looks dry either way.",
+   "plan": [
+    [
+     "10:30",
+     "Miyashita Park and Omotesando on foot",
+     "Outdoors most of the morning"
+    ],
+    [
+     "16:00",
+     "Shibuya Sky",
+     "Open-air rooftop. Cloud cuts the view, rain or strong wind can close the deck"
+    ]
+   ],
+   "src": [
+    [
+     "Japan Weather Association",
+     "26° / 18°, cloud and sun, 40%"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "25° / 17°, cloud with some sun, 30%"
+    ],
+    [
+     "AccuWeather",
+     "23° / 17°, cloudy with a passing shower"
+    ],
+    [
+     "Global Forecasting Model",
+     "25° / 16°, dry until 15:00, then 8.4 mm 15:00 to 21:00 and 1.8 mm overnight"
+    ]
+   ],
+   "when": "Afternoon into evening, if at all",
+   "mm": "0 to 10 mm",
+   "blocks": [
+    [
+     20,
+     "0"
+    ],
+    [
+     30,
+     "0"
+    ],
+    [
+     40,
+     "0 to 8"
+    ],
+    [
+     40,
+     "0 to 2"
+    ]
+   ],
+   "watch": true
+  },
+  {
+   "d": 18,
+   "dow": "Sunday",
+   "leg": "s",
+   "where": "Harajuku and the bay",
+   "title": "Meiji Jingū, the festival, Street Kart",
+   "icon": "part",
+   "hi": 23,
+   "lo": 18,
+   "rain": 30,
+   "lvl": 1,
+   "cond": "Cloudy, brighter breaks",
+   "sunset": "17:00",
+   "call": "The best looking day of the Shibuya leg for karting. Mild and mostly dry.",
+   "plan": [
+    [
+     "09:45",
+     "Meiji Jingū",
+     "Forest paths, outdoors"
+    ],
+    [
+     "16:00",
+     "Street Kart",
+     "Open karts, golden hour"
+    ]
+   ],
+   "src": [
+    [
+     "Japan Weather Association",
+     "23° / 18°, cloudy, 30%"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "25° / 18°, cloudy, 40%"
+    ],
+    [
+     "AccuWeather",
+     "24° / 17°, partly sunny"
+    ]
+   ],
+   "when": "No clear timing, a steady 30% all day",
+   "mm": "0 mm",
+   "blocks": [
+    [
+     30,
+     "0"
+    ],
+    [
+     30,
+     "0"
+    ],
+    [
+     30,
+     "0"
+    ],
+    [
+     30,
+     "0"
+    ]
+   ]
+  },
+  {
+   "d": 19,
+   "dow": "Monday",
+   "leg": "s",
+   "where": "Omotesando and Shinjuku",
+   "title": "Stores, Shinjuku after dark",
+   "icon": "cloud",
+   "hi": 22,
+   "lo": 17,
+   "rain": 40,
+   "lvl": 1,
+   "cond": "Cloudy",
+   "sunset": "17:00",
+   "call": "Mostly indoors and covered lanes, so rain barely touches this day.",
+   "plan": [
+    [
+     "11:00",
+     "Omotesando stores",
+     "Indoors"
+    ],
+    [
+     "16:45",
+     "Shinjuku after dark",
+     "Omoide Yokochō is covered"
+    ]
+   ],
+   "src": [
+    [
+     "Japan Weather Association",
+     "22° / 17°, cloudy, 40%"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "23° / 16°, cloudy, 40%"
+    ],
+    [
+     "AccuWeather",
+     "23° / 17°, sunshine and a few clouds"
+    ]
+   ],
+   "when": "Small chance from mid-morning",
+   "mm": "0 mm",
+   "blocks": [
+    [
+     30,
+     "0"
+    ],
+    [
+     40,
+     "0"
+    ],
+    [
+     40,
+     "0"
+    ],
+    [
+     40,
+     "0"
+    ]
+   ]
+  },
+  {
+   "d": 20,
+   "dow": "Tuesday",
+   "leg": "s",
+   "where": "Tsukiji and Yokohama",
+   "title": "Tsukiji market and Yokohama",
+   "icon": "cloud",
+   "hi": 22,
+   "lo": 17,
+   "rain": 50,
+   "lvl": 2,
+   "cond": "Cloudy",
+   "sunset": "17:00",
+   "call": "Weathernews has cloud with rain at times, 50%. The Japan Weather Association has 30%. Low confidence either way. If Tuesday stays the wetter of Monday and Tuesday by Thu 15, swap Yokohama to Monday.",
+   "plan": [
+    [
+     "08:15",
+     "Tsukiji Outer Market",
+     "Open-air stalls"
+    ],
+    [
+     "11:30",
+     "Yokohama waterfront and harbour walk",
+     "Outdoors all afternoon"
+    ]
+   ],
+   "src": [
+    [
+     "Japan Weather Association",
+     "22° / 17°, cloudy, 30%, confidence D"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "22° / 16°, cloudy with rain at times, 50%, confidence E"
+    ],
+    [
+     "AccuWeather",
+     "24° / 18°, mostly cloudy"
+    ]
+   ],
+   "when": "Not forecast yet",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 21,
+   "dow": "Wednesday",
+   "leg": "k",
+   "where": "Train to Kyoto, then Nara",
+   "title": "Shinkansen, then Nara",
+   "icon": "shower",
+   "hi": 25,
+   "lo": 17,
+   "rain": null,
+   "lvl": 2,
+   "watch": true,
+   "cond": "Sources split: one says rain, two say mostly dry",
+   "sunset": "17:10",
+   "call": "Three sources, three answers. The Japan Weather Association has rain at times, 80%. Weathernews has cloudy, 40%. AccuWeather has partly sunny. Two of three lean dry, so take umbrellas and keep the plan. Tōdai-ji's Great Buddha hall is under cover if it does rain.",
+   "plan": [
+    [
+     "07:55",
+     "Nozomi 13",
+     "Indoors, no impact"
+    ],
+    [
+     "12:45",
+     "Nara Park, Kasuga Taisha",
+     "Open ground, the most exposed part of the day"
+    ],
+    [
+     "14:25",
+     "Tōdai-ji",
+     "Main hall is indoors"
+    ]
+   ],
+   "src": [
+    [
+     "Japan Weather Association, Kyoto",
+     "25° / 17°, rain at times, 80%, confidence C"
+    ],
+    [
+     "Weathernews, Kyoto",
+     "25° / 19°, cloudy, 40%, confidence E"
+    ],
+    [
+     "AccuWeather, Kyoto",
+     "21° / 13°, partly sunny"
+    ]
+   ],
+   "when": "Not agreed yet. The Japan Weather Association has rain at times through the day",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 22,
+   "dow": "Thursday",
+   "leg": "k",
+   "where": "Osaka",
+   "title": "Osaka, castle to Dōtonbori",
+   "icon": "part",
+   "hi": 21,
+   "lo": 11,
+   "rain": null,
+   "lvl": 0,
+   "cond": "Increasing cloud, dry",
+   "sunset": "17:05",
+   "call": "Looks like the driest day in Kansai. Cool morning at the castle.",
+   "plan": [
+    [
+     "08:30",
+     "Osaka Castle",
+     "Outdoors"
+    ],
+    [
+     "10:15",
+     "Umeda Sky deck",
+     "Open-air rooftop, best in clear air"
+    ],
+    [
+     "18:30",
+     "Dōtonbori",
+     "Mostly covered arcades nearby"
+    ]
+   ],
+   "swap": "If Fri 23 still looks wet next week, swap: Kyoto on Thursday, Osaka on Friday. Osaka's arcades handle rain better. Gion dinner would move to Thursday.",
+   "src": [
+    [
+     "AccuWeather, Kyoto",
+     "21° / 11°, increasing cloudiness"
+    ],
+    [
+     "Weathernews, Kyoto",
+     "24° / 17°, cloudy, 30%, confidence E"
+    ]
+   ],
+   "when": "None expected",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 23,
+   "dow": "Friday",
+   "leg": "k",
+   "where": "Arashiyama, Higashiyama, Gion",
+   "title": "Kyoto, west to east",
+   "icon": "rain",
+   "hi": 20,
+   "lo": 14,
+   "rain": null,
+   "lvl": 2,
+   "watch": true,
+   "cond": "Sources split: periods of rain or cloud and sun",
+   "sunset": "17:10",
+   "call": "AccuWeather has periods of rain. Weathernews has cloud and sun, 30%. Still the day to watch for a Thursday and Friday swap, but don't move anything yet. Decide by about Mon 19.",
+   "plan": [
+    [
+     "07:20",
+     "Arashiyama bamboo grove",
+     "Outdoors, at dawn"
+    ],
+    [
+     "15:30",
+     "Kiyomizu-dera and the Sannenzaka lanes",
+     "Outdoors, stone steps get slippery"
+    ],
+    [
+     "18:30",
+     "Dinner in Gion",
+     "Indoors"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Kyoto",
+     "20° / 14°, periods of rain"
+    ],
+    [
+     "Weathernews, Kyoto",
+     "25° / 15°, cloud with some sun, 30%, confidence D"
+    ]
+   ],
+   "when": "Periods of rain, timing not forecast yet",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 24,
+   "dow": "Saturday",
+   "leg": "g",
+   "where": "Fushimi Inari, then Tokyo",
+   "title": "Inari, back to Tokyo, fireworks night",
+   "icon": "shower",
+   "hi": 19,
+   "lo": 15,
+   "rain": null,
+   "lvl": 1,
+   "cond": "Cloudy in Kyoto, morning rain in Tokyo clearing",
+   "sunset": "16:55",
+   "call": "Kyoto morning looks cloudy and dry for the shrine gates. In Tokyo the rain is in the morning, not the evening. Fireworks can be called off for rain or strong wind, so check on the day.",
+   "plan": [
+    [
+     "07:15",
+     "Fushimi Inari",
+     "Outdoors, uphill"
+    ],
+    [
+     "17:30",
+     "Fireworks from the Hilton Odaiba",
+     "Over the bay"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Tokyo",
+     "19° / 15°, a bit of rain in the morning"
+    ],
+    [
+     "AccuWeather, Kyoto",
+     "19° / 13°, plenty of clouds"
+    ]
+   ],
+   "when": "Morning in Tokyo, clearing by the fireworks",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 25,
+   "dow": "Sunday",
+   "leg": "g",
+   "where": "Gardens and Ginza",
+   "title": "Gardens, then Ginza",
+   "icon": "cloud",
+   "hi": 22,
+   "lo": 16,
+   "rain": null,
+   "lvl": 1,
+   "cond": "Cloudy, a stray shower",
+   "sunset": "16:55",
+   "call": "Easy weather for a slow day. Ginza's department stores cover a shower.",
+   "plan": [
+    [
+     "09:15",
+     "Imperial Palace East Gardens",
+     "Outdoors"
+    ],
+    [
+     "12:00",
+     "Ginza, car-free Chūō-dōri",
+     "Open street 12:00 to 17:00"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Tokyo",
+     "22° / 16°, cloudy with a stray shower"
+    ]
+   ],
+   "when": "A stray shower, any time",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 26,
+   "dow": "Monday",
+   "leg": "g",
+   "where": "teamLab and Asakusa",
+   "title": "teamLab, Asakusa, Shimbashi",
+   "icon": "cloud",
+   "hi": 22,
+   "lo": 15,
+   "rain": null,
+   "lvl": 0,
+   "cond": "Cloudy",
+   "sunset": "16:55",
+   "call": "teamLab is indoors. Cloud may soften the Skytree view at dusk.",
+   "plan": [
+    [
+     "08:30",
+     "teamLab Borderless",
+     "Indoors"
+    ],
+    [
+     "14:45",
+     "Sensō-ji",
+     "Outdoors"
+    ],
+    [
+     "16:15",
+     "Skytree",
+     "View depends on cloud"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Tokyo",
+     "22° / 15°, remaining cloudy"
+    ]
+   ],
+   "when": "None expected",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 27,
+   "dow": "Tuesday",
+   "leg": "h",
+   "where": "Haneda to Hong Kong",
+   "title": "Fly to Hong Kong, harbour night",
+   "icon": "sun",
+   "hi": 29,
+   "lo": 23,
+   "rain": null,
+   "lvl": 0,
+   "cond": "Plenty of sunshine",
+   "sunset": "17:50",
+   "call": "A warm, clear harbour night for the cruise and the light show.",
+   "plan": [
+    [
+     "10:10",
+     "CX543 Haneda to Hong Kong",
+     "Booked"
+    ],
+    [
+     "19:30",
+     "Aqua Luna and A Symphony of Lights",
+     "On the water"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Hong Kong",
+     "29° / 23°, plenty of sunshine"
+    ]
+   ],
+   "when": "None expected",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 28,
+   "dow": "Wednesday",
+   "leg": "h",
+   "where": "Pool, the Island, the Peak",
+   "title": "Pool, Hong Kong Island and the Peak",
+   "icon": "sun",
+   "hi": 29,
+   "lo": 23,
+   "rain": null,
+   "lvl": 0,
+   "cond": "Plenty of sunshine",
+   "sunset": "17:50",
+   "call": "Good pool morning, and clear air helps the sunset at the Peak.",
+   "plan": [
+    [
+     "09:45",
+     "Sheraton pool",
+     "Best sun 10:00 to 14:00"
+    ],
+    [
+     "15:45",
+     "Peak Tram",
+     "Sunset at the Peak 17:50"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Hong Kong",
+     "29° / 23°, plenty of sunshine"
+    ]
+   ],
+   "when": "None expected",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 29,
+   "dow": "Thursday",
+   "leg": "h",
+   "where": "Lantau, then the city",
+   "title": "Big Buddha, then the city",
+   "icon": "sun",
+   "hi": 29,
+   "lo": 23,
+   "rain": null,
+   "lvl": 0,
+   "cond": "Plenty of sunshine",
+   "sunset": "17:50",
+   "call": "Ngong Ping 360 stops in high wind or thunderstorms. Looks clear at this range.",
+   "plan": [
+    [
+     "10:00",
+     "Ngong Ping 360 cable car",
+     "Weather dependent"
+    ],
+    [
+     "19:30",
+     "Temple Street night market",
+     "Outdoors"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Hong Kong",
+     "29° / 23°, plenty of sunshine"
+    ]
+   ],
+   "when": "None expected",
+   "mm": "Not forecast yet"
+  },
+  {
+   "d": 30,
+   "dow": "Friday",
+   "leg": "h",
+   "where": "Pool, yum cha, Ozone",
+   "title": "Pool, yum cha, Ozone at sunset, then fly",
+   "icon": "sun",
+   "hi": 28,
+   "lo": 23,
+   "rain": null,
+   "lvl": 0,
+   "cond": "Humid, plenty of sunshine",
+   "sunset": "17:50",
+   "call": "Another pool morning, and a clear sunset for Ozone.",
+   "plan": [
+    [
+     "09:45",
+     "Sheraton pool",
+     "Outdoors"
+    ],
+    [
+     "17:40",
+     "Ozone at the Ritz-Carlton",
+     "Sunset view"
+    ]
+   ],
+   "src": [
+    [
+     "AccuWeather, Hong Kong",
+     "28° / 23°, humid with plenty of sunshine"
+    ]
+   ],
+   "when": "None expected",
+   "mm": "Not forecast yet"
+  }
+ ],
+ "typhoon": "<h4>Typhoons</h4><p>Nothing tracking toward Japan or Hong Kong. Three Pacific systems in early October, Choi-wan, Nolo and Koguma, all curved away from land. The October outlook is 1 to 3 typhoons approaching Japan, which is about normal. Hong Kong's season usually winds down by the end of October.</p>",
+ "sources": [
+  [
+   "Japan Meteorological Agency, official forecasts and 1-month outlook",
+   "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000",
+   "Official. Its 7-day forecast reaches the trip from Sat 10 Oct"
+  ],
+  [
+   "Weathernews, Shibuya 2-week",
+   "https://weathernews.jp/onebox/tenki/tokyo/13113/",
+   "Japan's largest private forecaster"
+  ],
+  [
+   "Weathernews, Kyoto 2-week",
+   "https://weathernews.jp/onebox/tenki/kyoto/26100/",
+   ""
+  ],
+  [
+   "Japan Weather Association (tenki.jp), Shibuya",
+   "https://tenki.jp/forecast/3/16/4410/13113/10days.html",
+   "Feeds Yahoo! Japan Weather. 6-hour rain blocks"
+  ],
+  [
+   "Japan Weather Association (tenki.jp), Kyoto",
+   "https://tenki.jp/forecast/6/29/6110/26100/10days.html",
+   ""
+  ],
+  [
+   "JMA 1-month outlook, Kanto and Kinki",
+   "https://tenki.jp/long/10300/",
+   ""
+  ],
+  [
+   "Hong Kong Observatory, 9-day and monthly forecast",
+   "https://www.hko.gov.hk/en/wxinfo/month/month.htm",
+   "Official. Its 9-day forecast reaches the trip from about Mon 19 Oct"
+  ],
+  [
+   "AccuWeather, monthly calendars",
+   "https://www.accuweather.com/en/jp/tokyo/226396/october-weather/226396",
+   "Daily detail pages block automated reading"
+  ],
+  [
+   "Global Forecasting Model (European ECMWF, via yr.no)",
+   "https://www.yr.no/en/forecast/daily-table/2-1850147/Japan/Tokyo/Tokyo",
+   "Rain in millimetres by time of day, 10 days out"
+  ]
+ ],
+ "missing": [
+  [
+   "Google Weather",
+   "Google's search weather card can't be read from here. Blocked in the browser pane by your site permissions."
+  ],
+  [
+   "Apple Weather",
+   "Only in the Weather app. There is no public web page to read."
+  ],
+  [
+   "AccuWeather daily detail",
+   "Day and night rain amounts block automated reading. The monthly calendar is used instead."
+  ]
+ ]
+}
+</script>
+
+<script>
+(function(){
+  var data;
+  try { data = JSON.parse(document.getElementById('wx').textContent); } catch(e) { return; }
+  var MIN = 10, MAX = 32, SPAN = MAX - MIN;
+  var checked = new Date(data.checked);
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function legOf(id){ return data.legs.filter(function(l){ return l.id === id; })[0]; }
+  function lead(day){
+    var tripDay = new Date(2026, 9, day);
+    var c = new Date(checked.getFullYear(), checked.getMonth(), checked.getDate());
+    return Math.round((tripDay - c) / 86400000);
+  }
+  function conf(day){ var n = lead(day); return n <= 5 ? 'firm' : n <= 10 ? 'fair' : 'outlook'; }
+  var confLabel = {firm:'Firm', fair:'Fair', outlook:'Outlook'};
+  var dowShort = {Monday:'Mon',Tuesday:'Tue',Wednesday:'Wed',Thursday:'Thu',Friday:'Fri',Saturday:'Sat',Sunday:'Sun'};
+  function icon(name, cls){ return '<svg class="'+cls+'" aria-hidden="true"><use href="#i-'+name+'"/></svg>'; }
+  function meter(l){ var h=''; for (var i=0;i<3;i++) h += '<i class="'+(i<l?'on':'')+'"></i>'; return '<span class="meter">'+h+'</span>'; }
+  var rainWord = ['Low','Some','Likely','Wet'];
+  function rainText(d){ return d.rain != null ? d.rain + '%' : rainWord[d.lvl]; }
+  var blockNames = [['Early','00–06'],['Morning','06–12'],['Afternoon','12–18'],['Evening','18–24']];
+  function rainBlock(d){
+    var h = '<div class="rain"><p class="eyebrow">Rain through the day</p><p class="when">'+esc(d.when||'Not forecast yet')+'</p>';
+    if (d.blocks) {
+      h += '<div class="blocks">'+d.blocks.map(function(b,i){
+        var wet = b[1] !== '0';
+        return '<div class="blk'+(wet?' wet':'')+'"><b>'+blockNames[i][0]+'</b><small>'+blockNames[i][1]+'</small>'+
+          '<span class="pc" aria-hidden="true"><i style="height:'+b[0]+'%"></i></span>'+
+          '<span class="v">'+b[0]+'%</span><span class="mm">'+(wet ? esc(b[1])+' mm' : 'No rain')+'</span></div>';
+      }).join('')+'</div>';
+    } else {
+      h += '<p class="nohours">Rain by time of day and millimetres show up about 10 days out. This day reaches that on '+esc(hoursFrom(d.d))+'.</p>';
+    }
+    return h + '</div>';
+  }
+  function hoursFrom(day){
+    var dt = new Date(2026, 9, day - 10);
+    return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dt.getDay()] + ' ' + dt.getDate() + ' Oct';
+  }
+
+  document.getElementById('sub').textContent = 'Sat 17 to Fri 30 October, checked against the Master Itinerary. A forecast for each day of the trip, and what it means for the plan.';
+  document.getElementById('checked').innerHTML = '<i></i>Checked ' + esc(data.checkedLabel);
+  document.getElementById('headline').textContent = data.headline;
+  document.getElementById('points').innerHTML = data.points.map(function(p){ return '<li>'+p+'</li>'; }).join('');
+  document.getElementById('legline').innerHTML = data.legs.map(function(l){
+    return '<div class="lg"><span class="pat pat-'+l.id+'"></span><b>'+esc(l.short)+'</b><strong>'+esc(l.range)+'</strong><span>'+esc(l.line)+'</span></div>';
+  }).join('');
+
+  // strip
+  var ticks = [10,15,20,25,30].map(function(t){ return '<span style="left:'+((t-MIN)/SPAN*100)+'%">'+t+'°</span>'; }).join('');
+  var strip = '<div class="srow scale" aria-hidden="true"><span></span><span></span><div class="tr"><span></span><div class="ticks">'+ticks+'</div><span></span></div><span class="rn"><small>Rain</small></span></div>';
+  var lastConf = null;
+  var horizonText = {
+    firm:['Firm','within 5 days, plan on it'],
+    fair:['Fair','6 to 10 days out, rain timing can shift'],
+    outlook:['Outlook','11+ days out, a trend only']
+  };
+  var barColour = {firm:'var(--ink)', fair:'var(--fair)', outlook:'var(--far)'};
+  strip += data.days.map(function(d){
+    var c = conf(d.d);
+    var head = '';
+    if (c !== lastConf) {
+      lastConf = c;
+      head = '<p class="horizon"><i style="background:'+barColour[c]+'"></i>'+horizonText[c][0]+' <span>'+horizonText[c][1]+'</span></p>';
+    }
+    return head + row(d, c);
+  }).join('');
+  function row(d, c){
+    var left = (d.lo-MIN)/SPAN*100, w = (d.hi-d.lo)/SPAN*100;
+    return '<a class="srow" href="#d'+d.d+'" aria-label="'+esc(d.dow+' '+d.d+', '+d.where+', '+d.hi+' to '+d.lo+' degrees, rain '+rainText(d))+'">'+
+      '<span class="sd"><span class="pat pat-'+d.leg+'"></span><span><b>'+d.d+'</b><small>'+dowShort[d.dow]+'</small>'+(d.watch?'<span class="wtag">Watch</span>':'')+'</span></span>'+
+      icon(d.icon,'ico')+
+      '<span class="tr"><span class="lo">'+d.lo+'°</span><span class="track"><span class="bar '+(c==='firm'?'':c)+'" style="left:'+left+'%;width:'+w+'%"></span></span><span class="hi">'+d.hi+'°</span></span>'+
+      '<span class="rn">'+meter(d.lvl)+'<small>'+rainText(d)+'</small>'+(d.mm && /\d/.test(d.mm) ? '<small>'+esc(d.mm.replace(' to ','–').replace(' mm','mm'))+'</small>' : '')+'</span></a>';
+  }
+  document.getElementById('strip').innerHTML = strip;
+
+  // nav
+  document.getElementById('nav').innerHTML = data.days.map(function(d){
+    return '<a href="#d'+d.d+'" class="'+(d.watch?'watch':'')+'">'+d.d+'<small>'+dowShort[d.dow]+'</small><span class="pat pat-'+d.leg+'"></span></a>';
+  }).join('');
+
+  // legs and day cards
+  document.getElementById('legs').innerHTML = data.legs.map(function(l){
+    var days = data.days.filter(function(d){ return d.leg === l.id; });
+    return '<section class="chap" aria-label="'+esc(l.name)+'">'+
+      '<div class="chap-top"><span class="pat pat-'+l.id+' swatch"></span><span class="legno">'+esc(l.no)+'</span></div>'+
+      '<div class="chap-main"><span class="kanji" lang="ja" aria-hidden="true">'+l.kanji+'</span><div><h2>'+esc(l.name)+'</h2><p class="meta">'+esc(l.dates)+'</p></div></div>'+
+      '<p class="lede">'+esc(l.lede)+'</p>'+
+      days.map(function(d){
+        var c = conf(d.d);
+        var tags = '<span class="tag">'+confLabel[c]+', '+lead(d.d)+' days out</span>' + (d.watch?'<span class="tag tag-f">Watch</span>':'');
+        return '<article class="day" id="d'+d.d+'">'+
+          '<div class="band" aria-hidden="true"><span class="pat pat-'+d.leg+'"></span></div>'+
+          '<div class="din">'+
+            '<div class="dh"><div class="date"><span class="num">'+d.d+'</span><span class="dow">'+esc(d.dow)+'<span class="where">'+esc(d.where)+'</span></span></div><div class="tags">'+tags+'</div></div>'+
+            '<h3>'+esc(d.title)+'</h3>'+
+            '<div class="wx">'+icon(d.icon,'big')+'<div><p class="temps">'+d.hi+'°<span> / '+d.lo+'°</span></p><p class="cond">'+esc(d.cond)+'</p></div>'+
+              '<p class="facts"><span>Chance <b>'+rainText(d)+'</b></span><span>Amount <b>'+esc(d.mm||'Not forecast yet')+'</b></span><span>Sunset <b>'+esc(d.sunset)+'</b></span></p></div>'+
+            rainBlock(d)+
+            '<div class="call"><p class="eyebrow">For the plan</p><p>'+esc(d.call)+'</p></div>'+
+            '<div class="rows">'+d.plan.map(function(r){ return '<div class="row"><span class="t">'+esc(r[0])+'</span><div><p class="p">'+esc(r[1])+'</p><p class="n">'+esc(r[2])+'</p></div></div>'; }).join('')+'</div>'+
+            (d.swap ? '<div class="swap"><b>Swap option</b>'+esc(d.swap)+'</div>' : '')+
+            '<div class="src">'+d.src.map(function(s){ return '<span><b>'+esc(s[0])+'.</b> '+esc(s[1])+'</span>'; }).join('')+'</div>'+
+          '</div></article>';
+      }).join('')+
+    '</section>';
+  }).join('');
+
+  document.getElementById('typhoon').innerHTML = data.typhoon;
+  document.getElementById('sources').innerHTML = data.sources.map(function(s){ return '<p><a href="'+esc(s[1])+'" target="_blank" rel="noopener">'+esc(s[0])+'</a>'+(s[2]?'<br><span class="sn">'+esc(s[2])+'</span>':'')+'</p>'; }).join('') +
+    (data.missing ? '<p class="eyebrow" style="margin-top:.8rem">Not used, and why</p>' + data.missing.map(function(m){ return '<p><b>'+esc(m[0])+'.</b> <span class="sn">'+esc(m[1])+'</span></p>'; }).join('') : '');
+  document.getElementById('end').textContent = 'Checked ' + data.checkedLabel + '. Ask Claude to check again and this page updates in place.';
+})();
+</script>
+
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script></body></html>
