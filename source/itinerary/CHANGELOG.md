@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses split out, 9 October, still V2
+- The Expenses section and its link in the day bar are removed from the Master Itinerary, online.
+- Expenses now has its own page, "Japan & Hong Kong Trip Expenses", on claude.ai and as a third home-screen web app at https://thestartupstudiodeveloper.github.io/japan-trip/expenses/ with its own icon. It is kept up to date in a separate chat.
+- Source: expenses.json (unchanged, 15 entries) and expenses/expenses_build.py, which builds both copies.
+
 Home-screen web app on GitHub Pages, 9 October, still V2
 - The online itinerary is now also published at https://thestartupstudiodeveloper.github.io/japan-trip/ from the repository TheStartupStudioDeveloper/japan-trip. It opens with no sign-in.
 - Adds a home-screen icon and the app name "Japan", offline support (network first, cached copy when there is no signal), and a no-index tag.

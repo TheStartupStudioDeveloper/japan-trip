@@ -541,7 +541,7 @@ _cuts = [(_lp, 0)] + _marks + [(_sw, 99), (_end, None)]
 _pieces = [out[:_lp]]; _n = 0
 for (s, d), (e, _d2) in zip(_cuts, _cuts[1:]):
     seg, c = _link(out[s:e], d); _pieces.append(seg); _n += c
-_ts = out.rindex('<section', 0, out.index('id="tips"')); _cs = out.index('<section class="costs')
+_ts = out.rindex('<section', 0, out.index('id="tips"')); _cs = out.index('<p class="end">', _ts)
 _pieces.append(out[_end:_ts]); seg, c = _link(out[_ts:_cs], None); _pieces.append(seg); _n += c
 _pieces.append(out[_cs:]); out = ''.join(_pieces)
 _data = {p['key']: dict(n=p['n'], l=p['l'], w=p['w'], t=p['t'], m=p['m']) for p in PLACES}
