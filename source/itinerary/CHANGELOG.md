@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 9 October
+- Street Kart: Cynthia confirmed as the payer, so the "Payer to confirm" note is removed. Amounts and totals are unchanged (G AU$4,290.00, Cynthia AU$4,025.90, Cynthia owes G AU$132.05).
+- First update made from the separate expenses chat, to the claude.ai page and the GitHub web app.
+
 Expenses split out, 9 October, still V2
 - The Expenses section and its link in the day bar are removed from the Master Itinerary, online.
 - Expenses now has its own page, "Japan & Hong Kong Trip Expenses", on claude.ai and as a third home-screen web app at https://thestartupstudiodeveloper.github.io/japan-trip/expenses/ with its own icon. It is kept up to date in a separate chat.
