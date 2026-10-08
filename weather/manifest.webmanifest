@@ -1,6 +1,6 @@
 {
  "name": "Japan & Hong Kong Trip Weather",
- "short_name": "Weather",
+ "short_name": "J&HK Weather",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",

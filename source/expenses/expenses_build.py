@@ -41,12 +41,12 @@ open(os.path.join(HERE, 'out', 'trip-expenses.html'), 'w', encoding='utf-8').wri
 DST = os.path.join(REPO, 'expenses'); os.makedirs(DST, exist_ok=True)
 head = ('<meta name="robots" content="noindex, nofollow">\n<meta name="theme-color" content="#000000">\n'
         '<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="mobile-web-app-capable" content="yes">\n'
-        '<meta name="apple-mobile-web-app-title" content="Expenses">\n<link rel="manifest" href="manifest.webmanifest">\n'
+        '<meta name="apple-mobile-web-app-title" content="J&amp;HK Expenses">\n<link rel="manifest" href="manifest.webmanifest">\n'
         '<link rel="apple-touch-icon" href="icon-180.png">\n<link rel="icon" type="image/png" href="icon-192.png">\n')
 sw = "<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>\n"
 html = page(head, sw); ver = hashlib.md5(html.encode()).hexdigest()[:10]
 open(os.path.join(DST, 'index.html'), 'w', encoding='utf-8').write(html)
-json.dump({"name": "Japan & Hong Kong Trip Expenses", "short_name": "Expenses", "start_url": "./", "scope": "./",
+json.dump({"name": "Japan & Hong Kong Trip Expenses", "short_name": "J&HK Expenses", "start_url": "./", "scope": "./",
            "display": "standalone", "background_color": "#ffffff", "theme_color": "#000000",
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)

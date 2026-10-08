@@ -9,7 +9,7 @@ head = ('<meta name="robots" content="noindex, nofollow">\n'
         '<meta name="apple-mobile-web-app-capable" content="yes">\n'
         '<meta name="mobile-web-app-capable" content="yes">\n'
         '<meta name="apple-mobile-web-app-status-bar-style" content="default">\n'
-        '<meta name="apple-mobile-web-app-title" content="Japan">\n'
+        '<meta name="apple-mobile-web-app-title" content="J&amp;HK Itinerary">\n'
         '<link rel="manifest" href="manifest.webmanifest">\n'
         '<link rel="apple-touch-icon" href="icon-180.png">\n'
         '<link rel="icon" type="image/png" href="icon-192.png">\n')
@@ -19,7 +19,7 @@ sw = ("<script>if('serviceWorker' in navigator){addEventListener('load',function
 html = html.replace('</body>', sw, 1)
 os.makedirs(DST, exist_ok=True)
 open(os.path.join(DST, 'index.html'), 'w', encoding='utf-8').write(html)
-json.dump({"name": "Japan & Hong Kong", "short_name": "Japan", "start_url": "./", "scope": "./",
+json.dump({"name": "Japan & Hong Kong", "short_name": "J&HK Itinerary", "start_url": "./", "scope": "./",
            "display": "standalone", "background_color": "#ffffff", "theme_color": "#000000",
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
                      {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},

@@ -7,13 +7,13 @@ html = open(SRC, encoding='utf-8').read()
 ver = hashlib.md5(html.encode()).hexdigest()[:10]
 head = ('<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#ffffff">'
         '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">'
-        '<meta name="apple-mobile-web-app-title" content="Weather"><link rel="manifest" href="manifest.webmanifest">'
+        '<meta name="apple-mobile-web-app-title" content="J&amp;HK Weather"><link rel="manifest" href="manifest.webmanifest">'
         '<link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" type="image/png" href="icon-192.png">')
 html = re.sub(r'(<meta name=viewport[^>]*>)', lambda m: m.group(1) + head, html, count=1)
 assert 'manifest.webmanifest' in html
 html = html.replace('</body>', "<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script></body>", 1)
 open(os.path.join(DST, 'index.html'), 'w', encoding='utf-8').write(html)
-json.dump({"name": "Japan & Hong Kong Trip Weather", "short_name": "Weather", "start_url": "./", "scope": "./",
+json.dump({"name": "Japan & Hong Kong Trip Weather", "short_name": "J&HK Weather", "start_url": "./", "scope": "./",
            "display": "standalone", "background_color": "#ffffff", "theme_color": "#ffffff",
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
                      {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},

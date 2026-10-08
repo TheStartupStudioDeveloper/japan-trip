@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Home-screen names, 9 October
+- The three web apps now save to the home screen as "J&HK Itinerary", "J&HK Weather" and "J&HK Expenses" (previously "Japan", "Weather" and "Expenses"). Icons unchanged. Set in the manifests, the apple-mobile-web-app-title tags and the three build scripts.
+
 Expenses update, 9 October
 - Street Kart: Cynthia confirmed as the payer, so the "Payer to confirm" note is removed. Amounts and totals are unchanged (G AU$4,290.00, Cynthia AU$4,025.90, Cynthia owes G AU$132.05).
 - First update made from the separate expenses chat, to the claude.ai page and the GitHub web app.
