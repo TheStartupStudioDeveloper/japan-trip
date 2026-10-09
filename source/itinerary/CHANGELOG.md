@@ -4,6 +4,13 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+J&HK Extras, 9 October (separate app)
+- New companion app, J&HK Extras ("Up our sleeve"): everything not in the day plans, by area, with place cards. Kept separate from the master for now; same source, same cards.
+- Places scheduled in any master day plan drop off Extras automatically on build, and return if taken out.
+- Shibuya built first: Must try strip, Eat (12), Drink (4), Views, Shopping, Further out, Massage. 30 items, 22 new cards. Backup plan places included as plain options; the backup plan itself stays separate.
+- Area chips jump to each area and highlight as you scroll. Each area links back to its days in the itinerary.
+- Own icon (black card slipping into a sleeve, "Extras", leg band). Home-screen name "J&HK Extras".
+
 Home-screen names, 9 October
 - The three web apps now save to the home screen as "J&HK Itinerary", "J&HK Weather" and "J&HK Expenses" (previously "Japan", "Weather" and "Expenses"). Icons unchanged. Set in the manifests, the apple-mobile-web-app-title tags and the three build scripts.
 
@@ -683,10 +690,3 @@ Design
 Files
 - Japan-Hong-Kong-Final-Itinerary-v1.0.pdf
 - Japan-Hong-Kong-Final-Itinerary-v1.0-source.zip (page, build script, template, fonts)
-
-## 9 Oct 2026: J&HK Extras (separate app)
-- New companion app, J&HK Extras ("Up our sleeve"): everything not in the day plans, by area, with place cards. Kept separate from the master for now; same source, same cards.
-- Places scheduled in any master day plan drop off Extras automatically on build, and return if taken out.
-- Shibuya built first: Must try strip, Eat (12), Drink (4), Views, Shopping, Further out, Massage. 30 items, 22 new cards. Backup plan places included as plain options; the backup plan itself stays separate.
-- Area chips jump to each area and highlight as you scroll. Each area links back to its days in the itinerary.
-- Own icon (black card slipping into a sleeve, "Extras", leg band). Home-screen name "J&HK Extras".
