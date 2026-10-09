@@ -4,8 +4,8 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
-Faster how-to links, 10 October
-- How-to links now jump straight to the section instead of a long smooth scroll, and the section is briefly outlined so you can see where you landed. The browser's back still returns you to where you were.
+Faster scrolling, 10 October
+- All in-page links (how-to links, calendar, day bar, Itinerary Summary days, top bar) now smooth scroll quickly: under half a second however far they go, instead of the browser's slow default. A how-to section is briefly outlined when you land. Instant if the phone is set to reduce motion. The browser's back still returns you to where you were.
 
 Steady state 1, 10 October
 - Saved the first steady state: frozen copies of Itinerary, Extras, Weather and Expenses, with their PDFs, at archive/ss1-2026-10-10/. Listed on archive/index.html. Source restore point: commit 9b336bf.
