@@ -544,6 +544,7 @@ for (s, d), (e, _d2) in zip(_cuts, _cuts[1:]):
 _ts = out.rindex('<section', 0, out.index('id="tips"')); _cs = out.index('<p class="end">', _ts)
 _pieces.append(out[_end:_ts]); seg, c = _link(out[_ts:_cs], None); _pieces.append(seg); _n += c
 _pieces.append(out[_cs:]); out = ''.join(_pieces)
+exec(open('summary_section.py', encoding='utf-8').read())
 _data = {p['key']: dict(n=p['n'], l=p['l'], w=p['w'], t=p['t'], m=p['m']) for p in PLACES}
 out = out.replace('/*PLACES*/', _json.dumps(_data, ensure_ascii=False))
 print('place links:', _n, 'cards:', len(PLACES))

@@ -4,6 +4,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Itinerary Summary, 9 October
+- "The four legs" page is replaced by the Itinerary Summary: one block per stay with the kanji, dates, nights, sunset and hotel, a day grid of Morning, Afternoon and Evening, and a Can shift list. Fixed or booked blocks are solid black, still to book is dashed, flexible is plain. Names link to their cards; online, each stay links to its J&HK Extras areas.
+- Dropped from that page because they live in the cards, Tips, How-to or day plans: light, closing times, Fuji seats, festival notes, getting around.
+- The cover calendar is renamed "Trip calendar". Summary added to the top bar links.
+- Built by summary_section.py from summary_data.py, run at the end of build.py. Still 26 PDF pages, summary on page 2.
+
 Tip added, 9 October
 - New tip after Tax-free, "No fakes into Japan": since October 2022, counterfeit or replica branded goods are illegal to bring into Japan even for personal use, in luggage or by post. Customs can seize and destroy them with no compensation. Still 26 PDF pages.
 
