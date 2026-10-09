@@ -4,6 +4,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Tips reworded, 9 October
+- Tax-free: explains the tax is already in the price, so you save the 10% (8% on take-away food and soft drinks), about 9% and 7% off the shelf price. How-to 4 rewritten to match: food and other goods can be combined, restaurant meals never qualify, department store fee about 1.5%.
+- The ¥5 coin: says why (go-en, "good connection").
+- Eating and walking: adds takeaway coffee, local trains vs the Shinkansen, and carrying the cup.
+- How-to 21: fixed a missing break before the "Hours are from Google listings" line.
+
 Download PDF and Save offline, 9 October
 - All four apps (Itinerary, Extras, Weather, Expenses) now have a Download PDF and a Save offline button at the top. Each works separately: it downloads that app's own PDF and saves that app for offline use, with a "saved for offline" time.
 - PDFs live next to each app on GitHub and are rebuilt on every update: Japan-Hong-Kong-Master-Itinerary-V2.pdf, extras/JHK-Extras.pdf, weather/JHK-Weather.pdf, expenses/JHK-Expenses.pdf.

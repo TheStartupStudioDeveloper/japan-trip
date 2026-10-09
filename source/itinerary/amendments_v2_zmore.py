@@ -43,3 +43,19 @@ _h += [
 # ---------- counterfeit goods (9 Oct) ----------
 _i = [t[0] for t in TIPS].index('Tax-free')
 TIPS.insert(_i + 1, ('No fakes into Japan', 'Since October 2022, bringing counterfeit or replica branded goods into Japan is illegal even for personal use, in your luggage or by post. That covers bags, watches, shoes and clothing. Customs can seize and destroy them on arrival, with no compensation. Leave any knockoffs at home. The vintage luxury stores sell authenticated pieces, so keep the receipts.'))
+
+# ---------- Tax-free, the ¥5 coin, eating and walking (9 Oct) ----------
+_i = [t[0] for t in TIPS].index('Tax-free')
+TIPS[_i] = ('Tax-free', "Japan's tax is already in the price. Spend ¥5,000 or more before tax in one store, show your physical passports, and the tax isn't charged: you save the 10% tax on most goods (8% on take-away food and soft drinks), about 9% and 7% off the shelf price. Food bought tax-free goes in a sealed bag: keep it sealed until you leave Japan. See How-to 4.")
+_i = [t[0] for t in TIPS].index('The ¥5 coin')
+TIPS[_i] = ('The ¥5 coin', 'Called go-en, which also means "good connection", so it is the lucky offering at a shrine. Keep a few aside.')
+_i = [t[0] for t in TIPS].index('Eating and walking')
+TIPS[_i] = ('Eating and walking', 'Eat at the stall or standing to one side, not on the move. Same on local trains, other than the Shinkansen. A lidded takeaway coffee on the go is fine in the city, but markets and temple lanes often ask you not to, so stand aside there. Bins are rare, so plan to carry the cup.')
+_h = _how('Tax-free shopping')
+_h[:] = [
+ 'Take the physical passports. The shop scans the entry sticker. A photo is not accepted.',
+ 'Spend ¥5,000 or more before tax in one store on the same day. Food and other goods can be added together to reach it. Look for the Tax-Free sign, or the tax-free counter in a department store.',
+ "Prices already include Japan's tax. Tax-free means it isn't charged: 10% on most goods and alcohol, 8% on take-away food and soft drinks. That is about 9% and 7% off the shelf price.",
+ 'Restaurant and café meals are never tax-free. Department stores refund the tax at a separate counter and keep a small fee, around 1.5%.',
+ 'Food, drinks and cosmetics are sealed in a bag. Leave it sealed until you have left Japan.',
+ 'This at-the-till system runs until 31 October, so it covers the whole trip. It changes on 1 November.']
