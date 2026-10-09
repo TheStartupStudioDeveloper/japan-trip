@@ -683,3 +683,10 @@ Design
 Files
 - Japan-Hong-Kong-Final-Itinerary-v1.0.pdf
 - Japan-Hong-Kong-Final-Itinerary-v1.0-source.zip (page, build script, template, fonts)
+
+## 9 Oct 2026: J&HK Extras (separate app)
+- New companion app, J&HK Extras ("Up our sleeve"): everything not in the day plans, by area, with place cards. Kept separate from the master for now; same source, same cards.
+- Places scheduled in any master day plan drop off Extras automatically on build, and return if taken out.
+- Shibuya built first: Must try strip, Eat (12), Drink (4), Views, Shopping, Further out, Massage. 30 items, 22 new cards. Backup plan places included as plain options; the backup plan itself stays separate.
+- Area chips jump to each area and highlight as you scroll. Each area links back to its days in the itinerary.
+- Own icon (black card slipping into a sleeve, "Extras", leg band). Home-screen name "J&HK Extras".

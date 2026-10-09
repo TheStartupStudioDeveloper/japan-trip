@@ -1,0 +1,347 @@
+{
+ "eat": [
+  {
+   "key": "path",
+   "group": "Eat",
+   "name": "Path",
+   "local": "パス",
+   "what": "A small Tomigaya bistro that turns into one of Tokyo's best loved breakfast spots each morning. The order is the Dutch pancake, baked to order in a pan and topped with cured ham, burrata and maple syrup. It takes about 30 minutes, so get coffee and a croissant while you wait.",
+   "tip": "Breakfast 08:00 to about 14:00 (last orders around 14:00). Closed Monday, and some listings also say Tuesday, so Sunday is your day. Walk-in only, expect a queue: be there by 08:00. Mid priced.",
+   "q": "PATH 1-44-2 Tomigaya Shibuya Tokyo",
+   "time": "1.5 hrs",
+   "one": "Famous Dutch pancake breakfast in Tomigaya",
+   "fits": "Sun 18 slow breakfast. It is about 15 minutes' walk from the hotel and on the way to Meiji Jingū through Yoyogi Park. Go at 08:00 rather than 09:00 to beat the queue.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://timeout.com/tokyo/restaurants/path",
+    "https://rurubu.jp/andmore/spot/80102822"
+   ]
+  },
+  {
+   "key": "fuglen",
+   "group": "Eat",
+   "name": "Fuglen Tokyo",
+   "local": "フグレン トウキョウ",
+   "what": "The Tokyo outpost of an Oslo café, set in a tiny corner shop full of 1950s Norwegian furniture. Light roasted coffee is the draw, with a bench out the front for people watching on a quiet Tomigaya street. In the evening it switches to cocktails.",
+   "tip": "Daily 07:00 to 23:00 Mon and Tue, to 01:00 other nights. Walk-in. Little food, so grab pastries first from 365日 bakery around the corner (07:00 to 19:00; it had a renovation closure in mid 2026, check before you go).",
+   "q": "Fuglen Tokyo 1-16-11 Tomigaya",
+   "time": "45 min",
+   "one": "Norwegian coffee and mid century chairs in Tomigaya",
+   "fits": "Mon 19 late breakfast. Open from 07:00 every day including Monday, when Path is closed, and an easy 15 minute walk from the hotel.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://www.timeout.com/tokyo/bars-and-pubs/fuglen-tokyo",
+    "https://www.enprimeurclub.com/restaurants/fuglen-tokyo",
+    "https://rurubu.jp/andmore/spot/81267345"
+   ]
+  },
+  {
+   "key": "maisen",
+   "group": "Eat",
+   "name": "Tonkatsu Maisen Aoyama",
+   "local": "とんかつ まい泉 青山本店",
+   "what": "Tokyo's most famous tonkatsu house, set in a converted 1930s public bathhouse just off Omotesando. Thick pork cutlets in a light, crisp panko crust, served with shredded cabbage, rice, miso soup and their own sweet sauce. The kurobuta black pork loin is the one to order.",
+   "tip": "Daily 11:00 to 22:00, last orders 21:00. About ¥2,000 to ¥3,000 a head. Walk-in, or book online through Tabelog in English. Expect a short wait at 12:30 on a Saturday.",
+   "q": "Tonkatsu Maisen Aoyama Honten",
+   "time": "1 hr",
+   "one": "Classic tonkatsu in an old Omotesando bathhouse",
+   "fits": "Sat 17 lunch in Omotesando. It is two minutes off the avenue, open all afternoon, and a filling first proper meal after the flight.",
+   "tags": [
+    "¥¥",
+    "Walk-in",
+    "Tabelog 3.43"
+   ],
+   "tabelog": 3.43,
+   "sources": [
+    "https://tabelog.com/en/tokyo/A1306/A130602/13001850/"
+   ]
+  },
+  {
+   "key": "afuri",
+   "group": "Eat",
+   "name": "AFURI Harajuku",
+   "local": "AFURI 原宿",
+   "what": "A modern ramen shop famous for its yuzu shio ramen: a clear chicken broth, bright with yuzu citrus, topped with chargrilled pork. Lighter than the rich pork ramen you see everywhere. You order and pay at a ticket machine with an English option.",
+   "tip": "Daily, roughly 11:00 to 22:30 (some listings say from 10:00). No bookings. About ¥1,000 to ¥2,000. Cards and Suica accepted.",
+   "q": "AFURI Harajuku Grande Foresta 3-63-1 Sendagaya",
+   "time": "45 min",
+   "one": "Light, citrusy yuzu ramen near Harajuku",
+   "fits": "Sun 18 lunch in Harajuku. A quick, light bowl between Meiji Jingū and the festival streets. It is a few minutes north of Takeshita Street.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://www.fun-japan.jp/en/articles/11160",
+    "https://www.tokyolocalized.com/post/harajuku-food-guide-where-and-what-to-eat-near-harajuku-shibuya-tokyo",
+    "https://ssl.tabelog.com/en/tokyo/A1306/A130601/13095244/"
+   ]
+  },
+  {
+   "key": "motomura",
+   "group": "Eat",
+   "name": "Gyukatsu Motomura Harajuku",
+   "local": "牛かつ もと村 原宿店",
+   "what": "Beef cutlet, crumbed and flash fried so it stays rare inside, then finished to your liking on a little hot stone at your seat. Served as a set with barley rice, cabbage, potato salad and miso soup. A basement counter of about ten seats.",
+   "tip": "Open daily, 11:00 to 22:00 at last report (2022, confirm on Google Maps). No bookings. Sets from about ¥1,300 to ¥2,200. Queues are long at peak, but 14:00 on a Monday is the quiet window.",
+   "q": "Gyukatsu Motomura Harajuku 3-23-2 Jingumae",
+   "time": "1 hr incl. queue",
+   "one": "Rare beef cutlet you finish on a hot stone",
+   "fits": "Mon 19 lunch in Omotesando at 14:00. After the lunch rush the queue is shortest, and it is a short walk from the vintage stores.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://therantingpanda.com/2022/12/24/food-review-gyukatsu-motomura-harajuku-tokyo-must-try-delicious-affordable-grilled-beef-cutlets-on-hot-stone-grill/",
+    "https://ssl.tabelog.com/en/tokyo/A1306/A130601/13208866/",
+    "https://bring-you.info/en/gyuukatsumotomura"
+   ]
+  },
+  {
+   "key": "uogashi",
+   "group": "Eat",
+   "name": "Uogashi Nihon-ichi Dogenzaka",
+   "local": "寿司 魚がし日本一 渋谷道玄坂店",
+   "what": "A standing sushi bar where chefs make each piece in front of you and pass it across the counter. You order a few pieces at a time, eat, and order more. Fast, fresh and cheap, the way office workers eat sushi in Tokyo.",
+   "tip": "Mon to Fri 11:00 to 23:00, Sat 11:00 to 22:00, Sun 11:00 to 21:30. Walk-in. English menu, or point. About ¥1,500 to ¥3,000 a head.",
+   "q": "Uogashi Nihonichi Shibuya Dogenzaka 2-9-1",
+   "time": "40 min",
+   "one": "Standing sushi counter, piece by piece",
+   "fits": "Sat 17 dinner close to the hotel if you would rather not book: quick, cheap and ten minutes' walk. Also a good snack stop any evening.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://www.timeout.com/tokyo/restaurants/uogashi-nihon-ichi-shibuya-dogenzaka"
+   ]
+  },
+  {
+   "key": "shogun-burger",
+   "group": "Eat",
+   "name": "Shogun Burger Shibuya",
+   "local": "SHOGUN BURGER 渋谷店",
+   "what": "Your wagyu burger. The patty is coarsely ground Japanese black wagyu, never frozen and cooked to order, with a house wagyu sauce. Run by a yakiniku family from Toyama, so the beef is the point. Skin on fries and free refill soft drinks.",
+   "tip": "Daily 11:30 to 23:00, last orders 22:00. No bookings. Cashless only: cards, Suica, PayPay. About ¥2,000 to ¥3,000 a head.",
+   "q": "SHOGUN BURGER Shibuya Udagawacho 13-16",
+   "time": "45 min",
+   "one": "Proper wagyu burger, five minutes from the hotel",
+   "fits": "Sat 17 dinner if jet lag wins: five minutes' walk, open late, no booking. Or any late night after a big day.",
+   "tags": [
+    "¥¥",
+    "Walk-in",
+    "Tabelog 3.26"
+   ],
+   "tabelog": 3.26,
+   "sources": [
+    "https://www.timeout.com/tokyo/restaurants/shogun-burger-shibuya",
+    "https://tabelog.com/tokyo/A1303/A130301/rstLst/hamburger/",
+    "https://ssl.tabelog.com/en/tokyo/A1303/A130301/13264382/"
+   ]
+  },
+  {
+   "key": "sushi-ten",
+   "group": "Eat",
+   "name": "Sushi Tokyo Ten Shibuya",
+   "local": "SUSHI TOKYO TEN 渋谷店",
+   "what": "A proper omakase sushi counter without the months-long wait or the ¥40,000 bill. The chef serves about 20 courses of nigiri and small dishes one at a time across the counter, explaining each fish as it comes. Friendly, lively and very used to first timers.",
+   "tip": "Dinner 17:00 to 23:00, open weekends. Omakase ¥9,900, or Full Omakase with drinks ¥13,200. 90 minute seating. Book in English on TableCheck (card required, full charge for same day cancels). Cashless. Shibuya Stream 3F.",
+   "q": "SUSHI TOKYO TEN Shibuya Stream",
+   "time": "1.5 hrs",
+   "one": "Omakase sushi counter, about 20 courses",
+   "fits": "Sun 18 nice dinner. Ten minutes' walk from the hotel, on the quieter side of the station away from the festival crowds. Book a 19:00 or 19:30 seat to allow for getting back from the karts.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://www.tablecheck.com/en/shops/sushitokyo-ten-shibuya/reserve",
+    "https://foodle.pro/restaurants/tokyo/sushi-tokyo-ten-shibuya"
+   ]
+  },
+  {
+   "key": "kaikaya",
+   "group": "Eat",
+   "name": "Kaikaya by the Sea",
+   "local": "開花屋",
+   "what": "A loud, happy seafood izakaya up the hill in Maruyamachō, decked out like a surf shack. The owner cooks fish Japanese style with a few Western twists: tuna neck grilled like spare ribs, fish carpaccio, crab in spring roll pastry. Lots of other travellers and a staff who love to chat.",
+   "tip": "Dinner 17:00 to 22:30, closed Wednesday. Bookings are for set courses only, ¥5,800 to ¥12,000 plus tax, on OpenTable in English. Day of cancellation fee ¥8,000 a head.",
+   "q": "Kaikaya by the Sea 23-7 Maruyamacho Shibuya",
+   "time": "2 hrs",
+   "one": "Fun surf-shack seafood izakaya in Shibuya",
+   "fits": "Sat 17 dinner close by: a cheerful first night about 12 minutes' walk from the hotel. Book an 18:30 table.",
+   "tags": [
+    "¥¥",
+    "Book now"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://www.opentable.ie/r/kaikaya-shibuya-ku",
+    "https://www.tokyoweekender.com/the-concierge/kaikaya-by-the-sea/"
+   ]
+  }
+ ],
+ "drink": [
+  {
+   "key": "sg-club",
+   "group": "Drink",
+   "name": "The SG Club",
+   "local": "ザ エスジー クラブ",
+   "what": "Bartender Shingo Gokan's bar, named among Asia's 50 Best Bars nine years running (No. 23 in 2024). Upstairs, Guzzle is a relaxed walk-in bar with playful drinks like a parmesan pisco sour. Downstairs, Sip is a dim speakeasy with a shoe shine stand.",
+   "tip": "Daily from 17:00 until late (01:00 or later). Guzzle on the ground floor is walk-in with no cover charge. Sip in the basement wants a booking and adds a service charge. English menu.",
+   "q": "The SG Club 1-7-8 Jinnan Shibuya",
+   "time": "1 hr",
+   "one": "Award winning cocktails, 8 minutes from Shibuya",
+   "fits": "A nightcap after Sun 18 nice dinner, or any evening. It is a short walk from the hotel.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://www.timeout.com/tokyo/nightlife/the-sg-club",
+    "https://tablejourney.com/japan/tokyo/nightlife/the-sg-club-shibuya/"
+   ]
+  },
+  {
+   "key": "celavi",
+   "group": "Drink",
+   "name": "CÉ LA VI Tokyo",
+   "local": "セラヴィ 東京",
+   "what": "A rooftop restaurant and sky bar on the 17th and 18th floors of Tokyu Plaza Shibuya, right above the station. You look straight down onto the Scramble and across the lights of the city. A sister to the famous rooftop at Marina Bay Sands.",
+   "tip": "Restaurant and Skybar 11:00 to 23:00, last entry 22:00. Smart casual: no sportswear or thongs. Book a bar spot online on their site. The late night club lounge (from 22:00, closed Monday) has a cover charge.",
+   "q": "CE LA VI Tokyo Tokyu Plaza Shibuya",
+   "time": "1 hr",
+   "one": "Rooftop cocktails above the Scramble",
+   "fits": "Sat 17 after dinner if you have energy left, for a second look at the lights after Shibuya Sky. Or a drink before Sun 18 nice dinner.",
+   "tags": [
+    "¥¥¥",
+    "Book"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://jp.celavi.com/faq",
+    "https://www.timeout.com/tokyo/nightlife/ce-la-vi"
+   ]
+  },
+  {
+   "key": "trench",
+   "group": "Drink",
+   "name": "Bar Trench",
+   "local": "バー トレンチ",
+   "what": "A tiny Ebisu speakeasy that has specialised in absinthe and old herbal liqueurs since 2010. Eight seats at a counter, vintage European fittings, and inventive drinks. No. 53 on the extended Asia's 50 Best Bars list for 2026.",
+   "tip": "Daily 19:00 to 02:00. Walk-in only and very small, so go early or try again later. Cards and cash.",
+   "q": "Bar Trench 1-5-8 Ebisu-Nishi",
+   "time": "1 hr",
+   "one": "Eight seat absinthe speakeasy in Ebisu",
+   "fits": "Pairs with an Ebisu Yokochō night, five minutes' walk apart. Not on a set slot, but a strong option for Sun 18 after dinner.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://tablejourney.com/japan/tokyo/nightlife/bar-trench-ebisu/",
+    "https://www.enprimeurclub.com/lists/2026-asias-50-best-bars-51-100"
+   ]
+  },
+  {
+   "key": "jbs",
+   "group": "Drink",
+   "name": "JBS (Jazz, Blues, Soul)",
+   "local": "JBS",
+   "what": "A one man listening bar up a narrow stair in Dōgenzaka. The owner, Kobayashi-san, has over 10,000 records lining the walls and plays them on a serious hi-fi, propping up each sleeve so you can see what is on. Whisky, quiet chat and great music.",
+   "tip": "Open daily, usually from 14:00 or 19:00 until 23:00. Hours vary. No cover charge, cheap drinks. Bring cash. Keep voices low.",
+   "q": "JBS Jazz Bar 1-17-10 Dogenzaka",
+   "time": "1 hr",
+   "one": "Tiny vinyl listening bar, 10,000 records",
+   "fits": "Sat 17 after dinner near Dōgenzaka. Low key and quiet, ideal for a first jet lagged night.",
+   "tags": [
+    "¥",
+    "Walk-in",
+    "Cash"
+   ],
+   "tabelog": null,
+   "sources": [
+    "https://tablejourney.com/japan/tokyo/nightlife/jbs-shibuya/",
+    "https://www.timeout.com/tokyo/music/jbs",
+    "https://thevinylfactory.com/features/jbs-jazz-bar-a-vinyl-sanctuary-in-the-midst-of-tokyo/"
+   ]
+  }
+ ],
+ "musttry": [
+  {
+   "dish": "Tonkatsu",
+   "line": "Thick pork cutlet in crisp panko, with shredded cabbage and a sweet, fruity sauce.",
+   "where": "maisen"
+  },
+  {
+   "dish": "Gyukatsu",
+   "line": "Rare crumbed beef cutlet you sear yourself, piece by piece, on a hot stone.",
+   "where": "motomura"
+  },
+  {
+   "dish": "Yuzu shio ramen",
+   "line": "A clear salt and chicken broth lifted with yuzu citrus, Tokyo's lighter style of ramen.",
+   "where": "afuri"
+  },
+  {
+   "dish": "Nigiri at the counter",
+   "line": "Sushi handed straight from the chef, eaten in one bite within seconds of being made.",
+   "where": "sushi-ten"
+  },
+  {
+   "dish": "Yakitori",
+   "line": "Skewers of every part of the chicken, grilled over charcoal, best with a cold beer.",
+   "where": "nonbei"
+  },
+  {
+   "dish": "Japanese whisky highball",
+   "line": "Whisky and very fizzy soda over ice, the drink of every Tokyo bar and izakaya.",
+   "where": "jbs"
+  }
+ ],
+ "checks": [
+  {
+   "name": "Shibuya Yokochō (Miyashita Park)",
+   "hours": "Mon to Sat 11:00 to 05:00, Sun 11:00 to 23:00 (varies by stall)",
+   "closed": "No regular closing day",
+   "note": "About 20 counters on the ground floor of Miyashita Park South, right under the hotel. Busiest Friday and Saturday nights; walk-in only.",
+   "source": "https://www.funliday.com/pois/27117728?hl=en ; https://www.tokyoweekender.com/the-concierge/shibuya-yokocho/"
+  },
+  {
+   "name": "Tsutaya Daikanyama T-Site",
+   "hours": "Bookshop 09:00 to 22:00. Ground floor Starbucks from 07:00. Complex to 23:00",
+   "closed": "Closed 1 January only",
+   "note": "Individual shops and the Anjin lounge keep their own hours.",
+   "source": "https://www.timeout.jp/tokyo/ja/ショッピング/daikanyama-tsutaya-book ; https://www.nomadotravel.app/en/attractions/daikanyama-t-site"
+  },
+  {
+   "name": "Starbucks Reserve Roastery Tokyo (Nakameguro)",
+   "hours": "07:00 to 22:00, last orders 21:30",
+   "closed": "No regular closing day (irregular closures)",
+   "note": "Tabelog lists odd Thursday hours (from 11:30), so check Google Maps if you go on a Thursday. No numbered tickets needed these days, but weekend afternoons are busy. Tabelog 3.70.",
+   "source": "https://tabelog.com/tokyo/A1317/A131701/13231942/ ; https://san-tatsu.jp/spots/389029/"
+  },
+  {
+   "name": "Ebisu Yokochō",
+   "hours": "Most stalls about 17:00 to 04:00 (some from 15:00); Sundays usually close earlier, around 23:00",
+   "closed": "No regular closing day",
+   "note": "No official hours for the alley as a whole; each stall sets its own. Walk-in. Best from 18:00 before it fills.",
+   "source": "https://tablejourney.com/japan/tokyo/street-food/ebisu-yokocho/ ; https://retty.me/restaurant/100000004784/"
+  }
+ ]
+}
