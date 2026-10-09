@@ -24,6 +24,6 @@ Australian spelling, no em dashes or double hyphens in copy, black and white wit
 
 ## Saved versions (steady states)
 - Live apps always show the latest. Frozen copies live at https://thestartupstudiodeveloper.github.io/japan-trip/archive/ with a date-stamped folder per version, e.g. `archive/ss1-2026-10-10/itinerary/`.
-- To save one: `python3 source/snapshot.py "note"`, then commit, `git tag steady-ssN-YYYY-MM-DD`, and push with tags. Copies have no service worker or Save offline, and carry a banner linking back to the live app.
-- Each steady state is also a git tag, so the full source at that moment can be restored.
+- To save one: `python3 source/snapshot.py "note"`, commit and push. Then put that commit's short ID into `archive/versions.json` as `commit`, run `python3 source/snapshot.py --index`, commit and push. Copies have no service worker or Save offline, and carry a banner linking back to the live app.
+- The recorded commit is the restore point for the full source at that moment (git tags are blocked through this connection).
 
