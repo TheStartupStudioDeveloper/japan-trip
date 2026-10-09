@@ -199,9 +199,9 @@ h1 span{display:block;font-weight:300}
     <h2 class="sec" id="gh">Trip at a glance</h2>
     <div id="glance"></div>
     <div class="gkey">
-      <span><svg width="14" height="18" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2C12 2 3 13 3 19a9 9 0 0 0 18 0C21 13 12 2 12 2z" fill="#fff" stroke="#000" stroke-width="2"/><path d="M3.6 21.5h16.8A9 9 0 0 1 3.6 21.5z" fill="#000"/></svg>Drop fills with the chance of rain</span>
+      <span><svg width="14" height="18" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2C12 2 3 13 3 19a9 9 0 0 0 18 0C21 13 12 2 12 2z" fill="#fff" stroke="#000" stroke-width="2"/><path d="M3.6 21.5h16.8A9 9 0 0 1 3.6 21.5z" fill="#000"/></svg>Drop fills with the chance of 1 mm or more</span>
       <span><b class="mmk">8<small>mm</small></b>Expected rain</span>
-      <span><b class="mmk off">0<small>mm</small></b>Dry</span>
+      <span><b class="mmk off">&lt;1<small>mm</small></b>Likely dry</span>
       <span><b class="mmk na">–<small>mm</small></b>Not forecast yet</span>
       <span><span class="wkey"></span>Watch day</span>
     </div>
@@ -220,11 +220,15 @@ h1 span{display:block;font-weight:300}
     <div class="box">
       <h4>How much rain is that</h4>
       <div class="guide">
-        <div><b>Under 1 mm</b><span>A trace. Spits at most.</span></div>
+        <div><b>Under 1 mm</b><span>Likely dry, a few spits at most.</span></div>
         <div><b>1 to 5 mm</b><span>Light rain. Umbrella, carry on.</span></div>
         <div><b>5 to 15 mm</b><span>Steady rain. Wet shoes, views gone.</span></div>
         <div><b>Over 15 mm</b><span>Heavy. Move outdoor plans.</span></div>
       </div>
+    </div>
+    <div class="box">
+      <h4>Chance and amount</h4>
+      <p>The percentage is the chance of at least 1 mm of rain in that time. The millimetres are the single most likely amount. So 40% with under 1 mm means probably dry, with a fair chance of a light shower.</p>
     </div>
     <div class="box">
       <h4>How sure is each day</h4>
@@ -244,8 +248,8 @@ h1 span{display:block;font-weight:300}
 </main>
 
 <script type="application/json" id="wx">{
- "checked": "2026-10-09T21:55:00+11:00",
- "checkedLabel": "Fri 9 Oct, 21:55 Melbourne time",
+ "checked": "2026-10-10T08:50:00+11:00",
+ "checkedLabel": "Sat 10 Oct, 08:50 Melbourne time",
  "legs": [
   {
    "id": "s",
@@ -299,13 +303,13 @@ h1 span{display:block;font-weight:300}
    "leg": "s",
    "where": "Shibuya",
    "title": "Arrive and wander Shibuya",
-   "icon": "part",
+   "icon": "shower",
    "hi": 26,
    "lo": 18,
    "rain": 40,
    "cond": "Cloudy, dry",
    "sunset": "17:00",
-   "call": "All four sources now have a dry day. The Global Forecasting Model dropped its afternoon rain on the latest run. Shibuya Sky at 16:00 looks fine, though cloud could soften the view.",
+   "call": "Still a good day for the plan. The Global Forecasting Model now has a few light showers, about 2 mm in total and most of it overnight. The Japan Weather Association has 40% with no measurable rain, and Weathernews 30%. Shibuya Sky at 16:00 looks fine. Cloud may soften the view.",
    "plan": [
     [
      "10:30",
@@ -325,23 +329,23 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "Weathernews, Shibuya",
-     "25° / 17°, cloud with some sun, 30%"
+     "25° / 18°, cloud with some sun, 30%"
     ],
     [
      "AccuWeather",
-     "23° / 17°, cloudy with a passing shower"
+     "23° / 15°, mostly cloudy with a shower"
     ],
     [
      "Global Forecasting Model",
-     "26° / 17°, fair, 0 mm (updated run; earlier run had 8 mm)"
+     "22° / 18°, light showers, 1.8 mm in total, most of it 21:00 to 03:00"
     ]
    ],
-   "mm": "0 mm",
-   "gicon": "cloud",
+   "mm": "Under 2 mm",
+   "gicon": "shower",
    "gfill": 40,
    "gtext": "40%",
-   "gmm": "0",
-   "read": "Cloudy and dry. A 40% chance from midday, but no source now has measurable rain. Warm, up to 26°.",
+   "gmm": "0–2",
+   "read": "Cloudy, mostly dry by day. Light showers possible, most likely after 21:00. Under 2 mm in total.",
    "chance": [
     [
      6,
@@ -359,29 +363,51 @@ h1 span{display:block;font-weight:300}
      40
     ]
    ],
-   "mmBars": [],
+   "mmBars": [
+    [
+     6,
+     9,
+     0.4
+    ],
+    [
+     9,
+     15,
+     0.1
+    ],
+    [
+     15,
+     21,
+     0.1
+    ],
+    [
+     21,
+     24,
+     1.2,
+     "to 03:00"
+    ]
+   ],
    "temps": {
     "est": false,
     "pts": [
      [
       6,
-      17
+      18
      ],
      [
       12,
-      22
+      21
      ],
      [
       18,
-      26
+      22
      ],
      [
       24,
-      19
+      18
      ]
     ]
    },
-   "tnote": "Rain chance from the Japan Weather Association. Temperatures through the day from the Global Forecasting Model."
+   "tnote": "Rain chance from the Japan Weather Association. Millimetres and temperatures through the day from the Global Forecasting Model, which runs a few degrees cooler than the local forecasts. * Continues to 03:00."
   },
   {
    "d": 18,
@@ -415,19 +441,23 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "Weathernews, Shibuya",
-     "25° / 18°, cloudy, 40%"
+     "23° / 18°, cloudy, 40%"
     ],
     [
      "AccuWeather",
-     "24° / 17°, partly sunny"
+     "20° / 16°, mostly cloudy"
+    ],
+    [
+     "Global Forecasting Model",
+     "24° / 17°, cloudy, 0.2 mm"
     ]
    ],
-   "mm": "0 mm",
+   "mm": "Under 1 mm",
    "gicon": "cloud",
    "gfill": 30,
    "gtext": "30%",
    "gmm": "0",
-   "read": "A flat 30% chance all day, no measurable rain. Mild.",
+   "read": "Cloudy, a steady 30% chance, no measurable rain. Mild.",
    "chance": [
     [
      6,
@@ -447,9 +477,27 @@ h1 span{display:block;font-weight:300}
    ],
    "mmBars": [],
    "temps": {
-    "est": true
+    "est": false,
+    "pts": [
+     [
+      6,
+      17
+     ],
+     [
+      12,
+      20
+     ],
+     [
+      18,
+      24
+     ],
+     [
+      24,
+      21
+     ]
+    ]
    },
-   "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+   "tnote": "Rain chance from the Japan Weather Association. Temperatures through the day from the Global Forecasting Model."
   },
   {
    "d": 19,
@@ -483,14 +531,14 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "Weathernews, Shibuya",
-     "23° / 16°, cloudy, 40%"
+     "23° / 17°, cloudy, 40%"
     ],
     [
      "AccuWeather",
-     "23° / 17°, sunshine and a few clouds"
+     "25° / 18°, mostly cloudy"
     ]
    ],
-   "mm": "0 mm",
+   "mm": "Under 1 mm",
    "gicon": "cloud",
    "gfill": 40,
    "gtext": "40%",
@@ -531,7 +579,7 @@ h1 span{display:block;font-weight:300}
    "rain": 50,
    "cond": "Cloudy",
    "sunset": "17:00",
-   "call": "Weathernews has cloud with rain at times, 50%. The Japan Weather Association has 30%. Low confidence either way. If Tuesday stays the wetter of Monday and Tuesday by Thu 15, swap Yokohama to Monday.",
+   "call": "Sources are drifting apart. Weathernews went up to 60% with rain at times, the Japan Weather Association stays at 30%, AccuWeather has clouds and sun. Monday looks steadier at 40% on both local sources, so Monday is the backup for Yokohama. Decide by Fri 16.",
    "plan": [
     [
      "08:15",
@@ -551,19 +599,19 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "Weathernews, Shibuya",
-     "22° / 16°, cloudy with rain at times, 50%, confidence E"
+     "23° / 16°, cloudy with rain at times, 60%"
     ],
     [
      "AccuWeather",
-     "24° / 18°, mostly cloudy"
+     "22° / 17°, clouds and sun"
     ]
    ],
    "mm": "Not forecast yet",
    "gicon": "shower",
    "gfill": 50,
-   "gtext": "50%",
+   "gtext": "30–60",
    "gmm": null,
-   "read": "Cloudy, rain at times on one source, 30 to 50%. Times not forecast yet.",
+   "read": "Cloudy. Weathernews now has rain at times, 60%. The Japan Weather Association has 30%.",
    "chance": null,
    "mmBars": [],
    "temps": {
@@ -612,7 +660,7 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "AccuWeather, Kyoto",
-     "21° / 13°, partly sunny"
+     "26° / 16°, mostly cloudy"
     ]
    ],
    "mm": "Not forecast yet",
@@ -662,7 +710,7 @@ h1 span{display:block;font-weight:300}
    "src": [
     [
      "AccuWeather, Kyoto",
-     "21° / 11°, increasing cloudiness"
+     "21° / 11°, turning cloudy"
     ],
     [
      "Weathernews, Kyoto",
@@ -773,14 +821,18 @@ h1 span{display:block;font-weight:300}
     [
      "AccuWeather, Kyoto",
      "19° / 13°, plenty of clouds"
+    ],
+    [
+     "Weathernews, Hibiya",
+     "23° / 15°, cloudy, 40%, confidence E"
     ]
    ],
    "mm": "Not forecast yet",
    "gicon": "shower",
-   "gfill": 30,
-   "gtext": "Some",
+   "gfill": 40,
+   "gtext": "40%",
    "gmm": null,
-   "read": "Cloudy in Kyoto. A little morning rain in Tokyo, clearing by the fireworks.",
+   "read": "Cloudy, 40%. A little morning rain in Tokyo on one source, clearing by the fireworks.",
    "chance": null,
    "mmBars": [],
    "temps": {
@@ -1058,7 +1110,7 @@ h1 span{display:block;font-weight:300}
    "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
   }
  ],
- "typhoon": "<h4>Typhoons<\/h4><p>Nothing tracking toward Japan or Hong Kong. Three Pacific systems in early October, Choi-wan, Nolo and Koguma, all curved away from land. The October outlook is 1 to 3 typhoons approaching Japan, which is about normal. Hong Kong's season usually winds down by the end of October.<\/p>",
+ "typhoon": "<h4>Typhoons<\/h4><p>Typhoons No. 28 (Nolo) and No. 29 (Koguma) are both turning north well east of Japan. They bring rough seas to the Ogasawara Islands and swell on Pacific coasts around Tue 13 to Wed 14, then they are gone, before you land. No other systems are forecast toward Japan or Hong Kong. Hong Kong's season usually winds down by the end of October.<\/p>",
  "sources": [
   [
    "Japan Meteorological Agency, official forecasts and 1-month outlook",
@@ -1131,23 +1183,23 @@ h1 span{display:block;font-weight:300}
    "act": "Swap Thu and Fri if rain holds"
   }
  ],
- "sinceLabel": "Since the last check, Fri 9 Oct 15:45",
+ "sinceLabel": "Since the last check, Fri 9 Oct 21:55",
  "since": [
   [
    "Sat 17",
-   "Shibuya: <b>watch removed<\/b>. Global Forecasting Model <s>8 mm<\/s> → <b>0 mm<\/b>, all sources now dry"
+   "Shibuya: Global Forecasting Model <s>0 mm<\/s> → <b>under 2 mm<\/b>, light showers mostly after 21:00"
   ],
   [
-   "Wed 21",
-   "Nara: <b>watch removed<\/b>. Rain <s>40 to 80%<\/s> → <b>40 to 50%<\/b>"
+   "Tue 20",
+   "Yokohama: Weathernews <s>50%<\/s> → <b>60%<\/b>, rain at times"
   ],
   [
-   "Thu 22",
-   "Osaka: first Japan Weather Association forecast, cloud and sun, 40%"
+   "Sat 24",
+   "Hibiya: first Weathernews forecast, <b>cloudy, 40%<\/b>"
   ],
   [
-   "Fri 23",
-   "Kyoto: no change, still split"
+   "Typhoons",
+   "Nos. 28 and 29 curve away east of Japan, gone by Wed 14"
   ]
  ]
 }</script>
@@ -1183,7 +1235,7 @@ h1 span{display:block;font-weight:300}
       '<path d="M12 2C12 2 3 13 3 19a9 9 0 0 0 18 0C21 13 12 2 12 2z" fill="none" stroke="#000" stroke-width="2"/></svg>';
   }
   function tile(d){
-    var mm = d.gmm===null ? '<b class="mmk na">–<small>mm</small></b>' : d.gmm==='0' ? '<b class="mmk off">0<small>mm</small></b>' : '<b class="mmk">'+esc(d.gmm)+'<small>mm</small></b>';
+    var mm = d.gmm===null ? '<b class="mmk na">–<small>mm</small></b>' : d.gmm==='0' ? '<b class="mmk off">&lt;1<small>mm</small></b>' : '<b class="mmk">'+esc(d.gmm)+'<small>mm</small></b>';
     var ds = dowShort[d.dow];
     return '<a class="tile'+(d.watch?' watch':'')+'" href="#d'+d.d+'" aria-label="'+ds+' '+d.d+', high '+d.hi+', low '+d.lo+', rain '+esc(d.gtext)+'">'+
       '<span class="pat pat-'+d.leg+' lp"></span><span class="dw">'+ds+'</span><span class="dn">'+d.d+'</span>'+
@@ -1205,7 +1257,7 @@ h1 span{display:block;font-weight:300}
   function legendItem(svg, text){ var dv=document.createElement('div'); dv.innerHTML=svg+'<span>'+text+'</span>'; lg.appendChild(dv); }
   legendItem('<svg width="30" height="14" aria-hidden="true"><path d="M1 11 L10 5 L19 8 L29 3" fill="none" stroke="#000" stroke-width="2.2"/></svg>','Temperature');
   legendItem('<svg width="30" height="14" aria-hidden="true"><path d="M1 11 C8 3,22 3,29 11" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="3 3"/></svg>','Temperature, shape estimated');
-  legendItem('<svg width="30" height="14" aria-hidden="true"><rect x="1" y="2" width="28" height="12" fill="#d6d6d6"/></svg>','Chance of rain, taller is likelier');
+  legendItem('<svg width="30" height="14" aria-hidden="true"><rect x="1" y="2" width="28" height="12" fill="#d6d6d6"/></svg>','Chance of 1 mm or more, taller is likelier');
   legendItem('<svg width="30" height="14" aria-hidden="true"><rect x="1" y="2" width="28" height="12" fill="#d6d6d6"/><rect x="8" y="6" width="14" height="8" fill="#000"/></svg>','Rain amount in mm');
   legendItem('<svg width="30" height="14" aria-hidden="true"><rect x="1" y="1" width="28" height="13" fill="#ececec"/></svg>','After sunset');
   legendItem('<svg width="30" height="14" aria-hidden="true"><rect x="9" y="1" width="12" height="12" fill="#000"/><text x="15" y="10" font-size="9" font-weight="700" fill="#fff" text-anchor="middle" font-family="Instrument Sans, Arial">1</text></svg>','A plan from the itinerary');
@@ -1253,7 +1305,7 @@ h1 span{display:block;font-weight:300}
         s.appendChild(el('rect',{x:a+1, y:R_BOT-h, width:b-a-2, height:h, fill:'#d6d6d6'}));
         s.appendChild(el('text',{x:a+4, y:R_BOT-h-3, 'font-size':9, fill:'#4a4a4a', 'font-family':FB}, c[2]+'%'));
       });
-      if (!d.mmBars.length) s.appendChild(el('text',{x:X1, y:R_BOT-4, 'font-size':9, 'text-anchor':'end', fill:'#000', 'font-weight':700, 'font-family':FB}, '0 mm all day'));
+      if (!d.mmBars.length) s.appendChild(el('text',{x:X1, y:R_BOT-4, 'font-size':9, 'text-anchor':'end', fill:'#000', 'font-weight':700, 'font-family':FB}, 'Under 1 mm all day'));
     } else {
       s.appendChild(el('rect',{x:(X0+X1)/2-92, y:(R_TOP+R_BOT)/2-8, width:184, height:15, fill:'#fff'}));
       s.appendChild(el('text',{x:(X0+X1)/2, y:(R_TOP+R_BOT)/2+3, 'font-size':9.5, fill:'#4a4a4a', 'text-anchor':'middle', 'font-family':FB}, 'Rain by time of day not forecast yet'));
