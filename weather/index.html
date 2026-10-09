@@ -184,6 +184,7 @@ h1 span{display:block;font-weight:300}
 .sources .sn{color:var(--mute);font-size:.84rem}
 .end{margin-block:3rem 3.5rem;font-size:.82rem;color:var(--mute)}
 .empty{padding:2rem 0;color:var(--mute)}
+@media print{.nav{display:none!important}.day,.box,.top,.srow{break-inside:avoid}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -1123,7 +1124,6 @@ h1 span{display:block;font-weight:300}
   document.getElementById('end').textContent = 'Checked ' + data.checkedLabel + '. Ask Claude to check again and this page updates in place.';
 })();
 </script>
-
 <script>
 (function(){
  var BASE="https://thestartupstudiodeveloper.github.io/japan-trip/weather/",KEY="jt-off-weather",FILES=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "JHK-Weather.pdf"],LABEL="Weather";

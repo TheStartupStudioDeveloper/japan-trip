@@ -1,4 +1,14 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<style>
+.jt-bar{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;justify-content:flex-end;max-width:52rem;margin:0 auto;padding:.6rem 1.1rem 0;font:500 .82rem/1.2 "Instrument","Helvetica Neue",Arial,sans-serif;color:#000}
+.jt-bar a,.jt-bar button{appearance:none;-webkit-appearance:none;display:inline-flex;align-items:center;gap:.35rem;font:600 .8rem/1 "Instrument","Helvetica Neue",Arial,sans-serif;color:#000;background:#fff;border:1.5px solid #000;border-radius:0;padding:.45rem .65rem;text-decoration:none;cursor:pointer}
+.jt-bar a:hover,.jt-bar button:hover{background:#000;color:#fff}
+.jt-bar svg{width:.95rem;height:.95rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.jt-bar .jt-st{flex-basis:100%;text-align:right;font-size:.74rem;color:#444;min-height:1em}
+.jt-bar button[disabled]{opacity:.55;cursor:default}
+.jt-bar .jt-off[hidden]{display:none}
+@media print{.jt-bar{display:none!important}}
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="https://thestartupstudiodeveloper.github.io/japan-trip/weather/JHK-Weather.pdf" data-pdf="JHK-Weather.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <title>Japan &amp; Hong Kong Trip Weather</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,6 +184,7 @@ h1 span{display:block;font-weight:300}
 .sources .sn{color:var(--mute);font-size:.84rem}
 .end{margin-block:3rem 3.5rem;font-size:.82rem;color:var(--mute)}
 .empty{padding:2rem 0;color:var(--mute)}
+@media print{.nav{display:none!important}.day,.box,.top,.srow{break-inside:avoid}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -1113,5 +1124,26 @@ h1 span{display:block;font-weight:300}
   document.getElementById('end').textContent = 'Checked ' + data.checkedLabel + '. Ask Claude to check again and this page updates in place.';
 })();
 </script>
-
+<script>
+(function(){
+ var BASE="https://thestartupstudiodeveloper.github.io/japan-trip/weather/",KEY="jt-off-weather",FILES=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "JHK-Weather.pdf"],LABEL="Weather";
+ var bar=document.querySelector('.jt-bar'); if(!bar) return;
+ var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
+ var here=/github\.io$/.test(location.hostname);
+ if(here){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
+ if(!here||!('caches' in window)){btn.hidden=true;return}
+ function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+ function put(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+ function fmt(t){var d=new Date(+t);return d.getDate()+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()]+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
+ var t=get(); if(t) caches.has(KEY).then(function(ok){st.textContent=ok?LABEL+' saved for offline, '+fmt(t)+'. Tap again to refresh.':''});
+ btn.addEventListener('click',function(){
+  if(!navigator.onLine){st.textContent='You are offline. Connect, then tap again.';return}
+  btn.disabled=true;st.textContent='Saving\u2026';
+  caches.open(KEY).then(function(c){return Promise.all(FILES.map(function(f){return fetch(f,{cache:'reload'}).then(function(r){if(!r.ok)throw new Error(f);return c.put(f,r)})}))})
+   .then(function(){var n=Date.now();put(n);st.textContent=LABEL+' saved for offline, '+fmt(n)+'. Tap again to refresh.'})
+   .catch(function(){st.textContent='Could not save everything. Check the connection and try again.'})
+   .then(function(){btn.disabled=false});
+ });
+})();
+</script>
 </body></html>
