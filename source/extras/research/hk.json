@@ -1,0 +1,566 @@
+{
+ "cards": {
+  "man-wah": {
+   "n": "Man Wah",
+   "l": "文華廳",
+   "w": "The Michelin starred Cantonese restaurant on the 25th floor of the Mandarin Oriental, freshly redesigned in dark blue and brass, with windows over the harbour. Classic Cantonese done with polish: Peking duck served two ways, barbecued Iberian pork with longan honey, lobster in a rich fish broth.",
+   "t": "Dinner nightly from 18:00 to about 22:30 (some listings say 18:30 to 22:00). From about HK$800 a head before drinks. Smart casual. Not on OpenTable: book on the Mandarin Oriental website or call +852 2825 4003. Cards accepted.",
+   "m": "Man Wah Mandarin Oriental Hong Kong 25F"
+  },
+  "mott32": {
+   "n": "Mott 32",
+   "l": "卅二公館",
+   "w": "A glamorous basement dining room under the Standard Chartered Bank building, famous for its apple wood roasted Peking duck. Also known for Iberico pork char siu and the soft quail egg siu mai. Big, dark and buzzy, and a proper night out.",
+   "t": "Dinner 17:30 to midnight, lunch 11:30 to 14:30. About HK$1,000 a head. Book by phone +852 2885 8688 or on mott32.com, and pre-order the Peking duck and char siu when you book.",
+   "m": "Mott 32 Standard Chartered Bank Building Des Voeux Road Central"
+  },
+  "ho-lee-fook": {
+   "n": "Ho Lee Fook",
+   "l": "Ho Lee Fook",
+   "w": "A loud, fun SoHo dining room with a wall of gold waving cats, mahjong tiles and 1980s Cantopop on the stereo. Creative Cantonese with real wok hei: kurobuta pork char siu, crispy three yellow chicken, steamed razor clams with glass noodles.",
+   "t": "Dinner only, 18:00 to 22:30 Sun to Wed, to 23:30 Thu to Sat. Cheaper than the other two, roughly HK$500 to 800 a head with drinks. Book online at holeefook.com.hk or +852 2810 0860. Ask about dishes that need pre-ordering.",
+   "m": "Ho Lee Fook 3-5 Elgin Street Central"
+  },
+  "hutong": {
+   "n": "Hutong",
+   "l": "胡同",
+   "w": "A long running Northern Chinese restaurant high up in Tsim Sha Tsui, styled like an old Beijing courtyard house with red lanterns and carved screens. Known for the Red Lantern crispy soft shell crab buried in dried chillies and a flaming Peking duck.",
+   "t": "Now on 18/F, H Zentre, 15 Middle Road, three minutes from the Sheraton. Daily 12:00 to midnight at last listing. Expensive, about HK$700 to 1,000 a head. Reservations essential: hutong.com.hk or +852 3428 8342.",
+   "m": "Hutong H Zentre 15 Middle Road Tsim Sha Tsui"
+  },
+  "mak-man-kee": {
+   "n": "Mak Man Kee",
+   "l": "麥文記麵家",
+   "w": "A Jordan noodle shop serving Hong Kong's classic wonton noodles: thin, springy egg noodles and plump prawn wontons in a clear, savoury broth, in a tiny bowl. Fast, cheap and a Michelin Bib Gourmand.",
+   "t": "Daily 12:00 to 00:30. Under HK$100 a head. Walk-in. No credit cards, bring cash. 51 Parkes Street, Jordan, about 15 minutes' walk north of the hotel.",
+   "m": "Mak Man Kee Noodle Shop 51 Parkes Street Jordan"
+  },
+  "yat-lok": {
+   "n": "Yat Lok",
+   "l": "一樂燒鵝",
+   "w": "A small, plain roast meat shop in Central with a Michelin star for its roast goose: crackling skin, juicy meat, sold by the quarter. Order it over lai fun rice noodles in clear broth with a little goose fat. The char siu is excellent too.",
+   "t": "Daily 10:00 to 20:30. About HK$150 to 300 a head. Walk-in, expect a short queue and shared tables. 34-38 Stanley Street, Central.",
+   "m": "Yat Lok Roast Goose 34 Stanley Street Central"
+  },
+  "lan-fong-yuen": {
+   "n": "Lan Fong Yuen",
+   "l": "蘭芳園",
+   "w": "A cramped old cha chaan teng and dai pai dong stall on Gage Street, said to be where Hong Kong milk tea was first strained through a silk stocking. Have the smooth, strong milk tea with a pork chop bun.",
+   "t": "Mon to Sat 07:30 to 18:00, closed Sunday. Cheap. Walk-in, share tables, be quick. 2 Gage Street, at the bottom of Graham Street Market.",
+   "m": "Lan Fong Yuen 2 Gage Street Central"
+  },
+  "bakehouse": {
+   "n": "Bakehouse",
+   "l": "Bakehouse",
+   "w": "The egg tart everyone in Hong Kong talks about now: a sourdough pastry shell, flaky and buttery, around a barely set custard, served warm. Good coffee too. For the 1950s classic with a short crust, Tai Cheong Bakery is two blocks away on Lyndhurst Terrace.",
+   "t": "Daily 08:00 to 21:00. Egg tart HK$14, coffee about HK$45. SoHo shop at 5 Staunton Street is takeaway only, beside the Mid-Levels escalator. There is also a branch at 44 Hankow Road, TST, five minutes from the hotel.",
+   "m": "Bakehouse 5 Staunton Street SoHo"
+  },
+  "hing-kee": {
+   "n": "Hing Kee Restaurant",
+   "l": "興記菜館",
+   "w": "The best known claypot rice on Temple Street. Rice is cooked in clay pots over a flame until a crisp crust forms at the bottom, topped with things like pork brisket, Chinese sausage or chicken, then finished with sweet soy. Also good: the crispy oyster omelette and fried squid. Four Seasons Pot Rice on Arthur Street is the charcoal fired rival, with queues from 18:00, and Temple Street Spicy Crabs at the Nanking Street corner does street-side typhoon shelter style seafood.",
+   "t": "15 Temple Street, Yau Ma Tei. Evenings 17:30 to midnight. Claypots about HK$50 to 100, around HK$100 to 150 a head. Cash only. Walk-in. Claypots take 20 minutes, so order first.",
+   "m": "Hing Kee Restaurant 15 Temple Street Yau Ma Tei"
+  },
+  "maxims-city-hall": {
+   "n": "Maxim's Palace, City Hall",
+   "l": "大會堂美心皇宮",
+   "w": "The classic big Hong Kong yum cha hall: a huge, noisy room with chandeliers and harbour views, where staff push steaming trolleys of dim sum between the tables and you point at what you want. Very popular, and the full old style experience.",
+   "t": "Dim sum by trolley Mon to Sat 11:00 to 15:00. About HK$200 to 300 a head. Call +852 2521 1303 to ask about a booking, otherwise expect to queue at lunch. 2/F, City Hall Low Block, five minutes' walk from the Central Star Ferry pier.",
+   "m": "Maxim's Palace City Hall Central"
+  },
+  "spring-moon": {
+   "n": "Spring Moon",
+   "l": "嘉麟樓",
+   "w": "The Peninsula's Michelin starred Cantonese restaurant, all 1920s Art Deco wood panelling and stained glass. Refined, beautifully made dim sum at lunch, with a resident tea master. The calm, upscale way to do yum cha.",
+   "t": "Lunch Mon to Sat 11:30 to 14:30, Sunday from 11:00. About HK$500 to 800 a head at lunch. Smart casual. Book on peninsula.com or call +852 2696 6760. Ten minutes' walk from the Sheraton.",
+   "m": "Spring Moon The Peninsula Hong Kong"
+  },
+  "celestial-court": {
+   "n": "Celestial Court",
+   "l": "天寶閣",
+   "w": "The Cantonese restaurant on the 2nd floor of your own hotel, Michelin listed and a favourite with local families. A recently refreshed dim sum list at lunch. No windows, but no travel and no queue on your last day.",
+   "t": "Mon to Sat 11:30 to 15:00 and 18:00 to 22:00, Sunday from 10:30. Mid priced. Book online at celestialcourt.hk or call +852 2732 6991.",
+   "m": "Celestial Court Sheraton Hong Kong Hotel"
+  },
+  "lei-garden-elements": {
+   "n": "Lei Garden, Elements",
+   "l": "利苑酒家 圓方",
+   "w": "One branch of a trusted Hong Kong Cantonese chain, in the Elements mall directly below Ozone. Good roast meats and crispy roast pork, steamed egg white with crab, and slow boiled soups. Reliable rather than flashy, and right where you need it.",
+   "t": "Shop 2068-70, 2/F, Water Zone, Elements. Lunch and dinner daily. A full dinner for two runs just over HK$500 a head without wine. Book by phone, +852 2196 8133.",
+   "m": "Lei Garden Elements Water Zone"
+  },
+  "mammy-pancake": {
+   "n": "Mammy Pancake",
+   "l": "媽咪雞蛋仔",
+   "w": "A tiny takeaway counter making gai daan jai, the Hong Kong egg waffle: a sheet of crisp edged bubbles, soft and eggy inside, eaten hot from a paper bag. Michelin street food listed since 2016, with flavours from plain to chocolate chip and matcha.",
+   "t": "8-12 Carnarvon Road, TST, five minutes from the hotel. About HK$30 to 40. Walk-in, short queue. Hours run from around midday into the evening, check Google Maps.",
+   "m": "Mammy Pancake 8-12 Carnarvon Road Tsim Sha Tsui"
+  },
+  "kam-wah": {
+   "n": "Kam Wah Cafe",
+   "l": "金華冰廳",
+   "w": "The famous home of bo lo yau: a hot pineapple bun, named for its crackly sugar top, split and stuffed with a thick slab of cold butter. Have it with milk tea and Hong Kong French toast in a busy old style cafe in Prince Edward.",
+   "t": "Daily 06:30 to 23:30. Cheap, under HK$100 a head. Walk-in, expect a queue and shared tables. 47 Bute Street, Prince Edward.",
+   "m": "Kam Wah Cafe 47 Bute Street Prince Edward"
+  },
+  "bar-leone": {
+   "n": "Bar Leone",
+   "l": "Bar Leone",
+   "w": "A small, warm Roman style neighbourhood bar that was named the World's Best Bar in 2025 and is No. 3 on Asia's 50 Best Bars 2026. Simple, perfect Italian drinks, vinyl on the turntable and a crowd spilling onto the street.",
+   "t": "11-15 Bridges Street, Central. From 17:00 until late. Walk-in only, no bookings, and queues of an hour or more on busy nights. Mid priced.",
+   "m": "Bar Leone Bridges Street Central"
+  },
+  "coa": {
+   "n": "Coa",
+   "l": "Coa",
+   "w": "A tiny agave bar with a 41 page menu of tequila and mezcal, and among the most awarded bars in Asia: No. 24 on Asia's 50 Best Bars 2026. Bright, clever cocktails that even non tequila drinkers love.",
+   "t": "Shop A, LG/F, Wah Shin House, 6-10 Shin Hing Street, Central, near Hollywood Road. Tue to Sun 18:00 to midnight, Fri and Sat to 01:00. Closed Monday. No bookings: leave your number with the door staff to join the waitlist.",
+   "m": "COA bar Shin Hing Street Central"
+  },
+  "argo": {
+   "n": "Argo",
+   "l": "Argo",
+   "w": "The bar at the Four Seasons, with big windows over Victoria Harbour and a menu built around ingredients under threat from climate change. No. 37 on Asia's 50 Best Bars 2026. Polished, calm and a great place for the view.",
+   "t": "1/F, Four Seasons Hotel, Central. Mon to Thu 17:00 to 01:00, Fri and Sat to 02:00. Book online or on +852 3196 8882. Smart casual, no beachwear or sportswear.",
+   "m": "ARGO Four Seasons Hotel Hong Kong"
+  },
+  "darkside": {
+   "n": "DarkSide",
+   "l": "DarkSide",
+   "w": "The Rosewood's moody bar of dark spirits, cognac and cigars, with live jazz every night. Multi award winning in Time Out's bar awards, and ten minutes' walk along the waterfront from the Sheraton.",
+   "t": "2/F, Rosewood Hong Kong, Victoria Dockside. Sun to Thu 17:00 to midnight, Fri and Sat to 01:00. Jazz from 20:15 Tue to Thu. Book online or +852 3891 8732. Smart casual, sleeved shirts and covered shoes.",
+   "m": "DarkSide Rosewood Hong Kong"
+  },
+  "sky-lounge": {
+   "n": "Sky Lounge, Sheraton",
+   "l": "Sky Lounge",
+   "w": "The bar on the top floor of your hotel, looking straight across the harbour to the Island skyline. Cocktails, wine and afternoon tea, with a front row seat for A Symphony of Lights at 20:00.",
+   "t": "Daily 14:30 to 23:00. Walk-in. Casual dress.",
+   "m": "Sky Lounge Sheraton Hong Kong Hotel"
+  },
+  "chi-lin": {
+   "n": "Chi Lin Nunnery and Nan Lian Garden",
+   "l": "志蓮淨苑 南蓮園池",
+   "w": "A Buddhist nunnery of dark timber halls built without a single nail, set among lotus ponds, with a classical Tang dynasty style garden across the road. A golden pavilion, bonsai and a waterfall, all with the tower blocks of Kowloon behind.",
+   "t": "Free. Nan Lian Garden 07:00 to 21:00. The nunnery halls close earlier, in the late afternoon. Diamond Hill MTR, exit C2, about 25 minutes from TST.",
+   "m": "Chi Lin Nunnery Diamond Hill"
+  },
+  "hkmoa": {
+   "n": "Hong Kong Museum of Art",
+   "l": "香港藝術館",
+   "w": "The city's main art museum, right on the TST waterfront next to the Star Ferry. Chinese painting, calligraphy and ceramics alongside modern Hong Kong art, in galleries with big windows onto the harbour.",
+   "t": "Free, except special exhibitions. Mon to Wed and Fri 10:00 to 18:00, weekends to 21:00. Closed Thursday.",
+   "m": "Hong Kong Museum of Art Salisbury Road"
+  },
+  "ladies-market": {
+   "n": "Ladies' Market and Mong Kok",
+   "l": "女人街 旺角",
+   "w": "A kilometre of stalls on Tung Choi Street in Mong Kok, selling clothes, bags, phone cases and souvenirs, with bargaining expected. Around it: Sneakers Street on Fa Yuen Street and the Goldfish Market, with fish hanging in bags outside the shops.",
+   "t": "Stalls from around midday to late evening. Mong Kok MTR, three stops north of TST. Cash for the stalls.",
+   "m": "Ladies Market Tung Choi Street Mong Kok"
+  },
+  "tai-o": {
+   "n": "Tai O",
+   "l": "大澳",
+   "w": "A fishing village on the far west of Lantau where families still live in houses on stilts over the tidal creeks. Lanes of drying fish and shrimp paste, small temples, and boat trips out to look for the pink dolphins.",
+   "t": "Bus 21 from Ngong Ping, about 20 minutes, then bus 11 to Tung Chung MTR. Allow two to three hours. Cash or Octopus.",
+   "m": "Tai O fishing village Lantau"
+  }
+ },
+ "areas": [
+  {
+   "key": "hk",
+   "name": "Hong Kong",
+   "pat": "h",
+   "kanji": "香港",
+   "meta": "Tsim Sha Tsui, Jordan and Yau Ma Tei on the Kowloon side, with Central, SoHo and Sheung Wan across the harbour.",
+   "days": [
+    [
+     "d27",
+     "Tue 27"
+    ],
+    [
+     "d28",
+     "Wed 28"
+    ],
+    [
+     "d29",
+     "Thu 29"
+    ],
+    [
+     "d30",
+     "Fri 30"
+    ]
+   ],
+   "must": [
+    {
+     "dish": "Dim sum",
+     "line": "Steamed and fried small bites with tea: har gow, siu mai, char siu bao, ordered off a trolley or a tick sheet.",
+     "where": "maxims-city-hall"
+    },
+    {
+     "dish": "Roast goose",
+     "line": "Crisp, lacquered skin over rich meat, best over rice noodles in broth. The char siu is the other must.",
+     "where": "yat-lok"
+    },
+    {
+     "dish": "Wonton noodles",
+     "line": "Thin springy egg noodles and prawn wontons in a small bowl of clear, savoury broth.",
+     "where": "mak-man-kee"
+    },
+    {
+     "dish": "Egg tart",
+     "line": "Warm, wobbly egg custard in a crisp pastry shell, Hong Kong's favourite snack.",
+     "where": "bakehouse"
+    },
+    {
+     "dish": "Pineapple bun",
+     "line": "A sweet bun with a crackly sugar top, no pineapple in it, split hot with a slab of cold butter.",
+     "where": "kam-wah"
+    },
+    {
+     "dish": "Hong Kong milk tea",
+     "line": "Strong black tea strained through a cloth and mixed with evaporated milk, silky and punchy.",
+     "where": "lan-fong-yuen"
+    },
+    {
+     "dish": "Claypot rice",
+     "line": "Rice cooked in a clay pot until a crunchy crust forms, topped with sausage or meats and sweet soy.",
+     "where": "hing-kee"
+    },
+    {
+     "dish": "Egg waffle",
+     "line": "A hot sheet of crisp edged bubbles, soft inside, eaten straight from the bag.",
+     "where": "mammy-pancake"
+    }
+   ],
+   "items": [
+    {
+     "group": "Eat",
+     "key": "hutong",
+     "time": "1.5 hrs",
+     "one": "Crispy chilli crab and flaming duck, three minutes away",
+     "fits": "Tue 27 dinner in Tsim Sha Tsui at 20:45, straight off the Avenue of Stars. Book a 21:00 table so you are not rushed after the cruise.",
+     "tags": [
+      "HK$$$",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "mak-man-kee",
+     "time": "40 min",
+     "one": "Classic wonton noodles in Jordan, open past midnight",
+     "fits": "Tue 27 dinner if you would rather keep it casual: open to 00:30, no booking, and on the way to Temple Street if you have the energy. Also works Thu 29 before the market.",
+     "tags": [
+      "HK$",
+      "Walk-in",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "man-wah",
+     "time": "2 hrs",
+     "one": "Michelin starred Cantonese, 25 floors above the harbour",
+     "fits": "Wed 28 big dinner at 19:30. A short taxi down from the Peak, and the Mandarin Oriental is a five minute walk from the bars. The pick for views and occasion.",
+     "tags": [
+      "HK$$$",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "mott32",
+     "time": "2 hrs",
+     "one": "Apple wood Peking duck in a glamorous bank basement",
+     "fits": "Wed 28 big dinner at 19:30. The pick for the best duck and the most theatre. Pre-order the duck when you book.",
+     "tags": [
+      "HK$$$",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "ho-lee-fook",
+     "time": "1.5 hrs",
+     "one": "Loud, fun modern Cantonese in SoHo",
+     "fits": "Wed 28 big dinner if you want a party rather than polish. Right in SoHo, so the bars are steps away afterwards.",
+     "tags": [
+      "HK$$",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "lan-fong-yuen",
+     "time": "30 min",
+     "one": "Stocking strained milk tea and a pork chop bun",
+     "fits": "Wed 28 at 14:00, right at the bottom of Graham Street Market as you arrive in Central. Or Thu 29 for a quick lunch. Closed Sundays, which is no problem for you.",
+     "tags": [
+      "HK$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "yat-lok",
+     "time": "45 min",
+     "one": "Michelin starred roast goose on noodles",
+     "fits": "Thu 29 lunch in Central at 14:00, off the train from Tung Chung. Hong Kong Station to Stanley Street is about ten minutes' walk, and 14:00 misses the lunch rush.",
+     "tags": [
+      "HK$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "bakehouse",
+     "time": "20 min",
+     "one": "The city's best egg tart, sourdough crust, with coffee",
+     "fits": "Thu 29 egg tart and coffee stop at 16:15. Up Hollywood Road from Man Mo Temple to Staunton Street, then down to the Star Ferry for 17:00. Takeaway, so eat it on the escalator steps.",
+     "tags": [
+      "HK$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "hing-kee",
+     "time": "1 hr",
+     "one": "Claypot rice on Temple Street, crisp crust and all",
+     "fits": "Thu 29 Temple Street dinner at 19:30. Order the claypots first, they take 20 minutes, then browse the stalls after.",
+     "tags": [
+      "HK$",
+      "Walk-in",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "maxims-city-hall",
+     "time": "1.5 hrs",
+     "one": "Old style yum cha with trolleys and harbour views",
+     "fits": "Fri 30 yum cha at 12:30, the classic trolley option. Star Ferry across, then five minutes' walk. Call to book or arrive by 12:15. Back by Star Ferry for the spare window.",
+     "tags": [
+      "HK$$",
+      "Book"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "spring-moon",
+     "time": "1.5 hrs",
+     "one": "Refined Michelin dim sum at The Peninsula",
+     "fits": "Fri 30 yum cha at 12:30, the upscale option. Ten minutes' walk from the hotel, so no harbour crossing on your last day.",
+     "tags": [
+      "HK$$$",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "celestial-court",
+     "time": "1 hr",
+     "one": "Dim sum on the 2nd floor of your own hotel",
+     "fits": "Fri 30 yum cha at 12:30, the near TST option: zero travel, and the easy choice if the pool runs long. Also a fallback dinner on any night.",
+     "tags": [
+      "HK$$",
+      "Book"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "lei-garden-elements",
+     "time": "1 hr",
+     "one": "Cantonese roast meats in Elements, below Ozone",
+     "fits": "Fri 30 dinner at 19:15, straight down from Ozone in the same building. Tell them you need to leave by 20:15 for the airport.",
+     "tags": [
+      "HK$$",
+      "Book"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "mammy-pancake",
+     "time": "15 min",
+     "one": "Hot egg waffle from a Michelin street food counter",
+     "fits": "Any afternoon or evening walk near the hotel. Good on Tue 27 after the promenade, or Fri 30 in the spare window.",
+     "tags": [
+      "HK$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kam-wah",
+     "time": "45 min",
+     "one": "Pineapple bun with a slab of butter, the original",
+     "fits": "Thu 29 after Temple Street for supper: two MTR stops north and open to 23:30. Or a breakfast swap for the lounge on Wed 28.",
+     "tags": [
+      "HK$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "bar-leone",
+     "time": "1 hr",
+     "one": "The World's Best Bar 2025, walk-in only",
+     "fits": "Wed 28 bars in Central, after dinner. Expect to queue, it is part of the fun. Ten minutes' walk from SoHo or Central.",
+     "tags": [
+      "HK$$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "coa",
+     "time": "1 hr",
+     "one": "Award winning agave bar, tequila and mezcal",
+     "fits": "Wed 28 bars in Central. Drop by at about 19:15 on the way to dinner to put your name on the waitlist, then come back after.",
+     "tags": [
+      "HK$$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "argo",
+     "time": "1 hr",
+     "one": "Harbour view cocktails at the Four Seasons",
+     "fits": "Wed 28 if you want a seat and a view rather than a queue. Two minutes from the Star Ferry pier, so it works before the ferry home.",
+     "tags": [
+      "HK$$$",
+      "Book"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "darkside",
+     "time": "1 hr",
+     "one": "Dark spirits and live jazz at the Rosewood",
+     "fits": "Tue 27 late, or Thu 29 at 21:30 instead of going straight back to the hotel. Ten minutes' walk along the waterfront.",
+     "tags": [
+      "HK$$$",
+      "Book"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "sky-lounge",
+     "time": "1 hr",
+     "one": "Harbour view bar at the top of your hotel",
+     "fits": "Any evening at 20:00 for the light show, or a rainy afternoon. Handy on Fri 30 if Ozone is clouded in.",
+     "tags": [
+      "HK$$",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "hkmoa",
+     "time": "1.5 hrs",
+     "one": "Chinese art with harbour windows, free entry",
+     "fits": "Fri 30 spare window at 14:00, five minutes from the hotel. Closed Thursday.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "chi-lin",
+     "time": "2 hrs",
+     "one": "Timber nunnery and a Tang style garden",
+     "fits": "Fri 30 spare window at 14:00, about 25 minutes by MTR. Go early in the window so the nunnery halls are still open.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "ladies-market",
+     "time": "1.5 hrs",
+     "one": "Street stalls, sneakers and the Goldfish Market",
+     "fits": "Fri 30 spare window, or a swap for Temple Street on Thu 29 evening. Three MTR stops north.",
+     "tags": [
+      "Cash"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "races",
+     "time": "3 hrs",
+     "one": "Floodlit Happy Valley racing, not on your dates.",
+     "fits": "No Happy Valley meeting while you are here: Wed 28 racing is at Sha Tin, and the next Happy Valley meetings are Sun 1 and Wed 4 November.",
+     "tags": []
+    },
+    {
+     "group": "Further out",
+     "key": "tai-o",
+     "time": "3 hrs",
+     "one": "Stilt house fishing village on Lantau",
+     "fits": "Thu 29 after the Big Buddha, by bus instead of the cable car down. It costs Central lunch and Sheung Wan, so only if the Island day moves.",
+     "tags": []
+    },
+    {
+     "group": "Further out",
+     "key": "lantau",
+     "time": "Full day",
+     "one": "Mountains, beaches and the Big Buddha island.",
+     "fits": "Already your Thu 29 morning. Tai O is the natural add-on.",
+     "tags": []
+    },
+    {
+     "group": "Further out",
+     "key": "dragonsback",
+     "time": "3 to 4 hrs",
+     "one": "The ridge hike with sea on both sides.",
+     "fits": "Fri 30 morning instead of the pool if the weather is clear. Start by 09:00 to be back by 16:15. Take water and sunscreen.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "sheko",
+     "time": "2 hrs",
+     "one": "Beach village at the end of the hike.",
+     "fits": "Finish the Dragon's Back here for a swim and a seafood lunch, then bus back to Shau Kei Wan.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Massage",
+     "key": "kungfu-head",
+     "time": "1 hr",
+     "one": "Head therapy, two minutes from the hotel.",
+     "fits": "11:00 to 22:00. Book by message.",
+     "tags": [
+      "Book"
+     ]
+    },
+    {
+     "group": "Massage",
+     "key": "foot-lam-moon",
+     "time": "1 hr",
+     "one": "Foot reflexology on Hankow Road.",
+     "fits": "10:00 to 00:30, so it works after dinner.",
+     "tags": []
+    },
+    {
+     "group": "Massage",
+     "key": "fu-ying",
+     "time": "1 hr",
+     "one": "Foot and body massage on Granville Road.",
+     "fits": "Open 24 hours. Good on Fri 30 after checkout while you wait for the airport.",
+     "tags": []
+    }
+   ],
+   "notes": "Book this week: the Wed 28 big dinner (Man Wah, Mott 32 or Ho Lee Fook; pre-order the duck at Mott 32), Hutong if you want it for Tue 27, and Spring Moon if that is your Fri 30 yum cha. The Chairman was named Asia's best in 2026 but now opens for lunch only and is very hard to book, so it is not an option for Wed 28 dinner. No Happy Valley races on your dates: Wed 28 is a Sha Tin meeting. Hong Kong Museum of Art is closed on Thursdays, so keep it for Friday. Coa is closed Mondays and Lan Fong Yuen on Sundays, neither of which clashes. Bar Leone and Coa take no bookings, so expect to queue on Wed 28. Hing Kee, Mak Man Kee and the Temple Street stalls are cash only. Some opening hours here come from older listings (Mammy Pancake, Lei Garden at Elements, Hutong): check Google Maps the day before."
+  }
+ ]
+}

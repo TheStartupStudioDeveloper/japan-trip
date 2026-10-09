@@ -1,0 +1,493 @@
+{
+ "cards": {
+  "r-baker": {
+   "n": "R Baker Osaka Castle Park",
+   "l": "R Baker 大阪城公園店",
+   "w": "A bakery café inside Osaka Castle Park, near the Morinomiya side, baking with Japanese rice flour so the bread has a soft, chewy bite. Curry bread, sausage rolls, the stretchy croissant and iced matcha lattes, all easy to carry to a bench by the moat.",
+   "t": "Weekdays 07:00 to 17:00, weekends to 18:00. Closed only over New Year. Most pastries about ¥200 to ¥300. Walk-in.",
+   "m": "R Baker Osaka Castle Park 3-9 Osakajo"
+  },
+  "horai-551": {
+   "n": "551 Hōrai",
+   "l": "551蓬莱",
+   "w": "Osaka's beloved pork bun shop, with queues at every branch. The butaman is a big, soft steamed bun filled with juicy pork and onion, sold hot to eat on the spot or boxed to take home. Their shūmai and gyōza are good too.",
+   "t": "Many branches: the main shop is on Ebisubashi-suji, two minutes from Dōtonbori, and there are counters in Namba Walk and at Osaka and Shin-Osaka stations. The Namba Walk shop is 11:00 to 22:00, closed the third Wednesday. Hours vary by branch. A bun is a few hundred yen.",
+   "m": "551 Horai Honten Namba"
+  },
+  "kurogin": {
+   "n": "Maguroya Kurogin",
+   "l": "まぐろ屋 黒銀",
+   "w": "The tuna specialist at Kuromon, cutting fat tuna, lean red tuna and seared belly in front of you. Order a sashimi plate or a tuna bowl and eat it at the counter inside. The best single stop in the market for fish.",
+   "t": "Daily 09:30 to 16:30. About ¥2,000 to ¥3,000 a head. Walk-in. Bring cash for the market in general.",
+   "m": "Maguroya Kurogin Kuromon Market"
+  },
+  "kuromon-sanpei": {
+   "n": "Kuromon Sanpei",
+   "l": "黒門三平",
+   "w": "A big seafood shop near the middle of Kuromon with its own eat-in area. Pick uni, oysters in the shell, sashimi or sushi from the counter, they prepare it, and you sit down to eat. Seafood bowls are eat-in only.",
+   "t": "Daily 09:30 to 17:00. Walk-in. Prices by item, market rates.",
+   "m": "Kuromon Sanpei Kuromon Market"
+  },
+  "daruma-shinsekai": {
+   "n": "Kushikatsu Daruma Shinsekai Sōhonten",
+   "l": "元祖串かつ だるま 新世界総本店",
+   "w": "The original Daruma, open since 1929, under the angry chef statue a block from Tsūtenkaku. Skewers of beef, pork, prawn, lotus root and quail egg, fried in a light, crisp batter and dipped once in the shared sauce. No double dipping.",
+   "t": "Daily 11:00 to 22:30. Skewers about ¥130 to ¥380, a snack plus a beer about ¥1,500 to ¥2,500. Cards and PayPay accepted. Walk-in, short queues at dusk.",
+   "m": "Kushikatsu Daruma Shinsekai Sohonten"
+  },
+  "tengu": {
+   "n": "Tengu",
+   "l": "てんぐ",
+   "w": "A favourite kushikatsu counter inside Janjan-Yokochō, under the long-nosed red demon above the door. Cheap, consistently good skewers and doteyaki, beef tendon stewed in sweet miso. Locals queue for it.",
+   "t": "10:30 to 20:00 or so, closed Mondays. Skewers about ¥100 to ¥200, fried prawn about ¥450. Walk-in, no bookings.",
+   "m": "Tengu kushikatsu Janjan Yokocho Shinsekai"
+  },
+  "wanaka": {
+   "n": "Takoyaki Wanaka Sennichimae",
+   "l": "たこ焼道楽 わなか 千日前本店",
+   "w": "The takoyaki shop locals name first. A dashi-rich batter cooked in copper pans so the shell is crisp and the inside molten. Try the plain sauce first, or the OOIRI set of four flavours. Seats upstairs.",
+   "t": "Weekdays 10:00 to 23:00, weekends from 08:30. Open all year. Eight pieces about ¥600 to ¥850. Walk-in.",
+   "m": "Takoyaki Wanaka Sennichimae Honten"
+  },
+  "mizuno": {
+   "n": "Okonomiyaki Mizuno",
+   "l": "お好み焼 美津の",
+   "w": "A family-run okonomiyaki shop on Dōtonbori since 1945, cooked for you on the griddle at your seat. The Mizuno-yaki uses a yam batter, and the mixed seafood and pork is the classic. A long queue moves fast, and staff take your order while you wait.",
+   "t": "11:00 to 22:00, last orders 21:00. Closed days unclear: one listing says closed Thursdays, others say open daily. Check Google Maps on the day. From about ¥1,500. No bookings.",
+   "m": "Okonomiyaki Mizuno 1-4-15 Dotonbori"
+  },
+  "fukutaro": {
+   "n": "Fukutarō",
+   "l": "福太郎 本店",
+   "w": "A loud, cheerful Sennichimae okonomiyaki house famous for negiyaki: a thin batter packed with green spring onion, cooked with beef tendon or pork and finished with soy and lemon instead of the sweet sauce. Their okonomiyaki is excellent too.",
+   "t": "Mon to Fri 17:00 to 00:30, Sat, Sun and holidays 12:00 to 23:30. Open daily. About ¥2,000 a head. No bookings: write your name on the list inside and wait to be called.",
+   "m": "Fukutaro Honten Sennichimae"
+  },
+  "imai": {
+   "n": "Dōtonbori Imai",
+   "l": "道頓堀 今井 本店",
+   "w": "An old udon house in a quiet wooden front on the busiest street in Osaka, known for its delicate dashi. The kitsune udon is the order: soft noodles in clear broth topped with sweet simmered fried tofu. A calm sit-down in the middle of the neon.",
+   "t": "11:30 to 20:30, last orders 20:00. Closed Wednesdays, so Thursday is fine. Lunch about ¥1,500, dinner about ¥2,000. Walk-in.",
+   "m": "Dotonbori Imai Honten"
+  },
+  "kani-doraku": {
+   "n": "Kani Dōraku Dōtonbori Honten",
+   "l": "かに道楽 道頓堀本店",
+   "w": "The restaurant under Dōtonbori's giant moving crab sign, serving nothing but crab: crab hot pot, sashimi, grilled legs, tempura and sushi, as set courses in private-feeling tatami rooms. Touristy, but a genuinely good crab feast and very Osaka.",
+   "t": "11:00 to 23:00, last entry 22:00. Dinner about ¥8,000 a head. Book online in English through Gurunavi. Cards accepted. English tablet menu.",
+   "m": "Kani Doraku Dotonbori Honten"
+  },
+  "rikuro": {
+   "n": "Rikurō Ojisan no Mise",
+   "l": "りくろーおじさんの店 なんば本店",
+   "w": "Osaka's wobbly, fluffy Japanese cheesecake, baked all day with raisins on the base and branded with the old man's face. When a fresh batch comes out the staff ring a bell. Light enough to eat a slice warm on the street.",
+   "t": "Shop 09:00 to 20:00, closed 1 January only. Café upstairs 11:30 to 17:30. A whole 18 cm cake is ¥965. Walk-in, queues are quick.",
+   "m": "Rikuro Ojisan no Mise Namba Honten"
+  },
+  "matsubaya": {
+   "n": "Usamitei Matsubaya",
+   "l": "うさみ亭マツバヤ",
+   "w": "The shop that claims to have invented kitsune udon in 1893, by putting sweet fried tofu on udon. Still a modest, family-run room. The other famous dish is ojiya udon, udon and rice in a little iron pot with egg and seafood.",
+   "t": "11:00 to 18:00. Closed Sundays and public holidays. Inexpensive. Walk-in. Five minutes from Shinsaibashi station.",
+   "m": "Usamitei Matsubaya 3-8-1 Minamisenba"
+  },
+  "meoto-zenzai": {
+   "n": "Hōzenji Meoto Zenzai",
+   "l": "法善寺 夫婦善哉",
+   "w": "A sweet shop founded in 1883 beside the mossy Mizukake Fudō. The one dish is zenzai, sweet red bean soup with mochi, served as two small bowls for a couple, which is said to bring a happy marriage.",
+   "t": "Daily 10:00 to 22:00. About ¥815. Walk-in.",
+   "m": "Meoto Zenzai Hozenji"
+  },
+  "craftroom": {
+   "n": "Craftroom",
+   "l": "CRAFTROOM",
+   "w": "A tiny cocktail bar two floors underground in an old Umeda office block full of izakaya, run by Ryu Fujii, a former World Class runner-up. It was the first Osaka bar on Asia's 50 Best Bars list, and is No. 58 on the 2025 extended list. About ten seats.",
+   "t": "16:00 to midnight. Closed Sundays. Walk-in, wait if full. Ekimae Daiichi Building B2, five minutes from Osaka Station.",
+   "m": "CRAFTROOM Osaka Ekimae Daiichi Building B2"
+  },
+  "bar-nayuta": {
+   "n": "Bar Nayuta",
+   "l": "BAR NAYUTA",
+   "w": "A hidden fifth floor bar opposite Triangle Park in Amerikamura, marked only by a geometric symbol. There is no menu: tell the bartender what you like and they build a drink from house infusions, bitters and liqueurs. No. 100 on Asia's 50 Best Bars 2025 extended list.",
+   "t": "Daily 17:00 to 03:00. Walk-in. 5F, 1-6-17 Nishi-Shinsaibashi.",
+   "m": "Bar Nayuta Nishishinsaibashi"
+  },
+  "bar36": {
+   "n": "Bar36, Swissôtel Nankai Osaka",
+   "l": "Bar36 スイスホテル南海大阪",
+   "w": "The hotel's 36th floor bar, 147 metres up, sitting directly on top of Namba Station. Big windows over the neon of Minami and the city skyline, with cocktails and live music on weekends.",
+   "t": "Sun to Thu 15:00 to 23:30, last orders 22:45. Walk-in, or book by email (Bar36.Osaka@swissotel.com) or WhatsApp. Hotel bar prices.",
+   "m": "Swissotel Nankai Osaka Bar36"
+  },
+  "mizukake-chaya": {
+   "n": "Mizukake Chaya",
+   "l": "法善寺横丁 炉端焼 水掛茶屋",
+   "w": "A relaxed robatayaki izakaya right in Hōzenji Yokochō, with a counter in front of the grill and small rooms behind. Sake, a beer and a few grilled skewers or fish, in the quiet lane after the noise of Dōtonbori. English menu.",
+   "t": "16:00 to 23:00. Closed only over New Year. Dishes from about ¥300. Walk-in for two is usually fine on a weeknight.",
+   "m": "Mizukake Chaya Hozenji Yokocho"
+  },
+  "shitennoji": {
+   "n": "Shitennō-ji",
+   "l": "四天王寺",
+   "w": "One of Japan's oldest temples, founded in 593 by Prince Shōtoku, with a five storey pagoda and a large stone-paved precinct. On the 21st and 22nd of every month the outer grounds fill with a flea market of several hundred stalls: old kimono, pottery, records, toys and food stalls.",
+   "t": "Outer grounds open all day and free. Central precinct 08:30 to 16:00 in October, ¥300. Flea market 08:30 to sunset on the 21st and 22nd, cash only, cancelled in bad weather.",
+   "m": "Shitennoji Temple Osaka"
+  },
+  "doguyasuji": {
+   "n": "Sennichimae Doguyasuji",
+   "l": "千日前道具屋筋商店街",
+   "w": "A 150 metre covered street of shops for the restaurant trade, between Namba and Kuromon. Japanese knives, takoyaki pans, lacquer, noren curtains and the plastic food models you see in restaurant windows. Some shops run food sample making workshops.",
+   "t": "Hours vary by shop, roughly 10:00 to 18:00. Three minutes from Namba Station.",
+   "m": "Sennichimae Doguyasuji Shopping Street"
+  },
+  "pokemon-osaka": {
+   "n": "Pokémon Center and Nintendo Osaka",
+   "l": "ポケモンセンターオーサカDX・Nintendo OSAKA",
+   "w": "The Pokémon Center Osaka DX and Nintendo's official Osaka store share the 13th floor of Daimaru Umeda, above Osaka Station. Exclusive Mario, Zelda and Pokémon merchandise, and some designs only sold here and in Tokyo.",
+   "t": "10:00 to 20:00 (Daimaru hours, Nintendo listed to 21:00 in some sources). Open daily. Free entry.",
+   "m": "Daimaru Umeda 13F Pokemon Center Nintendo Osaka"
+  },
+  "ura-namba": {
+   "n": "Ura Namba",
+   "l": "裏なんば",
+   "w": "Back Namba: the grid of small streets east of Namba Station packed with tiny izakaya, standing bars and wine bars. Torame Yokochō, an alley with a red torii and nine little venues sharing seats, is an easy way in.",
+   "t": "Mostly evenings from about 17:00. Venues vary, some cash only. Walk-in.",
+   "m": "Ura Namba Osaka"
+  },
+  "sumiyoshi": {
+   "n": "Sumiyoshi Taisha",
+   "l": "住吉大社",
+   "w": "The head shrine of some 2,000 Sumiyoshi shrines across Japan, older than Buddhism's arrival in Osaka. The steep red arched Sorihashi bridge is the photo, and the halls are in a plain, ancient style found almost nowhere else.",
+   "t": "October 06:30 to 17:00. Free. Nankai Main Line local train from Namba, four stops, about 10 minutes and ¥240.",
+   "m": "Sumiyoshi Taisha Osaka"
+  }
+ },
+ "areas": [
+  {
+   "key": "osaka",
+   "name": "Osaka",
+   "pat": "k",
+   "kanji": "大阪",
+   "meta": "Day trip from Kyoto: Osaka Castle, Umeda, Kuromon, Horie, Namba, Shinsekai, Dōtonbori and Hōzenji Yokochō.",
+   "days": [
+    [
+     "d22",
+     "Thu 22"
+    ]
+   ],
+   "must": [
+    {
+     "dish": "Takoyaki",
+     "line": "Octopus in a molten dashi batter ball, crisp outside, far too hot to eat straight away.",
+     "where": "wanaka"
+    },
+    {
+     "dish": "Okonomiyaki",
+     "line": "A cabbage and batter pancake cooked on the griddle in front of you, with sweet sauce and mayonnaise.",
+     "where": "mizuno"
+    },
+    {
+     "dish": "Negiyaki",
+     "line": "Okonomiyaki's lighter cousin, packed with spring onion and finished with soy and lemon.",
+     "where": "fukutaro"
+    },
+    {
+     "dish": "Kushikatsu",
+     "line": "Crumbed, deep fried skewers dipped once in a shared pot of thin sauce. Never twice.",
+     "where": "daruma-shinsekai"
+    },
+    {
+     "dish": "Kitsune udon",
+     "line": "Osaka's own udon, in a clear dashi with sweet simmered fried tofu on top.",
+     "where": "imai"
+    },
+    {
+     "dish": "551 Hōrai butaman",
+     "line": "A big, soft steamed pork bun, the snack every Osakan brings home.",
+     "where": "horai-551"
+    }
+   ],
+   "items": [
+    {
+     "group": "Eat",
+     "key": "r-baker",
+     "time": "20 min",
+     "one": "Rice flour bakery inside the castle park",
+     "fits": "Thu 22 takeaway breakfast at 08:30. Open from 07:00, so buy curry bread and coffee and eat on a bench below the walls.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "horai-551",
+     "time": "15 min",
+     "one": "Osaka's famous steamed pork bun",
+     "fits": "Thu 22: grab a hot butaman on the walk from Kuromon or before Dōtonbori at 18:30. Or buy a box at Osaka Station for the train home.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kurogin",
+     "time": "40 min",
+     "one": "Kuromon's tuna specialist, eat at the counter",
+     "fits": "Thu 22 Kuromon lunch at 12:00. Make this the first stop: a fatty tuna and seared belly plate, then graze on from there.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kuromon-sanpei",
+     "time": "30 min",
+     "one": "Uni, oysters and sushi with somewhere to sit",
+     "fits": "Thu 22 Kuromon lunch, second stop. The eat-in area is a welcome seat after the morning on your feet.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "matsubaya",
+     "time": "30 min",
+     "one": "Where kitsune udon was invented, 1893",
+     "fits": "Thu 22 during the Shinsaibashi run around 14:00, as a light second lunch. Open Thursday, closed Sundays.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "daruma-shinsekai",
+     "time": "30 min",
+     "one": "The original kushikatsu, under Tsūtenkaku",
+     "fits": "Thu 22 Shinsekai snack at dusk, about 17:00. Open all day, so a quick plate of five skewers and a beer, then on to Dōtonbori.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "tengu",
+     "time": "30 min",
+     "one": "Locals' kushikatsu counter in Janjan-Yokochō",
+     "fits": "Thu 22 Shinsekai snack on the way in at 16:15. Open Thursday. Yaekatsu next door is closed on Thursdays.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "wanaka",
+     "time": "20 min",
+     "one": "The best takoyaki in Namba, crisp and molten",
+     "fits": "Thu 22 Dōtonbori eat standing up from 18:30. Five minutes south of the canal. Kukuru on Ebisu bridge, under the giant octopus, is the photo-friendly backup.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "fukutaro",
+     "time": "1 hr",
+     "one": "Negiyaki and okonomiyaki, loud and local",
+     "fits": "Thu 22 dinner from 18:30. Opens 17:00 on weekdays, five minutes from Dōtonbori. Put your name down first, then wander for takoyaki while you wait.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "mizuno",
+     "time": "1 hr incl. queue",
+     "one": "Dōtonbori's classic okonomiyaki since 1945",
+     "fits": "Thu 22 dinner at 18:30 if open: one listing says it closes on Thursdays, so check Google Maps that morning. Fukutarō is the safe swap.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "imai",
+     "time": "40 min",
+     "one": "Kitsune udon in a calm old udon house",
+     "fits": "Thu 22 on Dōtonbori around 18:30 if you want to sit down for ten minutes of quiet. Last orders 20:00.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "rikuro",
+     "time": "15 min",
+     "one": "Wobbly cheesecake, warm from the oven",
+     "fits": "Thu 22 between Namba Yasaka and Shinsekai, or after Dōtonbori. Five minutes from Namba Station, open to 20:00.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "meoto-zenzai",
+     "time": "20 min",
+     "one": "Red bean soup for two beside the mossy statue",
+     "fits": "Thu 22 Hōzenji Yokochō at 20:30, as dessert before the quiet drink. Open to 22:00.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kani-doraku",
+     "time": "1.5 hrs",
+     "one": "Crab feast under the giant moving crab",
+     "fits": "Thu 22 dinner at 18:30 if you would rather sit down than graze. Right on Dōtonbori. Book a table online this week.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "mizukake-chaya",
+     "time": "1 hr",
+     "one": "Robata grill and sake in Hōzenji Yokochō",
+     "fits": "Thu 22 quiet drink at 20:30, a few steps from Mizukake Fudō. Sake and a skewer or two before the train.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "bar36",
+     "time": "1 hr",
+     "one": "36th floor cocktails over the Namba neon",
+     "fits": "Thu 22 after Hōzenji, on top of Namba Station, so it is on the way to the Midōsuji line home. Open to 23:30 on Thursdays.",
+     "tags": [
+      "¥¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "craftroom",
+     "time": "1 hr",
+     "one": "Asia's 50 Best cocktail bar, ten seats",
+     "fits": "Thu 22 nightcap on the way home: five minutes from Osaka Station, before the JR special rapid to Kyoto. Open Thursday, closed Sundays.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "bar-nayuta",
+     "time": "1 hr",
+     "one": "No menu, drinks made to your taste",
+     "fits": "Thu 22 after Hōzenji if you are happy to catch a later train. Ten minutes' walk to Amerikamura, open to 03:00.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "harukas",
+     "time": "1 hr",
+     "one": "Osaka's highest deck, 300 metres up",
+     "fits": "The weather fallback for Thu 22: if Umeda Sky was clouded out, go at sunset, ten minutes' walk from Shinsekai. 09:00 to 22:00, about ¥2,000.",
+     "tags": [
+      "¥¥"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "shitennoji",
+     "time": "1 hr",
+     "one": "Flea market day: Thu 22 is market day",
+     "fits": "Thu 22 swap for part of the Horie shopping: the monthly market runs on the 22nd, and the temple is 15 minutes' walk from Shinsekai. Go before 16:00.",
+     "tags": [
+      "Free",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "doguyasuji",
+     "time": "45 min",
+     "one": "Knives, takoyaki pans and plastic food",
+     "fits": "Thu 22 straight after Kuromon lunch: it runs between the market and Namba, so it costs almost no extra walking.",
+     "tags": []
+    },
+    {
+     "group": "Shopping",
+     "key": "pokemon-osaka",
+     "time": "45 min",
+     "one": "Pokémon Center and Nintendo store, one floor",
+     "fits": "Thu 22 near Umeda Sky in the morning, or on the way home, above Osaka Station. Open to 20:00.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "ura-namba",
+     "time": "1 to 2 hrs",
+     "one": "Back-street izakaya and standing bars",
+     "fits": "Thu 22 instead of Hōzenji if you want more noise, not less. Five minutes east of Namba Station.",
+     "tags": [
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "leftout-osaka",
+     "time": "2 hrs",
+     "one": "Old wooden-house cafés and a river island",
+     "fits": "Dropped from Thu 22. If the castle runs short, Nakazakichō is ten minutes' walk from Umeda Sky.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "sumiyoshi",
+     "time": "1.5 hrs",
+     "one": "Ancient shrine and the red arched bridge",
+     "fits": "A swap for the Horie shopping on Thu 22. Ten minutes by Nankai local train from Namba. Closes 17:00.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "universal",
+     "time": "Full day",
+     "one": "Super Nintendo World and the big theme park",
+     "fits": "You chose against it, to spend the day in the city. Kept only in case Thu 22 changes completely.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    }
+   ],
+   "notes": "Thursday closures on Thu 22: Yaekatsu, the best known kushikatsu counter in Janjan-Yokochō, is closed on Thursdays, so use Tengu in the same alley or Daruma under the tower. Okonomiyaki Mizuno may also be closed on Thursdays (sources disagree), so check Google Maps that morning and fall back to Fukutarō. Okazu Izakaya Kuu, a small sake izakaya by Hōzenji, is also closed Thursdays. Thu 22 is Shitennō-ji flea market day (21st and 22nd each month). Nothing needs booking this week; Kani Dōraku is the only place worth booking, and only if you want a sit-down dinner. The HEP Five Ferris wheel in Umeda was closed for works from October 2025, so it is left out. Kuromon stalls wind down from about 16:00 and like cash."
+  }
+ ]
+}

@@ -249,13 +249,13 @@ P('tocho', ['Government Building deck'], 'Tokyo Metropolitan Government Building
   'Best about 16:15 for dusk. Check which of the two decks is open.', 'Tokyo Metropolitan Government Building observation deck')
 P('gyoen', ['Shinjuku Gyoen'], 'Shinjuku Gyoen', '新宿御苑',
   'A large, beautifully kept garden with Japanese, French and English sections, wide lawns and a greenhouse, a short walk from Shinjuku Station.',
-  'Closed on Mondays. Gates close at 16:30 in October.', 'Shinjuku Gyoen National Garden')
+  'Closed on Mondays. Gates close at 16:00 in October, the greenhouse at 15:30.', 'Shinjuku Gyoen National Garden')
 P('teamlab', ['teamLab Borderless', 'teamLab'], 'teamLab Borderless', 'チームラボボーダレス',
   'A digital art museum in the basement of Azabudai Hills. There is no map and no set route. You walk through dark rooms where projected flowers, waterfalls and animals flow across the walls and floor, react to your touch and drift from one room into the next.',
   'Booked for the first session at 08:30 on Monday 26. Wear trousers, as some floors are mirrored.', 'teamLab Borderless Azabudai Hills')
 P('sumo', ['Sumo show'], 'Sumo show', '相撲ショー',
-  'An indoor show where former sumo wrestlers demonstrate the rules, rituals and training, then fight exhibition bouts, usually with food included. Kept as a wet weather backup.',
-  'Venue and times still to check.', 'sumo show Tokyo restaurant')
+  'An indoor show where former sumo wrestlers demonstrate the rules, rituals and training, then fight exhibition bouts, with dinner included. No real tournament runs on your dates, so a show is the way to see sumo. Kept as a wet weather backup.',
+  'Hirakuza Ginza, 1-9-13 Ginza: daily 17:00, about 2 hours 15 minutes with a kaiseki dinner, from ¥17,000. Book on Klook. Within 21 days only 50% is refunded, nothing within 7 days. Alternative: Tokyo Sumo Club at Tokyo Tower, shows 11:00, 14:00, 17:00 and 20:00, from ¥16,000, on TableCheck.', 'Hirakuza Ginza sumo show')
 P('culture-centre', ['Asakusa Culture Tourist Information Centre'], 'Asakusa Culture Tourist Information Centre', '浅草文化観光センター',
   'A striking building by Kengo Kuma, stacked like a pile of timber houses, directly opposite the Kaminarimon gate. The free 8th floor terrace looks down the Nakamise street to the temple and across to the Skytree.',
   '', 'Asakusa Culture Tourist Information Center terrace')
@@ -475,7 +475,8 @@ P('mikimoto', ['Mikimoto Ginza 2'], 'Mikimoto Ginza 2', 'ミキモト銀座2丁�
 P('wako', ['Wakō clock tower'], 'Wakō clock tower', '和光 時計塔',
   'A curved stone building from 1932 topped with a clock tower, standing on Ginza\'s main crossing. It is the symbol of the district and chimes on the hour.', '', 'Wako clock tower Ginza')
 P('sushibus', ['Sushi Bus'], 'Sushi Bus', '寿司バス',
-  'A sightseeing bus fitted with a sushi counter, where a chef prepares sushi as you are driven around central Tokyo for about 70 minutes. New from 10 October 2026. An idea, not decided.', '', 'Tokyo sushi bus')
+  'A double-decker sightseeing bus with a sushi conveyor belt, touring central Tokyo for about 70 minutes with all-you-can-eat sushi and drinks. New from 10 October 2026. An idea, not decided.',
+  '¥16,000 each. Departures 11:00, 13:00, 15:00, 17:00 and 19:00 from the Kajibashi car park near Tokyo Station. Book on sushi-bus.com. Irregular maintenance closures.', 'Tokyo sushi bus Kajibashi')
 P('ginza', ['Ginza'], 'Ginza', '銀座',
   'Tokyo\'s most elegant shopping district: wide streets of department stores, flagship boutiques, galleries and striking architecture, a ten minute walk from your hotel.',
   '', 'Ginza Tokyo')

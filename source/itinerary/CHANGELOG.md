@@ -4,6 +4,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+J&HK Extras: all nine areas, 9 October
+- Added Shinjuku, Yokohama and Kamakura, Kyoto, Nara, Osaka, Ginza and east Tokyo, Japan other and Hong Kong. 202 items, about 165 new cards, each area with Must try, Eat, Drink and its own Good to know box (closures on your dates, what to book this week).
+- Every unscheduled existing card now sits in its area. Kyoto Tower drops off automatically because the Wed 21 plan already mentions it.
+- Area chips: fixed a jump that stopped short when the active chip scrolled into view.
+- Master cards corrected (rebuilt, content otherwise unchanged): Shinjuku Gyoen gates close 16:00 in October; Sumo show now names Hirakuza Ginza with times, prices and refund terms; Sushi Bus is a conveyor-belt double-decker, ¥16,000, departures from Kajibashi.
+
 J&HK Extras, 9 October (separate app)
 - New companion app, J&HK Extras ("Up our sleeve"): everything not in the day plans, by area, with place cards. Kept separate from the master for now; same source, same cards.
 - Places scheduled in any master day plan drop off Extras automatically on build, and return if taken out.

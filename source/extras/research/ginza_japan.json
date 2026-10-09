@@ -1,0 +1,807 @@
+{
+ "cards": {
+  "tsumugi": {
+   "n": "Tsukiji Hongwanji Café Tsumugi",
+   "l": "築地本願寺カフェ Tsumugi",
+   "w": "A bright café in the grounds of Tsukiji Hongwanji, the Indian-style temple beside the old market. The famous order is the 18-dish breakfast: rice porridge, miso soup and 16 tiny seasonal dishes such as tamagoyaki, duck with sanshō pepper and matcha jelly.",
+   "t": "Café 08:00 to 17:00, breakfast to 10:30. 18-dish breakfast about ¥2,200 (¥1,800 in older listings), only about 50 a day at weekends. No bookings: weekend waits of 20 to 30 minutes.",
+   "m": "Tsukiji Hongwanji Cafe Tsumugi 3-15-1 Tsukiji"
+  },
+  "arabica-azabudai": {
+   "n": "% Arabica Azabudai Hills",
+   "l": "% Arabica 麻布台ヒルズ",
+   "w": "The Kyoto-born coffee chain's Azabudai Hills café, in the basement of Garden Plaza right by Kamiyachō Station. Good espresso and a Spanish latte, with pastries.",
+   "t": "Daily 08:00 to 20:00. Walk-in.",
+   "m": "% Arabica Azabudai Hills Garden Plaza B1"
+  },
+  "kimuraya": {
+   "n": "Ginza Kimuraya",
+   "l": "銀座木村家",
+   "w": "The bakery that invented anpan, the soft bun filled with sweet red bean paste, in 1874. The classic is the sakadane anpan made with sake yeast and topped with a salted cherry blossom. A café on 2F does light meals and cakes.",
+   "t": "1F bakery and 2F café 10:00 to 20:00 (café last orders 19:00). Closed 31 Dec and 1 Jan. Anpan about ¥200 to ¥300 each.",
+   "m": "Ginza Kimuraya 4-5-7 Ginza"
+  },
+  "bairin": {
+   "n": "Ginza Bairin",
+   "l": "銀座梅林 本店",
+   "w": "Ginza's oldest tonkatsu house, open since 1927, in a basement in Ginza 7-chōme. Kagoshima black pork cutlets with free refills of rice, a good katsudon, and a hirekatsu (fillet) sando you can also take away.",
+   "t": "11:30 to 21:00, last orders 20:00. Closed New Year only. No bookings. About ¥1,200 to ¥5,000. Cards accepted.",
+   "m": "Ginza Bairin Honten 7-8-1 Ginza"
+  },
+  "tsunahachi-matsuya": {
+   "n": "Tsunahachi, Matsuya Ginza",
+   "l": "新宿つな八 銀座松屋店",
+   "w": "A branch of the much-loved Shinjuku tempura house on Matsuya's 8F restaurant floor. Prawns, fish and vegetables fried in sesame oil and served in sets or as tendon, with an English menu and no fuss.",
+   "t": "Daily 11:00 to 22:00, last orders 21:00. Lunch about ¥2,000, dinner about ¥4,500. Walk-in.",
+   "m": "Tsunahachi Matsuya Ginza 8F"
+  },
+  "lion": {
+   "n": "Beer Hall Lion Ginza 7-chōme",
+   "l": "ビヤホールライオン 銀座七丁目店",
+   "w": "Japan's oldest surviving beer hall, opened by Sapporo in 1934 and now a registered cultural property. A grand, mosaic-walled hall serving Sapporo draught with German-leaning bar food: sausages, schnitzel, karaage.",
+   "t": "11:30 to 23:00, Sundays and holidays to 22:30. Walk-in. Dinner from about ¥2,500 a head with beer.",
+   "m": "Beer Hall Lion Ginza 7-chome 7-9-20 Ginza"
+  },
+  "kondo": {
+   "n": "Monja Kondo, Tsukishima",
+   "l": "もんじゃ 近どう 本店",
+   "w": "The best-known shop on Tsukishima's Monja Street, dozens of monjayaki places along one road. Monjayaki is Tokyo's own runny, cheesy cousin of okonomiyaki: you fry it on the hotplate at your table and scrape it off with tiny spatulas. Staff will show you how.",
+   "t": "Mon to Fri 17:00 to 22:00. Sat, Sun and holidays 11:30 to 22:00. Last orders 21:30. About ¥2,500 a head at dinner. Cards accepted. Walk-in, queues at weekends.",
+   "m": "Monja Kondo Honten 3-12-10 Tsukishima"
+  },
+  "yamanoue": {
+   "n": "Tempura Yamanoue Ginza",
+   "l": "てんぷら 山の上 銀座",
+   "w": "The Ginza branch of the tempura counter from the old Hilltop Hotel, on the 13th floor of Ginza Six. You sit at the counter while the chef fries each piece and hands it straight over: prawns, seasonal fish, ginkgo nuts, sweet potato, lotus root.",
+   "t": "Lunch 11:00 to 15:00, dinner 17:00 to 23:30 (last orders 20:30). Lunch course about ¥16,000 at last review, dinner roughly ¥20,000 to ¥28,000 a head. Book in English on TableCheck.",
+   "m": "Tempura Yamanoue Ginza Six 13F"
+  },
+  "daikokuya": {
+   "n": "Daikokuya Tempura",
+   "l": "大黒家天麩羅",
+   "w": "An Asakusa institution since 1887 for tendon, a bowl of rice under big prawn tempura soaked in a dark, sweet and salty sauce. Fried in sesame oil, rich and very filling.",
+   "t": "11:00 to 20:00, no regular closing day. Tendon from about ¥1,700. Cash only. No bookings, expect a queue at noon.",
+   "m": "Daikokuya Tempura 1-38-10 Asakusa"
+  },
+  "asakusa-menchi": {
+   "n": "Asakusa Menchi",
+   "l": "浅草メンチ",
+   "w": "A takeaway counter near Sensō-ji selling one thing: menchi katsu, a crumbed, deep-fried patty of minced pork and beef, juicy and hot from the fryer. Eat it standing outside.",
+   "t": "10:00 to 21:00. About ¥350 each.",
+   "m": "Asakusa Menchi 2-3-3 Asakusa"
+  },
+  "uokin": {
+   "n": "Uokin Shimbashi main store",
+   "l": "魚金 本店",
+   "w": "The original of a popular Shimbashi seafood izakaya chain, a minute from the station. Generous sashimi platters, grilled fish and cold beer, in a cramped, cheerful room full of office workers.",
+   "t": "Mon to Fri 15:00 to 23:00, Sat, Sun and holidays 13:00 to 23:00. Food last orders 22:15. Walk-in, short queue at 19:00 likely. English menu or English-speaking staff.",
+   "m": "Uokin Honten 3-18-3 Shimbashi"
+  },
+  "tonton": {
+   "n": "Yakitori Tonton",
+   "l": "登運とん",
+   "w": "A smoky yakitori and pork-skewer joint built into the brick arches under the JR tracks at Yūrakuchō, with stools spilling onto the lane. The kashira (pork cheek) skewer is the house specialty, with chicken, heart, liver and miso-glazed eggplant.",
+   "t": "11:30 to 23:00 daily at last report (check Google Maps). Skewers from about ¥200. English menu. Walk-in, cash.",
+   "m": "Yakitori Tonton 2-1-10 Yurakucho"
+  },
+  "bar-high-five": {
+   "n": "Bar High Five",
+   "l": "バー ハイファイブ",
+   "w": "Hidetsugu Ueno's basement bar in Ginza 5-chōme, once No. 3 on the World's 50 Best Bars and still one of the most respected in Asia. There is no menu: tell the bartender what you like and they make it. Famous for hard-shaken classics and hand-cut ice.",
+   "t": "Mon to Sat from 17:00. Closed Sundays and national holidays. ¥1,000 cover including snacks. Walk-in, arrive early for the counter, or reserve via the bar's website.",
+   "m": "Bar High Five Efflore Ginza5 B1F 5-4-15 Ginza"
+  },
+  "star-bar": {
+   "n": "Star Bar Ginza",
+   "l": "スタア・バー・ギンザ",
+   "w": "Hisashi Kishi's classic Ginza cocktail bar, a quiet, wood-panelled basement where the sidecar is the drink to order. Precise, formal Japanese bartending at its most refined.",
+   "t": "17:00 to 24:00, last orders 23:30. Closed Mondays and every other Tuesday. ¥1,000 cover. Phone bookings, or walk in early.",
+   "m": "Star Bar Ginza 1-5-13 Ginza B1F"
+  },
+  "peter-bar": {
+   "n": "Peter: the Bar",
+   "l": "ピーター バー",
+   "w": "The bar on the 24th floor of The Peninsula Tokyo, ten minutes' walk from your hotel. Big windows look over Hibiya Park and the Imperial Palace gardens, with Japanese whiskies, Champagne and signature cocktails.",
+   "t": "Mon to Thu 17:00 to 23:00, Fri 17:00 to 24:00, Sat 15:00 to 24:00, Sun and holidays 15:00 to 22:00. Signature Tokyo Joe ¥2,600. Walk-in, or call 03 6270 2888.",
+   "m": "Peter the Bar The Peninsula Tokyo 24F"
+  },
+  "caretta": {
+   "n": "Caretta Shiodome Sky View",
+   "l": "カレッタ汐留 SKY VIEW",
+   "w": "A free viewing area on the 46th floor of the Caretta Shiodome tower, about 200 metres up, five minutes' walk from the hotel. It looks out over Hama-rikyū gardens, Tsukiji, Tokyo Bay and Rainbow Bridge, best after dark.",
+   "t": "Free. 11:00 to 23:00. Closed 1 and 2 January. Take the direct lift from B2.",
+   "m": "Caretta Shiodome 46F Sky View"
+  },
+  "hamarikyu": {
+   "n": "Hama-rikyū Gardens",
+   "l": "浜離宮恩賜庭園",
+   "w": "A former shōgun's duck-hunting garden on the edge of Tokyo Bay, with a seawater tidal pond and the Shiodome towers rising behind it. The Nakajima teahouse sits on the pond and serves whisked matcha with a sweet.",
+   "t": "Daily 09:00 to 17:00, last entry 16:30. ¥300. Teahouse 09:00 to 16:45, matcha and wagashi ¥1,000. Cash or card.",
+   "m": "Hamarikyu Gardens"
+  },
+  "kuramae": {
+   "n": "Kuramae and Dandelion Chocolate",
+   "l": "蔵前 ダンデライオン・チョコレート",
+   "w": "Kuramae is a quiet former warehouse district just south of Asakusa, now known for small makers' shops and cafés. Dandelion Chocolate's factory café is the anchor: bean to bar chocolate, a brownie flight and a hot chocolate made with local green tea.",
+   "t": "Dandelion Chocolate daily 10:00 to 19:00. About 15 minutes' walk south of Kappabashi, or Kuramae Station on the Asakusa line.",
+   "m": "Dandelion Chocolate Factory Kuramae 4-14-6 Kuramae"
+  },
+  "konbini": {
+   "n": "Konbini must-tries",
+   "l": "コンビニ",
+   "w": "Japan's convenience stores are a food destination. The three to try: 7-Eleven's tamago sando (soft egg salad sandwich), FamilyMart's Famichiki (juicy fried chicken from the hot case) and Lawson's Karaage-kun nuggets, plus onigiri with salmon or tuna mayo.",
+   "t": "Open 24 hours, everywhere. Snacks ¥150 to ¥300. Cards and Suica.",
+   "m": "FamilyMart Shimbashi"
+  },
+  "depachika": {
+   "n": "Depachika",
+   "l": "デパ地下",
+   "w": "The basement food halls of the big department stores: immaculate counters of bento, sushi, tempura, wagashi, cakes, fruit and pickles. Ginza Mitsukoshi, Matsuya and the B2 floor of Ginza Six are the best near your hotel. Good for a picnic dinner or gifts.",
+   "t": "Roughly 10:00 to 20:00 (Ginza Six 10:30 to 20:30). In the last hour many counters mark down bento and sushi.",
+   "m": "Ginza Mitsukoshi food hall"
+  },
+  "nakamura-tokichi": {
+   "n": "Nakamura Tokichi Ginza",
+   "l": "中村藤吉 銀座店",
+   "w": "The Ginza café of a Uji tea merchant founded in 1859, on 4F of Ginza Six. Proper matcha in parfaits, jellies and ice cream, plus thin green-tea soba if you want a light meal.",
+   "t": "10:30 to 20:30, last orders 19:30. No regular closing day. About ¥1,500 to ¥2,000. Walk-in, queue at weekends.",
+   "m": "Nakamura Tokichi Ginza Six 4F"
+  },
+  "toraya": {
+   "n": "Toraya Ginza",
+   "l": "とらや 銀座店",
+   "w": "The flagship Ginza shop and tea room of Toraya, the wagashi maker that has supplied the imperial court for about five centuries. Known for yōkan (sweet bean jelly) and seasonal sweets, served with matcha upstairs.",
+   "t": "11:00 to 19:00, last orders 18:30. Closed 1 January and the 2nd Monday of each month (in October 2026 that falls on 19 October because of the holiday). Counter seats need a booking.",
+   "m": "Toraya Ginza 7-8-17 Ginza"
+  },
+  "hasegawa": {
+   "n": "Hasegawa Saketen, GranSta Tokyo",
+   "l": "はせがわ酒店 グランスタ東京店",
+   "w": "A respected sake shop with a tasting bar inside Tokyo Station. Order a glass or a flight of small pours from breweries all over Japan, then buy a bottle of the one you liked.",
+   "t": "Mon to Sat 07:00 to 22:00, Sun and holidays 07:00 to 21:00. Inside the JR ticket gates, B1 GranSta. From outside you need a JR platform ticket (about ¥150).",
+   "m": "Hasegawa Saketen GranSta Tokyo"
+  },
+  "konparu-yu": {
+   "n": "Konparu-yu",
+   "l": "金春湯",
+   "w": "A family-run neighbourhood sento (public bath) in Ginza 8-chōme, in business since 1863, five minutes from the hotel. Hot baths, tiled Mt Fuji murals and an old-Tokyo atmosphere, amid the designer stores.",
+   "t": "14:00 to 22:00, Saturday to 20:00. Closed Sundays and public holidays. ¥600 cash. Bring a small towel and soap or buy them at the counter. Separate men's and women's baths.",
+   "m": "Konparu-yu 8-7-5 Ginza"
+  },
+  "laqua": {
+   "n": "Spa LaQua",
+   "l": "スパ ラクーア",
+   "w": "A big, modern hot spring spa at Tokyo Dome City, fed by natural onsen water. Indoor and open-air baths, saunas and lounges, with towels and loungewear included. The easiest proper onsen in central Tokyo.",
+   "t": "11:00 to 09:00 next morning. From ¥3,500 (varies by day), ¥1,000 less if you enter after 19:00. No tattoos. Closed 5 to 9 October 2026 for maintenance (before you arrive).",
+   "m": "Spa LaQua Tokyo Dome City"
+  },
+  "karaoke-kan": {
+   "n": "Karaoke Kan Shibuya",
+   "l": "カラオケ館 渋谷本店",
+   "w": "The Shibuya karaoke building where Bill Murray and Scarlett Johansson sang in Lost in Translation. You hire a private room by the hour, order drinks by phone, and sing from a huge English catalogue.",
+   "t": "Rates vary by time of day and room, with all-you-can-drink plans. Rooms 601 and 602 were the film rooms, ask at the desk. Phone 03 3462 0785.",
+   "m": "Karaoke Kan Shibuya Honten Udagawacho"
+  },
+  "purikura": {
+   "n": "Purikura no Mecca",
+   "l": "プリクラのメッカ",
+   "w": "A floor of purikura booths, the Japanese photo stickers where the machine smooths your skin, enlarges your eyes and lets you scribble on the results. Silly, very Japanese, and a fun souvenir for two.",
+   "t": "Open 24 hours. About ¥400 to ¥500 a session, coins or Suica on newer machines. Men are often not allowed in without a woman in the group, so go together. 3F, 29-1 Udagawachō, beside the Swatch store.",
+   "m": "Purikura no Mecca Shibuya Udagawacho"
+  },
+  "gachapon": {
+   "n": "Gachapon capsule toy shops",
+   "l": "ガシャポン",
+   "w": "Walls of coin-operated capsule toy machines with tiny, oddly specific collectables: miniature food, anime figures, animals in hats. #C-pla on Center-gai in Shibuya has over 2,000 machines; #C-pla premium in Marronnier Gate Ginza 1 has 1,000, with pricier, nicer capsules.",
+   "t": "#C-pla Shibuya 10:00 to 23:00. #C-pla premium Ginza, Marronnier Gate 1 4F, 11:00 to 21:00. Bandai's official shop in Tokyo Station's Character Street, B1, 10:00 to 20:30. ¥300 to ¥500 a go, coins.",
+   "m": "C-pla Shibuya Center Street"
+  },
+  "uniqlo-ginza": {
+   "n": "Uniqlo Ginza",
+   "l": "ユニクロ 銀座店",
+   "w": "Uniqlo's global flagship and its biggest store in Japan: twelve floors on Chūō-dōri and a corner for customising tote bags.",
+   "t": "11:00 to 21:00. Tax-free with your passport.",
+   "m": "Uniqlo Ginza 6-9-5 Ginza"
+  },
+  "daiso-ginza": {
+   "n": "Daiso Ginza",
+   "l": "ダイソー マロニエゲート銀座店",
+   "w": "The flagship of Japan's biggest 100 yen chain: about 23,000 items, from snacks and kitchen gadgets to souvenirs, with sister shops Standard Products (smart homewares) and Threeppy (mostly ¥300) on the same floor.",
+   "t": "11:00 to 21:00. 6F, Marronnier Gate Ginza 2.",
+   "m": "DAISO Marronnier Gate Ginza 2 6F"
+  },
+  "loft-ginza": {
+   "n": "Ginza Loft",
+   "l": "銀座ロフト",
+   "w": "Five floors of clever Japanese lifestyle goods: stationery, pens and notebooks, beauty and skincare with a tester bar, kitchen gadgets and gift wrapping. The place for small, well-made souvenirs.",
+   "t": "11:00 to 21:00 with the rest of Marronnier Gate Ginza 2. Tax-free with your passport.",
+   "m": "Ginza Loft Marronnier Gate Ginza 2"
+  },
+  "bic-yurakucho": {
+   "n": "Bic Camera Yūrakuchō",
+   "l": "ビックカメラ 有楽町店",
+   "w": "A huge electronics store beside Yūrakuchō Station: cameras, headphones, Japanese gadgets, toys, and a drinks floor with a wide range of Japanese whisky and sake at fair prices.",
+   "t": "10:00 to 22:00. Tax-free counter, bring your passport.",
+   "m": "Bic Camera Yurakucho"
+  },
+  "taxfree": {
+   "n": "Tax-free shopping",
+   "l": "免税",
+   "w": "Tourists can skip Japan's 10% consumption tax in shops showing the Tax-Free sign. On your dates the old system still applies: the tax comes off at the till. Spend at least ¥5,000 before tax in one store on one day, and show your physical passport.",
+   "t": "Consumables (food, cosmetics, alcohol) go into a sealed bag that must stay sealed until you leave Japan. From 1 November 2026 Japan switches to a refund at the airport instead, so this trip uses the simple old way.",
+   "m": "Tax free shop Ginza"
+  },
+  "hakone": {
+   "n": "Hakone",
+   "l": "箱根",
+   "w": "Mountain hot spring country about 85 minutes from Shinjuku on the Odakyū Romancecar. A loop by train, cable car and ropeway takes in the volcanic vents at Ōwakudani, a pirate-ship cruise on Lake Ashi and, on a clear day, Mt Fuji.",
+   "t": "A full day. The Hakone Freepass covers most of the loop. The Ōwakudani ropeway shuts when volcanic gas levels rise, so check on the day.",
+   "m": "Hakone Yumoto Station"
+  },
+  "nikko": {
+   "n": "Nikkō",
+   "l": "日光",
+   "w": "Mountain town two hours north of Asakusa on the Tōbu limited express, home to the lavishly gilded Tōshō-gū shrine in a forest of giant cedars. Higher up, Lake Chūzenji and Kegon Falls, where the autumn colour arrives in October, well before Tokyo.",
+   "t": "A long full day. Tōbu trains leave from Asakusa. Shrines close about 16:00 to 17:00 in autumn.",
+   "m": "Nikko Toshogu"
+  }
+ },
+ "areas": [
+  {
+   "key": "ginza",
+   "name": "Ginza and east Tokyo",
+   "pat": "g",
+   "kanji": "銀座",
+   "meta": "With Hibiya, Yūrakuchō, Marunouchi, Shimbashi, Tsukiji, Toranomon, Azabudai, Asakusa, Kuramae and Odaiba.",
+   "days": [
+    [
+     "d20",
+     "Tue 20"
+    ],
+    [
+     "d24",
+     "Sat 24"
+    ],
+    [
+     "d25",
+     "Sun 25"
+    ],
+    [
+     "d26",
+     "Mon 26"
+    ]
+   ],
+   "must": [
+    {
+     "dish": "Monjayaki",
+     "line": "Tokyo's gooey, griddle-fried batter of cabbage and seafood, scraped off the hotplate with tiny spatulas.",
+     "where": "kondo"
+    },
+    {
+     "dish": "Tempura at the counter",
+     "line": "Each piece fried to order and handed straight across, crisp, light and never greasy.",
+     "where": "yamanoue"
+    },
+    {
+     "dish": "Katsu sando",
+     "line": "A thick pork cutlet in soft white bread with tonkatsu sauce, the classic Tokyo takeaway.",
+     "where": "bairin"
+    },
+    {
+     "dish": "Anpan",
+     "line": "Ginza's own invention: a soft bun of sweet red bean paste, topped with a salted cherry blossom.",
+     "where": "kimuraya"
+    },
+    {
+     "dish": "Menchi katsu",
+     "line": "A crumbed, deep-fried mince patty, eaten hot in the street in Asakusa.",
+     "where": "asakusa-menchi"
+    },
+    {
+     "dish": "Yakitori under the tracks",
+     "line": "Skewers off the charcoal and a cold beer while the trains rumble overhead.",
+     "where": "tonton"
+    }
+   ],
+   "items": [
+    {
+     "group": "Eat",
+     "key": "tsumugi",
+     "time": "1 hr",
+     "one": "18-dish temple breakfast in Tsukiji",
+     "fits": "Sun 25 slow breakfast. Taxi 5 minutes from the hotel, be there by 08:00 at the weekend, then taxi on to the East Gardens. Sotoroku on the hotel's 18F (buffet to 10:00) is the no-effort fallback.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "arabica-azabudai",
+     "time": "30 min",
+     "one": "Good coffee by Kamiyachō Station",
+     "fits": "Mon 26 after teamLab at about 10:40, if you skip Sky Room or want a coffee for the train. In the basement of Garden Plaza, on your way to Kamiyachō.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kimuraya",
+     "time": "20 min",
+     "one": "The bakery that invented anpan, 1874",
+     "fits": "Sun 25 afternoon in Ginza. It is on the 4-chōme crossing beside the Wakō clock tower. Grab a cherry blossom anpan as you pass.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "bairin",
+     "time": "45 min",
+     "one": "Ginza's oldest tonkatsu and a famous katsu sando",
+     "fits": "Sun 25 'eat in the complexes' evening, ten minutes from the hotel. Or Mon 26 after Shimbashi: take away a katsu sando for the 06:22 start to Haneda.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "tsunahachi-matsuya",
+     "time": "1 hr",
+     "one": "Walk-in tempura on Matsuya's 8F",
+     "fits": "Sun 25 'eat in the complexes' evening. Matsuya's 8F restaurant floor trades to 22:00, well after the shops close, with an English menu.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "lion",
+     "time": "1.5 hrs",
+     "one": "Japan's oldest beer hall, built 1934",
+     "fits": "Sun 25 dinner if you want something louder than a restaurant floor. On Chūō-dōri in 7-chōme, eight minutes' walk back to the hotel.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kondo",
+     "time": "1.5 hrs",
+     "one": "Monjayaki on Tsukishima's Monja Street",
+     "fits": "Sun 25 dinner as a change from Ginza. Yūrakuchō line from Ginza-itchōme, two stops, or a 10 minute taxi. Open from 11:30 on Sundays.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "yamanoue",
+     "time": "1.5 hrs",
+     "one": "Counter tempura course on Ginza Six 13F",
+     "fits": "Sun 25 nice dinner, no extra travel: book an 18:00 counter seat on TableCheck, after the Ginza Six rooftop. Top of your budget, so check the course price when booking.",
+     "tags": [
+      "¥¥¥",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "sushibus",
+     "time": "1 hr 10 min",
+     "one": "All-you-can-eat sushi on a double-decker tour",
+     "fits": "Sun 25 evening: the 17:00 or 19:00 departure from Kajibashi car park near Tokyo Station, 15 minutes from Ginza. ¥16,000 each, sushi and drinks included.",
+     "tags": [
+      "¥¥¥",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "daikokuya",
+     "time": "45 min",
+     "one": "Classic Asakusa tendon since 1887",
+     "fits": "Mon 26 lunch at about 13:30 after Kappabashi. The queue is shorter after the noon rush. Cash only.",
+     "tags": [
+      "¥",
+      "Walk-in",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "asakusa-menchi",
+     "time": "10 min",
+     "one": "Hot menchi katsu to eat in the street",
+     "fits": "Mon 26, a snack between Kappabashi and Sensō-ji, or instead of a sit-down lunch. Two minutes from Kaminarimon.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "uokin",
+     "time": "1.5 hrs",
+     "one": "Big sashimi platters, Shimbashi seafood izakaya",
+     "fits": "Mon 26 Shimbashi dinner at 19:00. A minute from the station, packed on a Monday night. Order the six-kind sashimi platter.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "tonton",
+     "time": "1 hr",
+     "one": "Smoky skewers under the Yūrakuchō tracks",
+     "fits": "Mon 26 dinner, ten minutes' walk from Shimbashi along the tracks. Or graze here first, then finish in Shimbashi.",
+     "tags": [
+      "¥",
+      "Walk-in",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "star-bar",
+     "time": "1 hr",
+     "one": "Classic Ginza cocktails, the sidecar is the order",
+     "fits": "Sun 25 after dinner. It is closed on Monday, so Sunday is your night for it. Go before 21:00 for a counter seat.",
+     "tags": [
+      "¥¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "bar-high-five",
+     "time": "1 hr",
+     "one": "World-famous bar, no menu, made to your taste",
+     "fits": "Mon 26 after the Shimbashi dinner, ten minutes' walk into Ginza. Closed Sundays, so Monday is your night. Arrive soon after 20:00.",
+     "tags": [
+      "¥¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "peter-bar",
+     "time": "1 hr",
+     "one": "24th floor cocktails over Hibiya Park",
+     "fits": "Sun 25 at dusk (sunset about 16:55) instead of the department store rooftops. Opens 15:00 on Sundays, ten minutes from the hotel.",
+     "tags": [
+      "¥¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "caretta",
+     "time": "20 min",
+     "one": "Free 46th floor view over the bay",
+     "fits": "Any evening on the walk home, five minutes from the hotel. Mon 26 late, a last look at Tokyo lit up before the early flight.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "hamarikyu",
+     "time": "1 to 1.5 hrs",
+     "one": "Bayside garden with a teahouse on the pond",
+     "fits": "Sun 25 instead of the East Gardens, ten minutes' walk from the hotel. Or Tue 20 straight after the Tsukiji breakfast if you finish early: it opens at 09:00, five minutes away.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "kuramae",
+     "time": "45 min",
+     "one": "Bean to bar chocolate in quiet Kuramae",
+     "fits": "Mon 26 between Kappabashi and Sensō-ji, or a dry stop on a wet day. 15 minutes' walk south of Kappabashi.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "yurakucho",
+     "time": "1 to 2 hrs",
+     "one": "Izakaya and yakitori in the railway arches",
+     "fits": "Mon 26 19:00 alternative to Shimbashi, ten minutes' walk. Andy's Shin-Hinomoto by exit C1 is the English-friendly start. Mostly cash.",
+     "tags": [
+      "Cash"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "odaiba",
+     "time": "2 hrs",
+     "one": "Bayside malls, beach and promenade",
+     "fits": "Sat 24, if check-in is quick, go out at 15:00 rather than 16:00 and walk the Odaiba Seaside Park boardwalk before the fireworks. Note the Unicorn Gundam statue ended its display in August 2026.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Massage",
+     "key": "headspa-zen",
+     "time": "1 to 1.5 hrs",
+     "one": "Late head spa in Ginza 2-chōme",
+     "fits": "Sun 25 after the shops close, before a late dinner. Open to 23:00.",
+     "tags": [
+      "Book"
+     ]
+    },
+    {
+     "group": "Massage",
+     "key": "zwei-haus",
+     "time": "1 to 1.5 hrs",
+     "one": "Head spa in Ginza 1-chōme",
+     "fits": "Sun 25 mid afternoon, a break from the department stores. Open 10:00 to 22:00.",
+     "tags": [
+      "Book"
+     ]
+    },
+    {
+     "group": "Massage",
+     "key": "buasai",
+     "time": "1 hr",
+     "one": "Thai massage five minutes from the hotel",
+     "fits": "Sat 24 after the fireworks (open to midnight), or Mon 26 after dinner while you pack in your head.",
+     "tags": []
+    },
+    {
+     "group": "Massage",
+     "key": "yuragi",
+     "time": "1 hr",
+     "one": "Late bodywork in Ginza 7-chōme",
+     "fits": "Mon 26 late after Shimbashi, open to midnight. Legs will need it after Asakusa.",
+     "tags": []
+    }
+   ],
+   "notes": "Kabuki-za's October run ends on 20 October, so there is no kabuki on your Ginza days. Star Bar is closed on Mondays and Bar High Five on Sundays: one each night. Book Tempura Yamanoue (TableCheck) and the Sushi Bus (sushi-bus.com) this week if you want either for Sun 25. The Sushi Bus card needs updating: it is a double-decker with a conveyor belt, all-you-can-eat sushi and drinks for ¥16,000, departures 11:00, 13:00, 15:00, 17:00 and 19:00 from Kajibashi car park, irregular closures for maintenance. Tonton and Monja Kondo hours come from older listings, so check Google Maps on the day. The Unicorn Gundam at DiverCity Odaiba came down at the end of August 2026."
+  },
+  {
+   "key": "japan",
+   "name": "Japan other",
+   "pat": "home",
+   "kanji": "日本",
+   "meta": "Experiences, shopping and day trips that are not tied to one area.",
+   "days": [],
+   "must": [
+    {
+     "dish": "Tamago sando",
+     "line": "A pillowy konbini egg salad sandwich, crusts off, better than it has any right to be.",
+     "where": "konbini"
+    },
+    {
+     "dish": "Konbini fried chicken",
+     "line": "Famichiki or Karaage-kun from the hot case by the till, the perfect late night snack.",
+     "where": "konbini"
+    },
+    {
+     "dish": "Matcha",
+     "line": "Stone-ground green tea, whisked frothy and bitter-sweet, or in parfaits and ice cream.",
+     "where": "nakamura-tokichi"
+    },
+    {
+     "dish": "Wagashi",
+     "line": "Delicate seasonal sweets of bean paste and rice, made to be eaten with matcha.",
+     "where": "toraya"
+    },
+    {
+     "dish": "Sake",
+     "line": "Try a flight of small pours, dry to fruity, then buy the bottle you liked best.",
+     "where": "hasegawa"
+    },
+    {
+     "dish": "Japanese whisky",
+     "line": "Buy a bottle to take home: Japanese labels cost less here, if you can find them.",
+     "where": "bic-yurakucho"
+    }
+   ],
+   "items": [
+    {
+     "group": "Eat",
+     "key": "konbini",
+     "time": "10 min",
+     "one": "Egg sando, onigiri and fried chicken",
+     "fits": "Any morning, or Tue 27 breakfast before the 06:22 walk to Shimbashi. There is a konbini on every block.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "depachika",
+     "time": "45 min",
+     "one": "Department store food halls, Ginza best",
+     "fits": "Sun 25 while you shop Mitsukoshi and Matsuya, for a tasting lap or a picnic dinner in the room. Mon 26 for gifts to take home.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "nakamura-tokichi",
+     "time": "45 min",
+     "one": "Uji matcha parfaits on Ginza Six 4F",
+     "fits": "Sun 25 afternoon break in Ginza Six, before the rooftop garden. Go before 15:00 or after 18:00 to dodge the queue.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "toraya",
+     "time": "45 min",
+     "one": "Imperial wagashi and matcha in Ginza 7-chōme",
+     "fits": "Sun 25 afternoon, open on your dates. A calmer, more traditional alternative to the matcha parfait.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "hasegawa",
+     "time": "30 min",
+     "one": "Sake tasting bar inside Tokyo Station",
+     "fits": "Sat 24 as you come off the Shinkansen at 14:15, before leaving the gates, if you have energy for a quick glass. Or Sun 25 at Tokyo Station with a platform ticket.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "sumo",
+     "time": "2 to 2.5 hrs",
+     "one": "Sumo show with dinner in Ginza",
+     "fits": "Sun 25 at 17:00: Hirakuza Ginza, 1-9-13 Ginza, a daily 17:00 show with a kaiseki dinner, from ¥17,000 each on Klook. Or Mon 26 at 11:00 at Tokyo Sumo Club in Tokyo Tower, straight after teamLab.",
+     "tags": [
+      "¥¥¥",
+      "Book now"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "konparu-yu",
+     "time": "45 min",
+     "one": "Old Ginza public bath, five minutes away",
+     "fits": "Mon 26 at about 18:00, after Asakusa and before the Shimbashi dinner. Closed Sundays.",
+     "tags": [
+      "¥",
+      "Walk-in",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "laqua",
+     "time": "2 to 3 hrs",
+     "one": "Real onsen baths at Tokyo Dome City",
+     "fits": "A wet evening, Sun 25 or Mon 26: Marunouchi line direct from Ginza to Kōrakuen, about 12 minutes. Cheaper after 19:00.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "karaoke-kan",
+     "time": "1 to 2 hrs",
+     "one": "Lost in Translation karaoke rooms, Shibuya",
+     "fits": "A late night in Shibuya, Sat 17 or Mon 19 after Shinjuku. Close to the hotel in Udagawachō.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "purikura",
+     "time": "30 min",
+     "one": "Photo sticker booths, open all night",
+     "fits": "Any Shibuya evening, a minute off Center-gai and close to the hotel. Do it together: couples are fine.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "gachapon",
+     "time": "30 min",
+     "one": "Capsule toys, thousands of machines",
+     "fits": "Any Shibuya evening at #C-pla, or Sun 25 at #C-pla premium in Ginza. Bring ¥100 coins.",
+     "tags": [
+      "¥",
+      "Cash"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "uniqlo-ginza",
+     "time": "1 hr",
+     "one": "Twelve-floor Uniqlo flagship",
+     "fits": "Sun 25 in Ginza while Chūō-dōri is car-free. Passports for tax-free.",
+     "tags": [
+      "¥¥"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "daiso-ginza",
+     "time": "45 min",
+     "one": "Flagship 100 yen shop, souvenirs and snacks",
+     "fits": "Sun 25 in Ginza, same building as Loft. Good for cheap gifts and an extra bag.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "loft-ginza",
+     "time": "1 hr",
+     "one": "Stationery, beauty and clever gadgets",
+     "fits": "Sun 25 in Ginza, same building as Daiso. Loft's beauty floor has a tester bar.",
+     "tags": [
+      "¥¥"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "bic-yurakucho",
+     "time": "1 hr",
+     "one": "Electronics, cameras and Japanese whisky",
+     "fits": "Sun 25 on the walk from Tokyo International Forum into Ginza, or Mon 26 evening for whisky to fly home. Tax-free.",
+     "tags": [
+      "¥¥"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "taxfree",
+     "time": "5 min",
+     "one": "How to skip the 10% tax",
+     "fits": "Any shopping day. Carry your passport, not a copy, and keep sealed bags sealed until you are out of Japan.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "hakone",
+     "time": "Full day",
+     "one": "Onsen, Lake Ashi and Fuji views",
+     "fits": "Not in the plan. A whole day from Shibuya via Shinjuku, so only if you drop Kamakura and Yokohama.",
+     "tags": []
+    },
+    {
+     "group": "Further out",
+     "key": "nikko",
+     "time": "Full day",
+     "one": "Gilded shrines and October colour",
+     "fits": "Not in the plan. Tōbu trains leave from Asakusa, so it would replace the Mon 26 Asakusa day.",
+     "tags": []
+    }
+   ],
+   "notes": "No sumo tournament runs on your dates (Tokyo's was in September, the next is Kyushu in November), so a show is the way to see it. Hirakuza Ginza bookings within 21 days refund only 50%, and nothing within 7 days, so decide this week. The sumo card's tip should become: Hirakuza Ginza, 1-9-13 Ginza, show daily 17:00 (plus Tuesdays 20:30), about 2 hours 15 minutes with a kaiseki dinner, Standard ¥17,000, Premium ¥21,000, VIP ¥27,000, book on Klook or the board outside. Alternative: Tokyo Sumo Club Entertainment, Tokyo Tower FootTown 5F, shows 11:00, 14:00, 17:00, 20:00, ¥16,000 to ¥25,000 with chanko and a drink, on TableCheck. Spa LaQua refuses entry with tattoos. Japan's tax-free system changes on 1 November 2026; everything you buy in October uses the current tax-off-at-the-till system. Kakigōri is a summer dish and mostly off menus by late October, so it is left out."
+  }
+ ]
+}

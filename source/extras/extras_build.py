@@ -48,6 +48,7 @@ for a in data['areas']:
  <div class="band"><i class="pat pat-{a["pat"]}"></i></div>
  <div class="ah"><p class="kanji">{a["kanji"]}</p><div><h2>{H.escape(a["name"])}</h2><p class="meta">{H.escape(a["meta"])}</p>
   <p class="udays"><span>In the itinerary:</span> {days}</p></div></div>
+ {f'<p class="unote"><b>Good to know</b>{H.escape(a["notes"])}</p>' if a.get('notes') else ''}
  {f'<div class="must"><p class="ugrp">Must try here</p><ul>{must}</ul></div>' if must else ''}
  <ol class="rows">{"".join(rows)}</ol>
 </section>''')
@@ -75,6 +76,7 @@ header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bot
 .must{margin-top:1rem}.must li{display:grid;padding:.6rem 0;border-bottom:1px solid var(--line)}
 .must b{font:700 1rem/1.25 var(--display)}.must span{color:var(--mute);font-size:.92rem}.must em{font-style:normal;font-size:.86rem;margin-top:.15rem}
 .area .rows{margin-top:1rem;margin-bottom:1.2rem}
+.unote{margin-top:1rem;padding:.65rem .8rem;border:1.5px dashed var(--ink);font-size:.88rem;line-height:1.45}.unote b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.15rem}
 .ugrp{font:700 .72rem var(--body);text-transform:uppercase;letter-spacing:.08em;padding:1rem 0 .35rem;border-bottom:1.5px solid var(--ink)}
 .must .ugrp,.rows .ugrp:first-child{padding-top:.4rem}
 .uwhat{display:block;font-weight:400;margin-top:.15rem}.ufit b{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-right:.25rem;color:var(--ink)}
@@ -85,7 +87,7 @@ header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bot
  .ah{margin-top:2.5mm;gap:4mm}.ah .kanji{font-size:24pt}.ah h2{font-size:16pt}.ah .meta{font-size:8.6pt}
  .udays{font-size:8pt}.udays a{border:0;padding:0;font-weight:400;font-size:8pt}
  .must{margin-top:2.5mm}.must li{grid-template-columns:30mm 1fr 1fr;gap:4mm;padding:1.1mm 0;break-inside:avoid}.must b{font-size:9.5pt}.must span,.must em{font-size:8.6pt}
- .area .rows{margin-top:2.5mm;margin-bottom:4mm}
+ .area .rows{margin-top:2.5mm;margin-bottom:4mm}.unote{margin-top:2.5mm;padding:1.6mm 2.5mm;font-size:8.4pt;break-inside:avoid}.unote b{font-size:6.8pt}
  .ugrp{font-size:7pt;padding:2.5mm 0 .8mm;break-after:avoid}
  .urow{grid-template-columns:20mm 1fr 1.25fr;padding:1.3mm 0}.urow .p,.urow .t{font-size:9.5pt}.urow .n{font-size:8.6pt}
 }'''
@@ -97,7 +99,7 @@ chipjs = '''(function(){
  var chips=[].slice.call(document.querySelectorAll('a.achip'));
  if(!('IntersectionObserver' in window))return;
  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id=e.target.id;
-  chips.forEach(function(c){var on=c.dataset.a===id;c.classList.toggle('on',on);if(on)c.scrollIntoView({inline:'nearest',block:'nearest'})})}})},{rootMargin:'-30% 0px -60% 0px'});
+  chips.forEach(function(c){var on=c.dataset.a===id;c.classList.toggle('on',on);if(on){var bx=c.parentNode,l=c.offsetLeft-bx.offsetLeft;if(l<bx.scrollLeft||l+c.offsetWidth>bx.scrollLeft+bx.clientWidth)bx.scrollLeft=l-16}})}})},{rootMargin:'-30% 0px -60% 0px'});
  document.querySelectorAll('.area').forEach(function(a){io.observe(a)});
 })();'''
 total = sum(counts.values())

@@ -1,0 +1,604 @@
+{
+ "cards": {
+  "fuunji": {
+   "n": "Fūunji",
+   "l": "風雲児 新宿本店",
+   "w": "A small counter just off the south side of Shinjuku Station that many rate as Tokyo's best tsukemen. Thick noodles come cold beside a dense chicken and fish dipping broth. Ask for soup at the end to thin what is left into a drinkable bowl.",
+   "t": "11:00 to 15:00 and 17:00 to 21:00, closes early if sold out. Closed Sundays and public holidays, so Monday is fine. No bookings, expect a queue. Noodles in 200g, 300g or 400g.",
+   "m": "Fuunji tsukemen Shinjuku"
+  },
+  "tsunahachi": {
+   "n": "Tempura Tsunahachi Shinjuku",
+   "l": "天ぷら 新宿つな八 総本店",
+   "w": "A Shinjuku institution frying tempura in sesame oil since the 1920s, in an old wooden house two streets from Shinjuku-sanchōme. Sit at the counter and the prawns, fish and vegetables come out of the oil one at a time. The anago (sea eel) is the house signature.",
+   "t": "Open daily, about 11:00 to 22:30. Lunch about ¥2,500, dinner about ¥4,000 a head. Walk-in: counter seats turn over fast.",
+   "m": "Tempura Shinjuku Tsunahachi Sohonten 3-31-8 Shinjuku"
+  },
+  "nagi-goldengai": {
+   "n": "Niboshi Ramen Nagi Golden Gai",
+   "l": "すごい煮干ラーメン凪 新宿ゴールデン街店 本館",
+   "w": "A tiny ramen shop up a steep stair on the second floor of an old wooden Golden Gai house. The broth is boiled for 12 hours from dried sardines, so it is intensely fishy and savoury, with a mix of curly and wide flat noodles.",
+   "t": "Open 24 hours. Niboshi ramen ¥1,350. Walk-in, a handful of seats, so a short wait at night.",
+   "m": "Nagi Shinjuku Golden Gai Honkan"
+  },
+  "takano-parlour": {
+   "n": "Takano Fruit Parlour",
+   "l": "タカノフルーツパーラー 新宿本店",
+   "w": "The parlour two floors under Takano, Shinjuku's famous luxury fruit shop. It is where Tokyo goes for the fruit parfait: tall glasses layered with perfect seasonal fruit and cream. The muskmelon parfait is the showpiece; the mixed fruit one is the sensible order.",
+   "t": "B2F, Takano Shinjuku Honten. 11:00 to 21:00, last orders 20:30, daily (at last report in 2022, check on Google Maps). Parfaits from about ¥1,100, muskmelon about ¥3,080. Walk-in.",
+   "m": "Takano Fruit Parlour Shinjuku Honten"
+  },
+  "kakiden": {
+   "n": "Kakiden",
+   "l": "京懐石 柿傳",
+   "w": "A Kyoto style kaiseki restaurant across four floors of a building beside Shinjuku Station's east exit. More than 40 years old, with a sign written by the novelist Kawabata Yasunari and a tea ceremony tradition. Seasonal courses of small, beautiful dishes, in tatami rooms or at tables.",
+   "t": "Dinner 17:00 to 22:00, last orders 20:00. Open daily. Dinner courses about ¥11,000 (Flower) and ¥16,500 (Snow). Book online in English through AutoReserve. Full charge for same day cancels.",
+   "m": "Kakiden Yasuyo Building 3-37-11 Shinjuku"
+  },
+  "benfiddich": {
+   "n": "Bar BenFiddich",
+   "l": "バー ベンフィディック",
+   "w": "A dim, 17 seat counter on the ninth floor of a plain office block in Nishi-Shinjuku, and one of the world's best known bars. Owner Hiroyasu Kayama grows herbs on his family farm and grinds them for drinks in a mortar. There is no menu: say what you like and he makes it.",
+   "t": "Mon to Sat 18:00 to 02:00, closed Sunday. Cover charge. Walk-in on a Monday is usually fine; booking helps at weekends. Pricey.",
+   "m": "Bar BenFiddich 1-13-7 Nishi-Shinjuku 9F"
+  },
+  "ny-bar": {
+   "n": "New York Bar",
+   "l": "ニューヨーク バー",
+   "w": "The jazz bar on the 52nd floor of the Park Hyatt, made famous by Lost in Translation. It reopened in December 2025 after the hotel's renovation. Floor to ceiling windows over the whole city, live jazz in the evening and classic cocktails.",
+   "t": "Mon to Wed 17:00 to midnight, Thu to Sat to 01:00, Sun to 23:00. A music charge applies after 20:00. Smart casual enforced. Book for a window seat.",
+   "m": "New York Bar Park Hyatt Tokyo"
+  },
+  "tocho-mapping": {
+   "n": "Tokyo Night and Light",
+   "l": "TOKYO Night & Light",
+   "w": "A free projection mapping show played across the whole east face of the Tokyo Metropolitan Government Building. Each show runs about ten minutes, with music, and you watch from the plaza below.",
+   "t": "Free, no tickets. October shows at 18:00, 18:30, 19:00, 19:30, 20:00, 20:30 and 21:30. Cancelled in storms. Ten minutes' walk from the west exit.",
+   "m": "Tokyo Metropolitan Government Building Citizens Plaza"
+  },
+  "beams-japan": {
+   "n": "Beams Japan",
+   "l": "ビームス ジャパン 新宿",
+   "w": "Five floors of the best of Japanese making, curated by the Beams fashion group. Souvenirs and craft on the ground floor, Japanese denim and labels upstairs, and the Fennica floor of folk craft, ceramics and furniture.",
+   "t": "11:00 to 20:00 daily. Passports for tax-free.",
+   "m": "BEAMS JAPAN Shinjuku 3-32-6 Shinjuku"
+  },
+  "shin-okubo": {
+   "n": "Shin-Ōkubo",
+   "l": "新大久保",
+   "w": "Tokyo's Koreatown, one stop north of Shinjuku. Streets of K-pop shops, Korean skincare, street food stalls (cheese corn dogs, hotteok, tteokbokki) and fried chicken and pork belly restaurants.",
+   "t": "Shops mostly open 10:00 to 11:00. Weekday mornings are quietest, weekend afternoons packed. JR Yamanote one stop from Shinjuku, or a 15 minute walk.",
+   "m": "Shin-Okubo Station Koreatown"
+  },
+  "thermae-yu": {
+   "n": "Thermae-yu",
+   "l": "テルマー湯",
+   "w": "A large, modern hot spring bath in Kabukichō with six indoor baths and an open-air one, separate for men and women. A rare onsen in the city that lets tattooed visitors in, covered.",
+   "t": "Open 24 hours. Mon to Thu ¥2,700 (¥2,200 online), plus a late night surcharge. Foreign visitors show a passport. Tattoos must be covered; cover patches sold at the desk.",
+   "m": "Thermae-yu Kabukicho"
+  },
+  "new-grand-cafe": {
+   "n": "The Café, Hotel New Grand",
+   "l": "ホテルニューグランド ザ・カフェ",
+   "w": "The coffee house of Yokohama's grand 1927 hotel, facing Yamashita Park. This is where spaghetti Napolitan, seafood doria and pudding à la mode were invented for post-war guests, and all three are still on the menu in a dining room that has barely changed.",
+   "t": "10:00 to 21:30, last orders 21:00. Walk-in. Hotel prices, but a casual room.",
+   "m": "Hotel New Grand The Cafe Yokohama"
+  },
+  "edosei": {
+   "n": "Edosei Chinatown",
+   "l": "江戸清 中華街本店",
+   "w": "Chinatown's famous pork bun shop. The signature nikuman is huge, about twice the size of a convenience store bun, with around ten other fillings including prawn chilli and braised pork belly. Eat it hot on the street.",
+   "t": "Weekdays 10:00 to 19:30, Sat to 21:00, Sun to 20:30. Open daily. About ¥1,000 for a couple of buns. Walk-in, takeaway.",
+   "m": "Edosei Chukagai Honten 192 Yamashitacho"
+  },
+  "jukeihanten": {
+   "n": "Jukeihanten",
+   "l": "重慶飯店 本館",
+   "w": "A long running Sichuan restaurant in Chinatown, known for its mapo tofu made with long aged chilli bean paste. Also a Sichuan hot pot with two broths. A proper sit-down meal without the banquet formality.",
+   "t": "Weekdays 11:30 to 15:00 and 17:00 to 21:00 (last orders 20:00), Fri to 22:00. Open daily. Dinner about ¥6,000 to ¥12,000 a head.",
+   "m": "Jukeihanten Honkan 164 Yamashitacho Yokohama"
+  },
+  "manchinro": {
+   "n": "Manchinrō",
+   "l": "萬珍樓 本店",
+   "w": "One of Chinatown's grand old Cantonese restaurants, dating from the 1890s. Banquet courses run from prawns in mayonnaise sauce and Peking duck to braised shark fin and abalone, served at round tables in an ornate dining room.",
+   "t": "11:00 to 22:00, last orders 21:30. Closed days irregular. Dinner courses ¥8,000, ¥11,000 and ¥18,000 a head plus 10% service, minimum two people. Book online through Savor Japan (English).",
+   "m": "Manchinro Honten Yokohama Chinatown"
+  },
+  "heichinro": {
+   "n": "Heichinrō",
+   "l": "聘珍樓 横浜本店",
+   "w": "Said to be the oldest Chinese restaurant in Japan, founded about 130 years ago on Chinatown's main street. Classic Cantonese cooking and well regarded dim sum, plus Peking duck that takes three days to prepare.",
+   "t": "Weekdays 11:00 to 15:00 and 17:00 to 22:00, last orders 21:00. Closed days vary. Dinner from about ¥10,000 a head.",
+   "m": "Heichinro Yokohama Honten"
+  },
+  "hammerhead": {
+   "n": "Yokohama Hammerhead",
+   "l": "横浜ハンマーヘッド",
+   "w": "A pier building next to the old Hammerhead crane on the Minato Mirai waterfront, with more than 20 restaurants and food shops, many with open kitchens where you watch the food being made.",
+   "t": "Daily about 11:00 to 23:00, shops vary. Walk-in. About 12 minutes' walk from the Red Brick Warehouses.",
+   "m": "Yokohama Hammerhead Shinko"
+  },
+  "sea-guardian": {
+   "n": "Bar Sea Guardian II",
+   "l": "シーガーディアンII",
+   "w": "The British style bar of the Hotel New Grand, all dark wood and leather, opposite Yamashita Park. A classic hotel bar for a proper cocktail before dinner in Chinatown, five minutes away.",
+   "t": "17:00 to 23:00, last orders 22:30. Walk-in.",
+   "m": "Bar Sea Guardian II Hotel New Grand"
+  },
+  "sirius": {
+   "n": "Sky Lounge Sirius",
+   "l": "シリウス",
+   "w": "The lounge on the 70th floor of the Yokohama Royal Park Hotel, at the top of the Landmark Tower. Cocktails, a pianist at night and a view straight down over the harbour, the Ferris wheel and the Bay Bridge.",
+   "t": "Evenings 17:30 to 22:30, drinks last orders 21:30. Book a window table online on the hotel site. Open daily.",
+   "m": "Sky Lounge Sirius Yokohama Royal Park Hotel"
+  },
+  "osanbashi": {
+   "n": "Ōsanbashi Pier rooftop",
+   "l": "大さん橋 屋上",
+   "w": "The rooftop of Yokohama's cruise terminal, a rolling timber deck shaped like waves that juts into the harbour. It gives the best free view of the Minato Mirai skyline, the Ferris wheel and the Bay Bridge, and is lovely at dusk.",
+   "t": "Free and open 24 hours. Ten minutes' walk from Yamashita Park.",
+   "m": "Osanbashi Yokohama International Passenger Terminal rooftop"
+  },
+  "sky-garden": {
+   "n": "Sky Garden, Landmark Tower",
+   "l": "スカイガーデン",
+   "w": "The observation deck on the 69th floor of the Landmark Tower, 273 metres up. A 360 degree view of the port and Minato Mirai, and Mount Fuji and Tokyo's towers on a clear day.",
+   "t": "Weekdays 10:00 to 21:00, last entry 20:30. ¥1,000. Next to Sakuragichō Station.",
+   "m": "Yokohama Landmark Tower Sky Garden"
+  },
+  "marine-tower": {
+   "n": "Yokohama Marine Tower",
+   "l": "横浜マリンタワー",
+   "w": "A 1961 lattice tower at the end of Yamashita Park, refurbished in 2022, with a deck 94 metres up looking back at the Minato Mirai skyline and the Bay Bridge. Lower and more intimate than the Landmark Tower.",
+   "t": "10:00 to 22:00. Weekday day ticket ¥1,000, night ticket (from 18:00) ¥1,200, cheaper online. One minute from Motomachi-Chūkagai Station, exit 4.",
+   "m": "Yokohama Marine Tower"
+  },
+  "yamate": {
+   "n": "Yamate Bluff and Harbor View Park",
+   "l": "山手 港の見える丘公園",
+   "w": "The hill above Chinatown where foreign merchants built their homes after the port opened in 1859. A quiet walk past Western houses, the foreigners' cemetery and Harbor View Park, which looks out over the port to the Bay Bridge.",
+   "t": "Western houses free, 09:30 to 17:00, each closed one Wednesday a month. Park always open. Uphill from Motomachi-Chūkagai Station.",
+   "m": "Harbor View Park Yokohama"
+  },
+  "motomachi": {
+   "n": "Motomachi Shopping Street",
+   "l": "元町商店街",
+   "w": "A tidy, old fashioned shopping street at the foot of the Bluff, which grew up serving the foreign residents of Yamate. Boutiques, bakeries, leather and homewares, and the birthplace of the late 1970s 'Hamatora' style.",
+   "t": "Shop hours vary. Next to Motomachi-Chūkagai Station, two minutes from Chinatown.",
+   "m": "Motomachi Shopping Street Yokohama"
+  }
+ },
+ "areas": [
+  {
+   "key": "shinjuku",
+   "name": "Shinjuku",
+   "pat": "s",
+   "kanji": "新宿",
+   "meta": "East and west Shinjuku, Kabukichō, Golden Gai, Shinjuku-sanchōme, Nishi-Shinjuku and Shin-Ōkubo.",
+   "days": [
+    [
+     "d19",
+     "Mon 19"
+    ]
+   ],
+   "must": [
+    {
+     "dish": "Tsukemen",
+     "line": "Thick cold noodles dipped into a rich, concentrated hot broth.",
+     "where": "fuunji"
+    },
+    {
+     "dish": "Tempura",
+     "line": "Prawns, fish and vegetables in a whisper of batter, straight from the oil.",
+     "where": "tsunahachi"
+    },
+    {
+     "dish": "Niboshi ramen",
+     "line": "Ramen built on dried sardines: bold, briny and very Tokyo.",
+     "where": "nagi-goldengai"
+    },
+    {
+     "dish": "Fruit parfait",
+     "line": "Japan's prized fruit layered in a tall glass with cream and ice cream.",
+     "where": "takano-parlour"
+    },
+    {
+     "dish": "Kaiseki",
+     "line": "A seasonal procession of small, exquisite courses.",
+     "where": "kakiden"
+    },
+    {
+     "dish": "Depachika sweets",
+     "line": "Wagashi and pastries boxed like jewellery in the department store basement.",
+     "where": "isetan"
+    }
+   ],
+   "items": [
+    {
+     "group": "Eat",
+     "key": "fuunji",
+     "time": "45 min incl. queue",
+     "one": "Tokyo's favourite tsukemen, near the south exit",
+     "fits": "Mon 19 at 17:00 when it reopens, as a filling start before Omoide Yokochō. Open Mondays, closed Sundays.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "tsunahachi",
+     "time": "1 hr",
+     "one": "Tempura counter in sesame oil since the 1920s",
+     "fits": "Mon 19 dinner instead of grazing at Omoide. On the east side near Shinjuku-sanchōme, so it suits the walk from Kabukichō towards Golden Gai.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "nagi-goldengai",
+     "time": "30 min",
+     "one": "Intense sardine ramen up a Golden Gai stair",
+     "fits": "Mon 19 at 21:00, a late bowl in Golden Gai before the Fukutoshin line home. Open all night.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "takano-parlour",
+     "time": "45 min",
+     "one": "Fruit parfaits under Shinjuku's luxury fruit shop",
+     "fits": "Mon 19 at 16:45 after the 3D cat, three minutes away. Or dessert after dinner, last orders 20:30.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "isetan",
+     "time": "45 min",
+     "one": "Tokyo's grandest depachika food hall",
+     "fits": "Mon 19 at 16:45, beside Shinjuku-sanchōme, for sweets and a snack before the evening. Also a rainy day stop.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "kakiden",
+     "time": "2 hrs",
+     "one": "Kyoto kaiseki courses by the east exit",
+     "fits": "Mon 19 special dinner at 18:00 in place of Omoide, then Kabukichō and Golden Gai after. Last orders 20:00.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "benfiddich",
+     "time": "1 hr",
+     "one": "World famous farm-to-glass cocktail counter",
+     "fits": "Mon 19 nightcap after Golden Gai, 15 minutes' walk west. Open to 02:00 and Monday is a quiet night. Taxi home after the trains.",
+     "tags": [
+      "¥¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "ny-bar",
+     "time": "1 hr",
+     "one": "52nd floor jazz bar from Lost in Translation",
+     "fits": "Mon 19 at 17:00 for sunset (about 17:00) instead of the 3D cat, then down to Omoide. Arrive before 20:00 to skip the music charge.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "tocho",
+     "time": "45 min",
+     "one": "Free deck 202 metres up in west Shinjuku",
+     "fits": "Mon 19 at 16:15 for dusk, leaving the hotel at 15:45. Both decks are open that day. Then ten minutes' walk to Omoide Yokochō for 17:30.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "gyoen",
+     "time": "2 hrs",
+     "one": "Formal gardens and lawns by Shinjuku",
+     "fits": "Closed Mondays, so not on Mon 19. Works as a swap for Sun 18 morning instead of Meiji Jingū. Closes 16:00 in October.",
+     "tags": []
+    },
+    {
+     "group": "Shopping",
+     "key": "beams-japan",
+     "time": "1 hr",
+     "one": "Five floors of Japanese craft and labels",
+     "fits": "Mon 19 at 16:45 if you come early, five minutes from the 3D cat. Closes 20:00.",
+     "tags": []
+    },
+    {
+     "group": "Night",
+     "key": "tocho-mapping",
+     "time": "20 min",
+     "one": "Free projection show on the Tocho towers",
+     "fits": "Mon 19 at 18:00, pairs with the deck: leave Omoide at 17:45, watch, then head east to Kabukichō by 18:45.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Night",
+     "key": "thermae-yu",
+     "time": "1.5 hrs",
+     "one": "Big hot spring bath in Kabukichō",
+     "fits": "Mon 19 late, a soak after Golden Gai. Open all night, but the late surcharge applies, so earlier is cheaper.",
+     "tags": [
+      "¥¥"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "shin-okubo",
+     "time": "2 hrs",
+     "one": "Koreatown: K-pop, skincare, street food",
+     "fits": "One stop on the Yamanote. Mon 19 at 15:30 instead of resting at the hotel, then walk down to Shinjuku for 16:45.",
+     "tags": []
+    }
+   ],
+   "notes": "Shinjuku Gyoen is closed on Mondays, so it cannot go on Mon 19. Its card says gates close at 16:30 in October: they close at 16:00 (greenhouse 15:30). Both Tocho decks are open on Mon 19 (North closes the 2nd and 4th Mondays, 12 and 26 Oct; South the 1st and 3rd Tuesdays). Projection mapping in October skips the 21:00 show. Fūunji and BenFiddich close on Sundays, fine for Monday. Takano Fruit Parlour hours are from 2022, check on the day. Nothing here needs booking this week; book Kakiden or a New York Bar window seat if you want them."
+  },
+  {
+   "key": "yokohama",
+   "name": "Yokohama and Kamakura",
+   "pat": "s",
+   "kanji": "横浜",
+   "meta": "Minato Mirai, Chinatown, Yamashita Park, Motomachi and the Yamate Bluff, with Kamakura further out.",
+   "days": [
+    [
+     "d20",
+     "Tue 20"
+    ]
+   ],
+   "must": [
+    {
+     "dish": "Nikuman",
+     "line": "A giant steamed pork bun, the Chinatown street snack.",
+     "where": "edosei"
+    },
+    {
+     "dish": "Spaghetti Napolitan",
+     "line": "Ketchup spaghetti with ham and peppers, a Yokohama hotel invention.",
+     "where": "new-grand-cafe"
+    },
+    {
+     "dish": "Pudding à la mode",
+     "line": "Crème caramel dressed with fruit and cream, born at the same hotel.",
+     "where": "new-grand-cafe"
+    },
+    {
+     "dish": "Mapo tofu",
+     "line": "Silky tofu in a numbing, chilli bean sauce.",
+     "where": "jukeihanten"
+    },
+    {
+     "dish": "Peking duck",
+     "line": "Crisp lacquered skin rolled in thin pancakes, the banquet centrepiece.",
+     "where": "heichinro"
+    },
+    {
+     "dish": "Shirasu-don",
+     "line": "Tiny local whitebait piled on rice, Kamakura's signature dish.",
+     "where": "komachi"
+    }
+   ],
+   "items": [
+    {
+     "group": "Eat",
+     "key": "new-grand-cafe",
+     "time": "1 hr",
+     "one": "Napolitan and pudding à la mode, where both began",
+     "fits": "Tue 20 lunch at 13:00, facing Yamashita Park, so the afternoon walk into Chinatown starts at the door.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "hammerhead",
+     "time": "1 hr",
+     "one": "Waterfront pier of open kitchen restaurants",
+     "fits": "Tue 20 lunch at 13:00 if you would rather stay in Minato Mirai, 12 minutes from the Red Brick Warehouses.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "edosei",
+     "time": "15 min",
+     "one": "Chinatown's giant pork buns, eaten on the street",
+     "fits": "Tue 20 afternoon as you reach Chinatown, a snack before dinner. Closes 19:30 on weekdays.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "jukeihanten",
+     "time": "1.5 hrs",
+     "one": "Sichuan mapo tofu and hot pot",
+     "fits": "Tue 20 Chinatown dinner at 17:30, the relaxed choice. Weekday last orders 20:00.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "heichinro",
+     "time": "1.5 hrs",
+     "one": "Japan's oldest Chinese restaurant, Cantonese",
+     "fits": "Tue 20 Chinatown dinner at 17:30, on the main street. Good for Peking duck and dim sum.",
+     "tags": [
+      "¥¥¥"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "manchinro",
+     "time": "2 hrs",
+     "one": "Grand Cantonese banquet, Chinatown since the 1890s",
+     "fits": "Tue 20 special dinner at 17:30. The ¥11,000 course is the sweet spot. Book a table this month.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "sea-guardian",
+     "time": "45 min",
+     "one": "Classic British bar in the 1927 New Grand",
+     "fits": "Tue 20 at 17:00, a pre-dinner cocktail five minutes from Chinatown.",
+     "tags": [
+      "¥¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "sirius",
+     "time": "1 hr",
+     "one": "70th floor lounge over the harbour",
+     "fits": "Only if you flip Tue 20: Chinatown for lunch, then Minato Mirai at dusk with a drink here from 17:30.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "osanbashi",
+     "time": "30 min",
+     "one": "Free wave-shaped deck facing the skyline",
+     "fits": "Tue 20 afternoon, on the harbour walk between Red Brick and Yamashita Park. Back after dinner for the night view.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "sky-garden",
+     "time": "45 min",
+     "one": "69th floor deck over the port",
+     "fits": "Tue 20 at 11:30, beside Sakuragichō as you arrive, before the Air Cabin. Fuji on a clear morning.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "marine-tower",
+     "time": "30 min",
+     "one": "Lattice tower deck at the end of Yamashita Park",
+     "fits": "Tue 20 at 19:00 after dinner, a minute from the station, then the 19:30 train. Night tickets from 18:00.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "yamate",
+     "time": "1.5 hrs",
+     "one": "Old foreign hilltop: houses, cemetery, harbour view",
+     "fits": "Tue 20 at 15:30, up from Yamashita Park, then down through Motomachi into Chinatown. Houses close 17:00.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Shopping",
+     "key": "motomachi",
+     "time": "45 min",
+     "one": "Old fashioned boutique street below the Bluff",
+     "fits": "Tue 20 at 16:30, on the way down from Yamate to Chinatown dinner.",
+     "tags": []
+    },
+    {
+     "group": "Further out",
+     "key": "kamakura",
+     "time": "Half day",
+     "one": "Samurai capital: temples, shrine, Great Buddha",
+     "fits": "Dropped from Tue 20, but it could replace Minato Mirai: Tsukiji, then Kamakura from about 11:30, then the JR Yokosuka line to Yokohama for Chinatown dinner.",
+     "tags": []
+    },
+    {
+     "group": "Further out",
+     "key": "kamakura-buddha",
+     "time": "45 min",
+     "one": "The 13th century bronze Buddha, in the open",
+     "fits": "Part of a Kamakura swap on Tue 20. Open 08:00 to 17:00 in October, ¥300, plus ¥50 to go inside.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "hasedera",
+     "time": "1 hr",
+     "one": "Hillside temple with a sea view terrace",
+     "fits": "Five minutes from the Great Buddha, so pair them. 08:00 to 17:00, last entry 16:30, ¥400.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "enoden",
+     "time": "20 min",
+     "one": "Little seaside train between the sights",
+     "fits": "Kamakura Station to Hase, three stops, for the Buddha and Hase-dera. Suica works.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "hachimangu",
+     "time": "45 min",
+     "one": "Kamakura's great shrine up the stone steps",
+     "fits": "Ten minutes' walk from Kamakura Station. Grounds 06:00 to 20:00, free.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Further out",
+     "key": "komachi",
+     "time": "45 min",
+     "one": "Snack and sweet lane to the shrine",
+     "fits": "Between Kamakura Station and Hachimangū, so it is lunch on the way: shirasu and street snacks.",
+     "tags": [
+      "¥"
+     ]
+    }
+   ],
+   "notes": "The Cup Noodles Museum in Minato Mirai is closed on Tuesdays, so it is left out. Weekday Chinatown kitchens close early: Jukeihanten last orders 20:00, Edosei shuts 19:30, which suits the 19:30 train. Manchinrō and Heichinrō have irregular closed days, so check the Tuesday when booking. In Kamakura the Buddha and Hase-dera close at 17:00, so a Kamakura swap needs to reach Kamakura by about 11:30."
+  }
+ ]
+}
