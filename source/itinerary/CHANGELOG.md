@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Tip added, 9 October
+- New tip after Tax-free, "No fakes into Japan": since October 2022, counterfeit or replica branded goods are illegal to bring into Japan even for personal use, in luggage or by post. Customs can seize and destroy them with no compensation. Still 26 PDF pages.
+
 J&HK Extras: cleaner separators, 9 October
 - No rule above a group heading, above the first list heading, or after the last row of a list. Each group heading now has white space above it and one rule below, online and in the PDF.
 

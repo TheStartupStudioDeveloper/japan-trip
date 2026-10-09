@@ -39,3 +39,7 @@ _h += [
  'Take cash. Most bars charge a cover of roughly ¥500 to ¥1,500 each before the first drink, usually posted at the door.',
  'Many bars do not allow photos inside, and some lanes ask for none at all.',
  'Kabukichō on the way: ignore touts, and never follow anyone off the street into a bar.']
+
+# ---------- counterfeit goods (9 Oct) ----------
+_i = [t[0] for t in TIPS].index('Tax-free')
+TIPS.insert(_i + 1, ('No fakes into Japan', 'Since October 2022, bringing counterfeit or replica branded goods into Japan is illegal even for personal use, in your luggage or by post. That covers bags, watches, shoes and clothing. Customs can seize and destroy them on arrival, with no compensation. Leave any knockoffs at home. The vintage luxury stores sell authenticated pieces, so keep the receipts.'))
