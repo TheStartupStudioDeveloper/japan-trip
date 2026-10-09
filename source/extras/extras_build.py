@@ -30,6 +30,9 @@ for body in re.findall(r'<article[^>]*class="day[^"]*"[^>]*>(.*?)</article>', ma
 def pl(k, label=None):
     return f'<a class="pl" href="#" role="button" data-p="{k}">{H.escape(label or P[k]["n"])}</a>'
 
+def hl(t):
+    return re.sub(r'How-to (\d+)', lambda m: f'<a class="hl" href="{MASTER_URL}#h{m.group(1)}">How-to {m.group(1)} in the itinerary</a>', t)
+
 def tag(x):
     cls = ' tag-b' if x == 'Book now' else ' tag-tb' if x == 'Book' else ''
     return f'<span class="tag{cls}">{H.escape(x)}</span>'
@@ -45,7 +48,7 @@ for a in data['areas']:
             rows.append(f'<li class="ugrp">{H.escape(i["group"])}</li>'); cur = i['group']
         rows.append(f'<li class="row urow"><span class="t">{H.escape(i["time"])}</span><div class="w"><p class="p">{pl(i["key"])} '
                     f'{"".join(tag(x) for x in i["tags"])}<span class="uwhat">{H.escape(i["one"])}</span></p>'
-                    f'<p class="n ufit"><b>Fits</b> {H.escape(i["fits"])}</p></div></li>')
+                    f'<p class="n ufit"><b>Fits</b> {hl(H.escape(i["fits"]))}</p></div></li>')
     must = ''.join(f'<li><b>{H.escape(x["dish"])}</b><span>{H.escape(x["line"])}</span><em>Try it: {pl(x["where"])}</em></li>' for x in a.get('must', []))
     days = ' '.join(f'<a href="{MASTER_URL}#{d}">{t}</a>' for d, t in a['days'])
     areas_html.append(f'''<section class="area" id="{a["key"]}">
@@ -77,7 +80,7 @@ header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bot
 .ah .kanji{writing-mode:horizontal-tb;font-size:2.5rem;line-height:1;letter-spacing:0;white-space:nowrap}
 .ah h2{font:800 1.6rem/1.1 var(--display);letter-spacing:-.02em}.ah .meta{margin-top:.15rem;font-size:.9rem}
 .udays{margin-top:.35rem;font-size:.82rem;color:var(--mute)}.udays a{display:inline-block;margin:0 .15rem .2rem 0;padding:.12rem .4rem;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:700;font-size:.76rem}
-.must{margin-top:1rem}.must li{display:grid;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.hl{color:inherit;text-decoration:none;border-bottom:1.5px solid var(--ink)}.must{margin-top:1rem}.must li{display:grid;padding:.6rem 0;border-bottom:1px solid var(--line)}
 .must b{font:700 1rem/1.25 var(--display)}.must span{color:var(--mute);font-size:.92rem}.must em{font-style:normal;font-size:.86rem;margin-top:.15rem}
 .area .rows{margin-top:1rem;margin-bottom:1.2rem}
 .unote{margin-top:1rem;padding:.65rem .8rem;border:1.5px dashed var(--ink);font-size:.88rem;line-height:1.45}.unote b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.15rem}

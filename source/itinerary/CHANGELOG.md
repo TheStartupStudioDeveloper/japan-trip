@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+How-to links, 9 October
+- Every "How-to N" mention in the day plans, checklist, tips and swaps now links straight to that how-to (30 links). Extras links to the itinerary's how-to.
+- Fixed stale numbers left over from the how-to reorder: Mon 19 store hours now How-to 9 (was 3), G's options How-to 10 (was 4), Omoide Yokochō How-to 11 (was 8); Extras Parco now How-to 10 (was 4).
+- howto_links.py runs at the end of build.py and stops the build if a link points to a how-to that doesn't exist.
+
 Tips reworded, 9 October
 - Tax-free: explains the tax is already in the price, so you save the 10% (8% on take-away food and soft drinks), about 9% and 7% off the shelf price. How-to 4 rewritten to match: food and other goods can be combined, restaurant meals never qualify, department store fee about 1.5%.
 - The ¥5 coin: says why (go-en, "good connection").
