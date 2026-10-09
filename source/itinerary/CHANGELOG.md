@@ -5,7 +5,7 @@
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
 J&HK Extras: cleaner separators, 9 October
-- No rule above a group heading or after the last row of a list. Each group heading now has white space above it and one rule below, online and in the PDF.
+- No rule above a group heading, above the first list heading, or after the last row of a list. Each group heading now has white space above it and one rule below, online and in the PDF.
 
 J&HK Extras: all nine areas, 9 October
 - Added Shinjuku, Yokohama and Kamakura, Kyoto, Nara, Osaka, Ginza and east Tokyo, Japan other and Hong Kong. 202 items, about 165 new cards, each area with Must try, Eat, Drink and its own Good to know box (closures on your dates, what to book this week).
