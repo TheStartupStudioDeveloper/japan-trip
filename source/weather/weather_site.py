@@ -1,8 +1,12 @@
 # Builds the GitHub Pages copy of the Trip Weather page into <repo>/weather/.
 # Usage: python3 weather_site.py <weather.html from the claude.ai artifact> [repo dir]
-import sys, os, re, json, asyncio, hashlib
+import sys, os, re, json, asyncio, hashlib, shutil
 SRC = sys.argv[1]; REPO = sys.argv[2] if len(sys.argv) > 2 else '/home/claude/japan-trip'
 DST = os.path.join(REPO, 'weather'); os.makedirs(DST, exist_ok=True)
+sys.path[:0] = [os.path.join(REPO, 'source')]
+import apptools
+PDF = 'JHK-Weather.pdf'
+OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', PDF]
 html = open(SRC, encoding='utf-8').read()
 ver = hashlib.md5(html.encode()).hexdigest()[:10]
 head = ('<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#ffffff">'
@@ -11,6 +15,7 @@ head = ('<meta name="robots" content="noindex, nofollow"><meta name="theme-color
         '<link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" type="image/png" href="icon-192.png">')
 html = re.sub(r'(<meta name=viewport[^>]*>)', lambda m: m.group(1) + head, html, count=1)
 assert 'manifest.webmanifest' in html
+html = apptools.inject(html, 'weather', PDF, OFF, 'Weather')
 html = html.replace('</body>', "<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script></body>", 1)
 open(os.path.join(DST, 'index.html'), 'w', encoding='utf-8').write(html)
 json.dump({"name": "Japan & Hong Kong Trip Weather", "short_name": "J&HK Weather", "start_url": "./", "scope": "./",
@@ -18,17 +23,8 @@ json.dump({"name": "Japan & Hong Kong Trip Weather", "short_name": "J&HK Weather
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
                      {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)
-open(os.path.join(DST, 'sw.js'), 'w').write("""// Network first, cached copy when offline.
-const C = 'wx-""" + ver + """';
-const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
-self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('wx-') && k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
-self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
-  e.respondWith(fetch(e.request).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
-    .catch(() => caches.match(e.request).then(m => m || caches.match('index.html'))));
-});
-""")
+open(os.path.join(DST, 'sw.js'), 'w').write(apptools.sw('wx-' + ver, OFF))
+apptools.render_pdf(os.path.abspath(SRC), os.path.join(DST, PDF), 'J&HK Weather')
 fonts = ''
 ic = '''<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="file:///dev/null"><style>

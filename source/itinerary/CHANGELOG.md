@@ -4,6 +4,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Download PDF and Save offline, 9 October
+- All four apps (Itinerary, Extras, Weather, Expenses) now have a Download PDF and a Save offline button at the top. Each works separately: it downloads that app's own PDF and saves that app for offline use, with a "saved for offline" time.
+- PDFs live next to each app on GitHub and are rebuilt on every update: Japan-Hong-Kong-Master-Itinerary-V2.pdf, extras/JHK-Extras.pdf, weather/JHK-Weather.pdf, expenses/JHK-Expenses.pdf.
+- On claude.ai, Download PDF opens the GitHub PDF; Save offline shows only in the home-screen apps.
+- Shared code in source/apptools.py. Service workers now keep each other's caches (the itinerary's used to clear the others) and the Save offline cache. Both bars are hidden in print.
+
 Itinerary Summary, 9 October
 - "The four legs" page is replaced by the Itinerary Summary: one block per stay with the kanji, dates, nights, sunset and hotel, a day grid of Morning, Afternoon and Evening, and a Can shift list. Fixed or booked blocks are solid black, still to book is dashed, flexible is plain. Names link to their cards; online, each stay links to its J&HK Extras areas.
 - Dropped from that page because they live in the cards, Tips, How-to or day plans: light, closing times, Fuji seats, festival notes, getting around.

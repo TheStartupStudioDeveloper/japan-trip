@@ -2,9 +2,13 @@
 # Usage: python3 expenses_build.py [repo dir]
 #   reads ../expenses.json and the itinerary build (../out/japan-hong-kong-final-itinerary.html) for fonts and styles
 #   writes out/trip-expenses.html (publish to claude.ai) and <repo>/expenses/ (GitHub Pages web app)
-import sys, os, re, json, asyncio, hashlib
+import sys, os, re, json, asyncio, hashlib, shutil
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 REPO = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/japan-trip'
+sys.path[:0] = [os.path.join(REPO, 'source'), ROOT]
+import apptools
+PDF = 'JHK-Expenses.pdf'
+OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', PDF]
 data = json.load(open(os.path.join(ROOT, 'expenses.json'), encoding='utf-8'))
 master = open(os.path.join(ROOT, 'out', 'japan-hong-kong-final-itinerary.html'), encoding='utf-8').read()
 style = re.search(r'<style>(.*?)</style>', master, re.S).group(1)
@@ -33,8 +37,8 @@ body = f'''<header class="wrap cover"><div class="exband" aria-hidden="true"><i 
 <li>In trip order. Pending bookings are counted already, estimates are updated once paid.</li></ul></section>
 <p class="end">Japan &amp; Hong Kong Trip Expenses. Tell Claude a new expense and this page updates.</p></main>'''
 def page(head_extra='', tail=''):
-    return (f'<!doctype html>\n<html lang="en-AU">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-            f'<title>Japan &amp; Hong Kong Trip Expenses</title>\n{head_extra}<style>{style}{extra}</style>\n</head>\n<body>\n{body}\n<script>\n(function(){{\n {js}\n}})();\n</script>\n{tail}</body>\n</html>\n')
+    return apptools.inject(f'<!doctype html>\n<html lang="en-AU">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            f'<title>Japan &amp; Hong Kong Trip Expenses</title>\n{head_extra}<style>{style}{extra}</style>\n</head>\n<body>\n{body}\n<script>\n(function(){{\n {js}\n}})();\n</script>\n{tail}</body>\n</html>\n', 'expenses', PDF, OFF, 'Expenses')
 os.makedirs(os.path.join(HERE, 'out'), exist_ok=True)
 open(os.path.join(HERE, 'out', 'trip-expenses.html'), 'w', encoding='utf-8').write(page())
 # GitHub web app
@@ -50,17 +54,9 @@ json.dump({"name": "Japan & Hong Kong Trip Expenses", "short_name": "J&HK Expens
            "display": "standalone", "background_color": "#ffffff", "theme_color": "#000000",
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)
-open(os.path.join(DST, 'sw.js'), 'w').write("""// Network first, cached copy when offline.
-const C = 'ex-""" + ver + """';
-const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
-self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('ex-') && k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
-self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
-  e.respondWith(fetch(e.request).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
-    .catch(() => caches.match(e.request).then(m => m || caches.match('index.html'))));
-});
-""")
+open(os.path.join(DST, 'sw.js'), 'w').write(apptools.sw('ex-' + ver, OFF))
+apptools.render_pdf(os.path.join(HERE, 'out', 'trip-expenses.html'), os.path.join(HERE, 'out', PDF), 'J&HK Expenses')
+shutil.copy(os.path.join(HERE, 'out', PDF), os.path.join(DST, PDF))
 fonts = ''.join(re.findall(r'@font-face\s*\{.*?\}', style, flags=re.S))
 ic = f'''<!doctype html><html><head><meta charset="utf-8"><style>{fonts}
 html,body{{margin:0}}

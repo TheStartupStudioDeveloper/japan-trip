@@ -549,5 +549,9 @@ _data = {p['key']: dict(n=p['n'], l=p['l'], w=p['w'], t=p['t'], m=p['m']) for p 
 out = out.replace('/*PLACES*/', _json.dumps(_data, ensure_ascii=False))
 print('place links:', _n, 'cards:', len(PLACES))
 assert '—' not in out and '--' not in out.split('</style>')[1].split('<script>')[0].replace('<!--', '').replace('-->', '')
+import sys as _sys; _sys.path[:0] = ['/home/claude/japan-trip/source', '.']
+import apptools as _at
+out = _at.inject(out, '', 'Japan-Hong-Kong-Master-Itinerary-V2.pdf',
+                 ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'Japan-Hong-Kong-Master-Itinerary-V2.pdf'], 'Itinerary')
 open('out/japan-hong-kong-final-itinerary.html', 'w').write(out)
 print(len(out))

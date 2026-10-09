@@ -3,9 +3,13 @@
 #   reads extras.json, plus the itinerary build (../out/japan-hong-kong-final-itinerary.html) for fonts, styles, place cards
 #   and which places are already scheduled in the day plans. Scheduled places drop off this list automatically.
 #   writes out/jhk-extras.html (publish to claude.ai) and <repo>/extras/ (GitHub Pages web app)
-import sys, os, re, json, asyncio, hashlib, html as H
+import sys, os, re, json, asyncio, hashlib, shutil, html as H
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 REPO = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/japan-trip'
+sys.path[:0] = [os.path.join(REPO, 'source'), ROOT]
+import apptools
+PDF = 'JHK-Extras.pdf'
+OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', PDF]
 MASTER_URL = 'https://thestartupstudiodeveloper.github.io/japan-trip/'
 data = json.load(open(os.path.join(HERE, 'extras.json'), encoding='utf-8'))
 master = open(os.path.join(ROOT, 'out', 'japan-hong-kong-final-itinerary.html'), encoding='utf-8').read()
@@ -115,8 +119,8 @@ body = f'''<header class="wrap cover"><div class="exband" aria-hidden="true"><i 
 {sheet}'''
 
 def page(head_extra='', tail=''):
-    return (f'<!doctype html>\n<html lang="en-AU">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-            f'<title>J&amp;HK Extras</title>\n{head_extra}<style>{style}{extra}</style>\n</head>\n<body>\n{body}\n<script>\n{cardjs}\n{chipjs}\n</script>\n{tail}</body>\n</html>\n')
+    return apptools.inject(f'<!doctype html>\n<html lang="en-AU">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            f'<title>J&amp;HK Extras</title>\n{head_extra}<style>{style}{extra}</style>\n</head>\n<body>\n{body}\n<script>\n{cardjs}\n{chipjs}\n</script>\n{tail}</body>\n</html>\n', 'extras', PDF, OFF, 'Extras')
 
 os.makedirs(os.path.join(HERE, 'out'), exist_ok=True)
 open(os.path.join(HERE, 'out', 'jhk-extras.html'), 'w', encoding='utf-8').write(page())
@@ -134,17 +138,9 @@ json.dump({"name": "J&HK Extras", "short_name": "J&HK Extras", "start_url": "./"
            "display": "standalone", "background_color": "#ffffff", "theme_color": "#000000",
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)
-open(os.path.join(DST, 'sw.js'), 'w').write("""// Network first, cached copy when offline.
-const C = 'xt-""" + ver + """';
-const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
-self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('xt-') && k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
-self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
-  e.respondWith(fetch(e.request).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
-    .catch(() => caches.match(e.request).then(m => m || caches.match('index.html'))));
-});
-""")
+open(os.path.join(DST, 'sw.js'), 'w').write(apptools.sw('xt-' + ver, OFF))
+apptools.render_pdf(os.path.join(HERE, 'out', 'jhk-extras.html'), os.path.join(HERE, 'out', PDF), 'J&HK Extras')
+shutil.copy(os.path.join(HERE, 'out', PDF), os.path.join(DST, PDF))
 
 # icon: white tile, a black card slipping out of a sleeve, leg band underneath
 fonts = ''.join(re.findall(r'@font-face\s*\{.*?\}', style, flags=re.S))

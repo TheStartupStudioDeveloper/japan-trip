@@ -261,9 +261,55 @@ h1 span{display:block;font-weight:300}
  .hgrid{margin-top:3mm}.hgrid .decide{margin:0 0 2.4mm;padding:2.4mm 5mm 2.8mm}.hgrid .decide h4{font-size:11.5pt}.hgrid .changes{font-size:8.8pt;gap:.7mm;line-height:1.3;margin-top:1.3mm}
  .end{break-inside:avoid;margin:5mm 0 0;padding-top:2mm;font-size:8pt}
 }
+
+.summ .sum{max-width:40rem}
+.skey{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-top:.8rem;font-size:.82rem;color:var(--mute)}.skey span{display:flex;align-items:center;gap:.4rem}
+.skey i{width:1.1rem;height:.8rem;border:1.5px solid var(--ink)}.skey .kf{background:var(--ink)}.skey .kb{border-style:dashed}
+.sl{margin-top:1.6rem;border:1.5px solid var(--ink)}.slband{height:12px}.sl>*:not(.slband){margin-left:1rem;margin-right:1rem}
+.slh{display:flex;gap:.9rem;align-items:center;margin-top:.9rem}
+.slh .kanji{writing-mode:horizontal-tb;font-size:2.6rem;line-height:1;letter-spacing:0;white-space:nowrap}
+.slh h3{font:800 1.45rem/1.1 var(--display);letter-spacing:-.02em;margin-top:.1rem}.slh .legno{font-size:.78rem;font-weight:600}.slh .meta{margin-top:.15rem;font-size:.9rem}
+.grid{margin-top:.9rem;display:grid;gap:3px}
+.ghead,.grow{display:grid;grid-template-columns:3.4rem repeat(3,1fr);gap:3px}
+.ghead span{font:700 .64rem var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);padding:0 .1rem}
+.gday{font:700 .82rem/1.15 var(--display);text-decoration:none;padding:.35rem 0;align-self:start}
+.gc{font-size:.74rem;line-height:1.25;padding:.35rem .4rem;border:1.5px solid var(--line);min-height:2.4rem}
+.gc .pl{border-bottom-width:1px}.gc.gf .pl{border-bottom-color:var(--paper)}.gc.gf{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:600}.gc.gf .pl{border-bottom-color:var(--paper)}.gc.gf .pl:hover,.gc.gf .pl[aria-expanded="true"]{background:var(--paper);color:var(--ink)}
+.gc.gb{border:1.5px dashed var(--ink)}
+.gc.ge{border-color:transparent}
+.slf{display:grid;gap:.9rem;margin-top:1rem;margin-bottom:1.1rem;font-size:.86rem}
+.slf h4{font:700 .68rem var(--body);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem}
+.slf li{padding-left:.9rem;position:relative;color:var(--mute);margin-top:.15rem}.slf li::before{content:"";position:absolute;left:0;top:.5em;width:.4rem;height:.4rem;background:var(--ink)}
+.bk{display:flex;flex-wrap:wrap;gap:.3rem}.bk .tag{margin:0}.none{color:var(--mute)}
+.xt{display:flex;flex-wrap:wrap;gap:.3rem}.xt a{font:700 .76rem var(--body);text-decoration:none;border:1.5px solid var(--ink);padding:.15rem .45rem}
+@media (min-width:640px){
+ .sl>*:not(.slband){margin-left:1.5rem;margin-right:1.5rem}
+ .ghead,.grow{grid-template-columns:4.2rem repeat(3,1fr)}.gc{font-size:.84rem}.gday{font-size:.92rem}
+ .slf{grid-template-columns:3fr 1fr;gap:1.5rem}
+}
+@media print{
+ .summ{break-before:page}.summ .sec{margin:0}.summ .sum{font-size:8.6pt;display:inline}.skey{font-size:7.2pt;margin-top:1mm}.skey i{width:4mm;height:2.6mm}
+ .sl{margin-top:3.2mm;break-inside:avoid}.slband{height:2.4mm}.sl>*:not(.slband){margin-left:3.5mm;margin-right:3.5mm}
+ .slh{margin-top:1.2mm;gap:3mm}.slh .kanji{font-size:20pt}.slh h3{font-size:12pt;display:inline;margin-right:2mm}.slh .legno{font-size:7pt}.slh .meta{font-size:7.4pt;display:inline;margin:0}
+ .slh>div{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:2mm}.slh .legno{order:2;font-weight:400;color:var(--mute)}.slh .meta{order:3}
+ .grid{margin-top:1.2mm;gap:.5mm}.ghead,.grow{grid-template-columns:13mm repeat(3,1fr);gap:.5mm}
+ .ghead span{font-size:5.8pt}.gday{font-size:8.2pt;padding:.9mm 0}.gc{font-size:7.7pt;padding:.9mm 1.3mm;min-height:0;line-height:1.18;border-width:1px}.gc.gb{border-width:1px}
+ .slf{grid-template-columns:1fr;gap:4mm;margin:1.6mm 3.5mm 2mm;font-size:7.6pt;line-height:1.25}.slf h4{font-size:5.8pt;margin-bottom:.3mm}.slf li{margin-top:.15mm}
+ .bk{gap:.8mm}.bk .tag{font-size:6pt;padding:.4mm 1mm}
+}
 .costs{margin-top:0}header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bottom:1.6rem}.exband i{flex:1}.rules{margin-top:2rem;border:1.5px solid var(--ink);padding:1rem;display:grid;gap:.45rem;font-size:.92rem}.rules h4{font:700 1.1rem/1.2 var(--display)}.rules li{padding-left:1.1rem;position:relative}.rules li::before{content:"";position:absolute;left:0;top:.55em;width:.45rem;height:.45rem;background:var(--ink)}</style>
 </head>
 <body>
+<style>
+.jt-bar{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;justify-content:flex-end;max-width:52rem;margin:0 auto;padding:.6rem 1.1rem 0;font:500 .82rem/1.2 "Instrument","Helvetica Neue",Arial,sans-serif;color:#000}
+.jt-bar a,.jt-bar button{appearance:none;-webkit-appearance:none;display:inline-flex;align-items:center;gap:.35rem;font:600 .8rem/1 "Instrument","Helvetica Neue",Arial,sans-serif;color:#000;background:#fff;border:1.5px solid #000;border-radius:0;padding:.45rem .65rem;text-decoration:none;cursor:pointer}
+.jt-bar a:hover,.jt-bar button:hover{background:#000;color:#fff}
+.jt-bar svg{width:.95rem;height:.95rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.jt-bar .jt-st{flex-basis:100%;text-align:right;font-size:.74rem;color:#444;min-height:1em}
+.jt-bar button[disabled]{opacity:.55;cursor:default}
+.jt-bar .jt-off[hidden]{display:none}
+@media print{.jt-bar{display:none!important}}
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="JHK-Expenses.pdf" data-pdf="JHK-Expenses.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <header class="wrap cover"><div class="exband" aria-hidden="true"><i class="pat pat-s"></i><i class="pat pat-k"></i><i class="pat pat-g"></i><i class="pat pat-h"></i></div>
 <h1>Trip Expenses <span>Japan &amp; Hong Kong</span></h1>
 <p class="sub">Shared costs for G and Cynthia, 16 to 31 October 2026. Updated by Claude as you go.</p></header>
@@ -302,6 +348,28 @@ h1 span{display:block;font-weight:300}
   }
   draw(data);
  })();
+})();
+</script>
+<script>
+(function(){
+ var BASE="https://thestartupstudiodeveloper.github.io/japan-trip/expenses/",KEY="jt-off-expenses",FILES=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "JHK-Expenses.pdf"],LABEL="Expenses";
+ var bar=document.querySelector('.jt-bar'); if(!bar) return;
+ var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
+ var here=/github\.io$/.test(location.hostname);
+ if(!here){dl.href=BASE+dl.getAttribute('data-pdf');dl.removeAttribute('download');dl.target='_blank';dl.rel='noopener';}
+ if(!here||!('caches' in window)){btn.hidden=true;return}
+ function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+ function put(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+ function fmt(t){var d=new Date(+t);return d.getDate()+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()]+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
+ var t=get(); if(t) caches.has(KEY).then(function(ok){st.textContent=ok?LABEL+' saved for offline, '+fmt(t)+'. Tap again to refresh.':''});
+ btn.addEventListener('click',function(){
+  if(!navigator.onLine){st.textContent='You are offline. Connect, then tap again.';return}
+  btn.disabled=true;st.textContent='Saving\u2026';
+  caches.open(KEY).then(function(c){return Promise.all(FILES.map(function(f){return fetch(f,{cache:'reload'}).then(function(r){if(!r.ok)throw new Error(f);return c.put(f,r)})}))})
+   .then(function(){var n=Date.now();put(n);st.textContent=LABEL+' saved for offline, '+fmt(n)+'. Tap again to refresh.'})
+   .catch(function(){st.textContent='Could not save everything. Check the connection and try again.'})
+   .then(function(){btn.disabled=false});
+ });
 })();
 </script>
 </body>

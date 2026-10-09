@@ -24,17 +24,11 @@ json.dump({"name": "Japan & Hong Kong", "short_name": "J&HK Itinerary", "start_u
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
                      {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)
-open(os.path.join(DST, 'sw.js'), 'w').write("""// Network first, so updates show straight away; cached copy when offline.
-const C = 'jhk-""" + ver + """';
-const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
-self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
-self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET' || new URL(e.request.url).origin !== location.origin) return;
-  e.respondWith(fetch(e.request).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
-    .catch(() => caches.match(e.request).then(m => m || caches.match('index.html'))));
-});
-""")
+sys.path[:0] = [os.path.join(DST, 'source'), '.']
+import apptools
+PDF = 'Japan-Hong-Kong-Master-Itinerary-V2.pdf'
+shutil.copy(os.path.join('out', PDF), os.path.join(DST, PDF))
+open(os.path.join(DST, 'sw.js'), 'w').write(apptools.sw('jhk-' + ver, ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', PDF]))
 open(os.path.join(DST, '.nojekyll'), 'w').write('')
 # icon, drawn with the itinerary's own fonts
 fonts = ''.join(re.findall(r'@font-face\s*\{.*?\}', html, flags=re.S))
