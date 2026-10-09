@@ -57,6 +57,8 @@ def _json(v):
 
 
 def inject(html, app, pdf, files, label):
+    if 'class="jt-bar"' in html:
+        return html  # already has the bar
     top, js = bar(app, pdf, files, label)
     import re
     html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + top, html, count=1)
