@@ -25,4 +25,18 @@ _n_h = len(_re_h.findall(r'class="hl" href="#h\d+"', out))
 _bad = [x for x in _re_h.findall(r'href="#h(\d+)"', out) if not 1 <= int(x) <= len(HOWTO)]
 assert not _bad, ('how-to links to missing sections', _bad)
 out = out.replace('</style>', '.hl{color:inherit;text-decoration:none;border-bottom:1.5px solid var(--ink);white-space:nowrap}.hl:hover{background:var(--ink);color:var(--paper)}@media print{.hl{border:0}}</style>', 1)
+_js = '''<script>
+(function(){
+ document.addEventListener('click',function(e){
+  var a=e.target.closest('a.hl[href^="#h"]'); if(!a) return;
+  var t=document.getElementById(a.getAttribute('href').slice(1)); if(!t) return;
+  e.preventDefault();
+  t.scrollIntoView({behavior:'instant',block:'start'});
+  try{history.pushState(null,'',a.getAttribute('href'))}catch(x){}
+  t.classList.remove('hflash'); void t.offsetWidth; t.classList.add('hflash');
+ });
+})();
+</script>'''
+out = out.replace('</body>', _js + '</body>', 1)
+out = out.replace('</style>', '@keyframes hflash{0%{box-shadow:0 0 0 4px var(--ink)}100%{box-shadow:0 0 0 0 transparent}}.hflash{animation:hflash 1.6s ease-out}</style>', 1)
 print('how-to links:', _n_h)
