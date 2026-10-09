@@ -1,0 +1,32 @@
+[
+ {
+  "n": 1,
+  "slug": "ss1-2026-10-10",
+  "label": "Steady state 1",
+  "when": "10 Oct 2026, 09:57",
+  "date": "2026-10-10",
+  "note": "Steady state original. Itinerary with Summary, how-to links and offline buttons; Extras with all nine areas; Weather and Expenses as at this date.",
+  "apps": [
+   {
+    "app": "Itinerary",
+    "path": "itinerary/",
+    "pdf": "Japan-Hong-Kong-Master-Itinerary-V2.pdf"
+   },
+   {
+    "app": "Extras",
+    "path": "extras/",
+    "pdf": "JHK-Extras.pdf"
+   },
+   {
+    "app": "Weather",
+    "path": "weather/",
+    "pdf": "JHK-Weather.pdf"
+   },
+   {
+    "app": "Expenses",
+    "path": "expenses/",
+    "pdf": "JHK-Expenses.pdf"
+   }
+  ]
+ }
+]

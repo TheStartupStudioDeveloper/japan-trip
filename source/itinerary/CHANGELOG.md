@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Steady state 1, 10 October
+- Saved the first steady state: frozen copies of Itinerary, Extras, Weather and Expenses, with their PDFs, at archive/ss1-2026-10-10/. Listed on archive/index.html. Git tag steady-ss1-2026-10-10.
+- New source/snapshot.py saves further steady states on request, numbered and date stamped.
+
 How-to links, 9 October
 - Every "How-to N" mention in the day plans, checklist, tips and swaps now links straight to that how-to (30 links). Extras links to the itinerary's how-to.
 - Fixed stale numbers left over from the how-to reorder: Mon 19 store hours now How-to 9 (was 3), G's options How-to 10 (was 4), Omoide Yokochō How-to 11 (was 8); Extras Parco now How-to 10 (was 4).

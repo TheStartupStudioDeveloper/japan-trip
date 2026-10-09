@@ -21,3 +21,9 @@ The same pages are also published on claude.ai. Every update goes to both.
 
 ## Rules carried over
 Australian spelling, no em dashes or double hyphens in copy, black and white with leg patterns, changes recorded in `source/itinerary/CHANGELOG.md`.
+
+## Saved versions (steady states)
+- Live apps always show the latest. Frozen copies live at https://thestartupstudiodeveloper.github.io/japan-trip/archive/ with a date-stamped folder per version, e.g. `archive/ss1-2026-10-10/itinerary/`.
+- To save one: `python3 source/snapshot.py "note"`, then commit, `git tag steady-ssN-YYYY-MM-DD`, and push with tags. Copies have no service worker or Save offline, and carry a banner linking back to the live app.
+- Each steady state is also a git tag, so the full source at that moment can be restored.
+
