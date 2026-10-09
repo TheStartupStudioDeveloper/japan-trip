@@ -317,7 +317,7 @@ h1 span{display:block;font-weight:300}
 .jt-bar button[disabled]{opacity:.55;cursor:default}
 .jt-bar .jt-off[hidden]{display:none}
 @media print{.jt-bar{display:none!important}}
-</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="JHK-Expenses.pdf" data-pdf="JHK-Expenses.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="https://thestartupstudiodeveloper.github.io/japan-trip/expenses/JHK-Expenses.pdf" data-pdf="JHK-Expenses.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <header class="wrap cover"><div class="exband" aria-hidden="true"><i class="pat pat-s"></i><i class="pat pat-k"></i><i class="pat pat-g"></i><i class="pat pat-h"></i></div>
 <h1>Trip Expenses <span>Japan &amp; Hong Kong</span></h1>
 <p class="sub">Shared costs for G and Cynthia, 16 to 31 October 2026. Updated by Claude as you go.</p></header>
@@ -365,7 +365,7 @@ h1 span{display:block;font-weight:300}
  var bar=document.querySelector('.jt-bar'); if(!bar) return;
  var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
  var here=/github\.io$/.test(location.hostname);
- if(!here){dl.href=BASE+dl.getAttribute('data-pdf');dl.removeAttribute('download');dl.target='_blank';dl.rel='noopener';}
+ if(here){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
  if(!here||!('caches' in window)){btn.hidden=true;return}
  function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
  function put(v){try{localStorage.setItem(KEY,v)}catch(e){}}

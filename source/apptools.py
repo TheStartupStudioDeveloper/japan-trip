@@ -30,7 +30,7 @@ def bar(app, pdf, files, label):
  var bar=document.querySelector('.jt-bar'); if(!bar) return;
  var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
  var here=/github\\.io$/.test(location.hostname);
- if(!here){dl.href=BASE+dl.getAttribute('data-pdf');dl.removeAttribute('download');dl.target='_blank';dl.rel='noopener';}
+ if(here){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
  if(!here||!('caches' in window)){btn.hidden=true;return}
  function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
  function put(v){try{localStorage.setItem(KEY,v)}catch(e){}}
@@ -47,7 +47,7 @@ def bar(app, pdf, files, label):
 })();
 </script>''' % tuple(map(lambda v: _json(v), (url, key, files, label)))
     return (CSS + f'<div class="jt-bar" role="toolbar" aria-label="Download and offline">'
-            f'<a class="jt-dl" href="{_H.escape(pdf)}" data-pdf="{_H.escape(pdf)}" download>{ICON_DL}Download PDF</a>'
+            f'<a class="jt-dl" href="{_H.escape(url + pdf)}" data-pdf="{_H.escape(pdf)}" target="_blank" rel="noopener">{ICON_DL}Download PDF</a>'
             f'<button type="button" class="jt-off">{ICON_OFF}Save offline</button><span class="jt-st" aria-live="polite"></span></div>'), js
 
 

@@ -7,7 +7,7 @@ Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", o
 Download PDF and Save offline, 9 October
 - All four apps (Itinerary, Extras, Weather, Expenses) now have a Download PDF and a Save offline button at the top. Each works separately: it downloads that app's own PDF and saves that app for offline use, with a "saved for offline" time.
 - PDFs live next to each app on GitHub and are rebuilt on every update: Japan-Hong-Kong-Master-Itinerary-V2.pdf, extras/JHK-Extras.pdf, weather/JHK-Weather.pdf, expenses/JHK-Expenses.pdf.
-- On claude.ai, Download PDF opens the GitHub PDF; Save offline shows only in the home-screen apps.
+- On claude.ai, Download PDF opens the GitHub PDF in a new tab (the claude.ai viewer blocks direct downloads); Save offline shows only in the GitHub apps. Weather on claude.ai is published from its own chat, so only the GitHub Weather app has the bar.
 - Shared code in source/apptools.py. Service workers now keep each other's caches (the itinerary's used to clear the others) and the Save offline cache. Both bars are hidden in print.
 
 Itinerary Summary, 9 October

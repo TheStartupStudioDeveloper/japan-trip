@@ -341,7 +341,7 @@ header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bot
 .jt-bar button[disabled]{opacity:.55;cursor:default}
 .jt-bar .jt-off[hidden]{display:none}
 @media print{.jt-bar{display:none!important}}
-</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="JHK-Extras.pdf" data-pdf="JHK-Extras.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="https://thestartupstudiodeveloper.github.io/japan-trip/extras/JHK-Extras.pdf" data-pdf="JHK-Extras.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <header class="wrap cover"><div class="exband" aria-hidden="true"><i class="pat pat-s"></i><i class="pat pat-k"></i><i class="pat pat-g"></i><i class="pat pat-h"></i></div>
 <h1>J&amp;HK Extras <span>Up our sleeve</span></h1>
 <p class="sub">Everything worth doing that is not in the day plans, by area. Places to eat and drink, the food to try, and things to swap in if the plan moves or something is missed. When a place goes into the itinerary it leaves this list, and when one comes out it lands back here. <span class="screen">Tap any underlined name for its card.</span></p></header>
@@ -452,7 +452,7 @@ header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bot
  var bar=document.querySelector('.jt-bar'); if(!bar) return;
  var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
  var here=/github\.io$/.test(location.hostname);
- if(!here){dl.href=BASE+dl.getAttribute('data-pdf');dl.removeAttribute('download');dl.target='_blank';dl.rel='noopener';}
+ if(here){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
  if(!here||!('caches' in window)){btn.hidden=true;return}
  function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
  function put(v){try{localStorage.setItem(KEY,v)}catch(e){}}
