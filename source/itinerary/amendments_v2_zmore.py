@@ -59,3 +59,10 @@ _h[:] = [
  'Restaurant and café meals are never tax-free. Department stores refund the tax at a separate counter and keep a small fee, around 1.5%.',
  'Food, drinks and cosmetics are sealed in a bag. Leave it sealed until you have left Japan.',
  'This at-the-till system runs until 31 October, so it covers the whole trip. It changes on 1 November.']
+
+# ---------- Omoide Yokochō: otoshi and prices (11 Oct) ----------
+_h = _how('Omoide Yokochō, Mon 19')
+_j = [x[:22] for x in _h].index('Many counters add a sm')
+_h[_j:_j+1] = [
+ 'Many counters add a small seating charge, a few hundred yen each, and bring a small snack you did not order. It is called otoshi (お通し): that is the charge, so it is normal, not a mistake.',
+ 'Check the menu and prices before you sit. If none are posted, ask, or pick a counter that shows them. Counters are tiny and best for two.']

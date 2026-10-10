@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Omoide Yokochō notes, 11 October
+- How-to 11: names the otoshi (お通し), the small unordered snack that comes with the seating charge, and adds "check the menu and prices before you sit". Still 26 PDF pages.
+
 Faster scrolling in Extras and Weather, 10 October
 - The fast smooth scroll now lives in source/apptools.py and is added to every app on build: Itinerary, Extras (area chips, day buttons) and the GitHub Weather app (day links). Expenses picks it up on its next build. The itinerary's own copy was removed so it isn't loaded twice.
 
