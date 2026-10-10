@@ -57,13 +57,47 @@ def _json(v):
     return json.dumps(v, ensure_ascii=False).replace('</', '<\\/')
 
 
+FAST = """<script id="jt-fast">
+(function(){
+ // Fast smooth scroll for in-page links (under half a second, any distance). Instant with reduced motion.
+ if(window.__jtFast) return; window.__jtFast=1;
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, run=0;
+ function go(t,flash){
+  var root=document.documentElement, cs=getComputedStyle(t);
+  var pad=(parseFloat(getComputedStyle(root).scrollPaddingTop)||0)+(parseFloat(cs.scrollMarginTop)||0);
+  var y0=scrollY, y1=Math.max(0,Math.min(t.getBoundingClientRect().top+scrollY-pad,document.documentElement.scrollHeight-innerHeight)), d=y1-y0;
+  var dur=reduce?0:Math.min(480,220+Math.abs(d)/40), t0=null, id=++run;
+  root.style.scrollBehavior='auto';
+  function step(ts){
+   if(id!==run) return;
+   if(t0===null) t0=ts;
+   var p=dur?Math.min(1,(ts-t0)/dur):1, e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+   scrollTo(0,y0+d*e);
+   if(p<1) requestAnimationFrame(step); else { root.style.scrollBehavior=''; if(flash){t.classList.remove('hflash');void t.offsetWidth;t.classList.add('hflash')} }
+  }
+  requestAnimationFrame(step);
+ }
+ document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]'); if(!a||a.classList.contains('pl')) return;
+  var h=a.getAttribute('href'); if(h.length<2) return;
+  var t=document.getElementById(decodeURIComponent(h.slice(1))); if(!t) return;
+  e.preventDefault();
+  try{history.pushState(null,'',h)}catch(x){}
+  go(t, a.classList.contains('hl'));
+ });
+})();
+</script>"""
+
+
 def inject(html, app, pdf, files, label):
-    if 'class="jt-bar"' in html:
-        return html  # already has the bar
-    top, js = bar(app, pdf, files, label)
     import re
-    html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + top, html, count=1)
-    return html.replace('</body>', js + '\n</body>', 1)
+    if 'class="jt-bar"' not in html:
+        top, js = bar(app, pdf, files, label)
+        html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + top, html, count=1)
+        html = html.replace('</body>', js + '\n</body>', 1)
+    if 'id="jt-fast"' not in html:
+        html = html.replace('</body>', FAST + '\n</body>', 1)
+    return html
 
 
 def render_pdf(src_html_path, pdf_path, footer):

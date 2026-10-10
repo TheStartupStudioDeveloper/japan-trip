@@ -25,34 +25,5 @@ _n_h = len(_re_h.findall(r'class="hl" href="#h\d+"', out))
 _bad = [x for x in _re_h.findall(r'href="#h(\d+)"', out) if not 1 <= int(x) <= len(HOWTO)]
 assert not _bad, ('how-to links to missing sections', _bad)
 out = out.replace('</style>', '.hl{color:inherit;text-decoration:none;border-bottom:1.5px solid var(--ink);white-space:nowrap}.hl:hover{background:var(--ink);color:var(--paper)}@media print{.hl{border:0}}</style>', 1)
-_js = '''<script>
-(function(){
- // Fast smooth scroll for in-page links: how-to links, calendar, day bar, summary days, top bar.
- var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, run=0;
- function go(t,flash){
-  var root=document.documentElement, pad=parseFloat(getComputedStyle(root).scrollPaddingTop)||0;
-  var y0=scrollY, y1=Math.max(0,t.getBoundingClientRect().top+scrollY-pad), d=y1-y0;
-  var dur=reduce?0:Math.min(480,220+Math.abs(d)/40), t0=null, id=++run;
-  root.style.scrollBehavior='auto';
-  function step(ts){
-   if(id!==run) return;
-   if(t0===null) t0=ts;
-   var p=dur?Math.min(1,(ts-t0)/dur):1, e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
-   scrollTo(0,y0+d*e);
-   if(p<1) requestAnimationFrame(step); else { root.style.scrollBehavior=''; if(flash){t.classList.remove('hflash');void t.offsetWidth;t.classList.add('hflash')} }
-  }
-  requestAnimationFrame(step);
- }
- document.addEventListener('click',function(e){
-  var a=e.target.closest('a[href^="#"]'); if(!a||a.classList.contains('pl')) return;
-  var h=a.getAttribute('href'); if(h.length<2) return;
-  var t=document.getElementById(h.slice(1)); if(!t) return;
-  e.preventDefault();
-  try{history.pushState(null,'',h)}catch(x){}
-  go(t, a.classList.contains('hl'));
- });
-})();
-</script>'''
-out = out.replace('</body>', _js + '</body>', 1)
 out = out.replace('</style>', '@keyframes hflash{0%{box-shadow:0 0 0 4px var(--ink)}100%{box-shadow:0 0 0 0 transparent}}.hflash{animation:hflash 1.6s ease-out}</style>', 1)
 print('how-to links:', _n_h)

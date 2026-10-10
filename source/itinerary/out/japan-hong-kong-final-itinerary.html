@@ -477,33 +477,6 @@ h1 span{display:block;font-weight:300}
 </script>
 <script>
 (function(){
- // Fast smooth scroll for in-page links: how-to links, calendar, day bar, summary days, top bar.
- var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, run=0;
- function go(t,flash){
-  var root=document.documentElement, pad=parseFloat(getComputedStyle(root).scrollPaddingTop)||0;
-  var y0=scrollY, y1=Math.max(0,t.getBoundingClientRect().top+scrollY-pad), d=y1-y0;
-  var dur=reduce?0:Math.min(480,220+Math.abs(d)/40), t0=null, id=++run;
-  root.style.scrollBehavior='auto';
-  function step(ts){
-   if(id!==run) return;
-   if(t0===null) t0=ts;
-   var p=dur?Math.min(1,(ts-t0)/dur):1, e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
-   scrollTo(0,y0+d*e);
-   if(p<1) requestAnimationFrame(step); else { root.style.scrollBehavior=''; if(flash){t.classList.remove('hflash');void t.offsetWidth;t.classList.add('hflash')} }
-  }
-  requestAnimationFrame(step);
- }
- document.addEventListener('click',function(e){
-  var a=e.target.closest('a[href^="#"]'); if(!a||a.classList.contains('pl')) return;
-  var h=a.getAttribute('href'); if(h.length<2) return;
-  var t=document.getElementById(h.slice(1)); if(!t) return;
-  e.preventDefault();
-  try{history.pushState(null,'',h)}catch(x){}
-  go(t, a.classList.contains('hl'));
- });
-})();
-</script><script>
-(function(){
  var BASE="https://thestartupstudiodeveloper.github.io/japan-trip/",KEY="jt-off-itinerary",FILES=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "Japan-Hong-Kong-Master-Itinerary-V2.pdf"],LABEL="Itinerary";
  var bar=document.querySelector('.jt-bar'); if(!bar) return;
  var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
@@ -522,6 +495,36 @@ h1 span{display:block;font-weight:300}
    .then(function(){var n=Date.now();put(n);st.textContent=LABEL+' saved for offline, '+fmt(n)+'. Tap again to refresh.'})
    .catch(function(){st.textContent='Could not save everything. Check the connection and try again.'})
    .then(function(){btn.disabled=false});
+ });
+})();
+</script>
+<script id="jt-fast">
+(function(){
+ // Fast smooth scroll for in-page links (under half a second, any distance). Instant with reduced motion.
+ if(window.__jtFast) return; window.__jtFast=1;
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, run=0;
+ function go(t,flash){
+  var root=document.documentElement, cs=getComputedStyle(t);
+  var pad=(parseFloat(getComputedStyle(root).scrollPaddingTop)||0)+(parseFloat(cs.scrollMarginTop)||0);
+  var y0=scrollY, y1=Math.max(0,Math.min(t.getBoundingClientRect().top+scrollY-pad,document.documentElement.scrollHeight-innerHeight)), d=y1-y0;
+  var dur=reduce?0:Math.min(480,220+Math.abs(d)/40), t0=null, id=++run;
+  root.style.scrollBehavior='auto';
+  function step(ts){
+   if(id!==run) return;
+   if(t0===null) t0=ts;
+   var p=dur?Math.min(1,(ts-t0)/dur):1, e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+   scrollTo(0,y0+d*e);
+   if(p<1) requestAnimationFrame(step); else { root.style.scrollBehavior=''; if(flash){t.classList.remove('hflash');void t.offsetWidth;t.classList.add('hflash')} }
+  }
+  requestAnimationFrame(step);
+ }
+ document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]'); if(!a||a.classList.contains('pl')) return;
+  var h=a.getAttribute('href'); if(h.length<2) return;
+  var t=document.getElementById(decodeURIComponent(h.slice(1))); if(!t) return;
+  e.preventDefault();
+  try{history.pushState(null,'',h)}catch(x){}
+  go(t, a.classList.contains('hl'));
  });
 })();
 </script>

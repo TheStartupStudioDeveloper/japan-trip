@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Faster scrolling in Extras and Weather, 10 October
+- The fast smooth scroll now lives in source/apptools.py and is added to every app on build: Itinerary, Extras (area chips, day buttons) and the GitHub Weather app (day links). Expenses picks it up on its next build. The itinerary's own copy was removed so it isn't loaded twice.
+
 Faster scrolling, 10 October
 - All in-page links (how-to links, calendar, day bar, Itinerary Summary days, top bar) now smooth scroll quickly: under half a second however far they go, instead of the browser's slow default. A how-to section is briefly outlined when you land. Instant if the phone is set to reduce motion. The browser's back still returns you to where you were.
 
