@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Manyo Club on Tue 20, 11 October
+- Tue 20: Manyo Club rooftop footbath at 14:15, facing the Cosmo Clock Ferris wheel (about ¥3,600 each, covers the whole spa, no footbath-only ticket). Then a harbour walk at dusk via Ōsanbashi and Yamashita Park into Chinatown, dinner from 17:30. Lunch folded into the 11:30 waterfront row.
+- New place card: Manyo Club. Itinerary Summary Tue 20 afternoon updated. Still 26 PDF pages.
+
 Omoide Yokochō notes, 11 October
 - How-to 11: names the otoshi (お通し), the small unordered snack that comes with the seating charge, and adds "check the menu and prices before you sit". Still 26 PDF pages.
 

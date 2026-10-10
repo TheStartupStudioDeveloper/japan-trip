@@ -1,5 +1,5 @@
 // Network first, so updates show straight away; cached copy when offline.
-const C = 'jhk-64dfcfb8ee';
+const C = 'jhk-ae12463d73';
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "Japan-Hong-Kong-Master-Itinerary-V2.pdf"];
 const MINE = 'jhk-';
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });

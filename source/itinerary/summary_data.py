@@ -7,7 +7,7 @@ LEGS = [
    ('d17', 'Sat 17', [('Land at Narita 06:50, N\'EX to Shibuya', 'f'), ('Miyashita Park, Cat Street, Omotesando', ''), ('Shibuya Sky 16:00, dinner nearby', 'f')]),
    ('d18', 'Sun 18', [('Meiji Jingū, Harajuku', ''), ('Festival streets, Street Kart 16:00', 'f'), ('Shibuya dinner', '')]),
    ('d19', 'Mon 19', [('Omotesando vintage stores', ''), ('Lunch, rest at the hotel', ''), ('Shinjuku: Omoide Yokochō, Kabukichō, Golden Gai', '')]),
-   ('d20', 'Tue 20', [('Tsukiji breakfast', ''), ('Yokohama waterfront', ''), ('Chinatown dinner, pack', '')]),
+   ('d20', 'Tue 20', [('Tsukiji breakfast', ''), ('Yokohama waterfront, Manyo Club footbath', ''), ('Chinatown dinner, pack', '')]),
   ],
   shift=['Shibuya Sky has backup slots on Mon 19 and Tue 20 if Saturday is clouded out.', 'Kamakura can replace part of Tue 20.', 'Loosest blocks: Sat 17 afternoon and Mon 19 morning.'],
   book=[], extras=[('shibuya', 'Shibuya'), ('shinjuku', 'Shinjuku'), ('yokohama', 'Yokohama'), ('japan', 'Japan other')]),
