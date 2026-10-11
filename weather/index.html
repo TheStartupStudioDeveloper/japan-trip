@@ -248,8 +248,8 @@ h1 span{display:block;font-weight:300}
 </main>
 
 <script type="application/json" id="wx">{
- "checked": "2026-10-11T20:40:00+11:00",
- "checkedLabel": "Sun 11 Oct, 20:40 Melbourne time",
+ "checked": "2026-10-12T08:40:00+11:00",
+ "checkedLabel": "Mon 12 Oct, 08:40 Melbourne time",
  "legs": [
   {
    "id": "s",
@@ -403,7 +403,7 @@ h1 span{display:block;font-weight:300}
    "rain": 30,
    "cond": "Cloudy, brighter breaks",
    "sunset": "17:00",
-   "call": "Still split, but leaning dry. Only the Global Forecasting Model has showers, 4.6 mm from 15:00 to 21:00, and it hasn't updated since this morning. The Japan Weather Association has 30% with no rain, Weathernews 40%, AccuWeather clouds and sun. Worth knowing Street Kart's wet weather policy. Decide by Thu 15.",
+   "call": "Settled dry now. The Global Forecasting Model dropped its afternoon showers, so all four sources agree: cloudy with brighter breaks, 30 to 40%, no measurable rain. Street Kart at 16:00 looks fine.",
    "plan": [
     [
      "09:45",
@@ -431,15 +431,15 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "Global Forecasting Model",
-     "26° / 16°, showers 15:00 to 21:00, 4.6 mm"
+     "25° / 14°, dry, 0 mm (was showers 15:00 to 21:00)"
     ]
    ],
-   "mm": "0 to 5 mm",
-   "gicon": "shower",
+   "mm": "Under 1 mm",
+   "gicon": "part",
    "gfill": 35,
    "gtext": "30–40",
-   "gmm": "0–5",
-   "read": "Dry until mid-afternoon. One model has showers 15:00 to 21:00, up to 5 mm. The local forecasters have none.",
+   "gmm": "0",
+   "read": "Cloudy with brighter breaks, 30 to 40%, no measurable rain on any source.",
    "chance": [
     [
      6,
@@ -457,42 +457,11 @@ h1 span{display:block;font-weight:300}
      20
     ]
    ],
-   "mmBars": [
-    [
-     15,
-     21,
-     4.6
-    ],
-    [
-     21,
-     24,
-     0.2,
-     "to 03:00"
-    ]
-   ],
+   "mmBars": [],
    "temps": {
-    "est": false,
-    "pts": [
-     [
-      6,
-      16
-     ],
-     [
-      12,
-      20
-     ],
-     [
-      18,
-      26
-     ],
-     [
-      24,
-      20
-     ]
-    ]
+    "est": true
    },
-   "tnote": "Rain chance from the Japan Weather Association. Millimetres and temperatures through the day from the Global Forecasting Model. * Continues to 03:00.",
-   "watch": true
+   "tnote": "Rain chance from the Japan Weather Association. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 19,
@@ -506,7 +475,7 @@ h1 span{display:block;font-weight:300}
    "rain": 40,
    "cond": "Cloudy",
    "sunset": "17:00",
-   "call": "Mostly indoors and covered lanes, so rain barely touches this day.",
+   "call": "Mostly indoors and covered lanes, so rain barely touches this day. The Global Forecasting Model now has a little light rain in the evening, about 1 mm, as you get to Shinjuku. An umbrella from the hotel is plenty.",
    "plan": [
     [
      "11:00",
@@ -531,14 +500,18 @@ h1 span{display:block;font-weight:300}
     [
      "AccuWeather",
      "23° / 14°, clouds and sun"
+    ],
+    [
+     "Global Forecasting Model",
+     "27° / 19°, light rain in the evening, about 1 mm"
     ]
    ],
-   "mm": "Under 1 mm",
+   "mm": "0 to 1 mm",
    "gicon": "cloud",
    "gfill": 40,
    "gtext": "40%",
-   "gmm": "0",
-   "read": "Cloudy with sunny spells, 20 to 40%, no measurable rain.",
+   "gmm": "0–1",
+   "read": "Cloudy, 20 to 40%. One model has light rain in the evening, about 1 mm.",
    "chance": [
     [
      6,
@@ -556,11 +529,17 @@ h1 span{display:block;font-weight:300}
      30
     ]
    ],
-   "mmBars": [],
+   "mmBars": [
+    [
+     18,
+     24,
+     1
+    ]
+   ],
    "temps": {
     "est": true
    },
-   "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+   "tnote": "Rain chance from the Japan Weather Association. Millimetres from the Global Forecasting Model. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 20,
@@ -574,7 +553,7 @@ h1 span{display:block;font-weight:300}
    "rain": 40,
    "cond": "Cloudy",
    "sunset": "17:00",
-   "call": "Better than this morning, but not settled. The Japan Weather Association's evening issue moved the rain off Tuesday: cloudy, 20% in the morning for Tsukiji, 40% by evening, no measurable rain. Weathernews still has 60% and AccuWeather has rain. Monday is still the steadier day. Hold the Monday and Tuesday swap as an option and decide by Fri 16. The Wharf House footbath at 16:30 closes in rain.",
+   "call": "Tipping wetter in the afternoon. The Global Forecasting Model now has rain from 15:00 to 21:00, about 4 mm, right over the 16:30 harbour walk and the Wharf House footbath, which closes in rain. Tsukiji at 08:15 stays dry on every source. The Japan Weather Association still has cloudy, 40%, no measurable rain; Weathernews 60%, AccuWeather rain. Monday is still the steadier day. Hold the swap and decide by Fri 16.",
    "plan": [
     [
      "08:15",
@@ -595,7 +574,7 @@ h1 span{display:block;font-weight:300}
    "src": [
     [
      "Japan Weather Association",
-     "27° / 21°, cloudy, 40%, 0 mm (evening issue; morning issue had rain, 80%)"
+     "27° / 21°, cloudy, 40%, 0 mm"
     ],
     [
      "Weathernews, Shibuya",
@@ -604,14 +583,18 @@ h1 span{display:block;font-weight:300}
     [
      "AccuWeather",
      "24° / 17°, rain"
+    ],
+    [
+     "Global Forecasting Model",
+     "25° / 17°, rain 15:00 to 21:00, 4.4 mm, light rain overnight"
     ]
    ],
-   "mm": "Under 1 mm on the Japan Weather Association",
+   "mm": "0 to 5 mm",
    "gicon": "shower",
-   "gfill": 50,
+   "gfill": 55,
    "gtext": "40–60",
-   "gmm": "0",
-   "read": "Sources split. The Japan Weather Association dried out to cloudy, 40%. Weathernews has 60% and AccuWeather rain.",
+   "gmm": "0–5",
+   "read": "Dry morning for Tsukiji. Rain likely from mid-afternoon on two of four sources, about 4 mm through the Yokohama evening.",
    "chance": [
     [
      6,
@@ -629,13 +612,43 @@ h1 span{display:block;font-weight:300}
      40
     ]
    ],
-   "mmBars": [],
+   "mmBars": [
+    [
+     15,
+     21,
+     4.4
+    ],
+    [
+     21,
+     24,
+     0.9,
+     "to 03:00"
+    ]
+   ],
    "temps": {
-    "est": true
+    "est": false,
+    "pts": [
+     [
+      6,
+      21
+     ],
+     [
+      12,
+      23
+     ],
+     [
+      18,
+      24
+     ],
+     [
+      24,
+      20
+     ]
+    ]
    },
-   "tnote": "Rain chance from the Japan Weather Association. Temperature shape estimated from the forecast high and low. The Japan Weather Association's 27° high is warmer than the other sources, which have about 23°.",
+   "tnote": "Rain chance from the Japan Weather Association. Millimetres and temperatures through the day from the Global Forecasting Model. The Japan Weather Association's 27° high is warmer than the other sources. * Continues to 03:00.",
    "watch": true,
-   "swap": "Swap Mon 19 and Tue 20: Tsukiji and Yokohama on Monday, Omotesando stores and Shinjuku after dark on Tuesday. Rain clears by about midday Tuesday, so the Shinjuku night is unaffected."
+   "swap": "Swap Mon 19 and Tue 20: Tsukiji and Yokohama on Monday, Omotesando stores and Shinjuku after dark on Tuesday. Monday has at most a little evening rain, and Tuesday's afternoon rain falls mostly on indoor stores and Shinjuku's covered lanes."
   },
   {
    "d": 21,
@@ -1176,7 +1189,7 @@ h1 span{display:block;font-weight:300}
    "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
   }
  ],
- "typhoon": "<h4>Typhoons<\/h4><p>Typhoons No. 28 (Nolo) and No. 29 (Koguma) are both turning north well east of Japan. They bring rough seas to the Ogasawara Islands and swell on Pacific coasts around Tue 13 to Wed 14, then they are gone, before you land. No other systems are forecast toward Japan or Hong Kong. Hong Kong's season usually winds down by the end of October.<\/p>",
+ "typhoon": "<h4>Typhoons<\/h4><p>Typhoon No. 29 (Koguma) is passing well east of Japan and becomes an ordinary low by Wed 14. No. 28 has already weakened. Rough seas off the Pacific coast until then, gone well before you land. No other systems are forecast toward Japan or Hong Kong. Hong Kong's season usually winds down by the end of October.<\/p>",
  "sources": [
   [
    "Japan Meteorological Agency, official 7-day forecast, Tokyo",
@@ -1243,23 +1256,15 @@ h1 span{display:block;font-weight:300}
    "Day and night rain amounts block automated reading. The monthly calendar is used instead."
   ]
  ],
- "verdict": "Mild, but wetter midweek.<br>4 days to watch.",
+ "verdict": "Mild, but wetter midweek.<br>3 days to watch.",
  "watch": [
-  {
-   "d": 18,
-   "dow": "Sun",
-   "title": "15:00 to 21:00, Street Kart at 16:00",
-   "risk": "Showers on one model only, up to 5 mm. Three sources dry.",
-   "decide": "Thu 15",
-   "act": "Know Street Kart’s wet weather policy"
-  },
   {
    "d": 20,
    "dow": "Tue",
-   "title": "All day, Tsukiji 08:15 and the Yokohama waterfront",
-   "risk": "Split: 40% and dry on the Japan Weather Association, 60% on Weathernews, rain on AccuWeather.",
+   "title": "15:00 to 21:00, Yokohama harbour walk 16:30",
+   "risk": "Rain 15:00 to 21:00, about 4 mm, on the Global Forecasting Model. Weathernews 60%, AccuWeather rain. Japan Weather Association 40%, dry.",
    "decide": "Fri 16",
-   "act": "Hold the Mon and Tue swap as an option"
+   "act": "Hold the Mon and Tue swap. Tsukiji morning is dry"
   },
   {
    "d": 21,
@@ -1278,27 +1283,27 @@ h1 span{display:block;font-weight:300}
    "act": "Check the Hilton package rain-out terms"
   }
  ],
- "sinceLabel": "Since the last check, Sun 11 Oct 09:45",
+ "sinceLabel": "Since the last check, Sun 11 Oct 20:40",
  "since": [
   [
+   "Sun 18",
+   "Street Kart: showers <s>4.6 mm<\/s> → <b>dry<\/b> on the Global Forecasting Model. <b>Watch dropped<\/b>"
+  ],
+  [
    "Tue 20",
-   "Tsukiji: rain <s>80%<\/s> → <b>40%<\/b> on the Japan Weather Association. Others still wet"
+   "Yokohama: Global Forecasting Model <s>dry<\/s> → <b>rain 15:00 to 21:00, about 4 mm<\/b>. Tsukiji morning still dry"
   ],
   [
-   "Wed 21",
-   "Nara: rain <s>40%<\/s> → <b>60%, about 7 mm<\/b> over the walk. <b>New watch<\/b>"
+   "Mon 19",
+   "Shinjuku night: <b>light rain, about 1 mm<\/b> in the evening on one model"
   ],
   [
-   "Sat 24",
-   "Fireworks: first Japan Weather Association forecast, <b>rain, 80%<\/b>. <b>New watch<\/b>"
+   "Wed 21 to Sat 24",
+   "Nara, Osaka, Kyoto and the fireworks: <b>no change<\/b>"
   ],
   [
-   "Fri 23",
-   "Kyoto: rain <s>20%<\/s> → <b>50%<\/b>, still not a watch"
-  ],
-  [
-   "Sat 17",
-   "Shibuya: official forecast <b>30%, confidence A<\/b>"
+   "Hong Kong",
+   "Still <b>29° and sunny<\/b> all four days"
   ]
  ]
 }</script>
