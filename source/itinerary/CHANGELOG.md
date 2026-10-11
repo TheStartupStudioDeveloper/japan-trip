@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Daikoku car meet option, 11 October
+- Sun 25 evening: the optional Tokyo Tower row now reads "Tokyo Tower lit up, or a car meet": a JDM car tour from the Blossom to the Daikoku PA night meet, about 20:00 to 23:00. An option, not a booking.
+- New How-to 23 (tours, pickup, timing, closure risk) and a Daikoku PA card. Checklist: "Optional: Daikoku car meet tour for Sun 25". Itinerary Summary Sun 25 evening: "Ginza dinner, Tokyo Tower or car meet".
+- Sun 25 footnote: the Sushi Bus lunch idea removed to keep the day on one page (it stays in Extras). Still 26 PDF pages.
+
 Sushi Hatsume, Wharf House footbath, creased clothes tip, 11 October
 - Sun 18 evening: Sushi Hatsume in Ebisu added as an option for the nice dinner (22-course omakase, ¥10,890 each, 19:30 seating), not a booking. Checklist: "Optional: Sushi Hatsume for Sun 18, 19:30, on TableCheck". Itinerary Summary: "Shibuya dinner, or Sushi Hatsume". Extras: Sushi Tokyo Ten now reads as the other sushi option.
 - Note 3: Tue 20 footbath idea is now The Wharf House in Yamashita Park on the dusk walk (¥300 each for 30 minutes, clothes on). How-to 22 renamed "Footbaths in Yokohama" and covers both, with Manyo Club kept as the Ferris wheel view option and its tattoo risk and ask-first message.

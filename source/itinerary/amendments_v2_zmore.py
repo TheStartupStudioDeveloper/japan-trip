@@ -94,3 +94,18 @@ CHECK[_g][1].insert(4, ('s', 'Optional: Sushi Hatsume for Sun 18, 19:30, on Tabl
 # ---------- Tips: wrinkle spray (Note 2, 11 Oct) ----------
 _i = [t[0] for t in TIPS].index('Luggage and lockers')
 TIPS.insert(_i + 1, ('Creased clothes', 'Convenience stores and Don Quijote sell wrinkle release spray (シワ取りスプレー). Spray, smooth with your hands and hang for a few minutes. Easier than finding an iron.'))
+
+# ---------- Sun 25: Daikoku car meet as an option (11 Oct) ----------
+_rs = D[25]['rows']
+_k = [r[1] for r in _rs].index('Optional: Tokyo Tower lit up')
+_rs[_k] = R(_rs[_k][0], 'Optional: Tokyo Tower lit up, or a car meet', 'Tower: 10 minutes by taxi, Zōjō-ji gate. Or a JDM car tour to Daikoku from the hotel, 20:00 to 23:00 (How-to 23).')
+HOWTO.append(('Daikoku car meet, Sun 25 option', [
+ 'An option, not a booking. Daikoku PA, on Yokohama\'s Bayshore Route, is where Japanese car fans meet at night. Only reachable by car, so book a tour (Klook or the operator).',
+ 'You ride in a JDM car such as an R34 Skyline, RX-7 or Supra with an English-speaking guide. Pickup from the Blossom, about 3 hours, tolls included. Start about 20:00; teamLab is 08:30 Monday.',
+ 'Police can close Daikoku without notice, mostly on Friday and Saturday nights. Pick a tour that moves you to another bay spot if it is shut, and check its refund terms.']))
+_g = [g[0] for g in CHECK].index('Book or confirm before you fly')
+CHECK[_g][1].insert(10, ('g', 'Optional: Daikoku car meet tour for Sun 25, about 20:00, hotel pickup'))
+_f = D[25]['foot']
+_i = _f.find(' Sushi Bus idea for lunch')
+if _i >= 0:
+    D[25]['foot'] = _f[:_i]

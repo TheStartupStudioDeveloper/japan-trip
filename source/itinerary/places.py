@@ -606,6 +606,9 @@ P('hatsume', ['Sushi Hatsume', 'Ebisu Sushi Hatsume'], 'Ebisu Sushi Hatsume', '�
 P('wharf-house', ['The Wharf House', 'Wharf House'], 'The Wharf House, Yamashita Park', 'THE WHARF HOUSE 山下公園',
   'A café and terrace in the old park rest house at the Minato Mirai end of Yamashita Park. Its footbath terrace sits right on the water, looking at the harbour, the Bay Bridge, the Hikawa Maru and Ōsanbashi pier. Feet only, clothes on.',
   'Footbath ¥300 each for 30 minutes, towel ¥200. About 10:00 to 21:00. Take a number inside; waits of 20 minutes or so. Closed in rain and on irregular days.', 'THE WHARF HOUSE Yamashita Park')
+P('daikoku', ['Daikoku car meet', 'Daikoku PA', 'Daikoku'], 'Daikoku PA car meet', '大黒パーキングエリア',
+  'A motorway parking area on an island interchange on Yokohama\'s Bayshore Route, famous worldwide as the night meeting spot for Japanese car culture: Skylines, Supras, RX-7s, modified kei cars and supercars, all parked up under the loops of the expressway. You can only get there by car, so visitors go on a tour.',
+  'Tours ride in a JDM car such as an R34 Skyline, RX-7 or Supra, with an English-speaking guide and hotel pickup, about 3 hours, tolls included. Police or the expressway can close it without notice, mostly on Friday and Saturday nights. See How-to 23.', 'Daikoku Parking Area Yokohama')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
