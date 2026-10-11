@@ -1119,6 +1119,13 @@
    "w": "A 1930 ocean liner moored at Yamashita Park, once known as the Queen of the Pacific on the Yokohama to Seattle run. The art deco first class rooms, bridge and engine room are open to walk through.",
    "t": "10:00 to 17:00, doors close 16:30. Closed Mondays. ¥300, cash only.",
    "m": "Hikawa Maru Yokohama"
+  },
+  "daikoku-yokohama": {
+   "n": "Daikoku PA car meet, from the Yokohama day",
+   "l": "大黒パーキングエリア",
+   "w": "Japan's most famous car meet: a car park on the Bayshore expressway in Yokohama where car fans gather after dark, from tuned JDM classics to supercars. It is only reachable by car, so there is no walking or train option. Get in with a licensed taxi that waits for you, a hire car, or a licensed tour. Avoid unlicensed private drivers, which police crack down on.",
+   "t": "Taxi: about ¥4,000 to ¥6,500 each way from Chinatown or Yokohama Station. Ask the driver to wait (metered) and bring you back, about ¥8,000 to ¥13,000 for an hour there. There is no taxi stand inside, so never go one way. Hire car: international permit plus licence, tolls by ETC card or cash, rental desks near Yokohama Station. Tours: from Shibuya or a Minato hotel pickup, about 3 hours, from about ¥35,000 a group, book at least a day ahead, includes another spot if Daikoku is shut. Weeknights are the safer bet: the entrance closes once the lot is full, usually from about 20:30 on weeknights and earlier at weekends, and police can close it without notice.",
+   "m": "Daikoku Parking Area Yokohama"
   }
  },
  "areas": [
@@ -1944,6 +1951,17 @@
      "fits": "Between Kamakura Station and Hachimangū, so it is lunch on the way: shirasu and street snacks.",
      "tags": [
       "¥"
+     ]
+    },
+    {
+     "group": "After dark",
+     "key": "daikoku-yokohama",
+     "time": "1.5 hrs",
+     "one": "Japan's famous car meet car park, by taxi, hire car or tour",
+     "fits": "Tue 20 after the Chinatown dinner: a licensed taxi from about 19:00 instead of the 19:30 train, an hour at the meet on a quieter weeknight, then back to Yokohama Station by about 21:00 for the train home. Or hire a car for the Yokohama day. The tour from the hotel stays the Sun 25 option (How-to 23).",
+     "tags": [
+      "¥¥",
+      "Taxi"
      ]
     }
    ],

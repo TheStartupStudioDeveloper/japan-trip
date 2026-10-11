@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Extras: Daikoku from the Yokohama day, 11 October
+- J&HK Extras, Yokohama, new "After dark" entry: the Daikoku PA car meet reached from the Tue 20 Yokohama day, by licensed taxi with the driver waiting (about ¥8,000 to ¥13,000 for an hour there), a hire car, or a tour. Its own card, so it stays on the Extras list while the Sun 25 tour option remains in the itinerary (How-to 23).
+
 Daikoku car meet option, 11 October
 - Sun 25 evening: the optional Tokyo Tower row now reads "Tokyo Tower lit up, or a car meet": a JDM car tour from the Blossom to the Daikoku PA night meet, about 20:00 to 23:00. An option, not a booking.
 - New How-to 23 (tours, pickup, timing, closure risk) and a Daikoku PA card. Checklist: "Optional: Daikoku car meet tour for Sun 25". Itinerary Summary Sun 25 evening: "Ginza dinner, Tokyo Tower or car meet".
