@@ -1120,6 +1120,13 @@
    "t": "10:00 to 17:00, doors close 16:30. Closed Mondays. ¥300, cash only.",
    "m": "Hikawa Maru Yokohama"
   },
+  "centifolia": {
+   "n": "Bar Centifolia",
+   "l": "BAR CENTIFOLIA",
+   "w": "A classic cocktail bar in Azabu-Juban run by owner-bartender Yuzo Komai, a Suntory cocktail award winner. Known for theatrical drinks with flames, nitrogen fog and hand-carved ice, served from a collection of over 100 antique glasses.",
+   "t": "About 20:30 to 03:00, reportedly closed Wednesdays and Sundays. ¥1,000 table charge each, cocktails about ¥4,000 to ¥6,000 plus 10% tax. Book on TableCheck; slots open 15 days ahead at midnight Japan time. Two minutes from Azabujuban Station, exit 4.",
+   "m": "Bar Centifolia Azabujuban"
+  },
   "daikoku-yokohama": {
    "n": "Daikoku PA car meet, from the Yokohama day",
    "l": "大黒パーキングエリア",
@@ -1958,7 +1965,7 @@
      "key": "daikoku-yokohama",
      "time": "1.5 hrs",
      "one": "Japan's famous car meet car park, by taxi, hire car or tour",
-     "fits": "Tue 20 after the Chinatown dinner: a licensed taxi from about 19:00 instead of the 19:30 train, an hour at the meet on a quieter weeknight, then back to Yokohama Station by about 21:00 for the train home. Or hire a car for the Yokohama day. The tour from the hotel stays the Sun 25 option (How-to 23).",
+     "fits": "Tue 20 after the Chinatown dinner: a licensed taxi from about 19:00 instead of the 19:30 train, an hour at the meet on a quieter weeknight, then back to Yokohama Station by about 21:00 for the train home. Or hire a car for the Yokohama day. The tour from the hotel stays the Sun 25 option (How-to 23 in the itinerary).",
      "tags": [
       "¥¥",
       "Taxi"
@@ -3040,6 +3047,17 @@
      "tags": [
       "¥¥¥",
       "Walk-in"
+     ]
+    },
+    {
+     "group": "Drink",
+     "key": "centifolia",
+     "time": "1.5 hrs",
+     "one": "Theatrical cocktails, flames and fog, antique glass",
+     "fits": "Sat 24 after the fireworks dinner, about 20 minutes by taxi from Odaiba. Closed Sundays and Wednesdays, so not Sun 25. Book on TableCheck.",
+     "tags": [
+      "¥¥¥",
+      "Book"
      ]
     },
     {
