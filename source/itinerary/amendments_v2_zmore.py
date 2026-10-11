@@ -71,15 +71,26 @@ _h[_j:_j+1] = [
 _rs = D[20]['alts'][0]['rows']
 _k = [r[1] for r in _rs].index('Lunch on the waterfront')
 _rs[_k:_k+1] = [
- R('13:00', 'Lunch, then a free afternoon on the waterfront', 'Idea: the Manyo Club rooftop footbath, ask first (How-to 22). More ideas in Extras, Yokohama.'),
- R('16:30', 'Harbour walk to Chinatown, dinner', 'Ōsanbashi and Yamashita Park at dusk, 40 minutes. Dinner from 17:30.'),
+ R('13:00', 'Lunch, then a free afternoon on the waterfront', 'Ideas in Extras, Yokohama.'),
+ R('16:30', 'Harbour walk to Chinatown, dinner', 'At dusk. Idea: the footbath at The Wharf House on the way (How-to 22). Dinner from 17:30.'),
 ]
 _k = [r[1] for r in _rs].index('Chinatown dinner')
 del _rs[_k]
-HOWTO.append(('Manyo Club footbath, Tue 20 idea', [
- 'An idea, not a booking. The rooftop footbath faces the Cosmo Clock Ferris wheel, five minutes from the Air Cabin. Best from about 16:00, as the wheel lights up.',
- 'There is no footbath-only ticket. Entry covers the whole spa: ¥3,500 each plus ¥100 bath tax. You change into their robe in the locker rooms on the way in.',
- 'The risk: the house rule refuses entry with tattoos, apart from small ones covered by their stickers, up to 11 cm square. A larger tattoo would be hidden by the robe on the roof, but the shared locker room is where it could be seen. If staff notice, expect to be asked to leave, with no refund.',
- 'Ask first: call 0570-07-4126, or ask the hotel front desk on Sat 17 or Mon 19 to ring for you. Show them: 背中にタトゥーがあります。館内着で完全に隠れます。屋上の足湯だけ利用したいのですが、入館できますか？ (I have a tattoo on my back, fully covered by the loungewear. I only want the rooftop footbath. May I enter?)',
- 'If the answer is no: see the wheel lit up free from the Kishamichi promenade and Unga Park, or ride it, Cosmo Clock 21, ¥1,000 for 15 minutes. More ideas in Extras, Yokohama.']))
+HOWTO.append(('Footbaths in Yokohama, Tue 20 ideas', [
+ 'Ideas, not bookings. The easy one is on the dusk walk: The Wharf House in Yamashita Park, a footbath terrace on the water. Feet only, clothes on.',
+ 'The Wharf House: ¥300 each for 30 minutes, towel ¥200. Take a number inside and wait to be called, often about 20 minutes. Closed in rain. Harbour, Bay Bridge and Hikawa Maru view; the Ferris wheel is only faint from here.',
+ 'For the Ferris wheel view: Manyo Club, a hot spring spa five minutes from the Air Cabin, has a rooftop footbath facing the wheel. No footbath-only ticket: entry covers the whole spa, ¥3,500 each plus ¥100 tax, and you change into their robe in the locker rooms.',
+ 'Manyo Club risk: the house rule refuses entry with tattoos, apart from small ones covered by their stickers, up to 11 cm square. A larger tattoo would be hidden by the robe on the roof, but the shared locker room is where it could be seen. If staff notice, expect to be asked to leave, with no refund.',
+ 'Ask Manyo Club first: call 0570-07-4126, or ask the hotel front desk to ring. Show them: 背中にタトゥーがあります。館内着で完全に隠れます。屋上の足湯だけ利用したいのですが、入館できますか？ (I have a tattoo on my back, fully covered by the loungewear. I only want the rooftop footbath. May I enter?)']))
 D[20]['alts'][0]['foot'] = 'Alternatives: the market also fits Mon 19 before the stores open, or Mon 26 with teamLab moved to 13:30. Closed Sundays and Wednesdays.'
+
+# ---------- Sun 18: Sushi Hatsume as an option (11 Oct) ----------
+_rs = D[18]['rows']
+_k = [r[1] for r in _rs].index('Back to Shibuya, nice dinner')
+_rs[_k] = R('Evening', 'Back to Shibuya, nice dinner', 'Option: Sushi Hatsume in Ebisu, one stop away. 22-course omakase, ¥10,890 each, 19:30 seating. Book ahead if you want it.')
+_g = [g[0] for g in CHECK].index('Book or confirm before you fly')
+CHECK[_g][1].insert(4, ('s', 'Optional: Sushi Hatsume for Sun 18, 19:30, on TableCheck'))
+
+# ---------- Tips: wrinkle spray (Note 2, 11 Oct) ----------
+_i = [t[0] for t in TIPS].index('Luggage and lockers')
+TIPS.insert(_i + 1, ('Creased clothes', 'Convenience stores and Don Quijote sell wrinkle release spray (シワ取りスプレー). Spray, smooth with your hands and hang for a few minutes. Easier than finding an iron.'))

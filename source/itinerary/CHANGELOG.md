@@ -4,6 +4,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Sushi Hatsume, Wharf House footbath, creased clothes tip, 11 October
+- Sun 18 evening: Sushi Hatsume in Ebisu added as an option for the nice dinner (22-course omakase, ¥10,890 each, 19:30 seating), not a booking. Checklist: "Optional: Sushi Hatsume for Sun 18, 19:30, on TableCheck". Itinerary Summary: "Shibuya dinner, or Sushi Hatsume". Extras: Sushi Tokyo Ten now reads as the other sushi option.
+- Note 3: Tue 20 footbath idea is now The Wharf House in Yamashita Park on the dusk walk (¥300 each for 30 minutes, clothes on). How-to 22 renamed "Footbaths in Yokohama" and covers both, with Manyo Club kept as the Ferris wheel view option and its tattoo risk and ask-first message.
+- Note 2: new tip "Creased clothes": wrinkle release spray from convenience stores and Don Quijote.
+- New cards: Ebisu Sushi Hatsume, The Wharf House. Still 26 PDF pages.
+
 Tue 20 free afternoon, Manyo Club as an idea, 11 October
 - Tue 20 is a free afternoon again: lunch, then the waterfront, with the Manyo Club rooftop footbath noted as an idea only (ask first), then the harbour walk into Chinatown at dusk and dinner from 17:30. Itinerary Summary reads "Yokohama waterfront, free afternoon".
 - New How-to 22, Manyo Club footbath: no footbath-only ticket, robe and locker room, the tattoo entry rule and the risk of being asked to leave, how to ask first (phone or hotel desk, Japanese message), and what to do instead.

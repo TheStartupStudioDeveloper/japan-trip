@@ -600,6 +600,12 @@ P('s109', ['Bunkamura-dori and 109', 'Bunkamura-dori, 109', 'Bunkamura-dori'], '
 P('manyo', ['Manyo Club'], 'Manyo Club, Minato Mirai', '横浜みなとみらい 万葉倶楽部',
   'A hot spring spa complex on the Minato Mirai waterfront, with natural spring baths fed by water trucked in from Atami and Yugawara, saunas, lounges and restaurants. On the roof is a long footbath that looks straight at the Cosmo Clock Ferris wheel and Landmark Tower, lit up after dark.',
   'Entry covers the whole spa: about ¥3,500 each plus ¥100 bath tax. There is no footbath-only ticket. Robe and towels included. Open 24 hours, entry from 10:00. Tattoos may be refused at entry: see How-to 22 before you go.', 'Yokohama Minato Mirai Manyo Club')
+P('hatsume', ['Sushi Hatsume', 'Ebisu Sushi Hatsume'], 'Ebisu Sushi Hatsume', '恵比寿 鮨 はつめ',
+  'A small sushi counter in Ebisu with a 22-course omakase, set up by a head chef from a two Michelin star sushi restaurant to make high-end sushi casual. Twelve counter seats, so you watch every piece being made.',
+  'Omakase ¥10,890 each, or ¥17,490 with a wine and sake pairing. Seatings 17:00 and 19:30, about 2 hours. Book on TableCheck in English. Cancelling 3 days out costs 50%, 1 to 2 days out 100%. Cards only. Five minutes from Ebisu Station.', 'Ebisu Sushi Hatsume')
+P('wharf-house', ['The Wharf House', 'Wharf House'], 'The Wharf House, Yamashita Park', 'THE WHARF HOUSE 山下公園',
+  'A café and terrace in the old park rest house at the Minato Mirai end of Yamashita Park. Its footbath terrace sits right on the water, looking at the harbour, the Bay Bridge, the Hikawa Maru and Ōsanbashi pier. Feet only, clothes on.',
+  'Footbath ¥300 each for 30 minutes, towel ¥200. About 10:00 to 21:00. Take a number inside; waits of 20 minutes or so. Closed in rain and on irregular days.', 'THE WHARF HOUSE Yamashita Park')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
