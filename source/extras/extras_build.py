@@ -55,7 +55,7 @@ for a in data['areas']:
  <div class="band"><i class="pat pat-{a["pat"]}"></i></div>
  <div class="ah"><p class="kanji">{a["kanji"]}</p><div><h2>{H.escape(a["name"])}</h2><p class="meta">{H.escape(a["meta"])}</p>
   <p class="udays"><span>In the itinerary:</span> {days}</p></div></div>
- {f'<p class="unote"><b>Good to know</b>{H.escape(a["notes"])}</p>' if a.get('notes') else ''}
+ {f'<p class="unote"><b>Good to know</b>{hl(H.escape(a["notes"]))}</p>' if a.get('notes') else ''}
  {f'<div class="must"><p class="ugrp">Must try here</p><ul>{must}</ul></div>' if must else ''}
  <ol class="rows">{"".join(rows)}</ol>
 </section>''')

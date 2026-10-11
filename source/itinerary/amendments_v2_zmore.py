@@ -67,14 +67,19 @@ _h[_j:_j+1] = [
  'Many counters add a small seating charge, a few hundred yen each, and bring a small snack you did not order. It is called otoshi (お通し): that is the charge, so it is normal, not a mistake.',
  'Check the menu and prices before you sit. If none are posted, ask, or pick a counter that shows them. Counters are tiny and best for two.']
 
-# ---------- Tue 20: Manyo Club rooftop footbath (11 Oct) ----------
+# ---------- Tue 20: free afternoon, Manyo Club footbath as an idea (11 Oct) ----------
 _rs = D[20]['alts'][0]['rows']
 _k = [r[1] for r in _rs].index('Lunch on the waterfront')
-_rs[_k-1] = R('11:30', 'Sakuragichō, Air Cabin, Minato Mirai waterfront', 'Cable car, Red Brick Warehouses, the skyline, then lunch on the waterfront.')
 _rs[_k:_k+1] = [
- R('14:15', 'Manyo Club, rooftop footbath', 'Rooftop footbath facing the Ferris wheel. About ¥3,600 each, covers the whole spa.'),
+ R('13:00', 'Lunch, then a free afternoon on the waterfront', 'Idea: the Manyo Club rooftop footbath, ask first (How-to 22). More ideas in Extras, Yokohama.'),
  R('16:30', 'Harbour walk to Chinatown, dinner', 'Ōsanbashi and Yamashita Park at dusk, 40 minutes. Dinner from 17:30.'),
 ]
 _k = [r[1] for r in _rs].index('Chinatown dinner')
 del _rs[_k]
+HOWTO.append(('Manyo Club footbath, Tue 20 idea', [
+ 'An idea, not a booking. The rooftop footbath faces the Cosmo Clock Ferris wheel, five minutes from the Air Cabin. Best from about 16:00, as the wheel lights up.',
+ 'There is no footbath-only ticket. Entry covers the whole spa: ¥3,500 each plus ¥100 bath tax. You change into their robe in the locker rooms on the way in.',
+ 'The risk: the house rule refuses entry with tattoos, apart from small ones covered by their stickers, up to 11 cm square. A larger tattoo would be hidden by the robe on the roof, but the shared locker room is where it could be seen. If staff notice, expect to be asked to leave, with no refund.',
+ 'Ask first: call 0570-07-4126, or ask the hotel front desk on Sat 17 or Mon 19 to ring for you. Show them: 背中にタトゥーがあります。館内着で完全に隠れます。屋上の足湯だけ利用したいのですが、入館できますか？ (I have a tattoo on my back, fully covered by the loungewear. I only want the rooftop footbath. May I enter?)',
+ 'If the answer is no: see the wheel lit up free from the Kishamichi promenade and Unga Park, or ride it, Cosmo Clock 21, ¥1,000 for 15 minutes. More ideas in Extras, Yokohama.']))
 D[20]['alts'][0]['foot'] = 'Alternatives: the market also fits Mon 19 before the stores open, or Mon 26 with teamLab moved to 13:30. Closed Sundays and Wednesdays.'

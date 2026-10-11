@@ -599,7 +599,7 @@ P('s109', ['Bunkamura-dori and 109', 'Bunkamura-dori, 109', 'Bunkamura-dori'], '
   'Shibuya 109 is the silver cylindrical tower of small fashion shops that splits the road just west of the Scramble Crossing. Bunkamura-dori is the street running past it. Both are closed to cars for festival stages on the Sunday.', '', 'Shibuya 109 building')
 P('manyo', ['Manyo Club'], 'Manyo Club, Minato Mirai', '横浜みなとみらい 万葉倶楽部',
   'A hot spring spa complex on the Minato Mirai waterfront, with natural spring baths fed by water trucked in from Atami and Yugawara, saunas, lounges and restaurants. On the roof is a long footbath that looks straight at the Cosmo Clock Ferris wheel and Landmark Tower, lit up after dark.',
-  'Entry covers the whole spa: about ¥3,500 each plus ¥100 bath tax. There is no footbath-only ticket. Robe and towels included. Open 24 hours, entry from 10:00. Tattoos may be refused; small cover stickers are sold at the desk.', 'Yokohama Minato Mirai Manyo Club')
+  'Entry covers the whole spa: about ¥3,500 each plus ¥100 bath tax. There is no footbath-only ticket. Robe and towels included. Open 24 hours, entry from 10:00. Tattoos may be refused at entry: see How-to 22 before you go.', 'Yokohama Minato Mirai Manyo Club')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

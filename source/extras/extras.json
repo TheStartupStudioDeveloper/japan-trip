@@ -1091,6 +1091,34 @@
    "w": "A fishing village on the far west of Lantau where families still live in houses on stilts over the tidal creeks. Lanes of drying fish and shrimp paste, small temples, and boat trips out to look for the pink dolphins.",
    "t": "Bus 21 from Ngong Ping, about 20 minutes, then bus 11 to Tung Chung MTR. Allow two to three hours. Cash or Octopus.",
    "m": "Tai O fishing village Lantau"
+  },
+  "kishamichi": {
+   "n": "Kishamichi promenade and Unga Park",
+   "l": "汽車道・運河パーク",
+   "w": "An old railway line turned into a waterfront walkway, crossing the water on iron bridges from Sakuragichō towards the Red Brick Warehouses. Unga Park beside it, at the Air Cabin, looks straight at the Cosmo Clock Ferris wheel and the Landmark Tower.",
+   "t": "Free and always open. The wheel and towers light up around sunset, about 17:00.",
+   "m": "Kishamichi Promenade Yokohama"
+  },
+  "cosmo-clock": {
+   "n": "Cosmo Clock 21",
+   "l": "コスモクロック21",
+   "w": "The giant Ferris wheel at the heart of Minato Mirai, with a huge clock on its face. One turn takes about 15 minutes, with the harbour, the Bay Bridge and, on a clear day, Mount Fuji. Some cabins have see-through floors.",
+   "t": "¥1,000 each. Weekdays from 11:00 to 20:00 or 21:00 depending on the season. Closed Thursdays.",
+   "m": "Cosmo Clock 21 Yokohama"
+  },
+  "nippon-maru": {
+   "n": "Nippon Maru and Yokohama Port Museum",
+   "l": "帆船日本丸・横浜みなと博物館",
+   "w": "A 1930 four-masted sailing ship, preserved in a dry dock beside Sakuragichō, that you can walk through from deck to cabins and engine room. The port museum next to it tells Yokohama's story from fishing village to great port.",
+   "t": "10:00 to 17:00, last entry 16:30. Closed Mondays. ¥800 for both, or ¥400 the ship and ¥500 the museum.",
+   "m": "Nippon Maru Memorial Park Yokohama"
+  },
+  "hikawa-maru": {
+   "n": "Hikawa Maru",
+   "l": "氷川丸",
+   "w": "A 1930 ocean liner moored at Yamashita Park, once known as the Queen of the Pacific on the Yokohama to Seattle run. The art deco first class rooms, bridge and engine room are open to walk through.",
+   "t": "10:00 to 17:00, doors close 16:30. Closed Mondays. ¥300, cash only.",
+   "m": "Hikawa Maru Yokohama"
   }
  },
  "areas": [
@@ -1802,6 +1830,26 @@
      ]
     },
     {
+     "group": "Views",
+     "key": "kishamichi",
+     "time": "30 min",
+     "one": "Free waterfront walk facing the Ferris wheel",
+     "fits": "Tue 20 free afternoon, or at dusk from about 16:30 when the wheel lights up. Right by the Air Cabin.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "cosmo-clock",
+     "time": "15 min",
+     "one": "Ride the Ferris wheel over the harbour",
+     "fits": "Tue 20 free afternoon, five minutes from the Air Cabin. Open Tuesdays, closed Thursdays.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
      "group": "Sights",
      "key": "yamate",
      "time": "1.5 hrs",
@@ -1809,6 +1857,27 @@
      "fits": "Tue 20 at 15:30, up from Yamashita Park, then down through Motomachi into Chinatown. Houses close 17:00.",
      "tags": [
       "Free"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "nippon-maru",
+     "time": "1 hr",
+     "one": "1930 sailing ship you can walk through",
+     "fits": "Tue 20 straight after the Air Cabin, beside Sakuragichō. Open Tuesdays, last entry 16:30.",
+     "tags": [
+      "¥"
+     ]
+    },
+    {
+     "group": "Sights",
+     "key": "hikawa-maru",
+     "time": "45 min",
+     "one": "Art deco ocean liner at Yamashita Park",
+     "fits": "Tue 20 on the harbour walk, before Chinatown. Doors close 16:30, so go before the dusk walk.",
+     "tags": [
+      "¥",
+      "Cash"
      ]
     },
     {
@@ -1878,7 +1947,7 @@
      ]
     }
    ],
-   "notes": "The Cup Noodles Museum in Minato Mirai is closed on Tuesdays, so it is left out. Weekday Chinatown kitchens close early: Jukeihanten last orders 20:00, Edosei shuts 19:30, which suits the 19:30 train. Manchinrō and Heichinrō have irregular closed days, so check the Tuesday when booking. In Kamakura the Buddha and Hase-dera close at 17:00, so a Kamakura swap needs to reach Kamakura by about 11:30."
+   "notes": "The Cup Noodles Museum in Minato Mirai is closed on Tuesdays, so it is left out. The Manyo Club rooftop footbath is in the day plan as an idea: ask first, see How-to 22 in the itinerary. Weekday Chinatown kitchens close early: Jukeihanten last orders 20:00, Edosei shuts 19:30, which suits the 19:30 train. Manchinrō and Heichinrō have irregular closed days, so check the Tuesday when booking. In Kamakura the Buddha and Hase-dera close at 17:00, so a Kamakura swap needs to reach Kamakura by about 11:30."
   },
   {
    "key": "kyoto",

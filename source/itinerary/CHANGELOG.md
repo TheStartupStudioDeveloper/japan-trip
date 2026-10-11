@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Tue 20 free afternoon, Manyo Club as an idea, 11 October
+- Tue 20 is a free afternoon again: lunch, then the waterfront, with the Manyo Club rooftop footbath noted as an idea only (ask first), then the harbour walk into Chinatown at dusk and dinner from 17:30. Itinerary Summary reads "Yokohama waterfront, free afternoon".
+- New How-to 22, Manyo Club footbath: no footbath-only ticket, robe and locker room, the tattoo entry rule and the risk of being asked to leave, how to ask first (phone or hotel desk, Japanese message), and what to do instead.
+- Extras, Yokohama: four free-afternoon ideas, all open Tuesdays: Kishamichi promenade and Unga Park (free, lit Ferris wheel at dusk), Cosmo Clock 21 ride (¥1,000, closed Thursdays), Nippon Maru and the Port Museum, Hikawa Maru. How-to mentions in Extras notes now link too.
+
 Manyo Club on Tue 20, 11 October
 - Tue 20: Manyo Club rooftop footbath at 14:15, facing the Cosmo Clock Ferris wheel (about ¥3,600 each, covers the whole spa, no footbath-only ticket). Then a harbour walk at dusk via Ōsanbashi and Yamashita Park into Chinatown, dinner from 17:30. Lunch folded into the 11:30 waterfront row.
 - New place card: Manyo Club. Itinerary Summary Tue 20 afternoon updated. Still 26 PDF pages.
