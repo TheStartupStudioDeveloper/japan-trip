@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Extras: Hana Chibo, 13 October
+- J&HK Extras, Shibuya, Eat: Hana Chibo Yebisu Garden Place, okonomiyaki and teppanyaki on the 38th floor. For Mon 19 or Sat 17 lunch, or the fallback if Sushi Hatsume is full on Sun 18. New card.
+
 Nara by Kintetsu, kamameshi lunch, 13 October
 - Wed 21: Kintetsu limited express to Nara (10:40) and back (16:45) in place of the JR Nara line. Arrive at Kintetsu Nara into the covered Higashimuki arcade; lunch at Kamameshi Shizuka at 11:30, kakinoha box as the backup; walk down to Kintetsu Nara at 16:15. The JR line is the alternative in the day note.
 - New How-to 24 "Kyoto to Nara and back, Wed 21": Kintetsu seats, the express without seats, and the JR alternative. How-to 13 now points to Kintetsu for Nara.

@@ -1161,6 +1161,13 @@
    "w": "A kaiseki restaurant hidden in the forest behind Kasuga Taisha, reached by a woodland path. A long, many-course lunch in private rooms looking onto the trees.",
    "t": "Booking required. Lunch about ¥10,000 to ¥15,000 each, allow two hours.",
    "m": "Tsukihitei Nara Kasugano"
+  },
+  "hana-chibo": {
+   "n": "Hana Chibo Yebisu Garden Place",
+   "l": "花ちぼ 恵比寿ガーデンプレイス",
+   "w": "The upmarket branch of Chibo, the Osaka okonomiyaki chain, on the 38th floor of Yebisu Garden Place Tower. Teppanyaki and okonomiyaki cooked at the counter in front of you, with the city spread out behind.",
+   "t": "Open daily, lunch 11:30 to 15:00, dinner 17:00 to 22:00. Courses about ¥10,000 each, lunch cheaper. Book online; ask for counter or window seats and a seafood course.",
+   "m": "Hana Chibo Yebisu Garden Place 38F"
   }
  },
  "areas": [
@@ -1346,6 +1353,17 @@
      "fits": "Dinner on a free evening. Sun 18 after Street Kart, or Tue 20 if back early.",
      "tags": [
       "Cash"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "hana-chibo",
+     "time": "1.5 hr",
+     "one": "Okonomiyaki and teppanyaki with a 38th floor view",
+     "fits": "Mon 19 lunch, or Sat 17 for a sit-down lunch after the flight. One stop to Ebisu. Also the fallback if Sushi Hatsume is full for Sun 18.",
+     "tags": [
+      "¥¥¥",
+      "Book"
      ]
     },
     {
