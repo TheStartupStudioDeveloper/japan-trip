@@ -207,3 +207,8 @@ _h[_k] = 'Roppongi design loop: Chiyoda line from Omotesando, one stop to Nogiza
 # Note 5: face cover in fitting rooms
 _i = [t[0] for t in TIPS].index('Passports')
 TIPS.insert(_i + 1, ('Fitting rooms', 'Put on the thin face cover (フェイスカバー) the shop gives you before pulling on a top, so makeup does not mark the clothes. Shoes off at the fitting room step.'))
+# Cash mix tips, Japan and Hong Kong
+_i = [t[0] for t in TIPS].index('Cash and coins')
+TIPS.insert(_i + 1, ('The right mix of yen', 'Notes are ¥1,000, ¥5,000 and ¥10,000. Keep three or four ¥1,000s each for stalls, temples and taxis; break ¥10,000s at convenience stores, not small shops. ATMs give mostly ¥10,000s, so ask for an amount like ¥19,000 to get smaller notes. Most useful coins: ¥100 and ¥500 for machines, a few ¥10 and ¥5 for shrines.'))
+_i = [t[0] for t in TIPS].index('Hong Kong: tipping')
+TIPS.insert(_i, ('Hong Kong: cash', 'Octopus covers trains, buses and most shops. For cash, carry HK$20, HK$50 and HK$100 notes. Taxis and small stalls often cannot change HK$500 or HK$1,000. Some red taxis are still cash only.'))
