@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Tax-free QR and coming home, 12 October
+- How-to 4: setting up the Visit Japan Web tax-free QR (scan passports, then the landing sticker after arrival, show it live), and the Australian allowances on the way home (AUD 900 goods, 2.25 L alcohol, 25 cigarettes each; declare all food and wood). Existing lines tightened.
+- Checklist: the Visit Japan Web line now covers the tax-free QR and passport scans; the Sat 17 Narita line adds scanning the landing sticker. The two Street Kart lines are merged so the PDF stays at 26 pages.
+
 Extras: Daikoku from the Yokohama day, 11 October
 - J&HK Extras, Yokohama, new "After dark" entry: the Daikoku PA car meet reached from the Tue 20 Yokohama day, by licensed taxi with the driver waiting (about ¥8,000 to ¥13,000 for an hour there), a hire car, or a tour. Its own card, so it stays on the Extras list while the Sun 25 tour option remains in the itinerary (How-to 23).
 
