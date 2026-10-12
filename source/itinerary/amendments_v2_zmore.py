@@ -56,9 +56,9 @@ _h[:] = [
  'Take the physical passports. The shop scans the entry sticker. A photo is not accepted.',
  'Spend ¥5,000 or more before tax in one store on the same day. Food and other goods can be added together to reach it. Look for the Tax-Free sign, or the tax-free counter in a department store.',
  "Prices already include Japan's tax. Tax-free means it isn't charged: 10% on most goods and alcohol, 8% on take-away food and soft drinks. That is about 9% and 7% off the shelf price.",
- 'Restaurant and café meals are never tax-free. Department stores refund the tax at a separate counter and keep a small fee, around 1.5%.',
- 'Food, drinks and cosmetics are sealed in a bag. Leave it sealed until you have left Japan.',
- 'This at-the-till system runs until 31 October, so it covers the whole trip. It changes on 1 November.']
+ 'Restaurant meals are never tax-free. Department stores refund at a separate counter, less about 1.5%.',
+ 'Food, drinks and cosmetics are sealed in a bag. Keep it sealed until you leave Japan.',
+ 'This at-the-till system runs to 31 October, so it covers the trip. It changes on 1 November.']
 
 # ---------- Omoide Yokochō: otoshi and prices (11 Oct) ----------
 _h = _how('Omoide Yokochō, Mon 19')
@@ -109,3 +109,27 @@ _f = D[25]['foot']
 _i = _f.find(' Sushi Bus idea for lunch')
 if _i >= 0:
     D[25]['foot'] = _f[:_i]
+
+# Tax-free QR and coming home allowances (How-to 4), plus two checklist lines
+_h = _how('Tax-free shopping')
+_h[-1:-1] = [
+ 'Tax-free QR: in Visit Japan Web personal details, turn on "Use tax-free QR code" and scan both passports with the camera. After landing, scan the landing sticker QR too. Show the code live in the app; carry passports anyway.',
+ 'Back in Australia: AUD 900 of goods, 2.25 L of alcohol and 25 cigarettes each. Declare all food and wood. Undeclared items risk a fine of about AUD 626.',
+]
+for _gi, (_gn, _items) in enumerate(CHECK):
+    _k = next((i for i, it in enumerate(_items) if 'Visit Japan Web registered' in it[1]), None)
+    if _k is not None:
+        _items[_k] = (_items[_k][0], 'Visit Japan Web registered for both, tax-free QR on, passports scanned')
+        break
+else:
+    raise SystemExit('VJW checklist line not found')
+_g = [g[0] for g in CHECK].index('On the ground')
+_k = next(i for i, it in enumerate(CHECK[_g][1]) if it[1].startswith('Sat 17: Narita Express'))
+CHECK[_g][1][_k] = ('s', 'Sat 17 at Narita: scan the landing sticker QR into Visit Japan Web, then Narita Express tickets on a train that stops at Shibuya')
+# Fit: merge the two Street Kart checklist lines
+_g = [g[0] for g in CHECK].index('Book or confirm before you fly')
+_L = CHECK[_g][1]
+_a = next(i for i, it in enumerate(_L) if it[1].startswith('Street Kart meeting point'))
+_b = next(i for i, it in enumerate(_L) if it[1].startswith('Street Kart: check the rebooking'))
+_L[_a] = (_L[_a][0], 'Street Kart: meeting point, arrival time, and rebooking terms in case it moves to Sun 25 or Mon 26')
+del _L[_b]
