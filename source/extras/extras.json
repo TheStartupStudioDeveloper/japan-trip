@@ -1133,6 +1133,13 @@
    "w": "Japan's most famous car meet: a car park on the Bayshore expressway in Yokohama where car fans gather after dark, from tuned JDM classics to supercars. It is only reachable by car, so there is no walking or train option. Get in with a licensed taxi that waits for you, a hire car, or a licensed tour. Avoid unlicensed private drivers, which police crack down on.",
    "t": "Taxi: about ¥4,000 to ¥6,500 each way from Chinatown or Yokohama Station. Ask the driver to wait (metered) and bring you back, about ¥8,000 to ¥13,000 for an hour there. There is no taxi stand inside, so never go one way. Hire car: international permit plus licence, tolls by ETC card or cash, rental desks near Yokohama Station. Tours: from Shibuya or a Minato hotel pickup, about 3 hours, from about ¥35,000 a group, book at least a day ahead, includes another spot if Daikoku is shut. Weeknights are the safer bet: the entrance closes once the lot is full, usually from about 20:30 on weeknights and earlier at weekends, and police can close it without notice.",
    "m": "Daikoku Parking Area Yokohama"
+  },
+  "sarusawa": {
+   "n": "Sarusawa Pond",
+   "l": "猿沢池",
+   "w": "A small pond at the foot of Kōfuku-ji, with willows and the five-storey pagoda reflected in the water. The classic Nara photo spot, a minute off Sanjō-dōri.",
+   "t": "The pagoda is wrapped for restoration until 2034, so the reflection shows the cover for now. Best in soft light.",
+   "m": "Sarusawa Pond Nara"
   }
  },
  "areas": [
@@ -2449,10 +2456,20 @@
     },
     {
      "group": "Sights",
+     "key": "sarusawa",
+     "time": "10 min",
+     "one": "Willow pond below the Kōfuku-ji pagoda",
+     "fits": "Wed 21 at lunch, a two minute detour off Sanjō-dōri. Also on the way into Naramachi.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Sights",
      "key": "naramachi",
      "time": "1 hr",
      "one": "Old merchant lanes south of the park",
-     "fits": "Wed 21 as a swap for the Tōdai-ji hill if the day runs late: ten minutes south of Kōfuku-ji, and a short walk to JR Nara for the train.",
+     "fits": "Wed 21 if Nara finishes early, or as a swap for Nigatsu-dō: ten minutes south of Kōfuku-ji, past Sarusawa Pond.",
      "tags": [
       "Free"
      ]

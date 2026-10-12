@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Extras: Sarusawa Pond, 12 October
+- J&HK Extras, Nara: new Sarusawa Pond entry and card (a two minute detour at Wed 21 lunch). Naramachi's note now reads as an early-finish idea or a swap for Nigatsu-dō.
+
 Tax-free QR and coming home, 12 October
 - How-to 4: setting up the Visit Japan Web tax-free QR (scan passports, then the landing sticker after arrival, show it live), and the Australian allowances on the way home (AUD 900 goods, 2.25 L alcohol, 25 cigarettes each; declare all food and wood). Existing lines tightened.
 - Checklist: the Visit Japan Web line now covers the tax-free QR and passport scans; the Sat 17 Narita line adds scanning the landing sticker. The two Street Kart lines are merged so the PDF stays at 26 pages.
