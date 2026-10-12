@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Fitting rooms tip, 13 October
+- Tips (Note 5): new "Fitting rooms" tip after Passports: wear the face cover the shop gives you when trying on tops, shoes off at the fitting room step.
+
 Tokyo City View, 13 October
 - How-to 10: the Mori Art Museum is shut between exhibitions in October (next show opens 31 Oct), so the Roppongi loop now points to Tokyo City View below it instead.
 - J&HK Extras, Ginza and east Tokyo, Views: Tokyo City View, Tokyo Tower at eye level from level 52, indoors. For Sun 25 or Mon 26 evening, Hibiya line to Roppongi. New card.

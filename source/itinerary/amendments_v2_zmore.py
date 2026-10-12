@@ -204,3 +204,6 @@ _h[0] = 'Ideas, not bookings. The easy one, on the dusk walk: The Wharf House fo
 _h = _how('While the stores are on, for G')
 _k = [i for i, x in enumerate(_h) if x.startswith('Roppongi design loop')][0]
 _h[_k] = 'Roppongi design loop: Chiyoda line from Omotesando, one stop to Nogizaka. 21_21 Design Sight (10:00 to 19:00, closed Tuesdays and between shows) and the National Art Center. The Mori Art Museum is shut in October; Tokyo City View below it is open.'
+# Note 5: face cover in fitting rooms
+_i = [t[0] for t in TIPS].index('Passports')
+TIPS.insert(_i + 1, ('Fitting rooms', 'Put on the thin face cover (フェイスカバー) the shop gives you before pulling on a top, so makeup does not mark the clothes. Shoes off at the fitting room step.'))
