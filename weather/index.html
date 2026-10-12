@@ -161,6 +161,14 @@ h1 span{display:block;font-weight:300}
 .guide b{display:block;font:700 1rem var(--display)}
 .guide span{color:var(--mute);line-height:1.3}
 .sources{display:grid;gap:.35rem;font-size:.9rem}
+.mth p{font-size:.9rem;margin:.5rem 0}
+.mth .wt{display:grid;grid-template-columns:8.2rem minmax(0,1fr) 2.4rem;gap:.5rem;align-items:center;font-size:.86rem;margin:.3rem 0}
+.mth .wt i{display:block;height:.7rem;background:var(--ink)}
+.mth .wt span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.mth .why{grid-column:1/-1;color:var(--mute);font-size:.8rem;margin-top:-.15rem;line-height:1.3}
+.mth .wt span.why{text-align:left}
+.mth ul{margin:.4rem 0 0;padding-left:1.1rem;font-size:.86rem}
+.mth li{margin:.2rem 0}
 .sources a{text-underline-offset:2px}
 .sources .sn{color:var(--mute);font-size:.84rem}
 .end{margin-block:3rem 3.5rem;font-size:.82rem;color:var(--mute)}
@@ -237,7 +245,11 @@ h1 span{display:block;font-weight:300}
         <div><b>Fair</b><span>6 to 10 days. The pattern is right, the timing of rain can shift a day.</span></div>
         <div><b>Outlook</b><span>11 days or more. A trend from long-range models, not a forecast. Don't move anything yet.</span></div>
       </div>
-      <p>Which source wins: far out, every source counts the same and a split is flagged. Inside about 5 days, the local forecasters lead: the Japan Meteorological Agency, Weathernews and the Japan Weather Association in Japan, the Hong Kong Observatory in Hong Kong. The Global Forecasting Model becomes a cross-check only.</p>
+
+    </div>
+    <div class="box">
+      <h4>How the forecasts are combined</h4>
+      <div id="method"></div>
     </div>
     <div class="box">
       <h4>Sources</h4>
@@ -248,8 +260,8 @@ h1 span{display:block;font-weight:300}
 </main>
 
 <script type="application/json" id="wx">{
- "checked": "2026-10-12T08:40:00+11:00",
- "checkedLabel": "Mon 12 Oct, 08:40 Melbourne time",
+ "checked": "2026-10-13T08:45:00+11:00",
+ "checkedLabel": "Tue 13 Oct, 08:45 Melbourne time",
  "legs": [
   {
    "id": "s",
@@ -259,8 +271,8 @@ h1 span{display:block;font-weight:300}
    "dates": "Sat 17 to Wed 21 Oct",
    "no": "Leg 1 of 4",
    "range": "22–26°",
-   "line": "Mild, more cloud than sun",
-   "lede": "Highs of 22 to 26, a degree or two above normal. More cloud than sun but nothing heavy. The Japan Meteorological Agency gives 70% odds of a warmer than normal week."
+   "line": "Mild, rain from midday Tue 20",
+   "lede": "Highs of 24 to 28, a degree or two above normal. Dry until Monday, when the stores day may see a morning shower. Tuesday has rain at times from midday, after Tsukiji."
   },
   {
    "id": "k",
@@ -270,8 +282,8 @@ h1 span{display:block;font-weight:300}
    "dates": "Wed 21 to Sat 24 Oct",
    "no": "Leg 2 of 4",
    "range": "19–25°",
-   "line": "Two wet signals",
-   "lede": "The leg to watch. Wet signals on Wed 21 and Fri 23, and the sources don't agree yet. Thursday looks the driest day, which matters because Thursday and Friday can swap."
+   "line": "Nara clear, Friday wobbles",
+   "lede": "Nara has cleared: dry on every source. Thursday in Osaka is the driest day. Friday is the new wet signal, on tenki.jp only, and the Thursday and Friday swap is ready if it holds."
   },
   {
    "id": "g",
@@ -280,9 +292,9 @@ h1 span{display:block;font-weight:300}
    "short": "Hibiya",
    "dates": "Sat 24 to Tue 27 Oct",
    "no": "Leg 3 of 4",
-   "range": "19–22°",
-   "line": "Cooler, cloudy",
-   "lede": "Cooler, highs of 19 to 22. Mostly cloudy with small rain chances. This is outlook only, 15 or more days away."
+   "range": "20–22°",
+   "line": "Cooler, a wet signal",
+   "lede": "Cooler, highs of 20 to 22. tenki.jp has rain at times on Sat 24 and Sun 25, 70 to 80%. Weathernews has 20 to 30%. 11 or more days out, so a signal, not a forecast."
   },
   {
    "id": "h",
@@ -303,13 +315,13 @@ h1 span{display:block;font-weight:300}
    "leg": "s",
    "where": "Shibuya",
    "title": "Arrive and wander Shibuya",
-   "icon": "shower",
-   "hi": 24,
+   "icon": "part",
+   "hi": 25,
    "lo": 18,
    "rain": 30,
-   "cond": "Cloudy, dry",
+   "cond": "Cloud, then sun",
    "sunset": "17:00",
-   "call": "Settled. The Japan Meteorological Agency's official 7-day forecast now reaches Saturday: cloud with some sun, 30%, confidence A, its highest grade. Every local source is dry. Shibuya Sky at 16:00 looks fine. Cloud may soften the view.",
+   "call": "Settled. Every source has it dry: tenki.jp cloudy then sunny, 30%, and the official JMA forecast 30%, confidence A. An easy, mild first day.",
    "plan": [
     [
      "10:30",
@@ -324,32 +336,36 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
-     "Japan Weather Association",
-     "24° / 18°, cloudy, 30% all day, 0 mm"
+     "Combined",
+     "30% chance of rain, tenki.jp weighted highest"
     ],
     [
-     "Weathernews, Shibuya",
-     "23° / 17°, cloud with some sun, 30%"
-    ],
-    [
-     "AccuWeather",
-     "23° / 14°, an afternoon shower"
-    ],
-    [
-     "Global Forecasting Model",
-     "24° / 18°, dry, 0 mm"
+     "tenki.jp",
+     "25° / 18°, cloudy then sunny, 30%, 0 mm"
     ],
     [
      "Japan Meteorological Agency (official)",
-     "24° / 15°, cloud with some sun, 30%, confidence A"
+     "24° / 14°, cloud with some sun, 30%, confidence A"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "24° / 18°, cloudy, 40%"
+    ],
+    [
+     "Global Forecasting Model",
+     "24° / 15°, fair, 0 mm"
+    ],
+    [
+     "AccuWeather",
+     "24° / 16°, partly sunny and nice"
     ]
    ],
    "mm": "Under 1 mm",
-   "gicon": "cloud",
+   "gicon": "part",
    "gfill": 30,
    "gtext": "30%",
    "gmm": "0",
-   "read": "Cloudy and dry. 30% all day, no measurable rain. The official forecast agrees.",
+   "read": "Cloudy then sunny, 30%. No rain on any source.",
    "chance": [
     [
      6,
@@ -364,32 +380,14 @@ h1 span{display:block;font-weight:300}
     [
      18,
      24,
-     30
+     20
     ]
    ],
    "mmBars": [],
    "temps": {
-    "est": false,
-    "pts": [
-     [
-      6,
-      18
-     ],
-     [
-      12,
-      21
-     ],
-     [
-      18,
-      24
-     ],
-     [
-      24,
-      18
-     ]
-    ]
+    "est": true
    },
-   "tnote": "Rain chance from the Japan Weather Association. Temperatures through the day from the Global Forecasting Model."
+   "tnote": "Rain chance from tenki.jp's 6-hour blocks. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 18,
@@ -399,11 +397,11 @@ h1 span{display:block;font-weight:300}
    "title": "Meiji Jingū, the festival, Street Kart",
    "icon": "part",
    "hi": 25,
-   "lo": 17,
+   "lo": 16,
    "rain": 30,
-   "cond": "Cloudy, brighter breaks",
+   "cond": "Sun and cloud",
    "sunset": "17:00",
-   "call": "Settled dry now. The Global Forecasting Model dropped its afternoon showers, so all four sources agree: cloudy with brighter breaks, 30 to 40%, no measurable rain. Street Kart at 16:00 looks fine.",
+   "call": "Fine for Meiji Jingū and Street Kart at 16:00. tenki.jp has sun and cloud, 10 to 20% through the day and 40% only in the evening, with no measurable rain. JMA has 30%, confidence B. AccuWeather alone has a little afternoon rain.",
    "plan": [
     [
      "09:45",
@@ -418,50 +416,58 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
-     "Japan Weather Association",
-     "25° / 17°, cloudy, 30%, 0 mm"
+     "Combined",
+     "30% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp",
+     "25° / 16°, sunny with some cloud, 40% (evening), 0 mm"
+    ],
+    [
+     "Japan Meteorological Agency (official)",
+     "24° / 16°, cloud with some sun, 30%, confidence B"
     ],
     [
      "Weathernews, Shibuya",
-     "25° / 18°, cloudy, 40%"
-    ],
-    [
-     "AccuWeather",
-     "22° / 17°, clouds and sun"
+     "25° / 17°, cloud with some sun, 30%"
     ],
     [
      "Global Forecasting Model",
-     "25° / 14°, dry, 0 mm (was showers 15:00 to 21:00)"
+     "22° / 13°, dry, 0 mm"
+    ],
+    [
+     "AccuWeather",
+     "23° / 18°, a little afternoon rain"
     ]
    ],
    "mm": "Under 1 mm",
    "gicon": "part",
-   "gfill": 35,
-   "gtext": "30–40",
+   "gfill": 30,
+   "gtext": "30%",
    "gmm": "0",
-   "read": "Cloudy with brighter breaks, 30 to 40%, no measurable rain on any source.",
+   "read": "Sun and cloud. 40% only in the evening, no measurable rain.",
    "chance": [
     [
      6,
      12,
-     30
+     10
     ],
     [
      12,
      18,
-     30
+     20
     ],
     [
      18,
      24,
-     20
+     40
     ]
    ],
    "mmBars": [],
    "temps": {
     "est": true
    },
-   "tnote": "Rain chance from the Japan Weather Association. Temperature shape estimated from the forecast high and low."
+   "tnote": "Rain chance from tenki.jp's 6-hour blocks. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 19,
@@ -470,12 +476,12 @@ h1 span{display:block;font-weight:300}
    "where": "Omotesando and Shinjuku",
    "title": "Stores, Shinjuku after dark",
    "icon": "cloud",
-   "hi": 24,
+   "hi": 25,
    "lo": 17,
-   "rain": 40,
-   "cond": "Cloudy",
+   "rain": 45,
+   "cond": "Cloudy, a shower possible",
    "sunset": "17:00",
-   "call": "Mostly indoors and covered lanes, so rain barely touches this day. The Global Forecasting Model now has a little light rain in the evening, about 1 mm, as you get to Shinjuku. An umbrella from the hotel is plenty.",
+   "call": "Split, but this is the indoor day. Weathernews has rain, 60%, and the Global Forecasting Model light rain in the morning, about 1 mm. tenki.jp has cloud, 30%, with no measurable rain. The stores and Shinjuku's covered lanes cover it. Take an umbrella from the hotel.",
    "plan": [
     [
      "11:00",
@@ -490,28 +496,32 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
-     "Japan Weather Association",
-     "24° / 17°, cloudy with sunny spells, 40%, 0 mm"
+     "Combined",
+     "45% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp",
+     "25° / 17°, cloudy with sunny spells, 30%, 0 mm"
     ],
     [
      "Weathernews, Shibuya",
-     "22° / 18°, cloudy, 40%"
-    ],
-    [
-     "AccuWeather",
-     "23° / 14°, clouds and sun"
+     "23° / 17°, rain, 60%"
     ],
     [
      "Global Forecasting Model",
-     "27° / 19°, light rain in the evening, about 1 mm"
+     "23° / 14°, light rain in the morning, 1.3 mm"
+    ],
+    [
+     "AccuWeather",
+     "27° / 21°, humid with a few showers"
     ]
    ],
-   "mm": "0 to 1 mm",
-   "gicon": "cloud",
-   "gfill": 40,
-   "gtext": "40%",
+   "mm": "0 to 1 mm, morning",
+   "gicon": "shower",
+   "gfill": 45,
+   "gtext": "45%",
    "gmm": "0–1",
-   "read": "Cloudy, 20 to 40%. One model has light rain in the evening, about 1 mm.",
+   "read": "Cloudy. A shower possible in the morning, about 1 mm on one model.",
    "chance": [
     [
      6,
@@ -521,7 +531,7 @@ h1 span{display:block;font-weight:300}
     [
      12,
      18,
-     40
+     30
     ],
     [
      18,
@@ -531,15 +541,15 @@ h1 span{display:block;font-weight:300}
    ],
    "mmBars": [
     [
-     18,
-     24,
-     1
+     6,
+     12,
+     1.3
     ]
    ],
    "temps": {
     "est": true
    },
-   "tnote": "Rain chance from the Japan Weather Association. Millimetres from the Global Forecasting Model. Temperature shape estimated from the forecast high and low."
+   "tnote": "Rain chance from tenki.jp's 6-hour blocks, which have no measurable rain. The bar is the Global Forecasting Model's morning rain. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 20,
@@ -548,12 +558,12 @@ h1 span{display:block;font-weight:300}
    "where": "Tsukiji and Yokohama",
    "title": "Tsukiji market and Yokohama",
    "icon": "shower",
-   "hi": 27,
+   "hi": 28,
    "lo": 21,
-   "rain": 40,
-   "cond": "Cloudy",
+   "rain": 50,
+   "cond": "Sun, then rain at times",
    "sunset": "17:00",
-   "call": "Tipping wetter in the afternoon. The Global Forecasting Model now has rain from 15:00 to 21:00, about 4 mm, right over the 16:30 harbour walk and the Wharf House footbath, which closes in rain. Tsukiji at 08:15 stays dry on every source. The Japan Weather Association still has cloudy, 40%, no measurable rain; Weathernews 60%, AccuWeather rain. Monday is still the steadier day. Hold the swap and decide by Fri 16.",
+   "call": "Rain likely from midday. tenki.jp now has sun in the morning, then rain at times, 50%, about 3 mm from 12:00 to midnight. The Global Forecasting Model has heavier afternoon rain, 7.6 mm, and AccuWeather a couple of afternoon showers. Weathernews has 40%. Tsukiji at 08:15 is dry on every source. The 16:30 harbour walk and the Wharf House footbath are in the wet window. The Monday swap gains less now, since Monday has morning rain on two sources. Decide by Fri 16.",
    "plan": [
     [
      "08:15",
@@ -573,28 +583,32 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
-     "Japan Weather Association",
-     "27° / 21°, cloudy, 40%, 0 mm"
+     "Combined",
+     "50% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp",
+     "28° / 21°, sunny then brief rain, 50%, 3 mm (12:00 to 24:00)"
     ],
     [
      "Weathernews, Shibuya",
-     "22° / 17°, cloudy with rain at times, 60%"
-    ],
-    [
-     "AccuWeather",
-     "24° / 17°, rain"
+     "26° / 19°, cloudy, 40%"
     ],
     [
      "Global Forecasting Model",
-     "25° / 17°, rain 15:00 to 21:00, 4.4 mm, light rain overnight"
+     "28° / 18°, heavy rain in the afternoon, 7.6 mm"
+    ],
+    [
+     "AccuWeather",
+     "26° / 14°, a couple of afternoon showers"
     ]
    ],
-   "mm": "0 to 5 mm",
+   "mm": "About 3 mm, midday to evening",
    "gicon": "shower",
-   "gfill": 55,
-   "gtext": "40–60",
-   "gmm": "0–5",
-   "read": "Dry morning for Tsukiji. Rain likely from mid-afternoon on two of four sources, about 4 mm through the Yokohama evening.",
+   "gfill": 50,
+   "gtext": "50%",
+   "gmm": "3",
+   "read": "Dry morning for Tsukiji. Rain at times from midday, about 3 mm, more on one model.",
    "chance": [
     [
      6,
@@ -604,51 +618,32 @@ h1 span{display:block;font-weight:300}
     [
      12,
      18,
-     30
+     50
     ],
     [
      18,
      24,
-     40
+     50
     ]
    ],
    "mmBars": [
     [
-     15,
-     21,
-     4.4
+     12,
+     18,
+     1
     ],
     [
-     21,
+     18,
      24,
-     0.9,
-     "to 03:00"
+     2
     ]
    ],
    "temps": {
-    "est": false,
-    "pts": [
-     [
-      6,
-      21
-     ],
-     [
-      12,
-      23
-     ],
-     [
-      18,
-      24
-     ],
-     [
-      24,
-      20
-     ]
-    ]
+    "est": true
    },
-   "tnote": "Rain chance from the Japan Weather Association. Millimetres and temperatures through the day from the Global Forecasting Model. The Japan Weather Association's 27° high is warmer than the other sources. * Continues to 03:00.",
+   "tnote": "Rain chance and millimetres from tenki.jp's 6-hour blocks. The Global Forecasting Model has more, 7.6 mm, mostly in the afternoon. Temperature shape estimated from the forecast high and low.",
    "watch": true,
-   "swap": "Swap Mon 19 and Tue 20: Tsukiji and Yokohama on Monday, Omotesando stores and Shinjuku after dark on Tuesday. Monday has at most a little evening rain, and Tuesday's afternoon rain falls mostly on indoor stores and Shinjuku's covered lanes."
+   "swap": "Swap Mon 19 and Tue 20: Tsukiji and Yokohama on Monday, Omotesando and Shinjuku on Tuesday. Only worth it if Monday's morning rain drops out, since Tsukiji is first thing."
   },
   {
    "d": 21,
@@ -656,18 +651,28 @@ h1 span{display:block;font-weight:300}
    "leg": "k",
    "where": "Train to Kyoto, then Nara",
    "title": "Shinkansen, then Nara",
-   "icon": "rain",
+   "icon": "part",
    "hi": 24,
-   "lo": 17,
-   "rain": 60,
-   "cond": "Cloudy, rain for a while, clearing late",
+   "lo": 16,
+   "rain": 15,
+   "cond": "Cloud clearing to sun",
    "sunset": "17:10",
-   "call": "Turned wetter. The Japan Weather Association now has rain at times, 60%, about 3 mm in the morning and 4 mm from 12:00 to 18:00, then sun in the evening. Weathernews has 40% and AccuWeather a little afternoon rain. If it holds, flip the Nara order: lunch and Tōdai-ji, which is under cover, first, then Kasuga Taisha and the park as it clears. Decide on the day. The train and bag drop are unaffected.",
+   "call": "Nara has cleared. Every source now has it dry: tenki.jp cloud clearing to sun, 20% through the day, no rain. Weathernews 20%, the Global Forecasting Model clear skies, AccuWeather sunny. Keep the plan as it is: Kintetsu at 10:40, lunch off the covered arcade, then the park, Kasuga Taisha and Tōdai-ji in the sun.",
    "plan": [
     [
      "07:55",
      "Nozomi 13",
      "Indoors, no impact"
+    ],
+    [
+     "10:40",
+     "Kintetsu to Nara",
+     "Indoors"
+    ],
+    [
+     "11:30",
+     "Lunch: Kamameshi Shizuka",
+     "Indoors, via the covered arcade"
     ],
     [
      "12:45",
@@ -678,62 +683,67 @@ h1 span{display:block;font-weight:300}
      "14:25",
      "Tōdai-ji",
      "Main hall is indoors"
+    ],
+    [
+     "16:15",
+     "Walk down to Kintetsu Nara",
+     "20 minutes downhill"
     ]
    ],
    "src": [
     [
-     "Japan Weather Association, Kyoto",
-     "24° / 17°, cloudy with rain at times, 60%, 7 mm"
+     "Combined",
+     "15% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp, Kyoto",
+     "24° / 16°, cloudy then sunny, 20% by day (40% overnight before you arrive), 0 mm"
     ],
     [
      "Weathernews, Kyoto",
-     "23° / 16°, cloudy, 40%"
+     "23° / 16°, sun with some cloud, 20%"
+    ],
+    [
+     "Global Forecasting Model, Kyoto",
+     "22° / 13°, clear, 0 mm"
     ],
     [
      "AccuWeather, Kyoto",
-     "27° / 16°, a little afternoon rain"
+     "23° / 10°, sunny and less humid"
+    ],
+    [
+     "tenki.jp, Shibuya (morning departure)",
+     "Cloudy, 30%, 0 mm"
     ]
    ],
-   "mm": "About 7 mm, late morning to mid-afternoon",
-   "gicon": "rain",
-   "gfill": 60,
-   "gtext": "40–60",
-   "gmm": "7",
-   "read": "Rain from late morning to mid-afternoon, about 7 mm, then clearing to sun. Right across the Nara walk.",
+   "mm": "Under 1 mm",
+   "gicon": "part",
+   "gfill": 15,
+   "gtext": "15%",
+   "gmm": "0",
+   "read": "Cloud clearing to sun in Nara and Kyoto. 20%, no rain.",
    "chance": [
     [
      6,
      12,
-     60
+     20
     ],
     [
      12,
      18,
-     60
+     20
     ],
     [
      18,
      24,
-     20
+     10
     ]
    ],
-   "mmBars": [
-    [
-     6,
-     12,
-     3
-    ],
-    [
-     12,
-     18,
-     4
-    ]
-   ],
+   "mmBars": [],
    "temps": {
     "est": true
    },
-   "tnote": "Rain chance and millimetres from the Japan Weather Association. Temperature shape estimated from the forecast high and low.",
-   "watch": true
+   "tnote": "Rain chance from tenki.jp's 6-hour blocks for Kyoto. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 22,
@@ -741,13 +751,13 @@ h1 span{display:block;font-weight:300}
    "leg": "k",
    "where": "Osaka",
    "title": "Osaka, castle to Dōtonbori",
-   "icon": "part",
-   "hi": 23,
-   "lo": 14,
-   "rain": null,
-   "cond": "Increasing cloud, dry",
+   "icon": "sun",
+   "hi": 24,
+   "lo": 15,
+   "rain": 20,
+   "cond": "Sunny",
    "sunset": "17:05",
-   "call": "Mostly fine. The Japan Weather Association has sunny, 20%, confidence C, and Weathernews 30%. AccuWeather has strong morning thunderstorms, which would hit Osaka Castle at 08:30. Watch this one from Tuesday.",
+   "call": "Dry and sunny for Osaka Castle at 08:30 and the Umeda Sky deck. tenki.jp has Osaka sunny, 20% all day, and AccuWeather has dropped its morning thunderstorms. The driest day of the Kyoto leg, which matters if Friday needs the swap.",
    "plan": [
     [
      "08:30",
@@ -765,33 +775,57 @@ h1 span{display:block;font-weight:300}
      "Mostly covered arcades nearby"
     ]
    ],
-   "swap": "Only needed if Fri 23 turns wet again: Kyoto on Thursday, Osaka on Friday. Gion dinner would move to Thursday.",
+   "swap": "If Fri 23 stays wet on tenki.jp: Kyoto on Thursday, Osaka on Friday. Gion dinner moves to Thursday.",
    "src": [
     [
-     "AccuWeather, Kyoto",
-     "25° / 14°, strong morning thunderstorms"
+     "Combined",
+     "20% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp, Osaka",
+     "24° / 15°, sunny, 20%, 0 mm"
+    ],
+    [
+     "tenki.jp, Kyoto",
+     "23° / 14°, sunny then cloudy, 40%, 0 mm"
     ],
     [
      "Weathernews, Kyoto",
-     "24° / 14°, cloud with some sun, 30%, confidence E"
+     "23° / 14°, sun with some cloud, 20%"
     ],
     [
-     "Japan Weather Association, Kyoto",
-     "23° / 14°, sunny, 20%, confidence C"
+     "AccuWeather, Kyoto",
+     "23° / 13°, plenty of sunshine"
     ]
    ],
-   "mm": "Not forecast yet",
-   "gicon": "part",
-   "gfill": 25,
-   "gtext": "20–30",
-   "gmm": null,
-   "read": "Sunny on the Japan Weather Association, 20%. AccuWeather has morning thunderstorms.",
-   "chance": null,
+   "mm": "Under 1 mm",
+   "gicon": "sun",
+   "gfill": 20,
+   "gtext": "20%",
+   "gmm": "0",
+   "read": "Sunny, 20%. The driest day of the Kyoto leg.",
+   "chance": [
+    [
+     6,
+     12,
+     20
+    ],
+    [
+     12,
+     18,
+     20
+    ],
+    [
+     18,
+     24,
+     20
+    ]
+   ],
    "mmBars": [],
    "temps": {
     "est": true
    },
-   "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+   "tnote": "Rain chance from tenki.jp's 6-hour blocks for Osaka. Temperature shape estimated from the forecast high and low."
   },
   {
    "d": 23,
@@ -799,13 +833,13 @@ h1 span{display:block;font-weight:300}
    "leg": "k",
    "where": "Arashiyama, Higashiyama, Gion",
    "title": "Kyoto, west to east",
-   "icon": "part",
-   "hi": 23,
+   "icon": "shower",
+   "hi": 22,
    "lo": 14,
-   "rain": null,
-   "cond": "Sunny",
+   "rain": 40,
+   "cond": "Split: rain on tenki.jp, sun elsewhere",
    "sunset": "17:10",
-   "call": "Wobbling again. The Japan Weather Association went from sunny, 20%, to sunny with occasional rain, 50%, confidence E. Weathernews has 30% and AccuWeather a little afternoon rain. Not a watch yet, and no Thursday and Friday swap for now.",
+   "call": "New watch, and a split. tenki.jp has cloudy then rain, 80%, confidence C. Weathernews has 20% and AccuWeather mostly sunny. tenki.jp is the best at catching rain but also calls rain that doesn't come, so read this as possible, not likely. If it holds by Tue 20, swap Thursday and Friday.",
    "plan": [
     [
      "07:20",
@@ -825,30 +859,40 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
-     "AccuWeather, Kyoto",
-     "26° / 15°, a little afternoon rain"
+     "Combined",
+     "40% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp, Kyoto",
+     "22° / 14°, cloudy then rain, 80%, confidence C"
+    ],
+    [
+     "tenki.jp, Osaka",
+     "21° / 15°, sunny then cloudy, 40%, confidence E"
     ],
     [
      "Weathernews, Kyoto",
-     "22° / 15°, cloud with some sun, 30%, confidence D"
+     "22° / 13°, sun with some cloud, 20%, confidence D"
     ],
     [
-     "Japan Weather Association, Kyoto",
-     "23° / 14°, sunny with occasional rain, 50%, confidence E"
+     "AccuWeather, Kyoto",
+     "23° / 12°, mostly sunny"
     ]
    ],
    "mm": "Not forecast yet",
-   "gicon": "part",
+   "gicon": "shower",
    "gfill": 40,
-   "gtext": "30–50",
+   "gtext": "40%",
    "gmm": null,
-   "read": "Sun with a shower at times. 30 to 50%.",
+   "read": "tenki.jp has rain, 80%. Weathernews and AccuWeather have it dry.",
    "chance": null,
    "mmBars": [],
    "temps": {
     "est": true
    },
-   "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+   "tnote": "Rain timing arrives about 8 days out. Temperature shape estimated from the forecast high and low.",
+   "watch": true,
+   "swap": "Swap Thu 22 and Fri 23: Kyoto on Thursday, which is dry on every source, and Osaka on Friday, where the arcades and Dōtonbori are covered. Gion dinner moves to Thursday."
   },
   {
    "d": 24,
@@ -857,12 +901,12 @@ h1 span{display:block;font-weight:300}
    "where": "Fushimi Inari, then Tokyo",
    "title": "Inari, back to Tokyo, fireworks night",
    "icon": "rain",
-   "hi": 20,
-   "lo": 16,
-   "rain": null,
-   "cond": "Rain at times in Tokyo",
+   "hi": 21,
+   "lo": 15,
+   "rain": 50,
+   "cond": "Rain at times on tenki.jp",
    "sunset": "16:55",
-   "call": "New watch for the fireworks. The Japan Weather Association has Tokyo rain at times, 80%, confidence C. No timing yet. Weathernews has 30% and AccuWeather a bit of rain in the morning only. Kyoto for Fushimi Inari is better: 10% on Weathernews, 50% on the Japan Weather Association. Fireworks can be called off for rain or wind, so check the Hilton package terms for a rain-out. Timing arrives around Wed 14.",
+   "call": "Still a watch for the fireworks. tenki.jp has rain at times in both cities: Kyoto 80% for Fushimi Inari, Tokyo 70% for the evening, confidence D. Weathernews has 30% in both, and AccuWeather has the Tokyo rain in the morning only. No timing yet. Fireworks can be called off for rain or wind, so check the Hilton package rain-out terms.",
    "plan": [
     [
      "07:15",
@@ -877,36 +921,40 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
+     "Combined",
+     "50% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp, Tokyo",
+     "21° / 15°, cloudy with rain at times, 70%, confidence D"
+    ],
+    [
+     "tenki.jp, Kyoto",
+     "23° / 14°, cloudy with rain at times, 80%, confidence C"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "19° / 15°, cloud with some sun, 30%, confidence D"
+    ],
+    [
+     "Weathernews, Kyoto",
+     "21° / 14°, cloudy, 30%, confidence E"
+    ],
+    [
      "AccuWeather, Tokyo",
      "19° / 15°, a bit of rain in the morning"
     ],
     [
      "AccuWeather, Kyoto",
-     "19° / 13°, plenty of clouds"
-    ],
-    [
-     "Weathernews, Hibiya",
-     "22° / 17°, cloudy, 30%, confidence E"
-    ],
-    [
-     "Weathernews, Kyoto",
-     "21° / 13°, sunny, 10%, confidence C"
-    ],
-    [
-     "Japan Weather Association, Tokyo",
-     "20° / 16°, rain at times, 80%, confidence C"
-    ],
-    [
-     "Japan Weather Association, Kyoto",
-     "22° / 12°, sunny with occasional rain, 50%, confidence E"
+     "23° / 11°, a little afternoon rain"
     ]
    ],
    "mm": "Not forecast yet",
-   "gicon": "rain",
-   "gfill": 80,
-   "gtext": "30–80",
+   "gicon": "shower",
+   "gfill": 50,
+   "gtext": "50%",
    "gmm": null,
-   "read": "Rain at times in Tokyo, 80% on the Japan Weather Association. Fushimi Inari in the morning looks drier.",
+   "read": "tenki.jp has rain at times, 70 to 80%. Weathernews 30%.",
    "chance": null,
    "mmBars": [],
    "temps": {
@@ -921,13 +969,13 @@ h1 span{display:block;font-weight:300}
    "leg": "g",
    "where": "Gardens and Ginza",
    "title": "Gardens, then Ginza",
-   "icon": "cloud",
-   "hi": 22,
+   "icon": "shower",
+   "hi": 20,
    "lo": 16,
-   "rain": null,
-   "cond": "Cloudy, a stray shower",
+   "rain": 45,
+   "cond": "Split: rain on tenki.jp",
    "sunset": "16:55",
-   "call": "Easy weather for a slow day. Ginza's department stores cover a shower.",
+   "call": "Split. tenki.jp has rain at times, 80%, confidence C. Weathernews has 20%, also confidence C, and AccuWeather a stray shower. Ginza's department stores and the car-free street both work in light rain. The gardens are the part to move if it holds.",
    "plan": [
     [
      "09:15",
@@ -942,20 +990,28 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
-     "AccuWeather, Tokyo",
-     "22° / 16°, cloudy with a stray shower"
+     "Combined",
+     "45% chance of rain, tenki.jp weighted highest"
     ],
     [
-     "Weathernews, Hibiya",
-     "21° / 16°, cloudy, 30%, confidence E"
+     "tenki.jp, Tokyo",
+     "20° / 16°, rain at times, 80%, confidence C"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "20° / 14°, cloud with some sun, 20%, confidence C"
+    ],
+    [
+     "AccuWeather, Tokyo",
+     "22° / 16°, cloudy with a stray shower"
     ]
    ],
    "mm": "Not forecast yet",
-   "gicon": "cloud",
-   "gfill": 30,
-   "gtext": "30%",
+   "gicon": "shower",
+   "gfill": 45,
+   "gtext": "45%",
    "gmm": null,
-   "read": "Cloudy, a stray shower possible.",
+   "read": "tenki.jp has rain at times, 80%. Weathernews 20%.",
    "chance": null,
    "mmBars": [],
    "temps": {
@@ -970,9 +1026,9 @@ h1 span{display:block;font-weight:300}
    "where": "teamLab and Asakusa",
    "title": "teamLab, Asakusa, Shimbashi",
    "icon": "cloud",
-   "hi": 22,
-   "lo": 15,
-   "rain": null,
+   "hi": 21,
+   "lo": 14,
+   "rain": 20,
    "cond": "Cloudy",
    "sunset": "16:55",
    "call": "teamLab is indoors. Cloud may soften the Skytree view at dusk.",
@@ -995,16 +1051,24 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
+     "Combined",
+     "20% chance of rain, tenki.jp weighted highest, tenki.jp not in range yet"
+    ],
+    [
+     "Weathernews, Shibuya",
+     "21° / 13°, cloud with some sun, 20%, confidence D"
+    ],
+    [
      "AccuWeather, Tokyo",
      "22° / 15°, remaining cloudy"
     ]
    ],
    "mm": "Not forecast yet",
    "gicon": "cloud",
-   "gfill": 10,
-   "gtext": "Low",
+   "gfill": 20,
+   "gtext": "20%",
    "gmm": null,
-   "read": "Cloudy and dry.",
+   "read": "Cloudy, 20%.",
    "chance": null,
    "mmBars": [],
    "temps": {
@@ -1039,6 +1103,10 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
+     "Combined",
+     "10%, AccuWeather only until the Hong Kong Observatory 9-day forecast reaches Tue 27, from about Sun 18"
+    ],
+    [
      "AccuWeather, Hong Kong",
      "29° / 23°, plenty of sunshine"
     ]
@@ -1046,7 +1114,7 @@ h1 span{display:block;font-weight:300}
    "mm": "Not forecast yet",
    "gicon": "sun",
    "gfill": 10,
-   "gtext": "Low",
+   "gtext": "10%",
    "gmm": null,
    "read": "Sunny and hot.",
    "chance": null,
@@ -1083,6 +1151,10 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
+     "Combined",
+     "10%, AccuWeather only until the Hong Kong Observatory 9-day forecast reaches Tue 27, from about Sun 18"
+    ],
+    [
      "AccuWeather, Hong Kong",
      "29° / 23°, plenty of sunshine"
     ]
@@ -1090,7 +1162,7 @@ h1 span{display:block;font-weight:300}
    "mm": "Not forecast yet",
    "gicon": "sun",
    "gfill": 10,
-   "gtext": "Low",
+   "gtext": "10%",
    "gmm": null,
    "read": "Sunny and hot.",
    "chance": null,
@@ -1127,6 +1199,10 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
+     "Combined",
+     "10%, AccuWeather only until the Hong Kong Observatory 9-day forecast reaches Tue 27, from about Sun 18"
+    ],
+    [
      "AccuWeather, Hong Kong",
      "29° / 23°, plenty of sunshine"
     ]
@@ -1134,7 +1210,7 @@ h1 span{display:block;font-weight:300}
    "mm": "Not forecast yet",
    "gicon": "sun",
    "gfill": 10,
-   "gtext": "Low",
+   "gtext": "10%",
    "gmm": null,
    "read": "Sunny and hot.",
    "chance": null,
@@ -1171,6 +1247,10 @@ h1 span{display:block;font-weight:300}
    ],
    "src": [
     [
+     "Combined",
+     "10%, AccuWeather only until the Hong Kong Observatory 9-day forecast reaches Tue 27, from about Sun 18"
+    ],
+    [
      "AccuWeather, Hong Kong",
      "28° / 23°, humid with plenty of sunshine"
     ]
@@ -1178,7 +1258,7 @@ h1 span{display:block;font-weight:300}
    "mm": "Not forecast yet",
    "gicon": "sun",
    "gfill": 10,
-   "gtext": "Low",
+   "gtext": "10%",
    "gmm": null,
    "read": "Sunny, hot and humid.",
    "chance": null,
@@ -1189,8 +1269,23 @@ h1 span{display:block;font-weight:300}
    "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
   }
  ],
- "typhoon": "<h4>Typhoons<\/h4><p>Typhoon No. 29 (Koguma) is passing well east of Japan and becomes an ordinary low by Wed 14. No. 28 has already weakened. Rough seas off the Pacific coast until then, gone well before you land. No other systems are forecast toward Japan or Hong Kong. Hong Kong's season usually winds down by the end of October.<\/p>",
+ "typhoon": "<h4>Typhoons<\/h4><p>Typhoon No. 29 (Koguma) is passing well east of Japan today and becomes an ordinary low by Wed 14. No other systems are forecast toward Japan or Hong Kong. Hong Kong's season usually winds down by the end of October.<\/p>",
  "sources": [
+  [
+   "tenki.jp (Japan Weather Association), Shibuya",
+   "https://tenki.jp/forecast/3/16/4410/13113/10days.html",
+   "Weighted highest. Best at catching rain, hourly timing and temperatures. Feeds Yahoo! Japan Weather. 6-hour rain blocks"
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Kyoto",
+   "https://tenki.jp/forecast/6/29/6110/26100/10days.html",
+   ""
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Osaka",
+   "https://tenki.jp/forecast/6/30/6200/27100/10days.html",
+   ""
+  ],
   [
    "Japan Meteorological Agency, official 7-day forecast, Tokyo",
    "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000",
@@ -1209,16 +1304,6 @@ h1 span{display:block;font-weight:300}
   [
    "Weathernews, Kyoto 2-week",
    "https://weathernews.jp/onebox/tenki/kyoto/26100/",
-   ""
-  ],
-  [
-   "Japan Weather Association (tenki.jp), Shibuya",
-   "https://tenki.jp/forecast/3/16/4410/13113/10days.html",
-   "Feeds Yahoo! Japan Weather. 6-hour rain blocks"
-  ],
-  [
-   "Japan Weather Association (tenki.jp), Kyoto",
-   "https://tenki.jp/forecast/6/29/6110/26100/10days.html",
    ""
   ],
   [
@@ -1256,56 +1341,154 @@ h1 span{display:block;font-weight:300}
    "Day and night rain amounts block automated reading. The monthly calendar is used instead."
   ]
  ],
- "verdict": "Mild, but wetter midweek.<br>3 days to watch.",
+ "verdict": "Nara has cleared. Rain signals on Tue 20 and Fri 23 to Sun 25.<br>3 days to watch.",
  "watch": [
   {
    "d": 20,
    "dow": "Tue",
-   "title": "15:00 to 21:00, Yokohama harbour walk 16:30",
-   "risk": "Rain 15:00 to 21:00, about 4 mm, on the Global Forecasting Model. Weathernews 60%, AccuWeather rain. Japan Weather Association 40%, dry.",
+   "title": "Midday to evening, Yokohama harbour walk 16:30",
+   "risk": "tenki.jp 50%, about 3 mm from 12:00. The Global Forecasting Model has 7.6 mm in the afternoon. Tsukiji morning dry.",
    "decide": "Fri 16",
-   "act": "Hold the Mon and Tue swap. Tsukiji morning is dry"
+   "act": "Plan an indoor Yokohama afternoon. Swap with Monday only if Monday clears"
   },
   {
-   "d": 21,
-   "dow": "Wed",
-   "title": "Late morning to mid-afternoon, Nara walk 12:45 to 16:15",
-   "risk": "Rain 60%, about 7 mm, clearing to sun by evening.",
-   "decide": "On the day",
-   "act": "Tōdai-ji first, the park as it clears"
+   "d": 23,
+   "dow": "Fri",
+   "title": "Kyoto, Arashiyama 07:20 to Gion dinner",
+   "risk": "tenki.jp 80%, cloudy then rain. Weathernews 20%, AccuWeather sunny.",
+   "decide": "Tue 20",
+   "act": "Swap Thursday and Friday if it holds. Thursday is dry everywhere"
   },
   {
    "d": 24,
    "dow": "Sat",
-   "title": "Tokyo, fireworks at 17:30",
-   "risk": "Rain at times, 80% on the Japan Weather Association. No timing yet.",
+   "title": "Fushimi Inari 07:15, fireworks 17:30",
+   "risk": "tenki.jp rain at times: Kyoto 80%, Tokyo 70%. Weathernews 30%. No timing yet.",
    "decide": "Wed 14",
    "act": "Check the Hilton package rain-out terms"
   }
  ],
- "sinceLabel": "Since the last check, Sun 11 Oct 20:40",
+ "sinceLabel": "Since the last check, Mon 12 Oct 08:40",
  "since": [
   [
-   "Sun 18",
-   "Street Kart: showers <s>4.6 mm<\/s> → <b>dry<\/b> on the Global Forecasting Model. <b>Watch dropped<\/b>"
+   "New",
+   "One <b>combined rain chance<\/b> per day, with <b>tenki.jp weighted highest<\/b>. See How the forecasts are combined"
+  ],
+  [
+   "Wed 21",
+   "Nara: rain <s>60%, 7 mm<\/s> → <b>15%, dry<\/b> on every source. <b>Watch dropped<\/b>. Plan updated to Kintetsu and the kamameshi lunch"
   ],
   [
    "Tue 20",
-   "Yokohama: Global Forecasting Model <s>dry<\/s> → <b>rain 15:00 to 21:00, about 4 mm<\/b>. Tsukiji morning still dry"
+   "tenki.jp <s>40%, dry<\/s> → <b>50%, about 3 mm from midday<\/b>. Tsukiji morning still dry"
   ],
   [
-   "Mon 19",
-   "Shinjuku night: <b>light rain, about 1 mm<\/b> in the evening on one model"
+   "Fri 23",
+   "Kyoto: tenki.jp <s>50%<\/s> → <b>80%, rain<\/b>. Others dry. <b>New watch<\/b>, Thu and Fri swap ready"
   ],
   [
-   "Wed 21 to Sat 24",
-   "Nara, Osaka, Kyoto and the fireworks: <b>no change<\/b>"
+   "Sun 25",
+   "Ginza: tenki.jp <b>80% rain<\/b>, Weathernews 20%. Split, not a watch yet"
   ],
   [
-   "Hong Kong",
-   "Still <b>29° and sunny<\/b> all four days"
+   "Thu 22",
+   "Osaka: AccuWeather's morning storms <b>gone<\/b>. Sunny, 20%"
   ]
- ]
+ ],
+ "method": {
+  "intro": "Each day gets one combined rain chance, a weighted average of the sources that reach it. tenki.jp carries the most weight. Its figures also drive the time-of-day charts and millimetres. The others are there to confirm or flag a split.",
+  "sets": [
+   {
+    "label": "Up to 7 days out",
+    "rows": [
+     [
+      "tenki.jp",
+      30,
+      "Best at catching rain, hourly timing and temperature. Can over-call rain"
+     ],
+     [
+      "JMA (official)",
+      25,
+      "Fewest false alarms. Its 7-day forecast only"
+     ],
+     [
+      "Weathernews",
+      25,
+      "Ranked most accurate by Tokyo Shoko Research, 2022 to 2024"
+     ],
+     [
+      "Global model",
+      15,
+      "Millimetres by time of day"
+     ],
+     [
+      "AccuWeather",
+      5,
+      "Text only, no percentages"
+     ]
+    ]
+   },
+   {
+    "label": "8 days and beyond",
+    "rows": [
+     [
+      "tenki.jp",
+      30,
+      ""
+     ],
+     [
+      "Weathernews",
+      30,
+      ""
+     ],
+     [
+      "Global model",
+      25,
+      "The strongest medium-range model"
+     ],
+     [
+      "AccuWeather",
+      15,
+      ""
+     ]
+    ]
+   }
+  ],
+  "rules": [
+   "Where tenki.jp gives 6-hour blocks, its chance is the highest block between 06:00 and midnight, so rain overnight before you're up doesn't count against the day.",
+   "The Global Forecasting Model's millimetres and AccuWeather's wording are turned into a chance: dry 10%, a stray shower 35%, showers or a little rain 50%, rain 70 to 75%, heavy rain 85%.",
+   "When tenki.jp alone calls rain, it's flagged as a split and read as possible, not likely. It catches nearly all real rain but also calls rain that doesn't come.",
+   "Temperatures come from tenki.jp, which beat JMA on temperature error at every range out to 7 days.",
+   "In Hong Kong the Hong Kong Observatory will lead once its 9-day forecast reaches the trip. Google and Apple Weather can't be read from here."
+  ],
+  "evidence": [
+   [
+    "tenki.jp forecast accuracy reports",
+    "https://tenki.jp/lite/forecast_accuracy/index.html",
+    "Quarterly, rain and hourly accuracy against JMA"
+   ],
+   [
+    "Japan Weather Association accuracy, Oct to Dec 2025",
+    "https://weather-jwa.jp/en/news/forecast-accuracy/post12502",
+    "88 to 92% same-day rain, hourly 6 points above JMA, lower temperature error"
+   ],
+   [
+    "Weathernews accuracy 2024",
+    "https://weathernews.jp/news/202506/040136/",
+    "88% hit rate, top for 3 years in a Tokyo Shoko Research ranking. Self-reported"
+   ],
+   [
+    "Independent check of five forecasters, Aug 2025",
+    "https://note.com/omochi2/n/nf3ec3c32ceaf",
+    "tenki.jp caught 95.5% of rain days, most of any, but had the most false alarms. JMA most precise"
+   ],
+   [
+    "Comparison of the Japanese services, Sep 2026",
+    "https://yutakani-nikki.com/2026/09/21/weather-forecast-app-accuracy-comparison/",
+    "JMA, Weathernews and tenki.jp all about 85 to 90% next day. Compare two, and treat a split as a hard call"
+   ]
+  ]
+ }
 }</script>
 
 <script>
@@ -1459,6 +1642,15 @@ h1 span{display:block;font-weight:300}
   });
 
   document.getElementById('typhoon').innerHTML = data.typhoon;
+  if (data.method) {
+    var m = data.method, mx = 0;
+    m.sets.forEach(function(s){ s.rows.forEach(function(r){ if (r[1] > mx) mx = r[1]; }); });
+    document.getElementById('method').innerHTML = '<div class="mth"><p>'+m.intro+'</p>' +
+      m.sets.map(function(s){ return '<p class="eyebrow" style="margin-top:.9rem">'+esc(s.label)+'</p>' +
+        s.rows.map(function(r){ return '<div class="wt"><span><b>'+esc(r[0])+'</b></span><span><i style="width:'+(r[1]/mx*100)+'%"></i></span><span>'+r[1]+'%</span>'+(r[2]?'<span class="why">'+esc(r[2])+'</span>':'')+'</div>'; }).join(''); }).join('') +
+      '<ul>'+m.rules.map(function(r){ return '<li>'+r+'</li>'; }).join('')+'</ul>' +
+      '<p class="eyebrow" style="margin-top:.9rem">The evidence</p><ul>'+m.evidence.map(function(e){ return '<li><a href="'+esc(e[1])+'" target="_blank" rel="noopener">'+esc(e[0])+'</a>'+(e[2]?'. <span class="sn">'+esc(e[2])+'</span>':'')+'</li>'; }).join('')+'</ul></div>';
+  }
   document.getElementById('sources').innerHTML = data.sources.map(function(s){ return '<p><a href="'+esc(s[1])+'" target="_blank" rel="noopener">'+esc(s[0])+'</a>'+(s[2]?'<br><span class="sn">'+esc(s[2])+'</span>':'')+'</p>'; }).join('') +
     (data.missing ? '<p class="eyebrow" style="margin-top:.8rem">Not used, and why</p>' + data.missing.map(function(m){ return '<p><b>'+esc(m[0])+'.</b> <span class="sn">'+esc(m[1])+'</span></p>'; }).join('') : '');
   document.getElementById('end').textContent = 'Checked ' + data.checkedLabel + '. Ask Claude to check again and this page updates in place.';
