@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Tokyo City View, 13 October
+- How-to 10: the Mori Art Museum is shut between exhibitions in October (next show opens 31 Oct), so the Roppongi loop now points to Tokyo City View below it instead.
+- J&HK Extras, Ginza and east Tokyo, Views: Tokyo City View, Tokyo Tower at eye level from level 52, indoors. For Sun 25 or Mon 26 evening, Hibiya line to Roppongi. New card.
+
 Extras: Hana Chibo, 13 October
 - J&HK Extras, Shibuya, Eat: Hana Chibo Yebisu Garden Place, okonomiyaki and teppanyaki on the 38th floor. For Mon 19 or Sat 17 lunch, or the fallback if Sushi Hatsume is full on Sun 18. New card.
 

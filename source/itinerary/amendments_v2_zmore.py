@@ -200,3 +200,7 @@ _h[:] = [
 ]
 _h = _how('Footbaths in Yokohama, Tue 20 ideas')
 _h[0] = 'Ideas, not bookings. The easy one, on the dusk walk: The Wharf House footbath terrace in Yamashita Park. Feet only.'
+# How-to 10: Mori Art Museum is closed between shows in October
+_h = _how('While the stores are on, for G')
+_k = [i for i, x in enumerate(_h) if x.startswith('Roppongi design loop')][0]
+_h[_k] = 'Roppongi design loop: Chiyoda line from Omotesando, one stop to Nogizaka. 21_21 Design Sight (10:00 to 19:00, closed Tuesdays and between shows) and the National Art Center. The Mori Art Museum is shut in October; Tokyo City View below it is open.'

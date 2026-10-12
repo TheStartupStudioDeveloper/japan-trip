@@ -1168,6 +1168,13 @@
    "w": "The upmarket branch of Chibo, the Osaka okonomiyaki chain, on the 38th floor of Yebisu Garden Place Tower. Teppanyaki and okonomiyaki cooked at the counter in front of you, with the city spread out behind.",
    "t": "Open daily, lunch 11:30 to 15:00, dinner 17:00 to 22:00. Courses about ¥10,000 each, lunch cheaper. Book online; ask for counter or window seats and a seafood course.",
    "m": "Hana Chibo Yebisu Garden Place 38F"
+  },
+  "city-view": {
+   "n": "Tokyo City View",
+   "l": "東京シティビュー",
+   "w": "The indoor observation deck on level 52 of Roppongi Hills Mori Tower. Floor-to-ceiling glass all round, with Tokyo Tower close and at eye level, the best-known view of it in the city.",
+   "t": "10:00 to 22:00, last entry 21:30. ¥2,200 each online. The Mori Art Museum above is closed between shows in October. Low cloud hides the view.",
+   "m": "Tokyo City View Roppongi Hills"
   }
  },
  "areas": [
@@ -3157,6 +3164,17 @@
      "fits": "Any evening on the walk home, five minutes from the hotel. Mon 26 late, a last look at Tokyo lit up before the early flight.",
      "tags": [
       "Free"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "city-view",
+     "time": "1 hr",
+     "one": "Tokyo Tower at eye level, indoors",
+     "fits": "Sun 25 evening instead of Tokyo Tower or the car meet, best on a wet or windy night. Or Mon 26 evening. Hibiya line from Hibiya to Roppongi, 10 minutes. Book online, arrive about 30 minutes before dark.",
+     "tags": [
+      "¥¥",
+      "Book"
      ]
     },
     {

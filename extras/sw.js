@@ -1,5 +1,5 @@
 // Network first, so updates show straight away; cached copy when offline.
-const C = 'xt-f5cb2174c5';
+const C = 'xt-2e44f9790a';
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "JHK-Extras.pdf"];
 const MINE = 'xt-';
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
