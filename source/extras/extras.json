@@ -1140,6 +1140,27 @@
    "w": "A small pond at the foot of Kōfuku-ji, with willows and the five-storey pagoda reflected in the water. The classic Nara photo spot, a minute off Sanjō-dōri.",
    "t": "The pagoda is wrapped for restoration until 2034, so the reflection shows the cover for now. Best in soft light.",
    "m": "Sarusawa Pond Nara"
+  },
+  "hiraso": {
+   "n": "Hiraso",
+   "l": "平宗 奈良店",
+   "w": "A long-running kakinoha sushi house with a proper dining room: persimmon-leaf sushi in sets with tempura or tea porridge, a calmer sit-down version of the boxes sold on the street.",
+   "t": "Closed Mondays. Lunch from 11:30, about ¥1,000 to ¥3,000. Takeaway boxes from 10:00.",
+   "m": "Hiraso kakinoha sushi Nara"
+  },
+  "uma-no-me": {
+   "n": "Uma no Me",
+   "l": "うまのめ",
+   "w": "A small restaurant in an old house south-east of the park serving a seasonal Nara lunch set of many small dishes, homely rather than formal.",
+   "t": "Closed Thursdays. Lunch set about ¥3,500, bookings taken. Cash likely.",
+   "m": "Uma no Me Nara Takabatake"
+  },
+  "tsukihitei": {
+   "n": "Tsukihitei",
+   "l": "月日亭",
+   "w": "A kaiseki restaurant hidden in the forest behind Kasuga Taisha, reached by a woodland path. A long, many-course lunch in private rooms looking onto the trees.",
+   "t": "Booking required. Lunch about ¥10,000 to ¥15,000 each, allow two hours.",
+   "m": "Tsukihitei Nara Kasugano"
   }
  },
  "areas": [
@@ -2396,7 +2417,7 @@
      "key": "mentoan",
      "time": "40 min",
      "one": "Udon tucked inside a fried tofu purse",
-     "fits": "Wed 21 lunch at 12:00 if you would rather sit down than grab kakinoha. Ten minutes south of Sanjō-dōri, so it costs you about 15 minutes overall.",
+     "fits": "Wed 21 lunch if the Shizuka queue is long and you want to sit down. In Naramachi, past Sarusawa Pond, about 15 minutes from Shizuka.",
      "tags": [
       "¥",
       "Walk-in"
@@ -2404,10 +2425,43 @@
     },
     {
      "group": "Eat",
+     "key": "hiraso",
+     "time": "45 min",
+     "one": "Kakinoha sushi, sitting down",
+     "fits": "Wed 21 lunch if Shizuka's queue is long or it is pouring. Just south of Sarusawa Pond, under cover.",
+     "tags": [
+      "¥",
+      "Walk-in"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "uma-no-me",
+     "time": "1 hr",
+     "one": "Homely Nara lunch set in an old house",
+     "fits": "Wed 21 lunch instead of Shizuka if you would rather book. South-east of the park, a detour of about 15 minutes.",
+     "tags": [
+      "¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "tsukihitei",
+     "time": "2 hr",
+     "one": "Kaiseki in the forest behind Kasuga",
+     "fits": "Only if you make Nara a long lunch: book for about 13:00 after Kasuga Taisha, and drop Nigatsu-dō.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Eat",
      "key": "mizuya-chaya",
      "time": "20 min",
      "one": "Thatched teahouse in the woods",
-     "fits": "Wed 21 at about 14:15, right on your walk from Kasuga Taisha to Tōdai-ji. Matcha and a sweet under the trees.",
+     "fits": "Wed 21 at about 14:15, right on your walk from Kasuga Taisha to Tōdai-ji. Matcha and a sweet under the trees. One guide lists it closed on Wednesdays, so check Google Maps first.",
      "tags": [
       "¥",
       "Cash"

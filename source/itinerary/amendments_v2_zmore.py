@@ -133,3 +133,70 @@ _a = next(i for i, it in enumerate(_L) if it[1].startswith('Street Kart meeting 
 _b = next(i for i, it in enumerate(_L) if it[1].startswith('Street Kart: check the rebooking'))
 _L[_a] = (_L[_a][0], 'Street Kart: meeting point, arrival time, and rebooking terms in case it moves to Sun 25 or Mon 26')
 del _L[_b]
+
+# Nara by Kintetsu, kamameshi lunch at Shizuka, JR as the alternative (How-to 24)
+_r = D[21]['rows']; _i = _row(21, '10:45'); _j = _row(21, '12:45')
+D[21]['rows'] = _r[:_i] + [
+ R('10:40', 'Kintetsu limited express to Nara', 'South side of the station, 5 minutes from Crosta. Seats at the machine, about ¥1,280 each (How-to 24).'),
+ R('11:15', 'Kintetsu Nara, up into Higashimuki arcade', 'Covered to Sanjō-dōri. Nakatanidō mochi pounding at the end.'),
+ R('11:30', 'Lunch: Kamameshi Shizuka', 'Iron-pot rice cooked to order, about 20 minutes. Ten minutes east, beside Isuien. No bookings. Long queue: a kakinoha box instead.'),
+] + _r[_j:]
+_i = _row(21, '12:45')
+D[21]['rows'][_i] = R('12:45', 'Into Nara Park for the deer', 'Straight onto the lawns towards Kasuga, calmer than the Tōdai-ji gate. Kōfuku-ji\'s pagoda is wrapped until 2034. Deer crackers about ¥200.')
+D[21]['rows'][_row(21, '16:15')] = R('16:15', 'Walk down to Kintetsu Nara', 'About 20 minutes downhill past the Tōdai-ji gate. Raining or tired: a taxi from the gate, or the loop bus with Suica.')
+D[21]['rows'][_row(21, '16:40')] = R('16:45', 'Kintetsu limited express back', 'Kyoto by about 17:20. Collect the bags.')
+D[21]['foot'] = 'Stags are pushy: feed the does. Alternative: JR Nara line on Suica, 20 minutes from the park (How-to 24). Pontochō and Gion dinners can swap.'
+
+HOWTO.append(('Kyoto to Nara and back, Wed 21', [
+ 'Kintetsu: gates on the south (Hachijō) side of Kyoto Station. At the machine buy to Kintetsu Nara plus a limited express (特急) seat, about ¥1,280. Twice an hour, 35 minutes. Check the board says 奈良: some go to Kashihara-jingū.',
+ 'No seats: the direct express (急行), 45 minutes, ¥760 on Suica, hourly. In Nara, exit for Higashimuki (東向商店街).',
+ 'JR alternative: Miyakoji rapid (みやこ路快速) from the JR gates, 45 minutes, ¥720 on Suica. JR Nara is 20 minutes on foot from the park. Back by taxi or loop bus from the Tōdai-ji gate.',
+]))
+
+_g = [g[0] for g in CHECK].index('On the ground')
+_L = CHECK[_g][1]
+_k = next(i for i, it in enumerate(_L) if it[1].startswith('Wed 21: check the JR special rapid'))
+_L[_k] = ('k', 'Wed 21: Kintetsu seat times to Nara and back, and JR times to Osaka for Thursday')
+# How-to 13: Nara now by Kintetsu; tightened to fit
+_h = _how('Kyoto Station, bags and the walk, Wed 21')
+_h[:] = [x for x in _h if not x.startswith('A taxi from the north rank')]
+_h[[i for i, x in enumerate(_h) if x.startswith('For Nara:')][0]] = 'For Nara: back up the escalator and through the station\'s central passage to the Kintetsu gates on the south side, about 10 minutes (How-to 24).'
+_h[[i for i, x in enumerate(_h) if x.startswith('Option: the same counter')][0]] = 'Option: Crosta delivers to Kyoto hotels for ¥1,500 a bag if dropped by 14:00. Ask the hotel first.'
+_h[-1] = _h[-1] + ' Or a taxi from the north rank.'
+_r = D[21]['rows']
+_r[_row(21, '10:40')] = R('10:40', 'Kintetsu limited express to Nara', 'South side of the station, about 10 minutes from Crosta. Seats at the machine, about ¥1,280 each (How-to 24).')
+_r[_row(21, '20:30')] = R('20:30', 'Optional: Kamo River and the Shirakawa canal', 'Shijō Bridge is at the end of the alley, Shirakawa seven minutes beyond. Taxi home.')
+_r[_row(21, '17:25')] = R('17:25', 'Kyoto Station building', 'The staircase lights up at dusk. The free Sky Garden faces Kyoto Tower.')
+_r[_row(21, '19:00')] = R('19:00', 'Pontochō dinner, casual, no booking', 'About 20 minutes on foot, or one subway stop to Shijō. Walk in along Kiyamachi-dōri.')
+# Fit: tighten How-to 22 and 24
+_h = _how('Footbaths in Yokohama, Tue 20 ideas')
+_h[1] = 'The Wharf House: ¥300 each for 30 minutes, towel ¥200. Take a number inside, often a 20 minute wait. Closed in rain. Harbour and Bay Bridge view; the Ferris wheel is faint.'
+_h[2] = 'For the Ferris wheel view: Manyo Club, five minutes from the Air Cabin, has a rooftop footbath facing the wheel. Entry covers the whole spa, ¥3,600 each, in their robe.'
+_h[3] = 'Manyo Club risk: tattoos are refused, apart from small ones under their stickers, up to 11 cm square. The robe covers it on the roof, but not in the shared locker room. If noticed, expect to be asked to leave, no refund.'
+_h = _how('Kyoto to Nara and back, Wed 21')
+_h[0] = 'Kintetsu: south (Hachijō) side of Kyoto Station. At the machine, buy to Kintetsu Nara plus a limited express (特急) seat, about ¥1,280. Twice an hour, 35 minutes. Some go to Kashihara-jingū: check the board says 奈良.'
+_h = _how('Massage near each hotel')
+_h[0] = 'Head spas are small, appointment-only salons: book a day or two ahead. Body and foot places mostly take walk-ins. Hours from Google, October 2026; check on the day.'
+_h[:] = [x for x in _h if not x.startswith('Hours are from Google')]
+_h = _how('While the stores are on, for G')
+_k = [i for i, x in enumerate(_h) if x.startswith('Harakado')][0]
+_h[_k] = 'Harakado, at the Harajuku end of Omotesando: design shops, a rooftop, and Kosugi-yu, an old-style bath in the basement. Tokyu Plaza opposite has the mirrored escalator and a free rooftop terrace.'
+_h[:] = [x for x in _h if not x.startswith('Tokyu Plaza Omotesando')]
+_h = _how('Kyoto to Nara and back, Wed 21')
+_h[:] = [
+ 'Kintetsu: south side of Kyoto Station. At the machine, buy Kintetsu Nara plus a limited express (特急) seat, about ¥1,280, 35 minutes. Board one signed 奈良.',
+ 'No seats: the direct express (急行), 45 minutes, ¥760 on Suica, hourly. In Nara, exit for Higashimuki.',
+ 'JR alternative: Miyakoji rapid from the JR gates, 45 minutes, ¥720 on Suica, then 20 minutes on foot to the park.',
+]
+_h = _how('Ngong Ping 360 voucher')
+if _h[-1].startswith('If it closes for wind'):
+    _h.pop(); _h[0] = _h[0].rstrip('.') + '. If wind closes it, the voucher moves to another day.'
+_h = _how('Peak Tram')
+_h[:] = [
+ 'Book a standard one-way ticket up, for about 15:45 on the clearest evening. Klook Fast Track runs Friday to Sunday only.',
+ 'The lower terminus is on Garden Road in Central, 15 minutes uphill from the ferry or a short taxi. Sit on the right going up.',
+ 'At the top, walk Lugard Road, about 20 minutes each way, for the best free view. Stay through sunset at 17:50.',
+ 'Taxi down from the rank by the Peak Galleria. Tram seats face backwards on the way down.',
+]
+_h = _how('Footbaths in Yokohama, Tue 20 ideas')
+_h[0] = 'Ideas, not bookings. The easy one, on the dusk walk: The Wharf House footbath terrace in Yamashita Park. Feet only.'

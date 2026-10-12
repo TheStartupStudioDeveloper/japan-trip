@@ -13,7 +13,7 @@ LEGS = [
   book=[], extras=[('shibuya', 'Shibuya'), ('shinjuku', 'Shinjuku'), ('yokohama', 'Yokohama'), ('japan', 'Japan other')]),
  dict(pat='k', kanji='京都', name='Kyoto, Nara and Osaka', leg='Leg 2', dates='Wed 21 to Sat 24 Oct', nights='3 nights', hotel='seq-k', sun='Sunset 17:10',
   days=[
-   ('d21', 'Wed 21', [('Nozomi 07:55 to Kyoto, bags to Crosta', 'f'), ('Nara: deer, Kasuga, Tōdai-ji', ''), ('Check in, Pontochō dinner', '')]),
+   ('d21', 'Wed 21', [('Nozomi 07:55 to Kyoto, bags to Crosta', 'f'), ('Nara: kamameshi lunch, deer, Tōdai-ji', ''), ('Check in, Pontochō dinner', '')]),
    ('d22', 'Thu 22', [('Osaka Castle, Umeda Sky', ''), ('Kuromon lunch, Horie shops', ''), ('Shinsekai, Dōtonbori', '')]),
    ('d23', 'Fri 23', [('Arashiyama bamboo 07:20, Nishiki lunch', ''), ('Rest, Kiyomizu-dera 15:30', ''), ('Yasaka, Gion dinner', 'b')]),
   ],

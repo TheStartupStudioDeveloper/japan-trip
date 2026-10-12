@@ -609,6 +609,15 @@ P('wharf-house', ['The Wharf House', 'Wharf House'], 'The Wharf House, Yamashita
 P('daikoku', ['Daikoku car meet', 'Daikoku PA', 'Daikoku'], 'Daikoku PA car meet', '大黒パーキングエリア',
   'A motorway parking area on an island interchange on Yokohama\'s Bayshore Route, famous worldwide as the night meeting spot for Japanese car culture: Skylines, Supras, RX-7s, modified kei cars and supercars, all parked up under the loops of the expressway. You can only get there by car, so visitors go on a tour.',
   'Tours ride in a JDM car such as an R34 Skyline, RX-7 or Supra, with an English-speaking guide and hotel pickup, about 3 hours, tolls included. Police or the expressway can close it without notice, mostly on Friday and Saturday nights. See How-to 23.', 'Daikoku Parking Area Yokohama')
+P('shizuka', ['Kamameshi Shizuka'], 'Kamameshi Shizuka', '志津香 公園店',
+  'Nara\'s best known lunch: kamameshi, rice cooked to order in a small iron pot with chicken, seafood or vegetables on top, and a crisp crust at the bottom. A plain wooden room between Kōfuku-ji and Tōdai-ji.',
+  'Open 11:00 to 15:00, closed Tuesdays. No bookings and a queue by noon, so arrive early. About ¥1,500 to ¥3,000 each.', 'Kamameshi Shizuka Koen Nara')
+P('higashimuki', ['Higashimuki arcade'], 'Higashimuki arcade', '東向商店街',
+  'A covered shopping street running from Kintetsu Nara Station south to Sanjō-dōri, with sweet shops, cafés and kakinoha sushi counters. Dry on a wet day.',
+  'Kakinoha sushi boxes are sold here and in the station.', 'Higashimuki Shopping Street Nara')
+P('kintetsu-nara', ['Kintetsu Nara'], 'Kintetsu Nara Station', '近鉄奈良駅',
+  'The underground station closest to Nara Park, a few minutes from Kōfuku-ji. Limited expresses run from Kyoto Station in about 35 minutes.',
+  'Take the exit for Higashimuki.', 'Kintetsu Nara Station')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

@@ -4,6 +4,13 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Nara by Kintetsu, kamameshi lunch, 13 October
+- Wed 21: Kintetsu limited express to Nara (10:40) and back (16:45) in place of the JR Nara line. Arrive at Kintetsu Nara into the covered Higashimuki arcade; lunch at Kamameshi Shizuka at 11:30, kakinoha box as the backup; walk down to Kintetsu Nara at 16:15. The JR line is the alternative in the day note.
+- New How-to 24 "Kyoto to Nara and back, Wed 21": Kintetsu seats, the express without seats, and the JR alternative. How-to 13 now points to Kintetsu for Nara.
+- New cards: Kamameshi Shizuka, Higashimuki arcade, Kintetsu Nara Station. Checklist: Kyoto, Wed 21 line now covers Kintetsu seat times. Itinerary Summary Wed 21: "Nara: kamameshi lunch, deer, Tōdai-ji".
+- To stay at 26 pages: Wed 21 notes and the day note shortened; How-to 13, 19, 20, 21, 22 and 10 tightened, no content removed bar repeats.
+- J&HK Extras, Nara: Hiraso, Uma no Me and Tsukihitei lunch options; Mentoan reframed as the Shizuka backup; Mizuya Chaya flagged to check it is open on Wednesday.
+
 Extras: Sarusawa Pond, 12 October
 - J&HK Extras, Nara: new Sarusawa Pond entry and card (a two minute detour at Wed 21 lunch). Naramachi's note now reads as an early-finish idea or a swap for Nigatsu-dō.
 
