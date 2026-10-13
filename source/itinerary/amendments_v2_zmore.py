@@ -212,3 +212,21 @@ _i = [t[0] for t in TIPS].index('Cash and coins')
 TIPS.insert(_i + 1, ('The right mix of yen', 'Notes are ¥1,000, ¥5,000 and ¥10,000. Keep three or four ¥1,000s each for stalls, temples and taxis; break ¥10,000s at convenience stores, not small shops. ATMs give mostly ¥10,000s, so ask for an amount like ¥19,000 to get smaller notes. Most useful coins: ¥100 and ¥500 for machines, a few ¥10 and ¥5 for shrines.'))
 _i = [t[0] for t in TIPS].index('Hong Kong: tipping')
 TIPS.insert(_i, ('Hong Kong: cash', 'Octopus covers trains, buses and most shops. For cash, carry HK$20, HK$50 and HK$100 notes. Taxis and small stalls often cannot change HK$500 or HK$1,000. Some red taxis are still cash only.'))
+
+# Ninja Tokyo: optional Sat 17 dinner, to book. Nothing removed.
+_r = D[17]['rows']; _i = _row(17, '18:30')
+_r.insert(_i + 1, R('19:00', 'Optional: Ninja Tokyo dinner', 'Instead of dinner close by. An underground ninja village in Ōtemachi, tricks at the table. Courses from ¥13,200. Hanzōmon line direct, 20 minutes.', TB))
+_g = [g[0] for g in CHECK].index('Book or confirm before you fly')
+_L = CHECK[_g][1]
+_k = next(i for i, it in enumerate(_L) if 'Sushi Hatsume' in it[1])
+_L[_k] = ('s', 'Optional, on TableCheck: Ninja Tokyo Sat 17 19:00, Sushi Hatsume Sun 18 19:30')
+# Fit: tighten Sat 17 notes
+_r = D[17]['rows']
+_r[_row(17, '13:45')] = R('13:45', 'Wander back into Shibuya', 'Hachikō, the Scramble Crossing, Center-gai.')
+_r[_row(17, '10:30')] = R('10:30', 'Miyashita Park and Cat Street', 'The rooftop park above the hotel, where the festival is on, then Cat Street. If shattered, stop here.')
+_r[_row(17, '18:30')] = R('18:30', 'Dinner close by', 'Nonbei Yokochō or Dōgenzaka, then an early night.')
+_r = D[17]['rows']
+_r[_row(17, '19:00')] = R('19:00', 'Optional: Ninja Tokyo dinner', 'Instead of dinner close by: a ninja village underground in Ōtemachi. From ¥13,200. Hanzōmon line, 20 minutes.', TB)
+_r[_row(17, '10:00')] = R('10:00', 'Shibuya Station, bags to the hotel', 'Hachikō exit, lobby on 4F (How-to 6). Leave the bags; confirm the early check-in.')
+_r[_row(17, '12:30')] = R('12:30', 'Omotesando', 'Lunch wherever looks good. Omotesando Hills, Tod\'s and Dior to look up at. Prada Aoyama optional.')
+_r[_row(17, '14:45')] = R('14:45', 'Supplies, then check in if the room is ready', 'Don Quijote and 7-Eleven for supplies. No room yet: bags stay at the desk until after Shibuya Sky.')

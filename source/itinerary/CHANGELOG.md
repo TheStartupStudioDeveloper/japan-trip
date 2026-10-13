@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Ninja Tokyo option, 14 October
+- Sat 17: new optional row at 19:00, "Optional: Ninja Tokyo dinner", marked To book, after the existing dinner row. Nothing removed. Other Sat 17 notes shortened to keep 26 pages.
+- New Ninja Tokyo card. Checklist: the Sushi Hatsume line now covers both optional bookings on TableCheck. Itinerary Summary Sat 17 evening: "dinner nearby or Ninja Tokyo".
+- J&HK Extras, Shibuya, Eat: Ninja Tokyo, for the Sat 17 dinner or Tue 20 lunch. Closed Sundays and Mondays.
+
 Cross check of cards and how-to links, 14 October
 - Checked every How-to mention in the Itinerary (36) and Extras (3) against the how-to titles: all point to the right section. Every place link in both apps opens a card.
 - Sanjō-dōri card: no longer says lunch is on the walk in (Nara now arrives by Kintetsu); mentions Higashimuki arcade and Nakatanidō at the corner.

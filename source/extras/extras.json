@@ -1182,6 +1182,13 @@
    "w": "Free viewing spaces on levels 38 and 39 of Yebisu Garden Place Tower, about 167 m up. Tokyo Tower, Roppongi and Rainbow Bridge to the east, Shibuya and Shinjuku to the north, and Mt Fuji to the west on a clear day.",
    "t": "Free, about 11:00 to 23:00; check on the day. Lift from the back of the tower straight to level 38. Same level as Hana Chibo.",
    "m": "Yebisu Garden Place Tower SKY LOUNGE"
+  },
+  "ninja-tokyo-x": {
+   "n": "Ninja Tokyo",
+   "l": "NINJA TOKYO",
+   "w": "A themed course restaurant, once Ninja Akasaka, now in the basement of the Shin-Otemachi Building by Tokyo Station. A ninja leads you through a hidden door and a cave-like maze to tables in a dim ninja village with a pond, and performs tricks between courses.",
+   "t": "Lunch 11:30 to 14:30, dinner 17:00 to 22:00, closed Sundays and Mondays (check on TableCheck). Hanzō course ¥13,200, Bansenshukai ¥19,800, both with a beef steak and seafood. Book ahead.",
+   "m": "Ninja Tokyo restaurant Otemachi"
   }
  },
  "areas": [
@@ -1375,6 +1382,17 @@
      "time": "1.5 hr",
      "one": "Okonomiyaki and teppanyaki with a 38th floor view",
      "fits": "Mon 19 lunch, or Sat 17 for a sit-down lunch after the flight. One stop to Ebisu. Also the fallback if Sushi Hatsume is full for Sun 18.",
+     "tags": [
+      "¥¥¥",
+      "Book"
+     ]
+    },
+    {
+     "group": "Eat",
+     "key": "ninja-tokyo-x",
+     "time": "2 hr",
+     "one": "Ninja show dinner in a hidden underground village",
+     "fits": "In the itinerary as the optional Sat 17 dinner at 19:00, Hanzōmon line direct from Shibuya. Or Tue 20 lunch at 11:30 between Tsukiji and Yokohama, with JR from Tokyo Station next door. Closed Sundays and Mondays.",
      "tags": [
       "¥¥¥",
       "Book"

@@ -618,6 +618,9 @@ P('higashimuki', ['Higashimuki arcade'], 'Higashimuki arcade', '東向商店街'
 P('kintetsu-nara', ['Kintetsu Nara'], 'Kintetsu Nara Station', '近鉄奈良駅',
   'The underground station closest to Nara Park, a few minutes from Kōfuku-ji. Limited expresses run from Kyoto Station in about 35 minutes.',
   'Take the exit for Higashimuki.', 'Kintetsu Nara Station')
+P('ninja-tokyo', ['Ninja Tokyo'], 'Ninja Tokyo', 'NINJA TOKYO 忍者屋敷',
+  'A themed course restaurant, once Ninja Akasaka, now in the basement of the Shin-Otemachi Building by Tokyo Station. A ninja leads you through a hidden door and a cave-like maze to tables in a dim ninja village with a pond, and performs tricks between courses. Set courses only, seasonal and showy.',
+  'Lunch 11:30 to 14:30, dinner 17:00 to 22:00, closed Sundays and Mondays (check on TableCheck). Hanzō course ¥13,200, Bansenshukai ¥19,800, both with a beef steak and seafood. Book ahead on TableCheck.', 'Ninja Tokyo restaurant Otemachi')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
