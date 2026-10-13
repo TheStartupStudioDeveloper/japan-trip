@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Cross check of cards and how-to links, 14 October
+- Checked every How-to mention in the Itinerary (36) and Extras (3) against the how-to titles: all point to the right section. Every place link in both apps opens a card.
+- Sanjō-dōri card: no longer says lunch is on the walk in (Nara now arrives by Kintetsu); mentions Higashimuki arcade and Nakatanidō at the corner.
+- Extras, Yokohama note: the Wharf House is the day plan footbath idea; Manyo Club is in How-to 22.
+
 Extras: Yebisu SKY LOUNGE, 13 October
 - J&HK Extras, Shibuya, Views (Note 6): the free SKY LOUNGE on levels 38 and 39 of Yebisu Garden Place Tower, for Sun 18 around Sushi Hatsume or with a Hana Chibo lunch. New card.
 

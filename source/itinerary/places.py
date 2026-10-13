@@ -433,8 +433,8 @@ P('fushimi', ['Fushimi Inari'], 'Fushimi Inari', '伏見稲荷大社',
   'The crowds thin sharply after the first ten minutes of climbing.', 'Fushimi Inari Taisha torii gates')
 
 P('sanjo', ['Sanjō-dōri'], 'Sanjō-dōri', '三条通り',
-  'Nara\'s main shopping street, running east from JR Nara Station towards the park. It is lined with restaurants, sweet shops and souvenir stores, and is the natural place for lunch on the walk in.',
-  'Nakatanidō, near the far end, is famous for pounding mochi rice cakes at high speed.', 'Sanjo-dori Street Nara')
+  'Nara\'s main shopping street, running east from JR Nara Station towards the park, lined with restaurants, sweet shops and souvenir stores. Higashimuki arcade from Kintetsu Nara joins it near the park end.',
+  'Nakatanidō, where the arcade meets Sanjō-dōri, is famous for pounding mochi rice cakes at high speed.', 'Sanjo-dori Street Nara')
 
 # ---------------- Tokyo: Hibiya and Ginza ----------------
 P('hilton', ['Hilton Tokyo Odaiba', 'the Hilton', 'Hilton'], 'Hilton Tokyo Odaiba', 'ヒルトン東京お台場',
