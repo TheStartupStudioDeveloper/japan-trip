@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Extras: Yebisu SKY LOUNGE, 13 October
+- J&HK Extras, Shibuya, Views (Note 6): the free SKY LOUNGE on levels 38 and 39 of Yebisu Garden Place Tower, for Sun 18 around Sushi Hatsume or with a Hana Chibo lunch. New card.
+
 Cash mix tips, 13 October
 - Tips: "The right mix of yen" after Cash and coins (note and coin sizes, keep ¥1,000s, break ¥10,000s at convenience stores, the ¥19,000 ATM trick, which coins matter) and "Hong Kong: cash" (Octopus first, carry HK$20, 50 and 100, avoid HK$500 and 1,000 in taxis).
 

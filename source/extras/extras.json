@@ -1175,6 +1175,13 @@
    "w": "The indoor observation deck on level 52 of Roppongi Hills Mori Tower. Floor-to-ceiling glass all round, with Tokyo Tower close and at eye level, the best-known view of it in the city.",
    "t": "10:00 to 22:00, last entry 21:30. ¥2,200 each online. The Mori Art Museum above is closed between shows in October. Low cloud hides the view.",
    "m": "Tokyo City View Roppongi Hills"
+  },
+  "yebisu-sky": {
+   "n": "Yebisu Garden Place SKY LOUNGE",
+   "l": "恵比寿ガーデンプレイスタワー SKY LOUNGE",
+   "w": "Free viewing spaces on levels 38 and 39 of Yebisu Garden Place Tower, about 167 m up. Tokyo Tower, Roppongi and Rainbow Bridge to the east, Shibuya and Shinjuku to the north, and Mt Fuji to the west on a clear day.",
+   "t": "Free, about 11:00 to 23:00; check on the day. Lift from the back of the tower straight to level 38. Same level as Hana Chibo.",
+   "m": "Yebisu Garden Place Tower SKY LOUNGE"
   }
  },
  "areas": [
@@ -1435,6 +1442,16 @@
      "time": "20 min",
      "one": "Free window view of the crossing and the trains.",
      "fits": "Any time to midnight. Pairs with a walk past the station.",
+     "tags": [
+      "Free"
+     ]
+    },
+    {
+     "group": "Views",
+     "key": "yebisu-sky",
+     "time": "20 min",
+     "one": "Free night view of Tokyo Tower from level 38",
+     "fits": "Sun 18 before or after Sushi Hatsume, five minutes away in Ebisu. Or with a Hana Chibo lunch on the same level.",
      "tags": [
       "Free"
      ]
