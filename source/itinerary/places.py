@@ -13,7 +13,7 @@ IGNORE = ['Asakusa line', 'Ginza line', 'JR Nara line', 'Kiyomizu-Gojō', 'Kiyom
 # ---------------- hotels, airports, trains ----------------
 P('seq-s', ['Sequence Miyashita Park', 'bags to the hotel'], 'Sequence Miyashita Park', 'シークエンス ミヤシタパーク',
   'Your Shibuya hotel for the first four nights. It is the tower at the northern end of the Miyashita Park building, a seven minute walk from Shibuya Station. The lobby and cafe are on the 4th floor, level with the rooftop park.',
-  'Booked direct by Cynthia. Standard check-in is 17:00 and checkout is 14:00, later than most hotels at both ends.', 'sequence MIYASHITA PARK hotel Shibuya')
+  'Booked direct by Cynthia. Standard check-in is 17:00 and checkout is 14:00. A high floor is requested, not guaranteed. Early check-in is free if a room is ready: ask on arrival, and they hold the bags until then.', 'sequence MIYASHITA PARK hotel Shibuya')
 P('seq-k', ['sequence KYOTO GOJO'], 'sequence KYOTO GOJO', 'シークエンス 京都五条',
   'Your Kyoto hotel for three nights, at the corner of Karasuma and Gojō streets in central Kyoto. Gojō subway station is about three minutes away, one stop north of Kyoto Station.',
   'Booked on Booking.com by G. Same late check-in and checkout as the Shibuya sequence hotel. The address is Gojō Karasuma-chō 409, Shimogyō-ku.', 'sequence KYOTO GOJO hotel')

@@ -230,3 +230,12 @@ _r[_row(17, '19:00')] = R('19:00', 'Optional: Ninja Tokyo dinner', 'Instead of d
 _r[_row(17, '10:00')] = R('10:00', 'Shibuya Station, bags to the hotel', 'Hachikō exit, lobby on 4F (How-to 6). Leave the bags; confirm the early check-in.')
 _r[_row(17, '12:30')] = R('12:30', 'Omotesando', 'Lunch wherever looks good. Omotesando Hills, Tod\'s and Dior to look up at. Prada Aoyama optional.')
 _r[_row(17, '14:45')] = R('14:45', 'Supplies, then check in if the room is ready', 'Don Quijote and 7-Eleven for supplies. No room yet: bags stay at the desk until after Shibuya Sky.')
+
+# Sequence Miyashita Park replied (14 Oct): high floor requested, not guaranteed; early check-in asked on the day, free; bags held
+D[17]['rows'][_row(17, '10:00')] = R('10:00', 'Shibuya Station, bags to the hotel', 'Hachikō exit, lobby on 4F (How-to 6). Ask about early check-in: free if a room is ready, bags held until then.')
+_bk = CHECK[[g[0] for g in CHECK].index('Book or confirm before you fly')][1]
+_k = next(i for i, it in enumerate(_bk) if it[1].startswith('Ask Sequence Miyashita Park for early check-in'))
+del _bk[_k]
+_og = CHECK[[g[0] for g in CHECK].index('On the ground')][1]
+_k = next(i for i, it in enumerate(_og) if it[1].startswith('Sat 17 at Narita'))
+_og.insert(_k + 1, ('s', 'Sat 17: ask Sequence for early check-in at the desk. Free; they hold the bags'))

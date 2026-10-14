@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Sequence Miyashita Park reply, 14 October
+- The hotel has noted a high floor request (not guaranteed). Early check-in is asked at the desk on the day, free if a room is ready, and they hold the bags until then.
+- Sat 17 10:00 row and the hotel card updated. Checklist: the before-you-fly early check-in line is done and comes off; a new On the ground line for Sat 17 asks at the desk on arrival.
+
 Ninja Tokyo option, 14 October
 - Sat 17: new optional row at 19:00, "Optional: Ninja Tokyo dinner", marked To book, after the existing dinner row. Nothing removed. Other Sat 17 notes shortened to keep 26 pages.
 - New Ninja Tokyo card. Checklist: the Sushi Hatsume line now covers both optional bookings on TableCheck. Itinerary Summary Sat 17 evening: "dinner nearby or Ninja Tokyo".
