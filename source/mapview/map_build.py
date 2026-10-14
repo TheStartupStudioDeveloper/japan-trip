@@ -78,15 +78,19 @@ def label_at(pts_xy):
     if ang < -90: ang += 180
     return (x1 + x2) / 2, (y1 + y2) / 2, ang, math.hypot(x2 - x1, y2 - y1)
 
-def panel_svg(day, idx, pn, title=None, pkind='area'):
-    pts = [GEO[day['rows'][i]['key']] for i in pn]
+def span(pts, kx):
     la0, la1 = min(p[0] for p in pts), max(p[0] for p in pts)
     lo0, lo1 = min(p[1] for p in pts), max(p[1] for p in pts)
-    kx = math.cos(math.radians((la0 + la1) / 2))
-    # span in metres-ish units, padded, minimum 900 m, portrait 760 x 900
-    sx, sy = (lo1 - lo0) * kx, (la1 - la0)
-    sx, sy = max(sx, 0.008), max(sy, 0.008)
-    sx *= 1.5; sy *= 1.5
+    return la0, la1, lo0, lo1, max((lo1 - lo0) * kx, 0.008) * 1.5, max(la1 - la0, 0.008) * 1.5
+
+def panel_svg(day, idx, pn, title=None, pkind='area', areas=None):
+    pts = [GEO[day['rows'][i]['key']] for i in pn]
+    areas = areas or [pn]
+    kx = math.cos(math.radians((min(p[0] for p in pts) + max(p[0] for p in pts)) / 2))
+    la0, la1, lo0, lo1, sx, sy = span(pts, kx)
+    # room to zoom out: the whole map is at least three times the biggest area
+    big = max(max(span([GEO[day['rows'][i]['key']] for i in a], kx)[4:]) for a in areas)
+    sx, sy = max(sx, big * 3), max(sy, big * 3)
     Hh = 900
     if sx / sy > W / Hh: sy = sx * Hh / W
     else: sx = sy * W / Hh
@@ -97,8 +101,16 @@ def panel_svg(day, idx, pn, title=None, pkind='area'):
     def inb(a, b, m=1.6):
         dy, dx = (LA1 - LA0) * m, (LO1 - LO0) * m
         return LA0 - dy <= a <= LA1 + dy and LO0 - dx <= b <= LO1 + dx
-    span_m = sx * 111320
-    o = [f'<svg class="map" viewBox="0 0 {W} {Hh}" data-w="{W}" data-h="{Hh}" data-zt="{0.62 if span_m > 4000 else 1.6}" role="img" aria-label="Map: {H.escape(region(cla, clo))}">',
+    mpu = sx * 111320 / W
+    views = []
+    for a in areas:
+        a0, a1, b0, b1, ax, ay = span([GEO[day['rows'][i]['key']] for i in a], kx)
+        if ax / ay > W / Hh: ay = ax * Hh / W
+        else: ax = ay * W / Hh
+        cx, cy = pj((a0 + a1) / 2, (b0 + b1) / 2); w = ax * 111320 / mpu; h = w * Hh / W
+        views.append((region((a0 + a1) / 2, (b0 + b1) / 2), f'{cx - w / 2:.1f} {cy - h / 2:.1f} {w:.1f} {h:.1f}', len(a)))
+    first = next((v for v in views if v[2] >= 2), views[0])
+    o = [f'<svg class="map" viewBox="{first[1]}" data-init="{first[1]}" data-mpu="{mpu:.3f}" data-w="{W}" data-h="{Hh}" role="img" aria-label="Map: {H.escape(region(cla, clo))}">',
          f'<defs><pattern id="ht{day["d"]}{idx}" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hatch"/></pattern>'
          f'<pattern id="wt{day["d"]}{idx}" width="10" height="5" patternUnits="userSpaceOnUse"><path d="M0 3 Q2.5 1 5 3 T10 3" class="wave"/></pattern></defs>',
          f'<rect x="-2000" y="-2000" width="{W + 4000}" height="{Hh + 4000}" class="ground"/>']
@@ -144,14 +156,14 @@ def panel_svg(day, idx, pn, title=None, pkind='area'):
         r = day['rows'][i]; x, y = pj(*GEO[r['key']]); c = seen.get(r['key'], 0); seen[r['key']] = c + 1
         ang = c * 1.1; dx, dy = (math.cos(ang) * 26 * (c > 0), math.sin(ang) * 26 * (c > 0))
         o.append(f'<g class="pin sc{" opt" if r["opt"] else ""}" data-n="{r["num"]}" data-x="{x + dx:.1f}" data-y="{y + dy:.1f}" tabindex="0" role="button" aria-label="Stop {r["num"]}: {H.escape(r["txt"])}"><circle r="13"/><text y="4.5" text-anchor="middle">{r["num"]}</text></g>')
-    # scale bar 500 m and north arrow (screen-fixed, drawn in HTML)
-    m500 = 500 / (111320 * kx) / (LO1 - LO0) * W
     o.append('</svg>')
-    name = title or region(cla, clo)
-    gl = gm_links(day, [i for i in pn if not day['rows'][i]['opt']], 'Whole day' if pkind == 'all' else 'These stops')
-    return f'<div class="mp{" mall" if pkind == "all" else ""}" data-m500="{m500:.2f}"><div class="mhead"><b>{H.escape(name)}</b><span>Stops {", ".join(str(day["rows"][i]["num"]) for i in sorted(set(pn), key=lambda j: day["rows"][j]["num"]))}</span></div><div class="mwin">{"".join(o)}<div class="zoom"><button type="button" class="zin" aria-label="Zoom in">+</button><button type="button" class="zout" aria-label="Zoom out">−</button><button type="button" class="zfit" aria-label="Show the whole map">⤢</button></div><div class="north" aria-hidden="true">▲<br>N</div><div class="scale" aria-hidden="true"><i></i><span>500 m · 7 min</span></div></div>{gl}</div>'
+    gl = gm_links(day, [i for i in pn if not day['rows'][i]['opt']], 'Whole day')
+    if len(areas) > 1:
+        gl += ''.join(gm_links(day, [i for i in a if not day['rows'][i]['opt']], 'These stops', v[0]) for a, v in zip(areas, views) if v[2] >= 2)
+    btns = ''.join(f'<button type="button" class="ab" data-v="{v[1]}"{" aria-pressed=true" if v is first else ""}>{H.escape(v[0])}</button>' for v in views) if len(views) > 1 else ''
+    return f'<div class="mp"><div class="mhead"><b>Map</b><span class="abs">{btns}<button type="button" class="ab" data-v="0 0 {W} {Hh}">Zoom out to the whole day</button></span></div><div class="mwin">{"".join(o)}<div class="zoom"><button type="button" class="zin" aria-label="Zoom in">+</button><button type="button" class="zout" aria-label="Zoom out">−</button><button type="button" class="zfit" aria-label="Back to the start view">⤢</button></div><div class="north" aria-hidden="true">▲<br>N</div><div class="scale" aria-hidden="true"><i></i><span>500 m · 7 min</span></div></div>{gl}</div>'
 
-def gm_links(day, idxs, label):
+def gm_links(day, idxs, label, area=None):
     pts = []
     for i in idxs:
         c = GEO[day['rows'][i]['key']]
@@ -166,7 +178,8 @@ def gm_links(day, idxs, label):
         url = (f'https://www.google.com/maps/dir/?api=1&origin={o[0]},{o[1]}&destination={d[0]},{d[1]}'
                + (('&waypoints=' + '%7C'.join(f'{a},{b}' for _, (a, b) in w)) if w else '') + ('' if label == 'Whole day' else '&travelmode=walking'))
         rng = f'stops {ch[0][0]} to {ch[-1][0]}'
-        out.append(f'<a href="{url}" target="_blank" rel="noopener">{label} in Google Maps{", " + rng if len(parts) > 1 or label != "Whole day" else ""}</a>')
+        nm = f'{area} stops' if area else label
+        out.append(f'<a href="{url}" target="_blank" rel="noopener">{nm} in Google Maps{", " + rng if len(parts) > 1 else ""}</a>')
     return '<p class="glinks">' + ''.join(out) + '</p>'
 
 def gmaps_dir(a, b, mode):
@@ -174,11 +187,12 @@ def gmaps_dir(a, b, mode):
 
 sections, chips = [], []
 for day in days:
-    maps = [panel_svg(day, i, pn) for i, pn in enumerate(day['panels']) if len({day['rows'][j]['key'] for j in pn}) >= 2]
-    near = [i for i, r in enumerate(day['rows']) if r['key'] and r['key'] not in ('narita', 'haneda', 'hkia', 'mel', 'hkg-transfer', 'plaza-premium')]
-    if len(day['panels']) > 1 and len({day['rows'][j]['key'] for j in near}) >= 2:
-        maps.insert(0, panel_svg(day, 9, near, 'The whole day', 'all'))
-    singles = [pn for pn in day['panels'] if len({day['rows'][j]['key'] for j in pn}) < 2]
+    AIR = ('narita', 'haneda', 'hkia', 'mel', 'hkg-transfer', 'plaza-premium')
+    near = [i for i, r in enumerate(day['rows']) if r['key'] and r['key'] not in AIR]
+    areas = [[i for i in pn if i in near] for pn in day['panels']]
+    areas = [a for a in areas if a]
+    maps = [panel_svg(day, 0, near, None, 'all', areas)] if len({day['rows'][j]['key'] for j in near}) >= 2 else []
+    singles = []
     rows_html = []; prev = None; prevn = 0
     for r in day['rows']:
         num = f'<button type="button" class="rn{" opt" if r["opt"] else ""}" data-n="{r["num"]}" aria-label="Show stop {r["num"]} on the map">{r["num"]}</button>' if r['key'] else '<span class="rn none"></span>'
@@ -272,7 +286,7 @@ body{overflow-x:hidden}
 .racts a{font-size:.74rem;font-weight:600;color:var(--ink);text-decoration:none;border:1.2px solid var(--ink);padding:.28rem .45rem}
 .racts a:hover{background:var(--ink);color:var(--paper)}
 .z0 .sl,.z0 .stl,.z0 .ll{display:none}.z0 .al{opacity:.8}
-.mall .mhead{background:var(--ink);color:var(--paper)}.mall .mhead span{color:var(--paper)}
+.mhead{flex-wrap:wrap;gap:.4rem}.abs{display:flex;flex-wrap:wrap;gap:.3rem}.ab{appearance:none;border:1.2px solid var(--ink);background:var(--paper);color:var(--ink);font:600 .74rem/1 "Instrument","Helvetica Neue",Arial,sans-serif;padding:.35rem .5rem;cursor:pointer}.ab[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .glinks{display:flex;flex-wrap:wrap;gap:.35rem;margin:.45rem 0 0}.glinks a{font-size:.78rem;font-weight:600;color:var(--paper);background:var(--ink);text-decoration:none;padding:.4rem .6rem}
 .nomap{font-size:.86rem;color:var(--mute);border-left:3px solid var(--ink);padding-left:.7rem;margin:.6rem 0 1rem}
 .mfoot{font-size:.78rem;color:var(--mute);border-top:1px solid var(--line,#ccc);padding-top:.8rem;margin-top:2rem}
@@ -284,23 +298,25 @@ js = r'''
 (function(){
  var days=[].slice.call(document.querySelectorAll('.mday')),chips=[].slice.call(document.querySelectorAll('.dchip'));
  function setup(win){
-  var svg=win.querySelector('svg'),W=+svg.dataset.w,Hh=+svg.dataset.h,vb={x:0,y:0,w:W,h:Hh},pts={},pinch=null,last=null,moved=0;
-  var mp=win.closest('.mp'),m500=+mp.dataset.m500,scaleI=win.querySelector('.scale i'),scaleT=win.querySelector('.scale span');
+  var svg=win.querySelector('svg'),W=+svg.dataset.w,Hh=+svg.dataset.h,MPU=+svg.dataset.mpu,iv=svg.dataset.init.split(' ').map(Number),vb={x:iv[0],y:iv[1],w:iv[2],h:iv[3]},pts={},pinch=null,last=null,moved=0,MINW=250/MPU;
+  var mp=win.closest('.mp'),scaleI=win.querySelector('.scale i'),scaleT=win.querySelector('.scale span');
   function apply(){
-   vb.w=Math.max(W/6,Math.min(W*4,vb.w));vb.h=vb.w*Hh/W;
-   var mx=Math.max(0,(vb.w-W)/2)+W*.1,my=Math.max(0,(vb.h-Hh)/2)+Hh*.1;vb.x=Math.max(-mx,Math.min(W+mx-vb.w,vb.x));vb.y=Math.max(-my,Math.min(Hh+my-vb.h,vb.y));
+   vb.w=Math.max(MINW,Math.min(W*1.15,vb.w));vb.h=vb.w*Hh/W;
+   var mx=W*.08,my=Hh*.08;vb.x=Math.max(-mx,Math.min(W+mx-vb.w,vb.x));vb.y=Math.max(-my,Math.min(Hh+my-vb.h,vb.y));
    svg.setAttribute('viewBox',vb.x+' '+vb.y+' '+vb.w+' '+vb.h);
-   var k=vb.w/(svg.clientWidth||W);svg.style.setProperty('--k',k);svg.classList.toggle('z2',vb.w<W*.62);svg.classList.toggle('z0',vb.w>W*(+svg.dataset.zt||1.6));
+   var k=vb.w/(svg.clientWidth||W);svg.style.setProperty('--k',k);var vm=vb.w*MPU;svg.classList.toggle('z2',vm<1700);svg.classList.toggle('z0',vm>6500);
    svg.querySelectorAll('.sc').forEach(function(g){g.setAttribute('transform','translate('+g.dataset.x+' '+g.dataset.y+') scale('+k+')')});
-   var px=m500*(svg.clientWidth||W)/vb.w,lab='500 m · 7 min';
-   if(px>150){px/=5;lab='100 m · 1 min'} else if(px<12){px*=10;lab='5 km'} else if(px<40){px*=2;lab='1 km · 14 min'}
+   var cw=svg.clientWidth||W,S=[[100,'100 m · 1 min'],[500,'500 m · 7 min'],[1000,'1 km · 14 min'],[5000,'5 km'],[10000,'10 km']],px=0,lab='';
+   for(var q=0;q<S.length;q++){px=S[q][0]/MPU*cw/vb.w;lab=S[q][1];if(px>=40)break}
    scaleI.style.width=Math.round(px)+'px';scaleT.textContent=lab;
   }
-  function zoomAt(f,cx,cy){var nw=Math.max(W/6,Math.min(W*4,vb.w*f));var r=nw/vb.w;vb.x=cx-(cx-vb.x)*r;vb.y=cy-(cy-vb.y)*r;vb.w=nw;apply()}
+  function zoomAt(f,cx,cy){var nw=Math.max(MINW,Math.min(W*1.15,vb.w*f));var r=nw/vb.w;vb.x=cx-(cx-vb.x)*r;vb.y=cy-(cy-vb.y)*r;vb.w=nw;apply()}
   function toSvg(e){var r=svg.getBoundingClientRect();return {x:vb.x+(e.clientX-r.left)/r.width*vb.w,y:vb.y+(e.clientY-r.top)/r.height*vb.h}}
   win.querySelector('.zin').onclick=function(){zoomAt(.6,vb.x+vb.w/2,vb.y+vb.h/2)};
   win.querySelector('.zout').onclick=function(){zoomAt(1/.6,vb.x+vb.w/2,vb.y+vb.h/2)};
-  win.querySelector('.zfit').onclick=function(){vb={x:0,y:0,w:W,h:Hh};apply()};
+  function setv(t){var a=t.split(' ').map(Number);vb={x:a[0],y:a[1],w:a[2],h:a[3]};apply()}
+  win.querySelector('.zfit').onclick=function(){setv(iv.join(' '))};
+  mp.querySelectorAll('.ab').forEach(function(b){b.onclick=function(){mp.querySelectorAll('.ab').forEach(function(x){x.setAttribute('aria-pressed',x===b)});setv(b.dataset.v)}});
   svg.addEventListener('wheel',function(e){e.preventDefault();var p=toSvg(e);zoomAt(e.deltaY>0?1.15:1/1.15,p.x,p.y)},{passive:false});
   svg.addEventListener('pointerdown',function(e){svg.setPointerCapture(e.pointerId);pts[e.pointerId]={x:e.clientX,y:e.clientY};moved=0;var ids=Object.keys(pts);
    if(ids.length===2){var a=pts[ids[0]],b=pts[ids[1]];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),w:vb.w}}else{last={x:e.clientX,y:e.clientY}}});
@@ -311,7 +327,7 @@ js = r'''
   svg.addEventListener('pointerup',up);svg.addEventListener('pointercancel',up);
   svg.addEventListener('click',function(e){if(moved>6){e.stopPropagation();return}var g=e.target.closest('.pin');if(g)select(+g.dataset.n,true)},true);
   svg.addEventListener('keydown',function(e){var g=e.target.closest('.pin');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();select(+g.dataset.n,true)}});
-  win.focusOn=function(x,y){if(vb.w>W*.55){vb.w=W*.5}vb.x=x-vb.w/2;vb.y=y-vb.w*Hh/W/2;apply()};
+  win.focusOn=function(x,y){if(vb.w*MPU>2500){vb.w=1500/MPU}vb.x=x-vb.w/2;vb.y=y-vb.w*Hh/W/2;apply()};
   win.redraw=apply;apply();
  }
  document.querySelectorAll('.mwin').forEach(setup);

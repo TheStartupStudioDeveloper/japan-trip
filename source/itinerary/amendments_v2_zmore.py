@@ -271,3 +271,10 @@ del _h[_k]
 
 # Osaka Castle: the moat-wall view via Gokuraku-bashi on the way in (Thu 22)
 D[22]['rows'][_row(22, '08:30')] = R('08:30', 'Osaka Castle, up close', 'In by Aoya-mon to Gokuraku-bashi: the tower over the inner moat walls. Then to its foot, not inside. Takeaway breakfast on a bench.')
+
+# Ninja Tokyo out of Sat 17 (no trips out of Shibuya on day one). Kept in Extras only.
+_r = D[17]['rows']; del _r[_row(17, '19:00')]
+_g = [g[0] for g in CHECK].index('Book or confirm before you fly')
+_L = CHECK[_g][1]
+_k = next(i for i, it in enumerate(_L) if 'Ninja Tokyo' in it[1])
+_L[_k] = ('s', 'Optional: Sushi Hatsume for Sun 18, 19:30, on TableCheck')

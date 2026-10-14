@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Ninja Tokyo off Sat 17; Map View one map per day, 15 October
+- Itinerary: the optional Ninja Tokyo dinner is out of Sat 17, so day one stays in Shibuya. The checklist line goes back to Sushi Hatsume only, and the Itinerary Summary Sat 17 evening reads "dinner nearby". The card stays.
+- J&HK Extras, Shibuya: Ninja Tokyo stays as an idea, with how to get there (Hibiya and Chiyoda lines from Tsukiji, or the Hanzōmon line from Shibuya, to Ōtemachi) and Tue 20 lunch as the best fit.
+- J&HK Map View: one map per day. It opens zoomed in on the first main area and zooms out to show the whole day. Days with more than one area get buttons to jump between areas, plus "Zoom out to the whole day". Google Maps links for the whole day and for each area sit under the map.
+
 J&HK Map View: zoom out and Google Maps routes, 15 October
 - Every map zooms out to four times its area, with the streets, lines and landmarks around it, and the scale bar goes up to 5 km.
 - Days that span more than one area open with a "The whole day" map showing every stop together (for example Street Kart at Rainbow Bridge against Shibuya on Sun 18, or Tsukiji and Yokohama on Tue 20). Small labels hide when zoomed far out.
