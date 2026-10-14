@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+J&HK Map View: zoom out and Google Maps routes, 15 October
+- Every map zooms out to four times its area, with the streets, lines and landmarks around it, and the scale bar goes up to 5 km.
+- Days that span more than one area open with a "The whole day" map showing every stop together (for example Street Kart at Rainbow Bridge against Shibuya on Sun 18, or Tsukiji and Yokohama on Tue 20). Small labels hide when zoomed far out.
+- Google Maps: "Whole day in Google Maps" opens every stop in order, and each area map has "These stops in Google Maps" for walking. Long days split into parts of up to 10 stops. Every row has "Directions from stop N", walking or by train, for exact point to point directions.
+
 J&HK Map View, new app, 15 October
 - New separate app, Map Itinerary (home screen name "J&HK Map View"), at /map/ and on claude.ai. The Itinerary, Extras, Weather and Expenses are unchanged.
 - One map per day, 16 to 30 October, built from the Master Itinerary's own day plans and place cards, so it follows any change made to the master on the next build. Days that cross cities get a map per area (for example Kyoto and Nara on Wed 21).

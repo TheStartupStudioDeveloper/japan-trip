@@ -78,7 +78,7 @@ def label_at(pts_xy):
     if ang < -90: ang += 180
     return (x1 + x2) / 2, (y1 + y2) / 2, ang, math.hypot(x2 - x1, y2 - y1)
 
-def panel_svg(day, idx, pn):
+def panel_svg(day, idx, pn, title=None, pkind='area'):
     pts = [GEO[day['rows'][i]['key']] for i in pn]
     la0, la1 = min(p[0] for p in pts), max(p[0] for p in pts)
     lo0, lo1 = min(p[1] for p in pts), max(p[1] for p in pts)
@@ -94,10 +94,11 @@ def panel_svg(day, idx, pn):
     LA0, LA1 = cla - sy / 2, cla + sy / 2
     LO0, LO1 = clo - sx / kx / 2, clo + sx / kx / 2
     def pj(a, b): return ((b - LO0) / (LO1 - LO0) * W, (LA1 - a) / (LA1 - LA0) * Hh)
-    def inb(a, b, m=0.6):
+    def inb(a, b, m=1.6):
         dy, dx = (LA1 - LA0) * m, (LO1 - LO0) * m
         return LA0 - dy <= a <= LA1 + dy and LO0 - dx <= b <= LO1 + dx
-    o = [f'<svg class="map" viewBox="0 0 {W} {Hh}" data-w="{W}" data-h="{Hh}" role="img" aria-label="Map: {H.escape(region(cla, clo))}">',
+    span_m = sx * 111320
+    o = [f'<svg class="map" viewBox="0 0 {W} {Hh}" data-w="{W}" data-h="{Hh}" data-zt="{0.62 if span_m > 4000 else 1.6}" role="img" aria-label="Map: {H.escape(region(cla, clo))}">',
          f'<defs><pattern id="ht{day["d"]}{idx}" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hatch"/></pattern>'
          f'<pattern id="wt{day["d"]}{idx}" width="10" height="5" patternUnits="userSpaceOnUse"><path d="M0 3 Q2.5 1 5 3 T10 3" class="wave"/></pattern></defs>',
          f'<rect x="-2000" y="-2000" width="{W + 4000}" height="{Hh + 4000}" class="ground"/>']
@@ -109,22 +110,22 @@ def panel_svg(day, idx, pn):
             fill = f'url(#wt{day["d"]}{idx})' if kind == 'water' else f'url(#ht{day["d"]}{idx})' if kind == 'park' else ''
             lay[kind].append(f'<polygon points="{sp}" class="{kind}"' + (f' style="fill:{fill}"' if fill else '') + '/>')
             cx, cy = sum(x for x, y in xy) / len(xy), sum(y for x, y in xy) / len(xy)
-            if -20 < cx < W + 20 and -20 < cy < Hh + 20:
+            if -W < cx < 2 * W and -Hh < cy < 2 * Hh:
                 lay['labels'].append(f'<text class="al lod{1 if kind != "bldg" else 2}" x="{cx:.0f}" y="{cy:.0f}" text-anchor="middle">{H.escape(name)}</text>')
         else:
             k = kind if kind != 'road2' else 'road2'
             if kind in ('road1', 'road2'): lay[kind + 'c'].append(f'<polyline points="{sp}" class="{kind}c"/>')
             lay[kind].append(f'<polyline points="{sp}" class="{kind}"/>' + (f'<polyline points="{sp}" class="railt"/>' if kind == 'rail' else ''))
             x, y, ang, ln = label_at(xy)
-            if ln > 40 and -20 < x < W + 20 and -20 < y < Hh + 20:
+            if ln > 40 and -W < x < 2 * W and -Hh < y < 2 * Hh:
                 lod = 1 if kind in ('road1', 'rail', 'cable') else 2
                 lay['labels'].append(f'<text class="sl {kind}l lod{lod}" x="{x:.0f}" y="{y:.0f}" text-anchor="middle" transform="rotate({ang:.0f} {x:.0f} {y:.0f})">{H.escape(name)}</text>')
     for k in ('water', 'park', 'bldg', 'road2c', 'road1c', 'road2', 'road1', 'metro', 'rail', 'cable'): o += lay[k]
     for n, a, b in geo.STATIONS:
-        if inb(a, b, 0.05):
+        if inb(a, b, 1.2):
             x, y = pj(a, b); o.append(f'<g class="stn sc" data-x="{x:.1f}" data-y="{y:.1f}"><rect x="-7" y="-5" width="14" height="10" rx="2"/><text class="stl lod1" x="0" y="18" text-anchor="middle">{H.escape(n)}</text></g>')
     for n, a, b in geo.LANDMARKS:
-        if inb(a, b, 0.05):
+        if inb(a, b, 1.2):
             x, y = pj(a, b); o.append(f'<g class="lmk sc" data-x="{x:.1f}" data-y="{y:.1f}"><rect x="-3.5" y="-3.5" width="7" height="7"/><text class="ll lod2" x="8" y="4">{H.escape(n)}</text></g>')
     o += lay['labels']
     # route legs: consecutive non-optional stops in this panel
@@ -146,8 +147,27 @@ def panel_svg(day, idx, pn):
     # scale bar 500 m and north arrow (screen-fixed, drawn in HTML)
     m500 = 500 / (111320 * kx) / (LO1 - LO0) * W
     o.append('</svg>')
-    name = region(cla, clo)
-    return f'<div class="mp" data-m500="{m500:.2f}"><div class="mhead"><b>{H.escape(name)}</b><span>Stops {", ".join(str(day["rows"][i]["num"]) for i in sorted(set(pn), key=lambda j: day["rows"][j]["num"]))}</span></div><div class="mwin">{"".join(o)}<div class="zoom"><button type="button" class="zin" aria-label="Zoom in">+</button><button type="button" class="zout" aria-label="Zoom out">−</button><button type="button" class="zfit" aria-label="Show the whole map">⤢</button></div><div class="north" aria-hidden="true">▲<br>N</div><div class="scale" aria-hidden="true"><i></i><span>500 m · 7 min</span></div></div></div>'
+    name = title or region(cla, clo)
+    gl = gm_links(day, [i for i in pn if not day['rows'][i]['opt']], 'Whole day' if pkind == 'all' else 'These stops')
+    return f'<div class="mp{" mall" if pkind == "all" else ""}" data-m500="{m500:.2f}"><div class="mhead"><b>{H.escape(name)}</b><span>Stops {", ".join(str(day["rows"][i]["num"]) for i in sorted(set(pn), key=lambda j: day["rows"][j]["num"]))}</span></div><div class="mwin">{"".join(o)}<div class="zoom"><button type="button" class="zin" aria-label="Zoom in">+</button><button type="button" class="zout" aria-label="Zoom out">−</button><button type="button" class="zfit" aria-label="Show the whole map">⤢</button></div><div class="north" aria-hidden="true">▲<br>N</div><div class="scale" aria-hidden="true"><i></i><span>500 m · 7 min</span></div></div>{gl}</div>'
+
+def gm_links(day, idxs, label):
+    pts = []
+    for i in idxs:
+        c = GEO[day['rows'][i]['key']]
+        if not pts or pts[-1][1] != c: pts.append((day['rows'][i]['num'], c))
+    if len(pts) < 2: return ''
+    parts, out = [], []
+    k = 0
+    while k < len(pts) - 1:
+        ch = pts[k:k + 10]; parts.append(ch); k += len(ch) - 1
+    for ch in parts:
+        o, d, w = ch[0][1], ch[-1][1], ch[1:-1]
+        url = (f'https://www.google.com/maps/dir/?api=1&origin={o[0]},{o[1]}&destination={d[0]},{d[1]}'
+               + (('&waypoints=' + '%7C'.join(f'{a},{b}' for _, (a, b) in w)) if w else '') + ('' if label == 'Whole day' else '&travelmode=walking'))
+        rng = f'stops {ch[0][0]} to {ch[-1][0]}'
+        out.append(f'<a href="{url}" target="_blank" rel="noopener">{label} in Google Maps{", " + rng if len(parts) > 1 or label != "Whole day" else ""}</a>')
+    return '<p class="glinks">' + ''.join(out) + '</p>'
 
 def gmaps_dir(a, b, mode):
     return f'https://www.google.com/maps/dir/?api=1&origin={a[0]},{a[1]}&destination={b[0]},{b[1]}&travelmode={mode}'
@@ -155,8 +175,11 @@ def gmaps_dir(a, b, mode):
 sections, chips = [], []
 for day in days:
     maps = [panel_svg(day, i, pn) for i, pn in enumerate(day['panels']) if len({day['rows'][j]['key'] for j in pn}) >= 2]
+    near = [i for i, r in enumerate(day['rows']) if r['key'] and r['key'] not in ('narita', 'haneda', 'hkia', 'mel', 'hkg-transfer', 'plaza-premium')]
+    if len(day['panels']) > 1 and len({day['rows'][j]['key'] for j in near}) >= 2:
+        maps.insert(0, panel_svg(day, 9, near, 'The whole day', 'all'))
     singles = [pn for pn in day['panels'] if len({day['rows'][j]['key'] for j in pn}) < 2]
-    rows_html = []; prev = None
+    rows_html = []; prev = None; prevn = 0
     for r in day['rows']:
         num = f'<button type="button" class="rn{" opt" if r["opt"] else ""}" data-n="{r["num"]}" aria-label="Show stop {r["num"]} on the map">{r["num"]}</button>' if r['key'] else '<span class="rn none"></span>'
         acts = ''
@@ -164,9 +187,9 @@ for day in days:
             c = GEO[r['key']]
             if prev and prev != c and not r['opt']:
                 far = dist(prev, c) > 2200 or r['transit']
-                acts += f'<a href="{gmaps_dir(prev, c, "transit" if far else "walking")}" target="_blank" rel="noopener">{"Route" if far else "Walk"} from last stop · {"" if far else str(max(1, round(dist(prev, c) * 1.25 / 75))) + " min"}</a>'.replace(' · </a>', '</a>')
+                acts += f'<a href="{gmaps_dir(prev, c, "transit" if far else "walking")}" target="_blank" rel="noopener">Directions from stop {prevn} · {"train or taxi" if far else str(max(1, round(dist(prev, c) * 1.25 / 75))) + " min walk"}</a>'
             acts += f'<a href="https://www.google.com/maps/search/?api=1&query={c[0]},{c[1]}" target="_blank" rel="noopener">Pin in Maps</a>'
-            if not r['opt']: prev = c
+            if not r['opt']: prev, prevn = c, r['num']
         rows_html.append(f'<li class="row{(" " + r["cls"]) if r["cls"] else ""}"><span class="t">{r["t"]}</span>{num}<div class="w"><p class="p">{r["p"]}</p>{f"<p class=n>{r[chr(110)]}</p>" if r["n"] else ""}{f"<p class=racts>{acts}</p>" if acts else ""}</div></li>')
     note = ''
     if not maps:
@@ -248,6 +271,9 @@ body{overflow-x:hidden}
 .racts{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 0}
 .racts a{font-size:.74rem;font-weight:600;color:var(--ink);text-decoration:none;border:1.2px solid var(--ink);padding:.28rem .45rem}
 .racts a:hover{background:var(--ink);color:var(--paper)}
+.z0 .sl,.z0 .stl,.z0 .ll{display:none}.z0 .al{opacity:.8}
+.mall .mhead{background:var(--ink);color:var(--paper)}.mall .mhead span{color:var(--paper)}
+.glinks{display:flex;flex-wrap:wrap;gap:.35rem;margin:.45rem 0 0}.glinks a{font-size:.78rem;font-weight:600;color:var(--paper);background:var(--ink);text-decoration:none;padding:.4rem .6rem}
 .nomap{font-size:.86rem;color:var(--mute);border-left:3px solid var(--ink);padding-left:.7rem;margin:.6rem 0 1rem}
 .mfoot{font-size:.78rem;color:var(--mute);border-top:1px solid var(--line,#ccc);padding-top:.8rem;margin-top:2rem}
 .jt-bar{max-width:52rem}
@@ -261,16 +287,16 @@ js = r'''
   var svg=win.querySelector('svg'),W=+svg.dataset.w,Hh=+svg.dataset.h,vb={x:0,y:0,w:W,h:Hh},pts={},pinch=null,last=null,moved=0;
   var mp=win.closest('.mp'),m500=+mp.dataset.m500,scaleI=win.querySelector('.scale i'),scaleT=win.querySelector('.scale span');
   function apply(){
-   vb.w=Math.max(W/6,Math.min(W,vb.w));vb.h=vb.w*Hh/W;
-   vb.x=Math.max(-W*.1,Math.min(W*1.1-vb.w,vb.x));vb.y=Math.max(-Hh*.1,Math.min(Hh*1.1-vb.h,vb.y));
+   vb.w=Math.max(W/6,Math.min(W*4,vb.w));vb.h=vb.w*Hh/W;
+   var mx=Math.max(0,(vb.w-W)/2)+W*.1,my=Math.max(0,(vb.h-Hh)/2)+Hh*.1;vb.x=Math.max(-mx,Math.min(W+mx-vb.w,vb.x));vb.y=Math.max(-my,Math.min(Hh+my-vb.h,vb.y));
    svg.setAttribute('viewBox',vb.x+' '+vb.y+' '+vb.w+' '+vb.h);
-   var k=vb.w/(svg.clientWidth||W);svg.style.setProperty('--k',k);svg.classList.toggle('z2',vb.w<W*.62);
+   var k=vb.w/(svg.clientWidth||W);svg.style.setProperty('--k',k);svg.classList.toggle('z2',vb.w<W*.62);svg.classList.toggle('z0',vb.w>W*(+svg.dataset.zt||1.6));
    svg.querySelectorAll('.sc').forEach(function(g){g.setAttribute('transform','translate('+g.dataset.x+' '+g.dataset.y+') scale('+k+')')});
    var px=m500*(svg.clientWidth||W)/vb.w,lab='500 m · 7 min';
-   if(px>150){px/=5;lab='100 m · 1 min'} else if(px<40){px*=2;lab='1 km · 14 min'}
+   if(px>150){px/=5;lab='100 m · 1 min'} else if(px<12){px*=10;lab='5 km'} else if(px<40){px*=2;lab='1 km · 14 min'}
    scaleI.style.width=Math.round(px)+'px';scaleT.textContent=lab;
   }
-  function zoomAt(f,cx,cy){var nw=Math.max(W/6,Math.min(W,vb.w*f));var r=nw/vb.w;vb.x=cx-(cx-vb.x)*r;vb.y=cy-(cy-vb.y)*r;vb.w=nw;apply()}
+  function zoomAt(f,cx,cy){var nw=Math.max(W/6,Math.min(W*4,vb.w*f));var r=nw/vb.w;vb.x=cx-(cx-vb.x)*r;vb.y=cy-(cy-vb.y)*r;vb.w=nw;apply()}
   function toSvg(e){var r=svg.getBoundingClientRect();return {x:vb.x+(e.clientX-r.left)/r.width*vb.w,y:vb.y+(e.clientY-r.top)/r.height*vb.h}}
   win.querySelector('.zin').onclick=function(){zoomAt(.6,vb.x+vb.w/2,vb.y+vb.h/2)};
   win.querySelector('.zout').onclick=function(){zoomAt(1/.6,vb.x+vb.w/2,vb.y+vb.h/2)};
