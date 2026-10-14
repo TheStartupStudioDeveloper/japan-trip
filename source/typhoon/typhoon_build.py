@@ -151,7 +151,7 @@ def fri_common(summ):
          R('10:45', f'{L("nishiki")} brunch', 'Covered all the way. Eat at the stalls.'),
          R('11:45', 'Hotel, shower and pack', 'About 15 minutes south on foot.'),
          R('12:30', f'Taxi to {L("kyoto-st")}', 'Ekiben and coffee inside the Shinkansen gates.'),
-         R('13:13', f'{L("shinkansen", "Nozomi")} to Tokyo', 'Seats with the oversized baggage area, on the Fuji side. See the bullet train backup for earlier and later options.', 'tb'),
+         R('13:13', f'{L("shinkansen", "Nozomi")} to Tokyo', 'Car 10, Green Car, Fuji side, seats with the oversized baggage area. Tap Suica at the Shinkansen gate. See the bullet train backup for earlier and later options.', 'b'),
          R('15:25', f'{L("tokyo-st")}', 'About 15:25. Yaesu side for the taxi rank.')] + fri_tokyo_evening('16:00')),
         [('Swap in', f'{L("sanjusangendo")} (45 minutes, indoors) or the {L("teramachi")} instead of Arashiyama. {L("honganji")} on the way to the station.'),
          ('Rained out', 'Drop Arashiyama, do Nishiki at 10:00 and change to the 11:33 Hikari or the 12:45 Nozomi.'),
@@ -272,7 +272,7 @@ def glance():
     for lab, i in rowsd:
         h += f'<div class="glr"><span class="gld">{lab}</span>' + ''.join(f'<span class="glc">{E(s["glance"][i])}</span>' for s in SCEN) + '</div>'
     h += '<div class="glr glx"><span class="gld">Gion dinner</span>' + ''.join(f'<span class="glc">{E(s["dinner"])}</span>' for s in SCEN) + '</div>'
-    h += '<div class="glr glx"><span class="gld">Train</span>' + ''.join('<span class="glc">Fri 13:13 Nozomi</span>' for s in SCEN) + '</div></div>'
+    h += '<div class="glr glx"><span class="gld">Train</span>' + ''.join('<span class="glc">Fri 13:13 Nozomi, booked</span>' for s in SCEN) + '</div></div>'
     return h
 
 def qa_html():
@@ -282,7 +282,7 @@ def qa_html():
   <article>
    <h3>Do before you fly</h3>
    <ul class="todo">
-    <li>Book the 13:13 Nozomi on Fri 23 in the smartEX app, seats with the oversized baggage area.</li>
+    <li>Add both Suica cards to the 13:13 booking in smartEX, so you can tap through the gate.</li>
     <li>Book the Gion dinner, 18:30: <b>Thursday 22</b> for Scenario 1, <b>Wednesday 21</b> for Scenario 2. Thursday also suits the weather swap if you don't leave early.</li>
     <li>Ask sequence KYOTO GOJO whether it accepts Crosta bag deliveries on Wed 21.</li>
     <li>Keep the Hilton's reply on the fireworks and Seascape dinner terms with this page.</li>
@@ -313,10 +313,10 @@ def qa_html():
   </article>
   <article class="train">
    <h3>Bullet train backup</h3>
-   <p><b>Friday 23: Nozomi 13:13, Kyoto to Tokyo.</b> Into Tokyo about 15:25. Seats with the oversized baggage area, Fuji side, on the smartEX app. The plan for both scenarios.</p>
+   <p><b>Booked: Nozomi 13:13, Kyoto to Tokyo, Fri 23.</b> Car 10, Green Car, Fuji side, seats with the oversized baggage area, on the smartEX app. Into Tokyo about 15:25. The plan for both scenarios. Queue at the car 10 marker 10 minutes early, bags behind the last row.</p>
    <ul class="tl">
     <li><b>Rained out</b><span>Change to the <b>11:33 Hikari</b> (into Tokyo about 14:15) or the <b>12:45 Nozomi</b> (about 15:00).</span></li>
-    <li><b>As planned</b><span><b>13:13 Nozomi</b>.</span></li>
+    <li><b>As planned</b><span><b>13:13 Nozomi</b>, car 10, as booked.</span></li>
     <li><b>Pushed out</b><span>Change to the <b>13:24</b> or <b>13:45</b> Nozomi, both Fuji side. Only a few later trains had baggage seats when checked.</span></li>
     <li><b>Saturday</b><span>Keep Nozomi 16 at 12:01 until Thursday. If JR suspends Saturday trains, the refund may be free in the app.</span></li>
    </ul>
