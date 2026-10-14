@@ -8,6 +8,8 @@ REPO = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/japan-trip'
 sys.path[:0] = [HERE, os.path.join(REPO, 'source'), ROOT]
 import apptools, geo
 from routes import ROUTES
+from cover import LEG_PLACES
+import summary_data as SD
 from urllib.parse import quote as _q
 MASTER_URL = 'https://thestartupstudiodeveloper.github.io/japan-trip/'
 OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png']
@@ -80,6 +82,34 @@ def label_at(pts_xy):
     if ang < -90: ang += 180
     return (x1 + x2) / 2, (y1 + y2) / 2, ang, math.hypot(x2 - x1, y2 - y1)
 
+def draw_base(o, pj, inb, uid, Hh=900):
+    feats = [f for f in geo.F if any(inb(a, b) for a, b in f[2])]
+    lay = {'water': [], 'park': [], 'bldg': [], 'road2c': [], 'road1c': [], 'road2': [], 'road1': [], 'rail': [], 'metro': [], 'cable': [], 'labels': []}
+    for kind, name, ps in feats:
+        xy = [pj(a, b) for a, b in ps]; sp = ' '.join(f'{x:.1f},{y:.1f}' for x, y in xy)
+        if kind in ('water', 'park', 'bldg'):
+            fill = f'url(#wt{uid})' if kind == 'water' else f'url(#ht{uid})' if kind == 'park' else ''
+            lay[kind].append(f'<polygon points="{sp}" class="{kind}"' + (f' style="fill:{fill}"' if fill else '') + '/>')
+            cx, cy = sum(x for x, y in xy) / len(xy), sum(y for x, y in xy) / len(xy)
+            if -W < cx < 2 * W and -Hh < cy < 2 * Hh:
+                lay['labels'].append(f'<text class="al lod{1 if kind != "bldg" else 2}" x="{cx:.0f}" y="{cy:.0f}" text-anchor="middle">{H.escape(name)}</text>')
+        else:
+            k = kind if kind != 'road2' else 'road2'
+            if kind in ('road1', 'road2'): lay[kind + 'c'].append(f'<polyline points="{sp}" class="{kind}c"/>')
+            lay[kind].append(f'<polyline points="{sp}" class="{kind}"/>' + (f'<polyline points="{sp}" class="railt"/>' if kind == 'rail' else ''))
+            x, y, ang, ln = label_at(xy)
+            if ln > 40 and -W < x < 2 * W and -Hh < y < 2 * Hh:
+                lod = 1 if kind in ('road1', 'rail', 'cable') else 2
+                lay['labels'].append(f'<text class="sl {kind}l lod{lod}" x="{x:.0f}" y="{y:.0f}" text-anchor="middle" transform="rotate({ang:.0f} {x:.0f} {y:.0f})">{H.escape(name)}</text>')
+    for k in ('water', 'park', 'bldg', 'road2c', 'road1c', 'road2', 'road1', 'metro', 'rail', 'cable'): o += lay[k]
+    for n, a, b in geo.STATIONS:
+        if inb(a, b, 1.2):
+            x, y = pj(a, b); o.append(f'<g class="stn sc" data-x="{x:.1f}" data-y="{y:.1f}"><rect x="-7" y="-5" width="14" height="10" rx="2"/><text class="stl lod1" x="0" y="18" text-anchor="middle">{H.escape(n)}</text></g>')
+    for n, a, b in geo.LANDMARKS:
+        if inb(a, b, 1.2):
+            x, y = pj(a, b); o.append(f'<g class="lmk sc" data-x="{x:.1f}" data-y="{y:.1f}"><rect x="-3.5" y="-3.5" width="7" height="7"/><text class="ll lod2" x="8" y="4">{H.escape(n)}</text></g>')
+    o += lay['labels']
+
 def span(pts, kx):
     la0, la1 = min(p[0] for p in pts), max(p[0] for p in pts)
     lo0, lo1 = min(p[1] for p in pts), max(p[1] for p in pts)
@@ -116,32 +146,7 @@ def panel_svg(day, idx, pn, title=None, pkind='area', areas=None):
          f'<defs><pattern id="ht{day["d"]}{idx}" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hatch"/></pattern>'
          f'<pattern id="wt{day["d"]}{idx}" width="10" height="5" patternUnits="userSpaceOnUse"><path d="M0 3 Q2.5 1 5 3 T10 3" class="wave"/></pattern></defs>',
          f'<rect x="-2000" y="-2000" width="{W + 4000}" height="{Hh + 4000}" class="ground"/>']
-    feats = [f for f in geo.F if any(inb(a, b) for a, b in f[2])]
-    lay = {'water': [], 'park': [], 'bldg': [], 'road2c': [], 'road1c': [], 'road2': [], 'road1': [], 'rail': [], 'metro': [], 'cable': [], 'labels': []}
-    for kind, name, ps in feats:
-        xy = [pj(a, b) for a, b in ps]; sp = ' '.join(f'{x:.1f},{y:.1f}' for x, y in xy)
-        if kind in ('water', 'park', 'bldg'):
-            fill = f'url(#wt{day["d"]}{idx})' if kind == 'water' else f'url(#ht{day["d"]}{idx})' if kind == 'park' else ''
-            lay[kind].append(f'<polygon points="{sp}" class="{kind}"' + (f' style="fill:{fill}"' if fill else '') + '/>')
-            cx, cy = sum(x for x, y in xy) / len(xy), sum(y for x, y in xy) / len(xy)
-            if -W < cx < 2 * W and -Hh < cy < 2 * Hh:
-                lay['labels'].append(f'<text class="al lod{1 if kind != "bldg" else 2}" x="{cx:.0f}" y="{cy:.0f}" text-anchor="middle">{H.escape(name)}</text>')
-        else:
-            k = kind if kind != 'road2' else 'road2'
-            if kind in ('road1', 'road2'): lay[kind + 'c'].append(f'<polyline points="{sp}" class="{kind}c"/>')
-            lay[kind].append(f'<polyline points="{sp}" class="{kind}"/>' + (f'<polyline points="{sp}" class="railt"/>' if kind == 'rail' else ''))
-            x, y, ang, ln = label_at(xy)
-            if ln > 40 and -W < x < 2 * W and -Hh < y < 2 * Hh:
-                lod = 1 if kind in ('road1', 'rail', 'cable') else 2
-                lay['labels'].append(f'<text class="sl {kind}l lod{lod}" x="{x:.0f}" y="{y:.0f}" text-anchor="middle" transform="rotate({ang:.0f} {x:.0f} {y:.0f})">{H.escape(name)}</text>')
-    for k in ('water', 'park', 'bldg', 'road2c', 'road1c', 'road2', 'road1', 'metro', 'rail', 'cable'): o += lay[k]
-    for n, a, b in geo.STATIONS:
-        if inb(a, b, 1.2):
-            x, y = pj(a, b); o.append(f'<g class="stn sc" data-x="{x:.1f}" data-y="{y:.1f}"><rect x="-7" y="-5" width="14" height="10" rx="2"/><text class="stl lod1" x="0" y="18" text-anchor="middle">{H.escape(n)}</text></g>')
-    for n, a, b in geo.LANDMARKS:
-        if inb(a, b, 1.2):
-            x, y = pj(a, b); o.append(f'<g class="lmk sc" data-x="{x:.1f}" data-y="{y:.1f}"><rect x="-3.5" y="-3.5" width="7" height="7"/><text class="ll lod2" x="8" y="4">{H.escape(n)}</text></g>')
-    o += lay['labels']
+    draw_base(o, pj, inb, f'{day["d"]}{idx}')
     # route legs: consecutive non-optional stops in this panel
     seq = [i for i in pn if not day['rows'][i]['opt']]
     legs = []
@@ -189,10 +194,71 @@ def gm_links(day, idxs, label, area=None):
         out.append(f'<a href="{url}" target="_blank" rel="noopener">{nm} in Google Maps{", " + rng if len(parts) > 1 else ""}</a>')
     return '<p class="glinks">' + ''.join(out) + '</p>'
 
+def pl(_, label, k):
+    return f'<a class="pl" href="#" role="button" data-p="{k}">{H.escape(label)}</a>'
+
 def gmaps_dir(a, b, mode):
     return f'https://www.google.com/maps/dir/?api=1&origin={a[0]},{a[1]}&destination={b[0]},{b[1]}&travelmode={mode}'
 
-sections, chips = [], []
+def cover_svg(leg, places):
+    pts = [GEO[k] for _, k, _ in places]
+    kx = math.cos(math.radians(sum(p[0] for p in pts) / len(pts)))
+    la0, la1, lo0, lo1, sx, sy = span(pts, kx)
+    sx *= 1.12; sy *= 1.12
+    Hh = 900
+    if sx / sy > W / Hh: sy = sx * Hh / W
+    else: sx = sy * W / Hh
+    cla, clo = (la0 + la1) / 2, (lo0 + lo1) / 2
+    LA0, LA1 = cla - sy / 2, cla + sy / 2
+    LO0, LO1 = clo - sx / kx / 2, clo + sx / kx / 2
+    def pj(a, b): return ((b - LO0) / (LO1 - LO0) * W, (LA1 - a) / (LA1 - LA0) * Hh)
+    def inb(a, b, m=1.2):
+        dy, dx = (LA1 - LA0) * m, (LO1 - LO0) * m
+        return LA0 - dy <= a <= LA1 + dy and LO0 - dx <= b <= LO1 + dx
+    mpu = sx * 111320 / W
+    uid = 'c' + leg[-1]
+    o = [f'<svg class="map" viewBox="0 0 {W} {Hh}" data-init="0 0 {W} {Hh}" data-mpu="{mpu:.3f}" data-w="{W}" data-h="{Hh}" role="img" aria-label="Map of {leg}">',
+         f'<defs><pattern id="ht{uid}" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hatch"/></pattern>'
+         f'<pattern id="wt{uid}" width="10" height="5" patternUnits="userSpaceOnUse"><path d="M0 3 Q2.5 1 5 3 T10 3" class="wave"/></pattern></defs>',
+         f'<rect x="-2000" y="-2000" width="{W + 4000}" height="{Hh + 4000}" class="ground"/>']
+    draw_base(o, pj, inb, uid)
+    for n, a, b in geo.CITIES:
+        if inb(a, b, 0.0):
+            x, y = pj(a, b); o.append(f'<text class="city" x="{x:.0f}" y="{y:.0f}" text-anchor="middle">{H.escape(n)}</text>')
+    K = W / 350  # units per screen px at the start view on a phone
+    placed = []
+    for i, (lab, k, d) in enumerate(places):
+        x, y = pj(*GEO[k]); x0, y0 = x, y; t = 0
+        while any(math.hypot(x - px, y - py) < 24 * K for px, py in placed) and t < 40:
+            t += 1; x = x0 + math.cos(t * 2.4) * 9 * K * math.sqrt(t); y = y0 + math.sin(t * 2.4) * 9 * K * math.sqrt(t)
+        placed.append((x, y))
+        if (x, y) != (x0, y0): o.append(f'<line class="tie" x1="{x0:.1f}" y1="{y0:.1f}" x2="{x:.1f}" y2="{y:.1f}"/>')
+        o.append(f'<g class="cpin sc" data-x="{x:.1f}" data-y="{y:.1f}" data-day="{d}" tabindex="0" role="button" aria-label="{i + 1}: {H.escape(lab)}, open day {d}">'
+                 f'<circle r="12"{" class=hot" if i == 0 else ""}/><text y="4.5" text-anchor="middle">{i + 1}</text></g>')
+    o.append('</svg>')
+    return (f'<div class="mp"><div class="mwin">{"".join(o)}<div class="zoom"><button type="button" class="zin" aria-label="Zoom in">+</button><button type="button" class="zout" aria-label="Zoom out">−</button><button type="button" class="zfit" aria-label="Back to the start view">⤢</button></div>'
+            f'<div class="north" aria-hidden="true">▲<br>N</div><div class="scale" aria-hidden="true"><i></i><span></span></div></div></div>')
+
+dayinfo = {d['d']: d for d in days}
+legs_html = []
+for L in SD.LEGS:
+    pl_ = LEG_PLACES[L['leg']]
+    dlist = ''.join(f'<li><button type="button" class="goday" data-day="{int(dk[1:])}"><b>{H.escape(lab)}</b><span>{dayinfo[int(dk[1:])]["title"]}</span></button></li>' for dk, lab, _ in L['days'] if int(dk[1:]) in dayinfo)
+    legs_html.append(f'''<section class="cleg">
+ <div class="band"><i class="pat pat-{L["pat"]}"></i></div>
+ <div class="clh"><p class="kanji">{L["kanji"]}</p><div><p class="lk">{L["leg"]} · {H.escape(L["dates"])} · {H.escape(L["nights"])}</p><h2>{H.escape(L["name"])}</h2><p class="lh">Staying at {pl("x", P[L["hotel"]]["n"], L["hotel"])}</p></div></div>
+ {cover_svg(L["leg"], pl_)}
+ <ol class="clist">{"".join(f'<li><button type="button" class="goday" data-day="{d}"><i>{n + 1}</i><span>{H.escape(lab)} <small>{dayinfo[d]["dow"][:3]} {d}</small></span></button></li>' for n, (lab, k, d) in enumerate(pl_))}</ol>
+ <p class="ctip">Tap a number or a name to open that day. Pinch or + to zoom.</p>
+ <ol class="cdays">{dlist}</ol>
+</section>''')
+cover = f'''<section class="mday mcover" id="cover" data-d="0" hidden>
+ <header class="chero"><p class="lk">Japan &amp; Hong Kong · 16 to 31 October 2026</p><h1>Maps</h1>
+ <p class="cintro">A map for each of the four stays, then one map for every day. Pick a day above, or tap a place on a leg map. Each day lists the full plan with place cards, directions from stop to stop, and Google Maps links.</p></header>
+ {"".join(legs_html)}
+</section>'''
+
+sections, chips = [cover], ['<button type="button" class="dchip dcover" data-d="0"><b>Cover</b><span>4 legs</span></button>']
 for day in days:
     AIR = ('narita', 'haneda', 'hkia', 'mel', 'hkg-transfer', 'plaza-premium')
     near = [i for i, r in enumerate(day['rows']) if r['key'] and r['key'] not in AIR]
@@ -295,6 +361,27 @@ body{overflow-x:hidden}
 .z0 .sl,.z0 .stl,.z0 .ll{display:none}.z0 .al{opacity:.8}
 .mhead{flex-wrap:wrap;gap:.4rem}.abs{display:flex;flex-wrap:wrap;gap:.3rem}.ab{appearance:none;border:1.2px solid var(--ink);background:var(--paper);color:var(--ink);font:600 .74rem/1 "Instrument","Helvetica Neue",Arial,sans-serif;padding:.35rem .5rem;cursor:pointer}.ab[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .glinks{display:flex;flex-wrap:wrap;gap:.35rem;margin:.45rem 0 0}.glinks a{font-size:.78rem;font-weight:600;color:var(--paper);background:var(--ink);text-decoration:none;padding:.4rem .6rem}
+.chero{padding:.6rem 0 1rem;border-bottom:3px solid var(--ink)}.chero h1{font:800 3.4rem/.9 "Bricolage","Helvetica Neue",Arial,sans-serif;letter-spacing:-.03em;margin:.2rem 0 .5rem}
+.lk{font:600 .72rem/1.3 "Instrument","Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:0}
+.cintro{max-width:60ch;margin:0;color:var(--ink)}
+.cleg{margin-top:1.8rem}.clh{display:flex;gap:.9rem;align-items:flex-start;margin:.6rem 0 .8rem}.clh .kanji{font-size:2rem;line-height:1;margin:0}
+.clh h2{font:800 1.45rem/1.1 "Bricolage","Helvetica Neue",Arial,sans-serif;margin:.15rem 0 .2rem;text-wrap:balance}.lh{margin:0;font-size:.88rem}
+.cpin{cursor:pointer}.cpin circle{fill:var(--ink);stroke:var(--paper);stroke-width:3}.cpin circle.hot{fill:var(--paper);stroke:var(--ink);stroke-width:4}
+.city{font-size:calc(15px*var(--k,1));font-weight:800;fill:var(--ink);letter-spacing:.08em;text-transform:uppercase;stroke-width:calc(5px*var(--k,1))}
+.tie{stroke:var(--ink);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.cpin text{font:700 12px "Instrument","Helvetica Neue",Arial,sans-serif;fill:var(--paper);stroke:none}.cpin circle.hot+text{fill:var(--ink)}
+.z0 .al{display:none}.z0 .water+text{display:inline}
+.clist{list-style:none;padding:0;margin:.5rem 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.3rem .8rem}
+.clist button{appearance:none;background:none;border:0;padding:.2rem 0;color:var(--ink);font:inherit;font-size:.86rem;text-align:left;display:flex;gap:.45rem;align-items:baseline;cursor:pointer}
+.clist i{font-style:normal;display:inline-grid;place-items:center;min-width:1.35rem;height:1.35rem;border-radius:50%;background:var(--ink);color:var(--paper);font-weight:700;font-size:.72rem}
+.clist li:first-child i{background:var(--paper);color:var(--ink);border:2px solid var(--ink)}
+.clist small{color:var(--mute)}
+.cl{font:700 14px "Instrument","Helvetica Neue",Arial,sans-serif;fill:var(--ink);stroke:var(--paper);stroke-width:4.5px;paint-order:stroke}
+.ctip{font-size:.78rem;color:var(--mute);margin:.4rem 0 .2rem}
+.cdays{list-style:none;padding:0;margin:.6rem 0 0;border-top:1.5px solid var(--ink)}
+.cdays .goday{appearance:none;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line,#ccc);color:var(--ink);font:inherit;padding:.6rem 0;display:grid;grid-template-columns:4.2rem minmax(0,1fr);gap:.6rem;cursor:pointer}
+.cdays .goday b{font-weight:700}.goday:hover span{text-decoration:underline}
+.dcover{min-width:3.6rem}
 .gnote{font-size:.76rem;color:var(--mute);margin:.3rem 0 0}
 .nomap{font-size:.86rem;color:var(--mute);border-left:3px solid var(--ink);padding-left:.7rem;margin:.6rem 0 1rem}
 .mfoot{font-size:.78rem;color:var(--mute);border-top:1px solid var(--line,#ccc);padding-top:.8rem;margin-top:2rem}
@@ -333,7 +420,7 @@ js = r'''
    else if(last){var dx=e.clientX-last.x,dy=e.clientY-last.y;moved+=Math.abs(dx)+Math.abs(dy);if(moved>4)svg.classList.add('drag');vb.x-=dx/r.width*vb.w;vb.y-=dy/r.height*vb.h;last={x:e.clientX,y:e.clientY};apply()}});
   function up(e){delete pts[e.pointerId];if(Object.keys(pts).length<2)pinch=null;if(!Object.keys(pts).length){last=null;svg.classList.remove('drag')}}
   svg.addEventListener('pointerup',up);svg.addEventListener('pointercancel',up);
-  svg.addEventListener('click',function(e){if(moved>6){e.stopPropagation();return}var g=e.target.closest('.pin');if(g)select(+g.dataset.n,true)},true);
+  svg.addEventListener('click',function(e){e.stopPropagation();if(moved>6)return;var t=document.elementFromPoint(e.clientX,e.clientY),g=t&&t.closest&&t.closest('.pin,.cpin');if(!g)return;if(g.classList.contains('cpin'))window.__jtShow(+g.dataset.day);else select(+g.dataset.n,true)},true);
   svg.addEventListener('keydown',function(e){var g=e.target.closest('.pin');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();select(+g.dataset.n,true)}});
   win.focusOn=function(x,y){if(vb.w*MPU>2500){vb.w=1500/MPU}vb.x=x-vb.w/2;vb.y=y-vb.w*Hh/W/2;apply()};
   win.redraw=apply;apply();
@@ -355,13 +442,16 @@ js = r'''
  function show(d){
   days.forEach(function(s){s.hidden=+s.dataset.d!==d;if(!s.hidden)curDay=s});
   chips.forEach(function(c){c.setAttribute('aria-current',+c.dataset.d===d?'true':'false');if(+c.dataset.d===d)c.scrollIntoView({inline:'center',block:'nearest'})});
-  try{history.replaceState(null,'','#d'+d)}catch(e){}
+  try{history.replaceState(null,'',d?'#d'+d:'#cover')}catch(e){}
   if(curDay)curDay.querySelectorAll('.mwin').forEach(function(w){w.redraw&&w.redraw()});
   window.scrollTo(0,0);
  }
+ window.__jtShow=show;
  chips.forEach(function(c){c.onclick=function(){show(+c.dataset.d)}});
- var n=new Date(),iso=n.getFullYear()*10000+(n.getMonth()+1)*100+n.getDate(),start=17;
- if(iso>=20261016&&iso<=20261031){var dd=iso-20261000;start=Math.min(30,dd);var c=document.querySelector('.dchip[data-d="'+dd+'"]');if(c)c.classList.add('today')}
+ document.addEventListener('click',function(e){var g=e.target.closest('.goday');if(g){show(+g.dataset.day)}});
+ document.addEventListener('keydown',function(e){var g=e.target.closest&&e.target.closest('.cpin');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();show(+g.dataset.day)}});
+ var n=new Date(),iso=n.getFullYear()*10000+(n.getMonth()+1)*100+n.getDate(),start=0;
+ if(iso>=20261016&&iso<=20261031){var dd=iso-20261000;var c=document.querySelector('.dchip[data-d="'+dd+'"]');if(c)c.classList.add('today')}
  var h=/^#d(\d+)$/.exec(location.hash);if(h&&document.getElementById('d'+h[1]))start=+h[1];
  show(start);
  window.addEventListener('hashchange',function(){var h=/^#d(\d+)$/.exec(location.hash);if(h&&document.getElementById('d'+h[1]))show(+h[1])});
@@ -376,7 +466,7 @@ body = f'''<div class="mtop"><div class="in"><div class="ttl"><b>Map Itinerary</
 <div class="dchips" role="tablist" aria-label="Choose a day">{"".join(chips)}</div></div></div>
 <main class="mwrap">
 {"".join(sections)}
-<p class="mfoot">J&amp;HK Map View, companion to the Japan &amp; Hong Kong Master Itinerary V2, built from its day plans. Maps are drawn by hand from approximate coordinates to get your bearings: streets and landmarks are close, not exact. Pinch or use + and − to zoom; smaller streets and landmark names appear as you zoom in. Tap a number to find it, tap a place name for its card. Walk and Pin in Maps need a connection; the maps, plans and cards work offline once saved.</p>
+<p class="mfoot">J&amp;HK Maps, companion to the Japan &amp; Hong Kong Master Itinerary V2, built from its day plans. Maps are drawn by hand from approximate coordinates to get your bearings: streets and landmarks are close, not exact. Pinch or use + and − to zoom; smaller streets and landmark names appear as you zoom in. Tap a number to find it, tap a place name for its card. Walk and Pin in Maps need a connection; the maps, plans and cards work offline once saved.</p>
 </main>
 {sheet}'''
 
@@ -392,12 +482,12 @@ open(os.path.join(HERE, 'out', 'jhk-map.html'), 'w', encoding='utf-8').write(pag
 DST = os.path.join(REPO, 'map'); os.makedirs(DST, exist_ok=True)
 head = ('<meta name="robots" content="noindex, nofollow">\n<meta name="theme-color" content="#000000">\n'
         '<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="mobile-web-app-capable" content="yes">\n'
-        '<meta name="apple-mobile-web-app-title" content="J&amp;HK Map View">\n<link rel="manifest" href="manifest.webmanifest">\n'
+        '<meta name="apple-mobile-web-app-title" content="J&amp;HK Maps">\n<link rel="manifest" href="manifest.webmanifest">\n'
         '<link rel="apple-touch-icon" href="icon-180.png">\n<link rel="icon" type="image/png" href="icon-192.png">\n')
 sw = "<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>\n"
 html = page(head, sw); ver = hashlib.md5(html.encode()).hexdigest()[:10]
 open(os.path.join(DST, 'index.html'), 'w', encoding='utf-8').write(html)
-json.dump({"name": "J&HK Map View", "short_name": "J&HK Map View", "start_url": "./", "scope": "./", "display": "standalone",
+json.dump({"name": "J&HK Maps", "short_name": "J&HK Maps", "start_url": "./", "scope": "./", "display": "standalone",
            "background_color": "#ffffff", "theme_color": "#000000",
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)
@@ -420,7 +510,7 @@ html,body{{margin:0}}.i{{width:512px;height:512px;background:#fff;position:relat
 <circle cx="110" cy="230" r="16" fill="#fff"/>
 <path d="M400 120 C380 92 372 80 372 66 a28 28 0 0 1 56 0 c0 14 -8 26 -28 54z" fill="#fff" stroke="#000" stroke-width="6"/><circle cx="400" cy="66" r="10" fill="#000"/>
 </svg>
-<div class="t">Map</div><div class="s">Japan &amp; Hong Kong</div>
+<div class="t">Maps</div><div class="s">Japan &amp; Hong Kong</div>
 <div class="band"><i class="ps"></i><i class="pat-k"></i><i class="pg"></i><i class="pat-h"></i></div></div></body></html>'''
 open('/tmp/micon.html', 'w', encoding='utf-8').write(ic)
 from playwright.async_api import async_playwright

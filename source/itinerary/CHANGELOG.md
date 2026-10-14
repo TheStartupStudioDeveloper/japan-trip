@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+J&HK Maps: cover page and new name, 15 October
+- The map app is now called J&HK Maps on the home screen (icon reads Maps) and opens on a cover page instead of Sat 17.
+- Cover: a map for each of the four legs with the main places numbered (tap a number or name to open that day), city and area names, the hotel, and the list of days in each leg.
+- Fixed taps on map pins, which were being swallowed by the drag handling.
+
 Map View: named-place Google Maps routes, Sat 17, 15 October
 - Sat 17 now has two Google Maps links under the map, using place names so each stop opens as the real place: Narita Airport Terminal 2 to Shibuya Station by train, and the Shibuya walking day with all 10 stops in order. Other days keep the coordinate links until their named routes are made. Routes live in source/mapview/routes.py.
 

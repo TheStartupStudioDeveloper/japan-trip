@@ -224,3 +224,6 @@ REGIONS = [  # name for a panel, by nearest centre
  ('Lantau',22.2700,113.9200),('Narita Airport',35.7720,140.3929),('Haneda Airport',35.5449,139.7686),('Hong Kong Airport',22.3080,113.9185),
  ('Melbourne Airport',-37.6690,144.8410),('Shinagawa',35.6285,139.7387),('Ebisu',35.6467,139.7101),('Rainbow Bridge',35.6365,139.7633),
 ]
+CITIES = [('Shibuya',35.6560,139.6990),('Shinjuku',35.6990,139.6960),('Ginza',35.6700,139.7720),('Odaiba',35.6190,139.7760),('Asakusa',35.7180,139.7930),
+ ('Tokyo Bay',35.6100,139.8050),('Yokohama',35.4620,139.6200),('Kyoto',34.9780,135.7500),('Arashiyama',35.0260,135.6700),('Fushimi',34.9560,135.7760),
+ ('Nara',34.6950,135.8300),('Osaka',34.6780,135.4800),('Kowloon',22.3150,114.1800),('Hong Kong Island',22.2700,114.1750),('Lantau',22.2450,113.9300),('Victoria Harbour',22.2905,114.1800)]

@@ -1,6 +1,6 @@
 {
- "name": "J&HK Map View",
- "short_name": "J&HK Map View",
+ "name": "J&HK Maps",
+ "short_name": "J&HK Maps",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
