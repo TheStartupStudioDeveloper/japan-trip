@@ -239,3 +239,12 @@ del _bk[_k]
 _og = CHECK[[g[0] for g in CHECK].index('On the ground')][1]
 _k = next(i for i, it in enumerate(_og) if it[1].startswith('Sat 17 at Narita'))
 _og.insert(_k + 1, ('s', 'Sat 17: ask Sequence for early check-in at the desk. Free; they hold the bags'))
+
+# Landing permission QR: the process (How-to 4, Sat 17 landing row)
+_h = _how('Tax-free shopping')
+_k = next(i for i, x in enumerate(_h) if x.startswith('Tax-free QR'))
+_h[_k:_k + 1] = [
+ 'Tax-free QR, at home: in Visit Japan Web, personal details, turn on "Use tax-free QR code" and scan both passports with the phone camera.',
+ 'Tax-free QR, at Narita: immigration sticks a landing permission sticker with a QR in each passport. Check you both get one. Then in Visit Japan Web open the tax-free section, scan each sticker, and the QR is ready. Show it live at the till; carry passports anyway.',
+]
+D[17]['rows'][_row(17, '06:50')] = R('06:50', 'Land at Narita', 'CX524, Terminal 2. Visit Japan Web ready. Check you each get the landing sticker, then scan it into Visit Japan Web (How-to 4).', B)

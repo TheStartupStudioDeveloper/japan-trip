@@ -4,6 +4,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Landing permission QR, 14 October
+- How-to 4: the tax-free QR is now two steps, at home (turn it on, scan both passports) and at Narita (check each passport gets the landing permission sticker, scan it into Visit Japan Web, show the QR live).
+- Sat 17 06:50 landing row: check you each get the landing sticker, then scan it in (How-to 4).
+
 Sequence Miyashita Park reply, 14 October
 - The hotel has noted a high floor request (not guaranteed). Early check-in is asked at the desk on the day, free if a room is ready, and they hold the bags until then.
 - Sat 17 10:00 row and the hotel card updated. Checklist: the before-you-fly early check-in line is done and comes off; a new On the ground line for Sat 17 asks at the desk on arrival.
