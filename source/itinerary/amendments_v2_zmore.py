@@ -248,3 +248,23 @@ _h[_k:_k + 1] = [
  'Tax-free QR, at Narita: immigration sticks a landing permission sticker with a QR in each passport. Check you both get one. Then in Visit Japan Web open the tax-free section, scan each sticker, and the QR is ready. Show it live at the till; carry passports anyway.',
 ]
 D[17]['rows'][_row(17, '06:50')] = R('06:50', 'Land at Narita', 'CX524, Terminal 2. Visit Japan Web ready. Check you each get the landing sticker, then scan it into Visit Japan Web (How-to 4).', B)
+
+# How-to 2: exact switch-on steps on landing in Hong Kong, Fri 16
+_h = _how('eSIM and wifi')
+_a = next(i for i, x in enumerate(_h) if x.startswith('Install both eSIMs'))
+_b = next(i for i, x in enumerate(_h) if x.startswith('Data Roaming on for Ubigi'))
+_h[_a:_b + 1] = [
+ 'Install both eSIMs at home on wifi, then leave the Ubigi line switched off. Best Asia stays waiting to start, so nothing is used.',
+ 'On landing in Hong Kong, Fri 16 at 21:45: Settings, Mobile, Ubigi line, turn it on. Ubigi Data Roaming on. Mobile Data set to Ubigi.',
+ 'Australian SIM: Data Roaming off, but keep the line on for SMS and two-factor codes. The Ubigi app should then show the plan as active.',
+ 'The 15 days run to the evening of Sat 31, which covers the flight home.',
+]
+_h = _how('eSIM and wifi')
+_a = next(i for i, x in enumerate(_h) if x.startswith('It covers Japan'))
+_b = next(i for i, x in enumerate(_h) if x.startswith('30GB'))
+_c = next(i for i, x in enumerate(_h) if x.startswith('If you need more'))
+_h[_a] = 'Covers Japan (KDDI, Docomo) and Hong Kong (Smartone) with no change. 30GB at full speed, then 2 Mbps; track it in the Ubigi app, top up there if needed.'
+del _h[max(_b, _c)]; del _h[min(_b, _c)]
+_k = next(i for i, x in enumerate(_h) if x.startswith('The 15 days run'))
+_h[0] = _h[0] + ' The 15 days run to the evening of Sat 31, covering the flight home.'
+del _h[_k]

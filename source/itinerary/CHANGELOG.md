@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+eSIM switch-on steps, 14 October
+- How-to 2: install at home and leave the Ubigi line off. On landing in Hong Kong, Fri 16: turn the Ubigi line on, Ubigi Data Roaming on, Mobile Data to Ubigi; Australian SIM Data Roaming off but the line kept on for SMS codes; the Ubigi app should show the plan active. Coverage, data and top-up lines merged to keep 26 pages.
+
 Landing permission QR, 14 October
 - How-to 4: the tax-free QR is now two steps, at home (turn it on, scan both passports) and at Narita (check each passport gets the landing permission sticker, scan it into Visit Japan Web, show the QR live).
 - Sat 17 06:50 landing row: check you each get the landing sticker, then scan it in (How-to 4).
