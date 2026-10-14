@@ -139,56 +139,34 @@ def fri_tokyo_evening(arrive):
 def clean(rs):
     return [r for r in rs if r[1]]
 
-# ---------- scenario 1 ----------
-S1 = dict(id='s1', no='Scenario 1', name='Kyoto first, Osaka at night',
-    pick='Recommended',
-    idea=f'Nara on Wednesday with Osaka\'s night-time highlights straight after, Kyoto proper on dry Thursday, {L("fushimi")} in the rain on Friday morning, and Tokyo by mid afternoon.',
-    best='The most Kyoto for the least risk. Friday leaves at about the same time Saturday\'s train would have.',
-    cost='Osaka by day: the castle, Umeda Sky, Kuromon and the Horie shopping. Nigatsu-dō in Nara. A very long Wednesday.',
-    leave='Fri, 12:45 Nozomi',
-    glance=['Nara, then Osaka at night', 'Arashiyama, Nishiki, Higashiyama, Gion', 'Inari in the rain, 12:45 Nozomi', 'Typhoon day, under cover'],
-    days=[
-        day(21, 'Wednesday', 'Nara, then Osaka', ['k'], 'Nara, then Osaka at night',
-            'The first day of the leg does double duty. Nara runs as planned until mid afternoon, then a direct train drops you in Namba for the lion head, Shinsekai at dusk and Dōtonbori after dark.',
-            [NOZOMI13, KYOTO10, BAGS,
-             R('10:45', 'Train to Nara', 'Kintetsu from Kyoto Station, about 45 minutes, and it arrives closest to the park.'),
-             R('11:30', f'Lunch on Sanjō-dōri', f'{L("kakinoha")} is fast, then {L("nakatanido")} for the mochi pounding.'),
-             R('12:15', f'{L("narapark")} and the deer, {L("kasuga")}', f'{L("deer-crackers", "Deer crackers")} about ¥200. Up the lantern path to the shrine front.'),
-             R('13:45', f'{L("todaiji")}', 'Wet afternoon? Do this first, it is under cover.'),
-             R('14:45', f'Walk down to {L("kintetsu-nara")}', 'About 20 minutes downhill. Nigatsu-dō is the cut.'),
-             R('15:20', f'Kintetsu direct to {L("namba")}', 'About 40 minutes, no change.'),
-             R('16:10', f'{L("namba-yasaka")}', 'The giant lion head. Closes about 17:00.'),
-             R('16:45', f'{L("janjan")} into {L("shinsekai")}', f'Taxi, about 10 minutes. Sunset 17:05. {L("kushikatsu")} under Tsūtenkaku, kept to a snack.'),
-             R('18:30', f'{L("dotonbori")}', f'Buy {L("tombori")} tickets, then takoyaki standing up. The {L("glico")} photo platform is at Nanohana, opposite the sign.'),
-             R('20:15', f'{L("hozenji")}', 'Lanterns, the mossy Fudō and a quiet drink.'),
-             R('21:00', 'Home', f'Midōsuji line to Umeda, {L("jr-rapid")} to Kyoto, one {L("subway-k", "subway")} stop to Gojō. At the hotel about 22:15, with the bags waiting.')],
-            [('Lighter version', 'Nara as written in the master, Nigatsu-dō included, back by 17:25 and Pontochō for dinner. Osaka drops out completely.'),
-             ('Weather', 'JMA has 50% for Nara in the afternoon, about 4 mm on one model. Tōdai-ji first if it is wet.'),
-             ('Left out of Osaka', 'The castle, Umeda Sky, Kuromon and the Horie run. Ginza on Sunday is already the fallback for resale shopping.')]),
-        day(22, 'Thursday', 'Kyoto', ['k'], 'Kyoto proper, the dry day',
-            'The master\'s Friday, moved up a day onto the one dry day of the leg. tenki.jp has 20% all day with no measurable rain.',
-            KYOTO_PROPER,
-            [('Bookings', 'The Gion dinner moves to Thursday 18:30. Book it for Thursday now, as all three scenarios use it.')]),
-        day(23, 'Friday', 'Kyoto to Tokyo', ['k', 'g'], 'Inari in the rain, the 12:45 to Tokyo',
-            'The master\'s Saturday morning, a day early, plus a slow late morning. Rain from early morning in Kyoto, about 17 mm on tenki.jp and up to 84 mm on one model. The room is yours all day, so there is no checkout rush.',
-            clean([R('07:00', f'To {L("kyoto-st")}, {L("inari-st")}', 'Two stops, about 5 minutes. A taxi from the hotel is 10 minutes if it is pouring.'),
-             R('07:15', f'{L("fushimi")}', f'The gate tunnels give some shelter and the rain keeps people away. In light rain go up to {L("yotsutsuji")}. If it is heavy, do the first gates and back, about 45 minutes. Steps are slippery.'),
-             R('09:00', 'Back to the hotel', 'Breakfast, shower, pack slowly.'),
-             R('10:15', f'Optional: {L("sanjusangendo")}', 'Taxi, about 10 minutes each way. 1,001 golden statues in one long hall, all indoors. About 45 minutes inside.'),
-             R('11:45', f'Taxi to {L("kyoto-st")} with the bags', 'Not a day to walk Karasuma-dōri with suitcases. Ekiben and coffee inside the Shinkansen gates.'),
-             R('12:45', f'{L("shinkansen", "Nozomi")} to Tokyo', 'The held train, seats with the oversized baggage area. See the bullet train backup below for earlier and later options.', 'hold'),
-             R('15:00', f'{L("tokyo-st")}', 'About 15:00. Yaesu side for the taxi rank.')] + fri_tokyo_evening('15:30')),
-            [('Go earlier if', 'Thursday night\'s forecast brings the typhoon into Friday, or JR Central announces planned suspensions. Skip Inari or Sanjūsangen-dō and change to the 11:33 Hikari.')]),
-        sat()])
+# ---------- shared Friday: Arashiyama in the rain, Nishiki, the 13:13 ----------
+def fri_common(summ):
+    return day(23, 'Friday', 'Kyoto to Tokyo', ['k', 'g'], 'Arashiyama in the rain, Nishiki, the 13:13',
+        summ,
+        clean([R('07:15', 'Leave the hotel', f'Taxi or one {L("subway-k", "subway")} stop to {L("kyoto-st")}, then the JR Sagano line to Saga-Arashiyama.'),
+         R('07:45', f'{L("bamboo", "Bamboo grove")}', 'Ten to fifteen minutes end to end. Umbrellas up, very few people in the rain.'),
+         R('08:30', f'{L("tenryuji")} as it opens', 'The garden in the rain is the reward.'),
+         R('09:15', f'{L("okochi")}, or coffee by {L("togetsukyo")}', 'Pick one. The villa includes matcha.'),
+         R('10:00', 'Hankyu to Karasuma', 'Changing at Katsura, about 40 minutes. It comes out beside the market.'),
+         R('10:45', f'{L("nishiki")} brunch', 'Covered all the way. Eat at the stalls.'),
+         R('11:45', 'Hotel, shower and pack', 'About 15 minutes south on foot.'),
+         R('12:30', f'Taxi to {L("kyoto-st")}', 'Ekiben and coffee inside the Shinkansen gates.'),
+         R('13:13', f'{L("shinkansen", "Nozomi")} to Tokyo', 'Seats with the oversized baggage area, on the Fuji side. See the bullet train backup for earlier and later options.', 'tb'),
+         R('15:25', f'{L("tokyo-st")}', 'About 15:25. Yaesu side for the taxi rank.')] + fri_tokyo_evening('16:00')),
+        [('Swap in', f'{L("sanjusangendo")} (45 minutes, indoors) or the {L("teramachi")} instead of Arashiyama. {L("honganji")} on the way to the station.'),
+         ('Rained out', 'Drop Arashiyama, do Nishiki at 10:00 and change to the 11:33 Hikari or the 12:45 Nozomi.'),
+         ('Clearer than forecast', 'Change to the 13:45 Nozomi and take lunch slowly.')])
 
-# ---------- scenario 2 ----------
-S2 = dict(id='s2', no='Scenario 2', name='Straight to Osaka',
+OSAKA_NIGHT_NOTE = ('Osaka block', 'Namba Yasaka before 17:00, Shinsekai at dusk (sunset 17:05), Dōtonbori after dark. These three hold together as one evening and work in light rain under the arcades.')
+
+# ---------- scenario 1 ----------
+S1 = dict(id='s1', no='Scenario 1', name='Straight to Osaka',
     pick='Inari on the dry day',
-    idea=f'Off the Shinkansen and straight on to Osaka for a full city day, Umeda Sky at night included. Dry Thursday takes {L("fushimi")} at sunrise, then Nara, then Higashiyama and Gion. {L("arashiyama")} moves to Friday morning, the part of Kyoto that copes best with rain.',
-    best='Osaka almost complete. Inari, the climb that suffers most in rain, gets the dry morning.',
-    cost='Nishiki Market (it can slot into Friday). Thursday is the biggest day on foot of the trip: a mountain, then Nara, then Higashiyama.',
-    leave='Fri, 12:45 Nozomi',
-    glance=['Osaka, castle to Umeda Sky at night', 'Inari at sunrise, Nara, Higashiyama, Gion', 'Arashiyama in the rain, 12:45 Nozomi', 'Typhoon day, under cover'],
+    dinner='Thursday 22',
+    idea=f'Off the Shinkansen and straight on to Osaka for a full city day, Umeda Sky at night included. Dry Thursday takes {L("fushimi")} at sunrise, then Nara, then Higashiyama and Gion. {L("arashiyama")} goes to Friday morning, the part of Kyoto that copes best with rain.',
+    best='Osaka almost complete. Inari and Nara\'s open lawns, the two things rain hurts most, get the dry day.',
+    cost='Nigatsu-dō. Thursday is the biggest day on foot of the trip: a mountain, then Nara, then Higashiyama.',
+    glance=['Osaka, castle to Umeda Sky at night', 'Inari at sunrise, Nara, Higashiyama, Gion', 'Arashiyama in the rain, Nishiki, 13:13', 'Typhoon day, under cover'],
     days=[
         day(21, 'Wednesday', 'Osaka', ['k'], 'Straight on to Osaka',
             'Most of the master\'s Osaka day, started at Kyoto Station. Wednesday has showers about on some models, and the arcades are covered.',
@@ -201,12 +179,13 @@ S2 = dict(id='s2', no='Scenario 2', name='Straight to Osaka',
              R('16:30', f'{L("janjan")} into {L("shinsekai")}', f'In at dusk as the signs come on. Sunset 17:05. {L("kushikatsu")}, kept to a snack.'),
              R('18:15', f'{L("dotonbori")}', f'{L("tombori")} after dark, takoyaki, the {L("glico")} platform.'),
              R('20:00', f'{L("hozenji")}', 'A quiet drink.'),
-             R('20:45', f'{L("umeda")} at night', 'Midōsuji line to Umeda. Open to 22:30. The night deck replaces the morning one.'),
+             R('20:45', f'{L("umeda")} at night', 'Midōsuji line to Umeda. Open to 22:30.'),
              R('21:45', 'Home', f'{L("jr-rapid")} from Osaka Station, then one {L("subway-k", "subway")} stop. At the hotel about 22:45.')],
-            [('Check the day', 'The master\'s closure notes are for a Thursday. Check Google Maps for Wednesday hours at Kuromon and anywhere you plan to eat.'),
-             ('Swap the deck', 'If the evening clears, Umeda Sky at night. If it is clouded in, go home straight from Hōzenji.')]),
+            [('Cut first', 'Umeda Sky at night, then the Horie shops. Protect Kuromon, the lion head before 17:00 and Shinsekai at dusk.'),
+             ('Swap in', f'Nara can come here instead of Osaka: the Nara block from Scenario 2, then Kintetsu direct to Namba at 15:20 for the Osaka night. Osaka by day then drops out.'),
+             ('Check the day', 'The master\'s closure notes are for a Thursday. Check Google Maps for Wednesday hours at Kuromon and anywhere you plan to eat.')]),
         day(22, 'Thursday', 'Inari, Nara, Kyoto', ['k'], 'Inari at sunrise, Nara, Higashiyama',
-            'The dry day carries the two things rain would hurt most: the Inari climb and the open lawns of Nara. Higashiyama and Gion finish it as in every scenario.',
+            'The dry day carries the two things rain would hurt most: the Inari climb and the open lawns of Nara. Higashiyama and Gion finish it.',
             [R('06:00', f'Taxi to {L("fushimi")}', 'About 10 minutes. Sunrise is about 06:10.'),
              R('06:15', f'{L("fushimi")}', f'Up to {L("yotsutsuji")} for the view over the city and back, about two hours. Empty at this hour.'),
              R('08:30', f'{L("inari-st")} on to Nara', 'The JR Nara line runs from the platform facing the gate. About an hour, some trains need a change. Breakfast from a convenience store on the way.'),
@@ -219,31 +198,22 @@ S2 = dict(id='s2', no='Scenario 2', name='Straight to Osaka',
              R('16:30', f'Down through {L("sannenzaka")}', ''),
              R('17:10', f'{L("yasaka-pagoda")} at sunset', ''),
              R('17:30', f'{L("yasaka")}, then into {L("gion")}', f'{L("hanamikoji")}, the {L("shirakawa", "Shirakawa canal")}.'),
-             R('18:30', f'Dinner in {L("gion")}', 'Book for Thursday.', 'tb')],
-            [('Shorter Inari', 'If the legs are needed for Nara, stop at the first gate tunnels and the lower loop, about 45 minutes, and catch an earlier train.')]),
-        day(23, 'Friday', 'Kyoto to Tokyo', ['k', 'g'], 'Arashiyama in the rain, the 12:45 to Tokyo',
-            'The bamboo grove is a short, flat walk that stays beautiful in the rain and empties out. Nishiki on the way back, which is covered.',
-            clean([R('07:00', 'Leave the hotel', f'Taxi or {L("subway-k", "subway")} to {L("kyoto-st")}, JR Sagano line to Saga-Arashiyama.'),
-             R('07:30', f'{L("bamboo", "Bamboo grove")}', 'Ten to fifteen minutes end to end. Umbrellas up, very few people.'),
-             R('08:30', f'{L("tenryuji")} as it opens', 'The garden in the rain is the reward.'),
-             R('09:15', f'Coffee in {L("arashiyama")}', ''),
-             R('09:45', f'Hankyu to Karasuma, {L("nishiki")}', 'Covered all the way. Brunch at the stalls from about 10:30.'),
-             R('11:15', 'Walk to the hotel, shower and pack', 'About 15 minutes south.'),
-             R('12:00', f'Taxi to {L("kyoto-st")}', 'Ekiben and coffee inside the Shinkansen gates.'),
-             R('12:45', f'{L("shinkansen", "Nozomi")} to Tokyo', 'The held train, seats with the oversized baggage area.', 'hold'),
-             R('15:00', f'{L("tokyo-st")}', 'About 15:00.')] + fri_tokyo_evening('15:30')),
-            [('Go earlier if', 'The typhoon speeds up. Drop Arashiyama, do Nishiki at 10:00 and change to the 11:33 Hikari.'),
-             ('Stay longer if', 'The rain eases or the typhoon pushes out. Change to the 13:45 Nozomi for an unhurried lunch.')]),
+             R('18:30', f'Dinner in {L("gion")}', 'Book for Thursday in this scenario.', 'tb'),
+             R('20:30', f'Optional: a drink in {L("pontocho")}', 'Five minutes over the bridge.')],
+            [('Shorter Inari', 'Stop at the first gate tunnels and the lower loop, about 45 minutes, and catch an earlier train to Nara.'),
+             ('Cut first', 'The hotel rest shrinks before anything else. If the legs are gone, drop Kasuga Taisha and keep Tōdai-ji and the deer.'),
+             ('Swap in', f'Arashiyama can take this morning instead of Inari (Friday then becomes Inari in the rain). Not the better trade: Inari is the bigger sight and suffers more in rain.')]),
+        fri_common('Same Friday in both scenarios. The bamboo grove is a short, flat walk that stays beautiful in the rain and empties out. Nishiki on the way back, which is covered.'),
         sat()])
 
-# ---------- scenario 3 ----------
-S3 = dict(id='s3', no='Scenario 3', name='The master, tightened',
+# ---------- scenario 2 ----------
+S2 = dict(id='s2', no='Scenario 2', name='The master, tightened',
     pick='Closest to the master',
-    idea=f'The master\'s order, squeezed by a day. Nara is trimmed so Wednesday afternoon can take {L("higashiyama")} and a Gion dinner. Dry Thursday starts in {L("arashiyama")} at dawn and runs on to Osaka for the afternoon and night. Friday is {L("fushimi")} and {L("nishiki")}, then the 12:45.',
-    best='Nearly everything from the master survives: Nara, Higashiyama, Gion, Arashiyama, most of Osaka and Inari. Only the castle and Nigatsu-dō drop out.',
-    cost='Higashiyama gets Wednesday afternoon, which has a chance of showers, and the stone lanes are slippery when wet. Wednesday and Thursday are both long days. The Gion dinner moves to Wednesday, so book it for Wednesday instead.',
-    leave='Fri, 12:45 Nozomi',
-    glance=['Nara, then Higashiyama and a Gion dinner', 'Arashiyama at dawn, then Osaka to Dōtonbori', 'Inari and Nishiki, 12:45 Nozomi', 'Typhoon day, under cover'],
+    dinner='Wednesday 21',
+    idea=f'The master\'s order, squeezed by a day. Nara is trimmed so Wednesday afternoon can take {L("higashiyama")} and a Gion dinner. Dry Thursday starts at {L("fushimi")} at sunrise and runs straight on to Osaka by the Keihan line, castle included. Friday is {L("arashiyama")} in the rain and {L("nishiki")}.',
+    best='Everything from the master survives except Nigatsu-dō: Nara, Higashiyama, Gion, Inari, the whole Osaka day and Arashiyama.',
+    cost='Higashiyama gets Wednesday afternoon, which has a chance of showers, and the stone lanes are slippery when wet. Wednesday and Thursday are both long days. The Gion dinner moves to Wednesday.',
+    glance=['Nara, then Higashiyama and a Gion dinner', 'Inari at sunrise, then Osaka from the castle', 'Arashiyama in the rain, Nishiki, 13:13', 'Typhoon day, under cover'],
     days=[
         day(21, 'Wednesday', 'Nara, then Kyoto', ['k'], 'Nara, then Higashiyama and Gion',
             'The master\'s Wednesday with the slack taken out. Nara finishes an hour earlier, and the time goes to the Higashiyama walk and dinner that the master had on Friday.',
@@ -258,49 +228,102 @@ S3 = dict(id='s3', no='Scenario 3', name='The master, tightened',
              R('16:45', f'Down through {L("sannenzaka")}', 'Shops start closing about 17:30. Slippery if it has rained.'),
              R('17:10', f'{L("yasaka-pagoda")} at sunset', ''),
              R('17:30', f'{L("yasaka")}, then into {L("gion")}', f'{L("hanamikoji")} and the {L("shirakawa", "Shirakawa canal")} as the lanterns come on.'),
-             R('18:30', f'Dinner in {L("gion")}', 'The one special dinner in Kyoto, on Wednesday in this scenario.', 'tb'),
+             R('18:30', f'Dinner in {L("gion")}', 'Book for Wednesday in this scenario.', 'tb'),
              R('20:30', f'Optional: a drink in {L("pontocho")}', 'Five minutes over the bridge. Taxi to the hotel, the bags are waiting.')],
             [('Long day', 'It starts with a 05:55 wake in Tokyo. If you are flagging at 15:45, taxi to the hotel instead, check in, and pick up Higashiyama from the pagoda at about 16:45.'),
+             ('Swap in', 'If Wednesday afternoon is pouring, swap Higashiyama with Friday morning: Higashiyama Friday from about 08:00 (Kiyomizu-dera opens at 06:00), and Arashiyama goes. Or keep Nara whole with Nigatsu-dō and drop Higashiyama altogether.'),
              ('Weather', 'JMA has 50% for the afternoon, about 4 mm on one model. A light shower is fine for the lanes, heavy rain makes the steps hard work.')]),
-        day(22, 'Thursday', 'Arashiyama, then Osaka', ['k'], 'Arashiyama at dawn, then Osaka',
-            'The dry day does two things: the bamboo grove while it is empty, then Osaka from late morning through to Dōtonbori after dark.',
-            [R('06:45', 'Leave the hotel', f'One {L("subway-k", "subway")} stop to {L("kyoto-st")}, JR Sagano line to Saga-Arashiyama.'),
-             R('07:20', f'{L("bamboo", "Bamboo grove")}', 'Empty before eight.'),
-             R('08:30', f'{L("tenryuji")} as it opens', ''),
-             R('09:15', f'Coffee in {L("arashiyama")}', 'Takeaway, no sit-down breakfast.'),
-             R('09:40', 'JR back to Kyoto, then on to Osaka', f'JR Sagano line to Kyoto, about 15 minutes, then the {L("jr-rapid")} to Osaka, about 30. Stay on JR, no need to go back to the hotel.'),
-             R('10:45', f'{L("umeda")}', 'About 15 minutes on foot from Osaka Station. Clear air on the dry day.'),
-             R('12:15', f'{L("kuromon")} lunch', f'Midōsuji line to Namba. Buy the {L("ecocard")} first. Lunch, not a snack stop.'),
+        day(22, 'Thursday', 'Inari, then Osaka', ['k'], 'Inari at sunrise, then Osaka',
+            'The dry day does two things: the Inari climb while it is empty, then the Keihan line straight into Osaka for the castle, Kuromon and the night.',
+            [R('06:00', f'Taxi to {L("fushimi")}', 'About 10 minutes. Sunrise is about 06:10.'),
+             R('06:15', f'{L("fushimi")}', f'Up to {L("yotsutsuji")} and back, about two hours.'),
+             R('08:30', 'Keihan from Fushimi-Inari to Kyobashi', 'Five minutes\' walk from the shrine to the Keihan station. Change once to an express, about 45 minutes in all. Takeaway breakfast on the way.'),
+             R('09:30', f'{L("castle")}, up close', 'Ten to fifteen minutes on foot from Kyobashi through the park. Not inside.'),
+             R('10:45', f'{L("umeda")}', 'Loop Line from Osakajōkōen to Osaka, then 15 minutes on foot. Clear air on the dry day.'),
+             R('12:15', f'{L("kuromon")} lunch', f'Midōsuji line to Namba. Buy the {L("ecocard")} first.'),
              R('13:30', f'{L("horie")}', 'The vintage and resale run. Passports for tax-free.'),
              R('15:45', f'{L("namba-yasaka")}', 'Closes about 17:00.'),
              R('16:30', f'{L("janjan")} into {L("shinsekai")}', f'Sunset 17:05. {L("kushikatsu")}, kept to a snack.'),
              R('18:15', f'{L("dotonbori")}', f'{L("tombori")} after dark, takoyaki, the {L("glico")} platform.'),
              R('20:00', f'{L("hozenji")}', 'A quiet drink.'),
              R('21:00', 'Home', f'Midōsuji line to Umeda, {L("jr-rapid")} to Kyoto, one {L("subway-k", "subway")} stop. At the hotel about 22:15.')],
-            [('Castle instead of Umeda Sky', f'Swap the deck for {L("castle")} from the outside: Loop Line to Osakajōkōen at 10:45, then the Tanimachi and Sennichimae lines to Kuromon. Umeda Sky can still happen at night on the way home, open to 22:30.'),
-             ('Left out', 'Nishiki moves to Friday. Jidai Matsuri is on in Kyoto from 12:00, which you miss while in Osaka.')]),
-        day(23, 'Friday', 'Kyoto to Tokyo', ['k', 'g'], 'Inari and Nishiki in the rain, the 12:45 to Tokyo',
-            'The master\'s Saturday morning a day early, with Nishiki added because it is covered and one subway stop from the hotel.',
-            clean([R('07:00', f'To {L("kyoto-st")}, {L("inari-st")}', 'Two stops. Taxi if it is pouring.'),
-             R('07:15', f'{L("fushimi")}', f'Up to {L("yotsutsuji")} in light rain, the first gates and back if it is heavy.'),
-             R('09:00', 'Back to the hotel', 'Shower and pack, the room is yours all morning.'),
-             R('10:15', f'{L("nishiki")} brunch', f'One {L("subway-k", "subway")} stop to Shijō. Covered all the way. Stalls open from about 10:00.'),
-             R('11:30', 'Back to the hotel for the bags', ''),
-             R('11:45', f'Taxi to {L("kyoto-st")}', 'Ekiben and coffee inside the Shinkansen gates.'),
-             R('12:45', f'{L("shinkansen", "Nozomi")} to Tokyo', 'The held train, seats with the oversized baggage area.', 'hold'),
-             R('15:00', f'{L("tokyo-st")}', 'About 15:00.')] + fri_tokyo_evening('15:30')),
-            [('Go earlier if', 'The typhoon speeds up. Skip Nishiki and change to the 11:33 Hikari.')]),
+            [('Gentler start', 'Inari at 07:00 instead, and drop Umeda Sky. Kuromon is still on time.'),
+             ('Cut first', 'Umeda Sky, then the Horie shops. Or move Umeda Sky to night on the way home, open to 22:30.'),
+             ('Swap in', 'Nara can come here instead of Osaka (JR Nara line from Inari, as in Scenario 1), with Osaka\'s night block moved to Wednesday after Nara and Higashiyama dropped.')]),
+        fri_common('Same Friday in both scenarios. The bamboo grove is a short, flat walk that holds up in rain. Nishiki on the way back, which is covered.'),
         sat()])
 
-SCEN = [S1, S2, S3]
+SCEN = [S1, S2]
+
+BLOCKS = [
+    ('Fushimi Inari', '2 hours, or 45 minutes short', 'Best dry and at dawn. Five minutes from Kyoto Station, and on the JR line to Nara and the Keihan line to Osaka.'),
+    ('Arashiyama', 'About 2.5 hours', 'Fine in rain, best before 08:00. 35 minutes out on the JR Sagano line, Hankyu back to Nishiki.'),
+    ('Nara', '3 to 4 hours', 'Open lawns, Tōdai-ji is under cover. Kintetsu 45 minutes from Kyoto, direct on to Namba, or JR from Inari.'),
+    ('Higashiyama and Gion', '15:30 to dinner', 'Late light is the point. Kiyomizu-dera closes 18:00. Steps slippery in rain.'),
+    ('Osaka by day', 'About 4 hours', 'Castle, Umeda Sky, Kuromon lunch, Horie. Umeda Sky needs clear air.'),
+    ('Osaka at night', '16:00 to 21:00', 'Lion head before 17:00, Shinsekai at dusk, Dōtonbori and Hōzenji after dark. Fine in light rain.'),
+    ('Nishiki Market', '1 hour', 'Covered, from about 10:00. One subway stop from the hotel.'),
+    ('Rain fillers', 'Up to 1 hour each', 'Sanjūsangen-dō, the Fushimi sake district, the Teramachi arcades, Higashi Hongan-ji, the Kyoto Railway Museum.'),
+]
 
 def glance():
     rowsd = [('Wed 21', 0), ('Thu 22', 1), ('Fri 23', 2), ('Sat 24', 3)]
     h = '<div class="gl"><div class="glh"><span></span>' + ''.join(f'<a href="#{s["id"]}" data-go="{s["id"]}"><b>{s["no"][-1]}</b>{E(s["name"])}</a>' for s in SCEN) + '</div>'
     for lab, i in rowsd:
         h += f'<div class="glr"><span class="gld">{lab}</span>' + ''.join(f'<span class="glc">{E(s["glance"][i])}</span>' for s in SCEN) + '</div>'
-    h += '<div class="glr glx"><span class="gld">Leave Kyoto</span>' + ''.join(f'<span class="glc">{E(s["leave"])}</span>' for s in SCEN) + '</div></div>'
+    h += '<div class="glr glx"><span class="gld">Gion dinner</span>' + ''.join(f'<span class="glc">{E(s["dinner"])}</span>' for s in SCEN) + '</div>'
+    h += '<div class="glr glx"><span class="gld">Train</span>' + ''.join('<span class="glc">Fri 13:13 Nozomi</span>' for s in SCEN) + '</div></div>'
     return h
+
+def qa_html():
+    blocks = ''.join(f'<li><b>{E(n)}</b><span><strong>{E(d)}.</strong> {E(t)}</span></li>' for n, d, t in BLOCKS)
+    return f''' <section class="qa" aria-labelledby="qah">
+  <h2 id="qah">Deciding</h2>
+  <article>
+   <h3>Do before you fly</h3>
+   <ul class="todo">
+    <li>Book the 13:13 Nozomi on Fri 23 in the smartEX app, seats with the oversized baggage area.</li>
+    <li>Book the Gion dinner, 18:30: <b>Thursday 22</b> for Scenario 1, <b>Wednesday 21</b> for Scenario 2. Thursday also suits the weather swap if you don't leave early.</li>
+    <li>Ask sequence KYOTO GOJO whether it accepts Crosta bag deliveries on Wed 21.</li>
+    <li>Keep the Hilton's reply on the fireworks and Seascape dinner terms with this page.</li>
+    <li>For the insurance claim on the lost Kyoto night: the Booking.com terms, screenshots of JMA warnings, and any JR Central suspension notice.</li>
+   </ul>
+  </article>
+  <article>
+   <h3>When to decide</h3>
+   <ul class="tl">
+    <li><b>Mon 19</b><span>The typhoon's track should firm up. Check Trip Weather.</span></li>
+    <li><b>Wed 21, 10:00</b><span>Pick the scenario at Kyoto Station: straight to Osaka (1) or Nara then Higashiyama (2). Bags go to the hotel by delivery either way.</span></li>
+    <li><b>Thu 22, 18:00</b><span>Go or stay. If staying, cancel the Mercure and the 13:13. If going, keep or move the 13:13 and cancel Saturday's Nozomi 16, unless JR has already suspended it.</span></li>
+    <li><b>Thu 22, night</b><span>Last look at the forecast and JR Central. Move the Friday train earlier if needed.</span></li>
+   </ul>
+  </article>
+  <article>
+   <h3>Building blocks</h3>
+   <p>Each day is made of blocks that can be cut and pasted between the two scenarios. The swap notes on each day say which fit where.</p>
+   <ul class="tl">{blocks}</ul>
+  </article>
+  <article>
+   <h3>Inari or the bamboo grove?</h3>
+   <p><b>Inari is the bigger highlight.</b> It is two to three hours up a mountain through thousands of gates, with a view at {L("yotsutsuji")}, and it suffers most in rain: slippery steps and no view. <b>The bamboo grove</b> is ten to fifteen minutes on a flat path. Arashiyama is worth it as a whole morning, with Tenryū-ji and the river, and all of it holds up in rain. So both scenarios give Inari the dry Thursday and Arashiyama the wet Friday.</p>
+  </article>
+  <article>
+   <h3>If you stay after all</h3>
+   <p>Wednesday and Thursday play out the same either way. Friday becomes Arashiyama and Nishiki with a free afternoon, or Osaka's arcades. Saturday keeps Nozomi 16 at 12:01 as booked, with Inari already done.</p>
+  </article>
+  <article class="train">
+   <h3>Bullet train backup</h3>
+   <p><b>Friday 23: Nozomi 13:13, Kyoto to Tokyo.</b> Into Tokyo about 15:25. Seats with the oversized baggage area, Fuji side, on the smartEX app. The plan for both scenarios.</p>
+   <ul class="tl">
+    <li><b>Rained out</b><span>Change to the <b>11:33 Hikari</b> (into Tokyo about 14:15) or the <b>12:45 Nozomi</b> (about 15:00).</span></li>
+    <li><b>As planned</b><span><b>13:13 Nozomi</b>.</span></li>
+    <li><b>Pushed out</b><span>Change to the <b>13:24</b> or <b>13:45</b> Nozomi, both Fuji side. Only a few later trains had baggage seats when checked.</span></li>
+    <li><b>Saturday</b><span>Keep Nozomi 16 at 12:01 until Thursday. If JR suspends Saturday trains, the refund may be free in the app.</span></li>
+   </ul>
+   <p><b>smartEX rules:</b> changes before departure refund the old fare and charge the new one, so card foreign transaction fees may apply each time. Cancelling costs a small fee, about ¥320 a ticket. Refunds stop once you pass the gate, and the app is offline from 23:30 to 05:30. Baggage seats are the scarce part, so make any change as soon as the forecast settles it.</p>
+  </article>
+ </section>
+'''
 
 def panel(s, first):
     return (f'<section class="scen" id="{s["id"]}" data-s="{s["id"]}"{"" if first else " hidden"} aria-labelledby="t-{s["id"]}">'
@@ -329,7 +352,7 @@ EXTRA_CSS = '''<style>
 .tl li{display:grid;grid-template-columns:5.6rem minmax(0,1fr);gap:.7rem;padding:.5rem 0;border-top:1px solid var(--line)}
 .tl li b{font-variant-numeric:tabular-nums}
 .gl{margin-top:1rem;border:1.5px solid var(--ink);font-size:.82rem;line-height:1.3}
-.glh,.glr{display:grid;grid-template-columns:3.6rem repeat(3,minmax(0,1fr))}
+.glh,.glr{display:grid;grid-template-columns:3.6rem repeat(2,minmax(0,1fr))}
 .glh a{display:grid;gap:.15rem;padding:.55rem .5rem;text-decoration:none;font-weight:600;border-left:1.5px solid var(--ink);background:var(--paper)}
 .glh a b{font:800 1.5rem/1 var(--display)}
 .glh a:hover{background:var(--ink);color:var(--paper)}
@@ -338,7 +361,7 @@ EXTRA_CSS = '''<style>
 .glc{padding:.5rem;border-left:1.5px solid var(--ink);min-width:0}
 .glx{border-top:1.5px solid var(--ink);font-weight:600}
 .stabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--paper);border-bottom:1.5px solid var(--ink);margin-top:2.4rem}
-.stabs div{max-width:52rem;margin:0 auto;padding:.5rem 1.1rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+.stabs div{max-width:52rem;margin:0 auto;padding:.5rem 1.1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
 .stabs button{appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);padding:.45rem .5rem .5rem;text-align:left;cursor:pointer;font:600 .78rem/1.2 var(--body);display:grid;gap:.1rem;min-width:0}
 .stabs button b{font:800 1.05rem/1.1 var(--display)}
 .stabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
@@ -356,7 +379,7 @@ EXTRA_CSS = '''<style>
 .train{border-style:dashed!important}
 .end{margin:3rem 0 3.5rem;font-size:.82rem;color:var(--mute)}
 .lnk{font-size:.86rem;margin-top:.5rem}
-@media (min-width:640px){.sitin{padding:1.2rem 1.5rem}.glh,.glr{grid-template-columns:5rem repeat(3,minmax(0,1fr))}.stabs button{font-size:.86rem}.sbox{padding:1.3rem 1.5rem 1.4rem}}
+@media (min-width:640px){.sitin{padding:1.2rem 1.5rem}.glh,.glr{grid-template-columns:5rem repeat(2,minmax(0,1fr))}.stabs button{font-size:.86rem}.sbox{padding:1.3rem 1.5rem 1.4rem}}
 </style>'''
 
 SHEET = master[master.find('<aside class="sheet"'):master.find('</aside>', master.find('<aside class="sheet"')) + 8]
@@ -366,7 +389,7 @@ body = f'''
 <header class="wrap tb-cover">
  <div class="band" aria-hidden="true"><i class="pat pat-k"></i><i class="pat pat-g"></i></div>
  <h1>Kyoto &amp; Tokyo<span>Typhoon Backup</span></h1>
- <p class="tb-sub">If a typhoon threatens Saturday 24, you travel to Tokyo on Friday 23 instead, sleep at the {L("mercure", "Mercure Tokyo Hibiya")} and give up the last Kyoto night. Three ways to run Wednesday 21 to Saturday 24. Separate from the Master Itinerary, which stays as it is.</p>
+ <p class="tb-sub">If a typhoon threatens Saturday 24, you travel to Tokyo on Friday 23 instead, sleep at the {L("mercure", "Mercure Tokyo Hibiya")} and give up the last Kyoto night. Two ways to run Wednesday 21 to Saturday 24, both on the 13:13 Nozomi on Friday. Separate from the Master Itinerary, which stays as it is.</p>
  <p class="draft">Draft, Thu 15 October 2026</p>
 
  <section class="sit" aria-labelledby="sith">
@@ -394,51 +417,7 @@ body = f'''
 <div class="wrap">
  {''.join(panel(s, n == 0) for n, s in enumerate(SCEN))}
 
- <section class="qa" aria-labelledby="qah">
-  <h2 id="qah">Deciding</h2>
-  <article>
-   <h3>Do before you fly</h3>
-   <ul class="todo">
-    <li>Book the Gion dinner for <b>Thursday 22</b>, 18:30. Scenarios 1 and 2 have it on Thursday, and so does the weather swap if you don't leave early. Scenario 3 needs it on Wednesday 21, so book Wednesday instead if that is the one you lean to.</li>
-    <li>Ask sequence KYOTO GOJO whether it accepts Crosta bag deliveries on Wed 21.</li>
-    <li>Keep the Hilton's reply on the fireworks and Seascape dinner terms with this page.</li>
-    <li>For the insurance claim on the lost Kyoto night: the Booking.com terms, screenshots of JMA warnings, and any JR Central suspension notice.</li>
-   </ul>
-  </article>
-  <article>
-   <h3>When to decide</h3>
-   <ul class="tl">
-    <li><b>Mon 19</b><span>The typhoon's track should firm up. Check Trip Weather.</span></li>
-    <li><b>Wed 21, 10:00</b><span>Pick Wednesday's shape at Kyoto Station: Nara then Osaka, straight to Osaka, or Nara then Higashiyama. It decides whether the bags go to the hotel. The Osaka night costs nothing if you end up staying.</span></li>
-    <li><b>Thu 22, 18:00</b><span>Go or stay. If staying, cancel the Mercure and the held 12:45. If going, keep or move the 12:45 and cancel Saturday's Nozomi 16, unless JR has already suspended it.</span></li>
-    <li><b>Thu 22, night</b><span>Last look at the forecast and JR Central. Move the Friday train earlier if needed.</span></li>
-   </ul>
-  </article>
-  <article>
-   <h3>Fushimi Inari or the bamboo grove on the dry morning?</h3>
-   <p><b>Inari is the bigger experience</b>: two hours up a mountain through thousands of gates, on stone steps, with a view from {L("yotsutsuji")}. It is also the one rain hurts most, because the steps get slippery and cloud takes the view. <b>The bamboo grove</b> is ten to fifteen minutes on a flat path and holds up well in rain, often better, with fewer people.</p>
-   <p>So the safer use of dry Thursday is Inari, which is Scenario 2. The case for Scenarios 1 and 3 is distance: Inari is five minutes from Kyoto Station, which makes it the easy thing to fit before a train, while Arashiyama is 35 minutes out. In light rain Inari is still lovely. If Friday firms up as the 84 mm version, lean to Scenario 2.</p>
-  </article>
-  <article>
-   <h3>Do we still do Nara?</h3>
-   <p>Yes, in all three. Scenarios 1 and 3 keep it on Wednesday and trim the end. Scenario 2 moves it to Thursday morning, straight from Inari on the same train line.</p>
-  </article>
-  <article>
-   <h3>If you stay after all</h3>
-   <p>Wednesday and Thursday play out the same either way. In Scenario 1, Friday becomes a wet day of your choice: the Fushimi sake district, Sanjūsangen-dō and the covered arcades, or Osaka's arcades and Kuromon. In Scenario 3 it becomes Inari, Nishiki and a free afternoon. In Scenario 2 it becomes Arashiyama and Nishiki with a free afternoon. Saturday keeps Nozomi 16 at 12:01 as booked, and with Inari already done, the morning is free.</p>
-  </article>
-  <article class="train">
-   <h3>Bullet train backup</h3>
-   <p><b>Held: Nozomi 12:45, Kyoto to Tokyo, Fri 23.</b> Into Tokyo about 15:00. Seats with the oversized baggage area, booked on the smartEX app. The middle ground for Scenarios 1 and 2.</p>
-   <ul class="tl">
-    <li><b>Rained out</b><span>Change to the <b>11:33 Hikari</b>, into Tokyo about 14:15. Fuji side.</span></li>
-    <li><b>Holding</b><span><b>12:45 Nozomi</b>, as booked.</span></li>
-    <li><b>Pushed out</b><span>Change to the <b>13:06</b>, <b>13:13</b>, <b>13:24</b> or <b>13:45</b> Nozomi. The last three are on the Fuji side. Only a few later trains had baggage seats when checked.</span></li>
-    <li><b>Saturday</b><span>Keep Nozomi 16 at 12:01 until Thursday. If JR suspends Saturday trains, the refund may be free in the app.</span></li>
-   </ul>
-   <p><b>smartEX rules:</b> changes before departure refund the old fare and charge the new one, so card foreign transaction fees may apply each time. Cancelling costs a small fee, about ¥320 a ticket. Refunds stop once you pass the gate, and the app is offline from 23:30 to 05:30. Baggage seats are the scarce part, so make any change as soon as the forecast settles it.</p>
-  </article>
- </section>
+ {qa_html()}
  <p class="end">Kyoto &amp; Tokyo Typhoon Backup. Draft, 15 October 2026. Times are targets, not commitments, unless marked booked.</p>
 </div>
 </main>
@@ -475,7 +454,7 @@ SCRIPT = '''<script>
  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.s,true)})});
  document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();show(a.dataset.go,true)})});
  var h=(location.hash||'').slice(1),saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
- if(/^s[123]$/.test(h))show(h,false);else if(saved)show(saved,false);
+ if(/^s[12]$/.test(h))show(h,false);else if(saved)show(saved,false);
 })();
 </script>''' % json.dumps(used_P, ensure_ascii=False).replace('</', '<\\/')
 
