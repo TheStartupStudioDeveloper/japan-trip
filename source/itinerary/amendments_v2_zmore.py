@@ -268,3 +268,6 @@ del _h[max(_b, _c)]; del _h[min(_b, _c)]
 _k = next(i for i, x in enumerate(_h) if x.startswith('The 15 days run'))
 _h[0] = _h[0] + ' The 15 days run to the evening of Sat 31, covering the flight home.'
 del _h[_k]
+
+# Osaka Castle: the moat-wall view via Gokuraku-bashi on the way in (Thu 22)
+D[22]['rows'][_row(22, '08:30')] = R('08:30', 'Osaka Castle, up close', 'In by Aoya-mon to Gokuraku-bashi: the tower over the inner moat walls. Then to its foot, not inside. Takeaway breakfast on a bench.')

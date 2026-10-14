@@ -621,6 +621,9 @@ P('kintetsu-nara', ['Kintetsu Nara'], 'Kintetsu Nara Station', '近鉄奈良駅'
 P('ninja-tokyo', ['Ninja Tokyo'], 'Ninja Tokyo', 'NINJA TOKYO 忍者屋敷',
   'A themed course restaurant, once Ninja Akasaka, now in the basement of the Shin-Otemachi Building by Tokyo Station. A ninja leads you through a hidden door and a cave-like maze to tables in a dim ninja village with a pond, and performs tricks between courses. Set courses only, seasonal and showy.',
   'Lunch 11:30 to 14:30, dinner 17:00 to 22:00, closed Sundays and Mondays (check on TableCheck). Hanzō course ¥13,200, Bansenshukai ¥19,800, both with a beef steak and seafood. Book ahead on TableCheck.', 'Ninja Tokyo restaurant Otemachi')
+P('gokuraku', ['Gokuraku-bashi'], 'Gokuraku-bashi', '極楽橋',
+  'The bridge across the north side of Osaka Castle\'s inner moat. From it and the moat path either side, the main tower rises above the tall stone walls with the water below: the classic postcard view. The gold-roofed Gozabune boats circle the inner moat from here.',
+  'About 10 minutes from Osakajōkōen Station via Aoya-mon gate, on the way to the tower. The boats start about 10:00, so an early visit gets the wall and water without them. Late October trees are mostly still green.', 'Gokurakubashi Osaka Castle inner moat view')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

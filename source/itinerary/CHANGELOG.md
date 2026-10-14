@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Osaka Castle moat view, 15 October
+- Thu 22 08:30: the walk in now goes by Aoya-mon gate to Gokuraku-bashi for the view of the tower over the inner moat walls, then on to the foot of the tower. New Gokuraku-bashi card.
+
 eSIM switch-on steps, 14 October
 - How-to 2: install at home and leave the Ubigi line off. On landing in Hong Kong, Fri 16: turn the Ubigi line on, Ubigi Data Roaming on, Mobile Data to Ubigi; Australian SIM Data Roaming off but the line kept on for SMS codes; the Ubigi app should show the plan active. Coverage, data and top-up lines merged to keep 26 pages.
 
