@@ -278,3 +278,13 @@ _g = [g[0] for g in CHECK].index('Book or confirm before you fly')
 _L = CHECK[_g][1]
 _k = next(i for i, it in enumerate(_L) if 'Ninja Tokyo' in it[1])
 _L[_k] = ('s', 'Optional: Sushi Hatsume for Sun 18, 19:30, on TableCheck')
+
+# Weather backup hotel: cancel deadline in the checklist
+_g = [g[0] for g in CHECK].index('Decide with the Tokyo forecast')
+CHECK[_g][1].append(('g', 'Thu 22 by 18:00: cancel the Mercure Tokyo Hibiya backup night unless going to Tokyo on Fri 23'))
+# Fit: merge the two Sheraton desk lines
+_L = CHECK[[g[0] for g in CHECK].index('On the ground')][1]
+_a = next(i for i, it in enumerate(_L) if it[1].startswith('Tue 27: ask the Sheraton'))
+_b = next(i for i, it in enumerate(_L) if it[1].startswith('Fri 30: ask whether checkout'))
+_L[_a] = ('h', 'Tue 27: ask the Sheraton: pool sessions, lounge hours, Fri 30 checkout after 18:00, bags to 20:30')
+del _L[_b]

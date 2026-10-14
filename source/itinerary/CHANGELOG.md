@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Checklist: cancel the backup hotel, 15 October
+- Decide with the Tokyo forecast: "Thu 22 by 18:00: cancel the Mercure Tokyo Hibiya backup night unless going to Tokyo on Fri 23". The two Sheraton desk lines merged so the PDF stays at 26 pages.
+
 Weather backup hotel, 15 October
 - Booked as a backup only: Mercure Tokyo Hibiya, King Privilege Room, Fri 23 to Sat 24 (check-in 14:00, check-out 11:00), direct on the Mercure website, in case a typhoon stops the Sat 24 Shinkansen and you go to Tokyo a day early. Free cancellation until 18:00 Japan time on Thu 22.
 - J&HK Weather: a boxed note under Typhoons with the backup and the cancel deadline.
