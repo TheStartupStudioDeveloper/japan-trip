@@ -152,7 +152,7 @@ def fri_common(summ):
          R('11:45', 'Hotel, shower and pack', 'About 15 minutes south on foot.'),
          R('12:30', f'Taxi to {L("kyoto-st")}', 'Ekiben and coffee inside the Shinkansen gates.'),
          R('13:13', f'{L("shinkansen", "Nozomi")} to Tokyo', 'Car 10, Green Car, Fuji side, seats with the oversized baggage area. Tap Suica at the Shinkansen gate. See the bullet train backup for earlier and later options.', 'b'),
-         R('15:25', f'{L("tokyo-st")}', 'About 15:25. Yaesu side for the taxi rank.')] + fri_tokyo_evening('16:00')),
+         R('15:25', f'{L("tokyo-st")}', 'About 15:25. Then the Mercure and Tokyo: see Part 2.')]),
         [('Swap in', f'{L("sanjusangendo")} (45 minutes, indoors) or the {L("teramachi")} instead of Arashiyama. {L("honganji")} on the way to the station.'),
          ('Rained out', 'Drop Arashiyama, do Nishiki at 10:00 and change to the 11:33 Hikari or the 12:45 Nozomi.'),
          ('Clearer than forecast', 'Change to the 13:45 Nozomi and take lunch slowly.')])
@@ -166,7 +166,7 @@ S1 = dict(id='s1', no='Scenario 1', name='Straight to Osaka',
     idea=f'Off the Shinkansen and straight on to Osaka for a full city day, Umeda Sky at night included. Dry Thursday takes {L("fushimi")} at sunrise, then Nara, then Higashiyama and Gion. {L("arashiyama")} goes to Friday morning, the part of Kyoto that copes best with rain.',
     best='Osaka almost complete. Inari and Nara\'s open lawns, the two things rain hurts most, get the dry day.',
     cost='Nigatsu-dō. Thursday is the biggest day on foot of the trip: a mountain, then Nara, then Higashiyama.',
-    glance=['Osaka, castle to Umeda Sky at night', 'Inari at sunrise, Nara, Higashiyama, Gion', 'Arashiyama in the rain, Nishiki, 13:13', 'Typhoon day, under cover'],
+    glance=['Osaka, castle to Umeda Sky at night', 'Inari at sunrise, Nara, Higashiyama, Gion', 'Arashiyama in the rain, Nishiki, 13:13'],
     days=[
         day(21, 'Wednesday', 'Osaka', ['k'], 'Straight on to Osaka',
             'Most of the master\'s Osaka day, started at Kyoto Station. Wednesday has showers about on some models, and the arcades are covered.',
@@ -203,8 +203,7 @@ S1 = dict(id='s1', no='Scenario 1', name='Straight to Osaka',
             [('Shorter Inari', 'Stop at the first gate tunnels and the lower loop, about 45 minutes, and catch an earlier train to Nara.'),
              ('Cut first', 'The hotel rest shrinks before anything else. If the legs are gone, drop Kasuga Taisha and keep Tōdai-ji and the deer.'),
              ('Swap in', f'Arashiyama can take this morning instead of Inari (Friday then becomes Inari in the rain). Not the better trade: Inari is the bigger sight and suffers more in rain.')]),
-        fri_common('Same Friday in both scenarios. The bamboo grove is a short, flat walk that stays beautiful in the rain and empties out. Nishiki on the way back, which is covered.'),
-        sat()])
+        fri_common('Same Friday in both scenarios. The bamboo grove is a short, flat walk that stays beautiful in the rain and empties out. Nishiki on the way back, which is covered.')])
 
 # ---------- scenario 2 ----------
 S2 = dict(id='s2', no='Scenario 2', name='The master, tightened',
@@ -213,7 +212,7 @@ S2 = dict(id='s2', no='Scenario 2', name='The master, tightened',
     idea=f'The master\'s order, squeezed by a day. Nara is trimmed so Wednesday afternoon can take {L("higashiyama")} and a Gion dinner. Dry Thursday starts at {L("fushimi")} at sunrise and runs straight on to Osaka by the Keihan line, castle included. Friday is {L("arashiyama")} in the rain and {L("nishiki")}.',
     best='Everything from the master survives except Nigatsu-dō: Nara, Higashiyama, Gion, Inari, the whole Osaka day and Arashiyama.',
     cost='Higashiyama gets Wednesday afternoon, which has a chance of showers, and the stone lanes are slippery when wet. Wednesday and Thursday are both long days. The Gion dinner moves to Wednesday.',
-    glance=['Nara, then Higashiyama and a Gion dinner', 'Inari at sunrise, then Osaka from the castle', 'Arashiyama in the rain, Nishiki, 13:13', 'Typhoon day, under cover'],
+    glance=['Nara, then Higashiyama and a Gion dinner', 'Inari at sunrise, then Osaka from the castle', 'Arashiyama in the rain, Nishiki, 13:13'],
     days=[
         day(21, 'Wednesday', 'Nara, then Kyoto', ['k'], 'Nara, then Higashiyama and Gion',
             'The master\'s Wednesday with the slack taken out. Nara finishes an hour earlier, and the time goes to the Higashiyama walk and dinner that the master had on Friday.',
@@ -250,8 +249,7 @@ S2 = dict(id='s2', no='Scenario 2', name='The master, tightened',
             [('Gentler start', 'Inari at 07:00 instead, and drop Umeda Sky. Kuromon is still on time.'),
              ('Cut first', 'Umeda Sky, then the Horie shops. Or move Umeda Sky to night on the way home, open to 22:30.'),
              ('Swap in', 'Nara can come here instead of Osaka (JR Nara line from Inari, as in Scenario 1), with Osaka\'s night block moved to Wednesday after Nara and Higashiyama dropped.')]),
-        fri_common('Same Friday in both scenarios. The bamboo grove is a short, flat walk that holds up in rain. Nishiki on the way back, which is covered.'),
-        sat()])
+        fri_common('Same Friday in both scenarios. The bamboo grove is a short, flat walk that holds up in rain. Nishiki on the way back, which is covered.')])
 
 SCEN = [S1, S2]
 
@@ -266,14 +264,177 @@ BLOCKS = [
     ('Rain fillers', 'Up to 1 hour each', 'Sanjūsangen-dō, the Fushimi sake district, the Teramachi arcades, Higashi Hongan-ji, the Kyoto Railway Museum.'),
 ]
 
-def glance():
-    rowsd = [('Wed 21', 0), ('Thu 22', 1), ('Fri 23', 2), ('Sat 24', 3)]
-    h = '<div class="gl"><div class="glh"><span></span>' + ''.join(f'<a href="#{s["id"]}" data-go="{s["id"]}"><b>{s["no"][-1]}</b>{E(s["name"])}</a>' for s in SCEN) + '</div>'
-    for lab, i in rowsd:
-        h += f'<div class="glr"><span class="gld">{lab}</span>' + ''.join(f'<span class="glc">{E(s["glance"][i])}</span>' for s in SCEN) + '</div>'
-    h += '<div class="glr glx"><span class="gld">Gion dinner</span>' + ''.join(f'<span class="glc">{E(s["dinner"])}</span>' for s in SCEN) + '</div>'
-    h += '<div class="glr glx"><span class="gld">Train</span>' + ''.join('<span class="glc">Fri 13:13 Nozomi, booked</span>' for s in SCEN) + '</div></div>'
-    return h
+# ---------- Part 2: Tokyo, Friday afternoon to Monday ----------
+add('hamarikyu', 'Hama-rikyū Gardens', '浜離宮恩賜庭園',
+    'A former shōgun\'s garden on Tokyo Bay, ten minutes\' walk from Shimbashi, with a tidal pond, old pines and a teahouse on an island where you can have matcha and a sweet. The towers of Shiodome rise straight behind it.',
+    'Open 09:00 to 17:00, small entry fee. Outdoors, so a dry-weather stop.', 'Hama-rikyu Gardens Tokyo')
+add('moriart', 'Mori Art Museum and Tokyo City View', '森美術館 / 東京シティビュー',
+    'A contemporary art museum and an indoor observation deck on the 52nd and 53rd floors of Roppongi Hills, with a view across to Tokyo Tower. One of the best rainy-day stops in the city.',
+    'Usually open to 22:00, shorter on Tuesdays. Check the current exhibition. Hibiya line direct from Hibiya to Roppongi, about 10 minutes.', 'Mori Art Museum Roppongi Hills')
+
+def fri_tokyo():
+    return day(23, 'Friday', 'Arrive Tokyo, Mercure', ['g'], 'Into Tokyo, a quiet first night',
+        'Every Tokyo scenario starts the same. Tokyo has about 41 mm of rain forecast for Friday, so the evening stays within a few minutes of the hotel.',
+        [R('15:25', f'{L("tokyo-st")}', 'Off the 13:13. Yaesu side for the taxi rank.', 'b'),
+         R('16:00', f'Check in at the {L("mercure", "Mercure Tokyo Hibiya")}', 'King Privilege Room, check-in from 14:00, checkout 11:00 tomorrow.', 'b'),
+         R('16:30', 'Rest, then a supplies run', f'Water, snacks and a clear umbrella from a convenience store for Saturday. {L("midtown")} is close if you want to browse under cover.'),
+         R('19:00', f'{L("yurakucho")} izakayas under the arches', 'The spare-night idea from the master. Sheltered by the tracks, a few minutes from the hotel.'),
+         R('21:00', f'Optional: {L("starbar")} or {L("highfive")}', 'Both open on Fridays, both a short walk.')],
+        [('Tonight decides tomorrow', 'Check the Hilton\'s call on the fireworks, the JMA warnings and the forecast, then pick a Tokyo scenario. If it is Scenario A or C, change teamLab Borderless to Saturday afternoon tonight, as slots go.')])
+
+def sat_washout(extra_note=None):
+    ns = [('Evening instead', f'The {L("sumo")} at Hirakuza Ginza runs daily at 17:00 with dinner, a few minutes from the hotel. {L("ninja-tokyo")} is open for Saturday dinner. Book either from Friday night.'),
+          ('Safety', 'The Yurikamome and other open-air lines stop in strong wind. Move between hotels by taxi.')]
+    if extra_note: ns.append(extra_note)
+    return day(24, 'Saturday', 'Tokyo, typhoon day', ['g'], 'Typhoon day, under cover',
+        f'Heavy rain all day, about 81 mm on tenki.jp, heaviest in the afternoon. Stay walkable or underground and keep away from {L("odaiba")}.',
+        [R('08:30', 'Slow breakfast, stay in', 'Watch the news and the JMA warnings. Nothing today needs an early start.'),
+         R('10:30', f'Check out of the {L("mercure", "Mercure")}, taxi to {L("blossom")}', 'Checkout is 11:00. Leave the bags, or check in early if a room is ready. Pre-registration means keys only later.'),
+         R('11:30', f'{L("tokyo-st")} underground', f'{L("ramenst")} for lunch, then {L("charst")} and Gransta. Connected underground, so barely a step outside.'),
+         R('13:30', f'{L("teamlab")}, moved from Monday', f'Hibiya line from Hibiya to {L("kamiyacho")}, which connects straight into {L("azabudai")}. About two hours inside.', 'ch'),
+         R('15:45', f'Optional: {L("moriart")}', 'A short taxi from Azabudai. Contemporary art and the indoor deck over Tokyo Tower. Or straight back to the hotel.'),
+         R('16:30', 'Check in at the Blossom and rest', ''),
+         R('17:30', 'Head spa or massage', f'{L("headspa-zen")} or {L("buasai")}, both close to the hotel. Book a day ahead.'),
+         R('19:30', 'Dinner', f'If the Hilton still serves the {L("seascape")} dinner and the trains are running, go. Otherwise a proper sit-down dinner in {L("ginza")} or {L("shimbashi")}.')],
+        ns)
+
+SUN_MASTER = [
+    R('08:30', 'Slow breakfast, laundry', 'The Blossom has a small guest laundry, so go early.'),
+    R('09:15', f'{L("eastgardens")}', 'Opens 09:00, free. Closed Mondays and Fridays, so Sunday is its day. After a typhoon, check it has reopened.'),
+    R('10:45', f'{L("tokyo-st")}, Marunouchi side, and {L("kitte")}', 'The red brick façade from the rooftop garden. Coffee in the station.'),
+    R('11:30', f'{L("forum")}', 'Free to walk through on the way into Ginza.'),
+    R('12:00', f'{L("chuodori")} goes car-free', 'Pedestrian only until 17:00.'),
+    R('Afternoon', 'Department stores and shopping', f'{L("mitsukoshi")}, {L("ginzasix")}, {L("matsuya")}, {L("dsm")}, {L("itoya")}, {L("hermes")}, the {L("wako")}. Passports for tax-free.'),
+    R('Late arvo', 'Rooftop gardens as the light goes', f'{L("ginzasix")} rooftop and Mitsukoshi\'s terrace.'),
+    R('Evening', 'Eat in the complexes', 'Restaurant floors trade later than the shops. Eat a touch before 18:30 or after 19:30.'),
+    R('19:30', f'Optional: {L("tokyotower")} lit up', 'About 10 minutes by taxi, best from the Zōjō-ji gate.'),
+]
+
+MON_NO_TEAMLAB = [
+    R('08:30', 'Slow breakfast', 'teamLab is already done, so this morning is free.'),
+    R('09:30', f'{L("zojoji")} and {L("tokyotower")} by day', 'Taxi, about 10 minutes. The temple gate with the tower behind it.'),
+    R('10:45', 'Asakusa line from Daimon to Asakusa', 'Direct, about 20 minutes.'),
+    R('11:15', f'{L("kappabashi")}', 'Knives and ceramics while the shops are open. Most close about 17:00.'),
+    R('13:00', f'Lunch in {L("asakusa")}', ''),
+    R('14:30', f'{L("sensoji")}, {L("kaminarimon")}, {L("nakamise")}', 'Side lanes if Nakamise is jammed.'),
+    R('16:15', f'{L("skytree")} views at dusk, no deck', f'The free terrace at the {L("culture-centre")}, then {L("azuma")}. Sunset 16:55.'),
+    R('17:30', f'Ginza line back to {L("shimbashi")}', 'Direct, about 15 minutes. Half pack at the hotel.'),
+    R('19:00', f'{L("shimbashi")}, no booking', 'The lanes around the tracks. Weeknights are when it is liveliest.'),
+    R('Late', 'Finish packing, settle the bill', 'Tomorrow is the 06:38 train to Haneda.'),
+]
+
+MON_MASTER = [
+    R('07:50', f'Leave {L("blossom")}', f'About 25 minutes on foot to {L("azabudai")}, taxi if wet.'),
+    R('08:30', f'{L("teamlab")}, first session', 'As booked. Allow about two hours.', 'b'),
+    R('10:40', f'{L("tokyotower")} and {L("zojoji")}', 'A ten minute walk to the temple gate.'),
+    R('11:30', 'Asakusa line from Daimon to Asakusa', 'Direct, about 20 minutes.'),
+    R('12:00', f'{L("kappabashi")}, then lunch', 'Shops close about 17:00.'),
+    R('14:45', f'{L("sensoji")}, {L("kaminarimon")}, {L("nakamise")}', ''),
+    R('16:15', f'{L("skytree")} views at dusk, no deck', f'{L("culture-centre")} terrace, then {L("azuma")}. Sunset 16:55.'),
+    R('17:30', f'Ginza line back to {L("shimbashi")}', 'Half pack at the hotel.'),
+    R('19:00', f'{L("shimbashi")}, no booking', ''),
+    R('Late', 'Finish packing, settle the bill', 'Tomorrow is the 06:38 train to Haneda.'),
+]
+
+KART_NOTE = ('Street Kart backup', 'If Street Kart could not run on Sun 18, Sunday 25 and Monday 26 are still the backups. Leave by about 14:45, arrive 30 minutes early with closed shoes, the physical licence, permit and passports.')
+
+TA = dict(id='t1', no='Scenario A', name='Washout Saturday', pick='As forecast now',
+    idea='The typhoon arrives as forecast: heavy rain all Saturday and the fireworks called off. Saturday goes indoors, teamLab moves onto it, and Monday morning is freed for Tokyo Tower and an earlier Asakusa.',
+    best='Uses the wettest day for the indoor things you were going to do anyway. Sunday and Monday run close to the master.',
+    cost='The fireworks, unless the Hilton offers another date. The Odaiba evening.',
+    glance=['Indoors: Tokyo Station, teamLab, Mori, head spa', 'Master Sunday: gardens, car-free Ginza, Tokyo Tower', 'Tokyo Tower by day, Asakusa, Shimbashi'],
+    days=[sat_washout(),
+          day(25, 'Sunday', 'Gardens and Ginza', ['g'], 'Gardens, then Ginza until you are done',
+              'The master\'s Sunday, unchanged. Cloudy with 30 to 40% on tenki.jp, no measurable rain, after Saturday clears.',
+              SUN_MASTER, [KART_NOTE]),
+          day(26, 'Monday', 'Tokyo Tower and Asakusa', ['g'], 'Tokyo Tower by day, then old Tokyo',
+              'teamLab went on Saturday, so the morning is free. Sun with a passing shower on tenki.jp.',
+              MON_NO_TEAMLAB, [KART_NOTE])])
+
+TB = dict(id='t2', no='Scenario B', name='The typhoon misses', pick='Fireworks on',
+    idea=f'The typhoon tracks away and the fireworks go ahead. You have a bonus Saturday in Tokyo before Odaiba, so the {L("eastgardens")} move onto it and Sunday gets a sleep in.',
+    best='Nothing from the master is lost, and you gain most of a day. The early move to Tokyo cost one Kyoto night and bought a calmer weekend.',
+    cost='A Kyoto night you might not have needed to give up. Keep the paperwork for the insurance claim anyway.',
+    glance=['Gardens, KITTE, Hama-rikyū, fireworks', 'Sleep in, then car-free Ginza, Tokyo Tower', 'teamLab, Asakusa, Shimbashi, as the master'],
+    days=[day(24, 'Saturday', 'Tokyo, then Odaiba', ['g'], 'A bonus morning, then the fireworks',
+              'The master\'s Saturday night as booked, with a free Tokyo day in front of it.',
+              [R('08:30', 'Breakfast', ''),
+               R('09:30', f'Check out, taxi to {L("blossom")} with the bags', 'Leave them at the desk until 15:00.'),
+               R('10:00', f'{L("eastgardens")}', 'Open on Saturdays. This frees Sunday morning.'),
+               R('11:30', f'{L("tokyo-st")} and {L("kitte")}', f'The façade from the rooftop garden, then lunch at {L("ramenst")}.'),
+               R('13:30', f'{L("hamarikyu")}', 'Ten minutes from Shimbashi. Matcha in the teahouse on the pond.'),
+               R('15:00', 'Check in at the Blossom', 'Shower and change. Take a layer for the bay.'),
+               R('16:00', f'Walk to {L("shimbashi")}, {L("yurikamome")} to {L("daiba")}', 'Go early, it crowds by 17:00.'),
+               R('16:30', f'{L("hilton")}', 'Collect the wristbands, find the viewing area. Sunset about 16:55.'),
+               R('17:30', f'{L("fireworks")} from the Hilton', 'Until 19:00.', 'b'),
+               R('19:30', f'{L("seascape")} dinner buffet', 'Until 21:15.', 'b'),
+               R('21:15', f'Optional: {L("liberty")}', 'A few minutes along the waterfront.'),
+               R('21:45', 'Yurikamome back to Shimbashi', '')],
+              [('If the rain lingers in the morning', 'Swap the gardens for Tokyo Station underground and teamLab is still safe on Monday.')]),
+          day(25, 'Sunday', 'Ginza', ['g'], 'A sleep in, then Ginza',
+              'The gardens were done yesterday, so the morning is yours.',
+              [R('09:30', 'Slow breakfast, laundry', 'The Blossom guest laundry, early.'),
+               R('11:30', f'{L("forum")}', 'On the walk into Ginza.')] + SUN_MASTER[4:],
+              [KART_NOTE, ('Swap in', f'The {L("sushibus")} for lunch, or {L("parco")} on the Ginza line if Cynthia wants a break from the stores.')]),
+          day(26, 'Monday', 'teamLab and Asakusa', ['g'], 'teamLab first thing, Asakusa, Shimbashi',
+              'The master\'s Monday, unchanged.',
+              MON_MASTER, [KART_NOTE])])
+
+TC = dict(id='t3', no='Scenario C', name='Wet Saturday and Sunday', pick='The storm lingers',
+    idea='The typhoon is slow and Sunday stays wet too. Both days go mostly indoors, using the things saved from the first Tokyo leg, and Monday, which looks the better day, takes the outdoor sights.',
+    best='Two wet days without repeating yourselves: Saturday is Tokyo Station and teamLab, Sunday is Roppongi and covered Ginza.',
+    cost=f'The {L("eastgardens")}, closed on Mondays, and car-free Ginza at its best.',
+    glance=['Indoors: Tokyo Station, teamLab, head spa', 'Roppongi museums, covered Ginza, depachika', 'Tokyo Tower by day, Asakusa, Shimbashi'],
+    days=[sat_washout(('Keep for Sunday', 'Skip Mori Art Museum today, it is Sunday\'s anchor.')),
+          day(25, 'Sunday', 'Roppongi and Ginza', ['g'], 'Roppongi, then Ginza under cover',
+              'Ginza\'s big stores connect underground from the Ginza line, so a wet afternoon there is easy.',
+              [R('09:00', 'Slow breakfast, laundry', ''),
+               R('10:15', f'Hibiya line to Roppongi, {L("moriart")}', 'About 10 minutes from Hibiya, mostly under cover into Roppongi Hills. Art, then the indoor deck.'),
+               R('12:30', 'Lunch in Roppongi Hills', 'Plenty of restaurant floors.'),
+               R('14:00', f'Back to {L("ginza")}, stores linked underground', f'{L("mitsukoshi")} and its food hall, {L("matsuya")}, {L("ginzasix")}, {L("itoya")}. Passports for tax-free.'),
+               R('17:00', 'Rest at the hotel', ''),
+               R('19:00', 'Dinner in the Ginza complexes', f'Or the {L("sumo")} at 17:00 if you skipped it on Saturday.')],
+              [('Swap in', f'{L("parco")} instead of Roppongi: Nintendo Tokyo, the Pokémon Center and Capcom on one floor, about 15 minutes on the Ginza line.'), KART_NOTE]),
+          day(26, 'Monday', 'Tokyo Tower and Asakusa', ['g'], 'Tokyo Tower by day, then old Tokyo',
+              'teamLab went on Saturday. Monday is the better-looking day, so it takes the outdoor sights.',
+              MON_NO_TEAMLAB, [KART_NOTE])])
+
+TOKYO = [TA, TB, TC]
+
+def save_html():
+    return f'''<article class="save">
+   <h3>Save it for a wet day</h3>
+   <p>The first Tokyo leg, Sat 17 to Tue 20, looks dry. Spend it on the outdoor things and hold back a few indoor ones for Saturday and Sunday here.</p>
+   <h4>Hold back from the first leg</h4>
+   <ul class="tl">
+    <li><b>Roppongi</b><span>{L("moriart")}, plus 21_21 Design Sight and the National Art Center if there is time. G\'s option for the Mon 19 store window: take the Nezu Museum garden or the gym that day instead, and save Roppongi. It sits next to teamLab and is ten minutes from Hibiya.</span></li>
+    <li><b>Shibuya Parco</b><span>Nintendo Tokyo, the Pokémon Center and Capcom on one floor. Walk past it on Sat 17 and save the visit: 15 minutes on the Ginza line from Ginza.</span></li>
+    <li><b>Sauna or sento</b><span>Shibuya Saunas or Kairyo-yu. Best on a wet afternoon, not a dry one.</span></li>
+    <li><b>Food halls</b><span>Leave the big depachika crawl, Isetan included, for {L("mitsukoshi")} in the rain. It is about ten minutes' walk from the hotel.</span></li>
+    <li><b>Shows</b><span>The {L("sumo")} and {L("ninja-tokyo")}, both indoor dinners, for a Saturday with no fireworks.</span></li>
+   </ul>
+   <h4>Don't hold back</h4>
+   <p>Meiji Jingū, Shibuya Sky, Street Kart, Tsukiji and Yokohama all need dry weather, and that is what the first leg has.</p>
+   <h4>Pull forward if Monday 26 turns wet</h4>
+   <ul class="tl">
+    <li><b>Asakusa</b><span>{L("sensoji")} and {L("kappabashi")} after Tsukiji on Tue 20, about 20 minutes by train, with a shorter Yokohama. The catch: knives and ceramics then travel through Kyoto.</span></li>
+    <li><b>teamLab</b><span>It can also move to a wet morning on the first leg. Three changes are allowed in total, so keep one spare for this leg.</span></li>
+   </ul>
+  </article>'''
+
+def glance(scens, labels, extra=()):
+    n = len(scens)
+    h = f'<div class="gl" style="--n:{n}"><div class="glh"><span></span>' + ''.join(f'<a href="#{s["id"]}" data-go="{s["id"]}"><b>{s["no"][-1]}</b>{E(s["name"])}</a>' for s in scens) + '</div>'
+    for i, lab in enumerate(labels):
+        h += f'<div class="glr"><span class="gld">{lab}</span>' + ''.join(f'<span class="glc">{E(s["glance"][i])}</span>' for s in scens) + '</div>'
+    for lab, f in extra:
+        h += f'<div class="glr glx"><span class="gld">{lab}</span>' + ''.join(f'<span class="glc">{E(f(s))}</span>' for s in scens) + '</div>'
+    return h + '</div>'
+
+def tabs(scens, part):
+    return (f'<nav class="stabs" aria-label="{part} scenarios"><div role="tablist" style="--n:{len(scens)}">'
+            + ''.join(f'<button type="button" role="tab" id="t-{s["id"]}" aria-controls="{s["id"]}" aria-selected="{"true" if n == 0 else "false"}" data-s="{s["id"]}"><b>{s["no"]}</b>{E(s["name"])}</button>' for n, s in enumerate(scens))
+            + '</div></nav>')
 
 def qa_html():
     blocks = ''.join(f'<li><b>{E(n)}</b><span><strong>{E(d)}.</strong> {E(t)}</span></li>' for n, d, t in BLOCKS)
@@ -296,6 +457,7 @@ def qa_html():
     <li><b>Wed 21, 10:00</b><span>Pick the scenario at Kyoto Station: straight to Osaka (1) or Nara then Higashiyama (2). Bags go to the hotel by delivery either way.</span></li>
     <li><b>Thu 22, 18:00</b><span>Go or stay. If staying, cancel the Mercure and the 13:13. If going, keep or move the 13:13 and cancel Saturday's Nozomi 16, unless JR has already suspended it.</span></li>
     <li><b>Thu 22, night</b><span>Last look at the forecast and JR Central. Move the Friday train earlier if needed.</span></li>
+    <li><b>Fri 23, night</b><span>The Hilton's call on the fireworks. Pick the Tokyo scenario and, for A or C, move teamLab to Saturday afternoon.</span></li>
    </ul>
   </article>
   <article>
@@ -352,16 +514,16 @@ EXTRA_CSS = '''<style>
 .tl li{display:grid;grid-template-columns:5.6rem minmax(0,1fr);gap:.7rem;padding:.5rem 0;border-top:1px solid var(--line)}
 .tl li b{font-variant-numeric:tabular-nums}
 .gl{margin-top:1rem;border:1.5px solid var(--ink);font-size:.82rem;line-height:1.3}
-.glh,.glr{display:grid;grid-template-columns:3.6rem repeat(2,minmax(0,1fr))}
+.glh,.glr{display:grid;grid-template-columns:3.6rem repeat(var(--n,2),minmax(0,1fr))}
 .glh a{display:grid;gap:.15rem;padding:.55rem .5rem;text-decoration:none;font-weight:600;border-left:1.5px solid var(--ink);background:var(--paper)}
 .glh a b{font:800 1.5rem/1 var(--display)}
 .glh a:hover{background:var(--ink);color:var(--paper)}
 .glr{border-top:1px solid var(--line)}
-.gld{padding:.5rem .4rem .5rem .5rem;font-weight:700}
+.gld{padding:.5rem .4rem .5rem .5rem;font-weight:700;overflow-wrap:anywhere;min-width:0}
 .glc{padding:.5rem;border-left:1.5px solid var(--ink);min-width:0}
 .glx{border-top:1.5px solid var(--ink);font-weight:600}
 .stabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--paper);border-bottom:1.5px solid var(--ink);margin-top:2.4rem}
-.stabs div{max-width:52rem;margin:0 auto;padding:.5rem 1.1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+.stabs div{max-width:52rem;margin:0 auto;padding:.5rem 1.1rem;display:grid;grid-template-columns:repeat(var(--n,2),minmax(0,1fr));gap:4px}
 .stabs button{appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);padding:.45rem .5rem .5rem;text-align:left;cursor:pointer;font:600 .78rem/1.2 var(--body);display:grid;gap:.1rem;min-width:0}
 .stabs button b{font:800 1.05rem/1.1 var(--display)}
 .stabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
@@ -379,7 +541,18 @@ EXTRA_CSS = '''<style>
 .train{border-style:dashed!important}
 .end{margin:3rem 0 3.5rem;font-size:.82rem;color:var(--mute)}
 .lnk{font-size:.86rem;margin-top:.5rem}
-@media (min-width:640px){.sitin{padding:1.2rem 1.5rem}.glh,.glr{grid-template-columns:5rem repeat(2,minmax(0,1fr))}.stabs button{font-size:.86rem}.sbox{padding:1.3rem 1.5rem 1.4rem}}
+.part{margin-top:3.4rem}
+.parth{padding-top:1rem;border-top:3px solid var(--ink)}
+.parth .eyebrow{margin-bottom:.4rem}
+.parth h2{font:800 clamp(2rem,8vw,3rem)/1 var(--display);letter-spacing:-.03em;text-wrap:balance}
+.parth p.sum{max-width:40rem}
+.part .stabs{margin-top:1.6rem}
+.gtitle{font:700 1.15rem/1.2 var(--display);margin-top:2.2rem}
+.save{margin-top:2.6rem;border:3px solid var(--ink);padding:1.1rem 1rem 1.2rem;display:grid;gap:.6rem}
+.save h3{font:800 1.6rem/1.1 var(--display);letter-spacing:-.02em}
+.save h4{font:700 1.05rem/1.2 var(--display);margin-top:.6rem}
+.save p{color:var(--mute);font-size:.94rem;max-width:42rem}
+@media (min-width:640px){.sitin{padding:1.2rem 1.5rem}.glh,.glr{grid-template-columns:5rem repeat(var(--n,2),minmax(0,1fr))}.stabs button{font-size:.86rem}.sbox{padding:1.3rem 1.5rem 1.4rem}}
 </style>'''
 
 SHEET = master[master.find('<aside class="sheet"'):master.find('</aside>', master.find('<aside class="sheet"')) + 8]
@@ -389,7 +562,7 @@ body = f'''
 <header class="wrap tb-cover">
  <div class="band" aria-hidden="true"><i class="pat pat-k"></i><i class="pat pat-g"></i></div>
  <h1>Kyoto &amp; Tokyo<span>Typhoon Backup</span></h1>
- <p class="tb-sub">If a typhoon threatens Saturday 24, you travel to Tokyo on Friday 23 instead, sleep at the {L("mercure", "Mercure Tokyo Hibiya")} and give up the last Kyoto night. Two ways to run Wednesday 21 to Saturday 24, both on the 13:13 Nozomi on Friday. Separate from the Master Itinerary, which stays as it is.</p>
+ <p class="tb-sub">If a typhoon threatens Saturday 24, you travel to Tokyo on Friday 23 instead, sleep at the {L("mercure", "Mercure Tokyo Hibiya")} and give up the last Kyoto night. Part 1 is Kyoto, Wednesday 21 to Friday 23, in two scenarios, both on the 13:13 Nozomi on Friday. Part 2 is Tokyo, from Friday afternoon to Monday 26, in three. Separate from the Master Itinerary, which stays as it is.</p>
  <p class="draft">Draft, Thu 15 October 2026</p>
 
  <section class="sit" aria-labelledby="sith">
@@ -401,22 +574,38 @@ body = f'''
     <li><b>Thu 22</b><span><strong>The dry day.</strong> Kyoto 20%, Osaka 40%, no measurable rain.</span></li>
     <li><b>Fri 23</b><span>Kyoto rain from early morning: about 17 mm on tenki.jp, up to 84 mm on one model. Tokyo about 41 mm.</span></li>
     <li><b>Sat 24</b><span>Tokyo heavy rain all day, about 81 mm, possibly Typhoon No. 30. Kyoto dry in the morning. The track firms up from about Mon 19.</span></li>
+    <li><b>Sun 25</b><span>Tokyo cloudy, 30 to 40%, no measurable rain yet.</span></li>
+    <li><b>Mon 26</b><span>Tokyo sun with a passing shower, 30 to 50%.</span></li>
    </ul>
    <p class="lnk">From the Trip Weather check, Thu 15 Oct, 07:50. <a href="https://thestartupstudiodeveloper.github.io/japan-trip/weather/">Open Trip Weather</a></p>
   </div>
  </section>
 
- <h2 class="sec">At a glance</h2>
- {glance()}
-</header>
+ </header>
 
-<nav class="stabs" aria-label="Scenarios"><div role="tablist">
- {''.join(f'<button type="button" role="tab" id="t-{s["id"]}" aria-controls="{s["id"]}" aria-selected="{"true" if n == 0 else "false"}" data-s="{s["id"]}"><b>{s["no"]}</b>{E(s["name"])}</button>' for n, s in enumerate(SCEN))}
-</div></nav>
+<section class="part" aria-labelledby="p1h">
+ <div class="wrap parth"><p class="eyebrow">Part 1</p><h2 id="p1h">Kyoto, Wed 21 to Fri 23</h2>
+  <p class="sum">Two ways to run the shortened Kyoto leg. Both end on the 13:13 Nozomi on Friday.</p>
+  {glance(SCEN, ['Wed 21', 'Thu 22', 'Fri 23'], [('Gion dinner', lambda s: s['dinner'])])}
+ </div>
+ {tabs(SCEN, 'Kyoto')}
+ <div class="wrap">{''.join(panel(s, n == 0) for n, s in enumerate(SCEN))}</div>
+</section>
+
+<section class="part" aria-labelledby="p2h">
+ <div class="wrap parth"><p class="eyebrow">Part 2</p><h2 id="p2h">Tokyo, Fri 23 to Mon 26</h2>
+  <p class="sum">One night at the Mercure, then three nights at the Blossom as booked. Friday is the same in every scenario. Pick Saturday to Monday on Friday night, once the Hilton has called the fireworks.</p>
+  {fri_tokyo()}
+  <h3 class="gtitle">Saturday to Monday at a glance</h3>
+  {glance(TOKYO, ['Sat 24', 'Sun 25', 'Mon 26'], [('teamLab', lambda s: 'Mon 26, as booked' if s['id'] == 't2' else 'Moves to Sat 24')])}
+ </div>
+ {tabs(TOKYO, 'Tokyo')}
+ <div class="wrap">{''.join(panel(s, n == 0) for n, s in enumerate(TOKYO))}
+  {save_html()}
+ </div>
+</section>
 
 <div class="wrap">
- {''.join(panel(s, n == 0) for n, s in enumerate(SCEN))}
-
  {qa_html()}
  <p class="end">Kyoto &amp; Tokyo Typhoon Backup. Draft, 15 October 2026. Times are targets, not commitments, unless marked booked.</p>
 </div>
@@ -443,18 +632,19 @@ SCRIPT = '''<script>
  });
  document.addEventListener('keydown',function(e){if(e.key==='Escape')shut()});
 
- var KEY='jhk-typhoon-tab',tabs=[].slice.call(document.querySelectorAll('.stabs button')),panels=[].slice.call(document.querySelectorAll('.scen'));
+ var KEY='jhk-typhoon-tab-';
  function show(id,scroll){
-  if(!document.getElementById(id))return;
-  tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.s===id?'true':'false')});
-  panels.forEach(function(p){p.hidden=p.dataset.s!==id});
-  try{localStorage.setItem(KEY,id)}catch(e){}
-  if(scroll){var nav=document.querySelector('.stabs');window.scrollTo({top:nav.getBoundingClientRect().top+scrollY-(parseFloat(getComputedStyle(nav).top)||0),behavior:'smooth'})}
+  var p=document.getElementById(id); if(!p||!p.classList.contains('scen'))return;
+  var part=p.closest('.part'); if(!part)return;
+  part.querySelectorAll('.stabs button').forEach(function(t){t.setAttribute('aria-selected',t.dataset.s===id?'true':'false')});
+  part.querySelectorAll('.scen').forEach(function(x){x.hidden=x.dataset.s!==id});
+  try{localStorage.setItem(KEY+part.getAttribute('aria-labelledby'),id)}catch(e){}
+  if(scroll){var nav=part.querySelector('.stabs');nav.style.position='static';var y=nav.getBoundingClientRect().top+scrollY;nav.style.position='';window.scrollTo({top:y-(parseFloat(getComputedStyle(nav).top)||0),behavior:'smooth'})}
  }
- tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.s,true)})});
+ document.querySelectorAll('.stabs button').forEach(function(t){t.addEventListener('click',function(){show(t.dataset.s,true)})});
  document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();show(a.dataset.go,true)})});
- var h=(location.hash||'').slice(1),saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
- if(/^s[12]$/.test(h))show(h,false);else if(saved)show(saved,false);
+ document.querySelectorAll('.part').forEach(function(part){var v=null;try{v=localStorage.getItem(KEY+part.getAttribute('aria-labelledby'))}catch(e){}if(v)show(v,false)});
+ var h=(location.hash||'').slice(1); if(/^(s[12]|t[123])$/.test(h))show(h,false);
 })();
 </script>''' % json.dumps(used_P, ensure_ascii=False).replace('</', '<\\/')
 
@@ -467,7 +657,7 @@ page = ('<!doctype html>\n<html lang="en-AU">\n<head>\n<meta charset="utf-8">\n'
         + STYLES + EXTRA_CSS + '\n</head>\n<body>' + body + SHEET + SCRIPT + '\n</body>\n</html>\n')
 
 for bad in ['—', '--']:
-    txt = re.sub(r'<style>.*?</style>|<script>.*?</script>', '', body, flags=re.S)
+    txt = re.sub(r'<[^>]+>', '', re.sub(r'<style>.*?</style>|<script>.*?</script>', '', body, flags=re.S))
     if bad in txt:
         sys.exit('Found a dash: ' + bad)
 
