@@ -4,6 +4,13 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+J&HK Map View, new app, 15 October
+- New separate app, Map Itinerary (home screen name "J&HK Map View"), at /map/ and on claude.ai. The Itinerary, Extras, Weather and Expenses are unchanged.
+- One map per day, 16 to 30 October, built from the Master Itinerary's own day plans and place cards, so it follows any change made to the master on the next build. Days that cross cities get a map per area (for example Kyoto and Nara on Wed 21).
+- Hand-drawn base maps: main and smaller streets, rail and metro lines, rivers, harbours, parks, stations and landmarks. Pinch, drag or + and - to zoom; smaller streets and landmark names appear as you zoom in.
+- Every row from the day plan is listed with its place links and cards. Numbered stops match the pins; tap a number to find it on the map, or a pin to find the row. Walk or Route from the last stop, and Pin in Maps, open Google Maps.
+- Works offline once saved, apart from the Google Maps links. Sources in source/mapview (map_build.py, geo.py).
+
 Osaka Castle moat view, 15 October
 - Thu 22 08:30: the walk in now goes by Aoya-mon gate to Gokuraku-bashi for the view of the tower over the inner moat walls, then on to the foot of the tower. New Gokuraku-bashi card.
 
