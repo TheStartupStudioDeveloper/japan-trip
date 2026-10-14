@@ -1189,6 +1189,13 @@
    "w": "A themed course restaurant, once Ninja Akasaka, now in the basement of the Shin-Otemachi Building by Tokyo Station. A ninja leads you through a hidden door and a cave-like maze to tables in a dim ninja village with a pond, and performs tricks between courses.",
    "t": "Lunch 11:30 to 14:30, dinner 17:00 to 22:00, closed Sundays and Mondays (check on TableCheck). Hanzō course ¥13,200, Bansenshukai ¥19,800, both with a beef steak and seafood. Book ahead.",
    "m": "Ninja Tokyo restaurant Otemachi"
+  },
+  "mercure-hibiya": {
+   "n": "Mercure Tokyo Hibiya",
+   "l": "メルキュール東京日比谷",
+   "w": "A business hotel a few minutes from the Blossom Hibiya. Booked as a weather backup: a King Privilege Room for Fri 23 to Sat 24, in case a typhoon stops the Shinkansen on Sat 24 and you travel up from Kyoto a day early.",
+   "t": "Check-in 14:00, check-out 11:00. Booked direct on the Mercure website. Free cancellation until 18:00 Japan time on Thu 22. Cancel it if not needed.",
+   "m": "Mercure Tokyo Hibiya"
   }
  },
  "areas": [
@@ -2121,6 +2128,17 @@
    ],
    "items": [
     {
+     "group": "Weather backup",
+     "key": "mercure-hibiya",
+     "time": "1 night",
+     "one": "Backup night in Tokyo if the typhoon threatens Sat 24",
+     "fits": "Only if the Sat 24 Nozomi looks at risk: Nozomi to Tokyo on Fri 23, stay here, then move to the Blossom Hibiya nearby on Sat 24. Check-in 14:00, check-out 11:00. Cancel on the Mercure website by 18:00 Japan time on Thu 22 if not needed.",
+     "tags": [
+      "Booked",
+      "Cancel by Thu 22 18:00"
+     ]
+    },
+    {
      "group": "Eat",
      "key": "arabica-arashiyama",
      "time": "20 min",
@@ -2430,7 +2448,7 @@
      ]
     }
    ],
-   "notes": "Book the Fri 23 Gion dinner this week: Endo Yasaka on TableCheck is the strongest pick, Nakatani is the cheaper kaiseki (closed Sundays only). Menami is closed Wednesdays, so it only fits if you swap the two dinners. Daiichi Asahi is closed Thursdays, no clash. Bee's Knees is closed Sundays, Kagizen Mondays, no clash. Jidai Matsuri, Kyoto's big costume parade, is on Thu 22 from about 12:00 (Imperial Palace to Heian Shrine), and the Kurama Fire Festival is that night: no clash while you are in Osaka, but if you swap Thursday and Friday, expect crowds and road closures in the centre. Hours for eX café, Yudofu Sagano, Sake Bar Yoramu, K36 and the temples were not all confirmed for 2026: check Google Maps the day before."
+   "notes": "Weather backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24. CANCEL on the Mercure website by 18:00 Japan time on Thu 22 if not needed (free until then). Book the Fri 23 Gion dinner this week: Endo Yasaka on TableCheck is the strongest pick, Nakatani is the cheaper kaiseki (closed Sundays only). Menami is closed Wednesdays, so it only fits if you swap the two dinners. Daiichi Asahi is closed Thursdays, no clash. Bee's Knees is closed Sundays, Kagizen Mondays, no clash. Jidai Matsuri, Kyoto's big costume parade, is on Thu 22 from about 12:00 (Imperial Palace to Heian Shrine), and the Kurama Fire Festival is that night: no clash while you are in Osaka, but if you swap Thursday and Friday, expect crowds and road closures in the centre. Hours for eX café, Yudofu Sagano, Sake Bar Yoramu, K36 and the temples were not all confirmed for 2026: check Google Maps the day before."
   },
   {
    "key": "nara",
@@ -3290,7 +3308,7 @@
      "tags": []
     }
    ],
-   "notes": "Kabuki-za's October run ends on 20 October, so there is no kabuki on your Ginza days. Star Bar is closed on Mondays and Bar High Five on Sundays: one each night. Book Tempura Yamanoue (TableCheck) or the Sushi Bus (sushi-bus.com) this week if you want either for Sun 25. Tonton and Monja Kondo hours come from older listings, so check Google Maps on the day. The Unicorn Gundam at DiverCity Odaiba came down at the end of August 2026."
+   "notes": "Weather backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24. CANCEL on the Mercure website by 18:00 Japan time on Thu 22 if not needed (free until then). Kabuki-za's October run ends on 20 October, so there is no kabuki on your Ginza days. Star Bar is closed on Mondays and Bar High Five on Sundays: one each night. Book Tempura Yamanoue (TableCheck) or the Sushi Bus (sushi-bus.com) this week if you want either for Sun 25. Tonton and Monja Kondo hours come from older listings, so check Google Maps on the day. The Unicorn Gundam at DiverCity Odaiba came down at the end of August 2026."
   },
   {
    "key": "japan",

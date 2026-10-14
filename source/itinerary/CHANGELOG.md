@@ -4,6 +4,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Weather backup hotel, 15 October
+- Booked as a backup only: Mercure Tokyo Hibiya, King Privilege Room, Fri 23 to Sat 24 (check-in 14:00, check-out 11:00), direct on the Mercure website, in case a typhoon stops the Sat 24 Shinkansen and you go to Tokyo a day early. Free cancellation until 18:00 Japan time on Thu 22.
+- J&HK Weather: a boxed note under Typhoons with the backup and the cancel deadline.
+- J&HK Extras: Kyoto and Ginza notes lead with the cancel deadline; new Weather backup entry under Kyoto with a bold "Cancel by Thu 22 18:00" tag; new card.
+- The Master Itinerary is unchanged.
+
 J&HK Maps: cover page and new name, 15 October
 - The map app is now called J&HK Maps on the home screen (icon reads Maps) and opens on a cover page instead of Sat 17.
 - Cover: a map for each of the four legs with the main places numbered (tap a number or name to open that day), city and area names, the hotel, and the list of days in each leg.

@@ -34,7 +34,7 @@ def hl(t):
     return re.sub(r'How-to (\d+)', lambda m: f'<a class="hl" href="{MASTER_URL}#h{m.group(1)}">How-to {m.group(1)} in the itinerary</a>', t)
 
 def tag(x):
-    cls = ' tag-b' if x == 'Book now' else ' tag-tb' if x == 'Book' else ''
+    cls = ' tag-b' if x == 'Book now' or x.startswith('Cancel') else ' tag-tb' if x == 'Book' else ''
     return f'<span class="tag{cls}">{H.escape(x)}</span>'
 
 dropped, areas_html, counts = [], [], {}
