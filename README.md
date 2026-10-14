@@ -6,6 +6,7 @@ Four home-screen web apps, published with GitHub Pages:
 - Trip Weather: https://thestartupstudiodeveloper.github.io/japan-trip/weather/
 - Trip Expenses: https://thestartupstudiodeveloper.github.io/japan-trip/expenses/
 - J&HK Extras: https://thestartupstudiodeveloper.github.io/japan-trip/extras/
+- Kyoto & Tokyo Typhoon Backup (separate plan, not part of the master): https://thestartupstudiodeveloper.github.io/japan-trip/typhoon/
 
 The same pages are also published on claude.ai. Every update goes to both.
 
@@ -17,6 +18,8 @@ The same pages are also published on claude.ai. Every update goes to both.
 - `source/expenses/`: `expenses_build.py` builds the expenses page from `source/itinerary/expenses.json`; run it from a folder laid out like `source/itinerary` with the script in an `expenses/` subfolder. `trip-expenses.html` is the claude.ai copy.
 - `extras/`: the J&HK Extras web app, the up our sleeve list of things not in the day plans (built, do not edit by hand).
 - `source/extras/`: `extras.json` holds the areas, items and Extras-only place cards; `extras_build.py` builds the page and web app, reading the itinerary build for styles and cards and dropping any place already scheduled in a day plan. Run it from an `extras/` subfolder of a folder laid out like `source/itinerary`. `jhk-extras.html` is the claude.ai copy.
+- `typhoon/`: the Kyoto & Tokyo Typhoon Backup page (built, do not edit by hand). Claude.ai copy: https://claude.ai/artifact/TfoGk1zrgvsRvQBcUbXse4
+- `source/typhoon/`: `python3 source/typhoon/typhoon_build.py` from the repo root builds `typhoon/index.html` and `typhoon-backup.html` (the claude.ai copy), borrowing the master's styles and place cards. Never changes the master.
 - `source/weather/`: `weather.html` is the Trip Weather page as published on claude.ai; `python3 weather_site.py weather.html <repo dir>` writes `weather/`.
 
 ## Rules carried over
