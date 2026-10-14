@@ -7,6 +7,8 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 REPO = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/japan-trip'
 sys.path[:0] = [HERE, os.path.join(REPO, 'source'), ROOT]
 import apptools, geo
+from routes import ROUTES
+from urllib.parse import quote as _q
 MASTER_URL = 'https://thestartupstudiodeveloper.github.io/japan-trip/'
 OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png']
 master = open(os.path.join(ROOT, 'out', 'japan-hong-kong-final-itinerary.html'), encoding='utf-8').read()
@@ -157,8 +159,13 @@ def panel_svg(day, idx, pn, title=None, pkind='area', areas=None):
         ang = c * 1.1; dx, dy = (math.cos(ang) * 26 * (c > 0), math.sin(ang) * 26 * (c > 0))
         o.append(f'<g class="pin sc{" opt" if r["opt"] else ""}" data-n="{r["num"]}" data-x="{x + dx:.1f}" data-y="{y + dy:.1f}" tabindex="0" role="button" aria-label="Stop {r["num"]}: {H.escape(r["txt"])}"><circle r="13"/><text y="4.5" text-anchor="middle">{r["num"]}</text></g>')
     o.append('</svg>')
-    gl = gm_links(day, [i for i in pn if not day['rows'][i]['opt']], 'Whole day')
-    if len(areas) > 1:
+    if day['d'] in ROUTES:
+        gl = '<p class="glinks gnamed">' + ''.join(
+            f'<a href="https://www.google.com/maps/dir/?api=1&origin={_q(o)}&destination={_q(d)}' + (f'&waypoints={_q("|".join(w))}' if w else '') + f'&travelmode={m}" target="_blank" rel="noopener">Google Maps: {H.escape(lbl)}</a>'
+            for lbl, o, d, w, m in ROUTES[day['d']]) + '</p><p class="gnote">Opens in the Google Maps app with every stop as a named place. Train legs have their own link.</p>'
+    else:
+        gl = gm_links(day, [i for i in pn if not day['rows'][i]['opt']], 'Whole day')
+    if len(areas) > 1 and day['d'] not in ROUTES:
         gl += ''.join(gm_links(day, [i for i in a if not day['rows'][i]['opt']], 'These stops', v[0]) for a, v in zip(areas, views) if v[2] >= 2)
     btns = ''.join(f'<button type="button" class="ab" data-v="{v[1]}"{" aria-pressed=true" if v is first else ""}>{H.escape(v[0])}</button>' for v in views) if len(views) > 1 else ''
     return f'<div class="mp"><div class="mhead"><b>Map</b><span class="abs">{btns}<button type="button" class="ab" data-v="0 0 {W} {Hh}">Zoom out to the whole day</button></span></div><div class="mwin">{"".join(o)}<div class="zoom"><button type="button" class="zin" aria-label="Zoom in">+</button><button type="button" class="zout" aria-label="Zoom out">−</button><button type="button" class="zfit" aria-label="Back to the start view">⤢</button></div><div class="north" aria-hidden="true">▲<br>N</div><div class="scale" aria-hidden="true"><i></i><span>500 m · 7 min</span></div></div>{gl}</div>'
@@ -288,6 +295,7 @@ body{overflow-x:hidden}
 .z0 .sl,.z0 .stl,.z0 .ll{display:none}.z0 .al{opacity:.8}
 .mhead{flex-wrap:wrap;gap:.4rem}.abs{display:flex;flex-wrap:wrap;gap:.3rem}.ab{appearance:none;border:1.2px solid var(--ink);background:var(--paper);color:var(--ink);font:600 .74rem/1 "Instrument","Helvetica Neue",Arial,sans-serif;padding:.35rem .5rem;cursor:pointer}.ab[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .glinks{display:flex;flex-wrap:wrap;gap:.35rem;margin:.45rem 0 0}.glinks a{font-size:.78rem;font-weight:600;color:var(--paper);background:var(--ink);text-decoration:none;padding:.4rem .6rem}
+.gnote{font-size:.76rem;color:var(--mute);margin:.3rem 0 0}
 .nomap{font-size:.86rem;color:var(--mute);border-left:3px solid var(--ink);padding-left:.7rem;margin:.6rem 0 1rem}
 .mfoot{font-size:.78rem;color:var(--mute);border-top:1px solid var(--line,#ccc);padding-top:.8rem;margin-top:2rem}
 .jt-bar{max-width:52rem}

@@ -4,6 +4,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Map View: named-place Google Maps routes, Sat 17, 15 October
+- Sat 17 now has two Google Maps links under the map, using place names so each stop opens as the real place: Narita Airport Terminal 2 to Shibuya Station by train, and the Shibuya walking day with all 10 stops in order. Other days keep the coordinate links until their named routes are made. Routes live in source/mapview/routes.py.
+
 Ninja Tokyo off Sat 17; Map View one map per day, 15 October
 - Itinerary: the optional Ninja Tokyo dinner is out of Sat 17, so day one stays in Shibuya. The checklist line goes back to Sushi Hatsume only, and the Itinerary Summary Sat 17 evening reads "dinner nearby". The card stays.
 - J&HK Extras, Shibuya: Ninja Tokyo stays as an idea, with how to get there (Hibiya and Chiyoda lines from Tsukiji, or the Hanzōmon line from Shibuya, to Ōtemachi) and Tue 20 lunch as the best fit.
