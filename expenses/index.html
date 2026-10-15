@@ -305,7 +305,7 @@ h1 span{display:block;font-weight:300}
  .slf{grid-template-columns:1fr;gap:4mm;margin:1.6mm 3.5mm 2mm;font-size:7.6pt;line-height:1.25}.slf h4{font-size:5.8pt;margin-bottom:.3mm}.slf li{margin-top:.15mm}
  .bk{gap:.8mm}.bk .tag{font-size:6pt;padding:.4mm 1mm}
 }
-.costs{margin-top:0}header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bottom:1.6rem}.exband i{flex:1}.rules{margin-top:2rem;border:1.5px solid var(--ink);padding:1rem;display:grid;gap:.45rem;font-size:.92rem}.rules h4{font:700 1.1rem/1.2 var(--display)}.rules li{padding-left:1.1rem;position:relative}.rules li::before{content:"";position:absolute;left:0;top:.55em;width:.45rem;height:.45rem;background:var(--ink)}</style>
+.hl{color:inherit;text-decoration:none;border-bottom:1.5px solid var(--ink);white-space:nowrap}.hl:hover{background:var(--ink);color:var(--paper)}@media print{.hl{border:0}}@keyframes hflash{0%{box-shadow:0 0 0 4px var(--ink)}100%{box-shadow:0 0 0 0 transparent}}.hflash{animation:hflash 1.6s ease-out}.costs{margin-top:0}header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bottom:1.6rem}.exband i{flex:1}.rules{margin-top:2rem;border:1.5px solid var(--ink);padding:1rem;display:grid;gap:.45rem;font-size:.92rem}.rules h4{font:700 1.1rem/1.2 var(--display)}.rules li{padding-left:1.1rem;position:relative}.rules li::before{content:"";position:absolute;left:0;top:.55em;width:.45rem;height:.45rem;background:var(--ink)}</style>
 </head>
 <body>
 <style>
@@ -317,7 +317,7 @@ h1 span{display:block;font-weight:300}
 .jt-bar button[disabled]{opacity:.55;cursor:default}
 .jt-bar .jt-off[hidden]{display:none}
 @media print{.jt-bar{display:none!important}}
-</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-dl" href="https://thestartupstudiodeveloper.github.io/japan-trip/expenses/JHK-Expenses.pdf" data-pdf="JHK-Expenses.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <header class="wrap cover"><div class="exband" aria-hidden="true"><i class="pat pat-s"></i><i class="pat pat-k"></i><i class="pat pat-g"></i><i class="pat pat-h"></i></div>
 <h1>Trip Expenses <span>Japan &amp; Hong Kong</span></h1>
 <p class="sub">Shared costs for G and Cynthia, 16 to 31 October 2026. Updated by Claude as you go.</p></header>
@@ -361,11 +361,12 @@ h1 span{display:block;font-weight:300}
 <script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
 <script>
 (function(){
- var BASE="https://thestartupstudiodeveloper.github.io/japan-trip/expenses/",KEY="jt-off-expenses",FILES=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "JHK-Expenses.pdf"],LABEL="Expenses";
+ var BASE="https://thestartupstudiodeveloper.github.io/japan-trip/expenses/",KEY="jt-off-expenses",FILES=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"],LABEL="Expenses";
  var bar=document.querySelector('.jt-bar'); if(!bar) return;
  var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
  var here=/github\.io$/.test(location.hostname);
- if(here){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
+ if(here&&dl){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
+ if(!btn)return;
  if(!here||!('caches' in window)){btn.hidden=true;return}
  function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
  function put(v){try{localStorage.setItem(KEY,v)}catch(e){}}
@@ -378,6 +379,36 @@ h1 span{display:block;font-weight:300}
    .then(function(){var n=Date.now();put(n);st.textContent=LABEL+' saved for offline, '+fmt(n)+'. Tap again to refresh.'})
    .catch(function(){st.textContent='Could not save everything. Check the connection and try again.'})
    .then(function(){btn.disabled=false});
+ });
+})();
+</script>
+<script id="jt-fast">
+(function(){
+ // Fast smooth scroll for in-page links (under half a second, any distance). Instant with reduced motion.
+ if(window.__jtFast) return; window.__jtFast=1;
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, run=0;
+ function go(t,flash){
+  var root=document.documentElement, cs=getComputedStyle(t);
+  var pad=(parseFloat(getComputedStyle(root).scrollPaddingTop)||0)+(parseFloat(cs.scrollMarginTop)||0);
+  var y0=scrollY, y1=Math.max(0,Math.min(t.getBoundingClientRect().top+scrollY-pad,document.documentElement.scrollHeight-innerHeight)), d=y1-y0;
+  var dur=reduce?0:Math.min(480,220+Math.abs(d)/40), t0=null, id=++run;
+  root.style.scrollBehavior='auto';
+  function step(ts){
+   if(id!==run) return;
+   if(t0===null) t0=ts;
+   var p=dur?Math.min(1,(ts-t0)/dur):1, e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+   scrollTo(0,y0+d*e);
+   if(p<1) requestAnimationFrame(step); else { root.style.scrollBehavior=''; if(flash){t.classList.remove('hflash');void t.offsetWidth;t.classList.add('hflash')} }
+  }
+  requestAnimationFrame(step);
+ }
+ document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]'); if(!a||a.classList.contains('pl')) return;
+  var h=a.getAttribute('href'); if(h.length<2) return;
+  var t=document.getElementById(decodeURIComponent(h.slice(1))); if(!t) return;
+  e.preventDefault();
+  try{history.pushState(null,'',h)}catch(x){}
+  go(t, a.classList.contains('hl'));
  });
 })();
 </script>

@@ -4,6 +4,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses online only, 16 October
+- J&HK Expenses: the Download PDF button is removed and the expenses PDF is no longer built, so updates go online only (claude.ai page and GitHub web app). Save offline stays. expenses/JHK-Expenses.pdf is removed from the site; it can be brought back by setting PDF in source/expenses/expenses_build.py.
+- source/apptools.py: the Download PDF button is now optional (pdf=None leaves it out). The other apps are unchanged.
+- Figures unchanged: G AU$4,290.00, Cynthia AU$4,025.90, Cynthia owes G AU$132.05.
+
 Checklist: cancel the backup hotel, 15 October
 - Decide with the Tokyo forecast: "Thu 22 by 18:00: cancel the Mercure Tokyo Hibiya backup night unless going to Tokyo on Fri 23". The two Sheraton desk lines merged so the PDF stays at 26 pages.
 

@@ -7,8 +7,8 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 REPO = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/japan-trip'
 sys.path[:0] = [os.path.join(REPO, 'source'), ROOT]
 import apptools
-PDF = 'JHK-Expenses.pdf'
-OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', PDF]
+PDF = None  # online only for now; set to 'JHK-Expenses.pdf' to bring the PDF back
+OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'] + ([PDF] if PDF else [])
 data = json.load(open(os.path.join(ROOT, 'expenses.json'), encoding='utf-8'))
 master = open(os.path.join(ROOT, 'out', 'japan-hong-kong-final-itinerary.html'), encoding='utf-8').read()
 style = re.search(r'<style>(.*?)</style>', master, re.S).group(1)
@@ -55,8 +55,9 @@ json.dump({"name": "Japan & Hong Kong Trip Expenses", "short_name": "J&HK Expens
            "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]},
           open(os.path.join(DST, 'manifest.webmanifest'), 'w'), indent=1)
 open(os.path.join(DST, 'sw.js'), 'w').write(apptools.sw('ex-' + ver, OFF))
-apptools.render_pdf(os.path.join(HERE, 'out', 'trip-expenses.html'), os.path.join(HERE, 'out', PDF), 'J&HK Expenses')
-shutil.copy(os.path.join(HERE, 'out', PDF), os.path.join(DST, PDF))
+if PDF:
+    apptools.render_pdf(os.path.join(HERE, 'out', 'trip-expenses.html'), os.path.join(HERE, 'out', PDF), 'J&HK Expenses')
+    shutil.copy(os.path.join(HERE, 'out', PDF), os.path.join(DST, PDF))
 fonts = ''.join(re.findall(r'@font-face\s*\{.*?\}', style, flags=re.S))
 ic = f'''<!doctype html><html><head><meta charset="utf-8"><style>{fonts}
 html,body{{margin:0}}

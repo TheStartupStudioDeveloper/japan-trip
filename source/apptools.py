@@ -20,7 +20,7 @@ ICON_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1
 
 
 def bar(app, pdf, files, label):
-    """app: folder under BASE ('' for the itinerary), pdf: file name, files: list of paths to save offline
+    """app: folder under BASE ('' for the itinerary), pdf: file name (None for no Download PDF button), files: list of paths to save offline
     (relative to the app folder), label: name used in the status line."""
     url = BASE + (app + '/' if app else '')
     key = 'jt-off-' + (app or 'itinerary')
@@ -30,7 +30,7 @@ def bar(app, pdf, files, label):
  var bar=document.querySelector('.jt-bar'); if(!bar) return;
  var dl=bar.querySelector('.jt-dl'), btn=bar.querySelector('.jt-off'), st=bar.querySelector('.jt-st');
  var here=/github\\.io$/.test(location.hostname);
- if(here){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
+ if(here&&dl){dl.href=dl.getAttribute('data-pdf');dl.setAttribute('download','');dl.removeAttribute('target');}
  if(!btn)return;
  if(!here||!('caches' in window)){btn.hidden=true;return}
  function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
@@ -48,7 +48,7 @@ def bar(app, pdf, files, label):
 })();
 </script>''' % tuple(map(lambda v: _json(v), (url, key, files, label)))
     return (CSS + f'<div class="jt-bar" role="toolbar" aria-label="Download and offline">'
-            f'<a class="jt-dl" href="{_H.escape(url + pdf)}" data-pdf="{_H.escape(pdf)}" target="_blank" rel="noopener">{ICON_DL}Download PDF</a>'
+            + (f'<a class="jt-dl" href="{_H.escape(url + pdf)}" data-pdf="{_H.escape(pdf)}" target="_blank" rel="noopener">{ICON_DL}Download PDF</a>' if pdf else '') +
             f'<button type="button" class="jt-off">{ICON_OFF}Save offline</button><span class="jt-st" aria-live="polite"></span></div>'), js
 
 
