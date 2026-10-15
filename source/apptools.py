@@ -48,10 +48,6 @@ def bar(app, pdf, files, label):
 })();
 </script>''' % tuple(map(lambda v: _json(v), (url, key, files, label)))
     return (CSS + f'<div class="jt-bar" role="toolbar" aria-label="Download and offline">'
-<<<<<<< Updated upstream
-            + (f'<a class="jt-dl" href="{_H.escape(url + pdf)}" data-pdf="{_H.escape(pdf)}" target="_blank" rel="noopener">{ICON_DL}Download PDF</a>' if pdf else '') +
-=======
->>>>>>> Stashed changes
             f'<button type="button" class="jt-off">{ICON_OFF}Save offline</button><span class="jt-st" aria-live="polite"></span></div>'), js
 
 
