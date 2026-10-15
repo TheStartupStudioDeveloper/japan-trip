@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-16: Online only, PDFs paused
+- Removed the Download PDF button from every app (Itinerary, Extras, Maps, Weather, Expenses).
+- PDFs are no longer rebuilt or cached for offline; set JT_PDF=1 to render one again.
+
 ## Master Itinerary V2 (7 October 2026). Steady state
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.

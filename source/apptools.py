@@ -48,7 +48,10 @@ def bar(app, pdf, files, label):
 })();
 </script>''' % tuple(map(lambda v: _json(v), (url, key, files, label)))
     return (CSS + f'<div class="jt-bar" role="toolbar" aria-label="Download and offline">'
+<<<<<<< Updated upstream
             + (f'<a class="jt-dl" href="{_H.escape(url + pdf)}" data-pdf="{_H.escape(pdf)}" target="_blank" rel="noopener">{ICON_DL}Download PDF</a>' if pdf else '') +
+=======
+>>>>>>> Stashed changes
             f'<button type="button" class="jt-off">{ICON_OFF}Save offline</button><span class="jt-st" aria-live="polite"></span></div>'), js
 
 
@@ -90,7 +93,12 @@ FAST = """<script id="jt-fast">
 
 
 def inject(html, app, pdf, files, label):
+    # Online only for now: no Download PDF button, and PDFs are not cached for offline.
     import re
+    files = [f for f in files if not f.endswith('.pdf')]
+    html = re.sub(r'<a class="jt-dl".*?</a>', '', html, flags=re.S)
+    html = html.replace(" if(here){dl.href=", " if(here&&dl){dl.href=")
+    html = re.sub(r',\s*"[^"]+\.pdf"\]', ']', html)  # drop PDFs from older Save offline lists
     if 'class="jt-bar"' not in html:
         top, js = bar(app, pdf, files, label)
         html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + top, html, count=1)
@@ -101,6 +109,10 @@ def inject(html, app, pdf, files, label):
 
 
 def render_pdf(src_html_path, pdf_path, footer):
+    # PDFs are paused (online only). Set JT_PDF=1 to render them again.
+    import os
+    if os.environ.get('JT_PDF') != '1':
+        return
     from playwright.async_api import async_playwright
     async def go():
         async with async_playwright() as p:
@@ -117,6 +129,7 @@ def render_pdf(src_html_path, pdf_path, footer):
 def sw(prefix, files):
     """Service worker: network first, cached copy when offline. Keeps the Save offline cache and other apps' caches."""
     import json
+    files = [f for f in files if not f.endswith('.pdf')]
     return ("""// Network first, so updates show straight away; cached copy when offline.
 const C = '""" + prefix + """';
 const FILES = """ + json.dumps(files) + """;
