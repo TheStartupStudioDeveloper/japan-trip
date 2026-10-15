@@ -13,6 +13,14 @@ html = html.replace('<link rel="apple-touch-icon" href="../icon-180.png">\n<link
     '<meta name="apple-mobile-web-app-title" content="J&amp;HK Typhoon">\n<link rel="manifest" href="manifest.webmanifest">\n'
     '<link rel="apple-touch-icon" href="icon-180.png">\n<link rel="icon" type="image/png" href="icon-192.png">\n')
 assert 'manifest.webmanifest' in html
+# Save offline bar at the top, no PDF: reuse the shared bar and drop its Download PDF link.
+if 'class="jt-bar"' not in html:
+    import re as _re
+    top, js = apptools.bar('typhoon', 'none.pdf', OFF, 'Typhoon backup')
+    top = _re.sub(r'<a class="jt-dl".*?</a>', '', top, flags=_re.S)
+    js = js.replace("var dl=bar.querySelector('.jt-dl'),", "var dl=bar.querySelector('.jt-dl')||document.createElement('a'),")
+    html = _re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + top, html, count=1)
+    html = html.replace('</body>', js + '\n</body>', 1)
 html = html.replace('</body>', "<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script></body>", 1)
 open(p, 'w', encoding='utf-8').write(html)
 ver = hashlib.md5(html.encode()).hexdigest()[:10]
