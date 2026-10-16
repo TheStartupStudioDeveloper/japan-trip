@@ -8,6 +8,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 16 October
+- sequence KYOTO GOJO: paid by G, AU$991.34 (was AU$947.00 pending).
+- Hotel The Blossom Hibiya: paid by G, AU$2,045.99 (was AU$2,002.00 pending), with a note: free cancellation until 20 Oct.
+- No pending bookings left; the Sheraton late checkout is still an estimate.
+
 Expenses online only, 16 October
 - J&HK Expenses: the Download PDF button is removed and the expenses PDF is no longer built, so updates go online only (claude.ai page and GitHub web app). Save offline stays. expenses/JHK-Expenses.pdf is removed from the site; it can be brought back by setting PDF in source/expenses/expenses_build.py.
 - source/apptools.py: the Download PDF button is now optional (pdf=None leaves it out). The other apps are unchanged.
