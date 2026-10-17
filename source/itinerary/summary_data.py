@@ -5,12 +5,12 @@ LEGS = [
   days=[
    ('d16', 'Fri 16', [('', ''), ('CX104 15:25 from Melbourne', 'f'), ('Hong Kong stopover, CX524 01:20', 'f')]),
    ('d17', 'Sat 17', [('Land at Narita 06:50, N\'EX to Shibuya', 'f'), ('Miyashita Park, Cat Street, Omotesando', ''), ('Shibuya Sky 16:00, dinner nearby', 'f')]),
-   ('d18', 'Sun 18', [('Meiji Jingū, Harajuku', ''), ('Festival streets, Street Kart 16:00', 'f'), ('Shibuya dinner, or Sushi Hatsume', '')]),
-   ('d19', 'Mon 19', [('Omotesando vintage stores', ''), ('Lunch, rest at the hotel', ''), ('Shinjuku: Omoide Yokochō, Kabukichō, Golden Gai', '')]),
-   ('d20', 'Tue 20', [('Tsukiji breakfast', ''), ('Yokohama waterfront, free afternoon', ''), ('Chinatown dinner, pack', '')]),
+   ('d18', 'Sun 18', [('PATH breakfast, Meiji Jingū', ''), ('Vintage and Nintendo, Street Kart 16:00', 'f'), ('Ichiran ramen, foot massage', '')]),
+   ('d19', 'Mon 19', [('Tsukiji breakfast', ''), ('Yokohama waterfront, free afternoon', ''), ('Chinatown dinner', '')]),
+   ('d20', 'Tue 20', [('Omakase lunch, Shinjuku Gyoen', 'b'), ('Rest and pack', ''), ('Shinjuku: Omoide Yokochō, Kabukichō, Golden Gai', '')]),
   ],
-  shift=['Shibuya Sky has backup slots on Mon 19 and Tue 20 if Saturday is clouded out.', 'Kamakura can replace part of Tue 20.', 'Loosest blocks: Sat 17 afternoon and Mon 19 morning.'],
-  book=[], extras=[('shibuya', 'Shibuya'), ('shinjuku', 'Shinjuku'), ('yokohama', 'Yokohama'), ('japan', 'Japan other')]),
+  shift=['Yokohama moved to Mon 19 to break up the city days.', 'Kamakura can replace the Tsukiji morning on Mon 19.', 'Loosest block: Tue 20 morning.'],
+  book=['Omakase lunch, Tue 20'], extras=[('shibuya', 'Shibuya'), ('shinjuku', 'Shinjuku'), ('yokohama', 'Yokohama'), ('japan', 'Japan other')]),
  dict(pat='k', kanji='京都', name='Kyoto, Nara and Osaka', leg='Leg 2', dates='Wed 21 to Sat 24 Oct', nights='3 nights', hotel='seq-k', sun='Sunset 17:10',
   days=[
    ('d21', 'Wed 21', [('Nozomi 07:55 to Kyoto, bags to Crosta', 'f'), ('Nara: kamameshi lunch, deer, Tōdai-ji', ''), ('Check in, Pontochō dinner', '')]),

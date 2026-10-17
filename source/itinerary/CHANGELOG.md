@@ -1,5 +1,11 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: Sun 18 reworked, Yokohama moves to Mon 19
+- Steady snapshot saved first (scratchpad master_v2_steady_2026-10-18).
+- Sun 18: PATH breakfast, Yoyogi Park, Meiji Jingū, Takeshita Street, Cynthia's vintage afternoon, G's options (UNIQLO, H&M, ZARA, Nintendo Tokyo), back 14:20, Street Kart 16:00, Ichiran and a Mominotakumi foot massage.
+- Mon 19 is now Tsukiji and Yokohama. Tue 20: slow morning, Sushi Tokyo Ten omakase lunch, Shinjuku Gyoen, pack, Shinjuku after dark. Sumo show as an idea. Shibuya Sky tabs removed (done).
+- How-to 9 has checked Sunday store hours, How-to 10 is G's own afternoon, new How-to 25 Getting to Street Kart. New cards: PATH, Yoyogi Park, Ichiran, Mominotakumi, Nintendo Tokyo, UNIQLO and H&M Harajuku, Sushi Tokyo Ten.
+
 ## 2026-10-17: Sat 17 bags
 - 12:30 row now says you wheel the bags to the hotel yourselves from Shibuya Station. Lunch moves to 12:45.
 

@@ -636,6 +636,27 @@ P('magnet', ['MAGNET by SHIBUYA109 rooftop', 'MAGNET by SHIBUYA109'], 'MAGNET by
 P('s-yokocho', ['Shibuya Yokochō'], 'Shibuya Yokochō', '渋谷横丁',
   'A lane of small food stalls from all over Japan on the ground floor of Miyashita Park, right under the hotel. Casual, open all day and lively by evening.',
   'Easy first meal: no queue planning, no walking.', 'Shibuya Yokocho Miyashita Park')
+P('path-tomigaya', ['PATH, Tomigaya', 'Breakfast at PATH'], 'PATH', 'パス',
+  'A small Tomigaya bistro famous for its breakfast Dutch pancake, baked to order in a pan with cured ham, burrata and maple syrup. Coffee from Fuglen.',
+  'Opens 08:00. Sign the electronic waitlist outside on arrival. Sundays queue for hours by mid morning.', 'PATH 1-44-2 Tomigaya Shibuya')
+P('yoyogi', ['Yoyogi Park'], 'Yoyogi Park', '代々木公園',
+  'A big open park beside Meiji Jingū: lawns, a pond and ginkgo trees. On Sundays the rockabilly dancers perform near the Harajuku entrance.',
+  'Free and always open. Walk through to the Harajuku gate for the shrine.', 'Yoyogi Park')
+P('ichiran-s', ['Ichiran Shibuya'], 'Ichiran Shibuya', '一蘭 渋谷店',
+  'The famous tonkotsu ramen chain from Fukuoka: rich pork bone broth, and you eat in your own little booth. Buy a ticket at the machine, then fill in the form for firmness, richness, garlic and spice.',
+  'Open 24 hours. Scan the QR code at the door to join the waitlist and wander until your number is called.', 'ICHIRAN Shibuya Jinnan')
+P('momi', ['Mominotakumi'], 'Massage Spa Shibuya Mominotakumi', 'もみの匠 渋谷店',
+  'A highly rated massage spa in Jinnan, 9F, with foot care a speciality. English spoken and good with walk-ins.',
+  'Open 11:00 to 23:00. Book by phone: +81 3-6416-0995.', 'Massage Spa Shibuya Mominotakumi')
+P('nintendo', ['Nintendo Tokyo'], 'Nintendo Tokyo', 'Nintendo TOKYO',
+  'Nintendo\'s official store on the 6th floor of Shibuya Parco: Mario, Zelda, Animal Crossing and Splatoon merchandise, plus games and exclusive controllers. The Pokémon Center and Capcom Store share the floor.',
+  'Open 10:00 to 21:00. Busiest after lunch.', 'Nintendo Tokyo Shibuya Parco')
+P('uniqlo-hj', ['UNIQLO and H&amp;M Harajuku', 'UNIQLO Harajuku'], 'UNIQLO and H&M Harajuku', 'ユニクロ原宿店',
+  'UNIQLO (B1 and 1F) and H&M share the corner building on Meiji-dōri by Harajuku Station, opposite the end of Takeshita Street.',
+  'Sunday from 10:00 to 10:30. UNIQLO for cargo pants that fit, fast.', 'UNIQLO Harajuku')
+P('tokyo-ten', ['Sushi Tokyo Ten Shibuya'], 'Sushi Tokyo Ten Shibuya', '鮨 とうよう 天 渋谷',
+  'A sleek omakase sushi counter in Shibuya Stream. No menu: the chef shapes each piece in front of you. One of the best value omakase meals in Tokyo.',
+  'Weekday lunch omakase ¥5,500, 90 minutes, 11:00 or 13:30. Book on TableCheck. Card only, same-day cancellation charged in full.', 'SUSHI TOKYO TEN Shibuya Stream')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

@@ -4,6 +4,7 @@ import re as _re_h, html as _html_h
 
 # The how-to each mention should point to, by its title. Keyed by text just before the mention.
 _HT = {t: i for i, (t, _s) in enumerate(HOWTO, 1)}
+_HT.update({'Omotesando and Aoyama store hours': _HT.get('Omotesando and Aoyama store hours, Sun 18', 9), 'While the stores are on, for G': _HT.get('G on his own, Sun 18', 10), 'Omoide Yokochō, Mon 19': _HT.get('Omoide Yokochō, Tue 20', 11)})
 _FIX = [
     ('except Casanova at 12:00 (How-to ', 'Omotesando and Aoyama store hours'),
     ('G has his own options (How-to ', 'While the stores are on, for G'),
