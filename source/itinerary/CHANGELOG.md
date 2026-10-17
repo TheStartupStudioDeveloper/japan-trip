@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: PATH removed
+- PATH taken out of the itinerary, summary, cards and Extras. Sun 18 breakfast is i2 or Premier Mai.
+
 ## 2026-10-18: PATH closed, breakfast options
 - PATH is temporarily closed. Sun 18 08:00 now offers i2 or Premier Mai. New How-to 26 Finding Premier Mai. New cards for both.
 

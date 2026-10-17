@@ -63,13 +63,6 @@
    "t": "Free and always open. Enter from the gate beside Harajuku Station.",
    "m": "Yoyogi Park Harajuku entrance"
   },
-  "path": {
-   "n": "Path",
-   "l": "パス",
-   "w": "A small Tomigaya bistro that turns into one of Tokyo's best loved breakfast spots each morning. The order is the Dutch pancake, baked to order in a pan and topped with cured ham, burrata and maple syrup. It takes about 30 minutes, so get coffee and a croissant while you wait.",
-   "t": "Breakfast 08:00 to about 14:00 (last orders around 14:00). Closed Monday, and some listings also say Tuesday, so Sunday is your day. Walk-in only, expect a queue: be there by 08:00. Mid priced.",
-   "m": "PATH 1-44-2 Tomigaya Shibuya Tokyo"
-  },
   "fuglen": {
    "n": "Fuglen Tokyo",
    "l": "フグレン トウキョウ",
@@ -1258,21 +1251,10 @@
    "items": [
     {
      "group": "Eat",
-     "key": "path",
-     "time": "1.5 hrs",
-     "one": "Famous Dutch pancake breakfast in Tomigaya",
-     "fits": "Sun 18 slow breakfast. It is about 15 minutes' walk from the hotel and on the way to Meiji Jingū through Yoyogi Park. Go at 08:00 rather than 09:00 to beat the queue.",
-     "tags": [
-      "¥¥",
-      "Walk-in"
-     ]
-    },
-    {
-     "group": "Eat",
      "key": "fuglen",
      "time": "45 min",
      "one": "Norwegian coffee and mid century chairs in Tomigaya",
-     "fits": "Mon 19 late breakfast. Open from 07:00 every day including Monday, when Path is closed, and an easy 15 minute walk from the hotel.",
+     "fits": "Mon 19 late breakfast. Open from 07:00 every day including Monday, and an easy 15 minute walk from the hotel.",
      "tags": [
       "¥",
       "Walk-in"

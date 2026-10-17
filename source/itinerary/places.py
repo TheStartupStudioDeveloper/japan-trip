@@ -636,9 +636,6 @@ P('magnet', ['MAGNET by SHIBUYA109 rooftop', 'MAGNET by SHIBUYA109'], 'MAGNET by
 P('s-yokocho', ['Shibuya Yokochō'], 'Shibuya Yokochō', '渋谷横丁',
   'A lane of small food stalls from all over Japan on the ground floor of Miyashita Park, right under the hotel. Casual, open all day and lively by evening.',
   'Easy first meal: no queue planning, no walking.', 'Shibuya Yokocho Miyashita Park')
-P('path-tomigaya', ['PATH, Tomigaya', 'Breakfast at PATH'], 'PATH', 'パス',
-  'A small Tomigaya bistro famous for its breakfast Dutch pancake, baked to order in a pan with cured ham, burrata and maple syrup. Coffee from Fuglen.',
-  'Opens 08:00. Sign the electronic waitlist outside on arrival. Sundays queue for hours by mid morning.', 'PATH 1-44-2 Tomigaya Shibuya')
 P('yoyogi', ['Yoyogi Park'], 'Yoyogi Park', '代々木公園',
   'A big open park beside Meiji Jingū: lawns, a pond and ginkgo trees. On Sundays the rockabilly dancers perform near the Harajuku entrance.',
   'Free and always open. Walk through to the Harajuku gate for the shrine.', 'Yoyogi Park')

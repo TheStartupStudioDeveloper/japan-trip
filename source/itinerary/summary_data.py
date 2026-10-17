@@ -5,7 +5,7 @@ LEGS = [
   days=[
    ('d16', 'Fri 16', [('', ''), ('CX104 15:25 from Melbourne', 'f'), ('Hong Kong stopover, CX524 01:20', 'f')]),
    ('d17', 'Sat 17', [('Land at Narita 06:50, N\'EX to Shibuya', 'f'), ('Miyashita Park, Cat Street, Omotesando', ''), ('Shibuya Sky 16:00, dinner nearby', 'f')]),
-   ('d18', 'Sun 18', [('PATH breakfast, Meiji Jingū', ''), ('Vintage and Nintendo, Street Kart 16:00', 'f'), ('Ichiran ramen, foot massage', '')]),
+   ('d18', 'Sun 18', [('i2 or Premier Mai breakfast, Meiji Jingū', ''), ('Vintage and Nintendo, Street Kart 16:00', 'f'), ('Ichiran ramen, foot massage', '')]),
    ('d19', 'Mon 19', [('Tsukiji breakfast', ''), ('Yokohama waterfront, free afternoon', ''), ('Chinatown dinner', '')]),
    ('d20', 'Tue 20', [('Omakase lunch, Shinjuku Gyoen', 'b'), ('Rest and pack', ''), ('Shinjuku: Omoide Yokochō, Kabukichō, Golden Gai', '')]),
   ],

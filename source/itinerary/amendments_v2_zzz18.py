@@ -1,9 +1,9 @@
-# Sun 18 rework (sent 07:22): PATH breakfast, park, shrine, Harajuku, vintage. Cynthia's shopping afternoon, G's options.
+# Sun 18 rework (sent 07:22): Tomigaya breakfast, park, shrine, Harajuku, vintage. Cynthia's shopping afternoon, G's options.
 # Yokohama moves to Mon 19, Shinjuku plus new free time to Tue 20. Shibuya Sky is done, so the tabs go.
-D[18].update(cal='PATH, Meiji, vintage, Street Kart', title='PATH breakfast, Meiji Jingū, vintage, Street Kart')
-D[18]['sum'] = "Dutch pancakes in Tomigaya, through Yoyogi Park to Meiji Jingū, Takeshita Street, then Cynthia's shopping afternoon in Omotesando while G does Harajuku and Nintendo. Street Kart at golden hour, then ramen and a foot massage."
+D[18].update(cal='Breakfast, Meiji, vintage, Street Kart', title='Tomigaya breakfast, Meiji Jingū, vintage, Street Kart')
+D[18]['sum'] = "Breakfast in Tomigaya, through Yoyogi Park to Meiji Jingū, Takeshita Street, then Cynthia's shopping afternoon in Omotesando while G does Harajuku and Nintendo. Street Kart at golden hour, then ramen and a foot massage."
 D[18]['rows'] = [
- R('08:00', 'Breakfast: i2 or Premier Mai', 'PATH is temporarily closed. i2, Okushibu: rated 4.9, Dutch baby pancake, breakfast to 11:00, English menu. Premier Mai, Tomigaya: hidden café, no sign, famous thick French toast (How-to 26). Both open 08:00 on Sunday.'),
+ R('08:00', 'Breakfast: i2 or Premier Mai', 'i2, Okushibu: rated 4.9, Dutch baby pancake, breakfast to 11:00, English menu. Premier Mai, Tomigaya: hidden café, no sign, famous thick French toast (How-to 26). Both open 08:00 on Sunday.'),
  R('09:30', 'Yoyogi Park', 'Five minutes away. Walk through to the Harajuku gate. Sunday rockabilly dancers near that entrance.'),
  R('10:15', 'Meiji Jingū', 'Forest paths and the big torii. About 45 minutes.'),
  R('11:00', 'Takeshita Street', 'Out of the Harajuku gate and across the road. Walk it once together.'),
