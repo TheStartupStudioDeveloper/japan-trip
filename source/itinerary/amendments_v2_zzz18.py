@@ -3,7 +3,7 @@
 D[18].update(cal='PATH, Meiji, vintage, Street Kart', title='PATH breakfast, Meiji Jingū, vintage, Street Kart')
 D[18]['sum'] = "Dutch pancakes in Tomigaya, through Yoyogi Park to Meiji Jingū, Takeshita Street, then Cynthia's shopping afternoon in Omotesando while G does Harajuku and Nintendo. Street Kart at golden hour, then ramen and a foot massage."
 D[18]['rows'] = [
- R('08:00', 'Breakfast at PATH, Tomigaya', 'The Dutch pancake with ham, burrata and maple. Sign the waitlist outside on arrival. The pancake takes 30 to 45 minutes, so order it first, with a coffee.'),
+ R('08:00', 'Breakfast: i2 or Premier Mai', 'PATH is temporarily closed. i2, Okushibu: rated 4.9, Dutch baby pancake, breakfast to 11:00, English menu. Premier Mai, Tomigaya: hidden café, no sign, famous thick French toast (How-to 26). Both open 08:00 on Sunday.'),
  R('09:30', 'Yoyogi Park', 'Five minutes away. Walk through to the Harajuku gate. Sunday rockabilly dancers near that entrance.'),
  R('10:15', 'Meiji Jingū', 'Forest paths and the big torii. About 45 minutes.'),
  R('11:00', 'Takeshita Street', 'Out of the Harajuku gate and across the road. Walk it once together.'),
@@ -77,3 +77,12 @@ HOWTO.append(('Getting to Street Kart, Sun 18', [
 
 # Shibuya Sky is done: drop the 'Which day is Shibuya Sky?' section
 D[17]['sky'] = False
+
+HOWTO.append(('Finding Premier Mai, Sun 18', [
+ 'Address: 1-6-10 Tomigaya, Yoyogi Park Building, 2F. About a minute from Yoyogi-Kōen Station (Chiyoda line) and Yoyogi-Hachiman Station.',
+ 'There is no sign on the street. The building looks ordinary, with an Irish pub on the ground floor.',
+ 'The entrance is a narrow staircase at the side of the pub. Go up to the 2nd floor. If there is a queue, it waits on those stairs: join the end.',
+ 'The door at the top has no sign either. Open it and you are in.',
+ 'Open 08:00 to 17:00 on Sunday, closed Wednesday. No booking. Order the thick toast or the omelette toast, and an oat latte.',
+ 'No closure notice found for today. To be sure, check the Instagram stories at @premiermai_tokyo before walking over.',
+ 'i2 is the backup, 3 minutes away at 1-14-13 Tomigaya, RayQuon Okushibu 1F.']))

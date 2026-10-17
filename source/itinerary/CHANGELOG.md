@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: PATH closed, breakfast options
+- PATH is temporarily closed. Sun 18 08:00 now offers i2 or Premier Mai. New How-to 26 Finding Premier Mai. New cards for both.
+
 ## 2026-10-18: PATH at 08:00, Shibuya Sky chooser removed
 - Sun 18 starts with breakfast at PATH at 08:00. The 'Which day is Shibuya Sky?' section on Sat 17 is gone now Sky is done.
 

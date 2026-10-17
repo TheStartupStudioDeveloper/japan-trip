@@ -657,6 +657,12 @@ P('uniqlo-hj', ['UNIQLO and H&amp;M Harajuku', 'UNIQLO Harajuku'], 'UNIQLO and H
 P('tokyo-ten', ['Sushi Tokyo Ten Shibuya'], 'Sushi Tokyo Ten Shibuya', '鮨 とうよう 天 渋谷',
   'A sleek omakase sushi counter in Shibuya Stream. No menu: the chef shapes each piece in front of you. One of the best value omakase meals in Tokyo.',
   'Weekday lunch omakase ¥5,500, 90 minutes, 11:00 or 13:30. Book on TableCheck. Card only, same-day cancellation charged in full.', 'SUSHI TOKYO TEN Shibuya Stream')
+P('i2', ['i2'], 'i2', 'アイツー',
+  'A modern café in Okushibu with counter and table seats. Breakfast to 11:00, including a Dutch baby pancake, then paninis, and pizza in the evening. English menu, friendly service.',
+  'Sunday 08:00 to 16:00. Closed Wednesday.', 'i2 RayQuon OKUSHIBU Tomigaya')
+P('premier-mai', ['Premier Mai'], 'Premier Mai', 'プルミエメ',
+  'A hidden café with no sign, up the stairs beside an Irish pub. Famous for its thick toast with olive oil, omelette toast and flambéed crêpes.',
+  'Sunday 08:00 to 17:00. Closed Wednesday. Queue on the stairs (How-to 26).', 'PREMIER MAI Tomigaya')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
