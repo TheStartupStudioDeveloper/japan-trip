@@ -3,8 +3,8 @@ D[17]['sum'] = 'The flight landed at 09:35, almost three hours late. Lunch by th
 D[17]['rows'] = [
  R('09:35', 'Landed at Narita, late', 'CX524 was delayed from 06:50. Get the landing sticker each, then scan it into Visit Japan Web (How-to 4). Allow about an hour to clear.', B),
  R('10:45', 'Narita Express to Shibuya', 'Next train that stops at Shibuya (How-to 5). About 80 minutes.'),
- R('12:15', 'Shibuya Station, bags to the hotel', 'Hachikō exit, lobby on 4F (How-to 6). Ask about early check-in: free if a room is ready, bags held until then.'),
- R('12:30', 'Lunch under the hotel', 'Shibuya Yokochō, on the ground floor of Miyashita Park, or anywhere in the park building. No walking needed.'),
+ R('12:30', 'Shibuya Station, wheel the bags to the hotel', 'Take them yourselves straight from the train: Hachikō exit, 7 minutes flat along the tracks, lift to the lobby on 4F (How-to 6). Ask about early check-in: free if a room is ready, bags held until then.'),
+ R('12:45', 'Lunch under the hotel', 'Shibuya Yokochō, on the ground floor of Miyashita Park, or anywhere in the park building. No walking needed.'),
  R('13:30', 'Miyashita Park rooftop and the festival', 'Straight upstairs from lunch.'),
  R('14:00', 'Optional: Cat Street and Omotesando', 'Only with the legs for it. Otherwise it moves to Sunday, where it sits right after Harajuku.'),
  R('14:45', 'Supplies, then check in if the room is ready', 'Don Quijote and 7-Eleven. Shower, feet up. No room yet: bags stay at the desk until after Shibuya Sky.'),
