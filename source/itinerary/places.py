@@ -624,6 +624,18 @@ P('ninja-tokyo', ['Ninja Tokyo'], 'Ninja Tokyo', 'NINJA TOKYO 忍者屋敷',
 P('gokuraku', ['Gokuraku-bashi'], 'Gokuraku-bashi', '極楽橋',
   'The bridge across the north side of Osaka Castle\'s inner moat. From it and the moat path either side, the main tower rises above the tall stone walls with the water below: the classic postcard view. The gold-roofed Gozabune boats circle the inner moat from here.',
   'About 10 minutes from Osakajōkōen Station via Aoya-mon gate, on the way to the tower. The boats start about 10:00, so an early visit gets the wall and water without them. Late October trees are mostly still green.', 'Gokurakubashi Osaka Castle inner moat view')
+P('markcity', ['Shibuya Mark City walkway', 'Mark City walkway'], 'Shibuya Mark City walkway', '渋谷マークシティ 連絡通路',
+  'The glass corridor between JR Shibuya and the Inokashira Line, two floors above the Scramble Crossing. Free, and one of the best side-on views of the crowd crossing.',
+  'Stand at the windows near the Okamoto Tarō mural. No buying needed.', 'Shibuya Mark City')
+P('hikarie', ['Hikarie Sky Lobby 11F', 'Hikarie Sky Lobby'], 'Shibuya Hikarie Sky Lobby', '渋谷ヒカリエ 11F スカイロビー',
+  'A free public lobby on the 11th floor of Hikarie, east of the station, looking back over the station and the crossing toward the Shibuya Sky tower. Open until midnight.',
+  'Take the express lift to 11F. Best after dark.', 'Shibuya Hikarie')
+P('magnet', ['MAGNET by SHIBUYA109 rooftop', 'MAGNET by SHIBUYA109'], 'MAGNET by SHIBUYA109 rooftop', 'MAGNET by SHIBUYA109 屋上',
+  'The rooftop of the MAGNET building on the corner of the crossing, looking straight down on it. Entry is about ¥1,800 and includes one drink.',
+  'Go after dark for the screens and the crowd.', 'MAGNET by SHIBUYA109')
+P('s-yokocho', ['Shibuya Yokochō'], 'Shibuya Yokochō', '渋谷横丁',
+  'A lane of small food stalls from all over Japan on the ground floor of Miyashita Park, right under the hotel. Casual, open all day and lively by evening.',
+  'Easy first meal: no queue planning, no walking.', 'Shibuya Yokocho Miyashita Park')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

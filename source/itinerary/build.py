@@ -375,6 +375,7 @@ exec(open('amendments_v2_tsukiji.py').read())
 exec(open('amendments_v2_ykyoto.py').read())
 exec(open('amendments_v2_zflights.py').read())
 exec(open('amendments_v2_zmore.py').read())
+exec(open('amendments_v2_zzdelay.py').read())
 
 # ---------- render ----------
 def tag(s):

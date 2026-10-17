@@ -1,5 +1,10 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-17: Sat 17 reworked for the late landing
+- CX524 landed 09:35, not 06:50. Train 10:45, hotel 12:15, lunch at Shibuya Yokochō, festival on the roof, rest, Shibuya Sky 16:00 unchanged.
+- Cat Street and Omotesando now optional, with Sunday as the fallback. New optional 18:00 crossing views: Mark City walkway, Hikarie Sky Lobby (free), MAGNET rooftop (¥1,800 with a drink).
+- Sun 18 lunch and 13:15 rows pick up anything skipped. New cards: Mark City walkway, Hikarie Sky Lobby, MAGNET, Shibuya Yokochō.
+
 ## 2026-10-16: Online only, PDFs paused
 - Removed the Download PDF button from every app (Itinerary, Extras, Maps, Weather, Expenses).
 - PDFs are no longer rebuilt or cached for offline; set JT_PDF=1 to render one again.
