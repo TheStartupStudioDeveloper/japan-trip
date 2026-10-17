@@ -3,8 +3,7 @@
 D[18].update(cal='PATH, Meiji, vintage, Street Kart', title='PATH breakfast, Meiji Jingū, vintage, Street Kart')
 D[18]['sum'] = "Dutch pancakes in Tomigaya, through Yoyogi Park to Meiji Jingū, Takeshita Street, then Cynthia's shopping afternoon in Omotesando while G does Harajuku and Nintendo. Street Kart at golden hour, then ramen and a foot massage."
 D[18]['rows'] = [
- R('07:30', 'Walk to PATH, Tomigaya', '20 minutes on foot, or 5 by taxi. Opens 08:00. Sign the electronic waitlist outside straight away: by 10:30 on a Sunday the wait is over two hours.'),
- R('08:00', 'Breakfast at PATH', 'The Dutch pancake with ham, burrata and maple. It takes 30 to 45 minutes, so order it first, with a coffee.'),
+ R('08:00', 'Breakfast at PATH, Tomigaya', 'The Dutch pancake with ham, burrata and maple. Sign the waitlist outside on arrival. The pancake takes 30 to 45 minutes, so order it first, with a coffee.'),
  R('09:30', 'Yoyogi Park', 'Five minutes away. Walk through to the Harajuku gate. Sunday rockabilly dancers near that entrance.'),
  R('10:15', 'Meiji Jingū', 'Forest paths and the big torii. About 45 minutes.'),
  R('11:00', 'Takeshita Street', 'Out of the Harajuku gate and across the road. Walk it once together.'),
@@ -75,3 +74,6 @@ HOWTO.append(('Getting to Street Kart, Sun 18', [
  'Leave the hotel by 14:45 to be there at 15:30, 30 minutes before the start.',
  'Take: physical driving licence cards, physical International Driving Permits, passports, fully closed shoes. No digital copies. Costumes are optional.',
  'If it can’t run today, the backup is Sun 25 or Mon 26 from the Hibiya hotel.']))
+
+# Shibuya Sky is done: drop the 'Which day is Shibuya Sky?' section
+D[17]['sky'] = False

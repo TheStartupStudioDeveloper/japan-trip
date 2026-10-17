@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: PATH at 08:00, Shibuya Sky chooser removed
+- Sun 18 starts with breakfast at PATH at 08:00. The 'Which day is Shibuya Sky?' section on Sat 17 is gone now Sky is done.
+
 ## 2026-10-18: Sun 18 reworked, Yokohama moves to Mon 19
 - Steady snapshot saved first (scratchpad master_v2_steady_2026-10-18).
 - Sun 18: PATH breakfast, Yoyogi Park, Meiji Jingū, Takeshita Street, Cynthia's vintage afternoon, G's options (UNIQLO, H&M, ZARA, Nintendo Tokyo), back 14:20, Street Kart 16:00, Ichiran and a Mominotakumi foot massage.
