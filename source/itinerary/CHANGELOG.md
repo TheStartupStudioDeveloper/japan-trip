@@ -1,5 +1,10 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: Mon 19 Kamakura and Yokohama, Tue 20 Tsukiji then Shinjuku
+- Mon 19: Kamakura morning (Hachimangū, Enoden, Hase-dera, Great Buddha), Yokohama afternoon, Chinatown dinner. Opening hours checked for Monday.
+- Tue 20: Tsukiji 08:00, back to the hotel 10:15 to rest and pack, Tokyo Ten Shinjuku 13:30 (booked), stores, Shinjuku after dark. Daikanyama dropped.
+- Trip log page updated.
+
 ## 2026-10-18: Actuals, Original plan and What changed buttons
 - Sat 17 rewritten to what actually happened, Sun 18 morning marked Done. New Done tag (tick, struck-through time).
 - Two buttons in the top bar: Original plan (frozen pre-trip page) and What changed (new /log/ page, plan vs actual by day, source in source/triplog).

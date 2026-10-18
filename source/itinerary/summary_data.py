@@ -6,10 +6,10 @@ LEGS = [
    ('d16', 'Fri 16', [('', ''), ('CX104 15:25 from Melbourne', 'f'), ('Hong Kong stopover, CX524 01:20', 'f')]),
    ('d17', 'Sat 17', [('Land at Narita 06:50, N\'EX to Shibuya', 'f'), ('Miyashita Park, Cat Street, Omotesando', ''), ('Shibuya Sky 16:00, dinner nearby', 'f')]),
    ('d18', 'Sun 18', [('Premier Mai breakfast, Meiji Jingū', ''), ('Pre-owned shops, Nintendo, Street Kart 16:00', 'f'), ('Dinner, foot massage 20:30', 'f')]),
-   ('d19', 'Mon 19', [('Tsukiji breakfast', ''), ('Yokohama waterfront, free afternoon', ''), ('Chinatown dinner', '')]),
-   ('d20', 'Tue 20', [('Daikanyama, Nakameguro, Roastery', ''), ('Tokyo Ten Shinjuku 13:30, stores', 'f'), ('Shinjuku: Omoide Yokochō, Kabukichō, Golden Gai', '')]),
+   ('d19', 'Mon 19', [('Kamakura: shrine, Hase-dera, Great Buddha', ''), ('Yokohama waterfront, Air Cabin', ''), ('Harbour walk, Chinatown dinner', '')]),
+   ('d20', 'Tue 20', [('Tsukiji breakfast, hotel, pack', ''), ('Tokyo Ten Shinjuku 13:30, stores', 'f'), ('Shinjuku: Omoide Yokochō, Kabukichō, Golden Gai', '')]),
   ],
-  shift=['Yokohama moved to Mon 19 to break up the city days.', 'Kamakura can replace the Tsukiji morning on Mon 19.', 'Loosest block: Tue 20 morning.'],
+  shift=['Yokohama moved to Mon 19 to break up the city days.', 'Mon 19 is long: drop the Air Cabin if tired.', 'Shinjuku Gyoen can fit after lunch on Tue 20.'],
   book=[], extras=[('shibuya', 'Shibuya'), ('shinjuku', 'Shinjuku'), ('yokohama', 'Yokohama'), ('japan', 'Japan other')]),
  dict(pat='k', kanji='京都', name='Kyoto, Nara and Osaka', leg='Leg 2', dates='Wed 21 to Sat 24 Oct', nights='3 nights', hotel='seq-k', sun='Sunset 17:10',
   days=[

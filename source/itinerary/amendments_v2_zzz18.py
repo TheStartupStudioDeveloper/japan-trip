@@ -21,27 +21,34 @@ D[18].pop('foot', None)
 def _strip(d):
     for k in ('alts', 'tabs', 'tablabel', 'group'): D[d].pop(k, None)
 
-# Mon 19: the Tsukiji and Yokohama day (was Tue 20)
-_y = [r for r in D[20]['alts'][0]['rows']]
-_y = [R(t, p, n.replace('(How-to 22)', '(How-to 22)'), s) for (t, p, n, s) in _y if t != '20:30']
-_y.append(R('20:30', 'Early night', 'Tomorrow is a slow start.'))
+# Mon 19: Kamakura morning, then Yokohama (changed 18 Oct 15:14)
 _strip(19)
-D[19].update(cal='Tsukiji, Yokohama', title='Tsukiji market and Yokohama', rows=_y,
-  sum='Moved from Tuesday to break up the city days. Breakfast at Tsukiji Outer Market in its best window, then a long Yokohama day: the waterfront, the harbour walk and Chinatown.',
-  foot='Tsukiji Outer Market is open Monday. Alternative morning: Kamakura instead of the market, joining Yokohama about 14:30 (JR Shōnan-Shinjuku line, about an hour, then JR to Yokohama, about 25 minutes).')
+D[19].update(cal='Kamakura, Yokohama', title='Kamakura, then Yokohama',
+  sum='The coast, temples and the Great Buddha in Kamakura in the morning, then the Yokohama waterfront, the harbour walk at dusk and dinner in Chinatown. A long day out: it is fine to drop the Air Cabin if tired.',
+  foot='Checked for Monday: Tsurugaoka Hachimangū 06:00 to 20:00, Hase-dera 08:00 to 17:00 (¥400), the Great Buddha at Kōtoku-in 08:00 to 16:45 (¥300), Yokohama Air Cabin 10:00 to 21:00.',
+  rows=[
+ R('07:45', 'JR Shōnan-Shinjuku line to Kamakura', 'From Shibuya, direct, about an hour. Suica works.'),
+ R('09:00', 'Tsurugaoka Hachimangū, Komachi-dōri', 'The shrine up the long approach, then the snack and shop street back to the station.'),
+ R('10:45', 'Enoden to Hase', 'The little seaside train, about 5 minutes.'),
+ R('11:00', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha.'),
+ R('12:30', 'Lunch in Hase or Kamakura', ''),
+ R('14:00', 'JR to Yokohama', 'About 25 minutes. Change to Sakuragichō.'),
+ R('14:45', 'Sakuragichō, Air Cabin, Minato Mirai waterfront', 'The cable car across the harbour, Red Brick Warehouses, the skyline.'),
+ R('16:30', 'Harbour walk to Chinatown, dinner', 'At dusk. Idea: the footbath at The Wharf House on the way (How-to 22). Dinner from 17:30.'),
+ R('19:30', 'Train home from Motomachi-Chūkagai', 'Runs straight through to Shibuya, about 40 minutes, no change.'),
+])
 
 # Tue 20: free morning, omakase or sumo, Shinjuku Gyoen, Shinjuku after dark
 _strip(20)
-D[20].update(cal='Daikanyama, omakase, Shinjuku', title='Daikanyama and Nakameguro, omakase, Shinjuku after dark',
-  sum='A design morning in Daikanyama and Nakameguro, the booked omakase lunch in Shinjuku, the department stores, then Shinjuku after dark. No hotel stop, so pack the bags before leaving.',
-  foot='Optional after lunch: Shinjuku Gyoen for an hour, last entry 16:00, closes 16:30 in October, ¥500. Other ideas: the Kabukichō live sumo show (about ¥5,000, times on Klook). Wednesday is the 05:55 wake for the Shinkansen.',
+D[20].update(cal='Tsukiji, omakase, Shinjuku', title='Tsukiji early, omakase lunch, Shinjuku after dark',
+  sum='Tsukiji Outer Market first thing, back to the hotel to rest and pack, then the booked omakase lunch in Shinjuku, the department stores and Shinjuku after dark.',
+  foot='Tsukiji Outer Market is closed Sundays, holidays and some Wednesdays, so Tuesday is good. Keep the market to small bites: lunch is the full omakase. Optional after lunch: Shinjuku Gyoen for an hour (last entry 16:00, ¥500), or the Kabukichō sumo show (times on Klook). Wednesday is the 05:55 wake.',
   rows=[
- R('09:30', 'Breakfast, then pack the bags', 'You will not be back at the hotel until tonight.'),
- R('10:00', 'To Daikanyama', 'About 20 minutes on foot, or the Tōkyū Tōyoko line one stop from Shibuya to Daikanyama.'),
- R('10:15', 'Daikanyama T-Site and Log Road', 'Tsutaya Books: three linked buildings of design, art and photography books, 09:00 to 22:00. Then the Log Road boutiques.'),
- R('11:00', 'Down to the Meguro River', 'About 10 minutes on foot. The canal path, small shops, and Onibus Coffee in an old wooden house (09:00 to 18:00).'),
- R('11:45', 'Starbucks Reserve Roastery Tokyo', 'About 10 minutes up the river. Kengo Kuma building, four floors of roasting, bakery and bar. Open 08:00 to 22:00. Keep it light: lunch is the full course.'),
- R('12:45', 'Nakameguro to Shinjuku', 'Hibiya line to Ebisu, then JR Yamanote to Shinjuku, about 25 minutes. Use the New South exit for NEWoMan.'),
+ R('07:30', 'Leave the hotel for Tsukiji', 'Ginza line to Ginza, then the Hibiya line two stops to Tsukiji. About 30 minutes, at the commuter peak.'),
+ R('08:00', 'Tsukiji Outer Market breakfast', 'The best window, before the 10:00 rush. Small bites: tamagoyaki, grilled scallop, strawberry daifuku. Then Namiyoke shrine. Bring cash.'),
+ R('09:45', 'Back to Shibuya', 'Hibiya line to Ginza, then the Ginza line. About 30 minutes.'),
+ R('10:15', 'Hotel: rest, shower, pack', 'Pack the bags for Wednesday now.'),
+ R('12:50', 'JR Yamanote to Shinjuku', 'About 7 minutes. Use the New South exit for NEWoMan.'),
  R('13:30', 'Omakase lunch: Sushi Tokyo Ten Shinjuku', 'NEWoMan Shinjuku 2F. Full omakase course, booked. About 90 minutes. Card only.', B),
  R('15:00', 'Department stores', 'NEWoMan and Lumine on the spot, Takashimaya across the south deck, then Isetan and Isetan Men\'s, about 10 minutes east. The Isetan food hall in the basement. Passports for tax-free.'),
  R('17:30', 'Shinjuku: the 3D cat at the east exit', 'Three minutes from Isetan. The giant cat billboard after dark.'),
