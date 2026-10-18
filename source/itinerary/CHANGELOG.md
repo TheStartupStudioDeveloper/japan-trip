@@ -39,6 +39,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 18 October, afternoon
+- Added (estimates at ¥1 = A$0.0091): dinner at Tōkai Shokuichi, Shibuya Yokochō, ¥7,500, paid by G; ramen dinner in Shibuya, ¥3,500, paid by Cynthia. Both on Sat 17.
+
 Expenses update, 18 October
 - Added, paid by Cynthia (estimates, converted at ¥1 = A$0.0091 until the card amounts are known): Narita Express to Shibuya, two tickets, ¥7,000 (Sat 17); drinks at Shibuya Sky, ¥5,000 (Sat 17); breakfast at Premier Mai, Tomigaya, ¥5,000 (Sun 18).
 - Added, paid by G: foot and leg massage for two at Mominotakumi, AU$103.94 (Sun 18).
