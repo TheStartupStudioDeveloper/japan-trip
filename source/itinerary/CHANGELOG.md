@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 18 Oct 22:40
+- Sun 18 dinner logged: Mihachi Shibuya Ekimae (place card added). Added the hotel lobby bar welcome drink.
+
 ## 18 Oct 22:05
 - Sun 18 evening logged as Done: back to the hotel, Street Kart, return, foot and leg massage. Dinner still to confirm.
 
