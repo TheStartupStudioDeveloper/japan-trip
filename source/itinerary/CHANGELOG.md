@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 19 Oct 08:25
+- Mon 19 actuals: Hibiya line delay, walked from Ginza to Tsukiji. Day retimed about 30 minutes later, Namiyoke Inari added, home about 21:45.
+
 ## 19 Oct 06:37
 - How-to 29 Hotel to Tsukiji by train, linked from Mon 19 07:00.
 
