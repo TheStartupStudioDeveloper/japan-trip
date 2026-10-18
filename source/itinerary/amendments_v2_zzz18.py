@@ -168,3 +168,33 @@ HOWTO[_i] = (HOWTO[_i][0], _b)
 _m = D[19]['rows']
 _m[_row(19, '09:15')] = R('09:00', 'Meguro River walk to Nakameguro', 'The Roastery sits on the river. Follow the river path downstream, the way the water flows, under the cherry trees, past the cafés and small boutiques, about 15 to 20 minutes at an easy pace to Nakameguro Station. Then the Tōkyū Tōyoko line to Musashi-Kosugi and the JR Yokosuka line direct to Kamakura, about an hour (How-to 27).')
 _m[_row(19, '08:00')] = R('08:00', 'Breakfast at the Roastery', 'Four floors of coffee and the Princi bakery. Keep it light: pancakes are lunch. Away by 09:00.')
+# 19 Oct 06:30: swap mornings. Tsukiji Mon 19, Roastery Tue 20
+_m = D[19]['rows']
+_k = _row(19, '10:30')
+D[19]['rows'] = [
+ R('07:00', 'Leave the hotel for Tsukiji', 'Ginza line to Ginza, then the Hibiya line two stops to Tsukiji. About 30 minutes, at the commuter peak.'),
+ R('07:30', 'Tsukiji Outer Market breakfast', 'Small bites only: pancakes are lunch. Tamagoyaki, grilled scallop, strawberry daifuku. Then Namiyoke shrine. Cash.'),
+ R('09:15', 'Shimbashi to Kamakura', 'Walk about 15 minutes to JR Shimbashi Station. JR Yokosuka line (blue and cream) direct to Kamakura, about 55 minutes, no change. Suica works (How-to 27).'),
+] + _m[_k:]
+D[19].update(cal='Tsukiji, Kamakura, Yokohama', title='Tsukiji, Kamakura, then Yokohama',
+  sum='Breakfast at Tsukiji Outer Market, then Kamakura: the shrine, fluffy pancakes with a sea view in Hase, Hase-dera, the Great Buddha and a walk on the beach. Yokohama from late afternoon: the Air Cabin, the Vanish coaster, the ferris wheel at sunset, the harbour walk, dinner in Chinatown and a foot massage.')
+D[19]['foot'] = D[19]['foot'].replace('Roastery 08:00 to 22:00, ', 'Tsukiji Outer Market open Monday, ')
+_i = [k for k, h in enumerate(HOWTO) if h[0] == 'Kamakura on the day, Mon 19'][0]
+_b = list(HOWTO[_i][1])
+_b[0] = 'Tsukiji to Kamakura: walk about 15 minutes to JR Shimbashi Station. JR Yokosuka line (blue and cream), bound for Zushi, Kurihama or Kamakura, direct to Kamakura in about 55 minutes. Suica works.'
+_b[1] = 'If the next train is the Tōkaidō line (orange and green), do not take it: it skips Kamakura. Wait for the Yokosuka line.'
+HOWTO[_i] = (HOWTO[_i][0], _b)
+
+_t = D[20]['rows']
+_k = _row(20, '12:50')
+D[20]['rows'] = [
+ R('07:45', 'Taxi to the Starbucks Reserve Roastery', 'About 10 minutes. Or the Tōkyū Tōyoko line one stop to Nakameguro and 10 to 15 minutes upstream along the river.'),
+ R('08:00', 'Breakfast at the Roastery', 'Four floors of coffee and the Princi bakery. Pastries only: lunch is the full omakase.'),
+ R('09:00', 'Meguro River walk to Nakameguro', 'Follow the river path downstream, the way the water flows, under the cherry trees, past cafés and small boutiques. About 15 to 20 minutes.'),
+ R('09:30', 'Tōkyū Tōyoko line back to Shibuya', 'One stop, about 3 minutes.'),
+ R('09:45', 'Hotel: rest, shower, pack', 'Pack the bags for Wednesday now.'),
+ R('11:00', 'Cynthia\'s new suitcase', 'Shibuya Sakura Luggage in Jinnan, opens 11:00. Fair prices, Japanese-made cases. Budget backup: Shibuya Baggage Outlet beside MEGA Don Quijote. Passports for tax-free. Drop it at the hotel before the train.'),
+] + _t[_k:]
+D[20].update(cal='Roastery, omakase, Shinjuku', title='Roastery, omakase, Shinjuku',
+  sum='Breakfast at the Starbucks Reserve Roastery and a walk along the Meguro River, back to the hotel to pack, a new suitcase, then the omakase lunch at Tokyo Ten Shinjuku, the department stores and Shinjuku after dark.')
+D[20]['foot'] = 'Roastery opens 08:00. Shibuya Sakura Luggage 11:00 to 23:30. Optional after lunch: Shinjuku Gyoen for an hour (last entry 16:00, ¥500), or the Kabukichō sumo show (times on Klook). Wednesday is the 05:55 wake.'

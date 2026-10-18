@@ -731,6 +731,12 @@ P('tenku-headspa', ['Tenkū no Ryōiki'], 'Tenkū no Ryōiki, dry head spa', '�
 P('alamode-kamakura', ['A la Mode Kamakura'], 'A la Mode Kamakura', 'ア・ラ・モード鎌倉',
   'Small café in Hase looking out at the sea. Fluffy pancakes with Greek yoghurt ice cream, fruit and real maple syrup. Rated 4.7.',
   'Open 10:00 to 18:30, closed Wednesday and Saturday.', 'A la Mode Kamakura Hase')
+P('sakura-luggage', ['Shibuya Sakura Luggage'], 'Shibuya Sakura Luggage', '渋谷さくら スーツケース',
+  'Small suitcase shop in Jinnan, rated 4.9. Fair prices on good Japanese-made cases, helpful owner.',
+  'Open 11:00 to 23:30. Passport for tax-free.', 'Shibuya Sakura luggage suitcase store')
+P('baggage-outlet', ['Shibuya Baggage Outlet'], 'Shibuya Baggage Outlet', '渋谷バゲージアウトレット',
+  'Cheapest suitcases around, beside MEGA Don Quijote. Quality mixed.',
+  'Open 11:00 to 22:00. Not tax-free: shown prices exclude 10% tax.', 'Shibuya Baggage Outlet Shop')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

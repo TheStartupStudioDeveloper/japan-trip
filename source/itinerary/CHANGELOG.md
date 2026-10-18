@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 19 Oct 06:40
+- Swapped mornings: Mon 19 now Tsukiji 07:30 then JR Yokosuka line from Shimbashi to Kamakura; Tue 20 now Roastery 08:00, Meguro River walk, hotel 09:45, suitcase at Shibuya Sakura Luggage 11:00. How-to 27 updated. Cards: Shibuya Sakura Luggage, Shibuya Baggage Outlet.
+
 ## 19 Oct 06:10
 - Mon 19: Meguro River walk from the Roastery to Nakameguro, 09:00.
 
