@@ -1,0 +1,23 @@
+# Plan vs actual log. status: 'done' (lived), 'changed' (future day, plan changed), 'plan' (future, unchanged)
+DAYS = [
+ dict(d='Fri 16', title='Melbourne to Hong Kong', status='done',
+  orig=['CX104 15:25 from Melbourne', 'Hong Kong stopover', 'CX524 01:20 to Narita'],
+  actual=['Flew CX104 to Hong Kong', 'CX524 overnight to Narita'],
+  changes=['Ran as planned']),
+ dict(d='Sat 17', title='Arrive, Shibuya', status='done',
+  orig=['06:50 land at Narita, N’EX to Shibuya', '10:00 bags to the hotel', '10:30 Miyashita Park and Cat Street', '12:30 Omotesando, lunch', '13:45 Hachikō, Scramble Crossing, Center-gai', '14:45 supplies, check in, rest', '16:00 Shibuya Sky', '18:30 dinner close by, early night'],
+  actual=['09:35 landed, about 2 h 45 min late', '11:15 Narita Express to Shibuya', '12:30 wheeled the bags to the hotel desk', '13:00 coffee and açaí bowls under Miyashita Park', '13:45 Miyashita Park rooftop', '14:15 Cat Street and Omotesando', '15:30 back for luggage, changed', '16:00 Shibuya Sky', '18:30 checked in', '19:30 dinner, Tōkai Shokuichi, Shibuya Yokochō', '21:00 Scramble Crossing, the streets, a small-counter ramen spot', '22:00 MEGA Don Quijote, back about midnight'],
+  changes=['Late landing pushed the morning back almost three hours', 'Omotesando kept, done after the rooftop', 'Added: MEGA Don Quijote and a late night instead of an early one', 'Massage planned for the evening moved to Sun 18', 'Shibuya Sky Monday and Tuesday backup slots not needed']),
+ dict(d='Sun 18', title='Tomigaya, Meiji, shopping, Street Kart', status='done',
+  orig=['09:00 slow breakfast', '09:45 Meiji Jingū', '11:00 Takeshita Street and back lanes', '12:15 lunch in Harajuku', '13:15 Cat Street into the festival streets', '14:45 to Street Kart', '16:00 Street Kart, Rainbow Bridge', 'Evening: Shibuya dinner, Sushi Hatsume optional'],
+  actual=['08:00 Premier Mai, the hidden café (PATH was closed)', '09:30 Yoyogi Park', '10:15 Meiji Jingū', '11:00 Takeshita Street together', '11:30 Cynthia: pre-owned shops in Omotesando and Harajuku', '11:30 G: ZARA Kōen-dōri, H&M, Nintendo Tokyo, egg sando, massage booked', '16:00 Street Kart (booked)', '20:30 foot and leg massage, Mominotakumi (booked)'],
+  changes=['Early start for a breakfast in Tomigaya; PATH closed, Premier Mai instead', 'Lunch and festival streets dropped for a split shopping afternoon', 'Vintage luxury moved here from Mon 19, changed to pre-owned', 'Massage added for the evening', 'Sushi Hatsume dropped']),
+ dict(d='Mon 19', title='Tsukiji and Yokohama', status='changed',
+  orig=['Shinjuku day: Omotesando vintage, rest, Shinjuku after dark'],
+  actual=['Tsukiji breakfast, then Yokohama: waterfront, harbour walk, Chinatown'],
+  changes=['Swapped with Tue 20 to break up the city and shopping days', 'Vintage shopping already done on Sun 18']),
+ dict(d='Tue 20', title='Daikanyama, omakase, Shinjuku', status='changed',
+  orig=['Tsukiji breakfast, then Yokohama'],
+  actual=['Daikanyama T-Site, Meguro River, Starbucks Reserve Roastery', '13:30 Sushi Tokyo Ten Shinjuku, full omakase (booked)', 'Department stores', 'Shinjuku after dark: 3D cat, Omoide Yokochō, Kabukichō, Golden Gai'],
+  changes=['Yokohama moved to Mon 19', 'New: Daikanyama and Nakameguro morning', 'New: omakase lunch booked', 'Shinjuku night moved here from Mon 19']),
+]

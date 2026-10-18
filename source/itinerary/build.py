@@ -377,17 +377,19 @@ exec(open('amendments_v2_zflights.py').read())
 exec(open('amendments_v2_zmore.py').read())
 exec(open('amendments_v2_zzdelay.py').read())
 exec(open('amendments_v2_zzz18.py').read())
+exec(open('amendments_v2_zzzz_actual.py').read())
 
 # ---------- render ----------
 def tag(s):
     if s == B: return '<span class="tag tag-b">Booked</span>'
     if s == TB: return '<span class="tag tag-tb">To book</span>'
+    if s == 'd': return '<span class="tag tag-d">Done</span>'
     return ''
 
 def rows(rs):
     o = ['<ol class="rows">']
     for t, p, n, s in rs:
-        cls = 'row' + (' is-b' if s == B else '')
+        cls = 'row' + (' is-b' if s == B else '') + (' is-d' if s == 'd' else '')
         o.append(f'<li class="{cls}"><span class="t">{E(t)}</span><div class="w"><p class="p">{E(p)} {tag(s)}</p>' + (f'<p class="n">{E(n)}</p>' if n else '') + '</div></li>')
     o.append('</ol>')
     return ''.join(o)
@@ -552,9 +554,12 @@ _data = {p['key']: dict(n=p['n'], l=p['l'], w=p['w'], t=p['t'], m=p['m']) for p 
 out = out.replace('/*PLACES*/', _json.dumps(_data, ensure_ascii=False))
 print('place links:', _n, 'cards:', len(PLACES))
 assert '—' not in out and '--' not in out.split('</style>')[1].split('<script>')[0].replace('<!--', '').replace('-->', '')
+out = out.replace('</style>', '.tag-d{border-style:solid;background:var(--paper);font-weight:700}.tag-d::before{content:"\\2713 "}.row.is-d .t{text-decoration:line-through;text-decoration-thickness:1px}</style>', 1)
 import sys as _sys; _sys.path[:0] = ['/home/claude/japan-trip/source', '.']
 import apptools as _at
 out = _at.inject(out, '', 'Japan-Hong-Kong-Master-Itinerary-V2.pdf',
                  ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'Japan-Hong-Kong-Master-Itinerary-V2.pdf'], 'Itinerary')
+_GH = 'https://thestartupstudiodeveloper.github.io/japan-trip/'
+out = out.replace('<button type="button" class="jt-off">', f'<a class="jt-orig" href="{_GH}baseline/original-plan/" target="_blank" rel="noopener">Original plan</a><a class="jt-log" href="{_GH}log/" target="_blank" rel="noopener">What changed</a><button type="button" class="jt-off">', 1)
 open('out/japan-hong-kong-final-itinerary.html', 'w').write(out)
 print(len(out))

@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: Actuals, Original plan and What changed buttons
+- Sat 17 rewritten to what actually happened, Sun 18 morning marked Done. New Done tag (tick, struck-through time).
+- Two buttons in the top bar: Original plan (frozen pre-trip page) and What changed (new /log/ page, plan vs actual by day, source in source/triplog).
+
 ## 2026-10-18: Tue 20 set, Sun 18 evening
 - Tue 20: Daikanyama T-Site, Meguro River and Onibus, Starbucks Reserve Roastery, then Sushi Tokyo Ten Shinjuku 13:30 (booked, full course), department stores, Shinjuku after dark. No hotel stop. Gyoen and sumo as optional notes.
 - Sun 18 evening: dinner near Jinnan 19:30, foot and leg massage at Mominotakumi 20:30 (booked), then Toriton or Ichiran.
