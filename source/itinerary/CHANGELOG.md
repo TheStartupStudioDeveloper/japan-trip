@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 19 Oct 06:10
+- Mon 19: Meguro River walk from the Roastery to Nakameguro, 09:00.
+
 ## 18 Oct 23:20
 - Mon 19 later start: Starbucks Reserve Roastery breakfast 08:00, Kamakura 10:30, fluffy pancakes at A la Mode Kamakura 12:00, Yokohama 15:45, foot massage 19:30, home about 21:30. How-to 27 updated. A la Mode Kamakura card.
 
