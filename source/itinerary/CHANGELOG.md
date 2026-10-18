@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 18 Oct 23:10
+- How-to 27 Kamakura on the day and How-to 28 Yokohama on the day, Mon 19. Place cards: Cosmo World, Yuigahama, Inamuragasaki, Kyūryū SPA, Kaisokukan, Tenkū no Ryōiki.
+
 ## 18 Oct 22:40
 - Sun 18 dinner logged: Mihachi Shibuya Ekimae (place card added). Added the hotel lobby bar welcome drink.
 

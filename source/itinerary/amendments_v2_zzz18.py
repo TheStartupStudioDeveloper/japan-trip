@@ -99,3 +99,24 @@ HOWTO.append(('Finding Premier Mai, Sun 18', [
  'Open 08:00 to 17:00 on Sunday, closed Wednesday. No booking. Order the thick toast or the omelette toast, and an oat latte.',
  'No closure notice found for today. To be sure, check the Instagram stories at @premiermai_tokyo before walking over.',
  'i2 is the backup, 3 minutes away at 1-14-13 Tomigaya, RayQuon Okushibu 1F.']))
+HOWTO.append(('Kamakura on the day, Mon 19', [
+ 'Shibuya to Kamakura: JR Shōnan-Shinjuku line, platforms 3 and 4 at JR Shibuya. Board a train bound for Zushi (逗子): it runs straight to Kamakura in about an hour, around ¥950 on Suica.',
+ 'If the next train says Odawara (小田原) or Hiratsuka, take it anyway and change at Ōfuna to the Yokosuka line (blue and cream), two stops to Kamakura.',
+ 'Kamakura Station east exit: walk Wakamiya-ōji or Komachi-dōri up to Tsurugaoka Hachimangū, about 10 minutes. Back to the station along Komachi-dōri for snacks.',
+ 'Enoden: from the Enoden platform on the west side of Kamakura Station, 3 stops to Hase, about 5 minutes, Suica works. Sit on the left for glimpses of the sea.',
+ 'Hase-dera: 5 minutes from Hase Station, open 08:00 to 17:00, ¥400. The Great Buddha (Kōtoku-in): 5 minutes further up the road, open 08:00 to 16:45, ¥300.',
+ 'The beach: Yuigahama is about 10 minutes downhill from Hase Station. Free, open sand, black and soft. Showers only in summer, so towels are not needed unless you paddle. Watch food: the kites (hawks) swoop.',
+ 'Mt Fuji: possible on a clear day, never guaranteed, and best before midday. The best spot is Inamuragasaki, two Enoden stops past Hase, then 5 minutes to the cape park. From Yuigahama look west along the coast.',
+ 'Kamakura to Yokohama: Enoden back to Kamakura, then the JR Yokosuka line to Yokohama, about 25 minutes. Change to the JR Negishi line (light blue), two stops to Sakuragichō.']))
+HOWTO.append(('Yokohama on the day, Mon 19', [
+ 'Sakuragichō Station: the Air Cabin is right outside the east exit. One way ¥1,000, about 5 minutes over the water to Unga Park, beside Cosmo World. Open 10:00 to 21:00.',
+ 'Cosmo World: free to walk in, pay per ride at the ticket machines. Monday 11:00 to 20:00, closed Thursdays. Cash only.',
+ 'Diving Coaster Vanish: the one that dives into the pool and disappears into a tunnel. About ¥900 to ¥1,000 each. Short: the fast part is about 30 seconds. Loose items go in the lockers first, staff check pockets.',
+ 'Cosmo Clock 21: the big ferris wheel, about 15 minutes round. Best at sunset, around 17:05.',
+ 'Harbour walk: Red Brick Warehouses, then along Yamashita Park to Chinatown, about 30 minutes at an easy pace.',
+ 'Foot massage after dinner, in Chinatown: Kyūryū SPA (Kirin Kowloon), 2F on a pedestrian lane, 10:00 to 22:00, foot bath, tea and a full 60-minute foot course, card OK. Or Kaisokukan, 10:00 to 23:00, call +81 90-9375-5588.',
+ 'Japanese dry head spa: Tenkū no Ryōiki, Kannai, 10 minutes walk from Chinatown, 11:00 to 22:00, rated 4.9, couples course. Book ahead by phone +81 70-3179-7818 or online.',
+ 'Home: Motomachi-Chūkagai Station (Minatomirai line) at the Chinatown end. Trains run through on the Tōkyū Tōyoko line to Shibuya, about 40 minutes on an express, no change.']))
+_m = D[19]['rows']
+_r = _m[_row(19, '07:45')]; _m[_row(19, '07:45')] = R(_r[0], _r[1], 'From Shibuya, a train bound for Zushi runs direct, about an hour. Suica works (How-to 27).', *_r[3:])
+_r = _m[_row(19, '14:00')]; _m[_row(19, '14:00')] = R(_r[0], _r[1], 'About 25 minutes, then change to Sakuragichō (How-to 27). Yokohama on the day: How-to 28.', *_r[3:])

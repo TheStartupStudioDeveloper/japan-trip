@@ -708,6 +708,26 @@ P('sakura-tk', ['Tonkatsu Kagurazaka Sakura Jinnan'], 'Tonkatsu Kagurazaka Sakur
 P('toriton', ['Yakitori Toriton'], 'Yakitori Toriton Shibuya', '旨串とりとん 渋谷',
   'Charcoal yakitori izakaya, some tatami seats, rated 4.7. The addictive chicken is the order.',
   'Open 17:00 to 05:00. Same-day: call +81 3-6452-6827.', 'Yakitori Toriton Shibuya')
+P('mihachi', ['Mihachi Shibuya Ekimae', 'Mihachi'], 'Mihachi Shibuya Ekimae', '三八 渋谷駅前',
+  'Low-lit izakaya in a basement by Shibuya Station. Hotpot, beef, sashimi, izakaya plates, English menu.',
+  'Open 16:00 to 23:30. ¥550 cover charge each. Walk-ins, card accepted.', 'Mihachi Shibuya Ekimae')
+P('cosmo-world', ['Cosmo World', 'Diving Coaster Vanish'], 'Yokohama Cosmo World', 'よこはまコスモワールド',
+  'Free-entry waterfront amusement park. The Vanish coaster dives into a pool and vanishes into a tunnel. Cosmo Clock 21 ferris wheel.',
+  'Mon to Wed and Fri 11:00 to 20:00, weekends to 21:00, closed Thursday. Cash only, pay per ride.', 'Yokohama Cosmo World')
+P('yuigahama', ['Yuigahama'], 'Yuigahama Beach', '由比ヶ浜',
+  'Kamakura\'s main beach, soft dark sand, 10 minutes from Hase Station.',
+  'Mind the kites if you eat on the sand.', 'Kamakura Yuigahama Beach')
+P('inamuragasaki', ['Inamuragasaki'], 'Inamuragasaki', '稲村ヶ崎',
+  'Small cape park between Kamakura and Enoshima, the classic Mt Fuji view across the bay on clear days.',
+  'Two Enoden stops past Hase. Best before midday.', 'Inamuragasaki Park Kamakura')
+P('kyuryu-spa', ['Kyūryū SPA', 'Kirin Kowloon'], 'Kyūryū SPA (Kirin Kowloon)', '熙金九龍SPA',
+  'Taiwanese-style foot massage in Chinatown, foot bath and tea, rated 4.9.',
+  'Open 10:00 to 22:00. Walk-ins usually fine, card OK. Call +81 45-681-4606.', 'Kirin Kowloon SPA Yokohama Chinatown')
+P('kaisokukan', ['Kaisokukan'], 'Kaisokukan Foot Massage', '快足館',
+  'Foot massage in Chinatown, rated 4.6.', 'Open 10:00 to 23:00. Call +81 90-9375-5588.', 'Kaisokukan Foot Massage Yokohama')
+P('tenku-headspa', ['Tenkū no Ryōiki'], 'Tenkū no Ryōiki, dry head spa', '天空の領域',
+  'Japanese dry head spa in Kannai, private rooms, couples course, rated 4.9.',
+  'Open 11:00 to 22:00. Book ahead: +81 70-3179-7818.', 'Tenku no Ryoiki dry head spa Kannai Yokohama')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
