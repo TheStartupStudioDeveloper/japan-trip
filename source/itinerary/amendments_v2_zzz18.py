@@ -138,3 +138,29 @@ D[19]['rows'] = [
  R('19:00', 'Foot massage, Kyūryū SPA', 'Chinatown, 2F on a pedestrian lane. Foot bath, tea and a 60-minute foot course. Open to 22:00, card OK. Backup: Kaisokukan, open to 23:00 (How-to 28).'),
  R('20:15', 'Train home from Motomachi-Chūkagai', 'Runs straight through to Shibuya, about 40 minutes, no change. Back about 21:00.'),
 ]
+# Mon 19 later start, 18 Oct 23:17: Roastery breakfast, pancakes in Hase
+D[19].update(
+  sum='A later start: breakfast at the Starbucks Reserve Roastery in Nakameguro, then Kamakura: the shrine, fluffy pancakes with a sea view in Hase, Hase-dera, the Great Buddha and a walk on the beach. Yokohama from late afternoon: the Air Cabin, the Vanish coaster, the ferris wheel at sunset, the harbour walk, dinner in Chinatown and a foot massage.',
+  foot='Checked for Monday: Roastery 08:00 to 22:00, Tsurugaoka Hachimangū 06:00 to 20:00, A la Mode Kamakura 10:00 to 18:30 (closed Wednesday and Saturday), Hase-dera 08:00 to 17:00 (¥400), the Great Buddha 08:00 to 16:45 (¥300), Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00 (cash only), Kyūryū SPA 10:00 to 22:00. Mt Fuji is unlikely by afternoon: a bonus if you see it.')
+D[19]['rows'] = [
+ R('07:45', 'Taxi to the Starbucks Reserve Roastery', 'About 10 minutes from the hotel. Opens 08:00 on Mondays.'),
+ R('08:00', 'Breakfast at the Roastery', 'Four floors of coffee and the Princi bakery. Keep it light: pancakes are lunch.'),
+ R('09:15', 'Nakameguro to Kamakura', 'Walk 10 minutes to Nakameguro Station. Tōkyū Tōyoko line to Musashi-Kosugi, then the JR Yokosuka line direct to Kamakura. About an hour, Suica works (How-to 27).'),
+ R('10:30', 'Tsurugaoka Hachimangū, Komachi-dōri', 'The shrine up the long approach, then the snack and shop street back to the station.'),
+ R('11:45', 'Enoden to Hase', 'The little seaside train, 3 stops, about 5 minutes. Sit on the left.'),
+ R('12:00', 'Fluffy pancakes, A la Mode Kamakura', 'In Hase, looking out at the sea. Fluffy pancakes with Greek yoghurt ice cream, fruit and real maple syrup. Open from 10:00.'),
+ R('13:00', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha. Last entry 16:45.'),
+ R('14:15', 'A walk on Yuigahama', 'About 10 minutes downhill. A look along the sand towards Enoshima.'),
+ R('14:45', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+ R('15:45', 'Air Cabin, then Cosmo World', 'Air Cabin from outside Sakuragichō east exit, ¥1,000, 5 minutes. The Diving Coaster Vanish, about ¥1,000 each, cash only, pockets into the lockers. Cosmo Clock 21 at sunset, about 17:05 (How-to 28).'),
+ R('17:30', 'Harbour walk to Chinatown', 'Red Brick Warehouses and Yamashita Park at dusk, about 30 minutes.'),
+ R('18:15', 'Dinner in Chinatown', 'Walk the lanes and pick. Steamed buns from the street stalls as a starter.'),
+ R('19:30', 'Foot massage, Kyūryū SPA', 'Chinatown, 2F on a pedestrian lane. Foot bath, tea and a 60-minute foot course. Open to 22:00, card OK. Backup: Kaisokukan, open to 23:00 (How-to 28).'),
+ R('20:45', 'Train home from Motomachi-Chūkagai', 'Runs straight through to Shibuya, about 40 minutes, no change. Back about 21:30.'),
+]
+_i = [k for k, h in enumerate(HOWTO) if h[0] == 'Kamakura on the day, Mon 19'][0]
+_b = list(HOWTO[_i][1])
+_b[0] = 'Roastery to Kamakura: walk 10 minutes to Nakameguro Station. Tōkyū Tōyoko line (any train) to Musashi-Kosugi, then the JR Yokosuka line (blue and cream) bound for Zushi or Kurihama, direct to Kamakura. About an hour in all, Suica works.'
+_b[1] = 'If the JR train at Musashi-Kosugi is not a Yokosuka line one, ride to Yokohama and change there to the Yokosuka line, 25 minutes to Kamakura.'
+_b.insert(5, 'Pancakes: A la Mode Kamakura, 2-7-15 Hase, about 5 minutes from Hase Station towards the sea. Open 10:00 to 18:30, closed Wednesday and Saturday.')
+HOWTO[_i] = (HOWTO[_i][0], _b)

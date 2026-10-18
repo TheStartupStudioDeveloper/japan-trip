@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 18 Oct 23:20
+- Mon 19 later start: Starbucks Reserve Roastery breakfast 08:00, Kamakura 10:30, fluffy pancakes at A la Mode Kamakura 12:00, Yokohama 15:45, foot massage 19:30, home about 21:30. How-to 27 updated. A la Mode Kamakura card.
+
 ## 18 Oct 23:07
 - Mon 19: Yuigahama is a beach walk after lunch, not lying on the sand.
 

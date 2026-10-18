@@ -728,6 +728,9 @@ P('kaisokukan', ['Kaisokukan'], 'Kaisokukan Foot Massage', '快足館',
 P('tenku-headspa', ['Tenkū no Ryōiki'], 'Tenkū no Ryōiki, dry head spa', '天空の領域',
   'Japanese dry head spa in Kannai, private rooms, couples course, rated 4.9.',
   'Open 11:00 to 22:00. Book ahead: +81 70-3179-7818.', 'Tenku no Ryoiki dry head spa Kannai Yokohama')
+P('alamode-kamakura', ['A la Mode Kamakura'], 'A la Mode Kamakura', 'ア・ラ・モード鎌倉',
+  'Small café in Hase looking out at the sea. Fluffy pancakes with Greek yoghurt ice cream, fruit and real maple syrup. Rated 4.7.',
+  'Open 10:00 to 18:30, closed Wednesday and Saturday.', 'A la Mode Kamakura Hase')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
