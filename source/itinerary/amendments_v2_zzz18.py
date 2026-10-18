@@ -198,3 +198,15 @@ D[20]['rows'] = [
 D[20].update(cal='Roastery, omakase, Shinjuku', title='Roastery, omakase, Shinjuku',
   sum='Breakfast at the Starbucks Reserve Roastery and a walk along the Meguro River, back to the hotel to pack, a new suitcase, then the omakase lunch at Tokyo Ten Shinjuku, the department stores and Shinjuku after dark.')
 D[20]['foot'] = 'Roastery opens 08:00. Shibuya Sakura Luggage 11:00 to 23:30. Optional after lunch: Shinjuku Gyoen for an hour (last entry 16:00, ¥500), or the Kabukichō sumo show (times on Klook). Wednesday is the 05:55 wake.'
+HOWTO.append(('Hotel to Tsukiji by train, Mon 19', [
+ 'About 30 to 35 minutes door to door, about ¥210 each on Suica.',
+ 'Hotel to Shibuya Station: down from the 4F lobby, south along Miyashita Park to the station, 5 to 7 minutes.',
+ 'Ginza line: follow the orange G signs. The platform is up high, 3F above Meiji-dōri, so take the escalators up. Shibuya is the first stop, so every train goes your way (towards Asakusa). If the first is packed, wait 2 to 3 minutes for the next and a seat.',
+ 'Ride 8 stops to Ginza (G09), about 16 minutes.',
+ 'Change at Ginza to the Hibiya line: follow the grey H signs, about 5 minutes underground. Do not tap out, Suica carries through. Board towards Kita-senju.',
+ 'Ride 2 stops to Tsukiji (H11), about 3 minutes. Not Tsukijishijō, which is a different line.',
+ 'Take Exit 1, beside the big stone Tsukiji Hongwan-ji temple. Walk 3 minutes south along Shin-Ōhashi-dōri: the outer market lanes are on the left.',
+ 'At the market: most stalls are going by 07:30. Cash. Eat where you buy, not while walking.',
+ 'Afterwards: about 15 minutes west along Harumi-dōri, then left to JR Shimbashi for the Yokosuka line to Kamakura (How-to 27).']))
+_m = D[19]['rows']
+_m[_row(19, '07:00')] = R('07:00', 'Leave the hotel for Tsukiji', 'Ginza line from Shibuya to Ginza, then the Hibiya line two stops to Tsukiji, Exit 1. About 30 to 35 minutes, at the commuter peak (How-to 29).')
