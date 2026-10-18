@@ -39,6 +39,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 18 October
+- Added, paid by Cynthia (estimates, converted at ¥1 = A$0.0091 until the card amounts are known): Narita Express to Shibuya, two tickets, ¥7,000 (Sat 17); drinks at Shibuya Sky, ¥5,000 (Sat 17); breakfast at Premier Mai, Tomigaya, ¥5,000 (Sun 18).
+- Added, paid by G: foot and leg massage for two at Mominotakumi, AU$103.94 (Sun 18).
+- Added, payer to confirm: Sushi Tokyo Ten Shinjuku omakase for two, ¥9,900 x 2 (Tue 20). Shown with its amount but left out of the totals until the payer is known.
+- The expenses page now supports an item with no payer yet (payer "TBC"): it is listed but not counted, and the note under the table says so.
+
 Expenses update, 16 October
 - sequence KYOTO GOJO: paid by G, AU$991.34 (was AU$947.00 pending).
 - Hotel The Blossom Hibiya: paid by G, AU$2,045.99 (was AU$2,002.00 pending), with a note: free cancellation until 20 Oct.

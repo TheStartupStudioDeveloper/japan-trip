@@ -1,8 +1,13 @@
 [
+ {"id":"e005","order":5,"date":"2026-10-17","item":"Narita Express to Shibuya, two tickets (¥7,000)","payer":"Cynthia","aud":63.82,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
  {"id":"e010","order":10,"date":"2026-10-17","item":"Sequence Miyashita Park, 4 nights","payer":"Cynthia","aud":1968.00,"status":"paid"},
  {"id":"e011","order":11,"date":"2026-10-17","item":"Transaction fee","payer":"Cynthia","aud":58.94,"status":"paid","parent":"e010"},
  {"id":"e020","order":20,"date":"2026-10-17","item":"Shibuya Sky, two tickets (¥6,800)","payer":"G","aud":62.28,"status":"paid"},
+ {"id":"e022","order":22,"date":"2026-10-17","item":"Drinks at Shibuya Sky (¥5,000)","payer":"Cynthia","aud":45.59,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
+ {"id":"e025","order":25,"date":"2026-10-18","item":"Breakfast at Premier Mai, Tomigaya (¥5,000)","payer":"Cynthia","aud":45.59,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
  {"id":"e030","order":30,"date":"2026-10-18","item":"Street Kart","payer":"Cynthia","aud":347.41,"status":"paid"},
+ {"id":"e035","order":35,"date":"2026-10-18","item":"Foot and leg massage for two, Mominotakumi","payer":"G","aud":103.94,"status":"paid"},
+ {"id":"e038","order":38,"date":"2026-10-20","item":"Sushi Tokyo Ten Shinjuku, omakase for two (¥9,900 x 2)","payer":"TBC","aud":180.52,"status":"estimate","note":"Not in the totals until the payer is known. Converted at ¥1 = A$0.0091"},
  {"id":"e040","order":40,"date":"2026-10-21","item":"Shinkansen Shinagawa to Kyoto, Nozomi 13","payer":"G","aud":340.22,"status":"paid"},
  {"id":"e041","order":41,"date":"2026-10-21","item":"International transaction fee","payer":"G","aud":10.32,"status":"paid","parent":"e040"},
  {"id":"e050","order":50,"date":"2026-10-21","item":"sequence KYOTO GOJO, 3 nights","payer":"G","aud":991.34,"status":"paid"},

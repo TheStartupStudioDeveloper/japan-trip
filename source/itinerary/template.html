@@ -333,15 +333,15 @@ h1 span{display:block;font-weight:300}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function draw(rows){
    rows=rows.slice().sort(function(a,b){return (a.order||0)-(b.order||0)});
-   var g=0,c=0,pend=0,est=0,h='';
-   rows.forEach(function(r){var v=Number(r.aud)||0;if(r.payer==='G')g+=v;else c+=v;if(r.status==='pending')pend++;if(r.status==='estimate')est++;
+   var g=0,c=0,pend=0,est=0,tbc=0,h='';
+   rows.forEach(function(r){var v=Number(r.aud)||0;if(r.payer==='G')g+=v;else if(r.payer==='Cynthia')c+=v;else tbc++;if(r.status==='pending')pend++;if(r.status==='estimate')est++;
     var st=r.status==='pending'?'<span class="st">Pending</span>':r.status==='estimate'?'<span class="st">Estimate</span>':'';
-    h+='<tr'+(r.parent?' class="sub"':'')+'><td>'+(r.parent?'':esc(d(r.date)))+'</td><td>'+(r.parent?'':'<span class="cd2">'+esc(d(r.date))+'</span>')+esc(r.item)+st+(r.note?'<span class="cn">'+esc(r.note)+'</span>':'')+'</td><td class="amt">'+(r.payer==='G'?m(v):'')+'</td><td class="amt">'+(r.payer==='Cynthia'?m(v):'')+'</td></tr>'});
+    h+='<tr'+(r.parent?' class="sub"':'')+'><td>'+(r.parent?'':esc(d(r.date)))+'</td><td>'+(r.parent?'':'<span class="cd2">'+esc(d(r.date))+'</span>')+esc(r.item)+st+(r.note?'<span class="cn">'+esc(r.note)+'</span>':'')+(r.payer!=='G'&&r.payer!=='Cynthia'?'<span class="cn">'+m(v)+', payer to confirm</span>':'')+'</td><td class="amt">'+(r.payer==='G'?m(v):'')+'</td><td class="amt">'+(r.payer==='Cynthia'?m(v):'')+'</td></tr>'});
    document.getElementById('costrows').innerHTML=h||'<tr><td></td><td>Nothing logged yet.</td><td></td><td></td></tr>';
    var diff=g-c,half=Math.abs(diff)/2,who=diff>0?'Cynthia owes G':diff<0?'G owes Cynthia':'Square';
    document.getElementById('costfoot').innerHTML='<tr><td></td><td>Total</td><td class="amt">'+m(g)+'</td><td class="amt">'+m(c)+'</td></tr><tr><td></td><td>Difference</td><td class="amt">'+(diff>0?'+'+m(diff):'')+'</td><td class="amt">'+(diff<0?'+'+m(-diff):'')+'</td></tr>';
    document.getElementById('costsum').innerHTML='<div><small>G has paid</small><b>'+m(g)+'</b></div><div><small>Cynthia has paid</small><b>'+m(c)+'</b></div><div><small>Shared total</small><b>'+m(g+c)+'</b></div><div class="bal"><small>To even up</small><b>'+(half?who+' '+m(half):'Square')+'</b></div>';
-   var n=[];if(pend)n.push(pend+(pend>1?' bookings are':' booking is')+' pending and counted already');if(est)n.push(est+(est>1?' items are estimates':' item is an estimate'));
+   var n=[];if(pend)n.push(pend+(pend>1?' bookings are':' booking is')+' pending and counted already');if(est)n.push(est+(est>1?' items are estimates':' item is an estimate'));if(tbc)n.push(tbc+(tbc>1?' items are':' item is')+' waiting on a payer and not in the totals');
    document.getElementById('costnote').textContent=n.length?n.join('. ')+'.':'';
   }
   draw(data);
