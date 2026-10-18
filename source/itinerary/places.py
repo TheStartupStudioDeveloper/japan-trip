@@ -681,6 +681,33 @@ P('zara-s', ['ZARA Shibuya Kōen-dōri'], 'ZARA Shibuya Kōen-dōri', 'ザラ渋
 P('hm-s', ['H&amp;M Udagawachō'], 'H&M Shibuya Udagawachō', 'H&M 渋谷',
   'Four floors beside MEGA Don Quijote. Menswear is on the top floor, 4F.',
   'Open 10:00 to 22:00.', 'H&M Shibuya Udagawacho 33-6')
+P('tsite', ['Daikanyama T-Site'], 'Daikanyama T-Site', '代官山 T-SITE',
+  'Tsutaya Books in three linked white buildings with a woven T pattern, by Klein Dytham. Design, art, travel and photography books, a Starbucks, and the Anjin lounge.',
+  'Open 09:00 to 22:00.', 'Tsutaya Books Daikanyama')
+P('meguro-river', ['Meguro River'], 'Meguro River, Nakameguro', '目黒川',
+  'A canal lined with cherry trees through Nakameguro, with small boutiques, galleries and cafés along both banks.',
+  'Walk the path between Nakameguro Station and the Roastery.', 'Meguro River Nakameguro')
+P('onibus', ['Onibus Coffee'], 'Onibus Coffee Nakameguro', 'オニバスコーヒー中目黒',
+  'Specialty coffee in a renovated old wooden house by the tracks in Nakameguro.',
+  'Open 09:00 to 18:00.', 'Onibus Coffee Nakameguro')
+P('roastery', ['Starbucks Reserve Roastery Tokyo'], 'Starbucks Reserve Roastery Tokyo', 'スターバックス リザーブ ロースタリー 東京',
+  'One of six Roasteries in the world, in a Kengo Kuma building on the Meguro River. Four floors: roasting, a Princi bakery, Teavana and the Arriviamo cocktail bar.',
+  'Tuesday 08:00 to 22:00. Busy late morning.', 'Starbucks Reserve Roastery Tokyo')
+P('tokyo-ten-shin', ['Sushi Tokyo Ten Shinjuku'], 'Sushi Tokyo Ten Shinjuku', '鮨 とうよう 天 新宿',
+  'The NEWoMan branch of Tokyo Ten, by Shinjuku Station New South exit. Counter omakase, the chef shapes each piece in front of you.',
+  'Booked Tue 20, 13:30, full course. Card only. Same-day cancellation charged in full.', 'SUSHI TOKYO TEN Shinjuku NEWoMan')
+P('isetan-s', ['Isetan and Isetan Men'], 'Isetan Shinjuku', '伊勢丹新宿店',
+  'Tokyo\'s flagship department store: the main building, Isetan Men\'s next door, and a famous basement food hall.',
+  'Passports for tax-free at the counter.', 'Isetan Shinjuku')
+P('takashimaya-s', ['Takashimaya'], 'Takashimaya Shinjuku', '新宿高島屋',
+  'A large department store at the south exit, joined to Times Square and close to NEWoMan.',
+  'Passports for tax-free.', 'Takashimaya Shinjuku')
+P('sakura-tk', ['Tonkatsu Kagurazaka Sakura Jinnan'], 'Tonkatsu Kagurazaka Sakura, Jinnan', 'とんかつ神楽坂さくら 渋谷神南店',
+  'Thick-cut tonkatsu with clay-pot rice and miso soup. A big room, usually seated fast.',
+  'Open 11:00 to 22:00. Two minutes from Mominotakumi.', 'Tonkatsu Kagurazaka Sakura Shibuya Jinnan')
+P('toriton', ['Yakitori Toriton'], 'Yakitori Toriton Shibuya', '旨串とりとん 渋谷',
+  'Charcoal yakitori izakaya, some tatami seats, rated 4.7. The addictive chicken is the order.',
+  'Open 17:00 to 05:00. Same-day: call +81 3-6452-6827.', 'Yakitori Toriton Shibuya')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

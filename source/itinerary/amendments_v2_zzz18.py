@@ -13,8 +13,8 @@ D[18]['rows'] = [
  R('14:45', 'Leave for Street Kart', 'Check which shop the voucher names (How-to 25). Aim to arrive by 15:30.'),
  R('16:00', 'Street Kart, Rainbow Bridge route', 'About two hours. Golden hour over the bay.', B),
  R('18:30', 'Back to the hotel, shower', 'Same way back, or a taxi.'),
- R('19:30', 'Ichiran Shibuya, join the queue', 'Jinnan, B1F, open 24 hours. Scan the QR code at the door to join the waitlist, then go next door. Tonkotsu ramen in solo booths.'),
- R('19:45', 'Foot massage at Mominotakumi', 'Next door to Ichiran, 9F. Open to 23:00. Book by phone this afternoon: +81 3-6416-0995. Then ramen when your number comes up.'),
+ R('19:30', 'Dinner near Jinnan', 'Tonkatsu Kagurazaka Sakura Jinnan, 2 minutes from the massage, to 22:00. Or Gyukatsu Motomura or Tonkatsu Nagi.'),
+ R('20:30', 'Foot and leg massage, Mominotakumi', 'SUNX Building 9F, Jinnan. Booked for 2. Then Yakitori Toriton, 3 minutes away and open late, or Ichiran in the same block.', B),
 ]
 D[18].pop('foot', None)
 
@@ -32,19 +32,23 @@ D[19].update(cal='Tsukiji, Yokohama', title='Tsukiji market and Yokohama', rows=
 
 # Tue 20: free morning, omakase or sumo, Shinjuku Gyoen, Shinjuku after dark
 _strip(20)
-D[20].update(cal='Omakase, Shinjuku', title='Omakase lunch, Shinjuku Gyoen, Shinjuku after dark',
-  sum='The vintage stores are done, so the day opens up: a slow morning, an omakase sushi lunch, the Shinjuku Gyoen garden, a rest and pack, then Shinjuku after dark.',
-  foot='Other ideas for the free time: the Kabukichō live sumo show in Shinjuku (about ¥5,000, times and booking on Klook), or teamLab if a morning turns wet (How-to 8). Pack before going out: Wednesday is the 05:55 wake for the Shinkansen.',
+D[20].update(cal='Daikanyama, omakase, Shinjuku', title='Daikanyama and Nakameguro, omakase, Shinjuku after dark',
+  sum='A design morning in Daikanyama and Nakameguro, the booked omakase lunch in Shinjuku, the department stores, then Shinjuku after dark. No hotel stop, so pack the bags before leaving.',
+  foot='Optional after lunch: Shinjuku Gyoen for an hour, last entry 16:00, closes 16:30 in October, ¥500. Other ideas: the Kabukichō live sumo show (about ¥5,000, times on Klook). Wednesday is the 05:55 wake for the Shinkansen.',
   rows=[
- R('09:30', 'Slow breakfast', 'Nothing booked before lunch. Laundry or a lie-in.'),
- R('11:00', 'Omakase lunch: Sushi Tokyo Ten Shibuya', 'Shibuya Stream 3F, 15 minutes on foot. Weekday lunch omakase ¥5,500, 90 minutes, counter at 11:00 or 13:30. Book on TableCheck. Card only.'),
- R('13:00', 'Shinjuku Gyoen', 'JR Yamanote to Shinjuku, then 10 minutes on foot to the Shinjuku Gate. ¥500. Open Tuesday. The big garden: French, English and Japanese sections, autumn colour starting.'),
- R('15:00', 'Back to the hotel, pack', 'Feet up. Pack the bags tonight for Wednesday.'),
- R('16:45', 'Shinjuku: the 3D cat at the east exit', 'JR Yamanote from Shibuya, about 7 minutes. The giant cat billboard at dusk.'),
- R('17:30', 'Omoide Yokochō', 'Yakitori and a drink, grazing across two or three counters before they fill (How-to 11).'),
- R('18:45', 'Godzilla head, Kabukichō and Kabukichō Tower', 'Through the underpass to the east side. Neon at full strength. Ignore touts: never follow anyone off the street into a bar.'),
- R('20:00', 'Hanazono Shrine, then Golden Gai', 'The shrine is beside Golden Gai, lit at night. In Golden Gai: cash, a cover charge, and look for English menus. Regulars-only means move on.'),
- R('21:30', 'Fukutoshin line home', 'From Shinjuku-sanchōme. Direct to Shibuya, about 5 minutes. Early night.'),
+ R('09:30', 'Breakfast, then pack the bags', 'You will not be back at the hotel until tonight.'),
+ R('10:00', 'To Daikanyama', 'About 20 minutes on foot, or the Tōkyū Tōyoko line one stop from Shibuya to Daikanyama.'),
+ R('10:15', 'Daikanyama T-Site and Log Road', 'Tsutaya Books: three linked buildings of design, art and photography books, 09:00 to 22:00. Then the Log Road boutiques.'),
+ R('11:00', 'Down to the Meguro River', 'About 10 minutes on foot. The canal path, small shops, and Onibus Coffee in an old wooden house (09:00 to 18:00).'),
+ R('11:45', 'Starbucks Reserve Roastery Tokyo', 'About 10 minutes up the river. Kengo Kuma building, four floors of roasting, bakery and bar. Open 08:00 to 22:00. Keep it light: lunch is the full course.'),
+ R('12:45', 'Nakameguro to Shinjuku', 'Hibiya line to Ebisu, then JR Yamanote to Shinjuku, about 25 minutes. Use the New South exit for NEWoMan.'),
+ R('13:30', 'Omakase lunch: Sushi Tokyo Ten Shinjuku', 'NEWoMan Shinjuku 2F. Full omakase course, booked. About 90 minutes. Card only.', B),
+ R('15:00', 'Department stores', 'NEWoMan and Lumine on the spot, Takashimaya across the south deck, then Isetan and Isetan Men\'s, about 10 minutes east. The Isetan food hall in the basement. Passports for tax-free.'),
+ R('17:30', 'Shinjuku: the 3D cat at the east exit', 'Three minutes from Isetan. The giant cat billboard after dark.'),
+ R('18:30', 'Omoide Yokochō', 'Light yakitori and a drink after the big lunch, grazing across a couple of counters (How-to 11).'),
+ R('19:30', 'Godzilla head, Kabukichō and Kabukichō Tower', 'Through the underpass to the east side. Ignore touts: never follow anyone off the street into a bar.'),
+ R('20:30', 'Hanazono Shrine, then Golden Gai', 'The shrine is beside Golden Gai, lit at night. In Golden Gai: cash, a cover charge, look for English menus. Regulars-only means move on.'),
+ R('21:45', 'Fukutoshin line home', 'From Shinjuku-sanchōme, direct to Shibuya, about 5 minutes. Early night for the 05:55 wake.'),
 ])
 
 # How-tos

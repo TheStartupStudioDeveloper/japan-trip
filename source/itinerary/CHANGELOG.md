@@ -1,5 +1,10 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: Tue 20 set, Sun 18 evening
+- Tue 20: Daikanyama T-Site, Meguro River and Onibus, Starbucks Reserve Roastery, then Sushi Tokyo Ten Shinjuku 13:30 (booked, full course), department stores, Shinjuku after dark. No hotel stop. Gyoen and sumo as optional notes.
+- Sun 18 evening: dinner near Jinnan 19:30, foot and leg massage at Mominotakumi 20:30 (booked), then Toriton or Ichiran.
+- New cards: Daikanyama T-Site, Meguro River, Onibus, Roastery, Tokyo Ten Shinjuku, Isetan, Takashimaya, Tonkatsu Sakura, Toriton.
+
 ## 2026-10-18: Premier Mai, pre-owned list, G to ZARA and Nintendo
 - Sun 18 breakfast set to Premier Mai. Cynthia's row is the pre-owned list in route order (Brand Collect Omotesando 2, Kindal Harajuku, RAGTAG, ALLU, Brand Collect Shibuya). G's row: ZARA then Nintendo Tokyo. Cards for all six shops.
 
