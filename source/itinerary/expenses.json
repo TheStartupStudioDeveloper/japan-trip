@@ -8,6 +8,7 @@
  {"id":"e024","order":24,"date":"2026-10-17","item":"Ramen dinner, Shibuya (¥3,500)","payer":"Cynthia","aud":31.91,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
  {"id":"e025","order":25,"date":"2026-10-18","item":"Breakfast at Premier Mai, Tomigaya (¥5,000)","payer":"Cynthia","aud":45.59,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
  {"id":"e030","order":30,"date":"2026-10-18","item":"Street Kart","payer":"Cynthia","aud":347.41,"status":"paid"},
+ {"id":"e033","order":33,"date":"2026-10-18","item":"Dinner at Mihachi Shibuya Ekimae (¥3,971)","payer":"G","aud":36.20,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
  {"id":"e035","order":35,"date":"2026-10-18","item":"Foot and leg massage for two, Mominotakumi","payer":"G","aud":103.94,"status":"paid"},
  {"id":"e038","order":38,"date":"2026-10-20","item":"Sushi Tokyo Ten Shinjuku, omakase for two (¥9,900 x 2)","payer":"TBC","aud":180.52,"status":"estimate","note":"Not in the totals until the payer is known. Converted at ¥1 = A$0.0091"},
  {"id":"e040","order":40,"date":"2026-10-21","item":"Shinkansen Shinagawa to Kyoto, Nozomi 13","payer":"G","aud":340.22,"status":"paid"},

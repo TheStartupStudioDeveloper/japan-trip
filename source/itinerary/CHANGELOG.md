@@ -54,6 +54,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 18 October, evening
+- Added: Sun 18 dinner at Mihachi Shibuya Ekimae, ¥3,971 from the receipt, paid by G. Estimate at ¥1 = A$0.0091.
+
 Expenses update, 18 October, afternoon
 - Added (estimates at ¥1 = A$0.0091): dinner at Tōkai Shokuichi, Shibuya Yokochō, ¥7,500, paid by G; ramen dinner in Shibuya, ¥3,500, paid by Cynthia. Both on Sat 17.
 
