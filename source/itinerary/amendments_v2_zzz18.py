@@ -8,7 +8,7 @@ D[18]['rows'] = [
  R('10:15', 'Meiji Jingū', 'Forest paths and the big torii. About 45 minutes.'),
  R('11:00', 'Takeshita Street', 'Out of the Harajuku gate and across the road. Walk it once together.'),
  R('11:30', "Cynthia's shopping afternoon", 'Pre-owned, not vintage, in order back towards the hotel: Brand Collect Omotesando 2, Kindal Harajuku, RAGTAG Harajuku, ALLU, then Brand Collect Shibuya by the hotel. Passport for tax-free. Back by 14:20.'),
- R('11:30', "G's free time", 'ZARA Harajuku on Meiji-dōri for cargo pants, then 15 minutes down Meiji-dōri to Nintendo Tokyo, Shibuya Parco 6F. Lunch on the way. Back by 14:20 (How-to 10).'),
+ R('11:30', "G's free time", 'Down Cat Street to Jinnan, about 15 minutes. Book tonight\'s foot massages at Mominotakumi (9F), then ZARA Shibuya Kōen-dōri on the same block, Nintendo Tokyo in Shibuya Parco 6F, and H&M Udagawachō (menswear 4F) beside MEGA Don Quijote. All within 5 minutes of each other. Back by 14:20 (How-to 10).'),
  R('14:20', 'Back at the hotel', 'Fully closed shoes. Physical licence cards, physical International Driving Permits, passports. No digital copies.'),
  R('14:45', 'Leave for Street Kart', 'Check which shop the voucher names (How-to 25). Aim to arrive by 15:30.'),
  R('16:00', 'Street Kart, Rainbow Bridge route', 'About two hours. Golden hour over the bay.', B),
@@ -57,11 +57,13 @@ for _i, (_t, _b) in enumerate(HOWTO):
          'Back to the hotel: a 10 minute taxi from Omotesando, or 20 minutes on foot down Cat Street.'])
     elif _t == 'While the stores are on, for G':
         HOWTO[_i] = ('G on his own, Sun 18', [
-         'Cargo pants: UNIQLO Harajuku (B1 and 1F) and H&M share the corner building on Meiji-dōri by Harajuku Station, opposite the Takeshita Street exit. Both open 10:00 to 10:30 on Sunday. UNIQLO is the best bet for a quick, good fit.',
-         'ZARA Harajuku is a few minutes south on Meiji-dōri, Jingūmae 6-31-17. Men’s is upstairs.',
-         'Then walk 15 minutes down Meiji-dōri into Shibuya for Nintendo Tokyo, Shibuya Parco 6F, 10:00 to 21:00. The Pokémon Center and Capcom Store share the floor. It gets crowded after lunch.',
-         'Lunch on the way: anywhere on Meiji-dōri or Cat Street, or the Parco food floor (B1).',
-         'Parco to the hotel is 5 minutes on foot. Back by 14:20.'])
+         'ZARA Harajuku is closed. Use ZARA Shibuya Kōen-dōri instead, 1-22-4 Jinnan, 10:30 to 22:00.',
+         'Walk down Cat Street from Omotesando into Jinnan, about 15 minutes.',
+         'First stop: Mominotakumi, 9F, same block as ZARA and Ichiran. Book two foot massages for about 19:45 tonight. Open to 23:00, +81 3-6416-0995.',
+         'ZARA Kōen-dōri for cargo pants, four floors.',
+         'Nintendo Tokyo, Shibuya Parco 6F, 3 minutes away, 10:00 to 21:00. The Pokémon Center and Capcom Store share the floor.',
+         'H&M Udagawachō, beside MEGA Don Quijote, 10:00 to 22:00. Menswear is on 4F.',
+         'H&M to the hotel is about 8 minutes on foot. Back by 14:20.'])
     elif _t == 'Omoide Yokochō, Mon 19':
         HOWTO[_i] = ('Omoide Yokochō, Tue 20', _b)
     elif _t == 'Footbaths in Yokohama, Tue 20 ideas':

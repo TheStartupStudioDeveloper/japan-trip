@@ -675,9 +675,12 @@ P('allu-omote', ['ALLU'], 'ALLU Omotesando', 'ALLU 表参道店',
 P('bc-shibuya', ['Brand Collect Shibuya'], 'Brand Collect Shibuya', 'ブランドコレクト渋谷',
   'A small, well priced pre-owned designer bag shop in Jinnan, two minutes from the hotel.',
   'Open 11:00 to 20:00.', 'BRAND COLLECT SHIBUYA Jinnan')
-P('zara-hj', ['ZARA Harajuku'], 'ZARA Harajuku', 'ザラ原宿店',
-  'A large ZARA on Meiji-dōri. Menswear upstairs.',
-  'Fitting room queues on weekend afternoons.', 'ZARA Harajuku Store')
+P('zara-s', ['ZARA Shibuya Kōen-dōri'], 'ZARA Shibuya Kōen-dōri', 'ザラ渋谷公園通り店',
+  'Four floors of ZARA on Kōen-dōri in Jinnan, on the same block as Mominotakumi and Ichiran.',
+  'Open 10:30 to 22:00. The Harajuku store is closed.', 'ZARA Shibuya Koen Dori')
+P('hm-s', ['H&amp;M Udagawachō'], 'H&M Shibuya Udagawachō', 'H&M 渋谷',
+  'Four floors beside MEGA Don Quijote. Menswear is on the top floor, 4F.',
+  'Open 10:00 to 22:00.', 'H&M Shibuya Udagawacho 33-6')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
