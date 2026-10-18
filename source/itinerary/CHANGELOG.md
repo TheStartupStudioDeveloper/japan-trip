@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 18 Oct 23:07
+- Mon 19: Yuigahama is a beach walk after lunch, not lying on the sand.
+
 ## 18 Oct 23:05
 - Mon 19 locked in: Yuigahama beach lunch, Cosmo World Vanish coaster and ferris wheel, Chinatown dinner, foot massage at Kyūryū SPA 19:00, home about 21:00.
 
