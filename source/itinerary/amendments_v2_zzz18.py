@@ -120,3 +120,21 @@ HOWTO.append(('Yokohama on the day, Mon 19', [
 _m = D[19]['rows']
 _r = _m[_row(19, '07:45')]; _m[_row(19, '07:45')] = R(_r[0], _r[1], 'From Shibuya, a train bound for Zushi runs direct, about an hour. Suica works (How-to 27).', *_r[3:])
 _r = _m[_row(19, '14:00')]; _m[_row(19, '14:00')] = R(_r[0], _r[1], 'About 25 minutes, then change to Sakuragichō (How-to 27). Yokohama on the day: How-to 28.', *_r[3:])
+# Mon 19 final shape, 18 Oct 23:00: beach, Vanish coaster, foot massage after dinner
+D[19].update(
+  sum='Kamakura in the morning: the shrine, Hase-dera and the Great Buddha, then lunch and a lie on the sand at Yuigahama. Yokohama in the afternoon: the Air Cabin, the Vanish coaster and the ferris wheel at sunset, the harbour walk, dinner in Chinatown and a foot massage before the train home.',
+  foot='Checked for Monday: Tsurugaoka Hachimangū 06:00 to 20:00, Hase-dera 08:00 to 17:00 (¥400), the Great Buddha 08:00 to 16:45 (¥300), Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00 (closed Thursdays, cash only), Kyūryū SPA 10:00 to 22:00. Mt Fuji is never guaranteed: clear mornings are best.')
+D[19]['rows'] = [
+ R('07:45', 'JR Shōnan-Shinjuku line to Kamakura', 'Board a train bound for Zushi: direct, about an hour. If it says Odawara, change at Ōfuna (How-to 27).'),
+ R('09:00', 'Tsurugaoka Hachimangū, Komachi-dōri', 'The shrine up the long approach, then the snack and shop street back to the station.'),
+ R('10:30', 'Enoden to Hase', 'The little seaside train, 3 stops, about 5 minutes. Sit on the left.'),
+ R('10:40', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha.'),
+ R('12:15', 'Yuigahama: lunch and the beach', 'About 10 minutes downhill from Hase. Lunch near the sand, then relax. If it is clear, look west for Mt Fuji, or ride the Enoden two stops to Inamuragasaki for the classic view (How-to 27).'),
+ R('14:00', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+ R('15:00', 'Air Cabin across the harbour', 'Right outside Sakuragichō east exit. ¥1,000 one way, about 5 minutes. Lands beside Cosmo World.'),
+ R('15:15', 'Cosmo World: Vanish coaster, ferris wheel', 'The Diving Coaster Vanish plunges into the pool and into a tunnel, about ¥1,000 each, cash only, pockets into the lockers. Cosmo Clock 21 at sunset, about 17:05 (How-to 28).'),
+ R('17:00', 'Harbour walk to Chinatown', 'Red Brick Warehouses and Yamashita Park at dusk, about 30 minutes.'),
+ R('17:45', 'Dinner in Chinatown', 'Walk the lanes and pick. Steamed buns from the street stalls as a starter.'),
+ R('19:00', 'Foot massage, Kyūryū SPA', 'Chinatown, 2F on a pedestrian lane. Foot bath, tea and a 60-minute foot course. Open to 22:00, card OK. Backup: Kaisokukan, open to 23:00 (How-to 28).'),
+ R('20:15', 'Train home from Motomachi-Chūkagai', 'Runs straight through to Shibuya, about 40 minutes, no change. Back about 21:00.'),
+]

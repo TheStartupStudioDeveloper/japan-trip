@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 18 Oct 23:05
+- Mon 19 locked in: Yuigahama beach lunch, Cosmo World Vanish coaster and ferris wheel, Chinatown dinner, foot massage at Kyūryū SPA 19:00, home about 21:00.
+
 ## 18 Oct 23:10
 - How-to 27 Kamakura on the day and How-to 28 Yokohama on the day, Mon 19. Place cards: Cosmo World, Yuigahama, Inamuragasaki, Kyūryū SPA, Kaisokukan, Tenkū no Ryōiki.
 
