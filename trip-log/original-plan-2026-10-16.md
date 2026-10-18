@@ -1,0 +1,461 @@
+# Original plan (projected), as of Fri 16 Oct 2026
+
+Frozen copy of the itinerary before landing (commit cde44a8). Used to compare projected vs actual at the end of the trip. Do not edit.
+
+## 16 Oct: Melbourne to Hong Kong, overnight to Tokyo
+- 16 Friday
+- Melbourne to Hong Kong
+- Car to Moonee Ponds, a lift to the airport, nine hours to Hong Kong, a late-night stopover, then the overnight flight to Tokyo.
+- 11:15 Leave home, park the car in Moonee Ponds
+- Glenn picks up Cynthia on the way.
+- 11:45 Lift to Melbourne Airport
+- About 15 to 20 minutes. Ask to be dropped at the Terminal 4 drop-off, which avoids the new forecourt arrangement.
+- 12:10 Walk from Terminal 4 to Terminal 2
+- About 10 minutes with the bags. Terminal 2 is international departures.
+- 12:25 Check in at the Cathay desks
+- Three hours before departure. Ask for the bags to be tagged through to Tokyo Narita, and collect both boarding passes.
+- 13:15 Security and passport control
+- Then lunch airside.
+- 14:45 Boarding
+- 15:25 CX104 departs Melbourne Booked
+- About 9 hours 20 minutes. Hong Kong is three hours behind Melbourne.
+- 21:45 Land in Hong Kong, Terminal 1 Booked
+- Follow Transfer, not Arrivals. You stay airside: transfer security only, no immigration, no bags to collect. Switch on the Ubigi eSIM ( How-to 2 ).
+- 22:30 Stopover: lounge or dinner
+- 3 hours 35 minutes. The Plaza Premium Lounge near Gate 1 is open 24 hours, has showers and can be booked online ahead, from about HK$650 each. Or eat in the food hall.
+- 00:40 At the gate
+- Check the screens for the gate first. Some gates are a train ride away, so leave the lounge 50 minutes before departure.
+- 01:20 CX524 departs for Tokyo Narita Booked
+- About 4 hours 30 minutes. Tokyo is one hour ahead. Sleep if you can.
+- The night runs straight on into Saturday 17, which starts with the 06:50 landing at Narita .
+
+## 17 Oct: Arrive and wander Shibuya
+- 17 Saturday
+- Shibuya
+- No trains after the airport, just a slow loop on foot from the hotel while you wait for the room. Only the landing and Shibuya Sky are fixed. The other times are a guide.
+- 06:50 Land at Narita Booked
+- CX524, Terminal 2. Visit Japan Web ready. Check you each get the landing sticker, then scan it into Visit Japan Web ( How-to 4 ).
+- 08:15 Narita Express to Shibuya
+- Buy the ticket at Narita , on a train that stops at Shibuya ( How-to 5 ). About 80 minutes.
+- 10:00 Shibuya Station , bags to the hotel
+- Hachikō exit , lobby on 4F ( How-to 6 ). Ask about early check-in: free if a room is ready, bags held until then.
+- 10:30 Miyashita Park and Cat Street
+- The rooftop park above the hotel, where the festival is on, then Cat Street . If shattered, stop here.
+- 12:30 Omotesando
+- Lunch wherever looks good. Omotesando Hills, Tod's and Dior to look up at. Prada Aoyama optional.
+- 13:45 Wander back into Shibuya
+- Hachikō , the Scramble Crossing , Center-gai .
+- 14:45 Supplies, then check in if the room is ready
+- Don Quijote and 7-Eleven for supplies. No room yet: bags stay at the desk until after Shibuya Sky .
+- 16:00 Shibuya Sky Booked
+- Seven minutes' walk. Pockets only, no bags ( How-to 7 ). Sunset about 17:00, then the lights.
+- 18:30 Dinner close by
+- Nonbei Yokochō or Dōgenzaka , then an early night.
+
+## 18 Oct: Meiji Jingū, Harajuku, the festival, Street Kart
+- 18 Sunday
+- Shibuya
+- A light day on foot. The shrine and Harajuku in the morning, the festival on the walk home, then karting over the bay at golden hour.
+- 09:00 Slow breakfast
+- 09:45 Meiji Jingū
+- 15 minutes' walk from the hotel. Forest paths and the big torii.
+- 11:00 Takeshita Street and the Harajuku back lanes
+- Busy on a Sunday. Walk it once, then duck into the lanes behind.
+- 12:15 Lunch in Harajuku
+- 13:15 Cat Street back into the festival streets
+- Dōgenzaka , Bunkamura-dori, 109 . The streets close for stages on Sunday. Dip in and out rather than chasing set times.
+- 14:45 Head to the Street Kart meeting point
+- Check the location on the booking and allow the travel time.
+- 15:30 Arrive 30 minutes early
+- Fully closed shoes on. Physical licence card, physical International Driving Permit and passports in hand. No digital copies.
+- 16:00 Street Kart , Rainbow Bridge route Booked
+- Golden hour over the bay.
+- Evening Back to Shibuya , nice dinner
+- Option: Sushi Hatsume in Ebisu, one stop away. 22-course omakase, ¥10,890 each, 19:30 seating. Book ahead if you want it.
+
+## 19 Oct: Omotesando stores, Shinjuku after dark
+- 19 Monday
+- Shibuya
+- Monday 19. The Shinjuku day
+- A slow start, the stores, a rest at the hotel, then Shinjuku after dark, west to east. Rain barely touches this day.
+- 09:30 Late breakfast
+- A slow start. Nothing is booked today.
+- 11:00 Omotesando and Aoyama vintage luxury
+- Until 14:00. The secondhand luxury boutiques either side of the avenue. All open at 11:00 except Casanova at 12:00 ( How-to 9 ). Passports for tax-free. G has his own options ( How-to 10 ).
+- 14:00 Lunch in Omotesando
+- 15:00 Back to the hotel
+- A 20 minute walk. Drop the bags, feet up.
+- 16:45 Shinjuku : the 3D cat at the east exit
+- JR Yamanote from Shibuya , about 7 minutes. The giant cat billboard at dusk.
+- 17:30 Omoide Yokochō
+- Yakitori and a drink, grazing across two or three counters before they fill ( How-to 11 ).
+- 18:45 Godzilla head , Kabukichō and Kabukichō Tower
+- Through the underpass to the east side. Neon at full strength. Ignore touts: never follow anyone off the street into a bar.
+- 20:00 Hanazono Shrine , then Golden Gai
+- The shrine is beside Golden Gai , lit at night. In Golden Gai : cash, a cover charge, and look for English menus. Regulars-only means move on ( How-to 11 ).
+- 21:30 Fukutoshin line home
+- From Shinjuku-sanchōme, the closest station to Golden Gai . Direct to Shibuya , about 5 minutes.
+- Weather rule: the better day of Monday and Tuesday gets Tsukiji and Yokohama , and the other gets this day. On a wet morning teamLab can move here ( How-to 8 ), or try the Sumo show in Shibuya , times to check. Of interest if plans change: the Government Building deck about 16:15 for dusk, and the Isetan food hall . Running early: go into Shinjuku sooner and wander the station and the east side streets. Shinjuku Gyoen is the park to see, on a Tuesday only.
+- Monday 19. If Shibuya Sky is on Monday
+- Same day, with a sunset break back in Shibuya . Three changes:
+- Leave the stores by 14:00, then lunch and bags to the hotel as planned.
+- Shibuya Sky about 16:15, the booked sunset slot. Bags stay at the hotel ( How-to 7 ).
+- Then JR to Shinjuku about 17:45 and pick the plan up at Omoide Yokochō . The 3D cat comes after dinner.
+- Monday 19. If Shibuya Sky is on Tuesday
+- Monday and Tuesday swap. Today becomes the Tsukiji and Yokohama day, exactly as written for Tuesday, and the Shinjuku day moves to Tuesday.
+
+## 20 Oct: Tsukiji market and Yokohama
+- 20 Tuesday
+- Shibuya
+- Tuesday 20. The Tsukiji and Yokohama day
+- Breakfast at Tsukiji Outer Market in its best window, then a long Yokohama day: the waterfront, the harbour walk and Chinatown . The outdoor day: give it the better weather of Monday and Tuesday.
+- 07:30 Leave the hotel for Tsukiji
+- Ginza line to Ginza , then the Hibiya line two stops to Tsukiji . About 30 minutes, at the commuter peak.
+- 08:15 Tsukiji Outer Market breakfast
+- The best window, before the 10:00 rush. Tamagoyaki , tuna, grilled scallop and uni, strawberry daifuku. Eat at the stall. Then Namiyoke shrine .
+- 10:15 Train to Yokohama
+- About an hour. Hibiya line to Naka-meguro, then the Tōyoko line through to Minatomirai. Check the route on the day.
+- 11:30 Sakuragichō , Air Cabin , Minato Mirai waterfront
+- The cable car across the harbour, Red Brick Warehouses , the skyline. No rush today.
+- 13:00 Lunch, then a free afternoon on the waterfront
+- Ideas in Extras, Yokohama .
+- 16:30 Harbour walk to Chinatown , dinner
+- At dusk. Idea: the footbath at The Wharf House on the way ( How-to 22 ). Dinner from 17:30.
+- 19:30 Train home from Motomachi-Chūkagai
+- Runs straight through to Shibuya , about 40 minutes, no change.
+- 20:30 Pack
+- Tomorrow is an early start.
+- Alternatives: the market also fits Mon 19 before the stores open, or Mon 26 with teamLab moved to 13:30. Closed Sundays and Wednesdays.
+- Tuesday 20. Alternative morning: Kamakura
+- Swap the market morning for the coast, temples and the Great Buddha . Join the plan above about 14:30. The market goes to Monday 19 morning, or drops out.
+- 08:00 JR Shōnan-Shinjuku line to Kamakura , about an hour, direct.
+- 09:15 Tsurugaoka Hachimangū and Komachi-dōri .
+- 11:00 Enoden , the little seaside train, to Hase for Hase-dera and the Great Buddha .
+- 12:30 Lunch in Hase or Kamakura .
+- 14:00 JR to Yokohama , about 25 minutes.
+- Tuesday 20. If Shibuya Sky is on Tuesday
+- Monday and Tuesday swap. Tsukiji and Yokohama moves to Monday, and today becomes the Shinjuku day as written for Monday. Four changes:
+- Today runs as written for Monday: late breakfast, the stores from 11:00, lunch at 14:00.
+- Back to the hotel about 15:00 to pack and leave the bags, then Shibuya Sky at 16:00, the booked backup slot.
+- JR to Shinjuku about 18:00 for Omoide Yokochō , the 3D cat , Kabukichō and Golden Gai .
+- Train back by about 21:30. It is a 05:55 wake for the Shinkansen .
+
+## 21 Oct: Shibuya to Kyoto, straight out to Nara
+- 21 Wednesday
+- Shibuya to Kyoto
+- An early start with the bags on the train. Then Nara , which is flat, outdoors and forgiving, which is what a travel day wants.
+- 05:55 Wake, final pack, check out by 06:20
+- 06:30 Taxi to Shinagawa , Kōnan exit
+- About 20 to 25 minutes. Book it at the front desk the night before. The Yamanote line from Shibuya is the fallback ( How-to 12 ).
+- 07:00 Shinagawa , ekiben and coffee
+- Breakfast on the train. Early on purpose: this is the train you cannot miss.
+- 07:55 Nozomi 13 to Kyoto Booked
+- Car 9, seats 16-C and 16-D, Green Car with oversized baggage area. Fuji on the right at about 08:30.
+- 10:00 Kyoto Station Booked
+- 10:15 Bags to Crosta Kyoto , level B1
+- Below the JR Central Gate, open until 20:00. Take passports and valuables out first ( How-to 13 ).
+- 10:40 Kintetsu limited express to Nara
+- South side of the station, about 10 minutes from Crosta. Seats at the machine, about ¥1,280 each ( How-to 24 ).
+- 11:15 Kintetsu Nara , up into Higashimuki arcade
+- Covered to Sanjō-dōri . Nakatanidō mochi pounding at the end.
+- 11:30 Lunch: Kamameshi Shizuka
+- Iron-pot rice cooked to order, about 20 minutes. Ten minutes east, beside Isuien. No bookings. Long queue: a kakinoha box instead.
+- 12:45 Into Nara Park for the deer
+- Straight onto the lawns towards Kasuga, calmer than the Tōdai-ji gate. Kōfuku-ji 's pagoda is wrapped until 2034. Deer crackers about ¥200.
+- 13:35 Kasuga Taisha and the lantern path
+- Up through the stone lanterns to the shrine front. No need to pay to go inside.
+- 14:25 Tōdai-ji and the Great Buddha
+- Twenty minutes north along the hill, in through the Nandaimon gate . The school groups have cleared. Open until 17:30.
+- 15:30 Nigatsu-dō
+- Ten minutes uphill behind the main hall. A west-facing balcony over the city, best in the late light. Free.
+- 16:15 Walk down to Kintetsu Nara
+- About 20 minutes downhill past the Tōdai-ji gate. Raining or tired: a taxi from the gate, or the loop bus with Suica .
+- 16:45 Kintetsu limited express back
+- Kyoto by about 17:20. Collect the bags.
+- 17:25 Kyoto Station building
+- The staircase lights up at dusk. The free Sky Garden faces Kyoto Tower .
+- 17:45 Walk to sequence KYOTO GOJO , check in
+- About 15 minutes straight up Karasuma-dōri with the bags, or one subway stop to Gojō ( How-to 13 ).
+- 19:00 Pontochō dinner, casual, no booking
+- About 20 minutes on foot, or one subway stop to Shijō . Walk in along Kiyamachi-dōri .
+- 20:30 Optional: Kamo River and the Shirakawa canal
+- Shijō Bridge is at the end of the alley, Shirakawa seven minutes beyond. Taxi home.
+- Stags are pushy: feed the does. Alternative: JR Nara line on Suica , 20 minutes from the park ( How-to 24 ). Pontochō and Gion dinners can swap.
+
+## 22 Oct: Osaka, castle to Dōtonbori
+- 22 Thursday
+- Kyoto
+- A whole day in Osaka , no Universal . The castle up close first, Umeda Sky mid morning, a market lunch, the shops, the lion head, Shinsekai at dusk and Dōtonbori at night. One deck, not two.
+- 07:00 To Kyoto Station , then JR to Osaka
+- One subway stop or a 15 minute walk. JR special rapid to Osaka Station, about 30 minutes, then the Osaka Loop Line to Osakajōkōen for the castle ( How-to 14 ).
+- 08:30 Osaka Castle , up close
+- In by Aoya-mon to Gokuraku-bashi : the tower over the inner moat walls. Then to its foot, not inside. Takeaway breakfast on a bench.
+- 09:35 Tanimachi line to Higashi-Umeda
+- From Tanimachi 4-chōme, on the west side of the castle. Buy the one-day Enjoy Eco Card at the metro station, about ¥820. It covers the Osaka Metro all day, not JR.
+- 10:15 Umeda Sky deck
+- Two towers joined by a floating escalator. About 15 minutes on foot from Higashi-Umeda.
+- 12:00 Kuromon Ichiba
+- Midōsuji line down to Namba . Grilled scallops, uni, tuna cut in front of you. This is lunch, not a snack stop.
+- 13:15 Horie, Amerikamura and Shinsaibashi
+- The vintage and secondhand luxury run: Kindal Horie, ALLU, KOMEHYO . Orange Street for furniture, design shops and coffee when you want it calmer. Passports for tax-free.
+- 15:30 Namba Yasaka Shrine
+- The giant lion head. Ten minutes is enough. Closes about 17:00.
+- 16:15 Janjan-Yokochō into Shinsekai
+- In at dusk as the signs come on. Sunset is 17:05. Tsūtenkaku , and kushikatsu under the tower, kept to a snack.
+- 18:30 Dōtonbori
+- Buy Tombori River Cruise tickets when you arrive and ride after dark ( How-to 15 ). The Glico Running Man photo platform is at the Nanohana cosmetics shop , directly opposite the sign. Eat standing up.
+- 20:30 Hōzenji Yokochō
+- Two streets back. Stone lanes, lanterns and the mossy Mizukake Fudō . A quiet drink after the noise.
+- 21:30 Home by Midōsuji line and JR
+- Namba to Umeda, then the JR special rapid from Osaka Station to Kyoto , about 30 minutes. One subway stop to Gojō, or a 15 minute walk ( How-to 14 ).
+- Weather fallback If the morning is clouded out, do Umeda Sky at night instead, open to 22:30. Or work Abeno Harukas 300 back in at sunset, ten minutes on foot from Shinsekai .
+- Running late Shorten the castle first, then the shops. Protect lunch at Kuromon , the lion head before 17:00 and Shinsekai at dusk.
+- Left out Nakazakichō, Nakanoshima and Abeno Harukas 300 . Thursday and Friday can swap if they must. See The four legs.
+
+## 23 Oct: Kyoto, west to east
+- 23 Friday
+- Kyoto
+- Arashiyama at dawn while it is empty, an early market lunch and a rest, Higashiyama in the late light, Gion for dinner.
+- 06:45 Leave the hotel
+- One subway stop or a 15 minute walk to Kyoto Station , then the JR Sagano line to Saga-Arashiyama. About 35 minutes door to door.
+- 07:20 Bamboo grove
+- Genuinely empty before eight. This is the whole reason for the early start.
+- 08:30 Tenryū-ji as it opens
+- The pond garden backs onto the bamboo and most people walk straight past it.
+- 09:30 Ōkōchi Sansō villa , or Togetsukyō bridge and the river path
+- Pick one. The villa includes matcha.
+- 10:15 Coffee and a snack in Arashiyama
+- No sit-down breakfast. Lunch is early.
+- 10:45 Back to the centre
+- About 40 minutes. The Hankyu line to Karasuma, changing at Katsura, comes out beside the market.
+- 11:30 Nishiki Market lunch
+- Ahead of the lunch crush. Rolled omelette, tofu doughnuts, pickles, skewers. Eat at the stall. Aritsugu , the old knife maker, is at the east end.
+- 12:45 Walk to the hotel and rest
+- About 15 minutes south. Two hours of rest, or slack if the morning ran long.
+- 15:30 Kiyomizu-dera
+- Taxi from the hotel at 15:15, about 10 minutes. The top of Higashiyama , the old eastern hills. The stage view over the city is the thing. Closes 18:00.
+- 16:30 Down through Sannenzaka and Ninenzaka
+- Downhill from Kiyomizu , not uphill from Gion . Steep stone steps, slippery in rain. Shops start closing about 17:30.
+- 17:10 Yasaka Pagoda at sunset
+- Two minutes off Ninenzaka. The five storey pagoda above the lane roofs.
+- 17:30 Yasaka shrine , then down into Gion
+- Lanterns lit. Then Hanamikoji , and the Shirakawa canal if you missed it on Wednesday.
+- 18:30 Dinner in Gion To book
+- The one special dinner in Kyoto . Book before you leave Melbourne. Friday walk-ins here are hard.
+- Getting to Higashiyama The hotel is in the centre, not at the foot of the hill. Taxi up to Kiyomizu-dera , then the afternoon runs downhill on foot to Gion . Taxi home after dinner, about 10 minutes.
+- Dinner swap Pontochō on Wednesday, Gion tonight. If the Gion table you want is only free on Wednesday, swap them. Pontochō is five minutes past Gion , over the bridge.
+- Autumn colour Late October is green and early gold, not red. Kyoto 's maples turn mid to late November.
+
+## 24 Oct: Fushimi Inari, back to Tokyo, fireworks night
+- 24 Saturday
+- Kyoto to Hibiya
+- Fushimi Inari at first light, the train back to Tokyo, an hour at the hotel, then fireworks over the bay from Odaiba . Dinner comes after the show, so the trains have cleared by the time you leave.
+- 06:30 To Kyoto Station , then JR Nara line to Inari
+- One subway stop or a 15 minute walk to the station. Inari is two stops, about 5 minutes, and the shrine gate faces the platform. Sunrise is around 06:10.
+- 07:15 Fushimi Inari
+- Walk far enough up the mountain to lose everyone. A crush by ten.
+- 09:45 Back to the hotel, shower and repack
+- 10:30 Check out and walk to Kyoto Station
+- About 15 minutes with the bags, or one subway stop ( How-to 16 ).
+- 11:15 Kyoto Station . Ekiben and coffee
+- Lunch on the train buys you the morning. Fair trade.
+- 12:01 Nozomi 16 to Tokyo Station Booked
+- Car 9, seats 1-C and 1-D, Green Car with the oversized baggage area. Seat D is the Fuji side, on your left this time.
+- 14:15 Tokyo Station , Yaesu side taxi rank Booked
+- Allow 15 minutes to clear the station. Saturday afternoon is busy. Ten to fifteen minutes to the hotel, roughly ¥1,500 to ¥2,000.
+- 15:00 Check in at Hotel The Blossom Hibiya
+- Pre-registered if the hotel allows it, so arrival is keys only. An hour to shower and change. Take a layer, the bay is cool after dark.
+- 16:00 Walk to Shimbashi , Yurikamome to Daiba
+- About 15 minutes on the train. Go early, it gets crowded by 17:00. Sit at the front for the Rainbow Bridge loop.
+- 16:30 Hilton Tokyo Odaiba
+- Next to Daiba station. Collect the wristbands and find the viewing area before it fills. Sunset is about 16:55.
+- 17:30 Fireworks from the Hilton 's private viewing area Booked
+- Until 19:00. Seascape package, wristband needed.
+- 19:30 Seascape dinner buffet Booked
+- Until 21:15.
+- 21:15 Optional: Odaiba Statue of Liberty
+- A few minutes' walk from the Hilton on the waterfront, lit up with Rainbow Bridge behind it. Skip it if you are done.
+- 21:45 Yurikamome back to Shimbashi , walk to the hotel
+- The post-show rush is over by the time dinner ends. A taxi is quick if the platform is packed.
+- A long day: 06:30 start, back about 22:30. The hour at the hotel and a seated dinner are what make it work, so don't trade either away.
+
+## 25 Oct: Slow start, gardens, then Ginza until you're done
+- 25 Sunday
+- Hibiya
+- Slow start, gardens, then Ginza until you're done
+- A sleep in, the gardens and Tokyo Station before midday, then the rest of the day and night in Ginza at your own pace. No bookings.
+- 08:30 Slow breakfast near the hotel
+- The easy slot for a load of washing. Details in the appendix ( How-to 17 ).
+- 09:15 Imperial Palace East Gardens
+- About 15 minutes' walk. Opens 09:00, free. Old castle keep foundations and the Ninomaru garden . Take your time.
+- 10:45 Tokyo Station , Marunouchi side
+- The red brick façade. KITTE 's rooftop garden looks straight down on it. Coffee or a bite in the station.
+- 11:30 Tokyo International Forum
+- On the walk from the station into Ginza . Free to walk through the glass hall. Go up to the top walkway.
+- 12:00 Ginza goes car-free
+- Chūō-dōri is pedestrian only until 17:00. You're already into the shopping.
+- Afternoon Department stores and shopping
+- Mitsukoshi , Ginza Six , Matsuya , Dover Street Market , Itoya , vintage luxury resale, which is the fallback if the Omotesando run on Monday 19 fell short. Maison Hermès , Mikimoto Ginza 2 and the Wakō clock tower as you go. Passports.
+- Late arvo Rooftop gardens
+- Ginza Six 's rooftop garden and Mitsukoshi 's rooftop terrace. A good break as the light goes.
+- Evening Eat in the complexes
+- Restaurant floors trade later than the shops. No booking, eat wherever appeals.
+- 19:30 Optional: Tokyo Tower lit up, or a car meet
+- Tower: 10 minutes by taxi, Zōjō-ji gate. Or a JDM car tour to Daikoku from the hotel, 20:00 to 23:00 ( How-to 23 ).
+- When done Walk back to the hotel
+- Five to ten minutes.
+- Browse the big stores before about 20:00 and eat after. Sunday restaurant floors queue around 18:30 to 19:30, so eat a touch earlier or later. Many smaller Ginza bars and restaurants close on Sundays. If it is wet, drop the gardens and start in Ginza earlier, or move teamLab to this morning ( How-to 8 ).
+
+## 26 Oct: teamLab first thing, Asakusa, Shimbashi
+- 26 Monday
+- Hibiya
+- First session at teamLab , a look at Tokyo Tower , then across town to Kappabashi while the shops are open, Sensō-ji as the crowds ease and the Skytree at dusk, before a casual last night.
+- 07:50 Leave the Blossom
+- About 25 minutes on foot via Toranomon to Azabudai Hills . Taxi if it is wet.
+- 08:30 teamLab Borderless , first session Booked
+- Arrive a little early to be among the first in. Allow about two hours. The booking can change date or time up to three times.
+- 10:40 Sky Room Café , or Tokyo Tower and Zōjō-ji
+- Optional. Coffee on 33F beside the tower, or a 10 minute walk to the temple gate below it.
+- 11:30 Hibiya line, then Ginza line to Tawaramachi
+- From Kamiyachō , change at Ginza . About 30 minutes. From Zōjō-ji , the Asakusa line runs direct from Daimon.
+- 12:00 Kappabashi kitchenware street , then lunch
+- While the shops are open, most close about 17:00. Knives and ceramics. Lunch in Asakusa about 13:30.
+- 14:45 Sensō-ji , Kaminarimon , Nakamise street
+- Ten minutes east. If Nakamise is jammed, take the side lanes to the main hall.
+- 16:15 Skytree views at dusk, no deck
+- Free terrace at the Asakusa Culture Tourist Information Centre , then Azuma-bashi bridge . Sunset 16:55.
+- 17:30 Ginza line back to Shimbashi
+- Direct from Asakusa , about 15 minutes. Half pack at the hotel.
+- 19:00 Shimbashi , no booking
+- Five minutes from the hotel. Wander the lanes around the tracks, eat wherever looks good. Weeknights are when it's liveliest.
+- Late Back to the hotel
+- Finish packing and settle the bill. Tomorrow is the 06:38 train ( How-to 18 ).
+- Why Asakusa is today Ceramics and knives bought now go home without a trip through Kyoto . Knives fly in checked bags only. And the market on Tuesday comes before you are sushied out. Shops first as they close about 17:00, temple later as the crowds ease.
+- Other shapes Tsukiji can come back here at 08:00 with teamLab moved to 13:30, and Asakusa returns to Tuesday 20. If teamLab moved for wet weather, start in Asakusa about 10:00.
+
+## 27 Oct: Haneda to Hong Kong, harbour night
+- 27 Tuesday
+- Hibiya to Hong Kong
+- An early train to Haneda with the bags, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights . No pool today, because the sun is nearly gone by check-in.
+- 05:45 Wake, shower, final pack
+- 06:22 Leave the hotel, walk to Shimbashi
+- About 8 minutes with the bags. Asakusa line, platform 1.
+- 06:38 Airport Rapid Limited Express to Haneda Terminal 3
+- Direct, about 25 minutes. The backup is the 06:45 Express. Avoid trains bound for Nishi-magome ( How-to 18 ).
+- 07:15 Check in at the Cathay desks
+- Three hours before departure.
+- 07:45 Security and immigration
+- Usually quick, but allow for a queue.
+- 08:15 Breakfast airside
+- Spend leftover yen and IC card balance here.
+- 09:40 Boarding
+- 10:10 CX543 departs Haneda Booked
+- Terminal 3. Hong Kong is one hour behind Tokyo.
+- 14:25 Land in Hong Kong Booked
+- Terminal 1. Allow 45 to 60 minutes for immigration, bags and customs.
+- 15:20 Red urban taxi to the Sheraton
+- 20 Nathan Road , Tsim Sha Tsui . 35 to 45 minutes, roughly HK$300 to 350 with tolls and bag fees. Carry some cash.
+- 16:15 Check in at the Sheraton
+- Ask two things at the desk: whether pool sessions need booking, and the club lounge hours. Friday's late checkout is already confirmed to 18:00.
+- 17:15 Club lounge
+- Drinks and canapés as the harbour lights come on. Sunset is about 17:50.
+- 18:50 Walk to Tsim Sha Tsui Public Pier 1
+- Ten minutes from the hotel, behind the Cultural Centre. Queue early for the best seats.
+- 19:30 Aqua Luna harbour cruise To book
+- 45 minutes on a red-sail junk, one drink included. Confirm the sailing is running before you fly.
+- 20:00 A Symphony of Lights
+- The nightly harbour light show. Lasers, searchlights and LED screens on the towers along both shores, set to music, for about ten minutes. You watch it from the boat.
+- 20:20 Avenue of Stars
+- Off the boat and along the Tsim Sha Tsui promenade. Handprints, the Bruce Lee statue and the full Island skyline.
+- 20:45 Dinner in Tsim Sha Tsui
+- Close to the promenade and the hotel.
+- Late Bar, or Temple Street night market
+- Only if you have the energy.
+- Taxi instead in Tokyo The fallback if the train looks wrong on the day. About 25 minutes. Even a 07:15 taxi gets you to Haneda 2.5 hours before departure.
+- Instead of the taxi in Hong Kong First check whether the Agoda booking includes an airport pickup. Otherwise the Airport Express to Kowloon Station, then a 5 to 10 minute taxi, costs about the same for two with more bag handling.
+- If the show has ended or the cruise is full Watch from the Tsim Sha Tsui promenade, five minutes from the hotel. It faces the Hong Kong Island towers, which is the better side. Your harbour view room faces the same way.
+
+## 28 Oct: Pool, Hong Kong Island and the Peak
+- 28 Wednesday
+- Hong Kong
+- The main Island day and the main night out. Up the Peak early by tram, time at the top through sunset, taxi down.
+- 09:00 Lounge breakfast
+- 09:45 Sheraton pool until about 13:00
+- Optional. This is the best block for sun. Read, tan, swim. Light lunch at the hotel.
+- 13:30 Star Ferry to Central
+- Ten minutes across the harbour.
+- 14:00 Graham Street Market , Tai Kwun , PMQ , Mid-Levels escalator
+- The old street market first, then design and architecture, all within a few blocks.
+- 15:45 Peak Tram up To book
+- Standard one-way ticket, prebooked. Sit on the right going up. Then Lugard Road for the best free view, and take your time at the top ( How-to 19 ).
+- 17:50 Sunset at the Peak
+- Stay while the city lights come on.
+- 18:45 Taxi down
+- Tram seats face backwards on the way down, so skip it.
+- 19:30 Dinner in Central or SoHo To book
+- The big dinner of the trip. Book ahead.
+- Late Bars in Central
+- Taxi back through the tunnel, or a late train to the hotel. The MTR from Central to Tsim Sha Tsui is two stops and runs until after midnight.
+- Optional Or the old tram and the Star Ferry home
+- Instead of the taxi or train: ride the old tram from Central to Wan Chai , upper deck, about 15 minutes with the neon on. Then take the Star Ferry home from Wan Chai . It adds about half an hour. The last ferry from Wan Chai is 23:00, so leave the bars by about 22:15.
+- Fast Track Klook 's Peak Tram Fast Track only runs Friday to Sunday. If the Peak moves to Friday 30, that is the ticket to buy.
+
+## 29 Oct: Ngong Ping cable car, Big Buddha, then the city
+- 29 Thursday
+- Hong Kong
+- Out to Lantau for the first cable car, back to the Island for lunch and the Sheung Wan shops, a rest at the hotel, then Temple Street at night.
+- 08:00 Lounge breakfast
+- 08:45 Train to Tung Chung
+- About 50 minutes, one change.
+- 10:00 Ngong Ping 360 cable car up To book
+- Crystal cabin , Klook voucher ( How-to 20 ). First car, shortest queues. 25 minutes.
+- 10:30 Big Buddha , Po Lin Monastery , Wisdom Path
+- 268 steps up. Skip most of the village.
+- 12:45 Cable car down
+- 13:20 Train to Hong Kong Station, Central
+- About 30 minutes.
+- 14:00 Lunch in Central or Sheung Wan
+- Yum cha is Friday's lunch, so eat whatever appeals here.
+- 15:00 Sheung Wan shops
+- Hollywood Road , Cat Street antiques , vintage and resale. Don't forget Man Mo Temple , on Hollywood Road as you pass. Ten minutes inside.
+- 16:15 Egg tart and coffee stop
+- 17:00 Star Ferry from Central to Tsim Sha Tsui
+- On the water close to sunset, about 17:50.
+- 18:15 Optional: Ozone at the Ritz-Carlton
+- Friday is the plan. If you go tonight instead: quick change first, short taxi to ICC, and Friday evening is free.
+- 19:30 Temple Street dinner and night market
+- Claypot rice or street-side seafood, then browse the stalls. A 15 minute walk from the hotel.
+- 21:30 Back at the hotel
+- Or a bar nearby.
+
+## 30 Oct: Pool, yum cha, Ozone at sunset, then departure
+- 30 Friday
+- Hong Kong
+- Late checkout is confirmed to 18:00, so the room is yours all day. A pool morning, yum cha , a spare window for anything missed, a slow pack and shower, Ozone at sunset, dinner, then a taxi at 20:45.
+- 09:00 Lounge breakfast
+- 09:45 Sheraton pool
+- Optional. The best sun of the day.
+- 12:00 Quick change, head out
+- 12:30 Yum cha lunch
+- Dim sum is a daytime meal and most places stop about 15:00. If lunch slips, an all-day dim sum place can stand in for dinner.
+- 14:00 Spare window
+- About two hours for anything missed. Central by Star Ferry , M+ and the West Kowloon waterfront , or Nathan Road .
+- 16:15 Back at the hotel, pack and shower
+- No rush. Ask at the desk whether checkout can go later still.
+- 17:20 Check out
+- You have until 18:00. Leaving now catches the sunset at Ozone . Suitcases go to the concierge.
+- 17:40 Ozone at the Ritz-Carlton To book
+- Short taxi to ICC, 118th floor. Sunset at 17:50, then the lights. Open from 16:00. No flip flops, and no open shoes or sleeveless tops for men.
+- 19:15 Dinner
+- At Elements below Ozone , or back in Tsim Sha Tsui close to the bags.
+- 20:30 Collect bags at the Sheraton
+- 20:45 Taxi to the airport
+- 30 to 40 minutes at that hour.
+- 21:30 Check in at the Cathay desks
+- Terminal 1. Three hours before departure.
+- 00:30 CX105 departs for Melbourne Booked
+- Saturday 31 October, Terminal 1. Lands Melbourne Terminal 2 at 12:30.
+- Latest safe timing A taxi at 21:15 puts you at the airport by 22:00, which is 2.5 hours before departure.
+- If you missed the Peak or Ngong Ping It takes the morning in place of the pool. The Peak has Klook Fast Track on a Friday, and the Ngong Ping voucher works any day. Be back by 16:15.
+- If Ozone was Thursday Then tonight is free: a harbourfront drink, a longer dinner, or more time in the room.
+- If Friday is wet or grey Skip the pool. M+ and the West Kowloon waterfront is the indoor option, and the room is yours until 18:00.
