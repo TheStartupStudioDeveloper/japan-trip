@@ -48,3 +48,18 @@ D[19]['rows'] = [
  R('21:00', 'Train home from Motomachi-Chūkagai', 'Straight through to Shibuya, about 40 minutes, no change. Back about 21:45.'),
 ]
 D[19]['foot'] = D[19]['foot'] + ' Retimed at 08:22 after the Hibiya line delay: everything about 30 minutes later.'
+# Mon 19 08:58: left Tsukiji early. Pancakes first in Hase, lunch later in Kamakura town
+_r = D[19]['rows']
+_keep = [r for r in _r if r[0] in ('16:15', '17:45', '18:30', '19:45', '21:00')]
+D[19]['rows'] = _r[:2] + [
+ R('08:30', 'Tsukiji Outer Market', 'Small bites.', DN),
+ R('09:00', 'Walk to Shimbashi, JR to Kamakura', 'About 15 minutes to JR Shimbashi. Blue Yokosuka line signs downstairs to the underground platforms, towards Yokohama, Ōfuna, Zushi or Kurihama. Direct to Kamakura, about 55 minutes. Not the Tōkaidō line upstairs (How-to 27).'),
+ R('10:15', 'Enoden straight to Hase', 'Stay inside Kamakura Station for the Enoden platform on the west side. 3 stops, about 5 minutes.'),
+ R('10:30', 'Pancakes and coffee, A la Mode Kamakura', 'Breakfast with a sea view, 5 minutes from Hase Station towards the sea. Fluffy pancakes, Greek yoghurt ice cream, real maple syrup.'),
+ R('11:30', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha.'),
+ R('12:45', 'A quick look at Yuigahama', 'About 10 minutes downhill from the Buddha. Skip it if running late.'),
+ R('13:00', 'Enoden back to Kamakura', 'About 5 minutes.'),
+ R('13:15', 'Lunch on Komachi-dōri: shirasu-don', 'Kamakura\'s local dish, a rice bowl of tiny fresh whitebait. Something different after the pancakes.'),
+ R('14:15', 'Tsurugaoka Hachimangū', 'Up the long approach from Komachi-dōri, about 10 minutes, open to 20:00.'),
+ R('15:15', 'To Yokohama', 'JR Yokosuka line from Kamakura to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+] + _keep
