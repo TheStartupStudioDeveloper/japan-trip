@@ -660,6 +660,24 @@ P('i2', ['i2'], 'i2', 'アイツー',
 P('premier-mai', ['Premier Mai'], 'Premier Mai', 'プルミエメ',
   'A hidden café with no sign, up the stairs beside an Irish pub. Famous for its thick toast with olive oil, omelette toast and flambéed crêpes.',
   'Sunday 08:00 to 17:00. Closed Wednesday. Queue on the stairs (How-to 26).', 'PREMIER MAI Tomigaya')
+P('bc-omote2', ['Brand Collect Omotesando 2'], 'Brand Collect Omotesando 2', 'ブランドコレクト表参道2',
+  'Pre-owned designer pieces, mostly recent: The Row, Moncler, Alexander McQueen, Louis Vuitton, plus clothes and shoes. Next door to the original Brand Collect.',
+  'Open 11:00 to 19:00. Passport for tax-free.', 'BRAND COLLECT OMOTESANDO 2')
+P('kindal-hj', ['Kindal Harajuku'], 'Kindal Harajuku', 'カインドオル原宿店',
+  'A big designer resale store, 3F above the Lawson near the Omotesando and Meiji-dōri crossing. Clothes, shoes, and luxury bags in locked cabinets.',
+  'Open 11:00 to 20:00.', 'kindal harajuku second hand store')
+P('ragtag', ['RAGTAG Harajuku'], 'RAGTAG Harajuku', 'ラグタグ原宿店',
+  'Two floors of pre-owned designer clothes, bags and shoes, sorted by brand. Strong on Comme des Garçons, Issey Miyake and Y\'s, plus international labels.',
+  'Open 11:00 to 20:00. No refunds.', 'RAGTAG Harajuku Jingumae 5-17-9')
+P('allu-omote', ['ALLU'], 'ALLU Omotesando', 'ALLU 表参道店',
+  'Pre-owned luxury over several floors, best known for Hermès, classic and recent.',
+  'Open 11:00 to 20:00. Passport for tax-free.', 'ALLU omotesando store')
+P('bc-shibuya', ['Brand Collect Shibuya'], 'Brand Collect Shibuya', 'ブランドコレクト渋谷',
+  'A small, well priced pre-owned designer bag shop in Jinnan, two minutes from the hotel.',
+  'Open 11:00 to 20:00.', 'BRAND COLLECT SHIBUYA Jinnan')
+P('zara-hj', ['ZARA Harajuku'], 'ZARA Harajuku', 'ザラ原宿店',
+  'A large ZARA on Meiji-dōri. Menswear upstairs.',
+  'Fitting room queues on weekend afternoons.', 'ZARA Harajuku Store')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

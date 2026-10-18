@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 2026-10-18: Premier Mai, pre-owned list, G to ZARA and Nintendo
+- Sun 18 breakfast set to Premier Mai. Cynthia's row is the pre-owned list in route order (Brand Collect Omotesando 2, Kindal Harajuku, RAGTAG, ALLU, Brand Collect Shibuya). G's row: ZARA then Nintendo Tokyo. Cards for all six shops.
+
 ## 2026-10-18: PATH removed
 - PATH taken out of the itinerary, summary, cards and Extras. Sun 18 breakfast is i2 or Premier Mai.
 

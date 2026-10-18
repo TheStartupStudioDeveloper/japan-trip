@@ -1,14 +1,14 @@
 # Sun 18 rework (sent 07:22): Tomigaya breakfast, park, shrine, Harajuku, vintage. Cynthia's shopping afternoon, G's options.
 # Yokohama moves to Mon 19, Shinjuku plus new free time to Tue 20. Shibuya Sky is done, so the tabs go.
-D[18].update(cal='Breakfast, Meiji, vintage, Street Kart', title='Tomigaya breakfast, Meiji Jingū, vintage, Street Kart')
+D[18].update(cal='Meiji, shopping, Street Kart', title='Premier Mai, Meiji Jingū, shopping, Street Kart')
 D[18]['sum'] = "Breakfast in Tomigaya, through Yoyogi Park to Meiji Jingū, Takeshita Street, then Cynthia's shopping afternoon in Omotesando while G does Harajuku and Nintendo. Street Kart at golden hour, then ramen and a foot massage."
 D[18]['rows'] = [
- R('08:00', 'Breakfast: i2 or Premier Mai', 'i2, Okushibu: rated 4.9, Dutch baby pancake, breakfast to 11:00, English menu. Premier Mai, Tomigaya: hidden café, no sign, famous thick French toast (How-to 26). Both open 08:00 on Sunday.'),
+ R('08:00', 'Breakfast at Premier Mai', 'The hidden café in Tomigaya, no sign, up the stairs beside the Irish pub. Thick toast and omelette toast. A hit (How-to 26).'),
  R('09:30', 'Yoyogi Park', 'Five minutes away. Walk through to the Harajuku gate. Sunday rockabilly dancers near that entrance.'),
  R('10:15', 'Meiji Jingū', 'Forest paths and the big torii. About 45 minutes.'),
  R('11:00', 'Takeshita Street', 'Out of the Harajuku gate and across the road. Walk it once together.'),
- R('11:30', "Cynthia's shopping afternoon", 'Omotesando and Aoyama vintage luxury, all open now (How-to 9). Passports for tax-free. Back at the hotel by 14:20: a 10 minute taxi from Omotesando.'),
- R('11:30', "G's free time", 'UNIQLO and H&M Harajuku for cargo pants, ZARA on Meiji-dōri, lunch, then down to Nintendo Tokyo in Shibuya Parco. Back by 14:20 (How-to 10).'),
+ R('11:30', "Cynthia's shopping afternoon", 'Pre-owned, not vintage, in order back towards the hotel: Brand Collect Omotesando 2, Kindal Harajuku, RAGTAG Harajuku, ALLU, then Brand Collect Shibuya by the hotel. Passport for tax-free. Back by 14:20.'),
+ R('11:30', "G's free time", 'ZARA Harajuku on Meiji-dōri for cargo pants, then 15 minutes down Meiji-dōri to Nintendo Tokyo, Shibuya Parco 6F. Lunch on the way. Back by 14:20 (How-to 10).'),
  R('14:20', 'Back at the hotel', 'Fully closed shoes. Physical licence cards, physical International Driving Permits, passports. No digital copies.'),
  R('14:45', 'Leave for Street Kart', 'Check which shop the voucher names (How-to 25). Aim to arrive by 15:30.'),
  R('16:00', 'Street Kart, Rainbow Bridge route', 'About two hours. Golden hour over the bay.', B),
