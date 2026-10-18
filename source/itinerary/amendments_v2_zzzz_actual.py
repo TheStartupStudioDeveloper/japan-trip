@@ -24,3 +24,5 @@ _i = [k for k, r in enumerate(_rs) if r[1] == "Cynthia's shopping afternoon"][0]
 _rs[_i] = R('11:30', "Cynthia's shopping afternoon", 'Pre-owned shops: Brand Collect, Brand Collect Omotesando 2, Kindal Harajuku, RAGTAG Harajuku, ALLU, Brand Collect Shibuya.', DN)
 _i = [k for k, r in enumerate(_rs) if r[1] == "G's free time"][0]
 _rs[_i] = R('11:30', "G's free time", 'ZARA Harajuku was closed. Booked tonight\'s massage at Mominotakumi in person, then ZARA Shibuya Kōen-dōri, H&M Udagawachō and Nintendo Tokyo. Egg sando from 7-Eleven for lunch.', DN)
+# Sun 18 evening, logged 22:03
+for _t in ('14:20', '14:45', '16:00', '18:30', '20:30'): _done(_t)

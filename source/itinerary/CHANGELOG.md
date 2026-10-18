@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 18 Oct 22:05
+- Sun 18 evening logged as Done: back to the hotel, Street Kart, return, foot and leg massage. Dinner still to confirm.
+
 ## 2026-10-18: Mon 19 Kamakura and Yokohama, Tue 20 Tsukiji then Shinjuku
 - Mon 19: Kamakura morning (Hachimangū, Enoden, Hase-dera, Great Buddha), Yokohama afternoon, Chinatown dinner. Opening hours checked for Monday.
 - Tue 20: Tsukiji 08:00, back to the hotel 10:15 to rest and pack, Tokyo Ten Shinjuku 13:30 (booked), stores, Shinjuku after dark. Daikanyama dropped.
