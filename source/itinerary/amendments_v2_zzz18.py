@@ -166,5 +166,5 @@ _b.insert(5, 'Pancakes: A la Mode Kamakura, 2-7-15 Hase, about 5 minutes from Ha
 HOWTO[_i] = (HOWTO[_i][0], _b)
 # Mon 19 06:05: Meguro River walk after the Roastery
 _m = D[19]['rows']
-_m[_row(19, '09:15')] = R('09:00', 'Meguro River walk to Nakameguro', 'The Roastery sits on the river. Turn left out of the door and follow the canal path downstream under the cherry trees, past the cafés and small boutiques, about 15 to 20 minutes at an easy pace to Nakameguro Station. Then the Tōkyū Tōyoko line to Musashi-Kosugi and the JR Yokosuka line direct to Kamakura, about an hour (How-to 27).')
+_m[_row(19, '09:15')] = R('09:00', 'Meguro River walk to Nakameguro', 'The Roastery sits on the river. Follow the river path downstream, the way the water flows, under the cherry trees, past the cafés and small boutiques, about 15 to 20 minutes at an easy pace to Nakameguro Station. Then the Tōkyū Tōyoko line to Musashi-Kosugi and the JR Yokosuka line direct to Kamakura, about an hour (How-to 27).')
 _m[_row(19, '08:00')] = R('08:00', 'Breakfast at the Roastery', 'Four floors of coffee and the Princi bakery. Keep it light: pancakes are lunch. Away by 09:00.')
