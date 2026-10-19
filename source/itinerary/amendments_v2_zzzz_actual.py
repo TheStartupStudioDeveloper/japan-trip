@@ -63,3 +63,8 @@ D[19]['rows'] = _r[:2] + [
  R('14:15', 'Tsurugaoka Hachimangū', 'Up the long approach from Komachi-dōri, about 10 minutes, open to 20:00.'),
  R('15:15', 'To Yokohama', 'JR Yokosuka line from Kamakura to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
 ] + _keep
+# Mon 19 11:17: at A la Mode Kamakura, on track
+_r = D[19]['rows']
+_r[_row(19, '09:00')] = R('09:00', 'JR Shimbashi to Kamakura', 'Yokosuka line from the underground platforms, direct.', DN)
+_r[_row(19, '10:15')] = R('10:15', 'Enoden to Hase', '', DN)
+_r[_row(19, '10:30')] = R('10:30', 'Pancakes and coffee, A la Mode Kamakura', 'Breakfast with a sea view. Lovely.', DN)
