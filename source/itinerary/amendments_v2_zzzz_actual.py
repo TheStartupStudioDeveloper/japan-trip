@@ -106,3 +106,22 @@ D[19]['rows'] = _done_rows + [
 ]
 D[19]['foot'] = 'Alternative: skip the department stores, stay on the JR train to Sakuragichō and spend the extra hour at the Minato Mirai malls (Landmark Plaza, MARK IS) and the Red Brick Warehouses. Checked for Monday: Takashimaya and Sogo 10:00 to 20:00, Landmark Plaza 11:00 to 20:00, MARK IS 10:00 to 20:00, Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00 (cash only), Kyūryū SPA 10:00 to 22:00.'
 D[19]['sum'] = 'Tsukiji for breakfast, then Kamakura: pancakes in Hase, Hase-dera and the Great Buddha. Yokohama from the afternoon: the station department stores, the Air Cabin, the Vanish coaster and the ferris wheel at sunset, the harbour walk, dinner in Chinatown and a foot massage.'
+# Mon 19 14:04: department stores skipped, straight to Minato Mirai. Red Brick Warehouses at dusk
+_r = D[19]['rows']
+_keep = [r for r in _r if r[3] == DN] if len(_r[0]) > 3 else []
+_keep = [r for r in _r if len(r) > 3 and r[3] == DN]
+D[19]['rows'] = _keep + [
+ R('14:07', 'Shōnan-Shinjuku line Kamakura to Yokohama', 'Platform 2, the train to Utsunomiya. About 25 minutes. Get off at Yokohama: it carries on to Shibuya.', DN),
+ R('14:30', 'Minatomirai line one stop to Minatomirai', 'Tap out of JR at Yokohama, follow the Minatomirai Line signs underground. Any train towards Motomachi-Chūkagai, about 3 minutes.'),
+ R('14:45', 'Queen\'s Square and Landmark Plaza: ZARA', 'The station opens straight into Queen\'s Square, where ZARA is. Landmark Plaza is joined on, MARK IS across the road. Open to 20:00 (Landmark from 11:00).'),
+ R('15:50', 'Walk to Sakuragichō, Air Cabin to Unga Park', 'Through Landmark Plaza and down the moving walkway, about 10 minutes. Air Cabin from outside the east exit, ¥1,000, about 5 minutes.'),
+ R('16:15', 'Cosmo World: Diving Coaster Vanish', 'About ¥1,000 each, cash only, pockets into the lockers. Open to 20:00.'),
+ R('17:00', 'Cosmo Clock 21 ferris wheel at sunset', 'Sunset about 17:05. About 15 minutes round.'),
+ R('17:20', 'Red Brick Warehouses at dusk', 'About 10 minutes along the Kishamichi promenade. Two 1910s customs warehouses on the water, now small shops, cafés and craft beer, lit up after dark. Building 1 open to 19:00.'),
+ R('18:10', 'Harbour walk to Chinatown', 'Along the water past Ōsanbashi Pier into Yamashita Park, then inland into Chinatown, about 30 minutes.'),
+ R('18:40', 'Dinner in Chinatown', 'Walk the lanes and pick. Steamed buns from the street stalls as a starter.'),
+ R('19:50', 'Foot massage, Kyūryū SPA (Kirin Kowloon)', 'Chinatown, 2F on a pedestrian lane. 60-minute foot course. Open to 22:00, card OK. Backup: Kaisokukan, open to 23:00.'),
+ R('21:05', 'Train home from Motomachi-Chūkagai', 'Direct to Shibuya, about 40 minutes, no change. Back about 21:50 (How-to 30).'),
+]
+D[19]['foot'] = 'Yokohama Station department stores skipped for Minato Mirai. Checked for Monday: Queen\'s Square 11:00 to 20:00, Landmark Plaza 11:00 to 20:00, MARK IS 10:00 to 20:00, Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00 (cash only), Red Brick Warehouse 1 10:00 to 19:00, Kyūryū SPA 10:00 to 22:00.'
+D[19]['sum'] = 'Tsukiji for breakfast, then Kamakura: pancakes in Hase, Hase-dera and the Great Buddha. Yokohama from the afternoon: shopping at Queen\'s Square and Landmark Plaza, the Air Cabin, the Vanish coaster, the ferris wheel at sunset, the Red Brick Warehouses at dusk, dinner in Chinatown and a foot massage.'
