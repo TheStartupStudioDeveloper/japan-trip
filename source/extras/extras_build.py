@@ -39,8 +39,8 @@ def tag(x):
 
 dropped, areas_html, counts = [], [], {}
 for a in data['areas']:
-    items = [i for i in a['items'] if i['key'] not in sched]
-    dropped += [(a['name'], i['key']) for i in a['items'] if i['key'] in sched]
+    items = [i for i in a['items'] if i['key'] not in sched or i.get('keep')]  # keep: listed even when scheduled
+    dropped += [(a['name'], i['key']) for i in a['items'] if i['key'] in sched and not i.get('keep')]
     counts[a['key']] = len(items)
     rows, cur = [], None
     for i in items:

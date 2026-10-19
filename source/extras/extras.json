@@ -1189,6 +1189,34 @@
    "w": "A business hotel a few minutes from the Blossom Hibiya. Booked as a weather backup: a King Privilege Room for Fri 23 to Sat 24, in case a typhoon stops the Shinkansen on Sat 24 and you travel up from Kyoto a day early.",
    "t": "Check-in 14:00, check-out 11:00. Booked direct on the Mercure website. Free cancellation until 18:00 Japan time on Thu 22. Cancel it if not needed.",
    "m": "Mercure Tokyo Hibiya"
+  },
+  "takashimaya-yk": {
+   "n": "Takashimaya Yokohama",
+   "l": "横浜髙島屋",
+   "w": "The big department store attached to Yokohama Station's west side. Fashion, beauty, homewares and a large basement food hall.",
+   "t": "10:00 to 20:00 daily. Passports for tax-free.",
+   "m": "Yokohama Takashimaya"
+  },
+  "sogo-yk": {
+   "n": "Sogo Yokohama",
+   "l": "そごう横浜店",
+   "w": "One of Japan's largest department stores, linked to Yokohama Station's east side. Luxury brands, fashion, a huge food floor and a rooftop to sit on.",
+   "t": "10:00 to 20:00 daily. Passports for tax-free.",
+   "m": "Sogo Yokohama"
+  },
+  "landmark-plaza": {
+   "n": "Landmark Plaza",
+   "l": "ランドマークプラザ",
+   "w": "Shopping mall at the foot of the Landmark Tower in Minato Mirai, five floors around a tall atrium, with cafés and restaurants. A few minutes from Sakuragichō.",
+   "t": "11:00 to 20:00 daily.",
+   "m": "Landmark Plaza Yokohama"
+  },
+  "markis-mm": {
+   "n": "MARK IS Minato Mirai",
+   "l": "MARK IS みなとみらい",
+   "w": "Big modern mall directly above Minatomirai Station: fashion, outdoor gear, a supermarket, Daiso and a food court.",
+   "t": "10:00 to 20:00 Monday to Thursday, to 21:00 Friday to Sunday.",
+   "m": "MARK IS Minatomirai"
   }
  },
  "areas": [
@@ -1978,6 +2006,46 @@
      "one": "Old fashioned boutique street below the Bluff",
      "fits": "Tue 20 at 16:30, on the way down from Yamate to Chinatown dinner.",
      "tags": []
+    },
+    {
+     "group": "Shopping",
+     "key": "takashimaya-yk",
+     "time": "1 hr",
+     "one": "Department store attached to Yokohama Station",
+     "fits": "Mon 19 at 14:20, straight off the train from Kamakura. Pair it with Sogo across the station.",
+     "tags": [
+      "Tax-free"
+     ],
+     "keep": true
+    },
+    {
+     "group": "Shopping",
+     "key": "sogo-yk",
+     "time": "1 hr",
+     "one": "Huge department store on the station's east side",
+     "fits": "Mon 19 at 14:20 with Takashimaya, both linked to Yokohama Station.",
+     "tags": [
+      "Tax-free"
+     ],
+     "keep": true
+    },
+    {
+     "group": "Shopping",
+     "key": "landmark-plaza",
+     "time": "45 min",
+     "one": "Mall under the Landmark Tower",
+     "fits": "Mon 19 around 15:30, between Sakuragichō and the Air Cabin.",
+     "tags": [],
+     "keep": true
+    },
+    {
+     "group": "Shopping",
+     "key": "markis-mm",
+     "time": "45 min",
+     "one": "Modern mall above Minatomirai Station",
+     "fits": "Mon 19 around 15:30 if you take the Minatomirai line one stop, then walk to the Air Cabin.",
+     "tags": [],
+     "keep": true
     },
     {
      "group": "Further out",

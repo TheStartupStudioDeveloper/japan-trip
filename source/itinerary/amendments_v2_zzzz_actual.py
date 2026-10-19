@@ -86,3 +86,23 @@ HOWTO.append(('Getting around, Mon 19 from Hase to home', [
 _r = D[19]['rows']
 _i = _row(19, '11:30')
 _r[_i] = R(_r[_i][0], _r[_i][1], _r[_i][2] + ' Directions for the rest of the day: How-to 30.', *_r[_i][3:])
+# Mon 19 13:41 actual: Hase-dera and the Great Buddha done, lunch and Yuigahama dropped. New afternoon: Yokohama Station department stores
+_r = D[19]['rows']
+_done_rows = [r for r in _r if r[0] in ('07:00', '08:10', '08:30', '09:00', '10:15', '10:30')]
+D[19]['rows'] = _done_rows + [
+ R('11:30', 'Hase-dera', 'Hillside temple with the sea view.', DN),
+ R('13:00', 'The Great Buddha, matcha ice cream on Hase-dōri', 'Ice cream on the way out. Lunch and the Yuigahama walk dropped, not needed.', DN),
+ R('13:40', 'Enoden Hase to Kamakura', 'About 5 minutes, Kamakura is the end of the line.'),
+ R('13:55', 'JR Yokosuka line Kamakura to Yokohama', 'Platform for Yokohama and Tokyo (横浜・東京方面). About 25 minutes, direct.'),
+ R('14:20', 'Yokohama Station department stores', 'Takashimaya on the west side and Sogo on the east side, both attached to the station. Open to 20:00. Passports for tax-free.'),
+ R('15:30', 'To Minato Mirai', 'Minatomirai line one stop to Minatomirai, or JR Negishi line one stop to Sakuragichō. Optional: Landmark Plaza and MARK IS on the way (How-to 30).'),
+ R('16:15', 'Air Cabin to Unga Park', 'From outside Sakuragichō east exit, ¥1,000, about 5 minutes. If stopped for wind, walk the Kishamichi promenade.'),
+ R('16:30', 'Cosmo World: Diving Coaster Vanish', 'About ¥1,000 each, cash only, pockets into the lockers. Open to 20:00.'),
+ R('17:00', 'Cosmo Clock 21 ferris wheel at sunset', 'Sunset about 17:05. About 15 minutes round.'),
+ R('17:30', 'Harbour walk to Yamashita Park', 'Past the Red Brick Warehouses and Ōsanbashi Pier, about 30 minutes.'),
+ R('18:15', 'Dinner in Chinatown', 'Walk the lanes and pick. Steamed buns from the street stalls as a starter.'),
+ R('19:30', 'Foot massage, Kyūryū SPA (Kirin Kowloon)', 'Chinatown, 2F on a pedestrian lane. 60-minute foot course. Open to 22:00, card OK. Backup: Kaisokukan, open to 23:00.'),
+ R('20:45', 'Train home from Motomachi-Chūkagai', 'Direct to Shibuya, about 40 minutes, no change. Back about 21:30 (How-to 30).'),
+]
+D[19]['foot'] = 'Alternative: skip the department stores, stay on the JR train to Sakuragichō and spend the extra hour at the Minato Mirai malls (Landmark Plaza, MARK IS) and the Red Brick Warehouses. Checked for Monday: Takashimaya and Sogo 10:00 to 20:00, Landmark Plaza 11:00 to 20:00, MARK IS 10:00 to 20:00, Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00 (cash only), Kyūryū SPA 10:00 to 22:00.'
+D[19]['sum'] = 'Tsukiji for breakfast, then Kamakura: pancakes in Hase, Hase-dera and the Great Buddha. Yokohama from the afternoon: the station department stores, the Air Cabin, the Vanish coaster and the ferris wheel at sunset, the harbour walk, dinner in Chinatown and a foot massage.'

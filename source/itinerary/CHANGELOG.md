@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 19 Oct 13:45
+- Mon 19 actuals to 13:00: Hase-dera and the Great Buddha done, lunch, Yuigahama and Hachimangū dropped. New afternoon: Yokohama Station department stores (Takashimaya, Sogo) 14:20, Minato Mirai 15:30, Air Cabin 16:15, Vanish 16:30, ferris wheel 17:00, harbour walk 17:30, Chinatown 18:15, Kyūryū SPA 19:30, home 20:45. Alternative in the day note.
+- Extras: Takashimaya Yokohama, Sogo Yokohama, Landmark Plaza and MARK IS Minato Mirai under Yokohama shopping, kept listed though scheduled (new keep flag in extras_build). Map not updated, as asked.
+
 ## 19 Oct 11:40
 - How-to 30 Getting around, Mon 19 from Hase to home, linked from Hase-dera. Wasai Yakura card. Fixed: Yokohama to Sakuragichō is one stop on the Negishi line.
 

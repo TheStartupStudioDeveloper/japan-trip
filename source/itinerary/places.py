@@ -740,6 +740,14 @@ P('baggage-outlet', ['Shibuya Baggage Outlet'], 'Shibuya Baggage Outlet', '渋�
 P('wasai-yakura', ['Wasai Yakura'], 'Wasai Yakura, Komachi-dōri', '和菜やくら 小町通り',
   'Shirasu (whitebait) donburi and tempura sets, 2F on Komachi-dōri. English QR menu.',
   'Open 11:00 to 21:00.', 'Wasai Yakura Komachidori Kamakura')
+P('takashimaya-yk', ['Takashimaya Yokohama', 'Takashimaya'], 'Takashimaya Yokohama', '横浜髙島屋',
+  'Department store attached to Yokohama Station west side, with a big basement food hall.', '10:00 to 20:00. Passports for tax-free.', 'Yokohama Takashimaya')
+P('sogo-yk', ['Sogo Yokohama', 'Sogo'], 'Sogo Yokohama', 'そごう横浜店',
+  'Huge department store linked to Yokohama Station east side.', '10:00 to 20:00. Passports for tax-free.', 'Sogo Yokohama')
+P('landmark-plaza', ['Landmark Plaza'], 'Landmark Plaza', 'ランドマークプラザ',
+  'Mall at the foot of the Landmark Tower, a few minutes from Sakuragichō.', '11:00 to 20:00.', 'Landmark Plaza Yokohama')
+P('markis-mm', ['MARK IS'], 'MARK IS Minato Mirai', 'MARK IS みなとみらい',
+  'Modern mall above Minatomirai Station.', '10:00 to 20:00 Monday to Thursday.', 'MARK IS Minatomirai')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
