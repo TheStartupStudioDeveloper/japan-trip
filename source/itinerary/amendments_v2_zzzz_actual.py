@@ -40,7 +40,7 @@ D[19]['rows'] = [
  R('12:20', 'Fluffy pancakes, A la Mode Kamakura', 'In Hase, looking out at the sea. Open to 18:30.'),
  R('13:20', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha. Last entry 16:45.'),
  R('14:40', 'A quick look at Yuigahama', 'About 10 minutes downhill. Skip it if running late.'),
- R('15:00', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+ R('15:00', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line one stop to Sakuragichō (How-to 27).'),
  R('16:15', 'Air Cabin, then Cosmo World', 'Air Cabin from outside Sakuragichō east exit, ¥1,000, 5 minutes. The Diving Coaster Vanish, about ¥1,000 each, cash only. Cosmo Clock 21 at sunset, about 17:05 (How-to 28). Cosmo World closes 20:00.'),
  R('17:45', 'Harbour walk to Chinatown', 'Red Brick Warehouses and Yamashita Park, about 30 minutes.'),
  R('18:30', 'Dinner in Chinatown', 'Walk the lanes and pick. Steamed buns from the street stalls as a starter.'),
@@ -61,10 +61,28 @@ D[19]['rows'] = _r[:2] + [
  R('13:00', 'Enoden back to Kamakura', 'About 5 minutes.'),
  R('13:15', 'Lunch on Komachi-dōri: shirasu-don', 'Kamakura\'s local dish, a rice bowl of tiny fresh whitebait. Something different after the pancakes.'),
  R('14:15', 'Tsurugaoka Hachimangū', 'Up the long approach from Komachi-dōri, about 10 minutes, open to 20:00.'),
- R('15:15', 'To Yokohama', 'JR Yokosuka line from Kamakura to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+ R('15:15', 'To Yokohama', 'JR Yokosuka line from Kamakura to Yokohama, about 25 minutes, then the Negishi line one stop to Sakuragichō (How-to 27).'),
 ] + _keep
 # Mon 19 11:17: at A la Mode Kamakura, on track
 _r = D[19]['rows']
 _r[_row(19, '09:00')] = R('09:00', 'JR Shimbashi to Kamakura', 'Yokosuka line from the underground platforms, direct.', DN)
 _r[_row(19, '10:15')] = R('10:15', 'Enoden to Hase', '', DN)
 _r[_row(19, '10:30')] = R('10:30', 'Pancakes and coffee, A la Mode Kamakura', 'Breakfast with a sea view. Lovely.', DN)
+HOWTO.append(('Getting around, Mon 19 from Hase to home', [
+ 'A la Mode to Hase-dera, 7 minutes: walk inland up the main road (Hase-dōri) to the traffic light by Hase Station, turn left, and the gate is straight ahead at the end of the road. ¥400, open to 17:00. Go up the steps to the lookout terrace for the sea view.',
+ 'Hase-dera to the Great Buddha, 7 minutes: back down to the main road, turn left (inland) and walk up it. Kōtoku-in is on the left. ¥300, last entry 16:45.',
+ 'Optional Yuigahama: from the Great Buddha walk back down the main road past Hase Station to the sea, about 12 minutes. Back to Hase Station is 5 minutes.',
+ 'Hase to Kamakura: Enoden from Hase Station, platform for Kamakura (鎌倉方面), 3 stops, about 5 minutes. Kamakura is the end of the line.',
+ 'Kamakura Station to lunch: walk through to the JR east exit. Komachi-dōri starts at the red torii arch on the left of the plaza. Shirasu-don at Wasai Yakura, 2-7-28 Komachi, 2F, open 11:00 to 21:00, about halfway up on the left side.',
+ 'Komachi-dōri to Tsurugaoka Hachimangū: walk to the far end of Komachi-dōri (about 8 minutes), turn right, and the shrine grounds are ahead. Up the big stone steps to the main hall. Free.',
+ 'Hachimangū back to the station: down the central raised path (Dankazura) on Wakamiya-ōji, about 10 minutes, straight to Kamakura Station east exit.',
+ 'Kamakura to Yokohama: JR Yokosuka line, platform for Yokohama and Tokyo (横浜・東京方面), about 25 minutes. At Yokohama, change to the JR Negishi line (light blue, 根岸線) towards Ōfuna or Isogo, one stop to Sakuragichō.',
+ 'Air Cabin: out of Sakuragichō east exit, the cable car station is right there on the plaza. ¥1,000 one way, about 5 minutes, lands at Unga Park beside Cosmo World. If it is stopped for wind, walk 10 minutes along the Kishamichi promenade instead.',
+ 'Cosmo World: Diving Coaster Vanish and the Cosmo Clock 21 ferris wheel. Buy tickets at the machines, cash only. Lockers by the coaster.',
+ 'Harbour walk to Chinatown, about 30 minutes: east from Cosmo World along the Kishamichi promenade to the Red Brick Warehouses, then along the water past Ōsanbashi Pier into Yamashita Park. Leave the park at its middle and walk inland about 5 minutes into Chinatown.',
+ 'Kyūryū SPA (Kirin Kowloon): Yamashitachō 148, 2F, on a pedestrian lane inside Chinatown. Open to 22:00. Ask for the 60-minute foot course with the foot bath. Backup: Kaisokukan, open to 23:00.',
+ 'Home: Motomachi-Chūkagai Station (Minatomirai line) is at the Yamashita Park end of Chinatown. Any train towards Shibuya (渋谷方面), express (急行) or limited express (特急) is fastest, about 40 minutes. If it carries on past Shibuya, get off at Shibuya.',
+ 'Shibuya to the hotel: the Tōyoko line platforms are deep underground. Follow signs up and out towards Miyashita Park, about 7 to 10 minutes to the hotel.']))
+_r = D[19]['rows']
+_i = _row(19, '11:30')
+_r[_i] = R(_r[_i][0], _r[_i][1], _r[_i][2] + ' Directions for the rest of the day: How-to 30.', *_r[_i][3:])

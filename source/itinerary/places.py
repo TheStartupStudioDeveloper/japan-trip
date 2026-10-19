@@ -737,6 +737,9 @@ P('sakura-luggage', ['Shibuya Sakura Luggage'], 'Shibuya Sakura Luggage', '渋�
 P('baggage-outlet', ['Shibuya Baggage Outlet'], 'Shibuya Baggage Outlet', '渋谷バゲージアウトレット',
   'Cheapest suitcases around, beside MEGA Don Quijote. Quality mixed.',
   'Open 11:00 to 22:00. Not tax-free: shown prices exclude 10% tax.', 'Shibuya Baggage Outlet Shop')
+P('wasai-yakura', ['Wasai Yakura'], 'Wasai Yakura, Komachi-dōri', '和菜やくら 小町通り',
+  'Shirasu (whitebait) donburi and tempura sets, 2F on Komachi-dōri. English QR menu.',
+  'Open 11:00 to 21:00.', 'Wasai Yakura Komachidori Kamakura')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

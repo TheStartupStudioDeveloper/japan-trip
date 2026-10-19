@@ -107,7 +107,7 @@ HOWTO.append(('Kamakura on the day, Mon 19', [
  'Hase-dera: 5 minutes from Hase Station, open 08:00 to 17:00, ¥400. The Great Buddha (Kōtoku-in): 5 minutes further up the road, open 08:00 to 16:45, ¥300.',
  'The beach: Yuigahama is about 10 minutes downhill from Hase Station. Free, open sand, black and soft. Showers only in summer, so towels are not needed unless you paddle. Watch food: the kites (hawks) swoop.',
  'Mt Fuji: possible on a clear day, never guaranteed, and best before midday. The best spot is Inamuragasaki, two Enoden stops past Hase, then 5 minutes to the cape park. From Yuigahama look west along the coast.',
- 'Kamakura to Yokohama: Enoden back to Kamakura, then the JR Yokosuka line to Yokohama, about 25 minutes. Change to the JR Negishi line (light blue), two stops to Sakuragichō.']))
+ 'Kamakura to Yokohama: Enoden back to Kamakura, then the JR Yokosuka line to Yokohama, about 25 minutes. Change to the JR Negishi line (light blue), one stop to Sakuragichō.']))
 HOWTO.append(('Yokohama on the day, Mon 19', [
  'Sakuragichō Station: the Air Cabin is right outside the east exit. One way ¥1,000, about 5 minutes over the water to Unga Park, beside Cosmo World. Open 10:00 to 21:00.',
  'Cosmo World: free to walk in, pay per ride at the ticket machines. Monday 11:00 to 20:00, closed Thursdays. Cash only.',
@@ -130,7 +130,7 @@ D[19]['rows'] = [
  R('10:30', 'Enoden to Hase', 'The little seaside train, 3 stops, about 5 minutes. Sit on the left.'),
  R('10:40', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha.'),
  R('12:15', 'Lunch, then a look at Yuigahama', 'About 10 minutes downhill from Hase. A walk along the sand, no lying about. If it is clear, look west for Mt Fuji, or ride the Enoden two stops to Inamuragasaki for the classic view (How-to 27).'),
- R('14:00', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+ R('14:00', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line one stop to Sakuragichō (How-to 27).'),
  R('15:00', 'Air Cabin across the harbour', 'Right outside Sakuragichō east exit. ¥1,000 one way, about 5 minutes. Lands beside Cosmo World.'),
  R('15:15', 'Cosmo World: Vanish coaster, ferris wheel', 'The Diving Coaster Vanish plunges into the pool and into a tunnel, about ¥1,000 each, cash only, pockets into the lockers. Cosmo Clock 21 at sunset, about 17:05 (How-to 28).'),
  R('17:00', 'Harbour walk to Chinatown', 'Red Brick Warehouses and Yamashita Park at dusk, about 30 minutes.'),
@@ -151,7 +151,7 @@ D[19]['rows'] = [
  R('12:00', 'Fluffy pancakes, A la Mode Kamakura', 'In Hase, looking out at the sea. Fluffy pancakes with Greek yoghurt ice cream, fruit and real maple syrup. Open from 10:00.'),
  R('13:00', 'Hase-dera, then the Great Buddha', 'Hase-dera on the hillside with sea views, then 5 minutes on foot to the Great Buddha. Last entry 16:45.'),
  R('14:15', 'A walk on Yuigahama', 'About 10 minutes downhill. A look along the sand towards Enoshima.'),
- R('14:45', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line two stops to Sakuragichō (How-to 27).'),
+ R('14:45', 'To Yokohama', 'Enoden back to Kamakura, JR Yokosuka line to Yokohama, about 25 minutes, then the Negishi line one stop to Sakuragichō (How-to 27).'),
  R('15:45', 'Air Cabin, then Cosmo World', 'Air Cabin from outside Sakuragichō east exit, ¥1,000, 5 minutes. The Diving Coaster Vanish, about ¥1,000 each, cash only, pockets into the lockers. Cosmo Clock 21 at sunset, about 17:05 (How-to 28).'),
  R('17:30', 'Harbour walk to Chinatown', 'Red Brick Warehouses and Yamashita Park at dusk, about 30 minutes.'),
  R('18:15', 'Dinner in Chinatown', 'Walk the lanes and pick. Steamed buns from the street stalls as a starter.'),

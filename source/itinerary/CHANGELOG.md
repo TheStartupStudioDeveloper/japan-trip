@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 19 Oct 11:40
+- How-to 30 Getting around, Mon 19 from Hase to home, linked from Hase-dera. Wasai Yakura card. Fixed: Yokohama to Sakuragichō is one stop on the Negishi line.
+
 ## 19 Oct 09:00
 - Mon 19: left Tsukiji early. Pancakes and coffee first at A la Mode Kamakura 10:30, Hase-dera and the Great Buddha, shirasu-don lunch on Komachi-dōri 13:15, Hachimangū 14:15, Yokohama from 16:15 unchanged.
 
