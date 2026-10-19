@@ -1,5 +1,10 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 07:00
+- Original plan and What changed open in the same window, each with a Back to the itinerary bar.
+- Done label sits under the time.
+- Route map button: black, top right of every day header (was the Map of the day button under the title).
+
 ## 20 Oct 06:45
 - Summary reverted to the three-column version.
 - Each activity gets a Note button beside the ticks: hidden by default, opens a small note field, saved on the device, included in Copy for Claude. Tick keys now ignore the Done tag text.

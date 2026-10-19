@@ -29,7 +29,8 @@ h3{{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;margin:.4rem 
 ul{{margin:0;padding-left:1.1rem}}li{{margin:.15rem 0}}
 .cols section:first-child li{{color:var(--mute)}}
 .ch{{margin-top:.6rem;border-left:3px solid var(--ink);padding-left:.7rem}}
-</style></head><body><main>
+.back{{position:sticky;top:0;z-index:9;display:block;background:var(--ink,#000);color:var(--paper,#fff);font:600 .95rem/1 var(--body,system-ui);padding:calc(.8rem + env(safe-area-inset-top,0px)) 16px .8rem;text-decoration:none;margin:0 -16px 1rem}}
+</style></head><body><main><a class="back" href="{GH}">&larr; Back to the itinerary</a>
 <h1>Trip log</h1><p class="lede">The original plan, frozen on Fri 16 Oct before the trip, against what actually happened and what changed. Updated as we go.</p>
 <nav class="nav"><a href="{GH}">Live itinerary</a><a href="{GH}baseline/original-plan/">Original plan (full page)</a></nav>
 {''.join(cards)}

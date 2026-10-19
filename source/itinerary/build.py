@@ -560,7 +560,7 @@ import apptools as _at
 out = _at.inject(out, '', 'Japan-Hong-Kong-Master-Itinerary-V2.pdf',
                  ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'Japan-Hong-Kong-Master-Itinerary-V2.pdf'], 'Itinerary')
 _GH = 'https://thestartupstudiodeveloper.github.io/japan-trip/'
-out = out.replace('<button type="button" class="jt-off">', f'<a class="jt-orig" href="{_GH}baseline/original-plan/" target="_blank" rel="noopener">Original plan</a><a class="jt-log" href="{_GH}log/" target="_blank" rel="noopener">What changed</a><button type="button" class="jt-off">', 1)
+out = out.replace('<button type="button" class="jt-off">', f'<a class="jt-orig" href="{_GH}baseline/original-plan/">Original plan</a><a class="jt-log" href="{_GH}log/">What changed</a><button type="button" class="jt-off">', 1)
 open('out/japan-hong-kong-final-itinerary.html', 'w').write(out)
 print(len(out))
 # 20 Oct: day maps, search, card map buttons, ticks and notes

@@ -29,7 +29,10 @@ setup = js[js.index('function setup(win){'):js.index("\n document.querySelectorA
 
 css = mapcss + r'''
 .dmapb,.jt-search{appearance:none;font:600 .82rem var(--body);background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);padding:.4rem .7rem;cursor:pointer;display:inline-flex;align-items:center;gap:.35rem}
-.dmapb{margin:.55rem 0 0}.dmapb:hover,.jt-search:hover{background:var(--ink);color:var(--paper)}
+.dmapb{position:absolute;top:0;right:0;margin:0;background:var(--ink)!important;color:var(--paper)!important;font-weight:700!important}
+article.day header.dh{position:relative;padding-right:7.5rem}
+.t .tdn{display:inline-block;margin:.3rem 0 0;font-size:.62rem;padding:.08rem .3rem;text-decoration:none}
+.row.is-d .t .tdn{text-decoration:none}.dmapb:hover,.jt-search:hover{background:var(--ink);color:var(--paper)}
 .dmapov,.jtsov{position:fixed;inset:0;z-index:40;background:var(--paper);overflow:auto;-webkit-overflow-scrolling:touch}
 .dmapov[hidden],.jtsov[hidden]{display:none}
 .dmtop,.jtstop{position:sticky;top:0;z-index:2;background:var(--paper);border-bottom:1.5px solid var(--ink);padding:calc(.6rem + env(safe-area-inset-top,0px)) 16px .6rem;display:flex;justify-content:space-between;align-items:center;gap:.8rem}
@@ -101,7 +104,7 @@ script = r'''
  document.getElementById('dm-x').onclick=closeMap;
  window.addEventListener('resize',function(){if(cur)cur.querySelectorAll('.mwin').forEach(function(w){w.redraw&&w.redraw()})});
  document.querySelectorAll('article.day').forEach(function(a){var d=a.id.slice(1);if(!document.getElementById('dm-'+d))return;
-  var h=a.querySelector('header.dh h3');if(!h)return;var b=document.createElement('button');b.type='button';b.className='dmapb';b.innerHTML='&#9678; Map of the day';b.onclick=function(){openMap(d)};h.parentNode.insertBefore(b,h.nextSibling)});
+  var hd=a.querySelector('header.dh');if(!hd)return;var b=document.createElement('button');b.type='button';b.className='dmapb';b.innerHTML='&#10530; Route map';b.setAttribute('aria-label','Open the route map for this day');b.onclick=function(){openMap(d)};hd.appendChild(b)});
  // ---------- ticks and day notes (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
  var IN=store('jt-inotes-v1')||{};
@@ -169,5 +172,12 @@ out = out.replace(c, 'window.__JTP=P;' + c, 1)
 out = out.replace('</style>', css + '</style>', 1)
 i = out.rindex('</body>')
 out = out[:i] + tpl + ov + '<script id="jt-post">' + script + '</script>\n' + out[i:]
+def _mv(m):
+    li = m.group(0)
+    tg = '<span class="tag tag-d">Done</span>'
+    if tg not in li: return li
+    li = li.replace(' ' + tg, '').replace(tg, '')
+    return re.sub(r'(<span class="t">[^<]*)(</span>)', lambda x: x.group(1) + x.group(2).replace('</span>', '') + '<br><span class="tag tag-d tdn">Done</span></span>', li, count=1)
+out = re.sub(r'<li class="row[^"]*">.*?</li>', _mv, out, flags=re.S)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))
