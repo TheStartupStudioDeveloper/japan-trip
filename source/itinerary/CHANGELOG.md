@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 00:00
+- Done days no longer carry skipped or dropped notes in the master; the What changed log keeps them. Separate map view retired: no more map rebuilds or publishes.
+
 ## 19 Oct 20:15
 - Mon 19 actuals: double-decker train (Green Car mix-up), off early at Shin-Takashima, Queen's Square and ZARA, Air Cabin, ferris wheel, Vanish, Red Brick Warehouses, mapo tofu at Yokohama Sichuan Mapo, Kyūryū SPA massage to 20:45. Notes from the notes chat merged. Sichuan Mapo card.
 

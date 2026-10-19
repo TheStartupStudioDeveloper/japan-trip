@@ -140,3 +140,13 @@ D[19]['rows'] = _keep + [
  R('20:50', 'Train home from Motomachi-Chūkagai', 'Direct to Shibuya, about 40 minutes. Back about 21:40 (How-to 30).'),
 ]
 D[19]['foot'] = 'Skipped: Yokohama Station department stores, Tsurugaoka Hachimangū, Yuigahama, lunch. Checked for Monday: Queen\'s Square 11:00 to 20:00, Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00, Red Brick Warehouse 1 10:00 to 19:00, Kyūryū SPA 10:00 to 22:00.'
+# 20 Oct 00:00: no skipped or dropped notes on days already done. The log keeps those.
+D[19]['foot'] = ''
+_r = D[19]['rows']
+for _k, _x in enumerate(_r):
+    if _x[0] == '13:00':
+        _r[_k] = R(_x[0], _x[1], 'Ice cream on the way out.', *_x[3:])
+_r = D[17]['rows']
+for _k, _x in enumerate(_r):
+    if _x[0] == '16:00':
+        _r[_k] = R(_x[0], _x[1], 'The booked slot.', *_x[3:])
