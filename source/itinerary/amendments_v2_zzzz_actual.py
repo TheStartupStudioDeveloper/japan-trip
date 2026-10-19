@@ -125,3 +125,18 @@ D[19]['rows'] = _keep + [
 ]
 D[19]['foot'] = 'Yokohama Station department stores skipped for Minato Mirai. Checked for Monday: Queen\'s Square 11:00 to 20:00, Landmark Plaza 11:00 to 20:00, MARK IS 10:00 to 20:00, Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00 (cash only), Red Brick Warehouse 1 10:00 to 19:00, Kyūryū SPA 10:00 to 22:00.'
 D[19]['sum'] = 'Tsukiji for breakfast, then Kamakura: pancakes in Hase, Hase-dera and the Great Buddha. Yokohama from the afternoon: shopping at Queen\'s Square and Landmark Plaza, the Air Cabin, the Vanish coaster, the ferris wheel at sunset, the Red Brick Warehouses at dusk, dinner in Chinatown and a foot massage.'
+# Mon 19 20:09 actuals: Yokohama afternoon and evening (plus notes from the notes chat)
+_r = D[19]['rows']
+_keep = [r for r in _r if len(r) > 3 and r[3] == DN and r[0] < '14:00']
+D[19]['rows'] = _keep + [
+ R('14:19', 'Kamakura to Yokohama, first double-decker train', 'Nearly boarded the wrong train. Sat in the Green Car by accident for a few stops and got moved back to an ordinary car.', DN),
+ R('14:45', 'Minatomirai line, off one stop early at Shin-Takashima', 'Walked or rode on to Minatomirai.', DN),
+ R('15:00', 'Queen\'s Square and Landmark Plaza, ZARA', '', DN),
+ R('16:30', 'Air Cabin to Unga Park', '', DN),
+ R('17:00', 'Cosmo Clock 21 ferris wheel and the Diving Coaster Vanish', 'All done by 17:45.', DN),
+ R('17:50', 'Red Brick Warehouses', '', DN),
+ R('18:30', 'Dinner: Yokohama Sichuan Mapo, Chinatown', 'Mapo tofu.', DN),
+ R('19:45', 'Foot massage, Kyūryū SPA (Kirin Kowloon)', 'An hour, to 20:45.', DN),
+ R('20:50', 'Train home from Motomachi-Chūkagai', 'Direct to Shibuya, about 40 minutes. Back about 21:40 (How-to 30).'),
+]
+D[19]['foot'] = 'Skipped: Yokohama Station department stores, Tsurugaoka Hachimangū, Yuigahama, lunch. Checked for Monday: Queen\'s Square 11:00 to 20:00, Air Cabin 10:00 to 21:00, Cosmo World 11:00 to 20:00, Red Brick Warehouse 1 10:00 to 19:00, Kyūryū SPA 10:00 to 22:00.'

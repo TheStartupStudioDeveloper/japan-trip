@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 19 Oct 20:15
+- Mon 19 actuals: double-decker train (Green Car mix-up), off early at Shin-Takashima, Queen's Square and ZARA, Air Cabin, ferris wheel, Vanish, Red Brick Warehouses, mapo tofu at Yokohama Sichuan Mapo, Kyūryū SPA massage to 20:45. Notes from the notes chat merged. Sichuan Mapo card.
+
 ## 19 Oct 14:06
 - Mon 19: department stores skipped. Minatomirai line to Queen's Square and Landmark Plaza (ZARA) 14:45, Air Cabin 15:50, Vanish 16:15, ferris wheel 17:00, Red Brick Warehouses at dusk 17:20, harbour walk 18:10, dinner 18:40, Kyūryū SPA 19:50, home about 21:50. Queen's Square card.
 

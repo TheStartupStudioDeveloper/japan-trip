@@ -750,6 +750,8 @@ P('markis-mm', ['MARK IS'], 'MARK IS Minato Mirai', 'MARK IS みなとみらい'
   'Modern mall above Minatomirai Station.', '10:00 to 20:00 Monday to Thursday.', 'MARK IS Minatomirai')
 P('queens-square', ["Queen's Square"], "Queen's Square Yokohama", 'クイーンズスクエア横浜',
   'Mall built straight onto Minatomirai Station, joined to Landmark Plaza. ZARA, Disney and Snoopy stores, restaurants.', '11:00 to 20:00.', "Queen's Square Yokohama")
+P('sichuan-mapo', ['Yokohama Sichuan Mapo'], 'Yokohama Sichuan Mapo', '横浜四川麻婆',
+  'Sichuan restaurant in Chinatown, known for Chen-style mapo tofu, spice level on request. Rated 4.5.', 'Open 10:30 to 22:30. Yamashitachō 147.', 'Yokohama Sichuan Mapo')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
