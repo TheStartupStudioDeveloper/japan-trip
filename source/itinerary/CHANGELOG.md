@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 01:00
+- New post.py step (run by build.py): Map of the day button on every day (hand-drawn maps, offline, numbered stops, ticks on done stops), Search in the top bar (places, every day, how-tos, Google Maps fallback), place cards now Photos, Google Maps and Apple Maps (Apple opens the place by Japanese name near its coordinates), done and skipped ticks on every activity, and a Notes for the day box with Copy for Claude. Ticks and notes save on the device. Kamakura and new Yokohama and Shibuya coordinates added to mapview/geo.py. Snapshot: master_v2_steady_2026-10-20.
+
 ## 20 Oct 00:00
 - Done days no longer carry skipped or dropped notes in the master; the What changed log keeps them. Separate map view retired: no more map rebuilds or publishes.
 

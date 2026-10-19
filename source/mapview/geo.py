@@ -217,9 +217,21 @@ STATIONS = [
  ('Namba',34.6650,135.5010),('Nippombashi',34.6660,135.5066),('Dōbutsuen-mae',34.6480,135.5060),
  ('Tsim Sha Tsui',22.2975,114.1722),('Central',22.2820,114.1580),('Sheung Wan',22.2865,114.1505),('Admiralty',22.2790,114.1650),('Tung Chung',22.2890,113.9415),
 ]
+
+# Added 20 Oct for the in-itinerary day maps (from Google Places where noted, else approximate)
+GEO.update({
+ 'hasedera':(35.31248,139.53311),'kamakura-buddha':(35.31681,139.53574),'alamode-kamakura':(35.31062,139.53905),
+ 'yuigahama':(35.30927,139.54222),'inamuragasaki':(35.3046,139.5287),'wasai-yakura':(35.32185,139.55234),
+ 'kamakura':(35.3190,139.5503),'komachi':(35.3205,139.5525),'hachimangu':(35.3259,139.5565),
+ 'queens-square':(35.45682,139.63436),'cosmo-world':(35.45515,139.63698),'sichuan-mapo':(35.44314,139.64569),
+ 'kyuryu-spa':(35.44291,139.64616),'kaisokukan':(35.44264,139.64381),'takashimaya-yk':(35.46564,139.62074),
+ 'sogo-yk':(35.46545,139.62505),'landmark-plaza':(35.45524,139.63125),'markis-mm':(35.45774,139.63178),
+ 'roastery':(35.64926,139.69259),'sakura-luggage':(35.66250,139.70065),'baggage-outlet':(35.66038,139.69885),
+ 'mihachi':(35.65861,139.69841),
+})
 REGIONS = [  # name for a panel, by nearest centre
  ('Shibuya and Harajuku',35.6640,139.7030),('Shinjuku',35.6930,139.7020),('Central Tokyo',35.6720,139.7620),('Odaiba',35.6280,139.7700),
- ('Azabudai and Tokyo Tower',35.6600,139.7430),('Asakusa',35.7120,139.7930),('Yokohama',35.4500,139.6380),('Kyoto',34.9990,135.7650),
+ ('Azabudai and Tokyo Tower',35.6600,139.7430),('Asakusa',35.7120,139.7930),('Yokohama',35.4500,139.6380),('Kamakura',35.3150,139.5420),('Kyoto',34.9990,135.7650),
  ('Arashiyama',35.0150,135.6750),('Nara',34.6850,135.8380),('Osaka',34.6800,135.5100),('Kowloon and Hong Kong Island',22.2900,114.1650),
  ('Lantau',22.2700,113.9200),('Narita Airport',35.7720,140.3929),('Haneda Airport',35.5449,139.7686),('Hong Kong Airport',22.3080,113.9185),
  ('Melbourne Airport',-37.6690,144.8410),('Shinagawa',35.6285,139.7387),('Ebisu',35.6467,139.7101),('Rainbow Bridge',35.6365,139.7633),

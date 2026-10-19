@@ -258,6 +258,7 @@ cover = f'''<section class="mday mcover" id="cover" data-d="0" hidden>
  {"".join(legs_html)}
 </section>'''
 
+EMB = {}
 sections, chips = [cover], ['<button type="button" class="dchip dcover" data-d="0"><b>Cover</b><span>4 legs</span></button>']
 for day in days:
     AIR = ('narita', 'haneda', 'hkia', 'mel', 'hkg-transfer', 'plaza-premium')
@@ -284,6 +285,8 @@ for day in days:
     elif singles:
         nm = ', '.join(region(*GEO[day['rows'][pn[0]]['key']]) for pn in singles)
         note = f'<p class="nomap">Also today, without a map: {H.escape(nm)}. Use Pin in Maps on those rows.</p>'
+    _stops = ''.join(f'<li{" class=dn" if "is-d" in r["cls"] else ""}><i>{r["num"]}</i><span>{H.escape(re.sub(r" (Done|Booked|To book)$", "", r["txt"]))}</span></li>' for r in day['rows'] if r['key'])
+    EMB[day['d']] = ''.join(maps) + (f'<ol class="mstops">{_stops}</ol>' if maps else '')
     d = day['d']
     sections.append(f'''<section class="mday{day["cls"]}" id="d{d}" data-d="{d}" hidden>
  {day["band"]}<header class="dh"><div class="date"><span class="num">{d}</span><span class="dow">{day["dow"]}<br><span class="where">{day["where"]}</span></span></div><h3>{day["title"]}</h3></header>
@@ -458,6 +461,9 @@ js = r'''
 })();
 '''
 
+if os.environ.get('JT_EMBED'):
+    json.dump({'days': {str(k): v for k, v in EMB.items()}, 'css': extra, 'js': js, 'geo': {k: [round(a, 5), round(b, 5)] for k, (a, b) in GEO.items()}}, open(os.path.join(HERE, 'out', 'embed.json'), 'w'), ensure_ascii=False)
+    print('embed days', len(EMB)); sys.exit(0)
 sheet = tpl[tpl.index('<aside class="sheet"'):tpl.index('</aside>') + 8]
 i = tpl.index("(function(){\n var P=/*PLACES*/"); j = tpl.index('})();', i) + 5
 cardjs = tpl[i:j].replace('/*PLACES*/', json.dumps(P, ensure_ascii=False).replace('</', '<\\/'))
