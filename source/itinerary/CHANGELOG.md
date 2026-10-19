@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 01:20
+- Itinerary Summary: one block per activity, built from each day's plan, grouped Morning, Afternoon, Evening. Same white blocks throughout; fixed or booked get a thick left bar and bold time, to book dashed, done faded with a tick.
+
 ## 20 Oct 01:00
 - New post.py step (run by build.py): Map of the day button on every day (hand-drawn maps, offline, numbered stops, ticks on done stops), Search in the top bar (places, every day, how-tos, Google Maps fallback), place cards now Photos, Google Maps and Apple Maps (Apple opens the place by Japanese name near its coordinates), done and skipped ticks on every activity, and a Notes for the day box with Copy for Claude. Ticks and notes save on the device. Kamakura and new Yokohama and Shibuya coordinates added to mapview/geo.py. Snapshot: master_v2_steady_2026-10-20.
 
