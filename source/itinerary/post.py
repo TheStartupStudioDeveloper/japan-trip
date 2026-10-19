@@ -54,6 +54,10 @@ css = mapcss + r'''
 .tk{display:inline-flex;gap:.3rem;margin:.35rem 0 0}
 .tk button{appearance:none;width:2rem;height:1.8rem;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .9rem/1 var(--body);cursor:pointer;padding:0}
 .tk button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.tk .tkn{width:auto;padding:0 .5rem;font:600 .74rem var(--body)}
+.tk .tkn.has{background:var(--ink);color:var(--paper)}
+.inote{margin-top:.35rem}.inote[hidden]{display:none}
+.inote textarea{width:100%;box-sizing:border-box;font:400 .9rem/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}
 .row.tk-n .p,.row.tk-n .n{opacity:.45;text-decoration:line-through;text-decoration-thickness:1px}
 .dnotes{margin:1rem 0 .4rem;border:1.5px solid var(--ink);padding:.7rem}
 .dnotes label{display:block;font:700 .72rem var(--body);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem}
@@ -100,13 +104,14 @@ script = r'''
   var h=a.querySelector('header.dh h3');if(!h)return;var b=document.createElement('button');b.type='button';b.className='dmapb';b.innerHTML='&#9678; Map of the day';b.onclick=function(){openMap(d)};h.parentNode.insertBefore(b,h.nextSibling)});
  // ---------- ticks and day notes (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
- function rowKey(d,li){var t=(li.querySelector('.t')||{}).textContent||'',p=((li.querySelector('.p')||{}).textContent||'').trim().slice(0,40);return d+'|'+t+'|'+p}
+ var IN=store('jt-inotes-v1')||{};
+ function rowKey(d,li){var t=(li.querySelector('.t')||{}).textContent||'',p=ptext(li).slice(0,40);return d+'|'+t+'|'+p}
  function paint(li,v){li.classList.toggle('tk-y',v==='y');li.classList.toggle('tk-n',v==='n');li.querySelectorAll('.tk button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===v?'true':'false')})}
  document.querySelectorAll('article.day').forEach(function(a){var d=a.id.slice(1);
   a.querySelectorAll('ol.rows > li.row').forEach(function(li){var k=rowKey(d,li),w=li.querySelector('.w');if(!w)return;
-   var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button>';w.appendChild(s);
+   var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button>';s.insertAdjacentHTML('beforeend','<button type="button" class="tkn" aria-expanded="false" aria-label="Note">&#9998; Note</button>');w.appendChild(s);var nb=s.querySelector('.tkn'),nw=document.createElement('div');nw.className='inote';nw.hidden=true;nw.innerHTML='<textarea rows="2" placeholder="Note for this one"></textarea>';w.appendChild(nw);var nta=nw.querySelector('textarea'),ntm;nta.value=IN[k]||'';function mark(){nb.classList.toggle('has',!!nta.value.trim())}mark();nb.onclick=function(e){e.stopPropagation();nw.hidden=!nw.hidden;nb.setAttribute('aria-expanded',!nw.hidden);if(!nw.hidden)nta.focus()};nta.oninput=function(){clearTimeout(ntm);ntm=setTimeout(function(){if(nta.value.trim())IN[k]=nta.value;else delete IN[k];store('jt-inotes-v1',IN);mark()},300)};
    var v=TK[k]==='-'?'':(TK[k]||(li.classList.contains('is-d')?'y':''));paint(li,v);
-   s.onclick=function(e){var b=e.target.closest('button');if(!b)return;var cv=li.classList.contains('tk-y')?'y':li.classList.contains('tk-n')?'n':'';var nv=cv===b.dataset.v?'':b.dataset.v;TK[k]=nv||'-';paint(li,nv);store('jt-ticks-v1',TK)}});
+   s.onclick=function(e){var b=e.target.closest('button');if(!b||!b.dataset.v)return;var cv=li.classList.contains('tk-y')?'y':li.classList.contains('tk-n')?'n':'';var nv=cv===b.dataset.v?'':b.dataset.v;TK[k]=nv||'-';paint(li,nv);store('jt-ticks-v1',TK)}});
   var last=a.querySelectorAll('ol.rows');last=last[last.length-1];if(!last)return;
   var n=document.createElement('div');n.className='dnotes';
   n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
@@ -114,7 +119,7 @@ script = r'''
   var ta=n.querySelector('textarea'),st=n.querySelector('.dns'),tm;ta.value=NT[d]||'';
   ta.oninput=function(){clearTimeout(tm);tm=setTimeout(function(){NT[d]=ta.value;store('jt-notes-v1',NT);st.textContent='Saved on this device'},400)};
   function text(){var L=[a.querySelector('.dow').firstChild.textContent+' '+d+' Oct: '+a.querySelector('h3').textContent];
-   a.querySelectorAll('ol.rows > li.row').forEach(function(li){var x=li.classList.contains('tk-y')?'[done]':li.classList.contains('tk-n')?'[skipped]':'[ ]';L.push(x+' '+((li.querySelector('.t')||{}).textContent||'')+' '+((li.querySelector('.p')||{}).textContent||'').trim())});
+   a.querySelectorAll('ol.rows > li.row').forEach(function(li){var x=li.classList.contains('tk-y')?'[done]':li.classList.contains('tk-n')?'[skipped]':'[ ]';L.push(x+' '+((li.querySelector('.t')||{}).textContent||'')+' '+((li.querySelector('.p')||{}).textContent||'').trim());var it=li.querySelector('.inote textarea');if(it&&it.value.trim())L.push('    note: '+it.value.trim())});
    if(ta.value.trim())L.push('Notes: '+ta.value.trim());return L.join('\n')}
   n.querySelector('.dnc').onclick=function(){var t=text();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){st.textContent='Copied. Paste it into the itinerary chat.'},function(){ta.value=ta.value;window.prompt('Copy this for Claude',t)})};
   var shb=n.querySelector('.dnsh');if(!navigator.share)shb.hidden=true;shb.onclick=function(){navigator.share({text:text()}).catch(function(){})};

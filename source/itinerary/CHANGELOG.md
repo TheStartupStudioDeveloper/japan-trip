@@ -1,5 +1,10 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 06:45
+- Summary reverted to the three-column version.
+- Each activity gets a Note button beside the ticks: hidden by default, opens a small note field, saved on the device, included in Copy for Claude. Tick keys now ignore the Done tag text.
+- Fri 16 actuals from G's Copy for Claude paste: every row done.
+
 ## 20 Oct 01:20
 - Itinerary Summary: one block per activity, built from each day's plan, grouped Morning, Afternoon, Evening. Same white blocks throughout; fixed or booked get a thick left bar and bold time, to book dashed, done faded with a tick.
 

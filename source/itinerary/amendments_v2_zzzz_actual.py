@@ -150,3 +150,5 @@ _r = D[17]['rows']
 for _k, _x in enumerate(_r):
     if _x[0] == '16:00':
         _r[_k] = R(_x[0], _x[1], 'The booked slot.', *_x[3:])
+# Fri 16 actuals, from G's Copy for Claude paste (20 Oct 06:38): every row done
+DAY16['rows'] = [R(r[0], r[1], r[2], DN) for r in DAY16['rows']]
