@@ -169,3 +169,23 @@ _t = D[20]['rows']
 _i = _row(20, '21:45')
 _t[_i] = R(_t[_i][0], _t[_i][1], _t[_i][2] + ' Pack tonight.', *_t[_i][3:])
 D[20]['foot'] = 'Tochō North Observation Deck open 09:30 to 17:30 today, South deck closed Tuesdays. Wednesday is the 05:55 wake.'
+
+# Tue 20 actuals, from G's Copy for Claude paste (22:02). Whole day done.
+_t = D[20]['rows']
+_k = _row(20, '11:45')
+D[20]['rows'] = _t[:_k] + [
+ R('11:45', 'JR Yamanote line Harajuku to Shinjuku', 'Then the underground moving walkways through the tunnel to Tochō.', DN),
+ R('12:00', 'Government Building deck, North Observation Deck', 'Free, 45th floor.', DN),
+ R('13:05', 'Walk to NEWoMan, New South Exit', '', DN),
+ R('13:30', 'Omakase lunch: Sushi Tokyo Ten Shinjuku', 'Massive, all seafood. The abalone followed by liver got a laugh. The highlight was the egg and the grapes at the end.', DN),
+ R('15:00', 'Takashimaya rooftop', 'The open-air rooftop at Takashimaya. FamilyMart takeaway coffee and a grey jumper.', DN),
+ R('16:00', 'Shinjuku Gyoen stroll', 'Made it in just before the gates closed.', DN),
+ R('17:00', 'Cynthia at RAGTAG Shinjuku', 'G walked the blocks around and bought a toy car.', DN),
+ R('17:30', 'Foot massage, Suosoukan Shinjuku South Exit', 'Half an hour each, next door to RAGTAG.', DN),
+ R('18:00', 'Shinjuku: the 3D cat at the east exit', '', DN),
+ R('18:15', 'Godzilla head, Kabukichō and Kabukichō Tower', '', DN),
+ R('19:00', 'Golden Gai: Anchor', 'First Asahi, and a ninja highball for Cynthia.', DN),
+ R('19:45', 'Omoide Yokochō', 'Dinner and the first sake.', DN),
+ R('20:45', 'JR Yamanote line home to Shibuya', 'Platform 14, East exit, walk up Meiji-dōri.', DN),
+]
+D[20]['foot'] = ''

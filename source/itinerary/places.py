@@ -752,6 +752,18 @@ P('queens-square', ["Queen's Square"], "Queen's Square Yokohama", 'クイーン�
   'Mall built straight onto Minatomirai Station, joined to Landmark Plaza. ZARA, Disney and Snoopy stores, restaurants.', '11:00 to 20:00.', "Queen's Square Yokohama")
 P('sichuan-mapo', ['Yokohama Sichuan Mapo'], 'Yokohama Sichuan Mapo', '横浜四川麻婆',
   'Sichuan restaurant in Chinatown, known for Chen-style mapo tofu, spice level on request. Rated 4.5.', 'Open 10:30 to 22:30. Yamashitachō 147.', 'Yokohama Sichuan Mapo')
+P('ragtag-shinjuku', ['RAGTAG Shinjuku'], 'RAGTAG Shinjuku', 'ラグタグ新宿店',
+  'The Shinjuku branch of the pre-owned designer chain, near Shinjuku-sanchōme. Clothes, bags and shoes sorted by brand.',
+  'Open 11:00 to 20:00. No refunds.', 'RAGTAG Shinjuku')
+P('suosoukan', ['Suosoukan', 'Suosoukan Shinjuku'], 'Suosoukan Shinjuku South Exit', '',
+  'The foot massage place next door to RAGTAG Shinjuku. Thirty minutes each, Tue 20.',
+  'Walk-in when there is space.', 'foot massage next to RAGTAG Shinjuku')
+P('anchor-gg', ['Anchor'], 'Anchor, Golden Gai', '',
+  'A tiny bar in Golden Gai. First Asahi of the trip, and a ninja highball.',
+  'Most Golden Gai bars have a small seat charge.', 'Anchor bar Golden Gai Shinjuku')
+P('takashimaya-roof', ['Takashimaya rooftop'], 'Takashimaya Times Square rooftop', '高島屋 屋上',
+  'The open-air rooftop garden on top of Takashimaya Times Square, across the south deck from NEWoMan.',
+  'Free. Department store hours.', 'Takashimaya Times Square rooftop garden Shinjuku')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 22:05
+- Tue 20 done, from G's paste: JR to Shinjuku via the underground walkways, Tochō North deck, Tokyo Ten omakase, Takashimaya rooftop, Shinjuku Gyoen, RAGTAG Shinjuku, Suosoukan foot massage, 3D cat, Godzilla head and Kabukichō Tower, Golden Gai (Anchor), Omoide Yokochō, JR Yamanote home. Department stores and Hanazono Shrine logged as skipped in What changed only.
+- New cards: RAGTAG Shinjuku, Suosoukan, Anchor, Takashimaya rooftop.
+
 ## 20 Oct 11:40
 - Tue 20 actuals to 11:36 from G's paste: train and river walk to the Roastery, breakfast, river walk, Tōyoko straight to Harajuku, Harajuku streets. Hotel stop and suitcase taken out. Added JR to Shinjuku 11:45 and Tochō North Observation Deck 12:00, walk to NEWoMan 13:05. Pack tonight.
 
