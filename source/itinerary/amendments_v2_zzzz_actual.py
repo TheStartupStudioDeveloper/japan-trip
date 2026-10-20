@@ -152,3 +152,20 @@ for _k, _x in enumerate(_r):
         _r[_k] = R(_x[0], _x[1], 'The booked slot.', *_x[3:])
 # Fri 16 actuals, from G's Copy for Claude paste (20 Oct 06:38): every row done
 DAY16['rows'] = [R(r[0], r[1], r[2], DN) for r in DAY16['rows']]
+# Tue 20 actuals to 11:36, from G's Copy for Claude paste. Hotel stop and suitcase taken out. Tochō deck added before lunch.
+_t = D[20]['rows']
+_k = _row(20, '13:30')
+D[20]['rows'] = [
+ R('07:45', 'Train to Nakameguro, walk up the river to the Roastery', '', DN),
+ R('08:00', 'Breakfast at the Starbucks Reserve Roastery', '', DN),
+ R('09:00', 'Meguro River walk to Nakameguro', '', DN),
+ R('09:30', 'Tōkyū Tōyoko line straight through to Harajuku', 'Meiji-jingūmae, no change.', DN),
+ R('10:00', 'Harajuku streets', 'Toy vending machines, clear umbrellas.', DN),
+ R('11:45', 'JR Yamanote line Harajuku to Shinjuku', 'Two stops, about 5 minutes. West exit, then about 12 minutes on foot to Tochō.'),
+ R('12:00', 'Government Building deck, North Observation Deck', 'Free, 45th floor, bag check then the lift. Open to 17:30; the South deck is closed on Tuesdays. Mt Fuji to the west on a clear day. Leave by 13:05.'),
+ R('13:05', 'Walk to NEWoMan, New South Exit', 'About 15 minutes back past Shinjuku Station. Tokyo Ten is on 2F.'),
+] + _t[_k:]
+_t = D[20]['rows']
+_i = _row(20, '21:45')
+_t[_i] = R(_t[_i][0], _t[_i][1], _t[_i][2] + ' Pack tonight.', *_t[_i][3:])
+D[20]['foot'] = 'Tochō North Observation Deck open 09:30 to 17:30 today, South deck closed Tuesdays. Wednesday is the 05:55 wake.'

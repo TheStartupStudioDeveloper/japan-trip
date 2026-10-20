@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 11:40
+- Tue 20 actuals to 11:36 from G's paste: train and river walk to the Roastery, breakfast, river walk, Tōyoko straight to Harajuku, Harajuku streets. Hotel stop and suitcase taken out. Added JR to Shinjuku 11:45 and Tochō North Observation Deck 12:00, walk to NEWoMan 13:05. Pack tonight.
+
 ## 20 Oct 07:00
 - Original plan and What changed open in the same window, each with a Back to the itinerary bar.
 - Done label sits under the time.
