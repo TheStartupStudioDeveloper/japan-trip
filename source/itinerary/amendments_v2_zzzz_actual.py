@@ -224,3 +224,22 @@ for _g in CHECK:
 D[23]['notes'] = [n for n in D[23]['notes'] if n[0] != 'Dinner swap']
 GOOD['k'][3] = ('Decided', 'No Universal. Thursday is the Osaka day. Thursday and Friday can swap if they must.')
 D[22]['notes'] = [(h, b.replace('Protect lunch at Kuromon', 'Protect the okonomiyaki lunch')) for (h, b) in D[22]['notes']]
+# 20 Oct 23:34: Inari stays Sat whatever the weather (no Wed backup). Thu: Osaka Castle SINFONIA light show at night (free, 15 to 25 Oct, 19:00 to 22:00), so the castle moves from the morning to the end of the day and home is by JR from Osakajōkōen.
+D[21]['foot'] = 'Stags are pushy: feed the does.'
+_r = D[22]['rows']
+_keep = {t: _r[_row(22, t)] for t in ('13:15', '15:30', '16:15')}
+D[22]['rows'] = [
+ R('08:30', 'To Kyoto Station, then JR to Osaka', 'One subway stop or a 15 minute walk. JR special rapid to Osaka Station, about 30 minutes. A later start: the castle is tonight.'),
+ R('09:30', 'Umeda Sky deck', 'Two towers joined by a floating escalator. About 10 minutes on foot from Osaka Station through the underpass. Open from 09:30.'),
+ R('10:45', 'Midōsuji line down to Namba', 'Buy the one-day Enjoy Eco Card at the metro station, about ¥820. It covers the Osaka Metro all day, including tonight\'s ride to the castle.'),
+ R('11:00', 'Okonomiyaki lunch: Mizuno, Dōtonbori', 'Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle in front of you. In at the 11:00 opening, before the queue.'),
+ R('12:15', *_keep['13:15'][1:]),
+ _keep['15:30'], _keep['16:15'],
+ R('17:45', 'Dōtonbori', 'Buy Tombori River Cruise tickets when you arrive and ride after dark (How-to 15). The Glico Running Man photo platform is at the Nanohana cosmetics shop, directly opposite the sign. Eat standing up.'),
+ R('18:45', 'Hōzenji Yokochō', 'Two streets back. Stone lanes, lanterns and the mossy Mizukake Fudō. A quick look.'),
+ R('19:15', 'Metro to Osaka Castle', 'Sennichimae line from Namba to Tanimachi 9-chōme, then the Tanimachi line two stops to Tanimachi 4-chōme. About 20 minutes, then 15 minutes on foot to the keep.'),
+ R('20:00', 'Osaka Castle light show, SINFONIA', 'Free projection mapping on the south face of the keep. About six minutes, repeating 19:00 to 22:00. Standing only. Can be cancelled in bad weather.'),
+ R('20:45', 'Home by JR from Osakajōkōen', 'About 15 minutes through the park to the station. Loop line to Osaka, about 10 minutes, then the special rapid to Kyoto, about 30. One subway stop to Gojō. Back about 22:00.'),
+]
+D[22]['notes'] = [(h, b.replace('Shorten the castle first, then the shops.', 'Shorten the shops first.').replace('Protect the okonomiyaki lunch', 'Protect the castle light show')) for (h, b) in D[22]['notes']]
+D[22]['title'] = 'Osaka, Dōtonbori to the castle light show'

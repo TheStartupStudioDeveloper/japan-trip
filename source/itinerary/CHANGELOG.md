@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 23:40
+- Thu 22 reshaped around the free Osaka Castle SINFONIA light show (15 to 25 Oct, 19:00 to 22:00): later start, Umeda Sky first, Mizuno at the 11:00 opening, shops, lion head, Shinsekai, Dōtonbori 17:45, Hōzenji, metro to the castle, show 20:00, JR home from Osakajōkōen. Morning castle visit dropped.
+- Wed 21: Fushimi Inari rain backup removed. Inari stays Sat morning whatever the weather.
+
 ## 20 Oct 22:50
 - Kyoto replan, agreed in chat. Wed 21: Ichiran Kyoto Karasuma for dinner instead of Pontochō; heavy-rain backup is Fushimi Inari at dusk via the JR Nara line. Thu 22: okonomiyaki at Mizuno instead of Kuromon; suitcase note for Don Quijote Dōtonbori. Fri 23: Katsugyu beef cutlet lunch, Kinkaku-ji, optional Nijō Castle instead of Nishiki and the long rest; evening is Chao Chao gyoza, Pontochō, optional Menami instead of the Gion dinner booking. Sat 24: Fushimi Inari stays, heavy-rain note.
 - New cards: Ichiran Kyoto Karasuma, Katsugyu, Kinkaku-ji, Nijō Castle, Chao Chao, Menami, Mizuno.
