@@ -243,3 +243,14 @@ D[22]['rows'] = [
 ]
 D[22]['notes'] = [(h, b.replace('Shorten the castle first, then the shops.', 'Shorten the shops first.').replace('Protect the okonomiyaki lunch', 'Protect the castle light show')) for (h, b) in D[22]['notes']]
 D[22]['title'] = 'Osaka, Dōtonbori to the castle light show'
+# 20 Oct 23:37: keep the castle in the morning as well as the light show at night.
+_r = D[22]['rows']
+D[22]['rows'] = [
+ R('07:00', 'To Kyoto Station, then JR to Osaka', 'One subway stop or a 15 minute walk. JR special rapid to Osaka Station, about 30 minutes, then the Osaka Loop Line to Osakajōkōen for the castle (How-to 14).'),
+ R('08:30', 'Osaka Castle, up close', 'In by Aoya-mon to Gokuraku-bashi: the tower over the inner moat walls. Then to its foot, not inside. Takeaway breakfast on a bench. Back tonight for the light show.'),
+ R('09:35', 'Tanimachi line to Higashi-Umeda', 'From Tanimachi 4-chōme, on the west side of the castle. Buy the one-day Enjoy Eco Card at the metro station, about ¥820. It covers the Osaka Metro all day, including tonight\'s ride back to the castle, not JR.'),
+ R('10:15', 'Umeda Sky deck', 'Two towers joined by a floating escalator. About 15 minutes on foot from Higashi-Umeda.'),
+ R('12:00', 'Okonomiyaki lunch: Mizuno, Dōtonbori', 'Midōsuji line down to Namba. Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle in front of you. The queue moves.'),
+ R('13:15', *_r[_row(22, '12:15')][1:]),
+] + _r[_row(22, '15:30'):]
+D[22]['title'] = 'Osaka, castle by day and by night'

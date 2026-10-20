@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 23:40 (b)
+- Thu 22: Osaka Castle morning visit back (07:00 start as before). The light show stays at night. Lunch at Mizuno 12:00.
+
 ## 20 Oct 23:40
 - Thu 22 reshaped around the free Osaka Castle SINFONIA light show (15 to 25 Oct, 19:00 to 22:00): later start, Umeda Sky first, Mizuno at the 11:00 opening, shops, lion head, Shinsekai, Dōtonbori 17:45, Hōzenji, metro to the castle, show 20:00, JR home from Osakajōkōen. Morning castle visit dropped.
 - Wed 21: Fushimi Inari rain backup removed. Inari stays Sat morning whatever the weather.
