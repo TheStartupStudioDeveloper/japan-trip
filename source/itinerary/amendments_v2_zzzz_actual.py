@@ -254,3 +254,34 @@ D[22]['rows'] = [
  R('13:15', *_r[_row(22, '12:15')][1:]),
 ] + _r[_row(22, '15:30'):]
 D[22]['title'] = 'Osaka, castle by day and by night'
+
+# 21 Oct 08:09: weather swap. Fri 23 dry by day (rain likely evening), Sat 24 heavy rain all morning. Fushimi Inari moves to Fri morning, the bamboo grove to a short Sat rain morning. Nozomi 16 at 12:01 protected.
+D[23]['title'] = 'Kyoto: Fushimi Inari, the Golden Pavilion, Higashiyama'
+_r = D[23]['rows']
+D[23]['rows'] = [
+ R('06:30', 'To Kyoto Station, then JR Nara line to Inari', 'One subway stop or a 15 minute walk to the station. Inari is two stops, about 5 minutes, and the shrine gate faces the platform.'),
+ R('07:00', 'Fushimi Inari', 'Dry and quiet this morning. Up through the gates to the Yotsutsuji viewpoint, about 45 minutes, for the view over Kyoto, then back down. A crush by ten. Open 24 hours.'),
+ R('09:15', 'JR back to Kyoto Station', 'Two stops. Coffee at the station.'),
+ R('09:30', 'Taxi to Kinkaku-ji', 'From the rank on the Karasuma side, about 30 minutes.'),
+ R('10:00', 'Kinkaku-ji, the Golden Pavilion', 'The gold pavilion on its pond. One-way garden loop, about 45 minutes. Open 09:00 to 17:00.'),
+ R('11:00', 'Optional: Nijō Castle', 'Taxi about 15 minutes. The squeaky nightingale floors. Open from 08:45.'),
+ R('12:30', 'Lunch: Katsugyu Yodobashi', 'Taxi about 15 minutes. Crumbed beef cutlet you finish on a hot stone, Yodobashi Kyoto 6F. Open 11:00 to 23:00.'),
+ R('13:30', 'Hotel, rest', 'Ten minutes on foot up Karasuma-dōri.'),
+] + _r[_row(23, '15:30'):]
+D[23]['foot'] = 'Dry by day, rain likely from the evening (about 70%). Umbrellas for Gion and Pontochō.'
+D[24]['title'] = 'Bamboo grove in the rain, back to Tokyo, fireworks night'
+_r = D[24]['rows']
+D[24]['rows'] = [
+ R('06:30', 'To Kyoto Station, then the JR Sagano line', 'Taxi to the station in the rain, about 5 minutes, or one subway stop. JR Sagano line to Saga-Arashiyama, about 15 minutes.'),
+ R('07:05', 'Bamboo grove', 'About 10 minutes on foot from the station. A short, flat, paved path that suits rain, and nearly empty this early. Keep it short.'),
+ R('08:30', 'Optional: Tenryū-ji as it opens', 'Opens 08:30, the north gate is at the end of the bamboo path. Only if the rain is light. The villa, the river path and lunch are dropped today.'),
+ R('09:05', 'JR back to Kyoto, then the hotel', 'About 15 minutes on the train, then a taxi or one subway stop. Back by about 09:40.'),
+ R('09:40', 'Shower and repack', ''),
+ R('10:30', 'Check out, taxi to Kyoto Station', 'About 5 minutes with the bags in the rain. Walking is 15 minutes in the dry (How-to 16).'),
+] + _r[_row(24, '11:15'):]
+D[24]['foot'] = 'Wet morning: raincoats and good shoes. If the rain is very heavy, skip Arashiyama and have a slow breakfast near the hotel instead. Work back from the 12:01: on the platform by 11:45, at the station by 11:15, check out 10:30.'
+D[23]['cal'] = 'Inari, Gion'
+D[24]['cal'] = 'Bamboo, fireworks'
+D[23]['sum'] = 'Fushimi Inari first thing while it is dry and quiet, the Golden Pavilion, a beef cutlet lunch and a rest, Higashiyama in the late light, then gyoza and Pontochō.'
+D[24]['sum'] = 'A short, early bamboo grove walk in the rain, the train back to Tokyo, an hour at the hotel, then fireworks over the bay from Odaiba. Dinner comes after the show, so the trains have cleared by the time you leave.'
+LEGS['k']['sum'] = 'One clear idea a day. Nara on arrival, a full day in Osaka, Fushimi Inari and Higashiyama on Friday, and a short bamboo grove morning before the train back to Tokyo.'

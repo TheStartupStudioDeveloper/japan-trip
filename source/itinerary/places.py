@@ -785,6 +785,9 @@ P('menami', ['Menami'], 'Menami', 'めなみ',
 P('mizuno', ['Mizuno'], 'Okonomiyaki Mizuno, Dōtonbori', '美津の',
   'Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle in front of you. Family-run since 1945, Michelin Bib Gourmand.',
   'Open 11:00 to 22:00. A lunch queue that moves.', 'Okonomiyaki Mizuno Dotonbori')
+P('katsugyu-y', ['Katsugyu Yodobashi Kyoto', 'Katsugyu Yodobashi'], 'Gyukatsu Kyoto Katsugyu, Yodobashi Kyoto', '牛カツ京都勝牛 京都ヨドバシ店',
+  'Crumbed beef cutlet, rare in the middle, that you finish on your own little hot stone. On the restaurant floor of Yodobashi Kyoto, opposite Kyoto Station.',
+  'Open 11:00 to 23:00 daily. 6F. Ten minutes on foot from the hotel.', 'Gyukatsu Kyoto Katsugyu Kyoto Yodobashi')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
