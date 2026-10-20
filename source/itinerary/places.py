@@ -764,6 +764,27 @@ P('anchor-gg', ['Anchor'], 'Anchor, Golden Gai', '',
 P('takashimaya-roof', ['Takashimaya rooftop'], 'Takashimaya Times Square rooftop', '高島屋 屋上',
   'The open-air rooftop garden on top of Takashimaya Times Square, across the south deck from NEWoMan.',
   'Free. Department store hours.', 'Takashimaya Times Square rooftop garden Shinjuku')
+P('ichiran-k', ['Ichiran Kyoto Karasuma', 'Ichiran'], 'Ichiran Kyoto Karasuma', '一蘭 京都烏丸店',
+  'Creamy pork-bone ramen eaten in a solo booth. Fill in the sheet for richness, garlic, spice and noodle firmness.',
+  'Open 10:00 to 22:00 daily. Ticket machine at the door.', 'ICHIRAN Kyoto Karasuma Tachiurinakanocho')
+P('katsugyu', ['Gyukatsu Kyoto Katsugyu', 'Katsugyu'], 'Gyukatsu Kyoto Katsugyu Arashiyama', '牛カツ京都勝牛 嵐山',
+  'Crumbed beef cutlet, rare in the middle, that you finish on your own little hot stone. Beside the bamboo grove.',
+  'Walk in at lunch. Phone 075-882-9601.', 'Gyukatsu Kyoto Katsugyu Arashiyama')
+P('kinkakuji', ['Kinkaku-ji', 'Golden Pavilion'], 'Kinkaku-ji, the Golden Pavilion', '金閣寺',
+  'The gold-leaf pavilion on its mirror pond, the classic Kyoto view. A one-way loop through the garden, about 45 minutes.',
+  'Open 09:00 to 17:00. About ¥500 each.', 'Kinkakuji Temple Kyoto')
+P('nijo', ['Nijō Castle'], 'Nijō Castle', '二条城',
+  'The shōgun\'s castle palace, with nightingale floors that squeak underfoot so no one could sneak up. Painted screens and big gardens.',
+  'Open 08:45 to 17:00, last entry 16:00. About ¥1,300 each with the palace.', 'Nijo Castle Kyoto')
+P('chao-chao', ['Chao Chao gyoza', 'Chao Chao'], 'Chao Chao gyoza, Sanjō Kiyamachi', '餃子 ChaoChao 三条木屋町',
+  'Kyoto\'s most famous gyoza: small, crisp-bottomed dumplings, cheap and fast, in a tiny shop on the Kiyamachi canal.',
+  'Opens 17:00 on weekdays. Expect a short queue.', 'Chao Chao Sanjo Kiyamachi')
+P('menami', ['Menami'], 'Menami', 'めなみ',
+  'A cosy counter for obanzai, Kyoto home-style small plates: simmered, grilled and pickled. Here since 1939. Michelin Bib Gourmand.',
+  'Walk-ins easiest at opening or late. Kiyamachi-dōri, Sanjō-agaru.', 'Oryori Menami Kiyamachi Kyoto')
+P('mizuno', ['Mizuno'], 'Okonomiyaki Mizuno, Dōtonbori', '美津の',
+  'Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle in front of you. Family-run since 1945, Michelin Bib Gourmand.',
+  'Open 11:00 to 22:00. A lunch queue that moves.', 'Okonomiyaki Mizuno Dotonbori')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

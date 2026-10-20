@@ -189,3 +189,38 @@ D[20]['rows'] = _t[:_k] + [
  R('20:45', 'JR Yamanote line home to Shibuya', 'Platform 14, East exit, walk up Meiji-dōri.', DN),
 ]
 D[20]['foot'] = ''
+
+# Kyoto replan, agreed in chat 20 Oct 22:42. Casual food, light on seafood. Inari stays Sat (rain gear), Wed dusk is the heavy-rain backup.
+_r = D[21]['rows']
+_r[_row(21, '19:00')] = R('19:15', 'Dinner: Ichiran Kyoto Karasuma', 'Ramen in the solo booths. About 10 minutes north of the hotel up Karasuma-dōri, at Shijō. Open to 22:00.')
+_r[_row(21, '20:30')] = R('20:30', 'Optional: Pontochō and the Kamo River', 'About 15 minutes east along Shijō-dōri. A drink in the lantern alley, then a taxi home.')
+D[21]['foot'] = 'Check the Saturday forecast this afternoon. Heavy rain due: take the JR Nara line from JR Nara to Inari instead of Kintetsu, about an hour, and walk the gates at dusk. Then 5 minutes on to Kyoto Station for the bags. Stags are pushy: feed the does.'
+_r = D[22]['rows']
+_r[_row(22, '12:00')] = R('12:00', 'Okonomiyaki lunch: Mizuno, Dōtonbori', 'Midōsuji line down to Namba. Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle in front of you. The queue moves. Open 11:00 to 22:00.')
+_i = _row(22, '13:15'); _x = _r[_i]
+_r[_i] = R(_x[0], _x[1], _x[2] + ' Cynthia\'s bigger suitcase: Don Quijote Dōtonbori has big ones at normal prices.', *_x[3:])
+_r = D[23]['rows']
+_k = _row(23, '15:30')
+D[23]['rows'] = _r[:_row(23, '10:15')] + [
+ R('10:15', 'Coffee by the river', 'Arabica by Togetsukyō bridge. Lunch is at 11:00.'),
+ R('11:00', 'Lunch: Gyukatsu Kyoto Katsugyu', 'Crumbed beef cutlet you finish on a hot stone. Beside the bamboo grove.'),
+ R('11:45', 'Taxi to Kinkaku-ji', 'About 25 minutes.'),
+ R('12:15', 'Kinkaku-ji, the Golden Pavilion', 'The gold pavilion on its pond. One-way garden loop, about 45 minutes. Open 09:00 to 17:00.'),
+ R('13:15', 'Optional: Nijō Castle', 'Taxi about 15 minutes. The squeaky nightingale floors. Last entry 16:00.'),
+ R('14:30', 'Hotel, short rest', 'Taxi about 10 minutes.'),
+] + _r[_k:]
+_r = D[23]['rows']
+_r[_row(23, '15:30')] = R('15:30', 'Kiyomizu-dera', 'Taxi from the hotel at 15:15, about 10 minutes. The top of Higashiyama, the old eastern hills. The stage view over the city is the thing. Closes 18:00.')
+_i = _row(23, '18:30')
+D[23]['rows'] = _r[:_i] + [
+ R('18:30', 'Chao Chao gyoza, Sanjō Kiyamachi', 'About 15 minutes north from Gion over Shijō Bridge. Kyoto\'s famous crispy dumplings, small shop, short queue.'),
+ R('19:30', 'Pontochō alley', 'The lantern lane of small bars and izakayas by the river, just south. Wander and pick one or two.'),
+ R('20:30', 'Optional: Menami', 'Kyoto home-style small plates at a counter, since 1939. On Kiyamachi, back near Chao Chao.'),
+] + _r[_i+1:]
+_r = D[24]['rows']; _i = _row(24, '07:15'); _x = _r[_i]
+_r[_i] = R(_x[0], _x[1], _x[2] + ' Heavy rain: just the lower double row of gates, about 40 minutes. Steps get slippery.', *_x[3:])
+for _g in CHECK:
+    _g[1][:] = [(l, t) for (l, t) in _g[1] if 'Gion dinner' not in t and 'Gion or Pontochō' not in t]
+D[23]['notes'] = [n for n in D[23]['notes'] if n[0] != 'Dinner swap']
+GOOD['k'][3] = ('Decided', 'No Universal. Thursday is the Osaka day. Thursday and Friday can swap if they must.')
+D[22]['notes'] = [(h, b.replace('Protect lunch at Kuromon', 'Protect the okonomiyaki lunch')) for (h, b) in D[22]['notes']]

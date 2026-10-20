@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 20 Oct 22:50
+- Kyoto replan, agreed in chat. Wed 21: Ichiran Kyoto Karasuma for dinner instead of Pontochō; heavy-rain backup is Fushimi Inari at dusk via the JR Nara line. Thu 22: okonomiyaki at Mizuno instead of Kuromon; suitcase note for Don Quijote Dōtonbori. Fri 23: Katsugyu beef cutlet lunch, Kinkaku-ji, optional Nijō Castle instead of Nishiki and the long rest; evening is Chao Chao gyoza, Pontochō, optional Menami instead of the Gion dinner booking. Sat 24: Fushimi Inari stays, heavy-rain note.
+- New cards: Ichiran Kyoto Karasuma, Katsugyu, Kinkaku-ji, Nijō Castle, Chao Chao, Menami, Mizuno.
+
 ## 20 Oct 22:05
 - Tue 20 done, from G's paste: JR to Shinjuku via the underground walkways, Tochō North deck, Tokyo Ten omakase, Takashimaya rooftop, Shinjuku Gyoen, RAGTAG Shinjuku, Suosoukan foot massage, 3D cat, Godzilla head and Kabukichō Tower, Golden Gai (Anchor), Omoide Yokochō, JR Yamanote home. Department stores and Hanazono Shrine logged as skipped in What changed only.
 - New cards: RAGTAG Shinjuku, Suosoukan, Anchor, Takashimaya rooftop.
