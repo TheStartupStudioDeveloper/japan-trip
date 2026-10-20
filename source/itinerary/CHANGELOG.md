@@ -116,6 +116,11 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses: Log as you go, 20 October
+- New section near the top of J&HK Expenses: add an item, amount (¥, AU$ or HK$), date and who paid (G, Cynthia or Not sure) as you go. The list is saved on that device only.
+- "Copy for Claude" copies the list as one line per item (date | item | amount | paid by) to paste into the expenses chat; if the copy is blocked, the text shows in a box to copy by hand. "Clear list" needs a second tap.
+- The ledger itself still only changes when Claude updates it.
+
 Expenses update, 18 October, evening
 - Added: Sun 18 dinner at Mihachi Shibuya Ekimae, ¥3,971 from the receipt, paid by G. Estimate at ¥1 = A$0.0091.
 
