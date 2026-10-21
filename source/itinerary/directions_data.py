@@ -55,7 +55,7 @@ GO = {
   ('Ramen: Honke Daiichi Asahi', [
    'From the Kintetsu gates, go up to the 2F North-South Free Passage (南北自由通路) and cross north to the Central Exit (中央口), the Kyoto Tower side.',
    'Outside, turn right and walk east along Shiokōji-dōri, about 5 minutes.',
-   'Honke Daiichi Asahi (本家 第一旭, red and white striped sign) and Shinpuku Saikan sit side by side on the left. No ticket machine: queue outside, staff take your order, pay at the end.',
+   'Honke Daiichi Asahi (本家 第一旭, red and white striped sign) and Shinpuku Saikan sit side by side on the left. Queue outside. When the person ahead comes back out, go in and buy your ticket at the machine inside (cash), then rejoin the line. ラーメン is ramen, 特製ラーメン has extra pork.',
    maps('Honke Daiichi Asahi Takabashi Kyoto'),
   ]),
   ('Kyoto Tower at night', [
