@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:20
+- Auto-sort: change a time and the item moves to its place in the day.
+- Quick add: "+ Add an item" at the end of each day (time, activity, note). Shown with a dashed outline and an Added tag, with tick, note and a two-tap Delete. Saved on the device. Copy for Claude lists them as [added].
+
 ## 21 Oct 09:15
 - Item notes: more space above and below when open, and a bigger box (about five lines, 16px text so the phone does not zoom).
 - Times are editable: tap a time, type the new one, Enter. Saved on the device and marked with a solid underline. Copy for Claude now shows "07:30 (was 07:00)" and no longer runs the Done label into the time.
