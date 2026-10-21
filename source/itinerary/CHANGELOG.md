@@ -207,6 +207,7 @@ Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", o
 
 Expenses update, 21 October
 - From the Log as you go list (estimates at ¥1 = A$0.0091): drinks at a Golden Gai bar, ¥3,300, Cynthia (Tue 20); dinner in Shibuya’s yakitori lane, ¥5,400, G (Tue 20); Shinkansen breakfast, ¥2,492, Cynthia (Wed 21).
+- Log as you go form fixes (who paid buttons fill the row, focus outline, the form resets to G, ¥ and today after each add) were made on the live pages only; they are now in source/expenses/expenses_build.py so rebuilds keep them.
 
 Expenses: Log as you go, 20 October
 - New section near the top of J&HK Expenses: add an item, amount (¥, AU$ or HK$), date and who paid (G, Cynthia or Not sure) as you go. The list is saved on that device only.
