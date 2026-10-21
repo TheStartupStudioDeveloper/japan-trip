@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 19:25
+- Edit and Clean switch: position kept with plain scrollTo over two frames (iPhone was jumping to the top). Same for reopening at your last place. Daiichi Asahi: no ticket machine.
+
 ## 21 Oct 19:15
 - Now marker: a black line with "Now HH:MM" in today's list, between the last item before now and the next one, updated every minute.
 - The app remembers where you were and reopens at the same item.

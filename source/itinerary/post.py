@@ -131,7 +131,7 @@ script = r'''
  (function(){var m;try{m=localStorage.getItem('jt-mode')}catch(e){}var ed=m==='edit';document.body.classList.toggle('jt-clean',!ed);
   var b=document.createElement('button');b.type='button';b.id='jtmode';
   function lab(){var on=!document.body.classList.contains('jt-clean');b.innerHTML=on?'&#10003; Done editing':'&#9998; Edit';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}lab();
-  b.onclick=function(){var rows=document.querySelectorAll('li.row,article.day header'),anc=null,top=0,cy=60;for(var i=0;i<rows.length;i++){var r=rows[i].getBoundingClientRect();if(r.top>=cy&&r.height){anc=rows[i];top=r.top;break}}var on=document.body.classList.toggle('jt-clean');if(anc){var nt=anc.getBoundingClientRect().top,de=document.documentElement,sb=de.style.scrollBehavior;de.style.scrollBehavior='auto';window.scrollTo({top:scrollY+(nt-top),behavior:'instant'});de.style.scrollBehavior=sb}try{localStorage.setItem('jt-mode',on?'clean':'edit')}catch(e){}if(on&&document.activeElement&&document.activeElement.blur)document.activeElement.blur();lab()};
+  b.onclick=function(){var rows=document.querySelectorAll('li.row,article.day header'),anc=null,top=0,cy=60;for(var i=0;i<rows.length;i++){var r=rows[i].getBoundingClientRect();if(r.top>=cy&&r.height){anc=rows[i];top=r.top;break}}var on=document.body.classList.toggle('jt-clean');if(anc){var de=document.documentElement;de.style.scrollBehavior='auto';var fix=function(){var nt=anc.getBoundingClientRect().top;if(Math.abs(nt-top)>1)window.scrollTo(0,window.pageYOffset+(nt-top))};fix();requestAnimationFrame(function(){fix();requestAnimationFrame(function(){fix();de.style.scrollBehavior=''})})}try{localStorage.setItem('jt-mode',on?'clean':'edit')}catch(e){}if(on&&document.activeElement&&document.activeElement.blur)document.activeElement.blur();lab()};
   document.body.appendChild(b)})();
  // ---------- ticks, notes, editable times, quick add (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
@@ -230,7 +230,7 @@ script = r'''
    if(p.k.indexOf('k:')===0){var want=p.k.slice(2);var L=document.querySelectorAll('li.row');for(var i=0;i<L.length;i++){if(L[i].dataset.k===want){el=L[i];break}}}
    else{var a=document.getElementById(p.k.slice(2));el=a&&a.querySelector('header.dh')}
    var de=document.documentElement,sb=de.style.scrollBehavior;de.style.scrollBehavior='auto';
-   if(el&&!el.hidden)window.scrollTo({top:el.getBoundingClientRect().top+scrollY-p.off,behavior:'instant'});else window.scrollTo({top:p.y,behavior:'instant'});
+   if(el&&!el.hidden)window.scrollTo(0,el.getBoundingClientRect().top+window.pageYOffset-p.off);else window.scrollTo(0,p.y);
    de.style.scrollBehavior=sb}
   restore();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){restore()});window.addEventListener('load',function(){setTimeout(restore,50)})})();
  // ---------- search
