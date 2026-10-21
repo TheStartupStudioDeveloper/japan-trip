@@ -63,7 +63,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .tag-add{border:1.5px dashed var(--ink);background:var(--paper);color:var(--ink)}
 .row.moved{background:var(--line);transition:background .9s}
 .tk .tkdel{width:auto;padding:0 .5rem;font:600 .74rem var(--body)}
-.qadd{margin:.8rem 0 0}
+.qadd{margin:.8rem 0 0}.qahint{font-size:.78rem;color:var(--mute);margin:0 0 .45rem}
 .qab,.qabtn button{appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .85rem var(--body);padding:.5rem .8rem;cursor:pointer}
 .qabtn button[type=submit]{background:var(--ink);color:var(--paper)}
 .qaf{border:1.5px solid var(--ink);padding:.7rem}.qaf[hidden],.qab[hidden]{display:none}
@@ -72,7 +72,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .qaf input,.qaf textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:400 1rem/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.45rem .5rem;border-radius:0;text-transform:none;letter-spacing:0}
 .qabtn{display:flex;gap:.5rem}
 .inote{margin:.6rem 0 .75rem}.inote[hidden]{display:none}
-.tv{cursor:text;border-bottom:1px dotted currentColor;outline:none;padding:0 .05rem}.tv:focus{background:var(--ink);color:var(--paper);border-bottom-color:var(--ink)}.tv.ed{border-bottom:2px solid var(--ink)}
+.tv{display:inline-block;cursor:text;border:1.5px dashed var(--ink);outline:none;padding:.1rem .3rem;min-width:3.2rem;text-align:center;font-variant-numeric:tabular-nums}.tv:focus{background:var(--ink);color:var(--paper);border-style:solid}.tv.ed{border-style:solid;border-width:2px}@media (min-width:640px){.row .tk,.row .inote{grid-column:2/-1;justify-self:stretch}.row .tk{justify-self:start}.row.added{padding-left:.6rem;padding-right:.6rem}}@media print{.tk,.inote,.qadd,.dnotes,.tv{border:0!important}.tk,.inote,.qadd,.dnotes{display:none!important}}.tk button{flex:0 0 auto}
 .inote textarea{width:100%;min-height:8.5rem;box-sizing:border-box;font:400 1rem/1.45 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}
 .row.tk-n .p,.row.tk-n .n{opacity:.45;text-decoration:line-through;text-decoration-thickness:1px}
 .dnotes{margin:1rem 0 .4rem;border:1.5px solid var(--ink);padding:.7rem}
@@ -131,7 +131,7 @@ script = r'''
  function setupRow(d,li,k,ad){var w=li.querySelector('.w');if(!w)return;
   var te=li.querySelector('.t'),tn=te&&te.firstChild;
   if(tn&&tn.nodeType===3){var t0=tn.textContent.trim(),tv=document.createElement('span');tv.className='tv';tv.contentEditable='true';tv.spellcheck=false;tv.setAttribute('inputmode','numeric');tv.setAttribute('aria-label','Time, tap to change');li.dataset.t0=ad?'':t0;tv.textContent=ad?ad.t:(TM[k]||t0);te.replaceChild(tv,tn);if(!ad&&TM[k])tv.classList.add('ed');
-   tv.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();tv.blur()}};
+   tv.onfocus=function(){setTimeout(function(){var r=document.createRange();r.selectNodeContents(tv);var se=getSelection();se.removeAllRanges();se.addRange(r)},0)};tv.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();tv.blur()}};
    tv.onblur=function(){var v=tv.textContent.trim();
     if(ad){if(!v){tv.textContent=ad.t;return}ad.t=v;store('jt-adds-v1',AD)}
     else{if(!v||v===t0){delete TM[k];tv.textContent=t0}else TM[k]=v;tv.classList.toggle('ed',!!TM[k]);store('jt-times-v1',TM)}
@@ -154,7 +154,7 @@ script = r'''
   (AD[d]||[]).forEach(function(ad){addRow(d,last,ad)});
   ols.forEach(sortOl);
   var qa=document.createElement('div');qa.className='qadd';
-  qa.innerHTML='<button type="button" class="qab">+ Add an item</button><form class="qaf" hidden><div class="qar"><label>Time<input type="time" name="t" required></label><label class="qaa">Activity<input type="text" name="a" required placeholder="What you did or will do"></label></div><label>Note<textarea name="n" rows="3" placeholder="Optional"></textarea></label><div class="qabtn"><button type="submit">Save</button><button type="button" class="qac">Cancel</button></div></form>';
+  qa.innerHTML='<p class="qahint">Tap a time to change it. Items re-order by time.</p><button type="button" class="qab">+ Add an item</button><form class="qaf" hidden><div class="qar"><label>Time<input type="time" name="t" required></label><label class="qaa">Activity<input type="text" name="a" required placeholder="What you did or will do"></label></div><label>Note<textarea name="n" rows="3" placeholder="Optional"></textarea></label><div class="qabtn"><button type="submit">Save</button><button type="button" class="qac">Cancel</button></div></form>';
   last.parentNode.insertBefore(qa,last.nextSibling);
   var qf=qa.querySelector('form'),qb=qa.querySelector('.qab');
   qb.onclick=function(){qf.hidden=false;qb.hidden=true;qf.t.focus()};

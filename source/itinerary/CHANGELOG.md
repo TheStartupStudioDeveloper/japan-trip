@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:30
+- Layout fix on wider screens: tick, cross and Note buttons and the note box sit under the activity, not squeezed into the time column.
+- Times look editable: dashed box, tap selects the time so typing replaces it. A hint above "+ Add an item" says how it works.
+
 ## 21 Oct 09:35
 - Chat with Claude button in the top bar of all four apps (source/apptools.py, CHAT map). Itinerary and Extras open the itinerary chat, Weather opens the J&HK Weather Forecast chat, Expenses opens the expenses chat.
 - Itinerary day notes: "Copy and chat" copies the day (ticks, times, added items, notes) and opens the itinerary chat.
