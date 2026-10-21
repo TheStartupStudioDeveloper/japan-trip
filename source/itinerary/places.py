@@ -788,6 +788,12 @@ P('mizuno', ['Mizuno'], 'Okonomiyaki Mizuno, Dōtonbori', '美津の',
 P('katsugyu-y', ['Katsugyu Yodobashi Kyoto', 'Katsugyu Yodobashi'], 'Gyukatsu Kyoto Katsugyu, Yodobashi Kyoto', '牛カツ京都勝牛 京都ヨドバシ店',
   'Crumbed beef cutlet, rare in the middle, that you finish on your own little hot stone. On the restaurant floor of Yodobashi Kyoto, opposite Kyoto Station.',
   'Open 11:00 to 23:00 daily. 6F. Ten minutes on foot from the hotel.', 'Gyukatsu Kyoto Katsugyu Kyoto Yodobashi')
+P('daiichi-asahi', ['Honke Daiichi Asahi', 'Daiichi Asahi'], 'Honke Daiichi Asahi', '本家 第一旭 たかばし本店',
+  'The classic Kyoto ramen shop, five minutes from Kyoto Station. A clear soy and pork broth, thin noodles, chashu and a heap of Kujō green onion. Quick turnover and a line out the door.',
+  '06:00 to 01:00. Closed Thursdays. Buy a ticket and queue. About ¥1,000 a bowl.', 'Honke Daiichi Asahi Takabashi Honten Kyoto')
+P('bees-knees', ["Bee's Knees"], "Bee's Knees", 'ビーズニーズ',
+  "A speakeasy behind a bookshelf door, with 1990s hip-hop and inventive cocktails. On Asia's 50 Best Bars list every year since 2020. Order the Ninja Smash.",
+  '18:00 to late. Closed Sundays. Walk-in.', "Bee's Knees Kyoto Kamiyacho")
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

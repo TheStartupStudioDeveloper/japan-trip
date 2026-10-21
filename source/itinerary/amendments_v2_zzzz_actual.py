@@ -331,3 +331,14 @@ _r = D[21]['rows']
 _i = _row(21, '10:15'); _r[_i] = R('10:15', 'Bags sent to the hotel from Crosta Kyoto', 'Delivered to sequence KYOTO GOJO by 17:00.', DN)
 _i = _row(21, '17:00'); _r[_i] = R('17:00', 'Kintetsu back to Kyoto', 'Limited express about 35 minutes, Express (急行) on Suica about 45. Kyoto about 17:40. No bags to collect: they are at the hotel.', *_r[_i][3:])
 _i = _row(21, '18:00'); _r[_i] = R('18:00', 'To sequence KYOTO GOJO, check in', 'The bags are waiting there. One subway stop to Gojō, or 15 minutes on foot up Karasuma-dōri, or a short taxi in the rain.', *_r[_i][3:])
+# 21 Oct 11:41: Wed evening. Ramen at the station, Kyoto Tower, check in, then two options: nearby (first choice) or Pontochō if dry.
+_r = D[21]['rows']
+_k = _row(21, '17:45')
+D[21]['rows'] = _r[:_k] + [
+ R('17:40', 'Ramen: Honke Daiichi Asahi', 'Five minutes east of Kyoto Station. The queue moves fast. Closed Thursdays, so tonight is the night.'),
+ R('18:30', 'Kyoto Tower at night', 'Opposite the station, north side. ¥900, open to 21:00, last entry 20:30.'),
+ R('19:15', 'To sequence KYOTO GOJO, check in', 'The bags are waiting there. One subway stop to Gojō, or 15 minutes on foot up Karasuma-dōri, or a short taxi in the rain.'),
+ R('20:00', 'Option A, nearby (first choice): massage and the Teramachi arcades', 'Covered and close, so fine in rain. A foot or body massage at YUMEMISHI (to 21:00) or Hannari (to 22:00), both at Shijō-Karasuma, 10 minutes north. Book ahead for about 20:00. The Teramachi and Shinkyōgoku arcades are 10 minutes further east.'),
+ R('20:00', "Option B, if it is dry: Pontochō and Bee's Knees", "Short taxi to Shijō-Kawaramachi. Walk the Pontochō alley, then a cocktail at Bee's Knees, walk-in. Doing it tonight covers a wet Friday night."),
+]
+D[21]['foot'] = 'Light rain likely from about 16:00. Stags are pushy: feed the does.'

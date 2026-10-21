@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 11:45
+- Wed 21 evening: 17:40 ramen at Honke Daiichi Asahi, 18:30 Kyoto Tower, 19:15 check in, then 20:00 Option A (first choice, nearby): massage at YUMEMISHI or Hannari and the Teramachi arcades, or Option B if dry: Pontochō and Bee's Knees. Ichiran dropped. New cards: Honke Daiichi Asahi, Bee's Knees.
+
 ## 21 Oct 11:35
 - Wed 21: bags sent from Crosta to the hotel, arriving 17:00. Station collection step removed.
 
