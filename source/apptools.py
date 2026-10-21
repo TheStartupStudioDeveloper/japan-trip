@@ -135,7 +135,7 @@ def sw(prefix, files):
     """Service worker: network first, cached copy when offline. Keeps the Save offline cache and other apps' caches."""
     import json
     files = [f for f in files if not f.endswith('.pdf')]
-    return ("""// Network first, so updates show straight away; cached copy when offline.
+    return ("""// Network first (revalidated, never the HTTP cache), so updates show straight away; cached copy when offline.
 const C = '""" + prefix + """';
 const FILES = """ + json.dumps(files) + """;
 const MINE = '""" + prefix.split('-')[0] + """-';
@@ -143,7 +143,7 @@ self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.a
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith(MINE) && k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET' || new URL(e.request.url).origin !== location.origin) return;
-  e.respondWith(fetch(e.request).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
+  e.respondWith(fetch(e.request, {cache: 'no-cache'}).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
     .catch(() => caches.match(e.request, {ignoreSearch: true}).then(m => m || caches.match('index.html'))));
 });
 """)

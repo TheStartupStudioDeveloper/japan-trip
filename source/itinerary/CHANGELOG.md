@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 12:15
+- Directions button is now just the ⓘ icon.
+- All app service workers fetch with cache 'no-cache', so Home Screen apps no longer show a stale copy from the HTTP cache after an update.
+
 ## 21 Oct 12:05
 - ⓘ Directions button under the time on items with directions, in Clean and Edit modes. Tap to drop down numbered steps (exits, gates, turns, landmarks, timings, taxi option, Google and Apple Maps links). Data in source/itinerary/directions_data.py (GO, keyed by day and the start of the item title). Wed 21 done from lunch to the evening options.
 
