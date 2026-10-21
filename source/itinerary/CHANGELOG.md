@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:15
+- Item notes: more space above and below when open, and a bigger box (about five lines, 16px text so the phone does not zoom).
+- Times are editable: tap a time, type the new one, Enter. Saved on the device and marked with a solid underline. Copy for Claude now shows "07:30 (was 07:00)" and no longer runs the Done label into the time.
+
 ## 21 Oct 08:20
 - Weather swap (Fri 23 dry by day, rain likely evening; Sat 24 heavy rain all morning, about 24 mm before noon). Fri 23: Fushimi Inari 07:00 by JR Nara line, JR back 09:15, taxi to Kinkaku-ji 10:00, optional Nijō Castle 11:00, lunch at Katsugyu Yodobashi 12:30 (11:00 to 23:00), hotel rest 13:30, then Kiyomizu-dera 15:30 onwards unchanged. Sat 24: bamboo grove 07:05 by JR Sagano line, optional Tenryū-ji at its 08:30 opening in light rain, JR back 09:05, hotel 09:40, check out 10:30 with a taxi to the station, Nozomi 16 at 12:01 unchanged. Ōkōchi villa, river path and Arashiyama lunch dropped. Wet-weather note on Sat.
 - New card: Katsugyu Yodobashi Kyoto. Extras: Arashiyama café and tofu notes updated for the Saturday morning.
