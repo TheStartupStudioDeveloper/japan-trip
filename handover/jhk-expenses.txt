@@ -1,0 +1,27 @@
+TRIP EXPENSES LEDGER, as at 21 Oct 2026 (shared costs only, AUD as charged)
+
+- 2026-10-17 | Narita Express to Shibuya, two tickets (¥7,000) | Cynthia | AU$63.82 | estimate | Converted at ¥1 = A$0.0091
+- 2026-10-17 | Sequence Miyashita Park, 4 nights | Cynthia | AU$1,968.00 | paid
+- 2026-10-17 |   (sub) Transaction fee | Cynthia | AU$58.94 | paid
+- 2026-10-17 | Shibuya Sky, two tickets (¥6,800) | G | AU$62.28 | paid
+- 2026-10-17 | Drinks at Shibuya Sky (¥5,000) | Cynthia | AU$45.59 | estimate | Converted at ¥1 = A$0.0091
+- 2026-10-17 | Dinner at Tōkai Shokuichi, Shibuya Yokochō (¥7,500) | G | AU$68.38 | estimate | Converted at ¥1 = A$0.0091
+- 2026-10-17 | Ramen dinner, Shibuya (¥3,500) | Cynthia | AU$31.91 | estimate | Converted at ¥1 = A$0.0091
+- 2026-10-18 | Breakfast at Premier Mai, Tomigaya (¥5,000) | Cynthia | AU$45.59 | estimate | Converted at ¥1 = A$0.0091
+- 2026-10-18 | Street Kart | Cynthia | AU$347.41 | paid
+- 2026-10-18 | Dinner at Mihachi Shibuya Ekimae (¥3,971) | G | AU$36.20 | estimate | Converted at ¥1 = A$0.0091
+- 2026-10-18 | Foot and leg massage for two, Mominotakumi | G | AU$103.94 | paid
+- 2026-10-20 | Sushi Tokyo Ten Shinjuku, omakase for two (¥9,900 x 2) | TBC | AU$180.52 | estimate | Not in the totals until the payer is known. Converted at ¥1 = A$0.0091
+- 2026-10-21 | Shinkansen Shinagawa to Kyoto, Nozomi 13 | G | AU$340.22 | paid
+- 2026-10-21 |   (sub) International transaction fee | G | AU$10.32 | paid
+- 2026-10-21 | sequence KYOTO GOJO, 3 nights | G | AU$991.34 | paid
+- 2026-10-24 | Shinkansen Kyoto to Tokyo, Nozomi 16 | G | AU$343.84 | paid
+- 2026-10-24 |   (sub) International transaction fee | G | AU$10.32 | paid
+- 2026-10-24 | Hilton Tokyo Odaiba Seascape fireworks package | G | AU$457.71 | paid
+- 2026-10-24 |   (sub) International transaction fee | G | AU$13.73 | paid
+- 2026-10-24 | Hotel The Blossom Hibiya, 3 nights | G | AU$2,045.99 | paid | Free cancellation until 20 Oct
+- 2026-10-26 | teamLab Borderless | G | AU$102.58 | paid
+- 2026-10-27 | Sheraton Hong Kong, 3 nights | Cynthia | AU$1,260.00 | paid
+- 2026-10-30 |   (sub) Late checkout to 18:00 (HK$1,925 plus 13%) | Cynthia | AU$391.55 | estimate | Update to the actual AUD once paid
+
+G total AU$4,586.85, Cynthia total AU$4,212.81. Difference AU$374.04; half of that, AU$187.02, is owed by Cynthia to G.
