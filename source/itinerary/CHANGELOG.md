@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 21:55
+- Wed 21 done, from G's paste: bags sent to the hotel 10:30, Kintetsu 11:25, deer (no feeding), Kasuga Taisha, Wakakusa-yama first peak (new card), Nigatsu-dō, Tōdai-ji, Maccas pit stop, Kintetsu back, AEON Mall (runners), Daiichi Asahi ramen, Yodobashi, check in 21:00. Lunch, Kyoto Tower and the evening options logged in What changed only.
+
 ## 21 Oct 19:25
 - Edit and Clean switch: position kept with plain scrollTo over two frames (iPhone was jumping to the top). Same for reopening at your last place. Daiichi Asahi: no ticket machine.
 

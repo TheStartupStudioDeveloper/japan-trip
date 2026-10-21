@@ -794,6 +794,9 @@ P('daiichi-asahi', ['Honke Daiichi Asahi', 'Daiichi Asahi'], 'Honke Daiichi Asah
 P('bees-knees', ["Bee's Knees"], "Bee's Knees", 'ビーズニーズ',
   "A speakeasy behind a bookshelf door, with 1990s hip-hop and inventive cocktails. On Asia's 50 Best Bars list every year since 2020. Order the Ninja Smash.",
   '18:00 to late. Closed Sundays. Walk-in.', "Bee's Knees Kyoto Kamiyacho")
+P('wakakusa', ['Wakakusa-yama', 'First peak lookout'], 'Wakakusa-yama, first peak', '若草山 一重目',
+  'The grassy hill behind Tōdai-ji and Kasuga. A short, steep climb to the first peak gives a wide view over Nara, with deer on the slopes and a drinks hut at the top.',
+  'Open in season, about 09:00 to 17:00. Small entry fee.', 'Wakakusayama first peak Nara')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',

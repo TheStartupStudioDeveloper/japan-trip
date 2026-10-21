@@ -352,3 +352,28 @@ _add('15:00', 'Rain from about 15:00, so the big hall is a good place to be.')
 _i = _row(21, '15:50'); _r[_i] = R('15:50', 'Optional: Nigatsu-dō', 'Ten minutes uphill behind the main hall, steep stone steps. Skip it in the rain.', *_r[_i][3:])
 _i = _row(21, '16:30'); _r[_i] = R('16:30', 'Back to Kintetsu Nara', 'About 20 minutes on foot, or a taxi from the Tōdai-ji gate, about 5 minutes, in the rain.', *_r[_i][3:])
 D[21]['foot'] = 'Sunny and about 30° until 14:00, light rain from about 15:00 into the evening. Stags are pushy: feed the does.'
+
+# Wed 21 actuals, from G's Copy for Claude paste (21:48). Whole day done.
+_o = {x[0]: x for x in D[21]['rows']}
+D[21]['rows'] = [
+ R('05:55', 'Wake, final pack, check out by 06:20', '', DN),
+ R('06:30', 'Taxi to Shinagawa, Kōnan exit', '', DN),
+ R('07:00', 'Shinagawa, ekiben and coffee', '', DN),
+ R('07:55', 'Nozomi 13 to Kyoto', 'Car 9, seats 16-C and 16-D, Green Car.', B, DN) if False else R('07:55', 'Nozomi 13 to Kyoto', 'Car 9, seats 16-C and 16-D, Green Car.', DN),
+ R('10:00', 'Kyoto Station', 'Step by step: How-to 31.', DN),
+ R('10:30', 'Bags sent to the hotel from Crosta Kyoto', 'Delivered to sequence KYOTO GOJO by 17:00.', DN),
+ R('11:25', 'Kintetsu to Nara', '', DN),
+ R('12:10', 'Kintetsu Nara, up into Higashimuki arcade', '', DN),
+ R('13:30', 'Into Nara Park for the deer', 'No crackers for us. Watched the deer harass everyone else.', DN),
+ R('14:15', 'Kasuga Taisha and the lantern path', '', DN),
+ R('14:30', 'Wakakusa-yama, first peak lookout', 'Amazing views over Nara, and an ice-cold beer from the hut at the top.', DN),
+ R('15:30', 'Nigatsu-dō', '', DN),
+ R('16:00', 'Tōdai-ji and the Great Buddha', 'Past the Isuien garden for photos on the way.', DN),
+ R('16:30', 'Back to Kintetsu Nara', 'Maccas pit stop: burgers, chips and soft serve.', DN),
+ R('17:00', 'Kintetsu back to Kyoto', '', DN),
+ R('18:40', 'AEON Mall Kyoto', 'New runners for Cynthia.', DN),
+ R('19:15', 'Ramen: Honke Daiichi Asahi', 'Queue outside, tickets from the machine inside.', DN),
+ R('20:15', 'Yodobashi Kyoto', 'Suitcase hunt: Gran Sac\'s on 5F.', DN),
+ R('21:00', 'To sequence KYOTO GOJO, check in', '', DN),
+]
+D[21]['foot'] = ''
