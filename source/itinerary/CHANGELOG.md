@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 14:05
+- Clean mode shows your ticks under the time: a black ✓ for done, an outlined ✗ for missed. The Done label stays for items confirmed in the master.
+
 ## 21 Oct 14:00
 - Bin fixed: removed items now actually hide (the row grid was overriding hidden). The confirm is a small box under the buttons: "Remove this from the day?" with Remove and Cancel.
 
