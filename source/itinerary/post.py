@@ -73,6 +73,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .qar{display:flex;gap:.6rem}.qar label{flex:0 0 auto}.qar .qaa{flex:1 1 auto}
 .qaf input,.qaf textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:400 1rem/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.45rem .5rem;border-radius:0;text-transform:none;letter-spacing:0}
 .qabtn{display:flex;gap:.5rem}
+.inote textarea,.dnotes textarea,.qaf input,.qaf textarea{outline:none!important;box-shadow:none}.inote textarea{border-width:2.5px!important}.dnotes textarea:focus,.qaf input:focus,.qaf textarea:focus{border-width:2.5px!important;border-color:var(--ink)!important}
 .inote{margin:.6rem 0 .75rem}.inote[hidden]{display:none}
 .tv{display:inline-block;cursor:text;border:1.5px dashed var(--ink);outline:none;padding:.1rem .3rem;min-width:3.2rem;text-align:center;font-variant-numeric:tabular-nums}.tv:focus{background:var(--ink);color:var(--paper);border-style:solid}.tv.ed{border-style:solid;border-width:2px}@media (min-width:640px){.row .tk,.row .inote{grid-column:2/-1;justify-self:stretch}.row .tk{justify-self:start}.row.added{padding-left:.6rem;padding-right:.6rem}}@media print{.tk,.inote,.qadd,.dnotes,.tv{border:0!important}.tk,.inote,.qadd,.dnotes{display:none!important}}.tk button{flex:0 0 auto}
 .inote textarea{width:100%;min-height:8.5rem;box-sizing:border-box;font:400 1rem/1.45 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}

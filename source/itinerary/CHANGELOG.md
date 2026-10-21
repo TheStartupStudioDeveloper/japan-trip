@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:45
+- Note fields: single border, no focus outline. Item notes are bold-bordered when open; day notes and quick add fields go bold when selected.
+
 ## 21 Oct 09:40
 - Drag handle on every item: hold and drag to reorder. The order saves on the device; changing a time or adding an item puts the day back in time order.
 - Bin on every item: two taps removes it from the day (✗ still means missed). "Restore removed (n)" brings them back. Copy for Claude lists them as [removed] and notes when the order was changed by hand. Added items replace their Delete button with the bin.
