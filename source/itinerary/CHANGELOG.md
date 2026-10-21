@@ -1,6 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
 ## 21 Oct 11:50
+- Wed 21 Nara: plan kept. Taxi options added (station rank, Kasuga Taisha, Tōdai-ji gate, GO app). Rain now from about 15:00; Nigatsu-dō skip in rain.
+
+## 21 Oct 11:50
 - Time picker: saves only when the picker closes (Done), not while scrolling the wheel.
 
 ## 21 Oct 11:45

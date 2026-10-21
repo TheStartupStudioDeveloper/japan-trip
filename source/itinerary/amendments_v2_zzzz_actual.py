@@ -342,3 +342,13 @@ D[21]['rows'] = _r[:_k] + [
  R('20:00', "Option B, if it is dry: Pontochō and Bee's Knees", "Short taxi to Shijō-Kawaramachi. Walk the Pontochō alley, then a cocktail at Bee's Knees, walk-in. Doing it tonight covers a wet Friday night."),
 ]
 D[21]['foot'] = 'Light rain likely from about 16:00. Stags are pushy: feed the does.'
+# 21 Oct 11:48: plan kept. Taxi options added, rain now from about 15:00.
+_r = D[21]['rows']
+def _add(t, extra):
+    _i = _row(21, t); _r[_i] = R(_r[_i][0], _r[_i][1], _r[_i][2] + ' ' + extra, *_r[_i][3:])
+_add('12:10', 'Taxi option: rank outside the station, about 5 minutes to lunch.')
+_add('14:15', 'Taxi option: Kasuga Taisha has a rank by the car park, and the GO app works in Nara.')
+_add('15:00', 'Rain from about 15:00, so the big hall is a good place to be.')
+_i = _row(21, '15:50'); _r[_i] = R('15:50', 'Optional: Nigatsu-dō', 'Ten minutes uphill behind the main hall, steep stone steps. Skip it in the rain.', *_r[_i][3:])
+_i = _row(21, '16:30'); _r[_i] = R('16:30', 'Back to Kintetsu Nara', 'About 20 minutes on foot, or a taxi from the Tōdai-ji gate, about 5 minutes, in the rain.', *_r[_i][3:])
+D[21]['foot'] = 'Sunny and about 30° until 14:00, light rain from about 15:00 into the evening. Stags are pushy: feed the does.'
