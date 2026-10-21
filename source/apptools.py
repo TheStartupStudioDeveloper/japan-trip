@@ -15,6 +15,13 @@ CSS = '''<style>
 @media print{.jt-bar{display:none!important}}
 </style>'''
 
+CHAT = {
+    '': 'https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS',          # itinerary chat
+    'extras': 'https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS',    # extras live in the itinerary chat
+    'weather': 'https://claude.ai/chat/82d88097-351f-459d-a9e4-35b2251b8d56',   # J&HK Weather Forecast chat
+    'expenses': 'https://claude.ai/chat/831c430e-53e0-4592-adaa-1a3777db9de8',  # Expenses chat
+}
+ICON_CHAT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>'
 ICON_DL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>'
 ICON_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>'
 
@@ -99,6 +106,8 @@ def inject(html, app, pdf, files, label):
         top, js = bar(app, pdf, files, label)
         html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + top, html, count=1)
         html = html.replace('</body>', js + '\n</body>', 1)
+    if 'class="jt-chat"' not in html and app in CHAT:
+        html = re.sub(r'(<div class="jt-bar"[^>]*>)', lambda m: m.group(1) + f'<a class="jt-chat" href="{CHAT[app]}" target="_blank" rel="noopener">{ICON_CHAT}Chat with Claude</a>', html, count=1)
     if 'id="jt-fast"' not in html:
         html = html.replace('</body>', FAST + '\n</body>', 1)
     return html

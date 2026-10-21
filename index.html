@@ -479,7 +479,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .jt-bar button[disabled]{opacity:.55;cursor:default}
 .jt-bar .jt-off[hidden]{display:none}
 @media print{.jt-bar{display:none!important}}
-</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-orig" href="https://thestartupstudiodeveloper.github.io/japan-trip/baseline/original-plan/">Original plan</a><a class="jt-log" href="https://thestartupstudiodeveloper.github.io/japan-trip/log/">What changed</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-chat" href="https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Chat with Claude</a><a class="jt-orig" href="https://thestartupstudiodeveloper.github.io/japan-trip/baseline/original-plan/">Original plan</a><a class="jt-log" href="https://thestartupstudiodeveloper.github.io/japan-trip/log/">What changed</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <div class="wrap">
  <header class="cover">
   <h1>Japan &amp; Hong Kong <span>Master Itinerary</span></h1>
@@ -800,7 +800,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
   qf.onsubmit=function(e){e.preventDefault();var ad={id:Date.now().toString(36),t:qf.t.value.trim(),a:qf.a.value.trim(),n:qf.n.value.trim()};if(!ad.t||!ad.a)return;
    (AD[d]=AD[d]||[]).push(ad);store('jt-adds-v1',AD);var li=addRow(d,last,ad);sortOl(last);qf.reset();qf.hidden=true;qb.hidden=false;li.classList.add('moved');li.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){li.classList.remove('moved')},900)};
   var n=document.createElement('div');n.className='dnotes';
-  n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
+  n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnchat">Copy and chat</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
   qa.parentNode.insertBefore(n,qa.nextSibling);
   var ta=n.querySelector('textarea'),st=n.querySelector('.dns'),tm;ta.value=NT[d]||'';
   ta.oninput=function(){clearTimeout(tm);tm=setTimeout(function(){NT[d]=ta.value;store('jt-notes-v1',NT);st.textContent='Saved on this device'},400)};
@@ -811,6 +811,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
     var it=li.querySelector('.inote textarea');if(it&&it.value.trim())L.push('    note: '+it.value.trim())});
    if(ta.value.trim())L.push('Notes: '+ta.value.trim());return L.join('\n')}
   n.querySelector('.dnc').onclick=function(){var t=text();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){st.textContent='Copied. Paste it into the itinerary chat.'},function(){ta.value=ta.value;window.prompt('Copy this for Claude',t)})};
+  n.querySelector('.dnchat').onclick=function(){var t=text(),u='https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS';if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){st.textContent='Copied. Paste it into the chat.'},function(){});var w=window.open(u,'_blank');if(!w)location.href=u};
   var shb=n.querySelector('.dnsh');if(!navigator.share)shb.hidden=true;shb.onclick=function(){navigator.share({text:text()}).catch(function(){})};
  });
  // ---------- search

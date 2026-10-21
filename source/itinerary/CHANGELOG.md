@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:35
+- Chat with Claude button in the top bar of all four apps (source/apptools.py, CHAT map). Itinerary and Extras open the itinerary chat, Weather opens the J&HK Weather Forecast chat, Expenses opens the expenses chat.
+- Itinerary day notes: "Copy and chat" copies the day (ticks, times, added items, notes) and opens the itinerary chat.
+
 ## 21 Oct 09:20
 - Auto-sort: change a time and the item moves to its place in the day.
 - Quick add: "+ Add an item" at the end of each day (time, activity, note). Shown with a dashed outline and an Added tag, with tick, note and a two-tap Delete. Saved on the device. Copy for Claude lists them as [added].

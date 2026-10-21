@@ -441,8 +441,21 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .tk button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .tk .tkn{width:auto;padding:0 .5rem;font:600 .74rem var(--body)}
 .tk .tkn.has{background:var(--ink);color:var(--paper)}
-.inote{margin-top:.35rem}.inote[hidden]{display:none}
-.inote textarea{width:100%;box-sizing:border-box;font:400 .9rem/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}
+.row.added{border:1.5px dashed var(--ink);padding-left:.5rem;padding-right:.5rem;margin:.3rem 0}
+.tag-add{border:1.5px dashed var(--ink);background:var(--paper);color:var(--ink)}
+.row.moved{background:var(--line);transition:background .9s}
+.tk .tkdel{width:auto;padding:0 .5rem;font:600 .74rem var(--body)}
+.qadd{margin:.8rem 0 0}
+.qab,.qabtn button{appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .85rem var(--body);padding:.5rem .8rem;cursor:pointer}
+.qabtn button[type=submit]{background:var(--ink);color:var(--paper)}
+.qaf{border:1.5px solid var(--ink);padding:.7rem}.qaf[hidden],.qab[hidden]{display:none}
+.qaf label{display:block;font:700 .72rem var(--body);letter-spacing:.08em;text-transform:uppercase;margin:0 0 .6rem}
+.qar{display:flex;gap:.6rem}.qar label{flex:0 0 auto}.qar .qaa{flex:1 1 auto}
+.qaf input,.qaf textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:400 1rem/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.45rem .5rem;border-radius:0;text-transform:none;letter-spacing:0}
+.qabtn{display:flex;gap:.5rem}
+.inote{margin:.6rem 0 .75rem}.inote[hidden]{display:none}
+.tv{cursor:text;border-bottom:1px dotted currentColor;outline:none;padding:0 .05rem}.tv:focus{background:var(--ink);color:var(--paper);border-bottom-color:var(--ink)}.tv.ed{border-bottom:2px solid var(--ink)}
+.inote textarea{width:100%;min-height:8.5rem;box-sizing:border-box;font:400 1rem/1.45 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}
 .row.tk-n .p,.row.tk-n .n{opacity:.45;text-decoration:line-through;text-decoration-thickness:1px}
 .dnotes{margin:1rem 0 .4rem;border:1.5px solid var(--ink);padding:.7rem}
 .dnotes label{display:block;font:700 .72rem var(--body);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem}
@@ -497,7 +510,7 @@ header.cover{padding:2.4rem 1.1rem 0}.exband{display:flex;height:12px;margin-bot
 .jt-bar button[disabled]{opacity:.55;cursor:default}
 .jt-bar .jt-off[hidden]{display:none}
 @media print{.jt-bar{display:none!important}}
-</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-chat" href="https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Chat with Claude</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <header class="wrap cover"><div class="exband" aria-hidden="true"><i class="pat pat-s"></i><i class="pat pat-k"></i><i class="pat pat-g"></i><i class="pat pat-h"></i></div>
 <h1>J&amp;HK Extras <span>Up our sleeve</span></h1>
 <p class="sub">Everything worth doing that is not in the day plans, by area. Places to eat and drink, the food to try, and things to swap in if the plan moves or something is missed. When a place goes into the itinerary it leaves this list, and when one comes out it lands back here. <span class="screen">Tap any underlined name for its card.</span></p></header>

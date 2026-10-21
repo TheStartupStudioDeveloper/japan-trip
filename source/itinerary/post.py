@@ -162,7 +162,7 @@ script = r'''
   qf.onsubmit=function(e){e.preventDefault();var ad={id:Date.now().toString(36),t:qf.t.value.trim(),a:qf.a.value.trim(),n:qf.n.value.trim()};if(!ad.t||!ad.a)return;
    (AD[d]=AD[d]||[]).push(ad);store('jt-adds-v1',AD);var li=addRow(d,last,ad);sortOl(last);qf.reset();qf.hidden=true;qb.hidden=false;li.classList.add('moved');li.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){li.classList.remove('moved')},900)};
   var n=document.createElement('div');n.className='dnotes';
-  n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
+  n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnchat">Copy and chat</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
   qa.parentNode.insertBefore(n,qa.nextSibling);
   var ta=n.querySelector('textarea'),st=n.querySelector('.dns'),tm;ta.value=NT[d]||'';
   ta.oninput=function(){clearTimeout(tm);tm=setTimeout(function(){NT[d]=ta.value;store('jt-notes-v1',NT);st.textContent='Saved on this device'},400)};
@@ -173,6 +173,7 @@ script = r'''
     var it=li.querySelector('.inote textarea');if(it&&it.value.trim())L.push('    note: '+it.value.trim())});
    if(ta.value.trim())L.push('Notes: '+ta.value.trim());return L.join('\n')}
   n.querySelector('.dnc').onclick=function(){var t=text();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){st.textContent='Copied. Paste it into the itinerary chat.'},function(){ta.value=ta.value;window.prompt('Copy this for Claude',t)})};
+  n.querySelector('.dnchat').onclick=function(){var t=text(),u='https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS';if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){st.textContent='Copied. Paste it into the chat.'},function(){});var w=window.open(u,'_blank');if(!w)location.href=u};
   var shb=n.querySelector('.dnsh');if(!navigator.share)shb.hidden=true;shb.onclick=function(){navigator.share({text:text()}).catch(function(){})};
  });
  // ---------- search
