@@ -304,3 +304,25 @@ _r = D[21]['rows']
 _i = _row(21, '10:00'); _r[_i] = R(_r[_i][0], _r[_i][1], ('Step by step: How-to %d.' % _HN), *_r[_i][3:])
 for _t in ('10:15', '10:40', '16:45'):
     _i = _row(21, _t); _r[_i] = R(_r[_i][0], _r[_i][1], _r[_i][2] + (' Step by step: How-to %d.' % _HN), *_r[_i][3:])
+# Wed 21 actuals to 11:23: on the 11:25 Kintetsu to Nara, about 45 minutes late. Day retimed.
+_r = D[21]['rows']
+for _t in ('05:55', '06:30', '07:00', '07:55', '10:00', '10:15'):
+    _i = _row(21, _t); _r[_i] = R(_r[_i][0], _r[_i][1], _r[_i][2], DN)
+_i = _row(21, '10:40'); _r[_i] = R('11:25', 'Kintetsu to Nara', 'Boarded the 11:25. Kintetsu-Nara about 12:10 (How-to 31).', DN)
+_new = {
+ '11:15': ('12:10', 'Kintetsu Nara, up into Higashimuki arcade', 'Exit for Higashimuki (東向). Covered to Sanjō-dōri. Nakatanidō mochi pounding at the end.'),
+ '11:30': ('12:25', 'Lunch: Kamameshi Shizuka', 'Iron-pot rice cooked to order, about 20 minutes. Ten minutes east, beside Isuien. Long queue: a kakinoha sushi box instead.'),
+ '12:45': ('13:30', 'Into Nara Park for the deer', 'Straight onto the lawns towards Kasuga. Deer crackers about ¥200.'),
+ '13:35': ('14:15', 'Kasuga Taisha and the lantern path', 'Up through the stone lanterns to the shrine front. No need to pay to go inside.'),
+ '14:25': ('15:00', 'Tōdai-ji and the Great Buddha', 'Twenty minutes north along the hill, in through the Nandaimon gate. Open until 17:30.'),
+ '15:30': ('15:50', 'Optional: Nigatsu-dō', 'Ten minutes uphill behind the main hall. Skip it if the rain has started (from about 16:00).'),
+ '16:15': ('16:30', 'Walk down to Kintetsu Nara', 'About 20 minutes downhill. In rain: a taxi from the Tōdai-ji gate.'),
+ '16:45': ('17:00', 'Kintetsu back to Kyoto', 'Limited express about 35 minutes, Express (急行) on Suica about 45. Kyoto about 17:40. Collect the bags (How-to 31).'),
+ '17:25': ('17:45', 'Kyoto Station building', 'Quick look at the lit staircase on the way through, or skip it in the rain.'),
+ '17:45': ('18:00', 'To sequence KYOTO GOJO, check in', 'Taxi from the north rank in the rain, about 5 minutes. Or walk 15 minutes up Karasuma-dōri, or one subway stop to Gojō.'),
+}
+for _o, _v in _new.items():
+    _i = _row(21, _o); _r[_i] = R(_v[0], _v[1], _v[2], *_r[_i][3:])
+D[21]['rows'] = [x for x in D[21]['rows'] if not (x[0] == '17:45' and x[1].startswith('Walk to sequence'))]
+_r = D[21]['rows']; _i = _row(21, '18:00')
+_r.insert(_i, R('17:45', 'Kyoto Station building', 'Quick look at the lit staircase on the way through, or skip it in the rain.'))

@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 11:25
+- Wed 21 actuals to 11:23: wake to bags done; on the 11:25 Kintetsu to Nara, about 45 minutes late. Afternoon retimed: Nara 12:10, lunch 12:25, deer 13:30, Kasuga 14:15, Tōdai-ji 15:00, Nigatsu-dō optional 15:50, walk down 16:30, Kintetsu 17:00, check in 18:00 (taxi in the rain). Ichiran 19:15 unchanged.
+
 ## 21 Oct 10:50
 - Times can only be changed in Edit mode. Tapping a time opens the phone's time picker, so the format stays HH:MM.
 - Edit pill moved in from the right edge (24px).
