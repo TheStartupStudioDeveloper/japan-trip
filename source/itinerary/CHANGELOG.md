@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 13:15
+- Switching Clean and Edit keeps you at the same item: the row at the top of the screen stays in place.
+
 ## 21 Oct 12:30
 - ⓘ sits at the bottom of the time column, level with the last line (and the edit buttons in Edit mode), so the Done label fits above it. Stays put while its directions are open.
 

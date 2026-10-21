@@ -128,7 +128,7 @@ script = r'''
  (function(){var m;try{m=localStorage.getItem('jt-mode')}catch(e){}var ed=m==='edit';document.body.classList.toggle('jt-clean',!ed);
   var b=document.createElement('button');b.type='button';b.id='jtmode';
   function lab(){var on=!document.body.classList.contains('jt-clean');b.innerHTML=on?'&#10003; Done editing':'&#9998; Edit';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}lab();
-  b.onclick=function(){var on=document.body.classList.toggle('jt-clean');try{localStorage.setItem('jt-mode',on?'clean':'edit')}catch(e){}if(on&&document.activeElement&&document.activeElement.blur)document.activeElement.blur();lab()};
+  b.onclick=function(){var rows=document.querySelectorAll('li.row,article.day header'),anc=null,top=0,cy=60;for(var i=0;i<rows.length;i++){var r=rows[i].getBoundingClientRect();if(r.top>=cy&&r.height){anc=rows[i];top=r.top;break}}var on=document.body.classList.toggle('jt-clean');if(anc){var nt=anc.getBoundingClientRect().top,de=document.documentElement,sb=de.style.scrollBehavior;de.style.scrollBehavior='auto';window.scrollTo({top:scrollY+(nt-top),behavior:'instant'});de.style.scrollBehavior=sb}try{localStorage.setItem('jt-mode',on?'clean':'edit')}catch(e){}if(on&&document.activeElement&&document.activeElement.blur)document.activeElement.blur();lab()};
   document.body.appendChild(b)})();
  // ---------- ticks, notes, editable times, quick add (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
