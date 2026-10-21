@@ -62,7 +62,9 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .row.added{border:1.5px dashed var(--ink);padding-left:.5rem;padding-right:.5rem;margin:.3rem 0}
 .tag-add{border:1.5px dashed var(--ink);background:var(--paper);color:var(--ink)}
 .row.moved{background:var(--line);transition:background .9s}
-.tk .tkdel{width:auto;padding:0 .5rem;font:600 .74rem var(--body)}
+.tk .tkmv{touch-action:none;cursor:grab;font-size:1.05rem}.tk .tkbin{display:inline-flex;align-items:center;justify-content:center}.tk .tkbin.sure{width:auto;padding:0 .5rem;font:600 .74rem var(--body);background:var(--ink);color:var(--paper)}
+.row.dragging{background:var(--paper);box-shadow:0 0 0 2px var(--ink),0 6px 18px rgba(0,0,0,.18);position:relative;z-index:3}.row.dragging .tkmv{cursor:grabbing;background:var(--ink);color:var(--paper)}
+.qarst{appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .85rem var(--body);padding:.5rem .8rem;cursor:pointer;margin-left:.5rem}.qarst[hidden]{display:none}
 .qadd{margin:.8rem 0 0}.qahint{font-size:.78rem;color:var(--mute);margin:0 0 .45rem}
 .qab,.qabtn button{appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .85rem var(--body);padding:.5rem .8rem;cursor:pointer}
 .qabtn button[type=submit]{background:var(--ink);color:var(--paper)}
@@ -120,30 +122,43 @@ script = r'''
   var hd=a.querySelector('header.dh');if(!hd)return;var b=document.createElement('button');b.type='button';b.className='dmapb';b.innerHTML='&#10530; Route map';b.setAttribute('aria-label','Open the route map for this day');b.onclick=function(){openMap(d)};hd.appendChild(b)});
  // ---------- ticks, notes, editable times, quick add (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
- var IN=store('jt-inotes-v1')||{},TM=store('jt-times-v1')||{},AD=store('jt-adds-v1')||{};
+ var IN=store('jt-inotes-v1')||{},TM=store('jt-times-v1')||{},AD=store('jt-adds-v1')||{},RM=store('jt-removed-v1')||{},OR=store('jt-order-v1')||{};
+ var BIN='<svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
+ function olId(ol){var a=ol.closest('article.day'),L=[].slice.call(a.querySelectorAll('ol.rows'));return a.id+'|'+L.indexOf(ol)}
+ function saveOrder(ol){OR[olId(ol)]=[].slice.call(ol.querySelectorAll(':scope > li.row')).map(function(li){return li.dataset.k});store('jt-order-v1',OR)}
+ function applyOrder(ol){var o=OR[olId(ol)];if(!o)return false;var L=[].slice.call(ol.querySelectorAll(':scope > li.row')),pos={};o.forEach(function(k,i){pos[k]=i});L.map(function(li,i){return {li:li,p:(li.dataset.k in pos)?pos[li.dataset.k]:o.length+i}}).sort(function(a,b){return a.p-b.p}).forEach(function(x){ol.appendChild(x.li)});return true}
+ function timeWins(ol){if(OR[olId(ol)]){delete OR[olId(ol)];store('jt-order-v1',OR)}sortOl(ol,true)}
+ function flash(li){li.classList.add('moved');setTimeout(function(){li.classList.remove('moved')},900)}
+ function startDrag(li,h,e){e.preventDefault();var ol=li.parentNode,lastY=e.clientY;li.classList.add('dragging');
+  function place(y){var sib=[].slice.call(ol.querySelectorAll(':scope > li.row:not(.dragging)')).filter(function(x){return !x.hidden}),before=null;for(var i=0;i<sib.length;i++){var r=sib[i].getBoundingClientRect();if(y<r.top+r.height/2){before=sib[i];break}}if(before){if(li.nextElementSibling!==before)ol.insertBefore(li,before)}else if(ol.lastElementChild!==li)ol.appendChild(li)}
+  function move(ev){lastY=ev.clientY;place(lastY)}
+  var tmr=setInterval(function(){if(lastY<80)scrollBy(0,-14);else if(lastY>innerHeight-80)scrollBy(0,14);else return;place(lastY)},30);
+  function up(){clearInterval(tmr);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',up);li.classList.remove('dragging');saveOrder(ol);flash(li)}
+  window.addEventListener('pointermove',move,{passive:true});window.addEventListener('pointerup',up);window.addEventListener('pointercancel',up)}
  function rowKey(d,li){var t=(li.querySelector('.t')||{}).textContent||'',p=ptext(li).slice(0,40);return d+'|'+t+'|'+p}
  function paint(li,v){li.classList.toggle('tk-y',v==='y');li.classList.toggle('tk-n',v==='n');li.querySelectorAll('.tk button[data-v]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===v?'true':'false')})}
  function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
  function mins(t){var m=/^(\d{1,2})[:.](\d{2})/.exec(t||'');if(!m)return NaN;var h=+m[1];if(h<4)h+=24;return h*60+ +m[2]}
- function sortOl(ol){var L=[].slice.call(ol.querySelectorAll(':scope > li.row'));if(!L.some(function(li){return li.classList.contains('added')||li.querySelector('.tv.ed')}))return;var last=-1;
+ function sortOl(ol,force){var L=[].slice.call(ol.querySelectorAll(':scope > li.row'));if(!force&&!L.some(function(li){return li.classList.contains('added')||li.querySelector('.tv.ed')}))return;var last=-1;
   var K=L.map(function(li,i){var tv=li.querySelector('.tv'),m=mins(tv?tv.textContent.trim():'');if(isNaN(m))m=last;last=m;return {li:li,m:m,i:i}});
   K.sort(function(a,b){return a.m-b.m||a.i-b.i});K.forEach(function(o){ol.appendChild(o.li)})}
- function setupRow(d,li,k,ad){var w=li.querySelector('.w');if(!w)return;
+ function setupRow(d,li,k,ad){var w=li.querySelector('.w');if(!w)return;li.dataset.k=k;if(!ad&&RM[k]){li.hidden=true;li.classList.add('rmv')}
   var te=li.querySelector('.t'),tn=te&&te.firstChild;
   if(tn&&tn.nodeType===3){var t0=tn.textContent.trim(),tv=document.createElement('span');tv.className='tv';tv.contentEditable='true';tv.spellcheck=false;tv.setAttribute('inputmode','numeric');tv.setAttribute('aria-label','Time, tap to change');li.dataset.t0=ad?'':t0;tv.textContent=ad?ad.t:(TM[k]||t0);te.replaceChild(tv,tn);if(!ad&&TM[k])tv.classList.add('ed');
    tv.onfocus=function(){setTimeout(function(){var r=document.createRange();r.selectNodeContents(tv);var se=getSelection();se.removeAllRanges();se.addRange(r)},0)};tv.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();tv.blur()}};
    tv.onblur=function(){var v=tv.textContent.trim();
     if(ad){if(!v){tv.textContent=ad.t;return}ad.t=v;store('jt-adds-v1',AD)}
     else{if(!v||v===t0){delete TM[k];tv.textContent=t0}else TM[k]=v;tv.classList.toggle('ed',!!TM[k]);store('jt-times-v1',TM)}
-    sortOl(li.parentNode);li.classList.add('moved');setTimeout(function(){li.classList.remove('moved')},900)}}
-  var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button><button type="button" class="tkn" aria-expanded="false" aria-label="Note">&#9998; Note</button>'+(ad?'<button type="button" class="tkdel">Delete</button>':'');w.appendChild(s);
+    timeWins(li.parentNode);flash(li)}}
+  var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" class="tkmv" aria-label="Drag to move">&#10303;</button><button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button><button type="button" class="tkn" aria-expanded="false" aria-label="Note">&#9998; Note</button>'+'<button type="button" class="tkbin" aria-label="Remove from the itinerary">'+BIN+'</button>';w.appendChild(s);s.querySelector('.tkmv').addEventListener('pointerdown',function(e){startDrag(li,this,e)});
   var nb=s.querySelector('.tkn'),nw=document.createElement('div');nw.className='inote';nw.hidden=true;nw.innerHTML='<textarea rows="5" placeholder="Note for this one"></textarea>';w.appendChild(nw);var nta=nw.querySelector('textarea'),ntm;nta.value=IN[k]||'';
   function mark(){nb.classList.toggle('has',!!nta.value.trim())}mark();
   nb.onclick=function(e){e.stopPropagation();nw.hidden=!nw.hidden;nb.setAttribute('aria-expanded',!nw.hidden);if(!nw.hidden)nta.focus()};
   nta.oninput=function(){clearTimeout(ntm);ntm=setTimeout(function(){if(nta.value.trim())IN[k]=nta.value;else delete IN[k];store('jt-inotes-v1',IN);mark()},300)};
   var v=TK[k]==='-'?'':(TK[k]||(li.classList.contains('is-d')?'y':''));paint(li,v);
   s.onclick=function(e){var b=e.target.closest('button');if(!b)return;
-   if(b.classList.contains('tkdel')){if(b.dataset.sure){AD[d]=(AD[d]||[]).filter(function(x){return x!==ad});store('jt-adds-v1',AD);delete TK[k];delete IN[k];store('jt-ticks-v1',TK);store('jt-inotes-v1',IN);li.remove()}else{b.dataset.sure='1';b.textContent='Tap again to delete';setTimeout(function(){if(b.isConnected){delete b.dataset.sure;b.textContent='Delete'}},3000)}return}
+   if(b.classList.contains('tkmv'))return;
+   if(b.classList.contains('tkbin')){if(b.dataset.sure){if(ad){AD[d]=(AD[d]||[]).filter(function(x){return x!==ad});store('jt-adds-v1',AD);delete TK[k];delete IN[k];store('jt-ticks-v1',TK);store('jt-inotes-v1',IN);li.remove()}else{RM[k]=1;store('jt-removed-v1',RM);li.hidden=true;li.classList.add('rmv')}var ar=li.closest('article.day');ar&&ar.dispatchEvent(new Event('jtrm'))}else{b.dataset.sure='1';b.classList.add('sure');b.innerHTML='Tap again to remove';setTimeout(function(){if(b.isConnected){delete b.dataset.sure;b.classList.remove('sure');b.innerHTML=BIN}},3000)}return}
    if(!b.dataset.v)return;var cv=li.classList.contains('tk-y')?'y':li.classList.contains('tk-n')?'n':'';var nv=cv===b.dataset.v?'':b.dataset.v;TK[k]=nv||'-';paint(li,nv);store('jt-ticks-v1',TK)}}
  function addRow(d,ol,ad){var li=document.createElement('li');li.className='row added';
   li.innerHTML='<span class="t">'+esc(ad.t)+'</span><div class="w"><p class="p">'+esc(ad.a)+' <span class="tag tag-add">Added</span></p>'+(ad.n?'<p class="n">'+esc(ad.n)+'</p>':'')+'</div>';
@@ -152,15 +167,17 @@ script = r'''
   a.querySelectorAll('ol.rows > li.row').forEach(function(li){setupRow(d,li,rowKey(d,li),null)});
   var ols=a.querySelectorAll('ol.rows'),last=ols[ols.length-1];if(!last)return;
   (AD[d]||[]).forEach(function(ad){addRow(d,last,ad)});
-  ols.forEach(sortOl);
+  ols.forEach(function(ol){if(!applyOrder(ol))sortOl(ol)});
   var qa=document.createElement('div');qa.className='qadd';
-  qa.innerHTML='<p class="qahint">Tap a time to change it. Items re-order by time.</p><button type="button" class="qab">+ Add an item</button><form class="qaf" hidden><div class="qar"><label>Time<input type="time" name="t" required></label><label class="qaa">Activity<input type="text" name="a" required placeholder="What you did or will do"></label></div><label>Note<textarea name="n" rows="3" placeholder="Optional"></textarea></label><div class="qabtn"><button type="submit">Save</button><button type="button" class="qac">Cancel</button></div></form>';
+  qa.innerHTML='<p class="qahint">Tap a time to change it, or hold &#10303; and drag to move. The bin removes an item, &#10007; means you missed it.</p><button type="button" class="qab">+ Add an item</button><button type="button" class="qarst" hidden></button><form class="qaf" hidden><div class="qar"><label>Time<input type="time" name="t" required></label><label class="qaa">Activity<input type="text" name="a" required placeholder="What you did or will do"></label></div><label>Note<textarea name="n" rows="3" placeholder="Optional"></textarea></label><div class="qabtn"><button type="submit">Save</button><button type="button" class="qac">Cancel</button></div></form>';
   last.parentNode.insertBefore(qa,last.nextSibling);
-  var qf=qa.querySelector('form'),qb=qa.querySelector('.qab');
+  var qf=qa.querySelector('form'),qb=qa.querySelector('.qab'),qr=qa.querySelector('.qarst');
+  function rmCount(){var n=a.querySelectorAll('li.row.rmv').length;qr.hidden=!n;qr.textContent='Restore removed ('+n+')'}rmCount();a.addEventListener('jtrm',rmCount);
+  qr.onclick=function(){a.querySelectorAll('li.row.rmv').forEach(function(li){delete RM[li.dataset.k];li.hidden=false;li.classList.remove('rmv');flash(li)});store('jt-removed-v1',RM);rmCount()};
   qb.onclick=function(){qf.hidden=false;qb.hidden=true;qf.t.focus()};
   qa.querySelector('.qac').onclick=function(){qf.reset();qf.hidden=true;qb.hidden=false};
   qf.onsubmit=function(e){e.preventDefault();var ad={id:Date.now().toString(36),t:qf.t.value.trim(),a:qf.a.value.trim(),n:qf.n.value.trim()};if(!ad.t||!ad.a)return;
-   (AD[d]=AD[d]||[]).push(ad);store('jt-adds-v1',AD);var li=addRow(d,last,ad);sortOl(last);qf.reset();qf.hidden=true;qb.hidden=false;li.classList.add('moved');li.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){li.classList.remove('moved')},900)};
+   (AD[d]=AD[d]||[]).push(ad);store('jt-adds-v1',AD);var li=addRow(d,last,ad);timeWins(last);qf.reset();qf.hidden=true;qb.hidden=false;li.classList.add('moved');li.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){li.classList.remove('moved')},900)};
   var n=document.createElement('div');n.className='dnotes';
   n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnchat">Copy and chat</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
   qa.parentNode.insertBefore(n,qa.nextSibling);
@@ -168,9 +185,10 @@ script = r'''
   ta.oninput=function(){clearTimeout(tm);tm=setTimeout(function(){NT[d]=ta.value;store('jt-notes-v1',NT);st.textContent='Saved on this device'},400)};
   function text(){var L=[a.querySelector('.dow').firstChild.textContent+' '+d+' Oct: '+a.querySelector('h3').textContent];
    a.querySelectorAll('ol.rows > li.row').forEach(function(li){var x=li.classList.contains('tk-y')?'[done]':li.classList.contains('tk-n')?'[skipped]':'[ ]';var tv=li.querySelector('.tv'),tt=tv?tv.textContent.trim():((li.querySelector('.t')||{}).textContent||''),t0=li.dataset.t0;
-    L.push((li.classList.contains('added')?'[added] ':'')+x+' '+tt+(t0&&tt!==t0?' (was '+t0+')':'')+' '+ptext(li));
+    if(li.classList.contains('rmv'))x='[removed]';L.push((li.classList.contains('added')?'[added] ':'')+x+' '+tt+(t0&&tt!==t0?' (was '+t0+')':'')+' '+ptext(li));
     if(li.classList.contains('added')){var dn=li.querySelector('.n');if(dn)L.push('    detail: '+dn.textContent.trim())}
     var it=li.querySelector('.inote textarea');if(it&&it.value.trim())L.push('    note: '+it.value.trim())});
+   if([].some.call(a.querySelectorAll('ol.rows'),function(o){return OR[olId(o)]}))L.splice(1,0,'(Order changed by hand: listed in the new order)');
    if(ta.value.trim())L.push('Notes: '+ta.value.trim());return L.join('\n')}
   n.querySelector('.dnc').onclick=function(){var t=text();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){st.textContent='Copied. Paste it into the itinerary chat.'},function(){ta.value=ta.value;window.prompt('Copy this for Claude',t)})};
   n.querySelector('.dnchat').onclick=function(){var t=text(),u='https://claude.ai/code/session_01CKsUni8riBnC7mPCEPMiGS';if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){st.textContent='Copied. Paste it into the chat.'},function(){});var w=window.open(u,'_blank');if(!w)location.href=u};
