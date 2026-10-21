@@ -83,3 +83,82 @@ GO = {
   ]),
  ],
 }
+
+GO[22] = [
+ ('To Kyoto Station, then JR to Tennōji', [
+  'From the hotel: Karasuma subway one stop south to Kyoto Station, or 15 minutes on foot down Karasuma-dōri.',
+  'At Kyoto Station, tap Suica through the JR gates. Take a JR Special Rapid (新快速) towards Osaka (大阪) / Himeji. Check the board: platforms 4 or 5 usually. About 30 minutes, stay on to Osaka.',
+  'At Osaka, follow the orange signs for the Osaka Loop line (大阪環状線). Take a train to Tennōji (天王寺): either direction works, but the platform for 天王寺 方面 via Kyōbashi or via Nishikujō is shown on the board. About 20 minutes.',
+  maps('Tennoji Station Osaka', 'transit', 'r'),
+ ]),
+ ('Shitennō-ji flea market', [
+  'At Tennōji, exit for Shitennō-ji (四天王寺) on the north side. Walk north up Tanimachi-suji, about 10 minutes. The big stone torii gate (西大門 side) or the south gate leads into the grounds.',
+  'The stalls fill the outer grounds around the temple buildings and the pagoda. Walk the loop once, then go back for what you liked.',
+  'Cash only. Prices vary between stalls, and a little friendly haggling is fine at some.',
+  maps('Shitennoji Osaka'),
+ ]),
+ ('Shinsekai', [
+  'From the west gate of Shitennō-ji, walk west along the main road (Ōsaka Prefectural Route) towards the Tsūtenkaku tower, which you can see ahead. About 15 minutes, through or past Tennōji Park.',
+  'Janjan-Yokochō is the narrow covered alley running north from Dōbutsuen-mae station into Shinsekai. Tsūtenkaku stands at the centre.',
+  maps('Tsutenkaku Osaka'),
+ ]),
+ ('Kushikatsu lunch: Daruma', [
+  'Daruma Shinsekai main store is a minute south of Tsūtenkaku, with the angry chef statue outside.',
+  'Order a set, or point at the picture menu. Dip each skewer once in the shared sauce. Never double-dip. Use the free cabbage to scoop more sauce.',
+  maps('Kushikatsu Daruma Shinsekai Sohonten'),
+ ]),
+ ('Midōsuji line to Namba', [
+  'Dōbutsuen-mae station (動物園前) is at the south end of Janjan-Yokochō. Take the red Midōsuji line (御堂筋線) towards Umeda / Shin-Osaka, two stops to Namba (なんば).',
+  'Buy the Enjoy Eco Card at the ticket machine (English menu), about ¥820. Use it for every metro ride today.',
+ ]),
+ ('Rikuro cheesecake', [
+  'At Namba, take exit 11 towards Namba Walk or the street, then walk to Rikuro\'s Namba main store, about 3 minutes. Three queues: freshly baked, pre-made, and the café.',
+  '551 Hōrai\'s main store is a minute away on the Ebisubashi-suji arcade. Takeaway counter at the front.',
+  maps('Rikuro Ojisan Namba Honten'),
+ ]),
+ ('Namba Yasaka Shrine', [
+  'About 10 minutes on foot west from Namba, past Namba Parks. The lion head stage is right in front as you enter.',
+  maps('Namba Yasaka Shrine'),
+ ]),
+ ('KOMEHYO Shinsaibashi', [
+  'From Namba Yasaka, walk back east and up Midōsuji or the Shinsaibashi-suji covered arcade, about 15 minutes. Or Midōsuji line Namba to Shinsaibashi, one stop.',
+  'KOMEHYO is on the Shinsaibashi-suji arcade, 2-1-23. Bags and watches are on the lower floors.',
+  maps('KOMEHYO Osaka Shinsaibashi'),
+ ]),
+ ('Takoyaki in Dōtonbori', [
+  'Walk south down Shinsaibashi-suji to Ebisu Bridge over the canal: that is Dōtonbori. Turn left along the canal street.',
+  'Kukuru is under the giant octopus. Any busy stand is good. Then find a café to sit for half an hour.',
+  maps('Takoyaki Kukuru Dotonbori'),
+ ]),
+ ('Umeda Sky deck', [
+  'Midōsuji line from Shinsaibashi or Namba to Umeda (梅田), about 7 to 10 minutes, on the Enjoy Eco Card.',
+  'Follow signs for the Umeda Sky Building, through the underground mall (north-west), then past Grand Front. About 15 minutes on foot.',
+  'Lift to the 35th floor, then the long escalator across the gap to the 39th floor ticket desk. The open-air deck is on the roof.',
+  maps('Umeda Sky Building'),
+ ]),
+ ('Midōsuji line back to Namba', [
+  'Walk back to Umeda station (梅田), Midōsuji line towards Namba / Tennōji, 4 stops, about 10 minutes.',
+ ]),
+ ('Dōtonbori and the Tombori', [
+  'From Namba exit 14, walk north up Midōsuji to the canal, about 5 minutes.',
+  'Tombori River Cruise tickets: the booth by the Don Quijote ferris wheel on the canal. Cruise about 20 minutes.',
+  'Glico Running Man: best view from Ebisu Bridge.',
+  maps('Tombori River Cruise'),
+ ]),
+ ('Okonomiyaki dinner: Mizuno', [
+  'Mizuno is on the Dōtonbori main street, 1-4-15, a few minutes east of Ebisu Bridge. Expect a short queue.',
+  'Hōzenji Yokochō is two streets south: a stone lane with lanterns and the moss-covered Mizukake Fudō. Splash a ladle of water on the statue.',
+  maps('Okonomiyaki Mizuno Dotonbori'),
+ ]),
+ ('Taxi to Osaka Castle', [
+  'Taxis wait along Midōsuji near Namba and Dōtonbori. Show "大阪城 大手門" (Ōsaka-jō, Ōtemon). About 15 minutes.',
+  'From Ōtemon gate walk in through the big stone gates to the keep, about 10 to 15 minutes, following the crowds to the south face.',
+  'Metro instead: Sennichimae line Namba to Tanimachi 9-chōme, then Tanimachi line two stops to Tanimachi 4-chōme, then 15 minutes on foot.',
+  maps('Osaka Castle Otemon Gate'),
+ ]),
+ ('Home: taxi to JR Osaka', [
+  'Walk back out to Ōtemon or the road by the Hōkoku shrine and take a taxi to JR Osaka station (大阪駅), about 15 minutes, about ¥2,000.',
+  'Or walk 15 minutes north-east to JR Osakajōkōen station and take the Loop line to Osaka.',
+  'At Osaka, JR Special Rapid (新快速) to Kyoto, about 30 minutes. Then the Karasuma subway one stop to Gojō, or a taxi.',
+ ]),
+]

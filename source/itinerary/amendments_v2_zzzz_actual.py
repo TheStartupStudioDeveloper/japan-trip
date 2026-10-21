@@ -377,3 +377,30 @@ D[21]['rows'] = [
  R('21:00', 'To sequence KYOTO GOJO, check in', '', DN),
 ]
 D[21]['foot'] = ''
+
+# 22 Oct 00:22: Thu 22 rebuilt. Shitennō-ji flea market (22nd of the month) in the morning, Osaka's best food, KOMEHYO only for shopping, Umeda Sky at sunset, castle by night only.
+D[22]['title'] = 'Osaka: flea market, Shinsekai, Dōtonbori, castle by night'
+D[22]['sum'] = 'The Shitennō-ji flea market first thing, kushikatsu in Shinsekai, Namba snacks and KOMEHYO, Umeda Sky at sunset, then Dōtonbori, okonomiyaki and the castle lit up.'
+D[22]['rows'] = [
+ R('07:30', 'To Kyoto Station, then JR to Tennōji', 'One subway stop or 15 minutes on foot. JR special rapid to Osaka, about 30 minutes, then the Osaka Loop line to Tennōji, about 20 minutes. Suica covers it all.'),
+ R('08:45', 'Shitennō-ji flea market', 'On the 21st and 22nd of every month, from 08:30. Kimono and yukata, pottery, vintage toys and records, masks, food stalls. Breakfast from the stalls. Free. Cash and a tote bag.'),
+ R('10:30', 'Shinsekai: Tsūtenkaku and Janjan-Yokochō', 'About 15 minutes on foot west of the temple. The retro neon district under the tower.'),
+ R('11:00', 'Kushikatsu lunch: Daruma Shinsekai', 'Osaka\'s fried skewers. In at the 11:00 opening, before the queue. No double-dipping in the shared sauce.'),
+ R('12:00', 'Midōsuji line to Namba', 'From Dōbutsuen-mae, two stops, about 5 minutes. Buy the one-day Enjoy Eco Card at the machine, about ¥820. It covers the Osaka Metro all day.'),
+ R('12:15', 'Rikuro cheesecake and 551 Hōrai pork buns', 'The jiggly cheesecake: take the freshly baked line for a warm one. 551 Hōrai\'s pork buns are a minute away.'),
+ R('12:45', 'Namba Yasaka Shrine', 'The giant lion head. About 10 minutes on foot. Ten minutes there is enough.'),
+ R('13:30', 'KOMEHYO Shinsaibashi', 'The flagship pre-owned luxury store, several floors. Open 11:00 to 20:00. Passports for tax-free.'),
+ R('14:45', 'Takoyaki in Dōtonbori, then coffee and a sit-down', 'Octopus balls at Kukuru or any of the stands on the canal. Let them cool first.'),
+ R('16:15', 'Umeda Sky deck at sunset', 'Midōsuji line Shinsaibashi to Umeda, about 7 minutes, then 15 minutes on foot. Sunset about 17:05. Open to 22:30.'),
+ R('17:45', 'Midōsuji line back to Namba', 'About 10 minutes.'),
+ R('18:15', 'Dōtonbori and the Tombori River Cruise', 'Buy cruise tickets when you arrive and ride after dark (How-to 15). The Glico Running Man photo spot is opposite the sign.'),
+ R('18:45', 'Okonomiyaki dinner: Mizuno', 'Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle. Open to 22:00. Then a quick look at Hōzenji Yokochō, two streets back.'),
+ R('20:00', 'Taxi to Osaka Castle', 'About 15 minutes, about ¥1,800. Ask for Ōsaka-jō, Ōtemon (大阪城 大手門).'),
+ R('20:30', 'Osaka Castle light show, SINFONIA', 'Free projection mapping on the south face of the keep. About six minutes, repeating until 22:00. Standing only. Can be cancelled in bad weather.'),
+ R('21:15', 'Home: taxi to JR Osaka, then the special rapid', 'Taxi about 15 minutes, about ¥2,000. Special rapid to Kyoto about 30 minutes, then one subway stop to Gojō. Back about 22:15.'),
+]
+D[22]['notes'] = [
+ ('Running late', 'Drop Umeda Sky first, then Shinsekai. Protect the flea market before noon, Daruma at opening and the light show.'),
+ ('Walking', 'About 11 to 12 km with the two taxis. Skipping Umeda Sky saves about 2.5 km.'),
+ ('Left out', 'The morning castle walk, the Horie and Amerikamura browsing, and Kuromon Market.')]
+D[22]['foot'] = ''

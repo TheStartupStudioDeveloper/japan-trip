@@ -797,6 +797,24 @@ P('bees-knees', ["Bee's Knees"], "Bee's Knees", 'ビーズニーズ',
 P('wakakusa', ['Wakakusa-yama', 'First peak lookout'], 'Wakakusa-yama, first peak', '若草山 一重目',
   'The grassy hill behind Tōdai-ji and Kasuga. A short, steep climb to the first peak gives a wide view over Nara, with deer on the slopes and a drinks hut at the top.',
   'Open in season, about 09:00 to 17:00. Small entry fee.', 'Wakakusayama first peak Nara')
+P('shitennoji', ['Shitennō-ji flea market', 'Shitennō-ji'], 'Shitennō-ji and its flea market', '四天王寺',
+  'One of Japan\'s oldest temples, founded in 593. On the 21st and 22nd of every month its outer grounds fill with a flea market: kimono and yukata, pottery, vintage toys and records, masks, plants and food stalls.',
+  'Market from 08:30 to about sunset, best before noon. Free. Cash only, bring a tote bag.', 'Shitennoji Osaka')
+P('daruma', ['Daruma Shinsekai', 'Kushikatsu Daruma'], 'Kushikatsu Daruma, Shinsekai main store', '元祖串かつ だるま 新世界総本店',
+  'The original kushikatsu shop, since 1929: skewers of meat and vegetables in a light crisp batter, dipped once in the shared sauce. Look for the angry chef statue.',
+  'Open 11:00 to 22:30. No double-dipping in the sauce. Use the cabbage to scoop extra.', 'Kushikatsu Daruma Shinsekai Sohonten')
+P('rikuro', ['Rikuro cheesecake', 'Rikuro'], "Rikuro's cheesecake, Namba main store", 'りくろーおじさんの店 なんば本店',
+  'Osaka\'s famous jiggly cheesecake, light and soufflé-like, branded with the uncle\'s face as it comes out of the oven.',
+  'Shop 09:00 to 20:00. Take the freshly baked line for a warm one. Keeps about 3 days.', 'Rikuro Ojisan Namba Honten')
+P('horai551', ['551 Hōrai', '551 Horai'], '551 Hōrai, Namba main store', '551蓬莱 本店',
+  'Osaka\'s favourite pork buns (butaman), steamed fresh all day. Locals queue for them as a snack or to take home.',
+  'Takeaway counter on the ground floor. Eat them hot.', '551 Horai Namba Honten')
+P('komehyo', ['KOMEHYO Shinsaibashi', 'KOMEHYO'], 'KOMEHYO Osaka Shinsaibashi', 'コメ兵 大阪心斎橋店',
+  'The flagship of Japan\'s biggest pre-owned luxury chain: several floors of designer bags, watches, jewellery and clothes, all checked for authenticity.',
+  'Open 11:00 to 20:00. Passports for tax-free.', 'KOMEHYO Osaka Shinsaibashi')
+P('kukuru', ['Takoyaki', 'Kukuru'], 'Takoyaki Kukuru, Dōtonbori', 'たこ家道頓堀くくる',
+  'Dōtonbori\'s best-known takoyaki: octopus balls with big pieces of octopus, under the giant octopus sign. Several good stands line the canal.',
+  'Most Dōtonbori takoyaki stands open from about 11:00. Let them cool: the inside is molten.', 'Takoyaki Kukuru Dotonbori')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
