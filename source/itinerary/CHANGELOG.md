@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 12:30
+- ⓘ sits at the bottom of the time column, level with the last line (and the edit buttons in Edit mode), so the Done label fits above it. Stays put while its directions are open.
+
 ## 21 Oct 12:15
 - Directions button is now just the ⓘ icon.
 - All app service workers fetch with cache 'no-cache', so Home Screen apps no longer show a stale copy from the HTTP cache after an update.
