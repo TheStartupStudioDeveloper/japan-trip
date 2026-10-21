@@ -254,5 +254,7 @@ def _mv(m):
     li = li.replace(' ' + tg, '').replace(tg, '')
     return re.sub(r'(<span class="t">[^<]*)(</span>)', lambda x: x.group(1) + x.group(2).replace('</span>', '') + '<br><span class="tag tag-d tdn">Done</span></span>', li, count=1)
 out = re.sub(r'<li class="row[^"]*">.*?</li>', _mv, out, flags=re.S)
+# 21 Oct: map URLs written into how-to steps become links
+out = re.sub(r'(<section class="decide block" id="h\d+">.*?</section>)', lambda m: re.sub(r'(?<![="\'])(https://www\.google\.com/maps/[^\s<]+)', r'<a href="\1" target="_blank" rel="noopener">Google Maps</a>', m.group(1)), out, flags=re.S)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))

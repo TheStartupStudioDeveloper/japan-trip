@@ -285,3 +285,22 @@ D[24]['cal'] = 'Bamboo, fireworks'
 D[23]['sum'] = 'Fushimi Inari first thing while it is dry and quiet, the Golden Pavilion, a beef cutlet lunch and a rest, Higashiyama in the late light, then gyoza and Pontochō.'
 D[24]['sum'] = 'A short, early bamboo grove walk in the rain, the train back to Tokyo, an hour at the hotel, then fireworks over the bay from Odaiba. Dinner comes after the show, so the trains have cleared by the time you leave.'
 LEGS['k']['sum'] = 'One clear idea a day. Nara on arrival, a full day in Osaka, Fushimi Inari and Higashiyama on Friday, and a short bamboo grove morning before the train back to Tokyo.'
+# 21 Oct 09:48: step by step for Kyoto Station, bags and the train to Nara (How-to 31)
+HOWTO.append(('Kyoto Station, bags and the train to Nara, Wed 21', [
+ 'Off the train (10:00): take the escalator down from the platform and go through the Shinkansen gates. Tap the same Suica you tapped in with, or put your tickets in. You are now on the south side of the station. Follow the signs for Central Gate (中央口) and the Karasuma side, along the upper walkway that crosses over the tracks. About 7 minutes with bags.',
+ 'Drop the bags at Crosta (about 10:15): from the Central Gate take the escalator down to B1. The Crosta Kyoto baggage counter is behind the escalators, signed for baggage. Map: https://www.google.com/maps/search/?api=1&query=Crosta+Kyoto+baggage',
+ 'Before the bags go over the counter, take out: passports, wallets and cards, phones, chargers and power bank, medication, umbrellas, and a light layer for the evening rain. Valuables are not accepted. ¥1,000 per bag, open until 20:00. Keep the receipt: you need it to collect.',
+ 'Walk to the Kintetsu line (about 10:30): back up the escalator and south through the station\'s central passage to the Kintetsu gates (近鉄), about 10 minutes. Signs say Kintetsu Line, in red and white. Map: https://www.google.com/maps/search/?api=1&query=Kintetsu+Kyoto+Station',
+ 'Buy the ticket: at the Kintetsu machines tap English. Buy Kintetsu-Nara (近鉄奈良) with a limited express seat (特急), about ¥1,280 each, 35 minutes, reserved seats.',
+ 'Check the destination on the ticket: some limited expresses go to Kashiharajingū-mae (橿原神宮前), which is not Nara. Yours must say 近鉄奈良, Kintetsu-Nara.',
+ 'No seats left: take the Express (急行) to Nara on Suica instead. ¥760, about 45 minutes, no ticket needed.',
+ 'Board (about 10:40): ticket through the gate, find the platform on the board, and the car and seat on the ticket. The limited express is the smart cream or red train with numbered cars. Get off at the end of the line, Kintetsu-Nara.',
+ 'In Nara (about 11:15): take the exit for Higashimuki (東向), which comes straight up into the covered Higashimuki arcade. Walk through to Sanjō-dōri, then about 10 minutes east to lunch at Kamameshi Shizuka.',
+ 'Coming back (about 16:45): Kintetsu limited express from Kintetsu-Nara back to Kyoto, about 35 minutes, arriving about 17:20. Walk to the Central Gate, down to B1, and collect the bags with the receipt.',
+ 'To the hotel: walk about 15 minutes straight up Karasuma-dōri (exit on the Kyoto Tower side), or the Karasuma subway one stop to Gojō. In the rain with bags, a taxi from the north rank, about 5 minutes.',
+]))
+_HN = len(HOWTO)
+_r = D[21]['rows']
+_i = _row(21, '10:00'); _r[_i] = R(_r[_i][0], _r[_i][1], ('Step by step: How-to %d.' % _HN), *_r[_i][3:])
+for _t in ('10:15', '10:40', '16:45'):
+    _i = _row(21, _t); _r[_i] = R(_r[_i][0], _r[_i][1], _r[_i][2] + (' Step by step: How-to %d.' % _HN), *_r[_i][3:])

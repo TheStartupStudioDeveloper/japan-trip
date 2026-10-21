@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:55
+- How-to 31: Kyoto Station, bags and the train to Nara, step by step (gates, Crosta B1, Kintetsu ticket and the Kashiharajingū-mae warning, Nara exit, coming back, to the hotel). Linked from the Wed 21 10:00, 10:15, 10:40 and 16:45 rows. Google Maps URLs in how-tos now show as links.
+
 ## 21 Oct 09:40
 - Clean and Edit modes. A pill fixed bottom right switches between them, remembered on the device, Clean by default. Clean hides the item buttons, note boxes, quick add and day notes, and shows plain times; ticks, misses, added items, changed times, order and removals still show, and item notes show as a "Note:" line. Edit shows everything.
 
