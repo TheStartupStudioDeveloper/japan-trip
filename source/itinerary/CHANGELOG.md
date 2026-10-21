@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 14:00
+- Bin fixed: removed items now actually hide (the row grid was overriding hidden). The confirm is a small box under the buttons: "Remove this from the day?" with Remove and Cancel.
+
 ## 21 Oct 13:15
 - Switching Clean and Edit keeps you at the same item: the row at the top of the screen stays in place.
 
