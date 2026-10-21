@@ -164,6 +164,9 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 21 October
+- From the Log as you go list (estimates at ¥1 = A$0.0091): drinks at a Golden Gai bar, ¥3,300, Cynthia (Tue 20); dinner in Shibuya’s yakitori lane, ¥5,400, G (Tue 20); Shinkansen breakfast, ¥2,492, Cynthia (Wed 21).
+
 Expenses: Log as you go, 20 October
 - New section near the top of J&HK Expenses: add an item, amount (¥, AU$ or HK$), date and who paid (G, Cynthia or Not sure) as you go. The list is saved on that device only.
 - "Copy for Claude" copies the list as one line per item (date | item | amount | paid by) to paste into the expenses chat; if the copy is blocked, the text shows in a box to copy by hand. "Clear list" needs a second tap.
