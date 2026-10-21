@@ -1,5 +1,11 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 19:15
+- Now marker: a black line with "Now HH:MM" in today's list, between the last item before now and the next one, updated every minute.
+- The app remembers where you were and reopens at the same item.
+- Added items line up with the others (dashed lines above and below, no side inset).
+- Expenses: Who paid buttons fill their third properly on iPhone (no default button margins).
+
 ## 21 Oct 14:05
 - Clean mode shows your ticks under the time: a black ✓ for done, an outlined ✗ for missed. The Done label stays for items confirmed in the master.
 
