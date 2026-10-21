@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:40
+- Clean and Edit modes. A pill fixed bottom right switches between them, remembered on the device, Clean by default. Clean hides the item buttons, note boxes, quick add and day notes, and shows plain times; ticks, misses, added items, changed times, order and removals still show, and item notes show as a "Note:" line. Edit shows everything.
+
 ## 21 Oct 09:50
 - Expenses, Log as you go: after Add, the form resets fully (item, amount, currency back to ¥, today's date, payer back to G). Who paid buttons fixed as three equal segments. Single bold border on focused fields. Patched in expenses/index.html and source/expenses/trip-expenses.html; the expenses chat's template needs the same change.
 

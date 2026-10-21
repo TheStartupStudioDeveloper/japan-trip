@@ -457,6 +457,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .qaf input,.qaf textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:400 1rem/1.4 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.45rem .5rem;border-radius:0;text-transform:none;letter-spacing:0}
 .qabtn{display:flex;gap:.5rem}
 .inote textarea,.dnotes textarea,.qaf input,.qaf textarea{outline:none!important;box-shadow:none}.inote textarea{border-width:2.5px!important}.dnotes textarea:focus,.qaf input:focus,.qaf textarea:focus{border-width:2.5px!important;border-color:var(--ink)!important}
+#jtmode{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:calc(14px + env(safe-area-inset-bottom));z-index:15;appearance:none;-webkit-appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .85rem/1 var(--body);padding:.7rem 1rem;border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.18);cursor:pointer}#jtmode.on{background:var(--ink);color:var(--paper)}@media print{#jtmode{display:none}}.inv{margin:.35rem 0 0;font-size:.85rem;font-style:italic;color:var(--ink);white-space:pre-wrap}.inv::before{content:'Note: ';font-style:normal;font-weight:700}body:not(.jt-clean) .inv{display:none}.jt-clean .tk,.jt-clean .inote,.jt-clean .qadd,.jt-clean .dnotes{display:none!important}.jt-clean .tv{border-color:transparent!important;padding-left:0;padding-right:0;min-width:0;text-align:left;pointer-events:none}@media (min-width:640px){.row .inv{grid-column:2/-1}}
 .inote{margin:.6rem 0 .75rem}.inote[hidden]{display:none}
 .tv{display:inline-block;cursor:text;border:1.5px dashed var(--ink);outline:none;padding:.1rem .3rem;min-width:3.2rem;text-align:center;font-variant-numeric:tabular-nums}.tv:focus{background:var(--ink);color:var(--paper);border-style:solid}.tv.ed{border-style:solid;border-width:2px}@media (min-width:640px){.row .tk,.row .inote{grid-column:2/-1;justify-self:stretch}.row .tk{justify-self:start}.row.added{padding-left:.6rem;padding-right:.6rem}}@media print{.tk,.inote,.qadd,.dnotes,.tv{border:0!important}.tk,.inote,.qadd,.dnotes{display:none!important}}.tk button{flex:0 0 auto}
 .inote textarea{width:100%;min-height:8.5rem;box-sizing:border-box;font:400 1rem/1.45 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}
@@ -759,6 +760,12 @@ article.day header.dh{position:relative;padding-right:7.5rem}
  window.addEventListener('resize',function(){if(cur)cur.querySelectorAll('.mwin').forEach(function(w){w.redraw&&w.redraw()})});
  document.querySelectorAll('article.day').forEach(function(a){var d=a.id.slice(1);if(!document.getElementById('dm-'+d))return;
   var hd=a.querySelector('header.dh');if(!hd)return;var b=document.createElement('button');b.type='button';b.className='dmapb';b.innerHTML='&#10530; Route map';b.setAttribute('aria-label','Open the route map for this day');b.onclick=function(){openMap(d)};hd.appendChild(b)});
+ // ---------- clean / edit mode (saved on this device, clean by default)
+ (function(){var m;try{m=localStorage.getItem('jt-mode')}catch(e){}var ed=m==='edit';document.body.classList.toggle('jt-clean',!ed);
+  var b=document.createElement('button');b.type='button';b.id='jtmode';
+  function lab(){var on=!document.body.classList.contains('jt-clean');b.innerHTML=on?'&#10003; Done editing':'&#9998; Edit';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}lab();
+  b.onclick=function(){var on=document.body.classList.toggle('jt-clean');try{localStorage.setItem('jt-mode',on?'clean':'edit')}catch(e){}if(on&&document.activeElement&&document.activeElement.blur)document.activeElement.blur();lab()};
+  document.body.appendChild(b)})();
  // ---------- ticks, notes, editable times, quick add (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
  var IN=store('jt-inotes-v1')||{},TM=store('jt-times-v1')||{},AD=store('jt-adds-v1')||{},RM=store('jt-removed-v1')||{},OR=store('jt-order-v1')||{};
@@ -791,7 +798,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
     timeWins(li.parentNode);flash(li)}}
   var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" class="tkmv" aria-label="Drag to move">&#10303;</button><button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button><button type="button" class="tkn" aria-expanded="false" aria-label="Note">&#9998; Note</button>'+'<button type="button" class="tkbin" aria-label="Remove from the itinerary">'+BIN+'</button>';w.appendChild(s);s.querySelector('.tkmv').addEventListener('pointerdown',function(e){startDrag(li,this,e)});
   var nb=s.querySelector('.tkn'),nw=document.createElement('div');nw.className='inote';nw.hidden=true;nw.innerHTML='<textarea rows="5" placeholder="Note for this one"></textarea>';w.appendChild(nw);var nta=nw.querySelector('textarea'),ntm;nta.value=IN[k]||'';
-  function mark(){nb.classList.toggle('has',!!nta.value.trim())}mark();
+  var inv=document.createElement('p');inv.className='inv';w.insertBefore(inv,s);function mark(){var t=nta.value.trim();nb.classList.toggle('has',!!t);inv.textContent=t;inv.hidden=!t}mark();
   nb.onclick=function(e){e.stopPropagation();nw.hidden=!nw.hidden;nb.setAttribute('aria-expanded',!nw.hidden);if(!nw.hidden)nta.focus()};
   nta.oninput=function(){clearTimeout(ntm);ntm=setTimeout(function(){if(nta.value.trim())IN[k]=nta.value;else delete IN[k];store('jt-inotes-v1',IN);mark()},300)};
   var v=TK[k]==='-'?'':(TK[k]||(li.classList.contains('is-d')?'y':''));paint(li,v);
