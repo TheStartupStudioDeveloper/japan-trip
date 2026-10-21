@@ -223,6 +223,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses: Log as you go clears only once applied, 22 October
+- Replaces "copy only new items, mark them sent". Copy now always copies everything still on the list, plus a last line "Copied <date and time with offset>", so nothing is lost if a paste goes missing.
+- Each item records when it was added. The page carries a synced time (source/expenses/log_synced.json). When Claude applies a paste, it sets that time to the paste's "Copied" time and republishes. On open, the page clears only items added before the synced time; anything added after the copy stays.
+- Items already on a phone from before get today's time, so they are kept until the next applied paste. "Clear sent" is gone; × still removes a single item.
+- Copied items show "copied, waiting for Claude". The box shows when the ledger was last updated from the list.
+
 Expenses: Log as you go only copies new items, 22 October
 - "Copy for Claude" now copies only items not sent before (button reads "Copy N new for Claude") and marks them sent. Sent items stay greyed with "sent" until the next copy, which tidies them away; "Clear sent" (two taps) removes them sooner.
 - Fixed: hidden buttons in the log box could still show on the GitHub app.

@@ -10,6 +10,7 @@ import apptools
 PDF = None  # online only for now; set to 'JHK-Expenses.pdf' to bring the PDF back
 OFF = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'] + ([PDF] if PDF else [])
 data = json.load(open(os.path.join(ROOT, 'expenses.json'), encoding='utf-8'))
+SYNCED = json.load(open(os.path.join(REPO, 'source', 'expenses', 'log_synced.json'), encoding='utf-8'))['synced']
 master = open(os.path.join(ROOT, 'out', 'japan-hong-kong-final-itinerary.html'), encoding='utf-8').read()
 style = re.search(r'<style>(.*?)</style>', master, re.S).group(1)
 tpl = open(os.path.join(ROOT, 'template.html'), encoding='utf-8').read()
@@ -20,60 +21,66 @@ extra = ('.costs{margin-top:0}header.cover{padding:2.4rem 1.1rem 0}.exband{displ
          '.rules{margin-top:2rem;border:1.5px solid var(--ink);padding:1rem;display:grid;gap:.45rem;font-size:.92rem}'
          '.rules h4{font:700 1.1rem/1.2 var(--display)}.rules li{padding-left:1.1rem;position:relative}'
          '.rules li::before{content:"";position:absolute;left:0;top:.55em;width:.45rem;height:.45rem;background:var(--ink)}'
-         '.logbox{border:1.5px solid var(--ink);padding:1rem;margin:0 0 1.4rem}.logbox h2{font:800 1.25rem/1.15 var(--display);margin:0 0 .2rem}.logbox .lsub{font-size:.85rem;color:var(--mute);margin:0 0 .8rem}.lgrid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}.lgrid .full{grid-column:1/-1}.lgrid label{display:grid;gap:.2rem;font-size:.74rem;color:var(--mute)}.lgrid input,.lgrid select{font:500 1rem/1.2 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:0;padding:.55rem .6rem;width:100%;box-sizing:border-box;-webkit-appearance:none;appearance:none}.lamt{display:grid;grid-template-columns:4.2rem 1fr;gap:.35rem}.seg{display:grid;grid-template-columns:repeat(3,1fr);border:1.5px solid var(--ink)}.seg button{font:600 .9rem/1 var(--body);padding:.6rem 0;border:0;border-right:1.5px solid var(--ink);background:var(--paper);color:var(--ink)}.seg button:last-child{border-right:0}.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}#lpay.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:0;align-items:stretch;border:1.5px solid var(--ink)}#lpay.seg button{width:100%;min-height:2.6rem;cursor:pointer;display:block;margin:0;border-radius:0;box-sizing:border-box;-webkit-appearance:none;appearance:none;padding:.6rem .2rem}.lgrid input:focus,.lgrid select:focus{outline:none!important;border-width:2.5px}.lbtn{font:700 .95rem/1 var(--body);padding:.7rem 1rem;border:1.5px solid var(--ink);border-radius:0;background:var(--ink);color:var(--paper);cursor:pointer}.lbtn.alt{background:var(--paper);color:var(--ink)}.lacts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}.llist{list-style:none;margin:1rem 0 0;padding:0;border-top:1.5px solid var(--ink)}.llist li{display:grid;grid-template-columns:1fr auto auto;gap:.6rem;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.92rem}.llist small{display:block;color:var(--mute);font-size:.75rem}.llist .lv{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}.llist .lx{border:1.5px solid var(--ink);background:var(--paper);width:1.9rem;height:1.9rem;font:700 1rem/1 var(--body);cursor:pointer}.lempty{color:var(--mute);font-size:.9rem;margin:.8rem 0 0}.lmsg{font-size:.8rem;color:var(--mute);min-height:1em;margin:.5rem 0 0}.lcopy{width:100%;box-sizing:border-box;margin-top:.6rem;font:.85rem/1.4 var(--body);border:1px solid var(--line);padding:.5rem;min-height:5rem}.llist li.sent{color:var(--mute)}.llist li.sent .lv{font-weight:500}.lbtn[disabled]{opacity:.45;cursor:default}.logbox [hidden]{display:none!important}@media print{.logbox{display:none}}')
+         '.logbox{border:1.5px solid var(--ink);padding:1rem;margin:0 0 1.4rem}.logbox h2{font:800 1.25rem/1.15 var(--display);margin:0 0 .2rem}.logbox .lsub{font-size:.85rem;color:var(--mute);margin:0 0 .8rem}.lgrid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}.lgrid .full{grid-column:1/-1}.lgrid label{display:grid;gap:.2rem;font-size:.74rem;color:var(--mute)}.lgrid input,.lgrid select{font:500 1rem/1.2 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);border-radius:0;padding:.55rem .6rem;width:100%;box-sizing:border-box;-webkit-appearance:none;appearance:none}.lamt{display:grid;grid-template-columns:4.2rem 1fr;gap:.35rem}.seg{display:grid;grid-template-columns:repeat(3,1fr);border:1.5px solid var(--ink)}.seg button{font:600 .9rem/1 var(--body);padding:.6rem 0;border:0;border-right:1.5px solid var(--ink);background:var(--paper);color:var(--ink)}.seg button:last-child{border-right:0}.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}#lpay.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:0;align-items:stretch;border:1.5px solid var(--ink)}#lpay.seg button{width:100%;min-height:2.6rem;cursor:pointer;display:block;margin:0;border-radius:0;box-sizing:border-box;-webkit-appearance:none;appearance:none;padding:.6rem .2rem}.lgrid input:focus,.lgrid select:focus{outline:none!important;border-width:2.5px}.lbtn{font:700 .95rem/1 var(--body);padding:.7rem 1rem;border:1.5px solid var(--ink);border-radius:0;background:var(--ink);color:var(--paper);cursor:pointer}.lbtn.alt{background:var(--paper);color:var(--ink)}.lacts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}.llist{list-style:none;margin:1rem 0 0;padding:0;border-top:1.5px solid var(--ink)}.llist li{display:grid;grid-template-columns:1fr auto auto;gap:.6rem;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.92rem}.llist small{display:block;color:var(--mute);font-size:.75rem}.llist .lv{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}.llist .lx{border:1.5px solid var(--ink);background:var(--paper);width:1.9rem;height:1.9rem;font:700 1rem/1 var(--body);cursor:pointer}.lempty{color:var(--mute);font-size:.9rem;margin:.8rem 0 0}.lmsg{font-size:.8rem;color:var(--mute);min-height:1em;margin:.5rem 0 0}.lcopy{width:100%;box-sizing:border-box;margin-top:.6rem;font:.85rem/1.4 var(--body);border:1px solid var(--line);padding:.5rem;min-height:5rem}.llist li.sent{color:var(--mute)}.llist li.sent .lv{font-weight:500}.lbtn[disabled]{opacity:.45;cursor:default}.lsync{font-size:.75rem;color:var(--mute);margin:.6rem 0 0}.logbox [hidden]{display:none!important}@media print{.logbox{display:none}}')
 body = f'''<header class="wrap cover"><div class="exband" aria-hidden="true"><i class="pat pat-s"></i><i class="pat pat-k"></i><i class="pat pat-g"></i><i class="pat pat-h"></i></div>
 <h1>Trip Expenses <span>Japan &amp; Hong Kong</span></h1>
 <p class="sub">Shared costs for G and Cynthia, 16 to 31 October 2026. Updated by Claude as you go.</p></header>
 <main class="wrap"><section class="costs" id="costs">
 <div class="cost-sum" id="costsum"></div>
 <section class="logbox" id="log" aria-labelledby="logh"><h2 id="logh">Log as you go</h2>
-<p class="lsub">Add costs here as they happen, then copy and paste them into the expenses chat. Each copy only takes items not sent before. Saved on this device only.</p>
+<p class="lsub">Add costs here as they happen, then copy and paste them into the expenses chat. Items stay here until Claude has added them to the ledger, then clear the next time you open this page. Saved on this device only.</p>
 <form id="lform" class="lgrid" autocomplete="off">
 <label class="full">Item<input id="litem" required placeholder="e.g. Lunch at Nishiki Market"></label>
 <label>Amount<span class="lamt"><select id="lcur" aria-label="Currency"><option>¥</option><option>AU$</option><option>HK$</option></select><input id="lamt" required inputmode="decimal" placeholder="0"></span></label>
 <label>Date<input id="ldate" type="date"></label>
 <div class="full"><span style="display:block;font-size:.74rem;color:var(--mute);margin-bottom:.2rem">Who paid</span><div class="seg" id="lpay" role="group" aria-label="Who paid"><button type="button" data-v="G" aria-pressed="true">G</button><button type="button" data-v="Cynthia" aria-pressed="false">Cynthia</button><button type="button" data-v="Not sure" aria-pressed="false">Not sure</button></div></div>
 <div class="full lacts"><button class="lbtn" type="submit">Add</button></div></form>
-<ul class="llist" id="llist"></ul><p class="lempty" id="lempty">Nothing logged yet.</p>
-<div class="lacts" id="lacts" hidden><button class="lbtn" type="button" id="lcp">Copy for Claude</button><button class="lbtn alt" type="button" id="lclr">Clear sent</button></div>
-<p class="lmsg" id="lmsg" aria-live="polite"></p><textarea class="lcopy" id="ltxt" readonly hidden aria-label="Text to paste"></textarea></section>
+<ul class="llist" id="llist"></ul><p class="lempty" id="lempty">Nothing waiting. Everything logged here is in the ledger.</p>
+<div class="lacts" id="lacts" hidden><button class="lbtn" type="button" id="lcp">Copy for Claude</button></div>
+<p class="lmsg" id="lmsg" aria-live="polite"></p><textarea class="lcopy" id="ltxt" readonly hidden aria-label="Text to paste"></textarea>
+<p class="lsync" id="lsync" data-synced="{SYNCED}"></p></section>
 <script>
 (function(){{
  var KEY='jhk-expense-log-v1',items=[],payer='G',$=function(i){{return document.getElementById(i)}};
+ var SYNC=Date.parse($('lsync').dataset.synced)||0;
  try{{items=JSON.parse(localStorage.getItem(KEY)||'[]')||[]}}catch(e){{items=[]}}
  function save(){{try{{localStorage.setItem(KEY,JSON.stringify(items))}}catch(e){{}}}}
+ var now=Date.now(),before=items.length;
+ items.forEach(function(it){{if(!it.added)it.added=now;delete it.sent}});
+ items=items.filter(function(it){{return Math.floor(it.added/1000)*1000>SYNC}});save();
+ var cleared=before-items.length;
  function iso(d){{return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}}
  function day(s){{if(!s)return '';var p=s.split('-'),d=new Date(+p[0],+p[1]-1,+p[2]);return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+(+p[2])}}
+ function stamp(t){{var d=new Date(t),o=-d.getTimezoneOffset(),p=function(n){{return String(Math.abs(n)).padStart(2,'0')}};
+  return iso(d)+'T'+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds())+(o<0?'-':'+')+p(Math.floor(Math.abs(o)/60))+':'+p(Math.abs(o)%60)}}
+ function when(t){{var d=new Date(t);return day(iso(d))+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}}
  function amt(it){{var n=Number(it.amt);var f=it.cur==='¥'?n.toLocaleString('en-AU',{{maximumFractionDigits:0}}):n.toLocaleString('en-AU',{{minimumFractionDigits:2,maximumFractionDigits:2}});return it.cur+f}}
  function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
- function fresh(){{return items.filter(function(it){{return !it.sent}})}}
- function text(){{return fresh().map(function(it){{return day(it.date)+' | '+it.item+' | '+amt(it)+' | paid by '+it.payer}}).join(String.fromCharCode(10))}}
+ function text(t){{return items.map(function(it){{return day(it.date)+' | '+it.item+' | '+amt(it)+' | paid by '+it.payer}}).concat(['Copied '+stamp(t)]).join(String.fromCharCode(10))}}
  function draw(){{
-  $('llist').innerHTML=items.map(function(it,i){{return '<li'+(it.sent?' class="sent"':'')+'><span>'+esc(it.item)+'<small>'+esc(day(it.date))+' · paid by '+esc(it.payer)+(it.sent?' · sent':'')+'</small></span><span class="lv">'+esc(amt(it))+'</span><button class="lx" type="button" data-i="'+i+'" aria-label="Remove '+esc(it.item)+'">×</button></li>'}}).join('');
+  $('llist').innerHTML=items.map(function(it,i){{return '<li><span>'+esc(it.item)+'<small>'+esc(day(it.date))+' · paid by '+esc(it.payer)+(it.copied?' · copied, waiting for Claude':'')+'</small></span><span class="lv">'+esc(amt(it))+'</span><button class="lx" type="button" data-i="'+i+'" aria-label="Remove '+esc(it.item)+'">×</button></li>'}}).join('');
   $('lempty').hidden=items.length>0;$('lacts').hidden=!items.length;if(!items.length)$('ltxt').hidden=true;
-  var n=fresh().length;$('lcp').disabled=!n;$('lcp').textContent=n?'Copy '+n+' new for Claude':'Nothing new to send';$('lclr').hidden=!items.some(function(it){{return it.sent}});
+  $('lcp').textContent='Copy '+items.length+' for Claude';
+  $('lsync').textContent=SYNC?'Ledger last updated from this list: '+when(SYNC)+'.':'';
  }}
  $('ldate').value=iso(new Date());
  $('lpay').addEventListener('click',function(e){{var b=e.target.closest('button');if(!b)return;payer=b.dataset.v;[].forEach.call(this.children,function(x){{x.setAttribute('aria-pressed',x===b?'true':'false')}})}});
  $('lform').addEventListener('submit',function(e){{e.preventDefault();
   var it=$('litem').value.trim(),a=$('lamt').value.replace(/[^0-9.]/g,'');
   if(!it||!a){{$('lmsg').textContent='Add an item and an amount.';return}}
-  items.push({{item:it,amt:Number(a),cur:$('lcur').value,date:$('ldate').value||iso(new Date()),payer:payer}});save();draw();
-  $('lform').reset();$('ldate').value=iso(new Date());$('lcur').selectedIndex=0;payer='G';[].forEach.call($('lpay').children,function(x){{x.setAttribute('aria-pressed',x.dataset.v==='G'?'true':'false')}});$('lmsg').textContent='Added. '+(fresh().length>1?fresh().length+' items':'1 item')+' waiting to send.';$('litem').focus();
+  items.push({{item:it,amt:Number(a),cur:$('lcur').value,date:$('ldate').value||iso(new Date()),payer:payer,added:Date.now()}});save();draw();
+  $('lform').reset();$('ldate').value=iso(new Date());$('lcur').selectedIndex=0;payer='G';[].forEach.call($('lpay').children,function(x){{x.setAttribute('aria-pressed',x.dataset.v==='G'?'true':'false')}});$('lmsg').textContent='Added. '+items.length+(items.length>1?' items':' item')+' waiting for Claude.';$('litem').focus();
  }});
  $('llist').addEventListener('click',function(e){{var b=e.target.closest('.lx');if(!b)return;items.splice(+b.dataset.i,1);save();draw();$('lmsg').textContent='Removed.'}});
  $('lcp').addEventListener('click',function(){{
-  var go=fresh();if(!go.length)return;var t=text(),box=$('ltxt');box.value=t;
-  function done(msg){{items=items.filter(function(it){{return !it.sent}});items.forEach(function(it){{it.sent=1}});save();draw();box.hidden=false;$('lmsg').textContent=msg}}
+  if(!items.length)return;var t=Date.now(),txt=text(t),box=$('ltxt');box.value=txt;
+  function done(msg){{items.forEach(function(it){{it.copied=1}});save();draw();$('lmsg').textContent=msg}}
   function fallback(){{box.hidden=false;box.focus();box.select();var ok=false;try{{ok=document.execCommand('copy')}}catch(e){{}}
-   done(ok?'Copied '+go.length+'. Paste into the expenses chat. They are now marked sent.':'Select the text below and copy it. These are now marked sent.')}}
-  if(navigator.clipboard&&navigator.clipboard.writeText){{navigator.clipboard.writeText(t).then(function(){{done('Copied '+go.length+'. Paste into the expenses chat. They are now marked sent and will not be copied again.')}},fallback)}}else fallback();
- }});
- var armed=0;$('lclr').addEventListener('click',function(){{
-  if(!armed){{armed=1;this.textContent='Tap again to clear';var b=this;setTimeout(function(){{armed=0;b.textContent='Clear sent'}},4000);return}}
-  items=items.filter(function(it){{return !it.sent}});save();draw();armed=0;this.textContent='Clear sent';$('ltxt').hidden=true;$('lmsg').textContent='Sent items cleared.';
+   done(ok?'Copied. Paste into the expenses chat. Items clear once Claude has added them.':'Select the text below and copy it.')}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){{navigator.clipboard.writeText(txt).then(function(){{box.hidden=true;done('Copied '+items.length+'. Paste into the expenses chat. They stay here until Claude has added them, then clear next time you open the page.')}},fallback)}}else fallback();
  }});
  draw();
+ if(cleared)$('lmsg').textContent=cleared+(cleared>1?' items are':' item is')+' now in the ledger and cleared from this list.';
 }})();
 </script>
 <div class="cost-wrap"><table class="cost"><thead><tr><th>Date</th><th>Item</th><th class="amt">G</th><th class="amt">Cynthia</th></tr></thead><tbody id="costrows"></tbody><tfoot id="costfoot"></tfoot></table></div>
