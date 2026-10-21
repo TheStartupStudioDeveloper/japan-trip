@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 09:50
+- Expenses, Log as you go: after Add, the form resets fully (item, amount, currency back to ¥, today's date, payer back to G). Who paid buttons fixed as three equal segments. Single bold border on focused fields. Patched in expenses/index.html and source/expenses/trip-expenses.html; the expenses chat's template needs the same change.
+
 ## 21 Oct 09:45
 - Note fields: single border, no focus outline. Item notes are bold-bordered when open; day notes and quick add fields go bold when selected.
 
