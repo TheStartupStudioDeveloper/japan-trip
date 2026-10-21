@@ -220,6 +220,10 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses: Log as you go only copies new items, 22 October
+- "Copy for Claude" now copies only items not sent before (button reads "Copy N new for Claude") and marks them sent. Sent items stay greyed with "sent" until the next copy, which tidies them away; "Clear sent" (two taps) removes them sooner.
+- Fixed: hidden buttons in the log box could still show on the GitHub app.
+
 Expenses update, 21 October
 - From the Log as you go list (estimates at ¥1 = A$0.0091): drinks at a Golden Gai bar, ¥3,300, Cynthia (Tue 20); dinner in Shibuya’s yakitori lane, ¥5,400, G (Tue 20); Shinkansen breakfast, ¥2,492, Cynthia (Wed 21).
 - Log as you go form fixes (who paid buttons fill the row, focus outline, the form resets to G, ¥ and today after each add) were made on the live pages only; they are now in source/expenses/expenses_build.py so rebuilds keep them.
