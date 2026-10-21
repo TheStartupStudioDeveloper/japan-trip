@@ -798,7 +798,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
     if(ad){if(!v||v===ad.t)return;ad.t=v;tx.textContent=v;store('jt-adds-v1',AD)}
     else{var was=TM[k]||t0;if(!v||v===hm(t0)){delete TM[k];tx.textContent=t0;ti.value=hm(t0)}else{TM[k]=v;tx.textContent=v}if((TM[k]||t0)===was)return;tv.classList.toggle('ed',!!TM[k]);store('jt-times-v1',TM)}
     timeWins(li.parentNode);flash(li)}
-   ti.addEventListener('change',commit);ti.addEventListener('blur',commit)}
+   ti.addEventListener('blur',function(){setTimeout(commit,50)});ti.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();ti.blur()}})}
   var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" class="tkmv" aria-label="Drag to move">&#10303;</button><button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button><button type="button" class="tkn" aria-expanded="false" aria-label="Note">&#9998; Note</button>'+'<button type="button" class="tkbin" aria-label="Remove from the itinerary">'+BIN+'</button>';w.appendChild(s);s.querySelector('.tkmv').addEventListener('pointerdown',function(e){startDrag(li,this,e)});
   var nb=s.querySelector('.tkn'),nw=document.createElement('div');nw.className='inote';nw.hidden=true;nw.innerHTML='<textarea rows="5" placeholder="Note for this one"></textarea>';w.appendChild(nw);var nta=nw.querySelector('textarea'),ntm;nta.value=IN[k]||'';
   var inv=document.createElement('p');inv.className='inv';w.insertBefore(inv,s);function mark(){var t=nta.value.trim();nb.classList.toggle('has',!!t);inv.textContent=t;inv.hidden=!t}mark();
