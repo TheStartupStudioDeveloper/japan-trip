@@ -8,7 +8,7 @@
 .jt-bar button[disabled]{opacity:.55;cursor:default}
 .jt-bar .jt-off[hidden]{display:none}
 @media print{.jt-bar{display:none!important}}
-</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
+</style><div class="jt-bar" role="toolbar" aria-label="Download and offline"><a class="jt-chat" href="https://claude.ai/chat/82d88097-351f-459d-a9e4-35b2251b8d56" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Chat with Claude</a><button type="button" class="jt-off"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/></svg>Save offline</button><span class="jt-st" aria-live="polite"></span></div>
 <title>Japan &amp; Hong Kong Trip Weather</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -260,8 +260,8 @@ h1 span{display:block;font-weight:300}
 </main>
 
 <script type="application/json" id="wx">{
- "checked": "2026-10-21T05:40:00+09:00",
- "checkedLabel": "Wed 21 Oct, 05:40 Tokyo time",
+ "checked": "2026-10-21T17:55:00+09:00",
+ "checkedLabel": "Wed 21 Oct, 17:55 Tokyo time",
  "legs": [
   {
    "id": "s",
@@ -271,8 +271,8 @@ h1 span{display:block;font-weight:300}
    "dates": "Sat 17 to Wed 21 Oct",
    "no": "Leg 1 of 4",
    "range": "30°",
-   "line": "Sunny for the Nozomi",
-   "lede": "Wednesday morning in Tokyo is sunny and warm for the 07:55 Nozomi."
+   "line": "Done",
+   "lede": "The Shibuya leg is done."
   },
   {
    "id": "k",
@@ -281,9 +281,9 @@ h1 span{display:block;font-weight:300}
    "short": "Kyoto",
    "dates": "Wed 21 to Sat 24 Oct",
    "no": "Leg 2 of 4",
-   "range": "23–30°",
-   "line": "Hot Nara, dry midweek, very wet Saturday",
-   "lede": "Wednesday is sunny and 30° in Nara until 15:00, with light rain from 16:00. Thursday is dry and fresher, Friday dry by day with a wet evening. Saturday has heavy rain overnight and all morning, about 24 mm before noon, right over Fushimi Inari."
+   "range": "12–24°",
+   "line": "Sunny Osaka, dry Friday, very wet Saturday",
+   "lede": "Thursday is sunny all day in Osaka, 24°, clear for the light show. Friday is dry, sun then cloud. Saturday has heavy rain overnight and all morning, about 20 mm before noon."
   },
   {
    "id": "g",
@@ -292,9 +292,9 @@ h1 span{display:block;font-weight:300}
    "short": "Hibiya",
    "dates": "Sat 24 to Tue 27 Oct",
    "no": "Leg 3 of 4",
-   "range": "16–25°",
-   "line": "Wet Saturday, dry Sunday, wet Monday afternoon",
-   "lede": "Saturday has heavy rain from 12:00 to 18:00, easing to light for the fireworks. Sunday is dry with sunny spells. Monday's morning is dry for teamLab, with rain from midday."
+   "range": "16–23°",
+   "line": "Wet Saturday, cloudy Sunday, wet Monday",
+   "lede": "Saturday has rain from midday, steady and light over the fireworks. Sunday is cloudy and probably dry. Monday has rain at times from the morning."
   },
   {
    "id": "h",
@@ -1009,12 +1009,12 @@ h1 span{display:block;font-weight:300}
    "where": "Osaka",
    "title": "Osaka, castle to Dōtonbori",
    "icon": "sun",
-   "hi": 23,
-   "lo": 15,
-   "rain": 20,
-   "cond": "Sun, then cloud",
+   "hi": 24,
+   "lo": 16,
+   "rain": 10,
+   "cond": "Sunny all day",
    "sunset": "17:05",
-   "call": "Dry, sunny and much fresher: 23° on tenki.jp, every source dry. Clear air for the castle at 08:30 and the Umeda Sky deck.",
+   "call": "The best day of the week. tenki.jp's Osaka hourly has sun from dawn to midnight, 0 to 20%, no rain. 18° for the castle at 08:30, 24° at 14:00 for the shops, 19° at dusk in Shinsekai, and 18° and clear for the 20:00 castle light show. A fresh north breeze, 3 to 5 m/s, so a light layer for the evening. A cool 15° start in Kyoto at 07:00.",
    "plan": [
     [
      "08:30",
@@ -1035,15 +1035,19 @@ h1 span{display:block;font-weight:300}
    "src": [
     [
      "Combined",
-     "20% chance of rain, tenki.jp weighted highest"
+     "10% chance of rain, tenki.jp weighted highest"
+    ],
+    [
+     "tenki.jp, Osaka hourly",
+     "24° / 16°, sunny all day, 0 to 20%, 0 mm, north wind 3 to 5 m/s (17:00 Wed)"
     ],
     [
      "tenki.jp, Kyoto",
-     "23° / 15°, sunny with some cloud, 20%, 0 mm"
+     "23° / 15°, sunny, 0 to 20%, 0 mm, 15° at 06:00"
     ],
     [
      "Japan Meteorological Agency, Kyoto (official)",
-     "24° / 16°, mostly sunny, 0 to 10%"
+     "Sunny at times, cloudy at times, 10% all day"
     ],
     [
      "Weathernews, Kyoto",
@@ -1052,40 +1056,83 @@ h1 span{display:block;font-weight:300}
     [
      "Global Forecasting Model, Kyoto",
      "20° / 12°, fair then clear, 0 mm"
-    ],
-    [
-     "AccuWeather, Kyoto",
-     "23° / 12°, cooler, low humidity"
     ]
    ],
-   "mm": "Under 1 mm",
+   "mm": "0 mm",
    "gicon": "sun",
-   "gfill": 20,
-   "gtext": "20%",
+   "gfill": 10,
+   "gtext": "10%",
    "gmm": "0",
-   "read": "Sunny, fresher, 22°. Dry on every source.",
+   "read": "Sunny all day, 24°. Clear and 18° for the light show.",
    "chance": [
     [
      6,
+     10,
+     0
+    ],
+    [
+     10,
      12,
      10
     ],
     [
      12,
-     18,
+     13,
      20
     ],
     [
-     18,
+     13,
      24,
-     0
+     10
     ]
    ],
    "mmBars": [],
    "temps": {
-    "est": true
+    "est": false,
+    "pts": [
+     [
+      6,
+      18
+     ],
+     [
+      8,
+      19.1
+     ],
+     [
+      10,
+      21.2
+     ],
+     [
+      12,
+      22.4
+     ],
+     [
+      14,
+      24.2
+     ],
+     [
+      16,
+      21.2
+     ],
+     [
+      18,
+      19.2
+     ],
+     [
+      20,
+      18.1
+     ],
+     [
+      22,
+      17
+     ],
+     [
+      24,
+      16.1
+     ]
+    ]
    },
-   "tnote": "Rain chance from tenki.jp's 6-hour blocks for Osaka. Temperature shape estimated from the forecast high and low."
+   "tnote": "Hourly temperatures and rain chance from tenki.jp's hourly forecast for central Osaka, issued 17:00 Wed 21."
   },
   {
    "d": 23,
@@ -1093,13 +1140,13 @@ h1 span{display:block;font-weight:300}
    "leg": "k",
    "where": "Arashiyama, Higashiyama, Gion",
    "title": "Kyoto, west to east",
-   "icon": "cloud",
+   "icon": "part",
    "hi": 23,
-   "lo": 13,
-   "rain": 55,
-   "cond": "Cloudy, rain by evening",
+   "lo": 12,
+   "rain": 40,
+   "cond": "Sunny, then cloudy",
    "sunset": "17:10",
-   "call": "Dry by day: tenki.jp has 30% for Arashiyama and Kiyomizu-dera with no measurable rain. The evening turns wetter, 70% on tenki.jp and about 6 mm on the Global Forecasting Model, so umbrellas for Gion dinner. Cold 13° start at the bamboo grove.",
+   "call": "Better than this morning. tenki.jp now has sun, then cloud, 30% all day and no measurable rain, evening included, and JMA agrees at 30%. Only the Global Forecasting Model still brings heavy rain in for the evening, about 6 mm, so a small umbrella for Gion just in case. A cold 12° start, so a layer for an early morning out.",
    "plan": [
     [
      "07:20",
@@ -1120,15 +1167,15 @@ h1 span{display:block;font-weight:300}
    "src": [
     [
      "Combined",
-     "55% chance of rain, tenki.jp weighted highest"
+     "40% chance of rain, tenki.jp weighted highest"
     ],
     [
      "tenki.jp, Kyoto",
-     "23° / 13°, cloudy with a shower later, 30% by day, 70% evening, under 1 mm"
+     "23° / 12°, sunny, then cloudy, 30% all day, 0 mm (17:00 Wed)"
     ],
     [
      "Japan Meteorological Agency, Kyoto (official)",
-     "23° / 13°, 40%, confidence B"
+     "23° / 14°, cloudy at times, sunny at times, 30%"
     ],
     [
      "Weathernews, Kyoto",
@@ -1143,12 +1190,12 @@ h1 span{display:block;font-weight:300}
      "23° / 17°, rain"
     ]
    ],
-   "mm": "Under 1 mm on tenki.jp, 6 mm on one model, evening",
-   "gicon": "cloud",
-   "gfill": 55,
-   "gtext": "55%",
-   "gmm": "1–6",
-   "read": "Dry by day. Rain likely for the Gion evening.",
+   "mm": "0 mm on tenki.jp, 6 mm evening on one model",
+   "gicon": "part",
+   "gfill": 40,
+   "gtext": "40%",
+   "gmm": "0–6",
+   "read": "Sunny, then cloudy. Dry on tenki.jp, evening included.",
    "chance": [
     [
      6,
@@ -1163,14 +1210,14 @@ h1 span{display:block;font-weight:300}
     [
      18,
      24,
-     70
+     30
     ]
    ],
    "mmBars": [
     [
      18,
      24,
-     0.6
+     5.7
     ]
    ],
    "temps": {
@@ -1185,12 +1232,12 @@ h1 span{display:block;font-weight:300}
    "where": "Fushimi Inari, then Tokyo",
    "title": "Inari, back to Tokyo, fireworks night",
    "icon": "rain",
-   "hi": 16,
-   "lo": 15,
+   "hi": 18,
+   "lo": 16,
    "rain": 70,
    "cond": "Heavy rain: Kyoto all morning, Tokyo afternoon",
    "sunset": "16:55",
-   "call": "Wetter again, and now firmly agreed. Kyoto: tenki.jp now has 14 mm overnight and another 10 mm from 06:00 to 12:00, 36 mm for the day, JMA 80% with confidence A, and the Global Forecasting Model 60 mm. Fushimi Inari at 07:15 would be in steady to heavy rain, with slippery stone steps up the mountain. Worth deciding on Friday whether to go only as far as the first gates, or skip it for a slower breakfast. Tokyo: the heavy part, about 15 mm, is 12:00 to 18:00, while you travel and check in, easing to under 1 mm for the 17:30 fireworks on tenki.jp. The Global model keeps rain going into the evening. A cold 16°. This is a front fed by Champi's moisture, not the typhoon itself, so the Shinkansen should run normally.",
+   "call": "Still very wet. Kyoto: tenki.jp has 7 mm overnight and 13 mm from 06:00 to 12:00, the wettest block of the trip, and the Global Forecasting Model 60 mm for the day. Inari's steps would be slippery, and the bamboo grove suits it better. Tokyo: lighter in the morning, then 9 mm from 12:00 to 18:00 and about 4 mm from 18:00 to 24:00, so the 17:30 fireworks now look like steady light rain rather than just drizzle. Raincoats, and the deck for as long as it's fun. A cold 16 to 18°. This is a front fed by Champi's moisture, not the typhoon itself, so the Shinkansen should run normally.",
    "plan": [
     [
      "07:15",
@@ -1210,19 +1257,19 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "tenki.jp, Tokyo (Shibuya)",
-     "17° / 16°, cloudy, then rain, 90%, 18 mm: 3 mm 06:00 to 12:00, 15 mm 12:00 to 18:00, under 1 mm 18:00 to 24:00 (05:00 today)"
+     "18° / 16°, cloudy, then rain, 90%, 14 mm: 1 mm 06:00 to 12:00, 9 mm 12:00 to 18:00, 4 mm 18:00 to 24:00 (17:00 Wed)"
     ],
     [
      "tenki.jp, Kyoto",
-     "21° / 17°, rain, 90%, 36 mm: 14 mm 00:00 to 06:00, 10 mm 06:00 to 12:00, 11 mm 12:00 to 18:00 (05:00 today)"
+     "21° / 17°, rain, 90%, 30 mm: 7 mm 00:00 to 06:00, 13 mm 06:00 to 12:00, 8 mm 12:00 to 18:00 (17:00 Wed)"
     ],
     [
      "Japan Meteorological Agency, Tokyo (official)",
-     "20° / 15°, 60%, confidence C"
+     "19° / 14°, 60%, confidence B"
     ],
     [
      "Japan Meteorological Agency, Kyoto (official)",
-     "22° / 18°, rain, 80%, confidence A"
+     "21° / 18°, 60%, confidence B"
     ],
     [
      "Weathernews, Shibuya",
@@ -1241,22 +1288,22 @@ h1 span{display:block;font-weight:300}
      "22° / 17°, a little afternoon rain"
     ]
    ],
-   "mm": "About 18 mm in Tokyo on tenki.jp, 36 mm on the Global model",
+   "mm": "About 14 mm in Tokyo on tenki.jp, 36 mm on the Global model",
    "gicon": "rain",
    "gfill": 70,
    "gtext": "70%",
-   "gmm": "18–36",
-   "read": "Kyoto heavy rain for Inari, 36 mm. Tokyo heavy 12:00 to 18:00, easing for the fireworks.",
+   "gmm": "14–36",
+   "read": "Kyoto heaviest 06:00 to 12:00. Tokyo rain from midday, steady light rain for the fireworks.",
    "chance": [
     [
      0,
      6,
-     40
+     30
     ],
     [
      6,
      12,
-     80
+     70
     ],
     [
      12,
@@ -1266,30 +1313,30 @@ h1 span{display:block;font-weight:300}
     [
      18,
      24,
-     70
+     80
     ]
    ],
    "mmBars": [
     [
      6,
      12,
-     3
+     1
     ],
     [
      12,
      18,
-     15
+     9
     ],
     [
      18,
      24,
-     0.8
+     4
     ]
    ],
    "temps": {
     "est": true
    },
-   "tnote": "Rain chance and millimetres from tenki.jp's 6-hour blocks for Tokyo, issued 22:00 Tue 20. Temperature shape estimated from the forecast high and low.",
+   "tnote": "Rain chance and millimetres from tenki.jp's 6-hour blocks for Tokyo, issued 17:00 Wed 21. Temperature shape estimated from the forecast high and low.",
    "watch": true
   },
   {
@@ -1298,13 +1345,13 @@ h1 span{display:block;font-weight:300}
    "leg": "g",
    "where": "Gardens and Ginza",
    "title": "Gardens, then Ginza",
-   "icon": "part",
-   "hi": 25,
+   "icon": "cloud",
+   "hi": 22,
    "lo": 16,
-   "rain": 40,
-   "cond": "Cloud with sunny spells",
+   "rain": 45,
+   "cond": "Cloudy",
    "sunset": "16:55",
-   "call": "Dry. tenki.jp has cloud with sunny spells, 20% through the day and no measurable rain, and the Global Forecasting Model agrees at 0 mm. Good for the East Gardens in the morning. Keep the sumo as a backup only. 25°.",
+   "call": "Probably dry. tenki.jp has cloud, 30 to 40% and no measurable rain, and the Global Forecasting Model 0 mm, though JMA and Weathernews are at 60%. Fine for the East Gardens, with the sumo still the wet-morning backup. 22°.",
    "plan": [
     [
      "09:15",
@@ -1320,15 +1367,15 @@ h1 span{display:block;font-weight:300}
    "src": [
     [
      "Combined",
-     "40% chance of rain, tenki.jp weighted highest"
+     "45% chance of rain, tenki.jp weighted highest"
     ],
     [
      "tenki.jp, Tokyo (Shibuya)",
-     "25° / 16°, cloud with sunny spells, 20 to 30%, 0 mm"
+     "22° / 16°, cloudy, 30 to 40%, 0 mm"
     ],
     [
      "Japan Meteorological Agency, Tokyo (official)",
-     "22° / 17°, 50%, confidence C"
+     "23° / 17°, 60%, confidence C"
     ],
     [
      "Weathernews, Shibuya",
@@ -1344,26 +1391,26 @@ h1 span{display:block;font-weight:300}
     ]
    ],
    "mm": "0 mm on tenki.jp",
-   "gicon": "part",
-   "gfill": 40,
-   "gtext": "40%",
+   "gicon": "cloud",
+   "gfill": 45,
+   "gtext": "45%",
    "gmm": "0",
-   "read": "Cloud with sunny spells, dry. Gardens look good.",
+   "read": "Cloudy, probably dry. Gardens on.",
    "chance": [
     [
      0,
      6,
-     30
+     40
     ],
     [
      6,
      12,
-     20
+     30
     ],
     [
      12,
      18,
-     20
+     40
     ],
     [
      18,
@@ -1389,7 +1436,7 @@ h1 span{display:block;font-weight:300}
    "rain": 65,
    "cond": "Cloudy morning, rain from midday",
    "sunset": "16:55",
-   "call": "Dry morning for teamLab at 08:30, which is indoors anyway. Rain from midday, 80% on tenki.jp, about 3 mm in the afternoon and 4 mm in the evening. Champi's remnant passes near Tsushima, far to the west, early that morning, and this rain is the front ahead of it. Zōjō-ji may be damp; a quiet afternoon at the hotel suits it. Umbrellas for Shimbashi.",
+   "call": "Wet, and now from the morning. tenki.jp has 70% all day, about 2 mm in the morning, 4 mm in the afternoon and 3 mm in the evening, and JMA 70% with high confidence. The 07:50 walk to Azabudai Hills may be in light rain, so a taxi is the easy option. teamLab is indoors. Zōjō-ji will be damp, and a quiet afternoon at the hotel suits it. Champi's remnant passes near Tsushima, far to the west, that afternoon.",
    "plan": [
     [
      "08:30",
@@ -1414,11 +1461,11 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "tenki.jp, Tokyo (Shibuya)",
-     "20° / 19°, cloudy, then rain, 80%, 7 mm: 3 mm 12:00 to 18:00, 4 mm 18:00 to 24:00"
+     "20° / 19°, cloudy, then rain, 70%, 9 mm: 2 mm 06:00 to 12:00, 4 mm 12:00 to 18:00, 3 mm 18:00 to 24:00"
     ],
     [
      "Japan Meteorological Agency, Tokyo (official)",
-     "24° / 17°, 40%, confidence C"
+     "20° / 17°, 70%, confidence A"
     ],
     [
      "Weathernews, Shibuya",
@@ -1433,39 +1480,44 @@ h1 span{display:block;font-weight:300}
      "22° / 19°, cloudy and humid, afternoon rain"
     ]
    ],
-   "mm": "About 7 mm, from midday",
+   "mm": "About 9 mm, from the morning",
    "gicon": "rain",
    "gfill": 65,
    "gtext": "65%",
-   "gmm": "7",
-   "read": "Dry morning for teamLab. Rain from midday, about 7 mm.",
+   "gmm": "9",
+   "read": "Rain at times all day, about 9 mm. Taxi to teamLab.",
    "chance": [
     [
      6,
      12,
-     40
+     70
     ],
     [
      12,
      18,
-     80
+     70
     ],
     [
      18,
      24,
-     80
+     70
     ]
    ],
    "mmBars": [
     [
+     6,
+     12,
+     2
+    ],
+    [
      12,
      18,
-     3
+     4
     ],
     [
      18,
      24,
-     4
+     3
     ]
    ],
    "temps": {
@@ -1513,7 +1565,7 @@ h1 span{display:block;font-weight:300}
     ],
     [
      "tenki.jp, Tokyo (Shibuya), Haneda morning",
-     "21° / 17°, cloudy, 40%, 0 mm"
+     "23° / 16°, rain overnight, about 2 mm, clearing by 06:00, 40%"
     ]
    ],
    "mm": "Not forecast yet",
@@ -1675,7 +1727,7 @@ h1 span{display:block;font-weight:300}
    "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
   }
  ],
- "typhoon": "<h4>Typhoons<\/h4><p>Champi is a large, violent typhoon: 900 hPa, winds of 60 m/s gusting 85 m/s, east of the Philippines at 03:00 Wed 21, moving west at 30 km/h. JMA's 03:45 track has it south of Okinawa on Thu 22 (905 to 940 hPa), near the Sakishima Islands early Sat 24 (965 hPa), then north across the East China Sea (985 hPa early Sun 25) and north-east past Tsushima, between Kyushu and Korea, early Mon 26 as a weak 998 hPa system moving at 35 km/h. It doesn't come near Kyoto or Tokyo, but its moisture feeds Saturday's heavy rain, and the front ahead of it brings Monday afternoon's rain to Tokyo. The Shinkansen should run normally. The Hong Kong Observatory has Hong Kong fine, dry and very hot to Sat 24, then sunny spells with a shower or two. JMA's next update is due about 09:45 today.<\/p><p class=\"backup\"><b>Backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24.<\/b> King Privilege Room, booked direct on the Mercure website. If the typhoon threatens the Sat 24 Shinkansen, take a Nozomi to Tokyo on Fri 23 instead and stay here (check-in 14:00, check-out 11:00), then move to the Blossom Hibiya nearby on Sat 24. <b>Cancel it on the Mercure website by 18:00 Japan time on Thu 22 if not needed. Free until then.<\/b><\/p>",
+ "typhoon": "<h4>Typhoons<\/h4><p>Champi is a large, violent typhoon: 900 hPa, winds of 60 m/s gusting 85 m/s, east of the Philippines at 15:00 Wed 21, moving west-northwest at 25 km/h. JMA's 15:45 track has it south of Okinawa on Thu 22 (925 hPa), about 120 km south of Yonaguni on Fri 23 (950 hPa), then north into the East China Sea on Sat 24 (975 hPa) and Sun 25 (990 hPa), becoming an extratropical low off Tsushima, between Kyushu and Korea, by 15:00 Mon 26 (996 hPa). It doesn't come near Kyoto or Tokyo, but its moisture feeds Saturday's heavy rain and Monday's rain. The Shinkansen should run normally. The Hong Kong Observatory has Hong Kong fine, dry and very hot to Sat 24, then sunny spells with a shower or two. JMA's next update is due about 21:45 tonight.<\/p><p class=\"backup\"><b>Backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24.<\/b> King Privilege Room, booked direct on the Mercure website. If the typhoon threatens the Sat 24 Shinkansen, take a Nozomi to Tokyo on Fri 23 instead and stay here (check-in 14:00, check-out 11:00), then move to the Blossom Hibiya nearby on Sat 24. <b>Cancel it on the Mercure website by 18:00 Japan time on Thu 22 if not needed. Free until then.<\/b><\/p>",
  "sources": [
   [
    "tenki.jp (Japan Weather Association), Shibuya",
@@ -1787,54 +1839,54 @@ h1 span{display:block;font-weight:300}
    "Day and night rain amounts block automated reading. The monthly calendar is used instead."
   ]
  ],
- "verdict": "Nara sunny until 15:00, rain from 16:00. Thursday dry. Friday evening wet.<br>Saturday is heavy rain, wettest at Inari. Champi stays west of mainland Japan.",
+ "verdict": "Osaka sunny all day tomorrow. Friday dry.<br>Saturday heavy rain in Kyoto, wet fireworks in Tokyo. Monday wet.",
  "watch": [
-  {
-   "d": 21,
-   "dow": "Wed",
-   "title": "Nara walk down, from about 16:00",
-   "risk": "Sunny and 30° until 15:00, light rain from 16:00. Thunder possible.",
-   "decide": "On the day",
-   "act": "Umbrellas out from 16:00. Water for the heat"
-  },
   {
    "d": 24,
    "dow": "Sat",
-   "title": "Fushimi Inari 07:15, fireworks 17:30",
-   "risk": "Kyoto heavy rain overnight and all morning, about 24 mm before noon. Tokyo heavy 12:00 to 18:00, easing to light by the fireworks. A front, not the typhoon.",
-   "decide": "Fri 23",
-   "act": "Decide on a short Inari or skip. Raincoats. Mercure backup not needed for the typhoon"
+   "title": "Bamboo grove or Inari, then fireworks 17:30",
+   "risk": "Kyoto 13 mm from 06:00 to 12:00. Tokyo 9 mm from 12:00 to 18:00, then about 4 mm over the fireworks. A front, not the typhoon.",
+   "decide": "Thu 22, 18:00",
+   "act": "Raincoats. Mercure backup not needed for the typhoon"
+  },
+  {
+   "d": 26,
+   "dow": "Mon",
+   "title": "teamLab 08:30, Zōjō-ji",
+   "risk": "Rain at times from the morning, about 9 mm. JMA 70%, high confidence.",
+   "decide": "Sun 25",
+   "act": "Taxi to Azabudai Hills"
   },
   {
    "d": 27,
    "dow": "Tue",
    "title": "Haneda 10:10 to Hong Kong",
-   "risk": "Champi now passes near Tsushima early Mon 26 as a weak 998 hPa system, heading north-east away from Tokyo. Haneda morning cloudy and dry. Hong Kong: sunny spells, a shower or two.",
+   "risk": "Champi is an extratropical low off Tsushima by Mon 26 afternoon, far from Tokyo. Rain clears before the 06:45 taxi. Hong Kong: sunny spells, a shower or two.",
    "decide": "Sun 25",
    "act": "Check CX543 the day before"
   }
  ],
- "sinceLabel": "Since the last check, Tue 20 Oct 22:30",
+ "sinceLabel": "Since the last check, Wed 21 Oct 05:40",
  "since": [
   [
-   "Wed 21",
-   "Nara: sunny to 15:00, <b>light rain from 16:00<\/b>, an hour earlier"
-  ],
-  [
-   "Sat 24",
-   "Kyoto <s>29 mm<\/s> → <b>36 mm<\/b>, 24 mm before noon. Tokyo unchanged, <b>easing for the fireworks<\/b>"
+   "Thu 22",
+   "Osaka <b>sunny all day<\/b>, 24°, clear for the light show"
   ],
   [
    "Fri 23",
-   "Evening <s>40%<\/s> → <b>70%<\/b>. Umbrellas for Gion"
+   "Evening <s>70%<\/s> → <b>30%, dry<\/b> on tenki.jp"
   ],
   [
-   "No. 30",
-   "Champi at <b>900 hPa<\/b>. Track now <b>north-east past Tsushima<\/b> early Mon 26, 998 hPa"
+   "Sat 24",
+   "Tokyo evening <s>under 1 mm<\/s> → <b>about 4 mm<\/b> over the fireworks. Kyoto 13 mm 06:00 to 12:00"
   ],
   [
    "Mon 26",
-   "Rain from midday, <b>80%<\/b>, about 7 mm"
+   "Rain <b>from the morning<\/b>, 9 mm, JMA confidence A"
+  ],
+  [
+   "No. 30",
+   "Champi at 900 hPa, <b>extratropical off Tsushima<\/b> by Mon 26 afternoon"
   ]
  ],
  "method": {
@@ -1931,7 +1983,7 @@ h1 span{display:block;font-weight:300}
    ]
   ]
  },
- "notes_check": "tenki.jp issues 05:00 Wed 21 for Shibuya, Kyoto and Nara hourly. JMA Kyoto 05:00 Wed 21, Tokyo 17:00 Tue 20. Typhoon track from JMA, 03:45 Wed 21."
+ "notes_check": "tenki.jp issues 17:00 Wed 21 for Osaka hourly, Kyoto and Shibuya. JMA 17:00 Wed 21. Typhoon track from JMA, 15:45 Wed 21."
 }</script>
 
 <script>
