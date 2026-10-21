@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 10:50
+- Times can only be changed in Edit mode. Tapping a time opens the phone's time picker, so the format stays HH:MM.
+- Edit pill moved in from the right edge (24px).
+
 ## 21 Oct 09:55
 - How-to 31: Kyoto Station, bags and the train to Nara, step by step (gates, Crosta B1, Kintetsu ticket and the Kashiharajingū-mae warning, Nara exit, coming back, to the hotel). Linked from the Wed 21 10:00, 10:15, 10:40 and 16:45 rows. Google Maps URLs in how-tos now show as links.
 
