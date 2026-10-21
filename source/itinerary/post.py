@@ -136,9 +136,19 @@ script = r'''
  // ---------- ticks, notes, editable times, quick add (saved on this device)
  var TK=store('jt-ticks-v1')||{},NT=store('jt-notes-v1')||{};
  var IN=store('jt-inotes-v1')||{},TM=store('jt-times-v1')||{},AD=store('jt-adds-v1')||{},RM=store('jt-removed-v1')||{},OR=store('jt-order-v1')||{};
+ var EA=store('jt-edit-at-v1')||{};
+ function touched(d){EA[d]=Date.now();store('jt-edit-at-v1',EA)}
+ (function(){var ch=false;document.querySelectorAll('article.day[data-synced]').forEach(function(a){var d=a.id.slice(1),syn=+a.dataset.synced;if((EA[d]||0)>syn)return;
+   var pre=d+'|',any=false;
+   [TK,IN,TM,RM].forEach(function(o){Object.keys(o).forEach(function(k){if(k.indexOf(pre)===0){delete o[k];any=true}})});
+   (AD[d]||[]).forEach(function(x){delete TK['add|'+x.id];delete IN['add|'+x.id];any=true});if(AD[d]){delete AD[d];any=true}
+   Object.keys(OR).forEach(function(k){if(k.indexOf('d'+d+'|')===0){delete OR[k];any=true}});
+   if(NT[d]){delete NT[d];any=true}
+   if(any){delete EA[d];ch=true}});
+  if(ch){store('jt-ticks-v1',TK);store('jt-inotes-v1',IN);store('jt-times-v1',TM);store('jt-removed-v1',RM);store('jt-adds-v1',AD);store('jt-order-v1',OR);store('jt-notes-v1',NT);store('jt-edit-at-v1',EA)}})();
  var BIN='<svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
  function olId(ol){var a=ol.closest('article.day'),L=[].slice.call(a.querySelectorAll('ol.rows'));return a.id+'|'+L.indexOf(ol)}
- function saveOrder(ol){OR[olId(ol)]=[].slice.call(ol.querySelectorAll(':scope > li.row')).map(function(li){return li.dataset.k});store('jt-order-v1',OR)}
+ function saveOrder(ol){OR[olId(ol)]=[].slice.call(ol.querySelectorAll(':scope > li.row')).map(function(li){return li.dataset.k});store('jt-order-v1',OR);var ar=ol.closest('article.day');if(ar)touched(ar.id.slice(1))}
  function applyOrder(ol){var o=OR[olId(ol)];if(!o)return false;var L=[].slice.call(ol.querySelectorAll(':scope > li.row')),pos={};o.forEach(function(k,i){pos[k]=i});L.map(function(li,i){return {li:li,p:(li.dataset.k in pos)?pos[li.dataset.k]:o.length+i}}).sort(function(a,b){return a.p-b.p}).forEach(function(x){ol.appendChild(x.li)});return true}
  function timeWins(ol){if(OR[olId(ol)]){delete OR[olId(ol)];store('jt-order-v1',OR)}sortOl(ol,true)}
  function flash(li){li.classList.add('moved');setTimeout(function(){li.classList.remove('moved')},900)}
@@ -162,22 +172,22 @@ script = r'''
    var ti=document.createElement('input');ti.type='time';ti.className='tvi';ti.setAttribute('aria-label','Change the time');
    function hm(v){var m=/^(\d{1,2}):(\d{2})/.exec(v||'');return m?('0'+m[1]).slice(-2)+':'+m[2]:''}ti.value=hm(cur);tv.appendChild(ti);
    function commit(){var v=hm(ti.value);
-    if(ad){if(!v||v===ad.t)return;ad.t=v;tx.textContent=v;store('jt-adds-v1',AD)}
-    else{var was=TM[k]||t0;if(!v||v===hm(t0)){delete TM[k];tx.textContent=t0;ti.value=hm(t0)}else{TM[k]=v;tx.textContent=v}if((TM[k]||t0)===was)return;tv.classList.toggle('ed',!!TM[k]);store('jt-times-v1',TM)}
+    if(ad){if(!v||v===ad.t)return;ad.t=v;tx.textContent=v;store('jt-adds-v1',AD);touched(d)}
+    else{var was=TM[k]||t0;if(!v||v===hm(t0)){delete TM[k];tx.textContent=t0;ti.value=hm(t0)}else{TM[k]=v;tx.textContent=v}if((TM[k]||t0)===was)return;tv.classList.toggle('ed',!!TM[k]);store('jt-times-v1',TM);touched(d)}
     timeWins(li.parentNode);flash(li)}
    ti.addEventListener('blur',function(){setTimeout(commit,50)});ti.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();ti.blur()}})}
   var s=document.createElement('span');s.className='tk';s.innerHTML='<button type="button" class="tkmv" aria-label="Drag to move">&#10303;</button><button type="button" data-v="y" aria-label="Done">&#10003;</button><button type="button" data-v="n" aria-label="Skipped">&#10007;</button><button type="button" class="tkn" aria-expanded="false" aria-label="Note">&#9998; Note</button>'+'<button type="button" class="tkbin" aria-label="Remove from the itinerary">'+BIN+'</button>';w.appendChild(s);s.querySelector('.tkmv').addEventListener('pointerdown',function(e){startDrag(li,this,e)});
   var nb=s.querySelector('.tkn'),nw=document.createElement('div');nw.className='inote';nw.hidden=true;nw.innerHTML='<textarea rows="5" placeholder="Note for this one"></textarea>';w.appendChild(nw);var nta=nw.querySelector('textarea'),ntm;nta.value=IN[k]||'';
   var inv=document.createElement('p');inv.className='inv';w.insertBefore(inv,s);function mark(){var t=nta.value.trim();nb.classList.toggle('has',!!t);inv.textContent=t;inv.hidden=!t}mark();
   nb.onclick=function(e){e.stopPropagation();nw.hidden=!nw.hidden;nb.setAttribute('aria-expanded',!nw.hidden);if(!nw.hidden)nta.focus()};
-  nta.oninput=function(){clearTimeout(ntm);ntm=setTimeout(function(){if(nta.value.trim())IN[k]=nta.value;else delete IN[k];store('jt-inotes-v1',IN);mark()},300)};
+  nta.oninput=function(){clearTimeout(ntm);ntm=setTimeout(function(){if(nta.value.trim())IN[k]=nta.value;else delete IN[k];store('jt-inotes-v1',IN);mark();touched(d)},300)};
   var v=TK[k]==='-'?'':(TK[k]||(li.classList.contains('is-d')?'y':''));paint(li,v);
   s.onclick=function(e){var b=e.target.closest('button');if(!b)return;
    if(b.classList.contains('tkmv'))return;
    if(b.classList.contains('tkbin')){var cf=w.querySelector('.tkc');if(cf){cf.remove();return}cf=document.createElement('div');cf.className='tkc';cf.innerHTML='<span>Remove this from the day?</span><button type="button" class="tkyes">Remove</button><button type="button" class="tkno">Cancel</button>';s.insertAdjacentElement('afterend',cf);
     cf.querySelector('.tkno').onclick=function(){cf.remove()};
-    cf.querySelector('.tkyes').onclick=function(){cf.remove();if(ad){AD[d]=(AD[d]||[]).filter(function(x){return x!==ad});store('jt-adds-v1',AD);delete TK[k];delete IN[k];store('jt-ticks-v1',TK);store('jt-inotes-v1',IN);li.remove()}else{RM[k]=1;store('jt-removed-v1',RM);li.hidden=true;li.classList.add('rmv')}var ar=document.querySelector('article.day#d'+d);ar&&ar.dispatchEvent(new Event('jtrm'))};return}
-   if(!b.dataset.v)return;var cv=li.classList.contains('tk-y')?'y':li.classList.contains('tk-n')?'n':'';var nv=cv===b.dataset.v?'':b.dataset.v;TK[k]=nv||'-';paint(li,nv);store('jt-ticks-v1',TK)}}
+    cf.querySelector('.tkyes').onclick=function(){cf.remove();if(ad){AD[d]=(AD[d]||[]).filter(function(x){return x!==ad});store('jt-adds-v1',AD);touched(d);delete TK[k];delete IN[k];store('jt-ticks-v1',TK);store('jt-inotes-v1',IN);li.remove()}else{RM[k]=1;store('jt-removed-v1',RM);touched(d);li.hidden=true;li.classList.add('rmv')}var ar=document.querySelector('article.day#d'+d);ar&&ar.dispatchEvent(new Event('jtrm'))};return}
+   if(!b.dataset.v)return;var cv=li.classList.contains('tk-y')?'y':li.classList.contains('tk-n')?'n':'';var nv=cv===b.dataset.v?'':b.dataset.v;TK[k]=nv||'-';paint(li,nv);store('jt-ticks-v1',TK);touched(d)}}
  function addRow(d,ol,ad){var li=document.createElement('li');li.className='row added';
   li.innerHTML='<span class="t">'+esc(ad.t)+'</span><div class="w"><p class="p">'+esc(ad.a)+' <span class="tag tag-add">Added</span></p>'+(ad.n?'<p class="n">'+esc(ad.n)+'</p>':'')+'</div>';
   ol.appendChild(li);setupRow(d,li,'add|'+ad.id,ad);return li}
@@ -195,12 +205,12 @@ script = r'''
   qb.onclick=function(){qf.hidden=false;qb.hidden=true;qf.t.focus()};
   qa.querySelector('.qac').onclick=function(){qf.reset();qf.hidden=true;qb.hidden=false};
   qf.onsubmit=function(e){e.preventDefault();var ad={id:Date.now().toString(36),t:qf.t.value.trim(),a:qf.a.value.trim(),n:qf.n.value.trim()};if(!ad.t||!ad.a)return;
-   (AD[d]=AD[d]||[]).push(ad);store('jt-adds-v1',AD);var li=addRow(d,last,ad);timeWins(last);qf.reset();qf.hidden=true;qb.hidden=false;li.classList.add('moved');li.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){li.classList.remove('moved')},900)};
+   (AD[d]=AD[d]||[]).push(ad);store('jt-adds-v1',AD);touched(d);var li=addRow(d,last,ad);timeWins(last);qf.reset();qf.hidden=true;qb.hidden=false;li.classList.add('moved');li.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(function(){li.classList.remove('moved')},900)};
   var n=document.createElement('div');n.className='dnotes';
   n.innerHTML='<label for="dn-'+d+'">Notes for the day</label><textarea id="dn-'+d+'" placeholder="What happened, what to change, what to remember"></textarea><div class="dnb"><button type="button" class="dnc">Copy for Claude</button><button type="button" class="dnchat">Copy and chat</button><button type="button" class="dnsh">Share</button><span class="dns" aria-live="polite"></span></div>';
   qa.parentNode.insertBefore(n,qa.nextSibling);
   var ta=n.querySelector('textarea'),st=n.querySelector('.dns'),tm;ta.value=NT[d]||'';
-  ta.oninput=function(){clearTimeout(tm);tm=setTimeout(function(){NT[d]=ta.value;store('jt-notes-v1',NT);st.textContent='Saved on this device'},400)};
+  ta.oninput=function(){clearTimeout(tm);tm=setTimeout(function(){NT[d]=ta.value;store('jt-notes-v1',NT);touched(d);st.textContent='Saved on this device'},400)};
   function text(){var L=[a.querySelector('.dow').firstChild.textContent+' '+d+' Oct: '+a.querySelector('h3').textContent];
    a.querySelectorAll('ol.rows > li.row').forEach(function(li){var x=li.classList.contains('tk-y')?'[done]':li.classList.contains('tk-n')?'[skipped]':'[ ]';var tv=li.querySelector('.tv'),tt=tv?tv.textContent.trim():((li.querySelector('.t')||{}).textContent||''),t0=li.dataset.t0;
     if(li.classList.contains('rmv'))x='[removed]';L.push((li.classList.contains('added')?'[added] ':'')+x+' '+tt+(t0&&tt!==t0?' (was '+t0+')':'')+' '+ptext(li));
@@ -316,6 +326,12 @@ def _go_article(m):
         return li
     return re.sub(r'<li class="row[^"]*">.*?</li>', _row, art, flags=re.S)
 out = re.sub(r'<article class="day[^"]*" id="d(\d+)".*?</article>', _go_article, out, flags=re.S)
+_sg = {}; exec(open('sync_data.py', encoding='utf-8').read(), _sg)
+from datetime import datetime as _dt
+for _d, _t in _sg['SYNCED'].items():
+    _ms = int(_dt.fromisoformat(_t).timestamp() * 1000)
+    out = re.sub(r'(<article class="day[^"]*" id="d%d")' % _d, r'\1 data-synced="%d"' % _ms, out, count=1)
+
 print('directions:', _gon)
 # 21 Oct: map URLs written into how-to steps become links
 out = re.sub(r'(<section class="decide block" id="h\d+">.*?</section>)', lambda m: re.sub(r'(?<![="\'])(https://www\.google\.com/maps/[^\s<]+)', r'<a href="\1" target="_blank" rel="noopener">Google Maps</a>', m.group(1)), out, flags=re.S)

@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 22 Oct 06:50
+- Auto-clear after sync: source/itinerary/sync_data.py stamps each day folded into the master (SYNCED). On open, the app clears that day's on-device edits (ticks, notes, times, added, removed, order, day notes) if they were last changed before the stamp. Edits made after the stamp are kept. Wed 21 and earlier days are stamped. Update the stamp every time a paste is applied.
+
 ## 22 Oct 00:30
 - Thu 22 rebuilt: 07:30 JR to Tennōji, 08:45 Shitennō-ji flea market (22nd of the month), 10:30 Shinsekai, 11:00 kushikatsu at Daruma, 12:00 Midōsuji to Namba (Enjoy Eco Card), 12:15 Rikuro cheesecake and 551 Hōrai, 12:45 Namba Yasaka, 13:30 KOMEHYO Shinsaibashi, 14:45 takoyaki and a sit-down, 16:15 Umeda Sky at sunset, 17:45 back to Namba, 18:15 Dōtonbori and the Tombori cruise, 18:45 okonomiyaki at Mizuno and Hōzenji, 20:00 taxi to the castle, 20:30 light show, 21:15 taxi to JR Osaka and home. Morning castle walk, Horie and Amerikamura browsing and Kuromon dropped. Directions on every item. New cards: Shitennō-ji, Daruma, Rikuro, 551 Hōrai, KOMEHYO, Kukuru.
 
