@@ -326,3 +326,8 @@ for _o, _v in _new.items():
 D[21]['rows'] = [x for x in D[21]['rows'] if not (x[0] == '17:45' and x[1].startswith('Walk to sequence'))]
 _r = D[21]['rows']; _i = _row(21, '18:00')
 _r.insert(_i, R('17:45', 'Kyoto Station building', 'Quick look at the lit staircase on the way through, or skip it in the rain.'))
+# 21 Oct 11:34: bags sent from Crosta to the hotel, arriving 17:00. No collection at the station.
+_r = D[21]['rows']
+_i = _row(21, '10:15'); _r[_i] = R('10:15', 'Bags sent to the hotel from Crosta Kyoto', 'Delivered to sequence KYOTO GOJO by 17:00.', DN)
+_i = _row(21, '17:00'); _r[_i] = R('17:00', 'Kintetsu back to Kyoto', 'Limited express about 35 minutes, Express (急行) on Suica about 45. Kyoto about 17:40. No bags to collect: they are at the hotel.', *_r[_i][3:])
+_i = _row(21, '18:00'); _r[_i] = R('18:00', 'To sequence KYOTO GOJO, check in', 'The bags are waiting there. One subway stop to Gojō, or 15 minutes on foot up Karasuma-dōri, or a short taxi in the rain.', *_r[_i][3:])
