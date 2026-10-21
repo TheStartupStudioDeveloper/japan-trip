@@ -75,6 +75,7 @@ article.day header.dh{position:relative;padding-right:7.5rem}
 .qabtn{display:flex;gap:.5rem}
 .inote textarea,.dnotes textarea,.qaf input,.qaf textarea{outline:none!important;box-shadow:none}.inote textarea{border-width:2.5px!important}.dnotes textarea:focus,.qaf input:focus,.qaf textarea:focus{border-width:2.5px!important;border-color:var(--ink)!important}
 #jtmode{position:fixed;right:calc(24px + env(safe-area-inset-right));bottom:calc(14px + env(safe-area-inset-bottom));z-index:15;appearance:none;-webkit-appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:700 .85rem/1 var(--body);padding:.7rem 1rem;border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.18);cursor:pointer}#jtmode.on{background:var(--ink);color:var(--paper)}@media print{#jtmode{display:none}}.inv{margin:.35rem 0 0;font-size:.85rem;font-style:italic;color:var(--ink);white-space:pre-wrap}.inv::before{content:'Note: ';font-style:normal;font-weight:700}body:not(.jt-clean) .inv{display:none}.jt-clean .tk,.jt-clean .inote,.jt-clean .qadd,.jt-clean .dnotes{display:none!important}.jt-clean .tv{border-color:transparent!important;padding-left:0;padding-right:0;min-width:0;text-align:left;pointer-events:none}@media (min-width:640px){.row .inv{grid-column:2/-1}}
+.gob{display:block;margin:.45rem 0 0;appearance:none;-webkit-appearance:none;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:600 .68rem/1.1 var(--body);padding:.3rem .35rem;cursor:pointer;white-space:nowrap;text-decoration:none}.gob[aria-expanded="true"]{background:var(--ink);color:var(--paper)}.gobox{margin:.6rem 0 .3rem;border-left:3px solid var(--ink);padding:.15rem 0 .15rem .75rem}.gobox[hidden]{display:none}.gobox ol{margin:0;padding-left:1.1rem;display:grid;gap:.4rem;font-size:.9rem;line-height:1.4}.gobox a{font-weight:700;text-decoration:underline;margin-right:.7rem;white-space:nowrap}@media (min-width:640px){.row .gobox{grid-column:2/-1}}@media print{.gob{display:none}}
 .inote{margin:.6rem 0 .75rem}.inote[hidden]{display:none}
 .tv{position:relative;display:inline-block;cursor:pointer;border:1.5px dashed var(--ink);padding:.1rem .3rem;min-width:3.2rem;text-align:center;font-variant-numeric:tabular-nums}.tv:focus-within{background:var(--ink);color:var(--paper);border-style:solid}.tvi{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;margin:0;padding:0;font-size:16px;cursor:pointer;-webkit-appearance:none;appearance:none}.jt-clean .tvi{display:none!important}.tv.ed{border-style:solid;border-width:2px}@media (min-width:640px){.row .tk,.row .inote{grid-column:2/-1;justify-self:stretch}.row .tk{justify-self:start}.row.added{padding-left:.6rem;padding-right:.6rem}}@media print{.tk,.inote,.qadd,.dnotes,.tv{border:0!important}.tk,.inote,.qadd,.dnotes{display:none!important}}.tk button{flex:0 0 auto}
 .inote textarea{width:100%;min-height:8.5rem;box-sizing:border-box;font:400 1rem/1.45 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:.4rem .5rem;border-radius:0;resize:vertical}
@@ -122,6 +123,7 @@ script = r'''
  window.addEventListener('resize',function(){if(cur)cur.querySelectorAll('.mwin').forEach(function(w){w.redraw&&w.redraw()})});
  document.querySelectorAll('article.day').forEach(function(a){var d=a.id.slice(1);if(!document.getElementById('dm-'+d))return;
   var hd=a.querySelector('header.dh');if(!hd)return;var b=document.createElement('button');b.type='button';b.className='dmapb';b.innerHTML='&#10530; Route map';b.setAttribute('aria-label','Open the route map for this day');b.onclick=function(){openMap(d)};hd.appendChild(b)});
+ document.addEventListener('click',function(e){var g=e.target.closest('.gob');if(!g)return;e.preventDefault();var bx=document.getElementById(g.getAttribute('aria-controls'));if(!bx)return;bx.hidden=!bx.hidden;g.setAttribute('aria-expanded',bx.hidden?'false':'true')});
  // ---------- clean / edit mode (saved on this device, clean by default)
  (function(){var m;try{m=localStorage.getItem('jt-mode')}catch(e){}var ed=m==='edit';document.body.classList.toggle('jt-clean',!ed);
   var b=document.createElement('button');b.type='button';b.id='jtmode';
@@ -143,7 +145,7 @@ script = r'''
   var tmr=setInterval(function(){if(lastY<80)scrollBy(0,-14);else if(lastY>innerHeight-80)scrollBy(0,14);else return;place(lastY)},30);
   function up(){clearInterval(tmr);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',up);li.classList.remove('dragging');saveOrder(ol);flash(li)}
   window.addEventListener('pointermove',move,{passive:true});window.addEventListener('pointerup',up);window.addEventListener('pointercancel',up)}
- function rowKey(d,li){var t=(li.querySelector('.t')||{}).textContent||'',p=ptext(li).slice(0,40);return d+'|'+t+'|'+p}
+ function rowKey(d,li){var te=li.querySelector('.t'),t='';if(te){var c=te.cloneNode(true);c.querySelectorAll('.gob').forEach(function(x){x.remove()});t=c.textContent}p=ptext(li).slice(0,40);return d+'|'+t+'|'+p}
  function paint(li,v){li.classList.toggle('tk-y',v==='y');li.classList.toggle('tk-n',v==='n');li.querySelectorAll('.tk button[data-v]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===v?'true':'false')})}
  function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
  function mins(t){var m=/^(\d{1,2})[:.](\d{2})/.exec(t||'');if(!m)return NaN;var h=+m[1];if(h<4)h+=24;return h*60+ +m[2]}
@@ -257,6 +259,38 @@ def _mv(m):
     li = li.replace(' ' + tg, '').replace(tg, '')
     return re.sub(r'(<span class="t">[^<]*)(</span>)', lambda x: x.group(1) + x.group(2).replace('</span>', '') + '<br><span class="tag tag-d tdn">Done</span></span>', li, count=1)
 out = re.sub(r'<li class="row[^"]*">.*?</li>', _mv, out, flags=re.S)
+
+# 21 Oct: Directions button (ⓘ) under the time, with a drop-down of steps, from directions_data.py
+_g = {}; exec(open('directions_data.py', encoding='utf-8').read(), _g); _GO = _g['GO']
+def _steps_html(steps):
+    def one(x):
+        x = H.escape(x)
+        x = re.sub(r'(https://www\.google\.com/maps/[^\s<]+)', r'<a href="\1" target="_blank" rel="noopener">Google Maps</a>', x)
+        x = re.sub(r'(https://maps\.apple\.com/[^\s<]+)', r'<a href="\1" target="_blank" rel="noopener">Apple Maps</a>', x)
+        return '<li>' + x + '</li>'
+    return '<ol>' + ''.join(one(x) for x in steps) + '</ol>'
+_gon = 0
+def _go_article(m):
+    global _gon
+    day = int(m.group(1)); art = m.group(0); items = _GO.get(day)
+    if not items: return art
+    used = set()
+    def _row(rm):
+        global _gon
+        li = rm.group(0)
+        pm = re.search(r'<p class="p">(.*?)</p>', li, re.S)
+        title = H.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', pm.group(1)))).strip() if pm else ''
+        for i, (k, steps) in enumerate(items):
+            if i in used: continue
+            if title.startswith(k) or k in title:
+                used.add(i); _gon += 1; bid = 'go%d' % _gon
+                li = li.replace('</span><div class="w">', '<button type="button" class="gob" aria-expanded="false" aria-controls="%s">&#9432; Directions</button></span><div class="w">' % bid, 1)
+                li = li[:li.rfind('</div></li>')] + '<div class="gobox" id="%s" hidden>%s</div></div></li>' % (bid, _steps_html(steps))
+                break
+        return li
+    return re.sub(r'<li class="row[^"]*">.*?</li>', _row, art, flags=re.S)
+out = re.sub(r'<article class="day[^"]*" id="d(\d+)".*?</article>', _go_article, out, flags=re.S)
+print('directions:', _gon)
 # 21 Oct: map URLs written into how-to steps become links
 out = re.sub(r'(<section class="decide block" id="h\d+">.*?</section>)', lambda m: re.sub(r'(?<![="\'])(https://www\.google\.com/maps/[^\s<]+)', r'<a href="\1" target="_blank" rel="noopener">Google Maps</a>', m.group(1)), out, flags=re.S)
 open(OUT, 'w', encoding='utf-8').write(out)

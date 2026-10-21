@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 21 Oct 12:05
+- ⓘ Directions button under the time on items with directions, in Clean and Edit modes. Tap to drop down numbered steps (exits, gates, turns, landmarks, timings, taxi option, Google and Apple Maps links). Data in source/itinerary/directions_data.py (GO, keyed by day and the start of the item title). Wed 21 done from lunch to the evening options.
+
 ## 21 Oct 11:50
 - Wed 21 Nara: plan kept. Taxi options added (station rank, Kasuga Taisha, Tōdai-ji gate, GO app). Rain now from about 15:00; Nigatsu-dō skip in rain.
 
