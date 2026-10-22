@@ -484,3 +484,18 @@ for _i, _x in enumerate(D[22]['rows']):
 # Thu 22 16:14: Hōzenji Yokochō back in as its own item, after dark, before the castle.
 D[22]['rows'].append(R('19:00', 'Hōzenji Yokochō, lit up', 'The stone lane with lanterns, one street south of the Dōtonbori main street near Nakaza Cuidaore. Splash water on the moss-covered Mizukake Fudō. A minute from Mizuno, so pair it with dinner.'))
 D[22]['rows'].sort(key=lambda x: x[0])
+# Thu 22 19:47: Glico done, at Hōzenji Yokochō now. Evening pushed about 35 minutes; castle and Umeda Sky still on.
+for _i, _x in enumerate(D[22]['rows']):
+    if _x[1].startswith('Free time'):
+        D[22]['rows'][_i] = R('15:30', _x[1], _x[2], DN)
+_set('Hōzenji Yokochō', '19:45')
+_set('Taxi to Osaka Castle', '20:05', 'About 15 to 20 minutes, about ¥1,800. Ask for Ōsaka-jō, Ōtemon (大阪城 大手門). Then about 10 minutes on foot to the keep.')
+_set('Osaka Castle light show', '20:30', 'Free projection mapping on the south face of the keep. About six minutes, repeating until 22:00. Standing only. Watch one or two rounds.')
+_set('Taxi to Umeda Sky', '21:00', 'Taxi rank on the road outside Ōtemon. About 15 to 20 minutes, about ¥2,000. Ask for Umeda Sky Building (梅田スカイビル).')
+_set('Umeda Sky deck at night', '21:20', 'Tickets at the counter about ¥2,000. Last entry about 22:00, closes 22:30. The open-air roof deck over the city lights. Drop it if the castle runs over.')
+_set('Walk to JR Osaka', '22:00', 'About 15 minutes on foot. Special rapid to Kyoto, about 30 minutes, then one subway stop to Gojō. Back about 22:50.')
+D[22]['rows'].sort(key=lambda x: x[0])
+D[22]['notes'] = [
+ ('Running late', 'Drop Umeda Sky first. Protect the castle light show (runs until 22:00).'),
+ ('Walking', 'About 10 km with the taxis.'),
+ ('Left out', 'The morning castle walk, Daruma kushikatsu, Kuromon Market and the Horie browsing.')]

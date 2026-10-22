@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 19:50
+- Thu 22 evening retimed about 35 minutes later: Hōzenji 19:45, taxi to the castle 20:05, light show 20:30, Umeda Sky 21:20, home about 22:50. Free-time block ticked.
+
 ## 22 Oct 16:45
 - Place card buttons (Photos, Google Maps, Apple Maps) on one row.
 - Google Maps search now uses the Japanese name plus the English search text, for more accurate pins.
