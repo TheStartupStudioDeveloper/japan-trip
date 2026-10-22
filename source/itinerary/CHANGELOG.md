@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 21:15
+- Walked to Temmabashi instead. Home on the Keihan limited express to Shichijō, then taxi.
+
 ## Thu 22 Oct 20:55
 - Clear directions home: castle exit via Gokuraku-bashi and Aoyamon, Loop line outer loop to Osaka, special rapid, Karasuma line to Gojō. Added under ⓘ.
 

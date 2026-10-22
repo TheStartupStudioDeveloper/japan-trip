@@ -234,3 +234,12 @@ GO[22] += [
   maps('Kyoto Station', 'transit', 'r'),
  ]),
 ]
+GO[22] += [
+ ('Keihan line to Kyoto', [
+  'At Temmabashi, follow the green Keihan (京阪) signs, not the Osaka Metro ones. Tap Suica.',
+  'Platform for 京都・出町柳方面 (Kyoto, Demachiyanagi). Take the 特急 (limited express, red sign). About 45 minutes.',
+  'Get off at 七条 (Shichijō). The limited express does not stop at Kiyomizu-Gojō.',
+  'Up to street level, take a taxi: "sequence KYOTO GOJO, Gojō Karasuma", about 5 minutes. Or walk about 18 minutes.',
+  maps('sequence KYOTO GOJO Gojo Karasuma'),
+ ]),
+]

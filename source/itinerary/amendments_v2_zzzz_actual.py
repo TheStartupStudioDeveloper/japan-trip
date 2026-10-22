@@ -536,3 +536,10 @@ D[22]['notes'] = [
 _set('Walk to JR Osakajōkōen station', '20:50', 'Leave the keep by the north side over Gokuraku-bashi (極楽橋), turn right along the moats, out through Aoyamon gate (青屋門), then east past Osaka-jō Hall to JR 大阪城公園駅. About 15 minutes. Directions under ⓘ.')
 _set('JR Loop line to Osaka', '21:05', '1. Platform for 京橋・大阪方面 (outer loop, 外回り), 4 stops to Osaka, about 10 minutes. 2. At Osaka, stay inside the gates, follow 京都線 signs (usually platform 7 or 8) and take the 新快速 to 京都, about 30 minutes. 3. At Kyoto, Karasuma subway toward 国際会館, one stop to Gojō. 4. Exit for Karasuma-dōri, 2 to 3 minutes to the hotel. All on Suica.')
 _set('Back at the hotel', '22:15', 'sequence KYOTO GOJO.')
+# Thu 22 21:13: walked out to Temmabashi instead. Home on the Keihan line, no changes.
+D[22]['rows'] = [x for x in D[22]['rows'] if not any(x[1].startswith(t) for t in ('Walk to JR Osakajōkōen', 'JR Loop line to Osaka'))]
+D[22]['rows'] += [
+ R('20:50', 'Walk to Temmabashi', 'From the castle out to Temmabashi station.', DN),
+ R('21:15', 'Keihan line to Kyoto', '1. Keihan Temmabashi (京阪 天満橋), platform for 京都・出町柳 (Kyoto, Demachiyanagi). 2. Take the 特急 (limited express), about 45 minutes, to 七条 (Shichijō). 3. Taxi about 5 minutes, about ¥800, or walk 18 minutes west along Shichijō then up Karasuma. All on Suica.'),
+]
+D[22]['rows'].sort(key=lambda x: x[0])
