@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 20:18
+- Bucket list ticked (all but the Tombori cruise). Taxi note: first taxi went to Tsūtenkaku. Light show 20:40, Umeda Sky 21:30, home about 22:50.
+
 ## Thu 22 Oct 19:52
 - Hōzenji Yokochō skipped. Taxi to the castle 19:50, light show 20:15, Umeda Sky 21:05, home about 22:30.
 

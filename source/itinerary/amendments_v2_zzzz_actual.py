@@ -507,3 +507,14 @@ _set('Taxi to Umeda Sky', '20:45')
 _set('Umeda Sky deck at night', '21:05')
 _set('Walk to JR Osaka', '21:45', 'About 15 minutes on foot. Special rapid to Kyoto, about 30 minutes, then one subway stop to Gojō. Back about 22:30.')
 D[22]['rows'].sort(key=lambda x: x[0])
+# Thu 22 20:16: bucket list all done except the Tombori cruise. First taxi went to Tsūtenkaku by mistake; second taxi to the castle now.
+for _i, _x in enumerate(D[22]['rows']):
+    if _x[1].startswith('Free time'):
+        D[22]['rows'][_i] = R('15:30', _x[1], _x[2] + ' Done: all except the Tombori River Cruise.', DN)
+    if _x[1].startswith('Taxi to Osaka Castle'):
+        D[22]['rows'][_i] = R('19:50', _x[1], _x[2] + ' Note: the first taxi went to Tsūtenkaku (the Hitachi tower) by mistake. Second taxi from Shinsekai about 20:15.', DN)
+_set('Osaka Castle light show', '20:40')
+_set('Taxi to Umeda Sky', '21:10')
+_set('Umeda Sky deck at night', '21:30')
+_set('Walk to JR Osaka', '22:05', 'About 15 minutes on foot. Special rapid to Kyoto, about 30 minutes, then one subway stop to Gojō. Back about 22:50.')
+D[22]['rows'].sort(key=lambda x: x[0])
