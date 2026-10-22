@@ -430,3 +430,8 @@ def _set(title_start, t, txt=None):
 _set('Kushikatsu lunch', '12:15', 'Osaka\'s fried skewers. No double-dipping in the shared sauce.')
 _set('Rikuro cheesecake', '13:15', "The jiggly cheesecake: take the freshly baked line for a warm one. 551 Hōrai's pork buns are a minute away. Suitcase: Bic Camera Namba is close by for a quick look, buy later.")
 D[22]['rows'].sort(key=lambda x: x[0])
+# Thu 22 12:53: skipped Daruma. Straight to Namba from Janjan-Yokochō.
+D[22]['rows'] = [x for x in D[22]['rows'] if not x[1].startswith('Kushikatsu lunch')]
+_set('Shinsekai', '11:45')
+_set('Midōsuji line to Namba', '12:55', 'Walk Janjan-Yokochō away from Tsūtenkaku to the end of the covered lane: the Dōbutsuen-mae stairs (red M, 動物園前) are at the junction. Buy the Enjoy Eco Card, about ¥820, then two stops towards Umeda to Namba.')
+D[22]['rows'].sort(key=lambda x: x[0])

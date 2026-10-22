@@ -108,7 +108,8 @@ GO[22] = [
   maps('Kushikatsu Daruma Shinsekai Sohonten'),
  ]),
  ('Midōsuji line to Namba', [
-  'Dōbutsuen-mae station (動物園前) is at the south end of Janjan-Yokochō. Take the red Midōsuji line (御堂筋線) towards Umeda / Shin-Osaka, two stops to Namba (なんば).',
+  'Walk Janjan-Yokochō away from Tsūtenkaku (tower behind you) to the end of the covered lane. The Dōbutsuen-mae (動物園前) subway stairs, red M sign, are at the junction. About 3 minutes.',
+  'Take the red Midōsuji line (御堂筋線) towards Umeda / Shin-Osaka, two stops to Namba (なんば).',
   'Buy the Enjoy Eco Card at the ticket machine (English menu), about ¥820. Use it for every metro ride today.',
  ]),
  ('Rikuro cheesecake', [
