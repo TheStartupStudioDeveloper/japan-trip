@@ -631,3 +631,11 @@ D[24]['rows'] = [
  R('10:15', 'Back to the hotel, finish packing', ''),
  R('10:45', 'Check out, taxi to Kyoto Station', 'About 5 minutes with the bags in the rain. Walking is 15 minutes in the dry (How-to 16).'),
 ] + _aft
+
+# Thu 22 23:18: the Big 5 starred: bamboo grove, Golden Pavilion, Fushimi Inari, Kiyomizu-dera, Yasaka Pagoda.
+_BIG5 = ('Bamboo grove', 'Kinkaku-ji', 'Fushimi Inari', 'Kiyomizu-dera', 'Yasaka Pagoda')
+for _i, _x in enumerate(D[23]['rows']):
+    if _x[1].startswith(_BIG5):
+        D[23]['rows'][_i] = R(_x[0], '★ ' + _x[1], *_x[2:])
+D[23]['notes'] = [('The Big 5 (★)', 'The bamboo grove, the Golden Pavilion, Fushimi Inari, Kiyomizu-dera and the Yasaka Pagoda. Protect these; everything else can bend.')] + D[23]['notes']
+D[23]['sum'] = 'The Big 5 in one easier day, about 7 km: the bamboo grove early, the Golden Pavilion, lunch and a long rest, Fushimi Inari, then Kiyomizu-dera at sunset and the Yasaka Pagoda at dusk. Gion, gyoza and Pontochō to finish.'

@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 23:20
+- Fri 23: the Big 5 starred (★) with a note: bamboo grove, Golden Pavilion, Fushimi Inari, Kiyomizu-dera, Yasaka Pagoda.
+
 ## Thu 22 Oct 22:50
 - Fri 23 lightened to about 7 km: start 07:30, bamboo one way into Tenryū-ji, Nijō moved to an optional Sat morning, lunch near the hotel at 11:30, rest 12:30 to 14:45, Inari short loop 15:00, taxi to Kiyomizu 16:00, Yasaka Shrine skipped, taxi Gion to Chao Chao.
 - Sat 24: optional Nijō palace at 08:45, breakfast after.
