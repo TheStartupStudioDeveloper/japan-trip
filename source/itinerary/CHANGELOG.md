@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 22 Oct 16:45
+- Place card buttons (Photos, Google Maps, Apple Maps) on one row.
+- Google Maps search now uses the Japanese name plus the English search text, for more accurate pins.
+
 ## 22 Oct 15:35
 - Thu 22: 15:30 to 19:30 is now one free-time block in Shinsaibashi, Amerikamura and Dōtonbori (KOMEHYO, street eats, Glico, Don Quijote ferris wheel, river cruise, Hōzenji, Mizuno dinner), with directions. Lion head, Rikuro and the metro marked done.
 
