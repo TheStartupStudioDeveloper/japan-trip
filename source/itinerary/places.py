@@ -871,3 +871,26 @@ P('karasuma', ['Karasuma-dōri'], 'Karasuma-dōri', '烏丸通',
   'The wide main avenue running north from Kyoto Station through the centre of the city. Your hotel is on it, at the Gojō crossing.', '', 'Karasuma-dori Kyoto')
 P('inari-st', ['to Inari', 'Inari'], 'JR Nara line to Inari', 'JR 奈良線 稲荷駅',
   'Inari is the second stop from Kyoto Station on the JR Nara line, about five minutes. The great red gate of Fushimi Inari stands directly opposite the station exit.', 'Local trains only stop here. Rapid trains pass through.', 'JR Inari Station Fushimi Inari')
+
+# 22 Oct 21:50: Fri 23 lunch options and Sat 24 breakfast options.
+P('tatsuichi', ['Soba Tatsuichi'], 'Soba Tatsuichi', '蕎麦 たつ市',
+  'Hand-made soba five minutes east of Nijō Castle. Cold soba with dipping sauce, or hot duck soba. Write your name on the list at the door; the wait is usually about 10 minutes.',
+  'Open 11:30 to 16:00 for lunch, every day.', 'Soba Tatsuichi Kyoto Nijo')
+P('sarashina', ['Sarashina'], 'Sarashina', '更科',
+  'A tiny family-run soba and udon shop south of Nijō, three generations in the kitchen. Locals come for the curry udon and the duck soba. Small, so a short wait at lunch.',
+  'Open 10:30 to 18:00, closed Sundays. Cash only.', 'Sarashina soba Sanbo Omiya Kyoto')
+P('nomura', ['Kyosaimi Nomura'], 'Kyosaimi Nomura', '京菜味のむら',
+  'Obanzai, Kyoto home-style cooking: a set of about a dozen small dishes with rice and miso, mostly vegetables, a few with egg, fish or pork. Order at the ticket machine. Small garden.',
+  'Open 07:00 to 14:00 every day. Karasuma-dōri, near Shijō.', 'Kyosaimi Nomura Karasuma Kyoto')
+P('arabica', ['% Arabica Arashiyama', '% Arabica'], '% Arabica Arashiyama', '% ARABICA 京都嵐山',
+  'The famous little coffee bar on the river, looking at Togetsukyō bridge. Takeaway only; sit on the riverbank.',
+  'Open 09:00 to 18:00. The queue grows fast after opening.', '% ARABICA Kyoto Arashiyama')
+P('inoda', ['Inoda Coffee'], 'Inoda Coffee, main shop', 'イノダコーヒ 本店',
+  'Kyoto\'s classic old coffee house, since 1940. The Kyoto breakfast set: ham, scrambled eggs, croissant, juice and coffee served with milk and sugar. Garden room.',
+  'Open 07:00 to 18:00 every day. About 10 minutes by taxi from the hotel.', 'Inoda Coffee Honten Kyoto')
+P('smart-coffee', ['Smart Coffee'], 'Smart Coffee', 'スマート珈琲店',
+  'A 1930s coffee shop in the Teramachi arcade, famous for thick pancakes, French toast and egg sandwiches. Strong coffee.',
+  'Open 08:00 to 19:00 every day. Expect a queue after 09:00.', 'Smart Coffee Teramachi Kyoto')
+P('udon-express', ['Breakfast Udon Express'], 'Breakfast Udon Express', '朝うどん',
+  'A kind older lady serves Kyoto-style udon for breakfast only, in a quiet room over a small garden. Light, warming, cheap.',
+  'Open 07:00 to 10:00 only, or until sold out. Near Shijō-Karasuma.', 'Breakfast Udon Express Kyoto')

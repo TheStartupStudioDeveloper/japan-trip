@@ -243,3 +243,94 @@ GO[22] += [
   maps('sequence KYOTO GOJO Gojo Karasuma'),
  ]),
 ]
+
+GO[23] = [
+ ('Taxi to the bamboo grove', [
+  'Taxi from the hotel door or the rank on Karasuma-dōri. Show: 嵐山 竹林の小径、野宮神社までお願いします (Arashiyama bamboo grove, to Nonomiya Shrine, please).',
+  'About 25 minutes, about ¥3,500. The bamboo path starts beside Nonomiya Shrine.',
+  maps('Nonomiya Shrine Arashiyama', 'driving', 'd'),
+ ]),
+ ('Bamboo grove', [
+  'From Nonomiya Shrine, walk west along the bamboo path, gently uphill, about 10 minutes to the Ōkōchi Sansō gate at the top.',
+  'Come back down the same way. Tenryū-ji\'s north gate is on the left (south) side of the path, about halfway.',
+  maps('Arashiyama Bamboo Grove'),
+ ]),
+ ('Tenryū-ji garden', [
+  'North gate on the bamboo path, opens 08:30. Buy the garden ticket at the gate.',
+  'Loop around the pond garden, then leave by the main gate on the east side onto the main street (Saga-Arashiyama main road).',
+  maps('Tenryuji Temple north gate'),
+ ]),
+ ('Togetsukyō bridge and % Arabica', [
+  'From Tenryū-ji\'s main gate turn right (south) down the main street, 5 minutes to the river.',
+  '% Arabica is on the riverbank just upstream (right) of the bridge, in a small white glass box.',
+  maps('% ARABICA Kyoto Arashiyama'),
+ ]),
+ ('Taxi to Kinkaku-ji', [
+  'Taxis wait along the main street near Togetsukyō. Show: 金閣寺までお願いします (Kinkaku-ji, please).',
+  'About 20 minutes, about ¥2,500.',
+  maps('Kinkakuji Temple Kyoto', 'driving', 'd'),
+ ]),
+ ('Taxi to Nijō Castle', [
+  'Taxis wait at the Kinkaku-ji bus and taxi area by the entrance. Show: 二条城 東大手門までお願いします (Nijō Castle, east main gate, please).',
+  'About 15 minutes, about ¥2,000. Tickets are just inside the east gate.',
+  maps('Nijo Castle Higashi Otemon', 'driving', 'd'),
+ ]),
+ ('Lunch: pick one', [
+  'Soba Tatsuichi: out of the east gate, cross Horikawa-dōri, walk east along Nijō-dōri, about 5 minutes. Write your name on the list at the door.',
+  maps('Soba Tatsuichi Kyoto'),
+  'Sarashina: from the east gate walk south down Horikawa then west on Sanjō, about 10 minutes. Cash only.',
+  maps('Sarashina soba Sanbo Omiya Kyoto'),
+  'Kyosaimi Nomura (to 14:00) and Ichiran Karasuma: taxi about 10 minutes toward the hotel, both near Shijō-Karasuma.',
+  maps('Kyosaimi Nomura Kyoto', 'driving', 'd'),
+  'Katsugyu Yodobashi: taxi about 15 minutes to Yodobashi Kyoto, 6F, opposite Kyoto Station.',
+ ]),
+ ('JR Nara line to Inari', [
+  'From the hotel: Karasuma subway one stop south to Kyoto, then follow JR signs. Or walk 15 minutes down Karasuma-dōri.',
+  'JR Nara line (奈良線) platforms 8 to 10, any train (local is fine), two stops to Inari (稲荷), about 5 minutes. All on Suica.',
+  'Out of Inari station, the big orange torii is straight across the road.',
+  maps('Fushimi Inari Taisha'),
+ ]),
+ ('Fushimi Inari', [
+  'Through the main gate and the shrine buildings, then into the Senbon Torii (thousand gates). Keep right where the path splits in two.',
+  'Yotsutsuji (四ツ辻) is the crossroads with the view over Kyoto, about 40 minutes up. Turn back there.',
+  'Short version: turn back at the Okusha Hōhaisho (奥社奉拝所), the shrine at the end of the first double row, about 15 minutes up.',
+ ]),
+ ('Keihan to Kiyomizu-Gojō', [
+  'From the shrine gate walk west down the main shopping street, 3 minutes, to Keihan Fushimi-Inari (伏見稲荷) station, across the level crossing.',
+  'Platform for 京都・出町柳 (toward Kyoto). Take the local (普通), 3 stops to 清水五条 (Kiyomizu-Gojō). The semi-express may skip Fushimi-Inari, so take the first that stops.',
+  'Up to Gojō-dōri. Taxi up to Kiyomizu-dera, about 5 minutes: 清水寺までお願いします. Or walk east up Gojōzaka, about 20 minutes uphill.',
+  maps('Kiyomizu-dera'),
+ ]),
+ ('Down through Sannenzaka', [
+  'Leave Kiyomizu down Kiyomizu-zaka, then turn right at the shop corner down the stone steps of Sannenzaka (三年坂).',
+  'At the bottom keep left onto Ninenzaka (二年坂). The Yasaka Pagoda is just off to the left.',
+  maps('Ninenzaka Kyoto'),
+ ]),
+ ('Yasaka shrine, then down into Gion', [
+  'From the pagoda, north along Nene-no-michi, past Kōdai-ji, into Maruyama Park and through to Yasaka Shrine.',
+  'Out of the shrine\'s west gate onto Shijō-dōri. Hanamikoji is the second lane on the left. Shirakawa is north across Shijō.',
+  maps('Yasaka Shrine Kyoto'),
+ ]),
+ ('Chao Chao gyoza', [
+  'West along Shijō-dōri over the Kamo River (Shijō Bridge), right up Kiyamachi-dōri along the little canal, about 15 minutes to Sanjō.',
+  maps('Chao Chao Sanjo Kiyamachi'),
+ ]),
+ ('Pontochō alley', [
+  'One lane west of the river, between Sanjō and Shijō. Enter from the Sanjō end, just south of Chao Chao, and walk south.',
+  'Taxi home from Shijō-dōri at the bottom, about 10 minutes: シークエンス京都五条 (sequence KYOTO GOJO), 五条烏丸.',
+  maps('Pontocho Kyoto'),
+ ]),
+]
+
+GO[24] = [
+ ('Slow breakfast', [
+  'Inoda Coffee: taxi about 10 minutes, or 15 minutes on foot up Karasuma then east on Sanjō. Sakaimachi-dōri, just south of Sanjō.',
+  maps('Inoda Coffee Honten Kyoto'),
+  'Smart Coffee: taxi about 10 minutes to the Teramachi arcade, near Sanjō. Covered arcade, good in the rain.',
+  maps('Smart Coffee Teramachi Kyoto'),
+  'Kyosaimi Nomura: 10 minutes on foot north up Karasuma-dōri, west side, just past Shijō.',
+  maps('Kyosaimi Nomura Kyoto'),
+  'Breakfast Udon Express: 12 minutes on foot north, just past Shijō-Karasuma. Before 10:00 only.',
+  maps('Breakfast Udon Express Kyoto'),
+ ]),
+]

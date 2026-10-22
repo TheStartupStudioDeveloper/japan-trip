@@ -1,5 +1,11 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 21:55
+- Thu 22: home on the Keihan from Temmabashi.
+- Fri 23 rebuilt west to east: bamboo grove 07:30 (taxi 07:00), Tenryū-ji, Togetsukyō and % Arabica, Kinkaku-ji, Nijō Castle, lunch options (Soba Tatsuichi, Sarashina, Kyosaimi Nomura, Ichiran, Katsugyu), optional hotel stop, Fushimi Inari 14:30, Kiyomizu-dera 16:45, Gion, Chao Chao, Pontochō. Directions for every leg.
+- Sat 24: sleep in, pack, slow breakfast options (Inoda, Smart Coffee, Kyosaimi Nomura, Breakfast Udon Express), check out 10:45.
+- New place cards for the lunch and breakfast spots.
+
 ## Thu 22 Oct 21:15
 - Walked to Temmabashi instead. Home on the Keihan limited express to Shichijō, then taxi.
 
