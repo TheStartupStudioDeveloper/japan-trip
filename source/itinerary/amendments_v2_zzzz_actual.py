@@ -435,3 +435,22 @@ D[22]['rows'] = [x for x in D[22]['rows'] if not x[1].startswith('Kushikatsu lun
 _set('Shinsekai', '11:45')
 _set('Midōsuji line to Namba', '12:55', 'Walk Janjan-Yokochō away from Tsūtenkaku to the end of the covered lane: the Dōbutsuen-mae stairs (red M, 動物園前) are at the junction. Buy the Enjoy Eco Card, about ¥820, then two stops towards Umeda to Namba.')
 D[22]['rows'].sort(key=lambda x: x[0])
+
+# Thu 22 14:42: Umeda Sky moved to last thing, at night, on the way to JR Osaka. Street eats slipped in before Dōtonbori.
+_k = next(i for i, x in enumerate(D[22]['rows']) if x[1].startswith('KOMEHYO'))
+D[22]['rows'] = D[22]['rows'][:_k+1] + [
+ R('15:15', 'Amerikamura and Triangle Park', 'Five minutes west of Shinsaibashi-suji. Street fashion, murals and street food. Takoyaki at Kōgaryū by Triangle Park.'),
+ R('16:00', 'Kuromon Market street eats', 'About 20 minutes on foot, or a short taxi. Wagyu skewers, tamagoyaki, fruit and mochi. Skip the big seafood platters. Most stalls wind down by about 17:00.'),
+ R('17:15', 'Dōtonbori as the lights come on', 'Sunset about 17:05. The Glico Running Man, takoyaki at Kukuru, and the Tombori River Cruise once it is dark (How-to 15). Suitcase: Don Quijote by the ferris wheel has cheap ones.'),
+ R('18:15', 'Hōzenji Yokochō', 'Two streets back. Stone lanes, lanterns and the moss-covered Mizukake Fudō. Splash a ladle of water on the statue.'),
+ R('18:30', 'Okonomiyaki dinner: Mizuno', 'Osaka\'s savoury pancake of pork and cabbage, cooked on the griddle. Open to 22:00.'),
+ R('19:30', 'Taxi to Osaka Castle', 'About 15 minutes, about ¥1,800. Ask for Ōsaka-jō, Ōtemon (大阪城 大手門).'),
+ R('19:45', 'Osaka Castle light show, SINFONIA', 'Free projection mapping on the south face of the keep. About six minutes, repeating until 22:00. Standing only.'),
+ R('20:30', 'Taxi to Umeda Sky', 'About 15 minutes, about ¥2,000. Ask for Umeda Sky Building (梅田スカイビル).'),
+ R('20:45', 'Umeda Sky deck at night', 'Tickets at the counter about ¥2,000, or book online to skip the line. Open to 22:00, go up by 21:30. The open-air roof deck over the city lights.'),
+ R('21:30', 'Walk to JR Osaka, special rapid home', 'About 15 minutes on foot. Special rapid to Kyoto, about 30 minutes, then one subway stop to Gojō. Back about 22:20.'),
+]
+D[22]['notes'] = [
+ ('Running late', 'Drop Kuromon first, then Amerikamura. Protect Dōtonbori at dusk, the light show and Umeda Sky by 21:30.'),
+ ('Walking', 'About 10 to 11 km with the taxis.'),
+ ('Left out', 'The morning castle walk, Daruma kushikatsu, and the Horie browsing.')]

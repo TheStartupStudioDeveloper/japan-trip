@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 22 Oct 14:50
+- Thu 22: Umeda Sky moved to last, at night (20:45), on the way to JR Osaka. New before Dōtonbori: 15:15 Amerikamura and Triangle Park (Kōgaryū takoyaki), 16:00 Kuromon Market street eats. Dōtonbori 17:15 as the lights come on, Hōzenji 18:15, Mizuno 18:30, taxi to the castle 19:30, light show 19:45, taxi to Umeda Sky 20:30, walk to JR Osaka 21:30, back about 22:20. New card: Kōgaryū.
+
 ## 22 Oct 12:15
 - Thu 22 retimed, about 70 minutes behind: flea market and Shinsekai done, Daruma 12:15, Namba 13:00, Rikuro and 551 13:15 (Bic Camera Namba suitcase look), lion head 13:45, KOMEHYO 14:15, takoyaki 15:30. From 16:15 Umeda Sky unchanged. Don Quijote suitcase note on Dōtonbori.
 

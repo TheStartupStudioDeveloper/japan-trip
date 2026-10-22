@@ -140,7 +140,7 @@ GO[22] = [
  ('Midōsuji line back to Namba', [
   'Walk back to Umeda station (梅田), Midōsuji line towards Namba / Tennōji, 4 stops, about 10 minutes.',
  ]),
- ('Dōtonbori and the Tombori', [
+ ('Dōtonbori as the lights', [
   'From Namba exit 14, walk north up Midōsuji to the canal, about 5 minutes.',
   'Tombori River Cruise tickets: the booth by the Don Quijote ferris wheel on the canal. Cruise about 20 minutes.',
   'Glico Running Man: best view from Ebisu Bridge.',
@@ -157,9 +157,36 @@ GO[22] = [
   'Metro instead: Sennichimae line Namba to Tanimachi 9-chōme, then Tanimachi line two stops to Tanimachi 4-chōme, then 15 minutes on foot.',
   maps('Osaka Castle Otemon Gate'),
  ]),
- ('Home: taxi to JR Osaka', [
+ ('Home: taxi to JR Osaka (old)', [
   'Walk back out to Ōtemon or the road by the Hōkoku shrine and take a taxi to JR Osaka station (大阪駅), about 15 minutes, about ¥2,000.',
   'Or walk 15 minutes north-east to JR Osakajōkōen station and take the Loop line to Osaka.',
   'At Osaka, JR Special Rapid (新快速) to Kyoto, about 30 minutes. Then the Karasuma subway one stop to Gojō, or a taxi.',
+ ]),
+]
+
+GO[22] += [
+ ('Amerikamura and Triangle Park', [
+  'From KOMEHYO, walk west across Midōsuji (the big boulevard), about 5 minutes. Triangle Park (三角公園) is the little triangular plaza at the centre of Amerikamura.',
+  'Kōgaryū takoyaki is on the corner by the park. Queue, then eat on the park steps.',
+  maps('Triangle Park Amerikamura Osaka'),
+ ]),
+ ('Kuromon Market street eats', [
+  'From Amerikamura, walk east along Dōtonbori to Sakaisuji, then south to Kuromon, about 20 minutes. Or a taxi, about 5 minutes: say "Kuromon Ichiba" (黒門市場).',
+  'Look for wagyu skewers, tamagoyaki, strawberries and fruit cups, and mochi. Prices on the boards. Many stalls close by about 17:00.',
+  maps('Kuromon Ichiba Market'),
+ ]),
+ ('Hōzenji Yokochō', [
+  'From Dōtonbori, walk south one street from the canal near Nakaza Cuidaore Building. Hōzenji Yokochō is the narrow stone-paved lane with lanterns.',
+  'Mizukake Fudō is the moss-covered statue at the temple. Take a ladle, splash water on it, make a wish.',
+  maps('Hozenji Yokocho Osaka'),
+ ]),
+ ('Taxi to Umeda Sky', [
+  'From the castle, walk back out to Ōtemon or the main road and wave down a taxi. Show "梅田スカイビル" (Umeda Sky Building). About 15 minutes.',
+ ]),
+ ('Walk to JR Osaka', [
+  'From the Umeda Sky Building, walk south-east through the underpass and past Grand Front Osaka to JR Osaka station (大阪駅), about 15 minutes.',
+  'JR Special Rapid (新快速) towards Kyoto, about 30 minutes. Check the board for 京都.',
+  'At Kyoto, Karasuma subway one stop to Gojō, or a short taxi.',
+  maps('JR Osaka Station'),
  ]),
 ]

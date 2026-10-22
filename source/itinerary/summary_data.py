@@ -14,7 +14,7 @@ LEGS = [
  dict(pat='k', kanji='京都', name='Kyoto, Nara and Osaka', leg='Leg 2', dates='Wed 21 to Sat 24 Oct', nights='3 nights', hotel='seq-k', sun='Sunset 17:10',
   days=[
    ('d21', 'Wed 21', [('Nozomi 07:55 to Kyoto, bags to Crosta', 'f'), ('Nara: kamameshi lunch, deer, Tōdai-ji', ''), ('Ramen, Kyoto Tower, massage or Pontochō', '')]),
-   ('d22', 'Thu 22', [('Flea market, Shinsekai, kushikatsu', ''), ('Namba snacks, KOMEHYO, Umeda Sky sunset', ''), ('Dōtonbori, okonomiyaki, castle light show', '')]),
+   ('d22', 'Thu 22', [('Flea market, Shinsekai, kushikatsu', ''), ('Namba snacks, KOMEHYO, Amemura and Kuromon eats', ''), ('Dōtonbori, castle light show, Umeda Sky at night', '')]),
    ('d23', 'Fri 23', [('Fushimi Inari 07:00, Kinkaku-ji', ''), ('Beef cutlet lunch, Kiyomizu-dera 15:30', ''), ('Gion, gyoza, Pontochō', '')]),
   ],
   shift=['Thu 22 and Fri 23 can swap. Thursday is Jidai Matsuri day in Kyoto.', 'Nara can finish early if you are done.'],

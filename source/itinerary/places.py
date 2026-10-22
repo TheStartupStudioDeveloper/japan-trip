@@ -815,6 +815,9 @@ P('komehyo', ['KOMEHYO Shinsaibashi', 'KOMEHYO'], 'KOMEHYO Osaka Shinsaibashi', 
 P('kukuru', ['Takoyaki', 'Kukuru'], 'Takoyaki Kukuru, Dōtonbori', 'たこ家道頓堀くくる',
   'Dōtonbori\'s best-known takoyaki: octopus balls with big pieces of octopus, under the giant octopus sign. Several good stands line the canal.',
   'Most Dōtonbori takoyaki stands open from about 11:00. Let them cool: the inside is molten.', 'Takoyaki Kukuru Dotonbori')
+P('kogaryu', ['Kōgaryū'], 'Kōgaryū takoyaki, Amerikamura', '甲賀流 アメリカ村本店',
+  'A takoyaki stand by Triangle Park famous for its mayonnaise-heavy takoyaki and a constant line of locals.',
+  'Walk-in, eat standing or on the park steps. Let them cool first.', 'Kogaryu Takoyaki Amerikamura')
 P('sakuragicho', ['Sakuragichō'], 'Sakuragichō', '桜木町',
   'The railway station for Yokohama\'s Minato Mirai waterfront. The Air Cabin cable car leaves from just outside.', '', 'Sakuragicho Station Yokohama')
 P('yamanote', ['JR Yamanote', 'Yamanote line', 'Yamanote'], 'JR Yamanote line', '山手線',
