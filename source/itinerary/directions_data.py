@@ -190,3 +190,15 @@ GO[22] += [
   maps('JR Osaka Station'),
  ]),
 ]
+
+GO[22] += [
+ ('Free time: Shinsaibashi', [
+  'Don Quijote and the ferris wheel: on the north bank of the Dōtonbori canal, about 2 minutes east of Ebisu Bridge (the Glico sign bridge). Walk along the canal-side boardwalk. The yellow oval ferris wheel is on the front of the building.',
+  maps('Don Quijote Dotonbori'),
+  'Tombori River Cruise: the pier is right below Don Quijote on the canal. Buy tickets at the booth there, about 20 minutes.',
+  'KOMEHYO: up the Shinsaibashi-suji covered arcade, 2-1-23. Amerikamura: across Midōsuji to the west, Triangle Park at the centre.',
+  maps('KOMEHYO Osaka Shinsaibashi'),
+  'Mizuno okonomiyaki: on the Dōtonbori main street, a few minutes east of Ebisu Bridge. Hōzenji Yokochō is two streets south.',
+  maps('Okonomiyaki Mizuno Dotonbori'),
+ ]),
+]

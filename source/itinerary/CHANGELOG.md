@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 22 Oct 15:35
+- Thu 22: 15:30 to 19:30 is now one free-time block in Shinsaibashi, Amerikamura and Dōtonbori (KOMEHYO, street eats, Glico, Don Quijote ferris wheel, river cruise, Hōzenji, Mizuno dinner), with directions. Lion head, Rikuro and the metro marked done.
+
 ## 22 Oct 14:50
 - Thu 22: lion head 14:50, KOMEHYO 15:30, Amerikamura vintage and retro streets 16:30, then Dōtonbori 17:15 as before. Kuromon dropped (closes about 17:00).
 

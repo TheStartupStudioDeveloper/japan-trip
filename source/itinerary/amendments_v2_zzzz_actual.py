@@ -466,3 +466,13 @@ D[22]['notes'] = [
  ('Running late', 'Shorten KOMEHYO first, then Amerikamura. Protect Dōtonbori at dusk, the light show and Umeda Sky by 21:30.'),
  ('Walking', 'About 10 km with the taxis.'),
  ('Left out', 'The morning castle walk, Daruma kushikatsu, Kuromon Market and the Horie browsing.')]
+# Thu 22 15:34: free time in Namba, Shinsaibashi and Dōtonbori until the castle.
+_set('Namba Yasaka Shrine', '14:50')
+for _i, _x in enumerate(D[22]['rows']):
+    if _x[1].startswith('Namba Yasaka Shrine') or _x[1].startswith('Rikuro') or _x[1].startswith('Midōsuji line to Namba'):
+        D[22]['rows'][_i] = R(*_x[:3], DN)
+_keep = [x for x in D[22]['rows'] if not any(x[1].startswith(t) for t in ('KOMEHYO', 'Amerikamura', 'Dōtonbori as the lights', 'Hōzenji', 'Okonomiyaki dinner'))]
+_i = next(i for i, x in enumerate(_keep) if x[1].startswith('Taxi to Osaka Castle'))
+D[22]['rows'] = _keep[:_i] + [
+ R('15:30', 'Free time: Shinsaibashi, Amerikamura and Dōtonbori', 'Shopping, street eats and the lights coming on at sunset (about 17:05). Ideas: KOMEHYO (to 20:00), Amerikamura and Kōgaryū takoyaki, the Glico Running Man from Ebisu Bridge, takoyaki at Kukuru, Don Quijote with the ferris wheel (cheap suitcases), the Tombori River Cruise once dark (How-to 15), Hōzenji Yokochō, and okonomiyaki at Mizuno for dinner (open to 22:00). Taxi to the castle about 19:30.'),
+] + _keep[_i:]
