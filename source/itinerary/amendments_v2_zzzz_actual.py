@@ -481,3 +481,6 @@ for _i, _x in enumerate(D[22]['rows']):
     if _x[1].startswith('Free time'):
         D[22]['rows'][_i] = R('15:30', 'Free time: the Dōtonbori bucket list',
          'Any order. 1. The Glico Running Man from Ebisu Bridge. 2. Don Quijote ferris wheel, Ebisu Tower: ¥1,000, about 15 minutes, best after dark. 3. Tombori River Cruise, about 20 minutes, once it is dark. 4. Okonomiyaki dinner at Mizuno, the best in Osaka, open to 22:00. 5. Takoyaki at Kukuru under the giant octopus. 6. The big signs: the moving Kani Dōraku crab and the Kuidaore Tarō drummer. 7. Hōzenji Yokochō and the mossy Mizukake Fudō. 8. KOMEHYO, to 20:00. 9. Amerikamura and Kōgaryū takoyaki. 10. A cheap suitcase at Don Quijote. Taxi to the castle about 19:30.')
+# Thu 22 16:14: Hōzenji Yokochō back in as its own item, after dark, before the castle.
+D[22]['rows'].append(R('19:00', 'Hōzenji Yokochō, lit up', 'The stone lane with lanterns, one street south of the Dōtonbori main street near Nakaza Cuidaore. Splash water on the moss-covered Mizukake Fudō. A minute from Mizuno, so pair it with dinner.'))
+D[22]['rows'].sort(key=lambda x: x[0])
