@@ -499,3 +499,11 @@ D[22]['notes'] = [
  ('Running late', 'Drop Umeda Sky first. Protect the castle light show (runs until 22:00).'),
  ('Walking', 'About 10 km with the taxis.'),
  ('Left out', 'The morning castle walk, Daruma kushikatsu, Kuromon Market and the Horie browsing.')]
+# Thu 22 19:50: skipped Hōzenji Yokochō, taxi to the castle now.
+D[22]['rows'] = [x for x in D[22]['rows'] if not x[1].startswith('Hōzenji Yokochō')]
+_set('Taxi to Osaka Castle', '19:50')
+_set('Osaka Castle light show', '20:15')
+_set('Taxi to Umeda Sky', '20:45')
+_set('Umeda Sky deck at night', '21:05')
+_set('Walk to JR Osaka', '21:45', 'About 15 minutes on foot. Special rapid to Kyoto, about 30 minutes, then one subway stop to Gojō. Back about 22:30.')
+D[22]['rows'].sort(key=lambda x: x[0])

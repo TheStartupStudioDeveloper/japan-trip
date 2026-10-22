@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 19:52
+- Hōzenji Yokochō skipped. Taxi to the castle 19:50, light show 20:15, Umeda Sky 21:05, home about 22:30.
+
 ## Thu 22 Oct 19:50
 - Thu 22 evening retimed about 35 minutes later: Hōzenji 19:45, taxi to the castle 20:05, light show 20:30, Umeda Sky 21:20, home about 22:50. Free-time block ticked.
 
