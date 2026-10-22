@@ -639,3 +639,19 @@ for _i, _x in enumerate(D[23]['rows']):
         D[23]['rows'][_i] = R(_x[0], '★ ' + _x[1], *_x[2:])
 D[23]['notes'] = [('The Big 5 (★)', 'The bamboo grove, the Golden Pavilion, Fushimi Inari, Kiyomizu-dera and the Yasaka Pagoda. Protect these; everything else can bend.')] + D[23]['notes']
 D[23]['sum'] = 'The Big 5 in one easier day, about 7 km: the bamboo grove early, the Golden Pavilion, lunch and a long rest, Fushimi Inari, then Kiyomizu-dera at sunset and the Yasaka Pagoda at dusk. Gion, gyoza and Pontochō to finish.'
+
+# Fri 23 07:43: leaving the hotel at 08:00. Morning shifted about 30 minutes; rest is shorter, afternoon unchanged.
+def _set23(title_start, t, txt=None):
+    for _i, _x in enumerate(D[23]['rows']):
+        if _x[1].startswith(title_start):
+            D[23]['rows'][_i] = R(t, _x[1], txt if txt is not None else _x[2], *_x[3:]); return
+_set23('Taxi to the bamboo grove', '08:00', 'About 25 minutes, about ¥3,500. Show the driver 嵐山 竹林の小径、野宮神社 (Arashiyama bamboo grove, Nonomiya Shrine). Or the JR Sagano line from Kyoto to Saga-Arashiyama, about 40 minutes door to door, about ¥450 for two.')
+_set23('★ Bamboo grove', '08:25')
+_set23('Tenryū-ji garden', '08:55')
+_set23('Togetsukyō bridge', '09:40')
+_set23('Taxi to Kinkaku-ji', '10:05')
+_set23('★ Kinkaku-ji', '10:25')
+_set23('Taxi to lunch', '11:15')
+_set23('Lunch: pick one', '11:45')
+_set23('Hotel, feet up', '12:45', 'A rest, about two hours. Change for the evening.')
+D[23]['rows'].sort(key=lambda x: x[0])

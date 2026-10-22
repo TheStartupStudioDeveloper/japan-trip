@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 07:45
+- Leaving the hotel at 08:00: bamboo grove 08:25, Tenryū-ji 08:55, Arabica 09:40, Kinkaku-ji 10:25, lunch 11:45, rest 12:45. Afternoon unchanged.
+
 ## Thu 22 Oct 23:20
 - Fri 23: the Big 5 starred (★) with a note: bamboo grove, Golden Pavilion, Fushimi Inari, Kiyomizu-dera, Yasaka Pagoda.
 
