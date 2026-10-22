@@ -454,3 +454,15 @@ D[22]['notes'] = [
  ('Running late', 'Drop Kuromon first, then Amerikamura. Protect Dōtonbori at dusk, the light show and Umeda Sky by 21:30.'),
  ('Walking', 'About 10 to 11 km with the taxis.'),
  ('Left out', 'The morning castle walk, Daruma kushikatsu, and the Horie browsing.')]
+# Thu 22 14:45: left Bic Camera Namba. Lion head next, then KOMEHYO, then Amerikamura's vintage and retro streets. Kuromon dropped (stalls close about 17:00).
+_r22 = D[22]['rows']
+_set('Rikuro cheesecake', '13:15')
+_set('Namba Yasaka Shrine', '14:50', 'The giant lion head. About 10 minutes on foot west of Namba. Ten minutes there is enough. Closes about 17:00.')
+_set('KOMEHYO Shinsaibashi', '15:30', 'The flagship pre-owned luxury store, several floors. Open 11:00 to 20:00. About 15 minutes on foot from Namba Yasaka, or a taxi. Passports for tax-free.')
+_set('Amerikamura and Triangle Park', '16:30', 'Five minutes west of KOMEHYO across Midōsuji. Vintage and retro shops, street fashion, murals and street food. Takoyaki at Kōgaryū by Triangle Park.')
+D[22]['rows'] = [x for x in D[22]['rows'] if not x[1].startswith('Kuromon Market')]
+D[22]['rows'].sort(key=lambda x: x[0])
+D[22]['notes'] = [
+ ('Running late', 'Shorten KOMEHYO first, then Amerikamura. Protect Dōtonbori at dusk, the light show and Umeda Sky by 21:30.'),
+ ('Walking', 'About 10 km with the taxis.'),
+ ('Left out', 'The morning castle walk, Daruma kushikatsu, Kuromon Market and the Horie browsing.')]

@@ -1,6 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
 ## 22 Oct 14:50
+- Thu 22: lion head 14:50, KOMEHYO 15:30, Amerikamura vintage and retro streets 16:30, then Dōtonbori 17:15 as before. Kuromon dropped (closes about 17:00).
+
+## 22 Oct 14:50
 - Thu 22: Umeda Sky moved to last, at night (20:45), on the way to JR Osaka. New before Dōtonbori: 15:15 Amerikamura and Triangle Park (Kōgaryū takoyaki), 16:00 Kuromon Market street eats. Dōtonbori 17:15 as the lights come on, Hōzenji 18:15, Mizuno 18:30, taxi to the castle 19:30, light show 19:45, taxi to Umeda Sky 20:30, walk to JR Osaka 21:30, back about 22:20. New card: Kōgaryū.
 
 ## 22 Oct 12:15
