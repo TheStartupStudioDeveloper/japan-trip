@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## 22 Oct 12:15
+- Thu 22 retimed, about 70 minutes behind: flea market and Shinsekai done, Daruma 12:15, Namba 13:00, Rikuro and 551 13:15 (Bic Camera Namba suitcase look), lion head 13:45, KOMEHYO 14:15, takoyaki 15:30. From 16:15 Umeda Sky unchanged. Don Quijote suitcase note on Dōtonbori.
+
 ## 22 Oct 06:50
 - Auto-clear after sync: source/itinerary/sync_data.py stamps each day folded into the master (SYNCED). On open, the app clears that day's on-device edits (ticks, notes, times, added, removed, order, day notes) if they were last changed before the stamp. Edits made after the stamp are kept. Wed 21 and earlier days are stamped. Update the stamp every time a paste is applied.
 

@@ -404,3 +404,29 @@ D[22]['notes'] = [
  ('Walking', 'About 11 to 12 km with the two taxis. Skipping Umeda Sky saves about 2.5 km.'),
  ('Left out', 'The morning castle walk, the Horie and Amerikamura browsing, and Kuromon Market.')]
 D[22]['foot'] = ''
+# Thu 22 12:13: arrived at Daruma 12:12, about 70 minutes behind. Same plan, afternoon retimed; Umeda Sky still for sunset.
+_r = D[22]['rows']
+_i = _row(22, '07:30'); _r[_i] = R(*_r[_i][:3], DN)
+_i = _row(22, '08:45'); _r[_i] = R(*_r[_i][:3], DN)
+_new = [
+ ('10:30', '11:45', None, DN),
+ ('11:00', '12:15', None, None),
+ ('12:00', '13:00', None, None),
+ ('12:15', '13:15', "The jiggly cheesecake: take the freshly baked line for a warm one. 551 Hōrai's pork buns are a minute away. Suitcase: Bic Camera Namba is close by for a quick look, buy later.", None),
+ ('12:45', '13:45', None, None),
+ ('13:30', '14:15', None, None),
+ ('14:45', '15:30', 'Octopus balls at Kukuru or any of the stands on the canal. A shorter sit-down today, leave by 16:10 for Umeda.', None),
+]
+for _o, _t, _txt, _st in _new:
+    _i = _row(22, _o); _x = _r[_i]
+    _r[_i] = R(_t, _x[1], _txt if _txt is not None else _x[2], *( [_st] if _st else list(_x[3:]) ))
+_i = _row(22, '18:15'); _x = _r[_i]
+_r[_i] = R(_x[0], _x[1], _x[2] + ' Suitcase: Don Quijote by the ferris wheel has cheap ones. The taxis can take it.', *_x[3:])
+# fix the retime by title (time lookups collided)
+def _set(title_start, t, txt=None):
+    for _i, _x in enumerate(D[22]['rows']):
+        if _x[1].startswith(title_start):
+            D[22]['rows'][_i] = R(t, _x[1], txt if txt is not None else _x[2], *_x[3:]); return
+_set('Kushikatsu lunch', '12:15', 'Osaka\'s fried skewers. No double-dipping in the shared sauce.')
+_set('Rikuro cheesecake', '13:15', "The jiggly cheesecake: take the freshly baked line for a warm one. 551 Hōrai's pork buns are a minute away. Suitcase: Bic Camera Namba is close by for a quick look, buy later.")
+D[22]['rows'].sort(key=lambda x: x[0])
