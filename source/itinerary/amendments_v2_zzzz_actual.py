@@ -476,3 +476,8 @@ _i = next(i for i, x in enumerate(_keep) if x[1].startswith('Taxi to Osaka Castl
 D[22]['rows'] = _keep[:_i] + [
  R('15:30', 'Free time: Shinsaibashi, Amerikamura and Dōtonbori', 'Shopping, street eats and the lights coming on at sunset (about 17:05). Ideas: KOMEHYO (to 20:00), Amerikamura and Kōgaryū takoyaki, the Glico Running Man from Ebisu Bridge, takoyaki at Kukuru, Don Quijote with the ferris wheel (cheap suitcases), the Tombori River Cruise once dark (How-to 15), Hōzenji Yokochō, and okonomiyaki at Mizuno for dinner (open to 22:00). Taxi to the castle about 19:30.'),
 ] + _keep[_i:]
+# Thu 22 15:39: free time as one bucket-list block.
+for _i, _x in enumerate(D[22]['rows']):
+    if _x[1].startswith('Free time'):
+        D[22]['rows'][_i] = R('15:30', 'Free time: the Dōtonbori bucket list',
+         'Any order. 1. The Glico Running Man from Ebisu Bridge. 2. Don Quijote ferris wheel, Ebisu Tower: ¥1,000, about 15 minutes, best after dark. 3. Tombori River Cruise, about 20 minutes, once it is dark. 4. Okonomiyaki dinner at Mizuno, the best in Osaka, open to 22:00. 5. Takoyaki at Kukuru under the giant octopus. 6. The big signs: the moving Kani Dōraku crab and the Kuidaore Tarō drummer. 7. Hōzenji Yokochō and the mossy Mizukake Fudō. 8. KOMEHYO, to 20:00. 9. Amerikamura and Kōgaryū takoyaki. 10. A cheap suitcase at Don Quijote. Taxi to the castle about 19:30.')

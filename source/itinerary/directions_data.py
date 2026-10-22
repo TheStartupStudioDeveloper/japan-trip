@@ -202,3 +202,17 @@ GO[22] += [
   maps('Okonomiyaki Mizuno Dotonbori'),
  ]),
 ]
+
+GO[22] += [
+ ('Free time: the Dōtonbori', [
+  'Glico Running Man: best photo from Ebisu Bridge (戎橋), the bridge on Midōsuji\'s side of the canal.',
+  'Don Quijote ferris wheel (Ebisu Tower): north bank, 2 minutes east of Ebisu Bridge along the canal boardwalk. Go into Don Quijote, take the stairs by the first-floor tax-free counter to the ticket machine. ¥1,000, about 15 minutes, last ride 21:30.',
+  'Tombori River Cruise: the pier is on the canal right below Don Quijote. Tickets at the booth, about ¥1,500. Boats about every 30 minutes, about 20 minutes long.',
+  maps('Don Quijote Dotonbori'),
+  'Mizuno okonomiyaki: Dōtonbori main street, 1-4-15, a few minutes east of Ebisu Bridge on the south side. Expect a short queue.',
+  maps('Okonomiyaki Mizuno Dotonbori'),
+  'Kukuru takoyaki: under the giant octopus on the main street. The Kani Dōraku crab and Kuidaore Tarō are on the same street.',
+  'Hōzenji Yokochō: one street south of the main street, near Nakaza Cuidaore. Splash water on the Mizukake Fudō statue.',
+  'KOMEHYO and Amerikamura: north up the Shinsaibashi-suji arcade for KOMEHYO, or west across Midōsuji for Amerikamura and Triangle Park.',
+ ]),
+]
