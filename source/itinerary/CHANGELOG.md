@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 20:55
+- Clear directions home: castle exit via Gokuraku-bashi and Aoyamon, Loop line outer loop to Osaka, special rapid, Karasuma line to Gojō. Added under ⓘ.
+
 ## Thu 22 Oct 20:52
 - Light show done. Umeda Sky dropped. Home by JR: Osakajōkōen, Loop line to Osaka, special rapid to Kyoto, subway to Gojō, about 22:15.
 

@@ -532,3 +532,7 @@ D[22]['rows'].sort(key=lambda x: x[0])
 D[22]['notes'] = [
  ('Walking', 'About 10 km with the taxis.'),
  ('Left out', 'The morning castle walk, Daruma kushikatsu, Kuromon Market, the Horie browsing, the Tombori cruise, Hōzenji Yokochō and Umeda Sky.')]
+# Thu 22 20:52: clearer directions home, with the castle exit.
+_set('Walk to JR Osakajōkōen station', '20:50', 'Leave the keep by the north side over Gokuraku-bashi (極楽橋), turn right along the moats, out through Aoyamon gate (青屋門), then east past Osaka-jō Hall to JR 大阪城公園駅. About 15 minutes. Directions under ⓘ.')
+_set('JR Loop line to Osaka', '21:05', '1. Platform for 京橋・大阪方面 (outer loop, 外回り), 4 stops to Osaka, about 10 minutes. 2. At Osaka, stay inside the gates, follow 京都線 signs (usually platform 7 or 8) and take the 新快速 to 京都, about 30 minutes. 3. At Kyoto, Karasuma subway toward 国際会館, one stop to Gojō. 4. Exit for Karasuma-dōri, 2 to 3 minutes to the hotel. All on Suica.')
+_set('Back at the hotel', '22:15', 'sequence KYOTO GOJO.')

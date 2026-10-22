@@ -216,3 +216,21 @@ GO[22] += [
   'KOMEHYO and Amerikamura: north up the Shinsaibashi-suji arcade for KOMEHYO, or west across Midōsuji for Amerikamura and Triangle Park.',
  ]),
 ]
+
+GO[22] += [
+ ('Walk to JR Osakajōkōen', [
+  'From the keep, walk down the north side to Gokuraku-bashi (極楽橋), the wooden bridge over the inner moat. This is the castle exit to use.',
+  'Over the bridge, turn right (east) along the path between the moats. The big Osaka-jō Hall is ahead on your left.',
+  'Go out through Aoyamon gate (青屋門), over the outer moat bridge, and keep heading east past Osaka-jō Hall.',
+  'The station is on the far side of the park road: JR 大阪城公園駅 (Ōsakajōkōen). About 15 minutes in all from the keep.',
+  maps('Osakajokoen Station'),
+ ]),
+ ('JR Loop line to Osaka', [
+  'At Ōsakajōkōen, tap Suica and go to the platform for 京橋・大阪方面 (Kyōbashi and Osaka). It is the outer loop, 外回り. Not the Tennōji direction.',
+  'Ride 4 stops to Osaka (大阪), about 10 minutes: Kyōbashi, Sakuranomiya, Temma, Osaka.',
+  'At Osaka, stay inside the gates. Follow the JR 京都線 (Kyoto line) signs, usually platform 7 or 8. Check the board for 新快速 (special rapid) to 京都. About every 15 minutes, about 30 minutes to Kyoto.',
+  'At Kyoto, follow the subway (地下鉄) signs down to the Karasuma line. Tap out of JR, tap in to the subway. Platform toward 国際会館 (Kokusaikaikan), one stop to Gojō (五条).',
+  'At Gojō, follow the exit signs for Karasuma-dōri, then a 2 to 3 minute walk to sequence KYOTO GOJO.',
+  maps('Kyoto Station', 'transit', 'r'),
+ ]),
+]
