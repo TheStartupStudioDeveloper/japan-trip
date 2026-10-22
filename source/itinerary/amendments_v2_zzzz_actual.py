@@ -518,3 +518,17 @@ _set('Taxi to Umeda Sky', '21:10')
 _set('Umeda Sky deck at night', '21:30')
 _set('Walk to JR Osaka', '22:05', 'About 15 minutes on foot. Special rapid to Kyoto, about 30 minutes, then one subway stop to Gojō. Back about 22:50.')
 D[22]['rows'].sort(key=lambda x: x[0])
+# Thu 22 20:49: light show done. Umeda Sky skipped. Home by train from Osakajōkōen.
+for _i, _x in enumerate(D[22]['rows']):
+    if _x[1].startswith('Osaka Castle light show'):
+        D[22]['rows'][_i] = R('20:40', _x[1], _x[2], DN)
+D[22]['rows'] = [x for x in D[22]['rows'] if not any(x[1].startswith(t) for t in ('Taxi to Umeda Sky', 'Umeda Sky deck', 'Walk to JR Osaka'))]
+D[22]['rows'] += [
+ R('20:50', 'Walk to JR Osakajōkōen station', 'From the keep, head north-east over Gokuraku-bashi bridge and out past the Aoyamon gate, about 15 minutes. Station: 大阪城公園駅 (Ōsakajōkōen).'),
+ R('21:05', 'JR Loop line to Osaka, then the special rapid to Kyoto', '1. Loop line (大阪環状線) toward Kyōbashi and Osaka (大阪), 4 stops, about 10 minutes. 2. At Osaka, follow the JR Kyoto line (京都線) signs and take the special rapid (新快速) to Kyoto, about 30 minutes. 3. At Kyoto, Karasuma subway line toward Kokusaikaikan (国際会館), one stop to Gojō. All on Suica.'),
+ R('22:15', 'Back at the hotel', 'Gojō Exit 2, about 3 minutes on foot.'),
+]
+D[22]['rows'].sort(key=lambda x: x[0])
+D[22]['notes'] = [
+ ('Walking', 'About 10 km with the taxis.'),
+ ('Left out', 'The morning castle walk, Daruma kushikatsu, Kuromon Market, the Horie browsing, the Tombori cruise, Hōzenji Yokochō and Umeda Sky.')]

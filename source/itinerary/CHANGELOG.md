@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 20:52
+- Light show done. Umeda Sky dropped. Home by JR: Osakajōkōen, Loop line to Osaka, special rapid to Kyoto, subway to Gojō, about 22:15.
+
 ## Thu 22 Oct 20:18
 - Bucket list ticked (all but the Tombori cruise). Taxi note: first taxi went to Tsūtenkaku. Light show 20:40, Umeda Sky 21:30, home about 22:50.
 
