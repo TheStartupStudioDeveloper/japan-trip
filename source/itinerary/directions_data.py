@@ -334,3 +334,54 @@ GO[24] = [
   maps('Breakfast Udon Express Kyoto'),
  ]),
 ]
+
+# 22 Oct 22:50: lighter Fri 23.
+GO[23] = [g for g in GO[23] if not g[0].startswith(('Taxi to Nijō', 'Lunch', 'Keihan', 'Yasaka shrine', 'Chao Chao', 'Bamboo grove', 'Fushimi Inari'))]
+GO[23] += [
+ ('Bamboo grove, one way', [
+  'From Nonomiya Shrine walk west along the bamboo path, flat, about 5 to 10 minutes.',
+  'Tenryū-ji\'s north gate is on the left (south) side, where the path bends. Wait here for 08:30 if early, or carry on up to the Ōkōchi Sansō gate and back (about 15 minutes, uphill).',
+  maps('Tenryuji north gate Arashiyama'),
+ ]),
+ ('Taxi to lunch', [
+  'Taxis wait by the Kinkaku-ji entrance. For Kyosaimi Nomura or Ichiran: 四条烏丸までお願いします (Shijō-Karasuma, please). For Katsugyu: ヨドバシカメラ京都 (Yodobashi Kyoto). For Soba Tatsuichi: 二条城 (Nijō Castle), then 5 minutes east on foot.',
+ ]),
+ ('Lunch: pick one', [
+  'Kyosaimi Nomura: Karasuma-dōri, west side, just north of Shijō. Order at the ticket machine.',
+  maps('Kyosaimi Nomura Kyoto'),
+  'Ichiran Kyoto Karasuma: a minute from Shijō-Karasuma. Ticket machine at the door.',
+  maps('ICHIRAN Kyoto Karasuma'),
+  'Katsugyu Yodobashi: Yodobashi Kyoto 6F, opposite Kyoto Station. Ten minutes on foot from the hotel.',
+  maps('Gyukatsu Kyoto Katsugyu Kyoto Yodobashi'),
+  'Soba Tatsuichi: Nijō-dōri, 5 minutes east of Nijō Castle\'s east gate. Name on the list at the door.',
+  maps('Soba Tatsuichi Kyoto'),
+ ]),
+ ('Fushimi Inari, short loop', [
+  'Through the big torii and up the steps past the main shrine. Follow the crowd to the Senbon Torii, the two rows of gates side by side. Take the right-hand row.',
+  'At the end is the Okusha Hōhaisho (奥社奉拝所), about 15 minutes up, with the omokaru stones you lift to make a wish. Turn back here, or go 5 to 10 minutes further for quieter gates.',
+  'Back down the same way.',
+  maps('Fushimi Inari Taisha'),
+ ]),
+ ('Taxi to Kiyomizu-dera', [
+  'Taxis pass on the road in front of the big torii, by Inari station. Show: 清水寺までお願いします (Kiyomizu-dera, please).',
+  'The taxi drops you at the top of Kiyomizu-zaka or Gojōzaka, a few minutes\' walk from the gate.',
+  maps('Kiyomizu-dera', 'driving', 'd'),
+ ]),
+ ('Hanamikoji and Gion', [
+  'From the Yasaka Pagoda go west down the lane (Yasaka-dōri) to Higashiōji-dōri, cross, and keep going west to Hanamikoji.',
+  'Walk north up Hanamikoji to Shijō-dōri. Taxis on Shijō.',
+  maps('Hanamikoji Street Kyoto'),
+ ]),
+ ('Taxi to Chao Chao', [
+  'Taxi on Shijō-dōri heading west. Show: 三条木屋町 餃子ChaoChao (Sanjō Kiyamachi, Chao Chao gyoza). About 5 minutes.',
+  maps('Chao Chao Sanjo Kiyamachi'),
+ ]),
+]
+GO[24] += [
+ ('Optional: Nijō Castle', [
+  'Taxi from the hotel: 二条城 東大手門までお願いします (Nijō Castle, east main gate). About 10 minutes.',
+  'Tickets just inside the gate. Follow the arrows to the Ninomaru Palace, shoes off, one-way route through the rooms. Then back out the same gate.',
+  'Taxis wait on Horikawa-dōri outside the gate. To Inoda: イノダコーヒ本店 (Inoda Coffee main shop), about 10 minutes.',
+  maps('Nijo Castle Higashi Otemon', 'driving', 'd'),
+ ]),
+]

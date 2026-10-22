@@ -591,3 +591,43 @@ D[24]['rows'] = [
  R('10:15', 'Back to the hotel, finish packing', ''),
  R('10:45', 'Check out, taxi to Kyoto Station', 'About 5 minutes with the bags in the rain. Walking is 15 minutes in the dry (How-to 16).'),
 ] + _aft
+
+# Thu 22 22:47: Fri 23 lightened (about 7 to 7.5 km): bamboo one way into Tenryū-ji, no Nijō (optional Sat morning), lunch near the hotel, a long hotel rest, Inari short loop only, taxi Inari to Kiyomizu, no Yasaka shrine, taxi Gion to Chao Chao. Start 07:30 after the late night.
+D[23]['title'] = 'Kyoto: bamboo grove, Golden Pavilion, Inari, Higashiyama'
+D[23]['cal'] = 'Bamboo, Inari, Gion'
+D[23]['sum'] = 'An easier day, about 7 km: the bamboo grove and Tenryū-ji early, the Golden Pavilion, lunch and a long rest at the hotel, a short loop at Fushimi Inari, then Kiyomizu-dera at sunset, Gion, gyoza and Pontochō. Taxis do the hills.'
+D[23]['foot'] = 'Dry by day, up to about 21°C. Light rain from about 21:00: umbrella for Pontochō. About 7 km, roughly 10,000 steps.'
+D[23]['rows'] = [
+ R('07:30', 'Taxi to the bamboo grove', 'About 25 minutes, about ¥3,500. Show the driver 嵐山 竹林の小径、野宮神社 (Arashiyama bamboo grove, Nonomiya Shrine). Leave at 07:00 if you are up for a quieter grove.'),
+ R('08:00', 'Bamboo grove, one way', 'From Nonomiya Shrine along the bamboo path to Tenryū-ji\'s north gate, the best stretch, flat. Take your time for photos. Add-on: carry on up to the Ōkōchi Sansō gate and back, about 15 minutes, gently uphill.'),
+ R('08:30', 'Tenryū-ji garden', 'Opens 08:30. In by the north gate on the bamboo path. Flat pond garden with the hills behind, about 40 minutes. About ¥500 each.'),
+ R('09:15', 'Togetsukyō bridge and % Arabica', 'Out of Tenryū-ji\'s main gate, 5 minutes to the river. Coffee to take away (opens 09:00), on the riverbank looking at the bridge.'),
+ R('09:45', 'Taxi to Kinkaku-ji', 'From the main street by Togetsukyō, about 20 minutes, about ¥2,500. Show 金閣寺.'),
+ R('10:05', 'Kinkaku-ji, the Golden Pavilion', 'The gold pavilion on its pond. One-way garden loop, gentle, about 45 minutes. Open 09:00 to 17:00. About ¥500 each.'),
+ R('11:00', 'Taxi to lunch', 'About 20 minutes to the centre. See the lunch options.'),
+ R('11:30', 'Lunch: pick one', 'Near the hotel: Kyosaimi Nomura (obanzai, a dozen Kyoto home-style small dishes, to 14:00) or Ichiran Kyoto Karasuma (ramen in a booth, to 22:00). At Kyoto Station: Katsugyu Yodobashi (beef cutlet on a hot stone, to 23:00). Or on the way, near Nijō: Soba Tatsuichi (hand-made and duck soba, to 16:00) or Sarashina (tiny family soba and curry udon, cash only).'),
+ R('12:30', 'Hotel, feet up', 'A proper rest, about two hours. Change for the evening.'),
+ R('14:45', 'JR Nara line to Inari', 'Subway one stop to Kyoto, then the JR Nara line (奈良線), two stops, about 5 minutes. Or a taxi from the hotel, about 15 minutes, about ¥2,000. The shrine gate faces the platform.'),
+ R('15:00', 'Fushimi Inari, short loop', 'Through the main shrine into the Senbon Torii, the thousand gates, up to the Okusha Hōhaisho and back, about 45 minutes. Keep climbing a little past it for quieter gates. Open 24 hours.'),
+ R('16:00', 'Taxi to Kiyomizu-dera', 'From the road in front of the shrine gate, about 15 minutes, about ¥2,000. Show 清水寺. Saves the hill.'),
+ R('16:20', 'Kiyomizu-dera', 'The wooden stage over the trees, stay for sunset (about 17:10). Open to 18:00. About ¥500 each.'),
+ R('17:30', 'Down through Sannenzaka and Ninenzaka', 'Downhill all the way, the old stone lanes. Shops start closing about 18:00.'),
+ R('17:50', 'Yasaka Pagoda at dusk', 'Two minutes off Ninenzaka. The five storey pagoda above the lane roofs.'),
+ R('18:10', 'Hanamikoji and Gion', 'From the pagoda down to Hanamikoji, the old teahouse lane, lanterns lit. Yasaka Shrine is skipped to save the legs.'),
+ R('18:45', 'Taxi to Chao Chao', 'From Shijō-dōri, about 5 minutes. Show 餃子 ChaoChao 三条木屋町.'),
+ R('19:00', 'Chao Chao gyoza, Sanjō Kiyamachi', 'Kyoto\'s famous crispy dumplings, small shop, short queue.'),
+ R('20:00', 'Pontochō alley', 'The lantern lane of small bars and izakayas by the river, a two minute walk. Wander and pick one for a drink.'),
+ R('20:45', 'Optional: Menami', 'Kyoto home-style small plates at a counter, since 1939. On Kiyamachi, near Chao Chao. Taxi home after, about 10 minutes.'),
+]
+D[23]['notes'] = [
+ ('Steps', 'About 7 km, roughly 10,000 steps. Add-ons if the legs are good: the bamboo path up to Ōkōchi Sansō (about 800 steps), Yasaka Shrine at dusk (about 1,000 steps).'),
+ ('Running late', 'Shorten the hotel rest. Protect Kiyomizu by 17:30 (closes 18:00).'),
+ ('Autumn colour', "Late October is green and early gold, not red. Kyoto's maples turn mid to late November.")]
+_aft = [x for x in D[24]['rows'] if x[0] >= '11:15']
+D[24]['rows'] = [
+ R('08:00', 'Sleep in, pack', 'No alarm. Most of the packing before breakfast so the morning stays slow.'),
+ R('08:30', 'Optional: Nijō Castle, palace only', 'Only if you want it. Taxi about 10 minutes, show 二条城 東大手門. Opens 08:45. In through the east gate, the Ninomaru Palace with its nightingale floors (shoes off, indoors, good in the rain), straight back out. About 45 minutes, flat. About ¥1,300 each. Then breakfast at Inoda, 10 minutes by taxi.'),
+ R('09:00', 'Slow breakfast: pick one', 'Inoda Coffee main shop (Kyoto\'s classic coffee house, the Kyoto breakfast set, from 07:00). Smart Coffee (1930s café, pancakes and French toast, from 08:00, covered arcade). Kyosaimi Nomura (obanzai breakfast set, from 07:00, 10 minutes\' walk up Karasuma). Breakfast Udon Express (light udon, 07:00 to 10:00 only). With Nijō, breakfast is about 09:45.'),
+ R('10:15', 'Back to the hotel, finish packing', ''),
+ R('10:45', 'Check out, taxi to Kyoto Station', 'About 5 minutes with the bags in the rain. Walking is 15 minutes in the dry (How-to 16).'),
+] + _aft

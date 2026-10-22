@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Thu 22 Oct 22:50
+- Fri 23 lightened to about 7 km: start 07:30, bamboo one way into Tenryū-ji, Nijō moved to an optional Sat morning, lunch near the hotel at 11:30, rest 12:30 to 14:45, Inari short loop 15:00, taxi to Kiyomizu 16:00, Yasaka Shrine skipped, taxi Gion to Chao Chao.
+- Sat 24: optional Nijō palace at 08:45, breakfast after.
+
 ## Thu 22 Oct 21:55
 - Thu 22: home on the Keihan from Temmabashi.
 - Fri 23 rebuilt west to east: bamboo grove 07:30 (taxi 07:00), Tenryū-ji, Togetsukyō and % Arabica, Kinkaku-ji, Nijō Castle, lunch options (Soba Tatsuichi, Sarashina, Kyosaimi Nomura, Ichiran, Katsugyu), optional hotel stop, Fushimi Inari 14:30, Kiyomizu-dera 16:45, Gion, Chao Chao, Pontochō. Directions for every leg.

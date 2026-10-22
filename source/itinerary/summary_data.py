@@ -15,13 +15,13 @@ LEGS = [
   days=[
    ('d21', 'Wed 21', [('Nozomi 07:55 to Kyoto, bags to Crosta', 'f'), ('Nara: kamameshi lunch, deer, Tōdai-ji', ''), ('Ramen, Kyoto Tower, massage or Pontochō', '')]),
    ('d22', 'Thu 22', [('Flea market, Shinsekai, kushikatsu', ''), ('Namba snacks, KOMEHYO, Amemura and Kuromon eats', ''), ('Dōtonbori, castle light show, Umeda Sky at night', '')]),
-   ('d23', 'Fri 23', [('Bamboo grove 07:30, Kinkaku-ji, Nijō', ''), ('Lunch, Fushimi Inari 14:30, Kiyomizu-dera 16:45', ''), ('Gion, gyoza, Pontochō', '')]),
+   ('d23', 'Fri 23', [('Bamboo grove 08:00, Kinkaku-ji, lunch, rest', ''), ('Fushimi Inari 15:00, Kiyomizu-dera at sunset', ''), ('Gion, gyoza, Pontochō', '')]),
   ],
   shift=['Thu 22 and Fri 23 can swap. Thursday is Jidai Matsuri day in Kyoto.', 'Nara can finish early if you are done.'],
   book=[], extras=[('kyoto', 'Kyoto'), ('nara', 'Nara'), ('osaka', 'Osaka')]),
  dict(pat='g', kanji='銀座', name='Tokyo: Hibiya and Ginza', leg='Leg 3', dates='Sat 24 to Tue 27 Oct', nights='3 nights', hotel='blossom', sun='Sunset 16:55',
   days=[
-   ('d24', 'Sat 24', [('Sleep in, slow breakfast, check out', ''), ('Nozomi 12:01 to Tokyo, check in', 'f'), ('Odaiba fireworks, Hilton dinner', 'f')]),
+   ('d24', 'Sat 24', [('Sleep in, optional Nijō, slow breakfast', ''), ('Nozomi 12:01 to Tokyo, check in', 'f'), ('Odaiba fireworks, Hilton dinner', 'f')]),
    ('d25', 'Sun 25', [('East Gardens, Tokyo Station', ''), ('Ginza car-free, shopping', ''), ('Ginza dinner, Tokyo Tower or car meet', '')]),
    ('d26', 'Mon 26', [('teamLab Borderless 08:30', 'f'), ('Kappabashi, Sensō-ji, Skytree at dusk', ''), ('Shimbashi, pack', '')]),
   ],
