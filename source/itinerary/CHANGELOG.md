@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 11:52
+- At Fushimi Inari 11:50. Station legs ticked. Ichiran 13:20, hotel 14:05.
+
 ## Fri 23 Oct 10:30
 - Kinkaku-ji done early (busy, rushed). Bus 205 or taxi to Kyoto Station, coffee there 11:10, Inari 11:45, Ichiran 13:15, hotel 14:00.
 

@@ -690,3 +690,13 @@ _set23('JR back to Kyoto', '12:45')
 _set23('Lunch: Ichiran', '13:15')
 _set23('Hotel: rest', '14:00')
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 11:50: arrived at Fushimi Inari.
+for _i, _x in enumerate(D[23]['rows']):
+    if _x[1].startswith(('Bus or taxi to Kyoto Station', 'Coffee and a bite at Kyoto Station', 'JR Nara line to Inari')):
+        D[23]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+_set23('★ Fushimi Inari', '11:50')
+_set23('JR back to Kyoto', '12:50')
+_set23('Lunch: Ichiran', '13:20')
+_set23('Hotel: rest', '14:05')
+D[23]['rows'].sort(key=lambda x: x[0])
