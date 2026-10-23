@@ -430,3 +430,17 @@ GO[23] += [
   'Taxi: the rank by the Kinkaku-ji entrance. Show 京都駅までお願いします. About 25 minutes, about ¥3,000.',
  ]),
 ]
+
+GO[23] = [g for g in GO[23] if not g[0].startswith(('JR back to Kyoto', 'Lunch: Ichiran'))]
+GO[23] += [
+ ('JR to Kyoto, subway to Gojō', [
+  'Inari station, platform for 京都 (Kyoto). Any train, two stops.',
+  'At Kyoto, follow 地下鉄 烏丸線 (Karasuma subway) signs. Tap out of JR, tap in to the subway. Toward 国際会館, one stop to 五条 (Gojō). Exit for Karasuma-dōri, 2 to 3 minutes to the hotel.',
+  maps('sequence KYOTO GOJO Gojo Karasuma', 'transit', 'r'),
+ ]),
+ ('Lunch: Ichiran', [
+  'From the hotel, walk north up Karasuma-dōri (the big road), about 10 minutes, past Bukkōji-dōri to near Shijō.',
+  'Ichiran is just off Karasuma before the Shijō crossing. Buy tickets at the machine by the door, then fill in the order sheet: richness, garlic, green onion, chashu, red sauce, noodle firmness.',
+  maps('ICHIRAN Kyoto Karasuma'),
+ ]),
+]

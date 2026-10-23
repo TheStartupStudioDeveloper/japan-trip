@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 12:14
+- Inari done. Back via the hotel to put the washing on (12:45), walk to Ichiran 13:00, hotel rest 13:50.
+
 ## Fri 23 Oct 11:52
 - At Fushimi Inari 11:50. Station legs ticked. Ichiran 13:20, hotel 14:05.
 

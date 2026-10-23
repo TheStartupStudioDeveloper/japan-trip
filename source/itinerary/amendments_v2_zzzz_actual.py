@@ -700,3 +700,16 @@ _set23('JR back to Kyoto', '12:50')
 _set23('Lunch: Ichiran', '13:20')
 _set23('Hotel: rest', '14:05')
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 12:12: leaving Inari. Hotel first to put the washing on, then walk to Ichiran.
+for _i, _x in enumerate(D[23]['rows']):
+    if _x[1].startswith('★ Fushimi Inari'):
+        D[23]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+D[23]['rows'] = [x for x in D[23]['rows'] if not x[1].startswith(('JR back to Kyoto', 'Hotel: rest'))]
+D[23]['rows'] += [
+ R('12:20', 'JR to Kyoto, subway to Gojō', 'JR Nara line two stops to Kyoto, then the Karasuma subway one stop north to Gojō (五条). All on Suica.'),
+ R('12:45', 'Hotel: washing on', 'Quick stop.'),
+ R('13:50', 'Hotel: rest, freshen up, pack rain gear', 'Ten minutes back down Karasuma-dōri from Ichiran. Washing out. Umbrellas or raincoats for the evening: light rain likely from about 21:00.'),
+]
+_set23('Lunch: Ichiran', '13:00', 'Ten minutes on foot north up Karasuma-dōri from the hotel. Rich pork-bone ramen in your own booth. Ticket machine at the door, then fill in the order sheet. Open 10:00 to 22:00.')
+D[23]['rows'].sort(key=lambda x: x[0])
