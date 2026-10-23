@@ -752,3 +752,30 @@ D[23]['rows'] += [
  R('19:30', 'Coin laundry and a quiet night in', '', DN),
 ]
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 19:40: Sun 25 gets the Imperial Palace gardens and Kappabashi (Sunday-open shops only), then Ginza car-free and the stores when the rain comes. Mon 26: teamLab, the Asakusa sumo show at 12:00 with chanko lunch, Sensō-ji, dinner under the train tracks.
+D[25]['title'] = 'Palace gardens, Kappabashi, then Ginza car-free'
+D[25]['sum'] = 'The Imperial Palace East Gardens first thing, Kappabashi kitchen street for knives and ceramics, then back to Ginza for the car-free afternoon and into the department stores when the rain comes.'
+_keep = [x for x in D[25]['rows'] if x[1].startswith(('Slow breakfast', 'Imperial Palace East Gardens')) or x[0] in ('Afternoon', 'Late arvo', 'Evening', '19:30', 'When done')]
+D[25]['rows'] = _keep + [
+ R('10:45', 'Tokyo Station, then JR to Ueno and the Ginza line to Tawaramachi', 'The red brick Marunouchi façade on the way out of the gardens. JR Yamanote or Keihin-Tōhoku line to Ueno, about 7 minutes, then the Ginza line two stops to Tawaramachi (田原町). Or a taxi from the gardens, about 20 minutes, about ¥2,500.'),
+ R('11:30', 'Kappabashi kitchenware street', 'Sunday: many shops are shut, so go for the ones that open. Knives: Kama-asa (11:00 to 17:30, free engraving) and Kamata Hakensha (10:00 to 18:00). Ceramics: Dengama (10:00 to 18:00, upstairs closes about 15:00). Fake food: Ganso food samples (10:00 to 17:30). Niimi is closed Sundays, but its giant chef head is on the roof at the south end.'),
+ R('13:00', 'Lunch in Asakusa', 'Ten minutes east on foot. Keep it casual.'),
+ R('14:00', 'Ginza line from Asakusa to Ginza', 'Direct, about 18 minutes. Out at Ginza onto Chūō-dōri.'),
+ R('14:30', 'Ginza car-free', 'Chūō-dōri is pedestrian only until 17:00. Walk it while it is dry, then into the stores when the rain arrives.'),
+]
+D[25]['rows'].sort(key=lambda x: (x[0][0].isdigit() is False, x[0]) if x[0] not in ('Afternoon','Late arvo','Evening','When done') else (False, {'Afternoon':'15:00','Late arvo':'16:30','Evening':'18:00','When done':'23:00'}[x[0]]))
+D[25]['foot'] = 'Rain expected in the afternoon: the gardens and Kappabashi in the dry, then the department stores. Browse before about 20:00 and eat after. Many smaller Ginza bars and restaurants close on Sundays.'
+D[26]['title'] = 'teamLab, sumo show in Asakusa, dinner under the tracks'
+D[26]['sum'] = 'teamLab Borderless first thing, a sumo show with chanko hotpot lunch in Asakusa, Sensō-ji and the Skytree at dusk, then yakitori and beer in the lanes under the train tracks.'
+_r = [x for x in D[26]['rows'] if not x[1].startswith(('Sky Room Café', 'Hibiya line, then Ginza line', 'Kappabashi', 'Shimbashi, no booking'))]
+D[26]['rows'] = _r + [
+ R('10:45', 'Hibiya line, then the Ginza line to Asakusa', 'From Kamiyachō, Hibiya line to Ginza, change to the Ginza line to Asakusa (浅草), about 35 minutes.'),
+ R('12:00', 'Asakusa Sumo Club: show and chanko lunch', 'About two hours. Former wrestlers explain and demonstrate sumo, with audience try-outs, and an all-you-can-eat chanko hotpot (the wrestlers\' stew) and a drink. About ¥16,000 each. Beside Don Quijote Asakusa. Sessions 12:00, 15:00, 18:00, 20:30.', TB),
+ R('19:00', 'Dinner under the train tracks, Yūrakuchō', 'The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, beer, the trains rumbling overhead. No booking; wander and pick one. Shimbashi\'s lanes are the overflow.'),
+]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Sensō-ji'):
+        D[26]['rows'][_i] = R('14:15', _x[1], 'A few minutes from the sumo club. Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.', *_x[3:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

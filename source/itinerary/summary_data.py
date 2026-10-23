@@ -22,8 +22,8 @@ LEGS = [
  dict(pat='g', kanji='銀座', name='Tokyo: Hibiya and Ginza', leg='Leg 3', dates='Sat 24 to Tue 27 Oct', nights='3 nights', hotel='blossom', sun='Sunset 16:55',
   days=[
    ('d24', 'Sat 24', [('Sleep in, optional Nijō, slow breakfast', ''), ('Nozomi 12:01 to Tokyo, check in', 'f'), ('Odaiba fireworks, Hilton dinner', 'f')]),
-   ('d25', 'Sun 25', [('East Gardens, Tokyo Station', ''), ('Ginza car-free, shopping', ''), ('Ginza dinner, Tokyo Tower or car meet', '')]),
-   ('d26', 'Mon 26', [('teamLab Borderless 08:30', 'f'), ('Kappabashi, Sensō-ji, Skytree at dusk', ''), ('Shimbashi, pack', '')]),
+   ('d25', 'Sun 25', [('East Gardens, Kappabashi', ''), ('Ginza car-free, shopping in the rain', ''), ('Ginza dinner, Tokyo Tower or car meet', '')]),
+   ('d26', 'Mon 26', [('teamLab Borderless 08:30', 'f'), ('Sumo show 12:00, Sensō-ji, Skytree at dusk', ''), ('Dinner under the tracks, pack', '')]),
   ],
   shift=['Tokyo Tower works on Sun 25 night or after teamLab on Mon 26.', 'teamLab can change date or time up to three times.', 'Yūrakuchō can take any night.'],
   book=[], extras=[('ginza', 'Ginza and east Tokyo'), ('japan', 'Japan other')]),

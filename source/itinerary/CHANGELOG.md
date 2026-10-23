@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 19:45
+- Sun 25: Imperial Palace East Gardens, then Kappabashi (Sunday-open shops: Kama-asa, Kamata Hakensha, Dengama, Ganso samples), lunch in Asakusa, Ginza car-free from 14:30, stores when the rain comes.
+- Mon 26: teamLab 08:30, Asakusa Sumo Club 12:00 with chanko lunch (to book), Sensō-ji 14:15, Skytree at dusk, dinner under the tracks at Yūrakuchō. Kappabashi moved off Monday.
+
 ## Fri 23 Oct 19:40
 - Fri 23 evening actual: FamilyMart katsu curry back at the hotel, coin laundry, quiet night. Katsuda not visited.
 

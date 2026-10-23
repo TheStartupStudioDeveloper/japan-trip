@@ -484,3 +484,43 @@ GO[23] += [
   maps('Kyoto Tonkatsu Katsuda Shijokarasuma', 'driving', 'd'),
  ]),
 ]
+
+GO.setdefault(25, [])
+GO[25] += [
+ ('Tokyo Station, then JR to Ueno', [
+  'Out of the East Gardens by the Ōtemon gate, then about 10 minutes east to Tokyo Station\'s Marunouchi side (the red brick front).',
+  'JR Yamanote or Keihin-Tōhoku line toward Ueno (上野), about 7 minutes. Then follow 銀座線 (Ginza line) signs, two stops toward Asakusa to 田原町 (Tawaramachi). Exit 3.',
+  'Kappabashi-dōri is about 5 minutes west of Tawaramachi. Or a taxi from the gardens: かっぱ橋道具街 (Kappabashi Dōgu-gai), about 20 minutes.',
+  maps('Kappabashi Dougu Street', 'transit', 'r'),
+ ]),
+ ('Kappabashi kitchenware street', [
+  'Start at the south end (Asakusa-dōri) under Niimi\'s giant chef head. Dengama ceramics is across the road.',
+  'Walk north up Kappabashi-dōri: Kamata Hakensha (knives) on the right, then Kama-asa (knives) a little further. Ganso food samples is near the north end.',
+  maps('Dengama Kappabashi'),
+  maps('KAMA-ASA Kappabashi'),
+ ]),
+ ('Lunch in Asakusa', [
+  'East along Asakusa-dōri or the side streets, about 10 minutes, toward Sensō-ji.',
+  maps('Asakusa Tokyo'),
+ ]),
+ ('Ginza line from Asakusa', [
+  'Asakusa station (銀座線), toward 渋谷 (Shibuya). Direct to 銀座 (Ginza), about 18 minutes. Exits A1 to A4 come up on Chūō-dōri.',
+  maps('Ginza Station Tokyo', 'transit', 'r'),
+ ]),
+]
+GO.setdefault(26, [])
+GO[26] += [
+ ('Hibiya line, then the Ginza line to Asakusa', [
+  'From teamLab, 5 minutes to Kamiyachō (神谷町), Hibiya line toward 北千住. Change at 銀座 (Ginza) to the 銀座線 toward 浅草 (Asakusa), to the end of the line.',
+  'At Asakusa, the sumo club is beside Don Quijote Asakusa, about 5 minutes west of Kaminarimon.',
+  maps('Asakusa Sumo Club', 'transit', 'r'),
+ ]),
+ ('Asakusa Sumo Club', [
+  'Beside Don Quijote Asakusa on Kokusai-dōri. Arrive 10 to 15 minutes before 12:00.',
+  maps('Asakusa Sumo Club'),
+ ]),
+ ('Dinner under the train tracks', [
+  'From the hotel, about 5 minutes east to JR Yūrakuchō. The lanes run under the tracks south of the station toward Shimbashi (Yūrakuchō Sanchoku Inshokugai and the Gādo-shita bars).',
+  maps('Yurakucho Sanchoku Inshokugai'),
+ ]),
+]
