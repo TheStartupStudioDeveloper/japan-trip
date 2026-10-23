@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 16:12
+- Tip moved from Kiyomizu-dera to a note on Hase-dera, Kamakura (Mon 19).
+
 ## Fri 23 Oct 16:10
 - Kiyomizu-dera: G's tip added (if busy, skip going in, loop down the driveway).
 
