@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 19:40
+- Fri 23 evening actual: FamilyMart katsu curry back at the hotel, coin laundry, quiet night. Katsuda not visited.
+
 ## Fri 23 Oct 17:50
 - Taxi to Katsuda instead of the Hankyu.
 
