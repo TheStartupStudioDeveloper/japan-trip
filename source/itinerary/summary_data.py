@@ -15,7 +15,7 @@ LEGS = [
   days=[
    ('d21', 'Wed 21', [('Nozomi 07:55 to Kyoto, bags to Crosta', 'f'), ('Nara: kamameshi lunch, deer, Tōdai-ji', ''), ('Ramen, Kyoto Tower, massage or Pontochō', '')]),
    ('d22', 'Thu 22', [('Flea market, Shinsekai, kushikatsu', ''), ('Namba snacks, KOMEHYO, Amemura and Kuromon eats', ''), ('Dōtonbori, castle light show, Umeda Sky at night', '')]),
-   ('d23', 'Fri 23', [('Bamboo grove 08:00, Kinkaku-ji, lunch, rest', ''), ('Fushimi Inari 15:00, Kiyomizu-dera at sunset', ''), ('Gion, gyoza, Pontochō', '')]),
+   ('d23', 'Fri 23', [('Bamboo grove, Kinkaku-ji, Fushimi Inari', ''), ('Ichiran lunch, rest, Kiyomizu-dera 16:00', ''), ('Gion, gyoza, Pontochō', '')]),
   ],
   shift=['Thu 22 and Fri 23 can swap. Thursday is Jidai Matsuri day in Kyoto.', 'Nara can finish early if you are done.'],
   book=[], extras=[('kyoto', 'Kyoto'), ('nara', 'Nara'), ('osaka', 'Osaka')]),

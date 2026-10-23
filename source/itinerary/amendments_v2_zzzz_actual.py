@@ -655,3 +655,20 @@ _set23('Taxi to lunch', '11:15')
 _set23('Lunch: pick one', '11:45')
 _set23('Hotel, feet up', '12:45', 'A rest, about two hours. Change for the evening.')
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 09:54: Inari straight after Kinkaku-ji, then Ichiran, then the hotel to rest and pack rain gear, then Kiyomizu and walk down to dinner.
+_drop = ('Taxi to lunch', 'Lunch: pick one', 'Hotel, feet up', 'JR Nara line to Inari', '★ Fushimi Inari', 'Taxi to Kiyomizu-dera', '★ Kiyomizu-dera', 'Taxi to Chao Chao')
+D[23]['rows'] = [x for x in D[23]['rows'] if not x[1].startswith(_drop)]
+D[23]['rows'] += [
+ R('11:15', 'Taxi to Kyoto Station', 'From the Kinkaku-ji taxi rank, about 25 minutes, about ¥3,000. Show 京都駅 八条口 or 京都駅 烏丸口. A taxi straight to Inari is about ¥5,000 and saves about 15 minutes.'),
+ R('11:45', 'JR Nara line to Inari', 'JR Nara line (奈良線), any train, two stops, about 5 minutes. All on Suica. The shrine gate faces the platform.'),
+ R('12:00', '★ Fushimi Inari, short loop', 'Through the main shrine into the Senbon Torii, the thousand gates, up to the Okusha Hōhaisho and back, about 45 minutes. Busiest at the bottom at midday, quieter as you climb. Snack on the approach street: inari sushi, yakitori, taiyaki.'),
+ R('13:00', 'JR back to Kyoto, subway to Shijō', 'JR Nara line two stops to Kyoto, then the Karasuma subway two stops north to Shijō (四条). All on Suica.'),
+ R('13:30', 'Lunch: Ichiran Kyoto Karasuma', 'Rich pork-bone ramen in your own booth. Ticket machine at the door, then fill in the order sheet. Open 10:00 to 22:00.'),
+ R('14:15', 'Hotel: rest, freshen up, pack rain gear', 'Ten minutes on foot down Karasuma-dōri, or one subway stop to Gojō. Umbrellas or raincoats for the evening: light rain likely from about 21:00.'),
+ R('15:45', 'Taxi to Kiyomizu-dera', 'From the hotel, about 10 minutes, about ¥1,500. Show 清水寺. Drops at the top, so the rest of the day is downhill.'),
+ R('16:00', '★ Kiyomizu-dera', 'The wooden stage over the trees, stay for sunset (about 17:10). Open to 18:00. About ¥500 each.'),
+ R('18:40', 'Walk to Chao Chao', 'From Gion west along Shijō-dōri over Shijō Bridge, then right up Kiyamachi-dōri by the little canal. About 15 minutes, flat.'),
+]
+D[23]['rows'].sort(key=lambda x: x[0])
+D[23]['notes'] = [n for n in D[23]['notes'] if n[0] != 'Running late'] + [('Running late', 'Shorten the hotel rest. Protect Kiyomizu by 17:30 (closes 18:00).')]

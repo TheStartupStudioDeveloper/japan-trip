@@ -385,3 +385,39 @@ GO[24] += [
   maps('Nijo Castle Higashi Otemon', 'driving', 'd'),
  ]),
 ]
+
+# 23 Oct 09:55: Inari before lunch, Ichiran after.
+GO[23] = [g for g in GO[23] if not g[0].startswith(('Taxi to lunch', 'Lunch', 'JR Nara line to Inari', 'Taxi to Kiyomizu-dera', 'Taxi to Chao Chao', 'Chao Chao'))]
+GO[23] += [
+ ('Taxi to Kyoto Station', [
+  'Taxis wait by the Kinkaku-ji entrance. Show: 京都駅までお願いします (Kyoto Station, please).',
+  'About 25 minutes, about ¥3,000. Either side of the station is fine; the JR gates are in the middle.',
+  maps('Kyoto Station', 'driving', 'd'),
+ ]),
+ ('JR Nara line to Inari', [
+  'In through the JR gates (Suica), follow the 奈良線 (Nara line) signs, platforms 8 to 10. Any train, two stops to 稲荷 (Inari), about 5 minutes.',
+  'Out of Inari station, the big orange torii is straight across the road.',
+  maps('Fushimi Inari Taisha'),
+ ]),
+ ('JR back to Kyoto, subway to Shijō', [
+  'Inari station, platform for 京都 (Kyoto), two stops.',
+  'At Kyoto, follow 地下鉄 烏丸線 (Karasuma subway) signs. Tap out of JR, tap in to the subway. Toward 国際会館, two stops to 四条 (Shijō).',
+  'Ichiran is a minute from the Shijō exits on Karasuma-dōri.',
+  maps('ICHIRAN Kyoto Karasuma'),
+ ]),
+ ('Lunch: Ichiran', [
+  'Buy tickets at the machine by the door, then wait for two booths. Fill in the sheet: richness, garlic, green onion, chashu, red sauce, noodle firmness.',
+  'To the hotel after: walk south down Karasuma-dōri, about 10 minutes, or the subway one stop to Gojō.',
+  maps('sequence KYOTO GOJO Gojo Karasuma'),
+ ]),
+ ('Taxi to Kiyomizu-dera', [
+  'Taxi from the hotel door. Show: 清水寺までお願いします (Kiyomizu-dera, please). About 10 minutes.',
+  'The drop is at the top of Kiyomizu-zaka or Gojōzaka, a few minutes\' walk up to the gate.',
+  maps('Kiyomizu-dera', 'driving', 'd'),
+ ]),
+ ('Walk to Chao Chao', [
+  'From Hanamikoji, out onto Shijō-dōri and turn left (west). Over the Kamo River on Shijō Bridge.',
+  'Just over the bridge turn right up Kiyamachi-dōri, along the little canal, about 10 minutes to Sanjō. Chao Chao is on the canal side.',
+  maps('Chao Chao Sanjo Kiyamachi'),
+ ]),
+]
