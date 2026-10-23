@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 16:26
+- Note moved back to Kiyomizu-dera (Fri 23), off Hase-dera.
+
 ## Fri 23 Oct 16:12
 - Tip moved from Kiyomizu-dera to a note on Hase-dera, Kamakura (Mon 19).
 
