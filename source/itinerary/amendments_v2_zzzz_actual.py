@@ -727,3 +727,15 @@ D[23]['rows'].sort(key=lambda x: x[0])
 for _i, _x in enumerate(D[23]['rows']):
     if _x[1].startswith('★ Kiyomizu-dera'):
         D[23]['rows'][_i] = R(_x[0], _x[1], _x[2] + ' Note: if it is busy, don\'t go in. Take the loop down the driveway for a quiet, peaceful walk back down.', *_x[3:])
+
+# Fri 23 17:44: Higashiyama done. Chao Chao and Menami dropped; chicken katsu curry and beer at Katsuda near the hotel instead.
+for _i, _x in enumerate(D[23]['rows']):
+    if _x[1].startswith(('★ Kiyomizu-dera', 'Taxi to Kiyomizu-dera', 'Down through Sannenzaka', '★ Yasaka Pagoda', 'Hanamikoji and Gion', 'Pontochō alley', 'Lunch: Ichiran', 'JR back to Kyoto', 'Hotel: washing on')):
+        D[23]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+D[23]['rows'] = [x for x in D[23]['rows'] if not x[1].startswith(('Walk to Chao Chao', 'Chao Chao', 'Optional: Menami'))]
+D[23]['rows'] += [
+ R('17:50', 'Hankyu from Kyoto-Kawaramachi to Karasuma', 'Kyoto-Kawaramachi station is at the Shijō end of Pontochō. Hankyu line one stop to 烏丸 (Karasuma), about 2 minutes, on Suica.'),
+ R('18:00', 'Dinner: Kyoto Tonkatsu Katsuda, Shijō-Karasuma', 'Chicken katsu curry and a beer. Katsu fried to order at the counter, curry sauce, unlimited rice. Try the chicken with cheese, or the matcha beer. Open to 22:00, short queue likely.'),
+ R('19:15', 'Walk back to the hotel', 'About 6 minutes south down Karasuma-dōri.'),
+]
+D[23]['rows'].sort(key=lambda x: x[0])

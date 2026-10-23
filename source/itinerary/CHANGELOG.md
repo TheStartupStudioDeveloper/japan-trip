@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 17:46
+- Higashiyama and Pontochō done. Chao Chao and Menami dropped. Dinner: Kyoto Tonkatsu Katsuda, Shijō-Karasuma (chicken katsu curry and beer), Hankyu from Kawaramachi, walk home. New place card.
+
 ## Fri 23 Oct 16:26
 - Note moved back to Kiyomizu-dera (Fri 23), off Hase-dera.
 

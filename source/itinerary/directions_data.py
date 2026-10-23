@@ -459,3 +459,21 @@ GO[23] += [
   maps('sequence KYOTO GOJO Gojo Karasuma'),
  ]),
 ]
+
+GO[23] = [g for g in GO[23] if not g[0].startswith(('Walk to Chao Chao', 'Chao Chao', 'Pontochō alley'))]
+GO[23] += [
+ ('Hankyu from Kyoto-Kawaramachi', [
+  'From the Shijō end of Pontochō, cross to the Shijō-Kawaramachi corner and go down any Hankyu (阪急) entrance to 京都河原町 (Kyoto-Kawaramachi).',
+  'Hankyu Kyoto line, one stop to 烏丸 (Karasuma), about 2 minutes. All trains stop. Tap Suica.',
+  'Exit toward Karasuma-dōri south side, then about 3 minutes south to Katsuda.',
+  maps('Kyoto Tonkatsu Katsuda Shijokarasuma'),
+ ]),
+ ('Dinner: Kyoto Tonkatsu Katsuda', [
+  'Put your name down or join the line outside. English menu. Ask for チキンカツカレー (chicken katsu curry) and 生ビール (draft beer).',
+  maps('Kyoto Tonkatsu Katsuda Shijokarasuma'),
+ ]),
+ ('Walk back to the hotel', [
+  'South down Karasuma-dōri, about 6 minutes, past Bukkōji-dōri to Gojō.',
+  maps('sequence KYOTO GOJO Gojo Karasuma'),
+ ]),
+]

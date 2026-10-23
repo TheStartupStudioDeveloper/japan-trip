@@ -894,3 +894,6 @@ P('smart-coffee', ['Smart Coffee'], 'Smart Coffee', 'スマート珈琲店',
 P('udon-express', ['Breakfast Udon Express'], 'Breakfast Udon Express', '朝うどん',
   'A kind older lady serves Kyoto-style udon for breakfast only, in a quiet room over a small garden. Light, warming, cheap.',
   'Open 07:00 to 10:00 only, or until sold out. Near Shijō-Karasuma.', 'Breakfast Udon Express Kyoto')
+P('katsuda', ['Kyoto Tonkatsu Katsuda', 'Katsuda'], 'Kyoto Tonkatsu Katsuda, Shijō-Karasuma', '京都とんかつ かつ田 四条烏丸店',
+  'Katsu fried to order at a counter around the kitchen, with curry sauce, unlimited rice and a lively young crew. Chicken with cheese is the favourite. Beer, and a matcha beer.',
+  'Open 11:30 to 22:00. Expect a 10 to 20 minute queue at dinner. Six minutes north of the hotel on Karasuma.', 'Kyoto Tonkatsu Katsuda Shijokarasuma')
