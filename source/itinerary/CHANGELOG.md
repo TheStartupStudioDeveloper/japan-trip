@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 15:10
+- Done rows: no more strike-through on the time and the Done label.
+
 ## Fri 23 Oct 12:23
 - Straight to Ichiran from Inari (12:50), then the hotel for washing and rest (13:40).
 
