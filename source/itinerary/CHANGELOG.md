@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 16:10
+- Kiyomizu-dera: G's tip added (if busy, skip going in, loop down the driveway).
+
 ## Fri 23 Oct 15:10
 - Done rows: no more strike-through on the time and the Done label.
 

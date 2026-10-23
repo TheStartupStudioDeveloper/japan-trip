@@ -722,3 +722,8 @@ D[23]['rows'] += [
 ]
 _set23('Lunch: Ichiran', '12:50', 'A minute from Shijō station on Karasuma-dōri. Rich pork-bone ramen in your own booth. Ticket machine at the door, then fill in the order sheet. Open 10:00 to 22:00.')
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 16:09: G's tip for Kiyomizu.
+for _i, _x in enumerate(D[23]['rows']):
+    if _x[1].startswith('★ Kiyomizu-dera'):
+        D[23]['rows'][_i] = R(_x[0], _x[1], _x[2] + ' Tip: if it is busy, don\'t go in. Take the loop down the driveway instead for a quiet, peaceful walk back down.', *_x[3:])
