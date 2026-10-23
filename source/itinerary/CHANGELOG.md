@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 12:23
+- Straight to Ichiran from Inari (12:50), then the hotel for washing and rest (13:40).
+
 ## Fri 23 Oct 12:14
 - Inari done. Back via the hotel to put the washing on (12:45), walk to Ichiran 13:00, hotel rest 13:50.
 

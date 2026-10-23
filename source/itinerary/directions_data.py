@@ -444,3 +444,18 @@ GO[23] += [
   maps('ICHIRAN Kyoto Karasuma'),
  ]),
 ]
+
+GO[23] = [g for g in GO[23] if not g[0].startswith(('JR to Kyoto, subway to Gojō', 'Lunch: Ichiran'))]
+GO[23] += [
+ ('JR back to Kyoto, subway to Shijō', [
+  'Inari station, platform for 京都 (Kyoto). Any train, two stops.',
+  'At Kyoto, follow 地下鉄 烏丸線 (Karasuma subway) signs. Tap out of JR, tap in to the subway. Toward 国際会館, two stops to 四条 (Shijō).',
+  'Exit to Karasuma-dōri. Ichiran is a minute away, just south of the Shijō crossing.',
+  maps('ICHIRAN Kyoto Karasuma'),
+ ]),
+ ('Lunch: Ichiran', [
+  'Tickets at the machine by the door, then the order sheet: richness, garlic, green onion, chashu, red sauce, noodle firmness.',
+  'To the hotel after: walk south down Karasuma-dōri, about 10 minutes.',
+  maps('sequence KYOTO GOJO Gojo Karasuma'),
+ ]),
+]

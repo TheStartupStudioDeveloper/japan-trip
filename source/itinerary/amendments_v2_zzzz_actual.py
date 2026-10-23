@@ -713,3 +713,12 @@ D[23]['rows'] += [
 ]
 _set23('Lunch: Ichiran', '13:00', 'Ten minutes on foot north up Karasuma-dōri from the hotel. Rich pork-bone ramen in your own booth. Ticket machine at the door, then fill in the order sheet. Open 10:00 to 22:00.')
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 12:22: straight to Ichiran from Inari, then the hotel.
+D[23]['rows'] = [x for x in D[23]['rows'] if not x[1].startswith(('JR to Kyoto, subway to Gojō', 'Hotel: washing on', 'Hotel: rest'))]
+D[23]['rows'] += [
+ R('12:25', 'JR back to Kyoto, subway to Shijō', 'JR Nara line two stops to Kyoto, then the Karasuma subway two stops north to Shijō (四条). All on Suica.'),
+ R('13:40', 'Hotel: washing on, rest, pack rain gear', 'Ten minutes on foot down Karasuma-dōri from Ichiran. Umbrellas or raincoats for the evening: light rain likely from about 21:00.'),
+]
+_set23('Lunch: Ichiran', '12:50', 'A minute from Shijō station on Karasuma-dōri. Rich pork-bone ramen in your own booth. Ticket machine at the door, then fill in the order sheet. Open 10:00 to 22:00.')
+D[23]['rows'].sort(key=lambda x: x[0])
