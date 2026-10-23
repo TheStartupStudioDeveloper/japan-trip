@@ -477,3 +477,10 @@ GO[23] += [
   maps('sequence KYOTO GOJO Gojo Karasuma'),
  ]),
 ]
+GO[23] += [
+ ('Taxi to Katsuda', [
+  'Taxis pass constantly on Shijō-dōri. Show: 京都とんかつ かつ田 四条烏丸店までお願いします (Kyoto Tonkatsu Katsuda, Shijō-Karasuma, please).',
+  'It is just south of the Shijō-Karasuma crossing, on the Karasuma side. About 5 to 10 minutes.',
+  maps('Kyoto Tonkatsu Katsuda Shijokarasuma', 'driving', 'd'),
+ ]),
+]

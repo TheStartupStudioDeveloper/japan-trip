@@ -739,3 +739,8 @@ D[23]['rows'] += [
  R('19:15', 'Walk back to the hotel', 'About 6 minutes south down Karasuma-dōri.'),
 ]
 D[23]['rows'].sort(key=lambda x: x[0])
+
+# Fri 23 17:49: taxi to Katsuda instead of the Hankyu.
+D[23]['rows'] = [x for x in D[23]['rows'] if not x[1].startswith('Hankyu from Kyoto-Kawaramachi')]
+D[23]['rows'].append(R('17:50', 'Taxi to Katsuda', 'From Shijō-dōri, about 5 to 10 minutes, about ¥1,000. Show 京都とんかつ かつ田 四条烏丸店.'))
+D[23]['rows'].sort(key=lambda x: x[0])
