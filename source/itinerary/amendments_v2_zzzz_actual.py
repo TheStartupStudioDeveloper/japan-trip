@@ -672,3 +672,21 @@ D[23]['rows'] += [
 ]
 D[23]['rows'].sort(key=lambda x: x[0])
 D[23]['notes'] = [n for n in D[23]['notes'] if n[0] != 'Running late'] + [('Running late', 'Shorten the hotel rest. Protect Kiyomizu by 17:30 (closes 18:00).')]
+
+# Fri 23 10:28: Kinkaku-ji done early (very busy, rushed). To Kyoto Station now, coffee and a bite there, then Inari. Afternoon pulled earlier.
+for _i, _x in enumerate(D[23]['rows']):
+    if _x[1].startswith('★ Kinkaku-ji'):
+        D[23]['rows'][_i] = R('10:05', _x[1], _x[2] + ' Note: very busy, rushed through it. Not really worth it.', DN)
+    if _x[1].startswith('Taxi to Kinkaku-ji'):
+        D[23]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+D[23]['rows'] = [x for x in D[23]['rows'] if not x[1].startswith('Taxi to Kyoto Station')]
+D[23]['rows'] += [
+ R('10:30', 'Bus or taxi to Kyoto Station', 'Bus 205 from the Kinkakuji-michi stop (金閣寺道), 5 minutes\' walk from the gate, toward 京都駅, about 40 minutes, about ¥230 each on Suica. Or a taxi from the Kinkaku-ji rank, about 25 minutes, about ¥3,000.'),
+ R('11:10', 'Coffee and a bite at Kyoto Station', 'Plenty in the station and Porta underground. Keep it light, Ichiran is lunch.'),
+]
+_set23('JR Nara line to Inari', '11:35')
+_set23('★ Fushimi Inari', '11:45')
+_set23('JR back to Kyoto', '12:45')
+_set23('Lunch: Ichiran', '13:15')
+_set23('Hotel: rest', '14:00')
+D[23]['rows'].sort(key=lambda x: x[0])

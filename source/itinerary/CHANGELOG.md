@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Fri 23 Oct 10:30
+- Kinkaku-ji done early (busy, rushed). Bus 205 or taxi to Kyoto Station, coffee there 11:10, Inari 11:45, Ichiran 13:15, hotel 14:00.
+
 ## Fri 23 Oct 09:56
 - Fri 23: Inari moved to straight after Kinkaku-ji (taxi to Kyoto Station 11:15, Inari 12:00), Ichiran lunch 13:30, hotel rest and rain gear 14:15, taxi to Kiyomizu 15:45, walk to Chao Chao 18:40.
 

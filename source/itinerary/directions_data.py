@@ -421,3 +421,12 @@ GO[23] += [
   maps('Chao Chao Sanjo Kiyamachi'),
  ]),
 ]
+
+GO[23] += [
+ ('Bus or taxi to Kyoto Station', [
+  'Bus: out of the Kinkaku-ji gate, walk down the approach to the main road (Nishiōji-dōri), about 5 minutes, to the Kinkakuji-michi stop (金閣寺道).',
+  'Take bus 205 showing 京都駅 (Kyoto Station). Check the sign at the stop says 京都駅. In by the rear door, tap Suica, out by the front door. About 40 minutes to the bus terminal in front of the station.',
+  maps('Kinkakuji-michi bus stop', 'transit', 'r'),
+  'Taxi: the rank by the Kinkaku-ji entrance. Show 京都駅までお願いします. About 25 minutes, about ¥3,000.',
+ ]),
+]
