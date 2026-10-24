@@ -792,3 +792,49 @@ GO[26] += [
   maps('Kaminarimon Asakusa'),
  ]),
 ]
+
+# 25 Oct 08:05: Sun 25 without sumo, Mon 26 with the Shibuya Sumo Club at Yoyogi.
+GO[25] = [g for g in GO[25] if not g[0].startswith(('Gardens to Asakusa', 'Asakusa Sumo Club', 'Optional: Tokyo Tower'))]
+GO[25] += [
+ ('Walk to Ginza', [
+  'Out of the Ōtemon gate, cross the moat road and head south-east through Marunouchi, past Tokyo Station\'s red brick front.',
+  'Keep going south down Naka-dōri or under the JR tracks to Chūō-dōri. About 20 minutes.',
+  maps('Ginza 4-chome Crossing'),
+ ]),
+ ('Massages', [
+  'Buasai Ginza: Ginza 8-chōme, about 5 minutes east of the hotel.',
+  maps('Buasai Ginza'),
+  'YURAGI: Ginza 7-chōme.',
+  maps('YURAGI Ginza'),
+  'Head Spa ZEN: Ginza 2-chōme.',
+  maps('Head Spa ZEN Ginza'),
+ ]),
+]
+GO[26] = [g for g in GO[26] if g[0].startswith(('Leave the Blossom', 'Dinner under the train tracks'))]
+GO[26] += [
+ ('Sky Room Café', [
+  'From teamLab (Garden Plaza B, B1), cross to the Mori JP Tower, the tall main tower. Lifts to 33F, then up to 34F for Sky Room.',
+  maps('Hills House Sky Room Cafe Azabudai Hills'),
+ ]),
+ ('Optional: Tokyo Tower', [
+  'Down to street level, then south-east about 10 minutes downhill to Zōjō-ji (増上寺). The tower is right behind the temple.',
+  'Back to the hotel: Toei Mita line from Onarimon (御成門), two stops to Uchisaiwaichō (内幸町), or a taxi, about 10 minutes.',
+  maps('Zojoji Temple'),
+ ]),
+ ('Ōedo line from Shiodome to Yoyogi', [
+  'From the hotel, about 10 minutes east to 汐留 (Shiodome), Toei Ōedo line (magenta). Platform toward 六本木・都庁前 (Roppongi, Tochōmae).',
+  'Direct to 代々木 (Yoyogi), 7 stops, about 20 minutes. Tap Suica.',
+  'Out of Yoyogi toward the JR east exit (東口). The club is 1 minute away in the Yoyogi Broadway building, B1F, under the 渋谷相撲部屋 sign.',
+  maps('Daiichi Silver Building 5-20-11 Sendagaya', 'transit', 'r'),
+ ]),
+ ('Shibuya Sumo Club', [
+  'Daiichi Silver Building B1F, Yoyogi Broadway, 5-20-11 Sendagaya. Look for the 渋谷相撲部屋 sign with red lanterns.',
+  'Show the Klook voucher. Arrive 15 to 20 minutes early.',
+  maps('Shibuya Sumo Club Yoyogi'),
+ ]),
+ ('Ōedo line back to Shiodome', [
+  'Ōedo line at 代々木 (Yoyogi), toward 六本木・大門 (Roppongi, Daimon). Direct to 汐留 (Shiodome), about 20 minutes.',
+  'Up to street level, west under the JR tracks to the Yūrakuchō and Shimbashi lanes, about 10 minutes.',
+  maps('Yurakucho Sanchoku Inshokugai'),
+ ]),
+]

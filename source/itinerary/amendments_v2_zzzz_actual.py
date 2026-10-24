@@ -811,3 +811,28 @@ for _i, _x in enumerate(D[24]['rows']):
     if _x[1].startswith('Nozomi 16'): _n = 'Lost one AirPod on the train. The hotel is posting it to the Blossom, due Sunday.'
     if _x[1].startswith('Yurikamome back to Shimbashi'): _n = 'Pizza near the hotel on the way back.'
     D[24]['rows'][_i] = R(_x[0], _x[1], _n, DN)
+
+# Sun 25 08:05: sumo moves to Mon 26 at 17:00, Shibuya Sumo Club at Yoyogi (G to book). Sun 25: gardens, Ginza car-free, massages, bites in Ginza. Mon 26: teamLab, Sky Room coffee by Tokyo Tower, free afternoon, sumo, dinner under the tracks.
+D[25]['title'] = 'Palace gardens, Ginza car-free, massages'
+D[25]['sum'] = 'The Imperial Palace East Gardens first thing, then Ginza car-free from noon, the department stores and rooftops, massages, and bites around Ginza at night.'
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('Gardens to Asakusa', 'Asakusa Sumo Club', 'Ginza line from Asakusa', 'Ginza car-free', 'Eat in the complexes', 'Optional: Tokyo Tower'))] + [
+ R('08:15', 'AirPod at the front desk', 'The Kyoto hotel posted it, due today. Ask: 京都のホテルから荷物が届いていますか？ (Has a parcel arrived from the Kyoto hotel?)'),
+ R('11:15', 'Walk to Ginza, early lunch', 'From the Ōtemon gate, about 20 minutes south, past Tokyo Station\'s red brick front and through Marunouchi. Keep lunch light.'),
+ R('12:00', 'Ginza car-free', 'Chūō-dōri is pedestrian only from 12:00 to 17:00 on Sundays. Walk it while it is dry, then into the stores when the rain arrives.'),
+ R('17:00', 'Massages', 'Book ahead or walk in. Body and foot: Buasai Ginza (Thai, Ginza 8-chōme, 5 minutes from the hotel, to midnight) or YURAGI (Ginza 7-chōme, from 13:00). Head spa: Head Spa ZEN (Ginza 2-chōme, to 23:00).', TB),
+ R('Evening', 'Bites around Ginza', 'Graze rather than sit down: the department store food halls (depachika) before about 20:00, then yakitori or ramen around Yūrakuchō and the Ginza side streets. Many smaller places close on Sundays.'),
+]
+D[25]['rows'].sort(key=lambda x: (False, x[0]) if x[0][0].isdigit() else (False, {'Afternoon':'13:00','Late arvo':'15:30','Evening':'18:30','When done':'23:00'}.get(x[0], '23:30')))
+D[25]['foot'] = 'Rain expected in the afternoon: the gardens in the dry, Ginza car-free early, then the department stores and the massages.'
+D[26]['title'] = 'teamLab, coffee by Tokyo Tower, sumo show, dinner under the tracks'
+D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, a free afternoon, then the Shibuya Sumo Club show at 17:00 and yakitori under the train tracks.'
+D[26]['rows'] = [x for x in D[26]['rows'] if x[1].startswith(('Leave the Blossom', 'teamLab Borderless', 'Back to the hotel'))] + [
+ R('10:45', 'Sky Room Café & Bar, Mori JP Tower 34F', 'Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. Same building complex as teamLab.'),
+ R('11:45', 'Optional: Tokyo Tower and Zōjō-ji', 'About 10 minutes\' walk. The temple gate with the tower behind it.'),
+ R('12:30', 'Free afternoon', 'Hotel rest, the Ginza stores, or Kappabashi if you still want knives or ceramics (Monday is the last weekday: Ginza line to Tawaramachi, back by 15:45).'),
+ R('16:00', 'Ōedo line from Shiodome to Yoyogi', 'Ten minutes\' walk from the hotel to Shiodome (汐留), Toei Ōedo line toward 六本木・都庁前, direct to 代々木 (Yoyogi), about 20 minutes. Aim to arrive by 16:40.'),
+ R('17:00', 'Shibuya Sumo Club: sumo show', 'About 90 minutes. Live bouts, English MC, Q&A, a chance to challenge a wrestler (lottery), photos with the wrestlers, one drink. Daiichi Silver Building B1F, Yoyogi Broadway, 1 minute from JR Yoyogi east exit. About AU$62 each on Klook.', TB),
+ R('18:40', 'Ōedo line back to Shiodome', 'From Yoyogi, toward 六本木・大門, direct to 汐留 (Shiodome), about 20 minutes. Then 10 minutes\' walk to the lanes.'),
+ R('19:15', 'Dinner under the train tracks, Yūrakuchō', 'The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, beer, the trains rumbling overhead. No booking; wander and pick one.'),
+]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

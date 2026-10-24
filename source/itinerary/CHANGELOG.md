@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 08:05
+- Sun 25: AirPod at the desk, East Gardens, walk to Ginza, car-free from 12:00, stores and rooftops, massages 17:00 (to book), bites around Ginza. Asakusa sumo dropped.
+- Mon 26: teamLab 08:30, Sky Room Café 34F by Tokyo Tower 10:45, optional Zōjō-ji, free afternoon (Kappabashi optional), Ōedo line to Yoyogi 16:00, Shibuya Sumo Club 17:00 (to book), Ōedo back, dinner under the tracks 19:15. Asakusa, Sensō-ji and the Skytree dropped.
+
 ## Sat 24 Oct 23:16
 - Sat 24 actual: sleep in and pack, Nijō, breakfast out and the hotel return dropped. Nozomi 16, the Blossom, Hilton fireworks and buffet, Statue of Liberty, Yurikamome back, pizza near the hotel. One AirPod left on the train, being posted to the Blossom.
 
