@@ -848,3 +848,21 @@ D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Optional: Tok
  R('14:45', 'Ginza line back, drop the shopping at the hotel', 'Tawaramachi to Ginza, about 15 minutes, then a 10 minute walk. Rest until 16:00.'),
 ]
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Sun 25 08:13: the sumo moves to the 12:00 show on Mon 26. Kappabashi after it, Sensō-ji at dusk, evening free for dinner under the tracks.
+D[26]['title'] = 'teamLab, sumo show, Kappabashi, Sensō-ji at dusk, dinner under the tracks'
+D[26]['sum'] = 'teamLab Borderless first thing, a quick coffee beside Tokyo Tower, the Shibuya Sumo Club show at noon, Kappabashi kitchen street in the afternoon, Sensō-ji as the lights come on, then yakitori under the train tracks.'
+D[26]['rows'] = [x for x in D[26]['rows'] if x[1].startswith(('Leave the Blossom', 'teamLab Borderless', 'Back to the hotel', 'Sky Room Café', 'Dinner under the train tracks'))]
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Sky Room Café'):
+        D[26]['rows'][_i] = R('10:40', _x[1], 'Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. Quick one: leave by 11:15.')
+D[26]['rows'] += [
+ R('11:15', 'Ōedo line from Azabu-Jūban to Yoyogi', 'About 10 minutes\' walk to Azabu-Jūban (麻布十番), Toei Ōedo line toward 六本木・都庁前, direct to 代々木 (Yoyogi), about 12 minutes. Aim to arrive by 11:45.'),
+ R('12:00', 'Shibuya Sumo Club: sumo show', 'About 90 minutes. Live bouts, English MC, Q&A, a chance to challenge a wrestler (lottery), photos with the wrestlers, one drink. Daiichi Silver Building B1F, Yoyogi Broadway, 1 minute from JR Yoyogi east exit. About AU$62 each on Klook.', TB),
+ R('13:30', 'Quick lunch near Yoyogi', 'Something fast by the station so Kappabashi gets the time. Or eat at Kappabashi or Asakusa.'),
+ R('14:00', 'Ōedo line, then the Ginza line to Tawaramachi', 'Ōedo line from Yoyogi to Aoyama-itchōme (青山一丁目), 3 stops, change to the Ginza line toward 浅草 to Tawaramachi (田原町). About 40 minutes.'),
+ R('14:45', 'Kappabashi kitchenware street', 'Weekday, so the shops are open, most until about 17:00 to 17:30. Knives: Kama-asa (free engraving) and Kamata Hakensha. Ceramics: Dengama. Fake food: Ganso food samples. Niimi\'s giant chef head at the south end. Knives fly in checked bags only.'),
+ R('17:00', 'Sensō-ji at dusk', 'Ten minutes east. Kaminarimon gate, Nakamise street and the main hall lit up after sunset, crowds thinning. The free terrace on 8F of the tourist centre opposite Kaminarimon for the Skytree.'),
+ R('18:15', 'Ginza line back, drop the shopping at the hotel', 'Asakusa to Ginza, about 18 minutes, then a 10 minute walk.'),
+]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

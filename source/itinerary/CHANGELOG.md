@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 08:13
+- Mon 26: sumo moved to the 12:00 show. teamLab 08:30, Sky Room 10:40, Ōedo from Azabu-Jūban 11:15, Shibuya Sumo Club 12:00, quick lunch 13:30, Ōedo and Ginza lines to Tawaramachi 14:00, Kappabashi 14:45, Sensō-ji at dusk 17:00, back to the hotel 18:15, dinner under the tracks 19:15.
+
 ## Sun 25 Oct 08:06
 - Mon 26: Kappabashi back in. Sky Room 10:45, Ginza line to Tawaramachi 11:30, Kappabashi 12:00, lunch 13:30, back to the hotel with the shopping 14:45, Ōedo to Yoyogi 16:00, sumo 17:00, dinner under the tracks 19:15.
 

@@ -863,3 +863,27 @@ GO[26] += [
   gmt(HOTEL_T),
  ]),
 ]
+
+# 25 Oct 08:13: sumo at 12:00 on Mon 26, Kappabashi after.
+GO[26] = [g for g in GO[26] if g[0].startswith(('Leave the Blossom', 'Dinner under the train tracks', 'Sky Room Café', 'Shibuya Sumo Club', 'Kappabashi kitchenware street', 'Ginza line back'))]
+GO[26] += [
+ ('Ōedo line from Azabu-Jūban to Yoyogi', [
+  'From the Mori JP Tower, about 10 minutes south-west downhill to 麻布十番 (Azabu-Jūban), Toei Ōedo line (magenta).',
+  'Platform toward 六本木・都庁前 (Roppongi, Tochōmae). Direct to 代々木 (Yoyogi), 4 stops, about 12 minutes.',
+  'Out toward the JR east exit (東口). The club is 1 minute away in the Yoyogi Broadway building, B1F, under the 渋谷相撲部屋 sign.',
+  maps('Daiichi Silver Building 5-20-11 Sendagaya', 'transit', 'r'),
+ ]),
+ ('Quick lunch near Yoyogi', [
+  'Around Yoyogi station east exit: chain ramen, soba and gyūdon shops within a couple of minutes. Shinjuku South exit is 10 minutes\' walk north if you want more choice.',
+ ]),
+ ('Ōedo line, then the Ginza line to Tawaramachi', [
+  'Yoyogi (代々木), Ōedo line toward 六本木・大門, 3 stops to 青山一丁目 (Aoyama-itchōme).',
+  'Follow 銀座線 (Ginza line, orange) signs, toward 浅草 (Asakusa), to 田原町 (Tawaramachi). Exit 3, Kappabashi-dōri about 5 minutes west.',
+  maps('Kappabashi Dougu Street', 'transit', 'r'),
+ ]),
+ ('Sensō-ji at dusk', [
+  'From Kappabashi, east along Asakusa-dōri, about 10 minutes, to Kaminarimon (雷門), the big red lantern gate.',
+  'Up Nakamise street to the main hall. The Asakusa Culture Tourist Information Centre opposite Kaminarimon has a free 8F terrace with the Skytree view.',
+  maps('Kaminarimon Asakusa'),
+ ]),
+]
