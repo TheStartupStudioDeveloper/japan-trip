@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 08:30
+- Shinjuku Sumo Club 17:30 booked on Klook for 2.
+
 ## Sun 25 Oct 08:20
 - Sun 25: sumo today instead. Gardens, Ginza car-free 12:00, stores and rooftops, Marunouchi line to Shinjuku 16:30, Shinjuku Sumo Club main venue 17:30 (to book), dinner in Shinjuku 19:00, back to Ginza 20:30, late massage 21:00.
 - Mon 26: teamLab, Sky Room 10:45, Kappabashi 12:00, lunch in Asakusa, Sensō-ji 14:30, Skytree at dusk, Ginza line back 17:30, dinner under the tracks 19:15.

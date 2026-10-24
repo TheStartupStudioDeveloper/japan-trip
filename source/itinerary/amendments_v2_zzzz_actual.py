@@ -902,3 +902,8 @@ for _x in D[26]['rows']:
     if _x[1] in _seen: continue
     _seen.add(_x[1]); _rr.append(_x)
 D[26]['rows'] = _rr
+
+# Sun 25 08:30: Shinjuku Sumo Club 17:30 booked on Klook, 2 adults.
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('Shinjuku Sumo Club'):
+        D[25]['rows'][_i] = R(_x[0], _x[1], _x[2].replace('About AU$74 each.', 'Booked on Klook for 2, about AU$74 each. Free cancellation closed (under 24 hours).'), B)
