@@ -524,3 +524,240 @@ GO[26] += [
   maps('Yurakucho Sanchoku Inshokugai'),
  ]),
 ]
+
+# 24 Oct 14:20: directions for the rest of the trip, Sat 24 afternoon to Fri 30.
+HOTEL_T = 'Hotel The Blossom Hibiya'
+HOTEL_HK = 'Sheraton Hong Kong Hotel & Towers'
+def gmt(dest): return maps(dest, 'transit', 'r')
+def gmd(dest): return maps(dest, 'driving', 'd')
+GO[24] += [
+ ('Tokyo Station, Yaesu side taxi rank', [
+  'Off the Shinkansen, out through the Shinkansen exit gates (ticket in the gate).',
+  'Follow the yellow signs for 八重洲 (Yaesu), Central or South exit. Not Marunouchi.',
+  'The taxi rank (タクシー乗り場) is right outside the Yaesu exit. Show the driver: ザ・ブラッサム日比谷までお願いします。東京都港区新橋1-1-13 (The Blossom Hibiya, please).',
+  'About 10 to 15 minutes, roughly ¥1,500 to ¥2,000. Card or Suica.',
+  'Long queue: JR Yamanote or Keihin-Tōhoku line two stops south to 新橋 (Shimbashi), Hibiya exit, about 5 minutes on foot.',
+  gmd(HOTEL_T),
+ ]),
+ ('Walk to Shimbashi, Yurikamome', [
+  'From the hotel, walk east to JR Shimbashi, about 5 to 8 minutes.',
+  'Go through to the east side (汐留 Shiodome side) and follow the blue signs for ゆりかもめ (Yurikamome). The station is upstairs, above street level.',
+  'Tap Suica. Any train toward 豊洲 (Toyosu). Sit in the front car for the view over Rainbow Bridge.',
+  'Get off at 台場 (Daiba), about 15 minutes. The Hilton is connected to the station.',
+  gmt('Daiba Station Tokyo'),
+ ]),
+ ('Hilton Tokyo Odaiba', [
+  'From Daiba station, follow the signs for ヒルトン東京お台場 (Hilton Tokyo Odaiba). A covered walk of a minute or two.',
+  'Ask at the front desk where the Seascape wristbands are collected and where the viewing area is.',
+  maps('Hilton Tokyo Odaiba'),
+ ]),
+ ('Optional: Odaiba Statue of Liberty', [
+  'Out of the Hilton onto the waterfront promenade, then a few minutes towards Aqua City and Decks.',
+  'The statue stands on the edge of Odaiba Seaside Park with Rainbow Bridge behind it.',
+  maps('Statue of Liberty Odaiba'),
+ ]),
+ ('Yurikamome back to Shimbashi', [
+  'Back to 台場 (Daiba) station. Train toward 新橋 (Shimbashi), the end of the line, about 15 minutes.',
+  'Down to street level, west under the JR tracks, then about 5 to 8 minutes to the hotel.',
+  'Packed platform: taxi from the Hilton entrance. Show: ザ・ブラッサム日比谷 (The Blossom Hibiya), about 15 minutes.',
+  maps(HOTEL_T),
+ ]),
+]
+GO[25] += [
+ ('Imperial Palace East Gardens', [
+  'On foot: north through Hibiya Park, then along the moat on Uchibori-dōri to the Ōtemon gate (大手門). About 25 minutes, flat.',
+  'Or the Toei Mita line from 内幸町 (Uchisaiwaichō), two stops to 大手町 (Ōtemachi), then follow the 皇居東御苑 (East Gardens) signs to Ōtemon, about 5 minutes.',
+  'Free. Take a plastic entry token at the gate and hand it back as you leave. Open Sundays from 09:00.',
+  maps('Otemon Gate Imperial Palace East Gardens'),
+ ]),
+ ('Ginza car-free', [
+  'Come up from Ginza station exits A1 to A4 onto Chūō-dōri. The road is pedestrian only from 12:00 to 17:00 on weekends.',
+  'The Ginza 4-chōme crossing (Mitsukoshi and the Wakō clock tower) is the middle of it all.',
+  maps('Ginza 4-chome Crossing'),
+ ]),
+ ('Department stores and shopping', [
+  'Mitsukoshi: the Ginza 4-chōme crossing. Ginza Six: two blocks south on Chūō-dōri. Matsuya: one block north on the east side.',
+  'Itoya: Chūō-dōri, between Matsuya and Mitsukoshi. Dover Street Market: inside Ginza Komatsu, beside Ginza Six.',
+  'Passports for tax-free.',
+  maps('GINZA SIX'),
+  maps('Ginza Mitsukoshi'),
+ ]),
+ ('Rooftop gardens', [
+  'Ginza Six: the lifts go to the rooftop garden at the top of the building. Free.',
+  'Mitsukoshi: the Ginza Terrace on 9F. Free.',
+ ]),
+ ('Optional: Tokyo Tower', [
+  'Taxi from Chūō-dōri: 増上寺までお願いします (Zōjō-ji, please). About 10 minutes.',
+  'The tower is directly behind the temple gate, lit up.',
+  'Back: taxi to ザ・ブラッサム日比谷 (The Blossom Hibiya), about 10 minutes.',
+  gmd('Zojoji Temple'),
+ ]),
+ ('Walk back to the hotel', [
+  'From Chūō-dōri, head south-west towards Shimbashi, under the JR tracks. About 10 to 15 minutes.',
+  maps(HOTEL_T),
+ ]),
+]
+GO[26] += [
+ ('Leave the Blossom', [
+  'On foot: west to Toranomon, then south up to Azabudai Hills. About 25 minutes, with a gentle hill at the end.',
+  'Taxi if it is wet: 麻布台ヒルズ チームラボボーダレスまでお願いします (Azabudai Hills, teamLab Borderless). About 10 minutes.',
+  'teamLab is in the Garden Plaza B building, level B1.',
+  maps('teamLab Borderless Azabudai Hills'),
+ ]),
+ ('Sensō-ji', [
+  'From the sumo club, walk east to Kaminarimon (雷門), the big red lantern gate. About 5 minutes.',
+  'Up Nakamise street to the main hall. If Nakamise is jammed, use the parallel lanes either side.',
+  maps('Kaminarimon Asakusa'),
+ ]),
+ ('Skytree views at dusk', [
+  'The Asakusa Culture Tourist Information Centre is directly opposite Kaminarimon. Lift to 8F for the free terrace.',
+  'Then 3 minutes east to Azuma-bashi bridge (吾妻橋) for the Skytree across the river.',
+  maps('Asakusa Culture Tourist Information Center'),
+ ]),
+ ('Ginza line back to Shimbashi', [
+  'Asakusa station, 銀座線 (Ginza line) toward 渋谷 (Shibuya). Direct to 新橋 (Shimbashi), about 20 minutes.',
+  'Out towards the JR station, west under the tracks, about 5 to 8 minutes to the hotel.',
+  gmt(HOTEL_T),
+ ]),
+]
+GO.setdefault(27, [])
+GO[27] += [
+ ('Leave the hotel, walk to Shimbashi', [
+  'East to Shimbashi, about 8 minutes with the bags. Follow the 都営浅草線 (Toei Asakusa line) signs down.',
+  'Platform 1. Tap Suica.',
+  maps('Shimbashi Station Toei Asakusa Line'),
+ ]),
+ ('Airport Rapid Limited Express', [
+  'Board the エアポート快特 (Airport Rapid Limited Express) to 羽田空港 (Haneda Airport). The board must say 羽田空港.',
+  'Do NOT board a train bound for 西馬込 (Nishi-magome). Backup: the 06:45 急行 (Express) to 羽田空港.',
+  'Get off at 羽田空港第3ターミナル (Haneda Terminal 3), about 25 minutes. Lifts up to the 3F departures hall.',
+  'Taxi fallback from the hotel: 羽田空港 第3ターミナルまでお願いします (Haneda Terminal 3). About 25 minutes.',
+  gmt('Haneda Airport Terminal 3'),
+ ]),
+ ('Check in at the Cathay desks', [
+  'Departures, 3F. Check the screens for the Cathay Pacific (キャセイパシフィック) counter letter for CX543.',
+ ]),
+ ('Land in Hong Kong', [
+  'Follow the Arrivals signs. Immigration, bags, then customs (green channel).',
+  'Into the Arrivals Hall. Set Ubigi as the data line if it has not already switched.',
+ ]),
+ ('Red urban taxi to the Sheraton', [
+  'From the Arrivals Hall, follow the Taxi signs to the rank. Use the RED taxis (市區的士, urban). Green and blue ones do not go to Kowloon city.',
+  'Show: 九龍尖沙咀彌敦道20號 香港喜來登酒店 (Sheraton Hong Kong, 20 Nathan Road, Tsim Sha Tsui).',
+  '35 to 45 minutes. Roughly HK$300 to 350 with tunnel tolls and bag fees. Cash is safest.',
+  gmd(HOTEL_HK),
+ ]),
+ ('Walk to Tsim Sha Tsui Public Pier 1', [
+  'Out of the hotel to Salisbury Road, cross to the harbour side, then walk west past the Cultural Centre towards the Clock Tower.',
+  'The public piers (尖沙咀公眾碼頭) are just past the Clock Tower, beside the Star Ferry. Pier 1 for Aqua Luna. About 10 minutes.',
+  maps('Tsim Sha Tsui Public Pier 1'),
+ ]),
+ ('Avenue of Stars', [
+  'Off the boat, walk east along the harbour promenade past the Cultural Centre and the Museum of Art. The Avenue of Stars (星光大道) starts there. About 10 minutes.',
+  'Back: north up any lane to Salisbury Road, the Sheraton is at the Nathan Road corner.',
+  maps('Avenue of Stars Hong Kong'),
+ ]),
+ ('Bar, or Temple Street', [
+  'Temple Street (廟街): walk north up Nathan Road about 20 minutes, or MTR from Tsim Sha Tsui one stop to Jordan (佐敦), then a few minutes west.',
+  'The stalls run between Jordan Road and Yau Ma Tei, busiest from about 19:00.',
+  maps('Temple Street Night Market'),
+ ]),
+]
+GO.setdefault(28, [])
+GO[28] += [
+ ('Star Ferry to Central', [
+  'From the hotel, south to Salisbury Road, then west to the Star Ferry pier (天星碼頭) beside the Clock Tower. About 10 minutes.',
+  'Tap Octopus at the gate. Upper deck. About 10 minutes to Central Pier 7.',
+  maps('Star Ferry Pier Tsim Sha Tsui'),
+ ]),
+ ('Graham Street Market', [
+  'From Central Pier 7, follow the covered footbridges towards IFC, then on to Queen\'s Road Central. About 15 minutes.',
+  'Graham Street Market (嘉咸街街市) runs uphill from Queen\'s Road Central.',
+  'Then the Mid-Levels escalator (中環至半山自動扶梯) for a ride up, PMQ (元創方) on Aberdeen Street, and Tai Kwun (大館) on Hollywood Road. All within a few blocks.',
+  maps('Graham Street Market'),
+  maps('Tai Kwun Hong Kong'),
+ ]),
+ ('Peak Tram up', [
+  'Lower terminus: Garden Road (花園道 山頂纜車總站). About 15 minutes uphill on foot from Tai Kwun, or a short taxi.',
+  'Show the prebooked QR code. Sit on the RIGHT going up.',
+  'At the top, Lugard Road (盧吉道) starts beside the Peak Tower. About 20 minutes each way for the best free view.',
+  maps('Peak Tram Garden Road Lower Terminus'),
+ ]),
+ ('Taxi down', [
+  'Taxi rank by the Peak Galleria (山頂廣場), across from the Peak Tower.',
+  'For dinner say 中環 蘇豪 (SoHo, Central). For the hotel: 尖沙咀 喜來登酒店.',
+ ]),
+ ('Bars in Central', [
+  'Lan Kwai Fong (蘭桂坊) and SoHo are a few minutes\' walk apart.',
+  'Home: MTR Central (中環), Tsuen Wan line, two stops to Tsim Sha Tsui (尖沙咀). Exits signed for Salisbury Road. Or a taxi through the tunnel.',
+  gmt(HOTEL_HK),
+ ]),
+ ('Or the old tram', [
+  'Trams run east along Des Voeux Road Central. Board at the back, pay Octopus at the front as you get off. Upper deck, front seat.',
+  'About 15 minutes to Wan Chai. Get off near Fleming Road, then about 10 minutes north to Wan Chai Ferry Pier (灣仔碼頭).',
+  'Star Ferry to Tsim Sha Tsui. Last ferry 23:00.',
+  maps('Wan Chai Ferry Pier'),
+ ]),
+]
+GO.setdefault(29, [])
+GO[29] += [
+ ('Train to Tung Chung', [
+  'MTR Tsim Sha Tsui (尖沙咀), Tsuen Wan line toward 荃灣 (Tsuen Wan), to 荔景 (Lai King).',
+  'Change to the orange Tung Chung line toward 東涌 (Tung Chung), to the end. About 50 minutes in all.',
+  'Exit B. The Ngong Ping 360 terminal is a few minutes\' walk, signed.',
+  gmt('Ngong Ping 360 Tung Chung Cable Car Terminal'),
+ ]),
+ ('Ngong Ping 360 cable car up', [
+  'Follow the signs for Klook or prepaid voucher holders, then the Crystal cabin queue. 25 minutes up.',
+  maps('Ngong Ping 360 Tung Chung Cable Car Terminal'),
+ ]),
+ ('Big Buddha', [
+  'From the top station, walk through Ngong Ping village, about 10 minutes, to the steps.',
+  '268 steps up to the Big Buddha (天壇大佛). Po Lin Monastery (寶蓮寺) is opposite. The Wisdom Path (心經簡林) is about 15 minutes beyond, signed.',
+  maps('Tian Tan Buddha'),
+ ]),
+ ('Train to Hong Kong Station', [
+  'Tung Chung line toward 香港 (Hong Kong), to the end. About 30 minutes, direct.',
+  'Hong Kong station connects to Central station and IFC underground.',
+  gmt('Hong Kong Station MTR'),
+ ]),
+ ('Sheung Wan shops', [
+  'From Central, the Mid-Levels escalator up to Hollywood Road (荷李活道), then walk west.',
+  'Man Mo Temple (文武廟) is on Hollywood Road. Cat Street antiques (摩羅上街) is the lane just below it.',
+  maps('Man Mo Temple Hong Kong'),
+ ]),
+ ('Egg tart', [
+  'Tai Cheong Bakery (泰昌餅家), Lyndhurst Terrace, near the bottom of the escalator. Check the hours on the day.',
+  maps('Tai Cheong Bakery Lyndhurst Terrace'),
+ ]),
+ ('Star Ferry from Central', [
+  'Walk down to Central Pier 7 (中環七號碼頭), along the IFC footbridges. About 10 to 15 minutes.',
+  'Tap Octopus. About 10 minutes across.',
+  maps('Central Pier 7 Star Ferry'),
+ ]),
+ ('Optional: Ozone', [
+  'Taxi from the hotel: 環球貿易廣場 麗思卡爾頓酒店 (Ritz-Carlton, ICC). About 10 minutes.',
+  'Express lift to the hotel lobby on 103F, then the lift to 118F.',
+  gmd('Ozone Ritz-Carlton Hong Kong'),
+ ]),
+ ('Temple Street dinner', [
+  'Walk north up Nathan Road, about 15 to 20 minutes, or MTR one stop to Jordan (佐敦), exit A, then a few minutes west.',
+  maps('Temple Street Night Market'),
+ ]),
+]
+GO.setdefault(30, [])
+GO[30] += [
+ ('Ozone at the Ritz-Carlton', [
+  'Taxi from the hotel: 環球貿易廣場 麗思卡爾頓酒店 (Ritz-Carlton, ICC). About 10 minutes.',
+  'Express lift to the hotel lobby on 103F, then the lift to 118F. Closed shoes, no sleeveless tops for men.',
+  gmd('Ozone Ritz-Carlton Hong Kong'),
+ ]),
+ ('Taxi to the airport', [
+  'Red taxi from the Sheraton rank. Show: 香港國際機場 一號客運大樓 (Hong Kong Airport, Terminal 1).',
+  '30 to 40 minutes, roughly HK$300 to 350 with bags.',
+  gmd('Hong Kong International Airport Terminal 1'),
+ ]),
+ ('Check in at the Cathay desks', [
+  'Departures, Terminal 1. Check the screens for the Cathay Pacific (國泰航空) counter row for CX105.',
+ ]),
+]

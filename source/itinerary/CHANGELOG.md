@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sat 24 Oct 14:25
+- ⓘ directions added for the rest of the trip, Sat 24 afternoon to Fri 30: every move between places (Tokyo Station taxi, Yurikamome both ways, East Gardens, Ginza, teamLab, Asakusa, Haneda train, Hong Kong airport taxi, ferries, Peak Tram, Tung Chung, Ozone, airport). Local names in Japanese or Chinese, Google and Apple Maps links.
+
 ## Fri 23 Oct 19:45
 - Sun 25: Imperial Palace East Gardens, then Kappabashi (Sunday-open shops: Kama-asa, Kamata Hakensha, Dengama, Ganso samples), lunch in Asakusa, Ginza car-free from 14:30, stores when the rain comes.
 - Mon 26: teamLab 08:30, Asakusa Sumo Club 12:00 with chanko lunch (to book), Sensō-ji 14:15, Skytree at dusk, dinner under the tracks at Yūrakuchō. Kappabashi moved off Monday.
