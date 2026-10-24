@@ -761,3 +761,34 @@ GO[30] += [
   'Departures, Terminal 1. Check the screens for the Cathay Pacific (國泰航空) counter row for CX105.',
  ]),
 ]
+
+# 24 Oct 18:05: Kappabashi back to Mon 26, sumo to Sun 25.
+_k25 = [g for g in GO[25] if g[0].startswith(('Kappabashi', 'Lunch in Asakusa'))]
+GO[25] = [g for g in GO[25] if not g[0].startswith(('Tokyo Station, then JR to Ueno', 'Kappabashi', 'Lunch in Asakusa'))]
+GO[25] += [
+ ('Gardens to Asakusa', [
+  'Out of the East Gardens by the Ōtemon gate, about 10 minutes east to Tokyo Station\'s Marunouchi side.',
+  'JR Yamanote or Keihin-Tōhoku line one stop north to 神田 (Kanda). Follow 銀座線 (Ginza line) signs, toward 浅草 (Asakusa), to the end of the line. About 30 minutes in all.',
+  'The sumo club is beside Don Quijote Asakusa on Kokusai-dōri, about 5 minutes west of Kaminarimon.',
+  'Taxi from Ōtemon: 浅草 ドン・キホーテまでお願いします (Asakusa, Don Quijote). About 20 minutes, about ¥2,500.',
+  maps('Asakusa Sumo Club', 'transit', 'r'),
+ ]),
+ ('Asakusa Sumo Club', [
+  'Beside Don Quijote Asakusa on Kokusai-dōri. Arrive 10 to 15 minutes before 12:00.',
+  maps('Asakusa Sumo Club'),
+ ]),
+]
+GO[26] = [g for g in GO[26] if not g[0].startswith(('Hibiya line, then the Ginza line', 'Asakusa Sumo Club', 'Sensō-ji'))]
+GO[26] += [
+ ('Hibiya line, then the Ginza line to Tawaramachi', [
+  'From teamLab, 5 minutes to Kamiyachō (神谷町), Hibiya line toward 北千住. Change at 銀座 (Ginza) to the 銀座線 toward 浅草 (Asakusa), to 田原町 (Tawaramachi). Exit 3.',
+  'Kappabashi-dōri is about 5 minutes west.',
+  maps('Kappabashi Dougu Street', 'transit', 'r'),
+ ]),
+] + [(k, s) for k, s in _k25] + [
+ ('Sensō-ji', [
+  'From lunch, walk to Kaminarimon (雷門), the big red lantern gate.',
+  'Up Nakamise street to the main hall. If Nakamise is jammed, use the parallel lanes either side.',
+  maps('Kaminarimon Asakusa'),
+ ]),
+]

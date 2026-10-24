@@ -779,3 +779,26 @@ for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Sensō-ji'):
         D[26]['rows'][_i] = R('14:15', _x[1], 'A few minutes from the sumo club. Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.', *_x[3:])
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Sat 24 18:05: Kappabashi is mostly shut on Sundays, so it goes back to Mon 26. The sumo show moves to Sun 25 at 12:00 (G to book).
+D[25]['title'] = 'Palace gardens, sumo show, then Ginza car-free'
+D[25]['sum'] = 'The Imperial Palace East Gardens first thing, a sumo show with chanko hotpot lunch in Asakusa, then back to Ginza for the car-free afternoon and into the department stores when the rain comes.'
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('Tokyo Station, then JR to Ueno', 'Kappabashi', 'Lunch in Asakusa', 'Ginza line from Asakusa', 'Ginza car-free'))] + [
+ R('11:00', 'Gardens to Asakusa', 'From the Ōtemon gate, walk to Tokyo Station, JR one stop to Kanda (神田), then the Ginza line to Asakusa (浅草), about 30 minutes. Or a taxi from the gardens, about 20 minutes, about ¥2,500.'),
+ R('12:00', 'Asakusa Sumo Club: show and chanko lunch', 'About two hours. Former wrestlers explain and demonstrate sumo, with audience try-outs, and an all-you-can-eat chanko hotpot (the wrestlers\' stew) and a drink. About ¥16,000 each. Beside Don Quijote Asakusa. Sessions 12:00, 15:00, 18:00, 20:30.', TB),
+ R('14:15', 'Ginza line from Asakusa to Ginza', 'Direct, about 18 minutes. Out at Ginza onto Chūō-dōri.'),
+ R('14:45', 'Ginza car-free', 'Chūō-dōri is pedestrian only until 17:00. Walk it while it is dry, then into the stores when the rain arrives.'),
+]
+D[25]['rows'].sort(key=lambda x: (False, x[0]) if x[0][0].isdigit() else (False, {'Afternoon':'15:00','Late arvo':'16:30','Evening':'18:00','When done':'23:00'}.get(x[0], '23:30')))
+D[25]['foot'] = 'Rain expected in the afternoon: the gardens in the dry, the sumo show indoors, then the department stores. Browse before about 20:00 and eat after. Many smaller Ginza bars and restaurants close on Sundays.'
+D[26]['title'] = 'teamLab, Kappabashi and Asakusa, dinner under the tracks'
+D[26]['sum'] = 'teamLab Borderless first thing, Kappabashi kitchen street while the shops are open, lunch in Asakusa, Sensō-ji and the Skytree at dusk, then yakitori and beer in the lanes under the train tracks.'
+D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Hibiya line, then the Ginza line', 'Asakusa Sumo Club'))] + [
+ R('10:45', 'Hibiya line, then the Ginza line to Tawaramachi', 'From Kamiyachō, Hibiya line to Ginza, change to the Ginza line to Tawaramachi (田原町), about 30 minutes.'),
+ R('11:15', 'Kappabashi kitchenware street', 'Weekday, so the shops are open, most until about 17:00. Knives: Kama-asa (free engraving) and Kamata Hakensha. Ceramics: Dengama. Fake food: Ganso food samples. Niimi\'s giant chef head at the south end. Knives fly in checked bags only.'),
+ R('13:00', 'Lunch in Asakusa', 'Ten minutes east on foot. Keep it casual.'),
+]
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Sensō-ji'):
+        D[26]['rows'][_i] = R('14:15', _x[1], 'A few minutes from lunch. Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.', *_x[3:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

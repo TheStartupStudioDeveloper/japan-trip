@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sat 24 Oct 18:05
+- Kappabashi back to Mon 26 (most shops shut on Sundays): teamLab 08:30, Tawaramachi 10:45, Kappabashi 11:15, lunch in Asakusa 13:00, Sensō-ji 14:15, Skytree at dusk, Yūrakuchō dinner.
+- Sun 25: East Gardens, then the Asakusa Sumo Club 12:00 show and chanko lunch (to book), Ginza line back 14:15, Ginza car-free 14:45, stores, rooftops.
+
 ## Sat 24 Oct 14:25
 - ⓘ directions added for the rest of the trip, Sat 24 afternoon to Fri 30: every move between places (Tokyo Station taxi, Yurikamome both ways, East Gardens, Ginza, teamLab, Asakusa, Haneda train, Hong Kong airport taxi, ferries, Peak Tram, Tung Chung, Ozone, airport). Local names in Japanese or Chinese, Google and Apple Maps links.
 
