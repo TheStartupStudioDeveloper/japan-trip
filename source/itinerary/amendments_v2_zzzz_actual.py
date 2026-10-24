@@ -907,3 +907,6 @@ D[26]['rows'] = _rr
 for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('Shinjuku Sumo Club'):
         D[25]['rows'][_i] = R(_x[0], _x[1], _x[2].replace('About AU$74 each.', 'Booked on Klook for 2, about AU$74 each. Free cancellation closed (under 24 hours).'), B)
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('Shinjuku Sumo Club'):
+        D[25]['rows'][_i] = R(_x[0], _x[1], _x[2].replace('Address on the Klook voucher (main venue: SEKISAKU Bldg 2F, 2-5-22 Ōkubo).', 'SEKISAKU Bldg 2F, 2-5-22 Ōkubo (新宿区大久保2-5-22).'), *_x[3:])

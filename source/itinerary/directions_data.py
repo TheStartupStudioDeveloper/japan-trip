@@ -893,13 +893,13 @@ GO[25] = [g for g in GO[25] if not g[0].startswith(('Massages', 'Walk back to th
 GO[25] += [
  ('Marunouchi line from Ginza to Shinjuku', [
   'Ginza station, 丸ノ内線 (Marunouchi line, red), platform toward 新宿・荻窪 (Shinjuku, Ogikubo). Get off at 新宿三丁目 (Shinjuku-sanchōme), about 17 minutes.',
-  'Exit B5 or E1, then north up Meiji-dōri and through Kabukichō, about 15 minutes. Or a taxi from the exit: 大久保2-5-22 (Ōkubo 2-5-22), about 5 minutes.',
+  'Exit B5 or E1, then north up Meiji-dōri and through Kabukichō, about 15 minutes. Or a taxi from the exit: 新宿区大久保2-5-22 (Ōkubo 2-5-22), about 5 minutes.',
   maps('2-5-22 Okubo Shinjuku Tokyo', 'transit', 'r'),
  ]),
  ('Shinjuku Sumo Club', [
-  'Main venue: SEKISAKU Bldg 2F, 2-5-22 Ōkubo. Check the address on the Klook voucher. Reviewers say search "Shinjuku Sumo Club" in maps, the listing address is hard to find.',
+  'SEKISAKU Bldg 2F, 2-5-22 Ōkubo, Shinjuku (〒169-0072 東京都新宿区大久保2-5-22 SEKISAKU BLDG. 2F). Confirmed from the voucher. Up to the second floor.',
   'Nearest stations: Higashi-Shinjuku (東新宿) about 5 minutes, Shin-Ōkubo (新大久保) about 8 minutes.',
-  maps('Shinjuku Sumo Club Okubo'),
+  maps('2-5-22 Okubo, Shinjuku City, Tokyo 169-0072'),
  ]),
  ('Dinner in Shinjuku', [
   'Omoide Yokochō: back south through Kabukichō to the west side of JR Shinjuku, about 15 minutes.',
