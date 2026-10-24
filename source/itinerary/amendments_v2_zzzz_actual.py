@@ -910,3 +910,6 @@ for _i, _x in enumerate(D[25]['rows']):
 for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('Shinjuku Sumo Club'):
         D[25]['rows'][_i] = R(_x[0], _x[1], _x[2].replace('Address on the Klook voucher (main venue: SEKISAKU Bldg 2F, 2-5-22 Ōkubo).', 'SEKISAKU Bldg 2F, 2-5-22 Ōkubo (新宿区大久保2-5-22).'), *_x[3:])
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('Shinjuku Sumo Club'):
+        D[25]['rows'][_i] = R(_x[0], _x[1], _x[2] + ' Doors open 17:00. No entry more than 20 minutes after the start (17:50).', *_x[3:])

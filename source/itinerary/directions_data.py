@@ -898,6 +898,7 @@ GO[25] += [
  ]),
  ('Shinjuku Sumo Club', [
   'SEKISAKU Bldg 2F, 2-5-22 Ōkubo, Shinjuku (〒169-0072 東京都新宿区大久保2-5-22 SEKISAKU BLDG. 2F). Confirmed from the voucher. Up to the second floor.',
+  'Doors open 17:00. No entry after 17:50.',
   'Nearest stations: Higashi-Shinjuku (東新宿) about 5 minutes, Shin-Ōkubo (新大久保) about 8 minutes.',
   maps('2-5-22 Okubo, Shinjuku City, Tokyo 169-0072'),
  ]),
