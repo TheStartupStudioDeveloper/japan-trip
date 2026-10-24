@@ -836,3 +836,15 @@ D[26]['rows'] = [x for x in D[26]['rows'] if x[1].startswith(('Leave the Blossom
  R('19:15', 'Dinner under the train tracks, Yūrakuchō', 'The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, beer, the trains rumbling overhead. No booking; wander and pick one.'),
 ]
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Sun 25 08:06: Kappabashi definitely in on Mon 26, between the Sky Room coffee and the sumo.
+D[26]['title'] = 'teamLab, Tokyo Tower coffee, Kappabashi, sumo show, dinner under the tracks'
+D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi kitchen street while the shops are open, a drop-off at the hotel, then the Shibuya Sumo Club show at 17:00 and yakitori under the train tracks.'
+D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Optional: Tokyo Tower', 'Free afternoon', 'Sky Room Café'))] + [
+ R('10:45', 'Sky Room Café & Bar, Mori JP Tower 34F', 'Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. Keep it to about 40 minutes.'),
+ R('11:30', 'Hibiya line, then the Ginza line to Tawaramachi', 'From Kamiyachō, Hibiya line to Ginza, change to the Ginza line to Tawaramachi (田原町), about 30 minutes.'),
+ R('12:00', 'Kappabashi kitchenware street', 'Weekday, so the shops are open. Knives: Kama-asa (free engraving) and Kamata Hakensha. Ceramics: Dengama. Fake food: Ganso food samples. Niimi\'s giant chef head at the south end. Knives fly in checked bags only.'),
+ R('13:30', 'Lunch near Kappabashi or Asakusa', 'Keep it casual. Sensō-ji\'s Kaminarimon gate is 10 minutes east if you want a quick look.'),
+ R('14:45', 'Ginza line back, drop the shopping at the hotel', 'Tawaramachi to Ginza, about 15 minutes, then a 10 minute walk. Rest until 16:00.'),
+]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

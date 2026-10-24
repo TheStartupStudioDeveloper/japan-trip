@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 08:06
+- Mon 26: Kappabashi back in. Sky Room 10:45, Ginza line to Tawaramachi 11:30, Kappabashi 12:00, lunch 13:30, back to the hotel with the shopping 14:45, Ōedo to Yoyogi 16:00, sumo 17:00, dinner under the tracks 19:15.
+
 ## Sun 25 Oct 08:05
 - Sun 25: AirPod at the desk, East Gardens, walk to Ginza, car-free from 12:00, stores and rooftops, massages 17:00 (to book), bites around Ginza. Asakusa sumo dropped.
 - Mon 26: teamLab 08:30, Sky Room Café 34F by Tokyo Tower 10:45, optional Zōjō-ji, free afternoon (Kappabashi optional), Ōedo line to Yoyogi 16:00, Shibuya Sumo Club 17:00 (to book), Ōedo back, dinner under the tracks 19:15. Asakusa, Sensō-ji and the Skytree dropped.

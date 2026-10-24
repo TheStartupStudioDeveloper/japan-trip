@@ -838,3 +838,28 @@ GO[26] += [
   maps('Yurakucho Sanchoku Inshokugai'),
  ]),
 ]
+
+# 25 Oct 08:06: Kappabashi back in on Mon 26.
+GO[26] = [g for g in GO[26] if not g[0].startswith('Optional: Tokyo Tower')]
+GO[26] += [
+ ('Hibiya line, then the Ginza line to Tawaramachi', [
+  'From the Mori JP Tower, about 5 minutes to Kamiyachō (神谷町), Hibiya line toward 北千住. Change at 銀座 (Ginza) to the 銀座線 toward 浅草 (Asakusa), to 田原町 (Tawaramachi). Exit 3.',
+  'Kappabashi-dōri is about 5 minutes west.',
+  maps('Kappabashi Dougu Street', 'transit', 'r'),
+ ]),
+ ('Kappabashi kitchenware street', [
+  'Start at the south end (Asakusa-dōri) under Niimi\'s giant chef head. Dengama ceramics is across the road.',
+  'Walk north up Kappabashi-dōri: Kamata Hakensha (knives) on the right, then Kama-asa (knives) a little further. Ganso food samples is near the north end.',
+  maps('Dengama Kappabashi'),
+  maps('KAMA-ASA Kappabashi'),
+ ]),
+ ('Lunch near Kappabashi', [
+  'East along Asakusa-dōri, about 10 minutes, toward Kaminarimon (雷門).',
+  maps('Kaminarimon Asakusa'),
+ ]),
+ ('Ginza line back', [
+  'Tawaramachi (田原町) or Asakusa (浅草), 銀座線 toward 渋谷 (Shibuya), to 銀座 (Ginza), about 15 minutes.',
+  'Exit toward Hibiya and walk south-west to the hotel, about 10 minutes.',
+  gmt(HOTEL_T),
+ ]),
+]
