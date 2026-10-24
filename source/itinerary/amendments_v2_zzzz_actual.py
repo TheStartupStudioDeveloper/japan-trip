@@ -913,3 +913,7 @@ for _i, _x in enumerate(D[25]['rows']):
 for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('Shinjuku Sumo Club'):
         D[25]['rows'][_i] = R(_x[0], _x[1], _x[2] + ' Doors open 17:00. No entry more than 20 minutes after the start (17:50).', *_x[3:])
+
+# Sun 25 08:50: MUJI, UNIQLO and Daiso during car-free Ginza. All in one block at Ginza 3-chōme.
+D[25]['rows'].append(R('12:30', 'MUJI, UNIQLO TOKYO and Daiso', 'All in one block at Ginza 3-chōme, by Marronnier-dōri. UNIQLO TOKYO, the global flagship, and Daiso (with Standard Products and THREEPPY) share the Marronnier Gate Ginza 2 building. MUJI Ginza, the flagship, is next door. Passports for tax-free.'))
+D[25]['rows'].sort(key=lambda x: x[0])

@@ -948,3 +948,13 @@ GO[26] += [
   gmt(HOTEL_T),
  ]),
 ]
+
+GO[25] += [
+ ('MUJI, UNIQLO TOKYO and Daiso', [
+  'From Chūō-dōri, turn north-west at Ginza 3-chōme onto Marronnier-dōri (マロニエ通り), toward Yūrakuchō.',
+  'Marronnier Gate Ginza 2 (マロニエゲート銀座2): UNIQLO TOKYO on the lower floors, Daiso on 6F.',
+  maps('Marronnier Gate Ginza 2'),
+  'MUJI Ginza (無印良品 銀座): next door at Ginza 3-3-5, several floors including a café.',
+  maps('MUJI Ginza'),
+ ]),
+]
