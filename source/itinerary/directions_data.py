@@ -887,3 +887,63 @@ GO[26] += [
   maps('Kaminarimon Asakusa'),
  ]),
 ]
+
+# 25 Oct 08:20: Shinjuku sumo today; Mon 26 back to Kappabashi, Sensō-ji and the Skytree.
+GO[25] = [g for g in GO[25] if not g[0].startswith(('Massages', 'Walk back to the hotel'))]
+GO[25] += [
+ ('Marunouchi line from Ginza to Shinjuku', [
+  'Ginza station, 丸ノ内線 (Marunouchi line, red), platform toward 新宿・荻窪 (Shinjuku, Ogikubo). Get off at 新宿三丁目 (Shinjuku-sanchōme), about 17 minutes.',
+  'Exit B5 or E1, then north up Meiji-dōri and through Kabukichō, about 15 minutes. Or a taxi from the exit: 大久保2-5-22 (Ōkubo 2-5-22), about 5 minutes.',
+  maps('2-5-22 Okubo Shinjuku Tokyo', 'transit', 'r'),
+ ]),
+ ('Shinjuku Sumo Club', [
+  'Main venue: SEKISAKU Bldg 2F, 2-5-22 Ōkubo. Check the address on the Klook voucher. Reviewers say search "Shinjuku Sumo Club" in maps, the listing address is hard to find.',
+  'Nearest stations: Higashi-Shinjuku (東新宿) about 5 minutes, Shin-Ōkubo (新大久保) about 8 minutes.',
+  maps('Shinjuku Sumo Club Okubo'),
+ ]),
+ ('Dinner in Shinjuku', [
+  'Omoide Yokochō: back south through Kabukichō to the west side of JR Shinjuku, about 15 minutes.',
+  maps('Omoide Yokocho Shinjuku'),
+  'Ichiran Shinjuku: east side, near the Kabukichō end.',
+  maps('Ichiran Shinjuku Central East Exit'),
+ ]),
+ ('Marunouchi line back to Ginza', [
+  '新宿 or 新宿三丁目: 丸ノ内線, platform toward 銀座・池袋 (Ginza, Ikebukuro). Get off at 銀座 (Ginza), about 17 minutes.',
+  'Then about 10 minutes to the hotel, or straight to the massage.',
+  gmt(HOTEL_T),
+ ]),
+ ('Late massage', [
+  'Buasai Ginza: Ginza 8-chōme, about 5 minutes east of the hotel.',
+  maps('Buasai Ginza'),
+  'YURAGI: Ginza 7-chōme.',
+  maps('YURAGI Ginza'),
+  'Head Spa ZEN: Ginza 2-chōme.',
+  maps('Head Spa ZEN Ginza'),
+ ]),
+]
+GO[26] = [g for g in GO[26] if g[0].startswith(('Leave the Blossom', 'Dinner under the train tracks', 'Sky Room Café', 'Kappabashi kitchenware street'))]
+GO[26] += [
+ ('Hibiya line, then the Ginza line to Tawaramachi', [
+  'From the Mori JP Tower, about 5 minutes to Kamiyachō (神谷町), Hibiya line toward 北千住. Change at 銀座 (Ginza) to the 銀座線 toward 浅草 (Asakusa), to 田原町 (Tawaramachi). Exit 3.',
+  'Kappabashi-dōri is about 5 minutes west.',
+  maps('Kappabashi Dougu Street', 'transit', 'r'),
+ ]),
+ ('Lunch in Asakusa', [
+  'East along Asakusa-dōri or the side streets, about 10 minutes, toward Sensō-ji.',
+  maps('Asakusa Tokyo'),
+ ]),
+ ('Sensō-ji', [
+  'Kaminarimon (雷門), the big red lantern gate, then up Nakamise street to the main hall. If Nakamise is jammed, use the parallel lanes either side.',
+  maps('Kaminarimon Asakusa'),
+ ]),
+ ('Skytree views at dusk', [
+  'The Asakusa Culture Tourist Information Centre is directly opposite Kaminarimon. Lift to 8F for the free terrace.',
+  'Then 3 minutes east to Azuma-bashi bridge (吾妻橋) for the Skytree across the river.',
+  maps('Asakusa Culture Tourist Information Center'),
+ ]),
+ ('Ginza line back to Shimbashi', [
+  'Asakusa station, 銀座線 (Ginza line) toward 渋谷 (Shibuya). Direct to 新橋 (Shimbashi), about 20 minutes.',
+  'Out towards the JR station, west under the tracks, about 5 to 8 minutes to the hotel.',
+  gmt(HOTEL_T),
+ ]),
+]

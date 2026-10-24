@@ -866,3 +866,39 @@ D[26]['rows'] += [
  R('18:15', 'Ginza line back, drop the shopping at the hotel', 'Asakusa to Ginza, about 18 minutes, then a 10 minute walk.'),
 ]
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Sun 25 08:20: sumo today instead. Shinjuku Sumo Club main venue, 17:30. Mon 26 back to teamLab, Tokyo Tower coffee, Kappabashi, Sensō-ji and the Skytree at dusk.
+D[25]['title'] = 'Palace gardens, Ginza car-free, sumo in Shinjuku'
+D[25]['sum'] = 'The Imperial Palace East Gardens first thing, Ginza car-free from noon and the stores while it is dry, the Shinjuku Sumo Club show at 17:30, dinner in Shinjuku, then a late massage back in Ginza.'
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('Massages', 'Bites around Ginza', 'Walk back to the hotel'))]
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[0] == 'Afternoon': D[25]['rows'][_i] = R('13:30', _x[1], _x[2], *_x[3:])
+    if _x[0] == 'Late arvo': D[25]['rows'][_i] = R('15:30', _x[1], _x[2], *_x[3:])
+D[25]['rows'] += [
+ R('16:30', 'Marunouchi line from Ginza to Shinjuku-sanchōme', 'Direct, about 17 minutes. Then about 15 minutes on foot north through Kabukichō. Aim to arrive by 17:15.'),
+ R('17:30', 'Shinjuku Sumo Club: sumo show', 'Main venue. About 75 to 90 minutes. Live bouts, English MC, Q&A, a chance to challenge a wrestler (lottery), photos, one drink. Address on the Klook voucher (main venue: SEKISAKU Bldg 2F, 2-5-22 Ōkubo). About AU$74 each.', TB),
+ R('19:00', 'Dinner in Shinjuku', 'Omoide Yokochō for yakitori under the lanterns, or Kabukichō. Ichiran (east exit) if you want ramen.'),
+ R('20:30', 'Marunouchi line back to Ginza', 'Shinjuku or Shinjuku-sanchōme to Ginza, about 17 minutes.'),
+ R('21:00', 'Late massage', 'Buasai Ginza (Thai, Ginza 8-chōme, 5 minutes from the hotel, to midnight), YURAGI (Ginza 7-chōme, to midnight) or Head Spa ZEN (Ginza 2-chōme, to 23:00). Book ahead in the afternoon.', TB),
+]
+D[25]['rows'].sort(key=lambda x: x[0])
+D[25]['foot'] = 'Rain expected in the afternoon: the gardens and car-free Ginza early, the stores when it rains, then indoors for the sumo.'
+D[26]['title'] = 'teamLab, Tokyo Tower coffee, Kappabashi, Sensō-ji at dusk'
+D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi kitchen street while the shops are open, lunch in Asakusa, Sensō-ji and the Skytree at dusk, then yakitori under the train tracks.'
+D[26]['rows'] = [x for x in D[26]['rows'] if x[1].startswith(('Leave the Blossom', 'teamLab Borderless', 'Back to the hotel', 'Dinner under the train tracks'))] + [
+ R('10:45', 'Sky Room Café & Bar, Mori JP Tower 34F', 'Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. Zōjō-ji, the temple below the tower, is 10 minutes\' walk if you want it.'),
+ R('11:30', 'Hibiya line, then the Ginza line to Tawaramachi', 'From Kamiyachō, Hibiya line to Ginza, change to the Ginza line to Tawaramachi (田原町), about 30 minutes.'),
+ R('12:00', 'Kappabashi kitchenware street', 'Weekday, so the shops are open. Knives: Kama-asa (free engraving) and Kamata Hakensha. Ceramics: Dengama. Fake food: Ganso food samples. Niimi\'s giant chef head at the south end. Knives fly in checked bags only.'),
+ R('13:30', 'Lunch in Asakusa', 'Ten minutes east on foot.'),
+ R('14:30', 'Sensō-ji, Kaminarimon, Nakamise street', 'Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.'),
+ R('16:15', 'Skytree views at dusk, no deck', 'The free 8F terrace of the tourist centre opposite Kaminarimon, then Azuma-bashi bridge for the Skytree across the river as it lights up.'),
+ R('17:30', 'Ginza line back to Shimbashi', 'Asakusa to Shimbashi, about 20 minutes. Drop the shopping at the hotel.'),
+ R('19:15', 'Dinner under the train tracks, Yūrakuchō', 'The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, beer, the trains rumbling overhead. No booking; wander and pick one.'),
+]
+D[26]['rows'] = [x for i, x in enumerate(D[26]['rows']) if not (x[1].startswith('Dinner under') and x[0] != '19:15')]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+_seen = set(); _rr = []
+for _x in D[26]['rows']:
+    if _x[1] in _seen: continue
+    _seen.add(_x[1]); _rr.append(_x)
+D[26]['rows'] = _rr
