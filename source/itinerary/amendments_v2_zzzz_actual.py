@@ -802,3 +802,12 @@ for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Sensō-ji'):
         D[26]['rows'][_i] = R('14:15', _x[1], 'A few minutes from lunch. Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.', *_x[3:])
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Sat 24 23:16: actual. Slow morning, Nijō and breakfast out skipped, the fireworks night as planned. AirPod left on the train, posted to the Blossom.
+D[24]['sum'] = 'What happened. A sleep in and packing instead of Nijō and a breakfast out, the Nozomi back to Tokyo, then the fireworks and buffet at the Hilton Odaiba as planned.'
+D[24]['rows'] = [r for r in D[24]['rows'] if not r[1].startswith(('Optional: Nijō Castle', 'Slow breakfast', 'Back to the hotel, finish packing'))]
+for _i, _x in enumerate(D[24]['rows']):
+    _n = _x[2]
+    if _x[1].startswith('Nozomi 16'): _n = 'Lost one AirPod on the train. The hotel is posting it to the Blossom, due Sunday.'
+    if _x[1].startswith('Yurikamome back to Shimbashi'): _n = 'Pizza near the hotel on the way back.'
+    D[24]['rows'][_i] = R(_x[0], _x[1], _n, DN)
