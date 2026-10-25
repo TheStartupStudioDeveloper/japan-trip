@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 12:58
+- Street Kart backup boxes removed from Sun 18, Sun 25 and Mon 26, and its checklist lines removed (done on Sun 18).
+- Sun 25: optional Tokyo International Forum glass hall at 13:15, between Bairin and MUJI.
+
 ## Sun 25 Oct 12:31
 - Tokyo Station façade, KITTE and the walk done. Bairin lunch 12:30 (queueing). Afternoon combined: MUJI together 13:30, car-free Ginza and free shopping 14:15 (UNIQLO TOKYO, Daiso, Itoya, Matsuya, Mitsukoshi, Ginza Six), rooftops dropped, hotel rest and change 15:45, leave for the sumo 16:30.
 

@@ -1050,3 +1050,11 @@ GO[25] += [
   'Maps: https://www.google.com/maps/dir/?api=1&destination=2-5-22+Okubo+Shinjuku+Tokyo&destination_place_id=ChIJHYkcy-ONGGAR0oLnccAtVOg&travelmode=transit https://maps.apple.com/?daddr=2-5-22+Okubo+Shinjuku+Tokyo&dirflg=r',
  ]),
 ]
+GO[25] += [
+ ('Optional: Tokyo International Forum', [
+  'From Bairin, north along the JR tracks towards Yūrakuchō station, about 10 minutes. The Glass Building (ガラス棟) is the long glass hall on the station side.',
+  'In through the ground floor, lift to 7F, then walk down the ramps.',
+  'To MUJI: out the Ginza side, across Harumi-dōri and Marronnier-dōri, about 5 minutes.',
+  maps('Tokyo International Forum Glass Building'),
+ ]),
+]

@@ -1000,3 +1000,11 @@ D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('MUJI, UNIQLO'
 ]
 D[25]['rows'].sort(key=lambda x: x[0])
 D[25]['foot'] = 'Rain expected in the afternoon: car-free Ginza first, then into the stores when it comes, and back to the hotel before the sumo.'
+
+# Sun 25 12:58: Street Kart was done on Sun 18, so its backup boxes and checklist lines go. Tokyo International Forum added on the way to MUJI.
+for _d in (18, 25, 26):
+    if 'Street Kart' in str(D[_d].get('extra', '')): D[_d].pop('extra', None)
+for _g in CHECK:
+    _g[1][:] = [x for x in _g[1] if 'Street Kart' not in x[1]]
+D[25]['rows'].append(R('13:15', 'Optional: Tokyo International Forum glass hall', 'Rafael Viñoly\'s boat-shaped glass atrium, steel ribs overhead and ramps along the glass walls. Free, about 20 minutes. By JR Yūrakuchō, five minutes from MUJI. Take the lift to the top walkway and walk down.'))
+D[25]['rows'].sort(key=lambda x: x[0])
