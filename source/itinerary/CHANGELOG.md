@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 14:26
+- Raining. Sumo: taxi from the hotel 16:30, train backup through the underground Hibiya to Ginza passage, Marunouchi then Fukutoshin to Higashi-Shinjuku (How-to 32 rewritten).
+- Tokyo International Forum moved to Mon 26 at 18:45, on the walk to dinner.
+
 ## Sun 25 Oct 12:58
 - Street Kart backup boxes removed from Sun 18, Sun 25 and Mon 26, and its checklist lines removed (done on Sun 18).
 - Sun 25: optional Tokyo International Forum glass hall at 13:15, between Bairin and MUJI.

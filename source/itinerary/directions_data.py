@@ -1058,3 +1058,20 @@ GO[25] += [
   maps('Tokyo International Forum Glass Building'),
  ]),
 ]
+
+# 25 Oct 14:26: rain route to the sumo, Forum on Mon 26.
+GO[25] = [g for g in GO[25] if not g[0].startswith(('Optional: Tokyo International Forum', 'Leave the hotel, Marunouchi line'))]
+GO[25] += [
+ ('Leave the hotel for the sumo', [
+  'Taxi: ask the front desk to call one, or flag one outside. Show: 新宿区大久保2-5-22 SEKISAKU ビル 2階までお願いします。 About 25 minutes.',
+  'Train: Hibiya station, underground passage to Ginza station, Marunouchi line toward 新宿・荻窪 to 新宿三丁目, then Fukutoshin line one stop to 東新宿, exit A1, 5 minutes. Full steps in How-to 32.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=2-5-22+Okubo+Shinjuku+Tokyo&destination_place_id=ChIJHYkcy-ONGGAR0oLnccAtVOg&travelmode=driving https://maps.apple.com/?daddr=2-5-22+Okubo+Shinjuku+Tokyo&dirflg=d',
+ ]),
+]
+GO[26] += [
+ ('Tokyo International Forum', [
+  'From the hotel, about 10 minutes north-east to JR Yūrakuchō. The Glass Building (ガラス棟) is the long glass hall on the station side.',
+  'Lift to 7F, walk down the ramps. Out the Yūrakuchō side, the lanes under the tracks are two minutes south.',
+  maps('Tokyo International Forum Glass Building'),
+ ]),
+]

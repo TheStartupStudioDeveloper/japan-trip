@@ -1008,3 +1008,22 @@ for _g in CHECK:
     _g[1][:] = [x for x in _g[1] if 'Street Kart' not in x[1]]
 D[25]['rows'].append(R('13:15', 'Optional: Tokyo International Forum glass hall', 'Rafael Viñoly\'s boat-shaped glass atrium, steel ribs overhead and ramps along the glass walls. Free, about 20 minutes. By JR Yūrakuchō, five minutes from MUJI. Take the lift to the top walkway and walk down.'))
 D[25]['rows'].sort(key=lambda x: x[0])
+
+# Sun 25 14:26: raining. Forum moves to Mon 26 on the way to dinner. To the sumo: taxi, or the mostly underground train route.
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('Optional: Tokyo International Forum', 'Leave the hotel, Marunouchi line'))] + [
+ R('16:30', 'Leave the hotel for the sumo: taxi in the rain', 'Taxi from the hotel door, about 25 minutes, about ¥3,500 to ¥4,000. Show: 新宿区大久保2-5-22 SEKISAKU ビル 2階までお願いします。 Leave by 16:45 at the latest. Train if traffic looks bad: How-to 32.'),
+]
+D[25]['rows'].sort(key=lambda x: x[0])
+D[26]['rows'].append(R('18:45', 'Tokyo International Forum glass hall', 'Rafael Viñoly\'s boat-shaped glass atrium, lit up at night, on the walk to dinner. Free, about 20 minutes. Lift to 7F and walk down the ramps. Then two minutes to the Yūrakuchō lanes.'))
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+for _k, _h in enumerate(HOWTO):
+    if _h[0].startswith('Ginza to the Shinjuku Sumo Club'):
+        HOWTO[_k] = ('Hotel to the Shinjuku Sumo Club and back, Sun 25', [
+         'Booked: 17:30, 2 adults on Klook. Doors open 17:00. No entry after 17:50.',
+         'Address for a taxi driver: 新宿区大久保2-5-22 SEKISAKU ビル 2階までお願いします。',
+         'In the rain, take a taxi from the hotel door: about 25 minutes, about ¥3,500 to ¥4,000. Leave by 16:45.',
+         'Train, mostly underground: walk 5 minutes to Hibiya station and go down at the nearest entrance. Follow the underground passage east to Ginza station (signed 銀座 / Marunouchi line), about 8 minutes, all covered.',
+         'Marunouchi line (red), platform toward 新宿・荻窪. Off at 新宿三丁目 (Shinjuku-sanchōme), about 15 minutes.',
+         'Change to the Fukutoshin line (brown) toward 池袋, one stop to 東新宿 (Higashi-Shinjuku). Exit A1, about 5 minutes\' walk to the club. Much less walking in the rain than from Shinjuku-sanchōme.',
+         'Back: Higashi-Shinjuku, Fukutoshin line one stop to Shinjuku-sanchōme, Marunouchi line toward 銀座・池袋 to Ginza. Then 8 minutes to Ginza Rōsokuya, or a taxi straight there: 銀座1丁目 ろうそく屋.',
+        ])
