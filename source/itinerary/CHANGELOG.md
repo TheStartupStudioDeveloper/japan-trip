@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 17:26
+- Mon 26: Ginza line back to Ginza 17:30, book nook kit at HANDS Ginza 17:55 (new card), AirPod 18:35, OKUROJI 18:50, Forum 19:10, dinner under the tracks 19:30.
+
 ## Sun 25 Oct 14:57
 - Mon 26: Hibiya OKUROJI walk-through 18:30, Forum 18:50, dinner under the tracks 19:15. New card.
 - Sun 25 dinner: Rōsokuya, mapo tofu ramen or tantanmen; Mōko Tanmen Nakamoto Shinjuku noted as the alternative by the sumo. New card.

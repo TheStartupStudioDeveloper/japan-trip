@@ -981,3 +981,8 @@ P('nakamoto', ['Mouko Tanmen Nakamoto'], 'Mōko Tanmen Nakamoto Shinjuku', '蒙�
 PIDS2 = {'nakamoto': 'ChIJw_Dk2SmNGGARIt45HeJo8KI'}
 for _p in PLACES:
     if _p['key'] in PIDS2: _p['g'] = PIDS2[_p['key']]
+P('hands-ginza', ['HANDS Ginza'], 'HANDS Ginza', 'ハンズ銀座',
+  'The big Japanese DIY, craft and gadget store (formerly Tokyu Hands), on floors 5 to 9 of Marronnier Gate Ginza 1. Stationery, travel gear, kitchen tools, and a hobby and craft floor with miniature kits, including book nooks.',
+  'Daily 11:00 to 21:00. Tax-free counter on 9F, passports needed. Ask: ブックヌックのキットはありますか？', 'HANDS Ginza Marronnier Gate')
+for _p in PLACES:
+    if _p['key'] == 'hands-ginza': _p['g'] = 'ChIJyak5_-SLGGARvezBKVRicSA'

@@ -1036,3 +1036,16 @@ D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
 for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('Dinner: tantanmen at Ginza Rōsokuya'):
         D[25]['rows'][_i] = R(_x[0], 'Dinner: mapo tofu ramen or tantanmen at Ginza Rōsokuya', 'The mapo tofu ramen (spicy mince and tofu) is the signature; the tantanmen is the other one. Ginza 1-chōme. Open to 21:30, English menu, ticket machine. Medium spice is mild, so go a level up. Alternative by the sumo: Mōko Tanmen Nakamoto Shinjuku, spicy miso ramen topped with mapo tofu, 15 minutes\' walk from the club, open to 23:00.', *_x[3:])
+
+# Sun 25 17:26: book nook kit at HANDS Ginza on Mon 26 after Asakusa. Evening shifts about 20 minutes.
+_sh = {'Ginza line back to Shimbashi': None, 'AirPod at the front desk': '18:35', 'Hibiya OKUROJI': '18:50', 'Tokyo International Forum glass hall': '19:10', 'Dinner under the train tracks, Yūrakuchō': '19:30'}
+_rr = []
+for _x in D[26]['rows']:
+    if _x[1].startswith('Ginza line back to Shimbashi'):
+        _rr.append(R('17:30', 'Ginza line back to Ginza', 'Asakusa to Ginza, about 18 minutes, direct. Exit towards Marronnier-dōri.'))
+        continue
+    for _k, _t in _sh.items():
+        if _t and _x[1].startswith(_k): _x = R(_t, *_x[1:])
+    _rr.append(_x)
+_rr.append(R('17:55', 'Book nook kit at HANDS Ginza', 'Floors 5 to 9 of Marronnier Gate Ginza 1, next to the UNIQLO and MUJI block. The hobby and craft floor has the miniature book nook kits. Ask: ブックヌックのキットはありますか？ (Book nook no kitto wa arimasu ka?) Tax-free on 9F with passports. Then 10 minutes to the hotel to drop the shopping.'))
+D[26]['rows'] = sorted(_rr, key=lambda x: (not x[0][0].isdigit(), x[0]))

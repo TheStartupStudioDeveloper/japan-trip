@@ -1088,3 +1088,16 @@ GO[25] += [
   'Maps: https://www.google.com/maps/dir/?api=1&destination=Mouko+Tanmen+Nakamoto+Shinjuku&destination_place_id=ChIJw_Dk2SmNGGARIt45HeJo8KI&travelmode=walking https://maps.apple.com/?daddr=Mouko+Tanmen+Nakamoto+Shinjuku&dirflg=w',
  ]),
 ]
+GO[26] = [g for g in GO[26] if not g[0].startswith('Ginza line back to Shimbashi')]
+GO[26] += [
+ ('Ginza line back to Ginza', [
+  'Asakusa station, 銀座線 (Ginza line) toward 渋谷 (Shibuya). Direct to 銀座 (Ginza), about 18 minutes.',
+  'Follow signs for exit C8 or C9 towards Sukiyabashi and Marronnier-dōri. HANDS is in Marronnier Gate Ginza 1, the building beside UNIQLO TOKYO.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=HANDS+Ginza&destination_place_id=ChIJyak5_-SLGGARvezBKVRicSA&travelmode=transit https://maps.apple.com/?daddr=HANDS+Ginza&dirflg=r',
+ ]),
+ ('Book nook kit at HANDS Ginza', [
+  'Marronnier Gate Ginza 1 (マロニエゲート銀座1), lifts to 5F to 9F. Check the store directory by the lifts for the hobby and craft floor (ホビー・クラフト).',
+  'Then to the hotel, about 10 minutes south-west.',
+  maps(HOTEL_T),
+ ]),
+]
