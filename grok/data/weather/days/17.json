@@ -1,0 +1,110 @@
+{
+ "d": 17,
+ "dow": "Saturday",
+ "leg": "s",
+ "where": "Shibuya",
+ "title": "Arrive and wander Shibuya",
+ "icon": "sun",
+ "hi": 25,
+ "lo": 18,
+ "rain": 5,
+ "cond": "Sunny",
+ "sunset": "17:00",
+ "call": "A perfect first day. Sunny and dry on every source: 0% all day from JMA and tenki.jp, a high of 25° about 14:00, light north-easterly breeze. Clear air for Shibuya Sky at 16:00, about 23° on the deck with sunset just after 17:00. Down to 18° by 21:00, so a light layer for the evening.",
+ "plan": [
+  [
+   "10:30",
+   "Miyashita Park and Omotesando on foot",
+   "Outdoors most of the morning"
+  ],
+  [
+   "16:00",
+   "Shibuya Sky",
+   "Open-air rooftop. Cloud cuts the view, rain or strong wind can close the deck"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "5% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "25° / 18°, sunny, 0% from midday, 0 mm (09:00 today)"
+  ],
+  [
+   "Japan Meteorological Agency (official)",
+   "Sunny, 0% all day"
+  ],
+  [
+   "Weathernews, Shibuya",
+   "25° / 17°, sunny, 10%"
+  ],
+  [
+   "Global Forecasting Model",
+   "25° / 17°, clear, 0 mm"
+  ],
+  [
+   "AccuWeather",
+   "26° / 14°, plenty of sunshine"
+  ]
+ ],
+ "mm": "Under 1 mm",
+ "gicon": "sun",
+ "gfill": 5,
+ "gtext": "5%",
+ "gmm": "0",
+ "read": "Sunny, 0%. 25° at 14:00, 18° by 21:00.",
+ "chance": [
+  [
+   6,
+   12,
+   0
+  ],
+  [
+   12,
+   18,
+   0
+  ],
+  [
+   18,
+   24,
+   0
+  ]
+ ],
+ "mmBars": [],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    18.1
+   ],
+   [
+    9,
+    20.8
+   ],
+   [
+    12,
+    23.4
+   ],
+   [
+    14,
+    25.2
+   ],
+   [
+    18,
+    20.5
+   ],
+   [
+    21,
+    18.4
+   ],
+   [
+    24,
+    17.4
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures and rain chance from tenki.jp's hourly forecast for Shibuya, issued 09:00 today."
+}

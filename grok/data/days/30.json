@@ -1,0 +1,107 @@
+{
+ "d": 30,
+ "dow": "Friday",
+ "where": "",
+ "title": "Pool, yum cha, Ozone at sunset, then departure",
+ "cal": "Pool, Ozone, fly",
+ "summary": "Late checkout is confirmed to 18:00, so the room is yours all day. A pool morning, yum cha, a spare window for anything missed, a slow pack and shower, Ozone at sunset, dinner, then a taxi at 20:45.",
+ "rows": [
+  {
+   "time": "09:00",
+   "what": "Lounge breakfast",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "09:45",
+   "what": "Sheraton pool",
+   "detail": "Optional. The best sun of the day.",
+   "status": ""
+  },
+  {
+   "time": "12:00",
+   "what": "Quick change, head out",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "12:30",
+   "what": "Yum cha lunch",
+   "detail": "Dim sum is a daytime meal and most places stop about 15:00. If lunch slips, an all-day dim sum place can stand in for dinner.",
+   "status": ""
+  },
+  {
+   "time": "14:00",
+   "what": "Spare window",
+   "detail": "About two hours for anything missed. Central by Star Ferry, M+ and the West Kowloon waterfront, or Nathan Road.",
+   "status": ""
+  },
+  {
+   "time": "16:15",
+   "what": "Back at the hotel, pack and shower",
+   "detail": "No rush. Ask at the desk whether checkout can go later still.",
+   "status": ""
+  },
+  {
+   "time": "17:20",
+   "what": "Check out",
+   "detail": "You have until 18:00. Leaving now catches the sunset at Ozone. Suitcases go to the concierge.",
+   "status": ""
+  },
+  {
+   "time": "17:40",
+   "what": "Ozone at the Ritz-Carlton",
+   "detail": "Short taxi to ICC, 118th floor. Sunset at 17:50, then the lights. Open from 16:00. No flip flops, and no open shoes or sleeveless tops for men.",
+   "status": "to book"
+  },
+  {
+   "time": "19:15",
+   "what": "Dinner",
+   "detail": "At Elements below Ozone, or back in Tsim Sha Tsui close to the bags.",
+   "status": ""
+  },
+  {
+   "time": "20:30",
+   "what": "Collect bags at the Sheraton",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "20:45",
+   "what": "Taxi to the airport",
+   "detail": "30 to 40 minutes at that hour.",
+   "status": ""
+  },
+  {
+   "time": "21:30",
+   "what": "Check in at the Cathay desks",
+   "detail": "Terminal 1. Three hours before departure.",
+   "status": ""
+  },
+  {
+   "time": "00:30",
+   "what": "CX105 departs for Melbourne",
+   "detail": "Saturday 31 October, Terminal 1. Lands Melbourne Terminal 2 at 12:30.",
+   "status": "booked"
+  }
+ ],
+ "footnote": "",
+ "notes": [
+  [
+   "Latest safe timing",
+   "A taxi at 21:15 puts you at the airport by 22:00, which is 2.5 hours before departure."
+  ],
+  [
+   "If you missed the Peak or Ngong Ping",
+   "It takes the morning in place of the pool. The Peak has Klook Fast Track on a Friday, and the Ngong Ping voucher works any day. Be back by 16:15."
+  ],
+  [
+   "If Ozone was Thursday",
+   "Then tonight is free: a harbourfront drink, a longer dinner, or more time in the room."
+  ],
+  [
+   "If Friday is wet or grey",
+   "Skip the pool. M+ and the West Kowloon waterfront is the indoor option, and the room is yours until 18:00."
+  ]
+ ]
+}

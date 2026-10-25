@@ -1,0 +1,155 @@
+{
+ "d": 23,
+ "dow": "Friday",
+ "where": "",
+ "title": "Kyoto: bamboo grove, Golden Pavilion, Inari, Higashiyama",
+ "cal": "Bamboo, Inari, Gion",
+ "summary": "The Big 5 in one easier day, about 7 km: the bamboo grove early, the Golden Pavilion, lunch and a long rest, Fushimi Inari, then Kiyomizu-dera at sunset and the Yasaka Pagoda at dusk. Gion, gyoza and Pontochō to finish.",
+ "rows": [
+  {
+   "time": "08:00",
+   "what": "Taxi to the bamboo grove",
+   "detail": "About 25 minutes, about ¥3,500. Show the driver 嵐山 竹林の小径、野宮神社 (Arashiyama bamboo grove, Nonomiya Shrine). Or the JR Sagano line from Kyoto to Saga-Arashiyama, about 40 minutes door to door, about ¥450 for two.",
+   "status": ""
+  },
+  {
+   "time": "08:25",
+   "what": "★ Bamboo grove, one way",
+   "detail": "From Nonomiya Shrine along the bamboo path to Tenryū-ji's north gate, the best stretch, flat. Take your time for photos. Add-on: carry on up to the Ōkōchi Sansō gate and back, about 15 minutes, gently uphill.",
+   "status": ""
+  },
+  {
+   "time": "08:55",
+   "what": "Tenryū-ji garden",
+   "detail": "Opens 08:30. In by the north gate on the bamboo path. Flat pond garden with the hills behind, about 40 minutes. About ¥500 each.",
+   "status": ""
+  },
+  {
+   "time": "09:40",
+   "what": "Togetsukyō bridge and % Arabica",
+   "detail": "Out of Tenryū-ji's main gate, 5 minutes to the river. Coffee to take away (opens 09:00), on the riverbank looking at the bridge.",
+   "status": ""
+  },
+  {
+   "time": "10:05",
+   "what": "Taxi to Kinkaku-ji",
+   "detail": "From the main street by Togetsukyō, about 20 minutes, about ¥2,500. Show 金閣寺.",
+   "status": "done"
+  },
+  {
+   "time": "10:05",
+   "what": "★ Kinkaku-ji, the Golden Pavilion",
+   "detail": "The gold pavilion on its pond. One-way garden loop, gentle, about 45 minutes. Open 09:00 to 17:00. About ¥500 each. Note: very busy, rushed through it. Not really worth it.",
+   "status": "done"
+  },
+  {
+   "time": "10:30",
+   "what": "Bus or taxi to Kyoto Station",
+   "detail": "Bus 205 from the Kinkakuji-michi stop (金閣寺道), 5 minutes' walk from the gate, toward 京都駅, about 40 minutes, about ¥230 each on Suica. Or a taxi from the Kinkaku-ji rank, about 25 minutes, about ¥3,000.",
+   "status": "done"
+  },
+  {
+   "time": "11:10",
+   "what": "Coffee and a bite at Kyoto Station",
+   "detail": "Plenty in the station and Porta underground. Keep it light, Ichiran is lunch.",
+   "status": "done"
+  },
+  {
+   "time": "11:35",
+   "what": "JR Nara line to Inari",
+   "detail": "JR Nara line (奈良線), any train, two stops, about 5 minutes. All on Suica. The shrine gate faces the platform.",
+   "status": "done"
+  },
+  {
+   "time": "11:50",
+   "what": "★ Fushimi Inari, short loop",
+   "detail": "Through the main shrine into the Senbon Torii, the thousand gates, up to the Okusha Hōhaisho and back, about 45 minutes. Busiest at the bottom at midday, quieter as you climb. Snack on the approach street: inari sushi, yakitori, taiyaki.",
+   "status": "done"
+  },
+  {
+   "time": "12:25",
+   "what": "JR back to Kyoto, subway to Shijō",
+   "detail": "JR Nara line two stops to Kyoto, then the Karasuma subway two stops north to Shijō (四条). All on Suica.",
+   "status": "done"
+  },
+  {
+   "time": "12:50",
+   "what": "Lunch: Ichiran Kyoto Karasuma",
+   "detail": "A minute from Shijō station on Karasuma-dōri. Rich pork-bone ramen in your own booth. Ticket machine at the door, then fill in the order sheet. Open 10:00 to 22:00.",
+   "status": "done"
+  },
+  {
+   "time": "13:40",
+   "what": "Hotel: washing on, rest, pack rain gear",
+   "detail": "Ten minutes on foot down Karasuma-dōri from Ichiran. Umbrellas or raincoats for the evening: light rain likely from about 21:00.",
+   "status": "done"
+  },
+  {
+   "time": "15:45",
+   "what": "Taxi to Kiyomizu-dera",
+   "detail": "From the hotel, about 10 minutes, about ¥1,500. Show 清水寺. Drops at the top, so the rest of the day is downhill.",
+   "status": "done"
+  },
+  {
+   "time": "16:00",
+   "what": "★ Kiyomizu-dera",
+   "detail": "The wooden stage over the trees, stay for sunset (about 17:10). Open to 18:00. About ¥500 each. Note: if it is busy, don't go in. Take the loop down the driveway for a quiet, peaceful walk back down.",
+   "status": "done"
+  },
+  {
+   "time": "17:30",
+   "what": "Down through Sannenzaka and Ninenzaka",
+   "detail": "Downhill all the way, the old stone lanes. Shops start closing about 18:00.",
+   "status": "done"
+  },
+  {
+   "time": "17:50",
+   "what": "★ Yasaka Pagoda at dusk",
+   "detail": "Two minutes off Ninenzaka. The five storey pagoda above the lane roofs.",
+   "status": "done"
+  },
+  {
+   "time": "18:00",
+   "what": "Back to the hotel, FamilyMart katsu curry",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "18:10",
+   "what": "Hanamikoji and Gion",
+   "detail": "From the pagoda down to Hanamikoji, the old teahouse lane, lanterns lit. Yasaka Shrine is skipped to save the legs.",
+   "status": "done"
+  },
+  {
+   "time": "19:30",
+   "what": "Coin laundry and a quiet night in",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "20:00",
+   "what": "Pontochō alley",
+   "detail": "The lantern lane of small bars and izakayas by the river, a two minute walk. Wander and pick one for a drink.",
+   "status": "done"
+  }
+ ],
+ "footnote": "Dry by day, up to about 21°C. Light rain from about 21:00: umbrella for Pontochō. About 7 km, roughly 10,000 steps.",
+ "notes": [
+  [
+   "The Big 5 (★)",
+   "The bamboo grove, the Golden Pavilion, Fushimi Inari, Kiyomizu-dera and the Yasaka Pagoda. Protect these; everything else can bend."
+  ],
+  [
+   "Steps",
+   "About 7 km, roughly 10,000 steps. Add-ons if the legs are good: the bamboo path up to Ōkōchi Sansō (about 800 steps), Yasaka Shrine at dusk (about 1,000 steps)."
+  ],
+  [
+   "Autumn colour",
+   "Late October is green and early gold, not red. Kyoto's maples turn mid to late November."
+  ],
+  [
+   "Running late",
+   "Shorten the hotel rest. Protect Kiyomizu by 17:30 (closes 18:00)."
+  ]
+ ]
+}

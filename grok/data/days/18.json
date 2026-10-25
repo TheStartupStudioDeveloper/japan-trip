@@ -1,0 +1,90 @@
+{
+ "d": 18,
+ "dow": "Sunday",
+ "where": "",
+ "title": "Premier Mai, Meiji Jingū, shopping, Street Kart",
+ "cal": "Meiji, shopping, Street Kart",
+ "summary": "Breakfast in Tomigaya, through Yoyogi Park to Meiji Jingū, Takeshita Street, then Cynthia's shopping afternoon in Omotesando while G does Harajuku and Nintendo. Street Kart at golden hour, then ramen and a foot massage.",
+ "rows": [
+  {
+   "time": "08:00",
+   "what": "Breakfast at Premier Mai",
+   "detail": "PATH was temporarily closed. The hidden café in Tomigaya instead, a hit (How-to 26).",
+   "status": "done"
+  },
+  {
+   "time": "09:30",
+   "what": "Yoyogi Park",
+   "detail": "Five minutes away. Walk through to the Harajuku gate. Sunday rockabilly dancers near that entrance.",
+   "status": "done"
+  },
+  {
+   "time": "10:15",
+   "what": "Meiji Jingū",
+   "detail": "Forest paths and the big torii. About 45 minutes.",
+   "status": "done"
+  },
+  {
+   "time": "11:00",
+   "what": "Takeshita Street",
+   "detail": "Out of the Harajuku gate and across the road. Walk it once together.",
+   "status": "done"
+  },
+  {
+   "time": "11:30",
+   "what": "Cynthia's shopping afternoon",
+   "detail": "Pre-owned shops: Brand Collect, Brand Collect Omotesando 2, Kindal Harajuku, RAGTAG Harajuku, ALLU, Brand Collect Shibuya.",
+   "status": "done"
+  },
+  {
+   "time": "11:30",
+   "what": "G's free time",
+   "detail": "ZARA Harajuku was closed. Booked tonight's massage at Mominotakumi in person, then ZARA Shibuya Kōen-dōri, H&M Udagawachō and Nintendo Tokyo. Egg sando from 7-Eleven for lunch.",
+   "status": "done"
+  },
+  {
+   "time": "14:20",
+   "what": "Back at the hotel",
+   "detail": "Fully closed shoes. Physical licence cards, physical International Driving Permits, passports. No digital copies.",
+   "status": "done"
+  },
+  {
+   "time": "14:45",
+   "what": "Leave for Street Kart",
+   "detail": "Check which shop the voucher names (How-to 25). Aim to arrive by 15:30.",
+   "status": "done"
+  },
+  {
+   "time": "16:00",
+   "what": "Street Kart, Rainbow Bridge route",
+   "detail": "About two hours. Golden hour over the bay.",
+   "status": "done"
+  },
+  {
+   "time": "18:30",
+   "what": "Back to the hotel, shower",
+   "detail": "Same way back, or a taxi.",
+   "status": "done"
+  },
+  {
+   "time": "19:15",
+   "what": "Dinner at Mihachi Shibuya Ekimae",
+   "detail": "Izakaya in the basement of the Dōgenzaka Building, by the station. Sauce yakisoba, negi-shio cucumber, menchi katsu, zha cai. ¥3,971 for two, including a ¥550 cover charge each.",
+   "status": "done"
+  },
+  {
+   "time": "20:30",
+   "what": "Foot and leg massage, Mominotakumi",
+   "detail": "SUNX Building 9F, Jinnan. Booked for 2. Then Yakitori Toriton, 3 minutes away and open late, or Ichiran in the same block.",
+   "status": "done"
+  },
+  {
+   "time": "22:00",
+   "what": "Welcome drink at the hotel lobby bar",
+   "detail": "Sequence Miyashita Park, 4F. Then back to the room.",
+   "status": "done"
+  }
+ ],
+ "footnote": "",
+ "notes": []
+}

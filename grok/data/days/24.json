@@ -1,0 +1,84 @@
+{
+ "d": 24,
+ "dow": "Saturday",
+ "where": "",
+ "title": "Slow Kyoto morning, back to Tokyo, fireworks night",
+ "cal": "Fireworks",
+ "summary": "What happened. A sleep in and packing instead of Nijō and a breakfast out, the Nozomi back to Tokyo, then the fireworks and buffet at the Hilton Odaiba as planned.",
+ "rows": [
+  {
+   "time": "08:00",
+   "what": "Sleep in, pack",
+   "detail": "No alarm. Most of the packing before breakfast so the morning stays slow.",
+   "status": "done"
+  },
+  {
+   "time": "10:45",
+   "what": "Check out, taxi to Kyoto Station",
+   "detail": "About 5 minutes with the bags in the rain. Walking is 15 minutes in the dry (How-to 16).",
+   "status": "done"
+  },
+  {
+   "time": "11:15",
+   "what": "Kyoto Station. Ekiben and coffee",
+   "detail": "Lunch on the train buys you the morning. Fair trade.",
+   "status": "done"
+  },
+  {
+   "time": "12:01",
+   "what": "Nozomi 16 to Tokyo Station",
+   "detail": "Lost one AirPod on the train. The hotel is posting it to the Blossom, due Sunday.",
+   "status": "done"
+  },
+  {
+   "time": "14:15",
+   "what": "Tokyo Station, Yaesu side taxi rank",
+   "detail": "Allow 15 minutes to clear the station. Saturday afternoon is busy. Ten to fifteen minutes to the hotel, roughly ¥1,500 to ¥2,000.",
+   "status": "done"
+  },
+  {
+   "time": "15:00",
+   "what": "Check in at Hotel The Blossom Hibiya",
+   "detail": "Pre-registered if the hotel allows it, so arrival is keys only. An hour to shower and change. Take a layer, the bay is cool after dark.",
+   "status": "done"
+  },
+  {
+   "time": "16:00",
+   "what": "Walk to Shimbashi, Yurikamome to Daiba",
+   "detail": "About 15 minutes on the train. Go early, it gets crowded by 17:00. Sit at the front for the Rainbow Bridge loop.",
+   "status": "done"
+  },
+  {
+   "time": "16:30",
+   "what": "Hilton Tokyo Odaiba",
+   "detail": "Next to Daiba station. Collect the wristbands and find the viewing area before it fills. Sunset is about 16:55.",
+   "status": "done"
+  },
+  {
+   "time": "17:30",
+   "what": "Fireworks from the Hilton's private viewing area",
+   "detail": "Until 19:00. Seascape package, wristband needed.",
+   "status": "done"
+  },
+  {
+   "time": "19:30",
+   "what": "Seascape dinner buffet",
+   "detail": "Until 21:15.",
+   "status": "done"
+  },
+  {
+   "time": "21:15",
+   "what": "Optional: Odaiba Statue of Liberty",
+   "detail": "A few minutes' walk from the Hilton on the waterfront, lit up with Rainbow Bridge behind it. Skip it if you are done.",
+   "status": "done"
+  },
+  {
+   "time": "21:45",
+   "what": "Yurikamome back to Shimbashi, walk to the hotel",
+   "detail": "Pizza near the hotel on the way back.",
+   "status": "done"
+  }
+ ],
+ "footnote": "Rain most of the morning, light (1 to 2 mm an hour), clearing mid-afternoon. Taxi with the bags. Work back from the 12:01: on the platform by 11:45, at the station by 11:15, check out about 10:45.",
+ "notes": []
+}

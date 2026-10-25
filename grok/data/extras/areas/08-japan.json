@@ -1,0 +1,231 @@
+{
+ "key": "japan",
+ "name": "Japan other",
+ "pat": "home",
+ "kanji": "日本",
+ "meta": "Experiences, shopping and day trips that are not tied to one area.",
+ "days": [],
+ "must": [
+  {
+   "dish": "Tamago sando",
+   "line": "A pillowy konbini egg salad sandwich, crusts off, better than it has any right to be.",
+   "where": "konbini"
+  },
+  {
+   "dish": "Konbini fried chicken",
+   "line": "Famichiki or Karaage-kun from the hot case by the till, the perfect late night snack.",
+   "where": "konbini"
+  },
+  {
+   "dish": "Matcha",
+   "line": "Stone-ground green tea, whisked frothy and bitter-sweet, or in parfaits and ice cream.",
+   "where": "nakamura-tokichi"
+  },
+  {
+   "dish": "Wagashi",
+   "line": "Delicate seasonal sweets of bean paste and rice, made to be eaten with matcha.",
+   "where": "toraya"
+  },
+  {
+   "dish": "Sake",
+   "line": "Try a flight of small pours, dry to fruity, then buy the bottle you liked best.",
+   "where": "hasegawa"
+  },
+  {
+   "dish": "Japanese whisky",
+   "line": "Buy a bottle to take home: Japanese labels cost less here, if you can find them.",
+   "where": "bic-yurakucho"
+  }
+ ],
+ "items": [
+  {
+   "group": "Eat",
+   "key": "konbini",
+   "time": "10 min",
+   "one": "Egg sando, onigiri and fried chicken",
+   "fits": "Any morning, or Tue 27 breakfast before the 06:22 walk to Shimbashi. There is a konbini on every block.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "depachika",
+   "time": "45 min",
+   "one": "Department store food halls, Ginza best",
+   "fits": "Sun 25 while you shop Mitsukoshi and Matsuya, for a tasting lap or a picnic dinner in the room. Mon 26 for gifts to take home.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "nakamura-tokichi",
+   "time": "45 min",
+   "one": "Uji matcha parfaits on Ginza Six 4F",
+   "fits": "Sun 25 afternoon break in Ginza Six, before the rooftop garden. Go before 15:00 or after 18:00 to dodge the queue.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "toraya",
+   "time": "45 min",
+   "one": "Imperial wagashi and matcha in Ginza 7-chōme",
+   "fits": "Sun 25 afternoon, open on your dates. A calmer, more traditional alternative to the matcha parfait.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "hasegawa",
+   "time": "30 min",
+   "one": "Sake tasting bar inside Tokyo Station",
+   "fits": "Sat 24 as you come off the Shinkansen at 14:15, before leaving the gates, if you have energy for a quick glass. Or Sun 25 at Tokyo Station with a platform ticket.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "sumo",
+   "time": "2 to 2.5 hrs",
+   "one": "Sumo show with dinner in Ginza",
+   "fits": "Sun 25 at 17:00: Hirakuza Ginza, 1-9-13 Ginza, a daily 17:00 show with a kaiseki dinner, from ¥17,000 each on Klook. Or Mon 26 at 11:00 at Tokyo Sumo Club in Tokyo Tower, straight after teamLab.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "konparu-yu",
+   "time": "45 min",
+   "one": "Old Ginza public bath, five minutes away",
+   "fits": "Mon 26 at about 18:00, after Asakusa and before the Shimbashi dinner. Closed Sundays.",
+   "tags": [
+    "¥",
+    "Walk-in",
+    "Cash"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "gachapon",
+   "time": "30 min",
+   "one": "Capsule toys, thousands of machines",
+   "fits": "Any Shibuya evening at #C-pla, or Sun 25 at #C-pla premium in Ginza. Bring ¥100 coins.",
+   "tags": [
+    "¥",
+    "Cash"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "uniqlo-ginza",
+   "time": "1 hr",
+   "one": "Twelve-floor Uniqlo flagship",
+   "fits": "Sun 25 in Ginza while Chūō-dōri is car-free. Passports for tax-free.",
+   "tags": [
+    "¥¥"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "daiso-ginza",
+   "time": "45 min",
+   "one": "Flagship 100 yen shop, souvenirs and snacks",
+   "fits": "Sun 25 in Ginza, same building as Loft. Good for cheap gifts and an extra bag.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "loft-ginza",
+   "time": "1 hr",
+   "one": "Stationery, beauty and clever gadgets",
+   "fits": "Sun 25 in Ginza, same building as Daiso. Loft's beauty floor has a tester bar.",
+   "tags": [
+    "¥¥"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "bic-yurakucho",
+   "time": "1 hr",
+   "one": "Electronics, cameras and Japanese whisky",
+   "fits": "Sun 25 on the walk from Tokyo International Forum into Ginza, or Mon 26 evening for whisky to fly home. Tax-free.",
+   "tags": [
+    "¥¥"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "taxfree",
+   "time": "5 min",
+   "one": "How to skip the 10% tax",
+   "fits": "Any shopping day. Carry your passport, not a copy, and keep sealed bags sealed until you are out of Japan.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Night",
+   "key": "laqua",
+   "time": "2 to 3 hrs",
+   "one": "Real onsen baths at Tokyo Dome City",
+   "fits": "A wet evening, Sun 25 or Mon 26: Marunouchi line direct from Ginza to Kōrakuen, about 12 minutes. Cheaper after 19:00.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Night",
+   "key": "karaoke-kan",
+   "time": "1 to 2 hrs",
+   "one": "Lost in Translation karaoke rooms, Shibuya",
+   "fits": "A late night in Shibuya, Sat 17 or Mon 19 after Shinjuku. Close to the hotel in Udagawachō.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Night",
+   "key": "purikura",
+   "time": "30 min",
+   "one": "Photo sticker booths, open all night",
+   "fits": "Any Shibuya evening, a minute off Center-gai and close to the hotel. Do it together: couples are fine.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Further out",
+   "key": "hakone",
+   "time": "Full day",
+   "one": "Onsen, Lake Ashi and Fuji views",
+   "fits": "Not in the plan. A whole day from Shibuya via Shinjuku, so only if you drop Kamakura and Yokohama.",
+   "tags": []
+  },
+  {
+   "group": "Further out",
+   "key": "nikko",
+   "time": "Full day",
+   "one": "Gilded shrines and October colour",
+   "fits": "Not in the plan. Tōbu trains leave from Asakusa, so it would replace the Mon 26 Asakusa day.",
+   "tags": []
+  }
+ ],
+ "notes": "No sumo tournament runs on your dates, so a show is the way to see it. Hirakuza Ginza refunds only 50% within 21 days and nothing within 7 days, so decide this week. Spa LaQua refuses entry with tattoos. Japan's tax-free system changes on 1 November 2026: everything you buy in October uses the current tax-off-at-the-till system. Kakigōri is a summer dish and mostly off menus by late October, so it is left out."
+}

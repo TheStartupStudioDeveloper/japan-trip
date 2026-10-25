@@ -1,0 +1,84 @@
+{
+ "d": 17,
+ "dow": "Saturday",
+ "where": "",
+ "title": "Arrive and wander Shibuya",
+ "cal": "Land, Shibuya Sky",
+ "summary": "What happened. Landed almost three hours late, so the day ran later than planned, but nearly everything got done, plus MEGA Don Quijote and a late night out. Times are approximate.",
+ "rows": [
+  {
+   "time": "09:35",
+   "what": "Landed at Narita, late",
+   "detail": "CX524, about 2 hours 45 minutes late (planned 06:50).",
+   "status": "done"
+  },
+  {
+   "time": "11:15",
+   "what": "Narita Express to Shibuya",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "12:30",
+   "what": "Wheeled the bags to the hotel",
+   "detail": "Left them at the desk on 4F.",
+   "status": "done"
+  },
+  {
+   "time": "13:00",
+   "what": "Coffee and açaí bowls under Miyashita Park",
+   "detail": "The shopping mall below the rooftop park.",
+   "status": "done"
+  },
+  {
+   "time": "13:45",
+   "what": "Miyashita Park rooftop",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "14:15",
+   "what": "Cat Street and Omotesando",
+   "detail": "On foot.",
+   "status": "done"
+  },
+  {
+   "time": "15:30",
+   "what": "Back to the hotel, luggage, change",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "16:00",
+   "what": "Shibuya Sky",
+   "detail": "The booked slot.",
+   "status": "done"
+  },
+  {
+   "time": "18:30",
+   "what": "Checked in",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "19:30",
+   "what": "Dinner at Shibuya Yokochō",
+   "detail": "Tōkai Shokuichi, Nagoya food and beer.",
+   "status": "done"
+  },
+  {
+   "time": "21:00",
+   "what": "Scramble Crossing and the Shibuya streets",
+   "detail": "Found a great small-counter ramen spot.",
+   "status": "done"
+  },
+  {
+   "time": "22:00",
+   "what": "MEGA Don Quijote",
+   "detail": "Back at the hotel about midnight.",
+   "status": "done"
+  }
+ ],
+ "footnote": "",
+ "notes": []
+}

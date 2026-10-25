@@ -1,0 +1,145 @@
+{
+ "d": 23,
+ "dow": "Friday",
+ "leg": "k",
+ "where": "Arashiyama, Higashiyama, Gion",
+ "title": "Kyoto: Fushimi Inari, the Golden Pavilion, Higashiyama",
+ "icon": "cloud",
+ "hi": 24,
+ "lo": 12,
+ "rain": 55,
+ "cond": "Cloudy, dry until late evening",
+ "sunset": "17:10",
+ "call": "Confirmed dry for the swap. Weathernews' hourly has cloud and 0 mm from dawn to 21:00: 12 to 13° at Fushimi Inari at 07:00, so a layer for the climb, 17° by 09:00, 21 to 22° for Kiyomizu-dera and the Sannenzaka steps. Light rain from about 22:00, about 1 mm an hour, so umbrellas for the walk home from Pontochō.",
+ "plan": [
+  [
+   "07:00",
+   "Fushimi Inari",
+   "Outdoors, uphill. Dry"
+  ],
+  [
+   "10:00",
+   "Kinkaku-ji",
+   "Outdoors"
+  ],
+  [
+   "15:30",
+   "Kiyomizu-dera and the Sannenzaka lanes",
+   "Outdoors, stone steps"
+  ],
+  [
+   "18:30",
+   "Gyoza, then Pontochō",
+   "Mostly indoors"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "55% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Kyoto",
+   "24° / 14°, cloudy, then rain, 30% 12:00 to 18:00, 60% evening, 1 mm (06:00 today)"
+  ],
+  [
+   "Weathernews, Kyoto hourly",
+   "22° / 12°, cloudy and dry 06:00 to 21:00, light rain from 22:00, about 1 mm an hour (22:30 Thu)"
+  ],
+  [
+   "tenki.jp group (umitenki), Kyoto 3-hourly",
+   "23° / 12°, cloudy, dry until about 21:00, then light rain, 0.9 mm (06:17 today)"
+  ],
+  [
+   "Japan Meteorological Agency, Kyoto (official)",
+   "23° / 14°, cloudy at times, sunny at times, 30%"
+  ],
+  [
+   "Global Forecasting Model, Kyoto",
+   "21° / 10°, cloudy, heavy rain in the evening, 5.7 mm"
+  ],
+  [
+   "AccuWeather, Kyoto",
+   "23° / 17°, rain"
+  ]
+ ],
+ "mm": "Dry until 21:00, then about 1 mm an hour",
+ "gicon": "cloud",
+ "gfill": 55,
+ "gtext": "55%",
+ "gmm": "0–2",
+ "read": "Cloudy and dry until about 21:00. 12° at Inari. Rain from 22:00.",
+ "chance": [
+  [
+   6,
+   18,
+   30
+  ],
+  [
+   18,
+   24,
+   60
+  ]
+ ],
+ "mmBars": [
+  [
+   22,
+   24,
+   2
+  ]
+ ],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    12
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    8,
+    15
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    10,
+    19
+   ],
+   [
+    12,
+    21
+   ],
+   [
+    14,
+    22
+   ],
+   [
+    16,
+    21
+   ],
+   [
+    18,
+    21
+   ],
+   [
+    20,
+    21
+   ],
+   [
+    22,
+    20
+   ],
+   [
+    24,
+    20
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures and rain from Weathernews' Kyoto forecast, checked 22:30 Thu 22."
+}

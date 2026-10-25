@@ -1,0 +1,133 @@
+{
+ "d": 27,
+ "dow": "Tuesday",
+ "where": "",
+ "title": "Haneda to Hong Kong, harbour night",
+ "cal": "Fly to Hong Kong",
+ "summary": "An early train to Haneda with the bags, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights. No pool today, because the sun is nearly gone by check-in.",
+ "rows": [
+  {
+   "time": "05:45",
+   "what": "Wake, shower, final pack",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "06:22",
+   "what": "Leave the hotel, walk to Shimbashi",
+   "detail": "About 8 minutes with the bags. Asakusa line, platform 1.",
+   "status": ""
+  },
+  {
+   "time": "06:38",
+   "what": "Airport Rapid Limited Express to Haneda Terminal 3",
+   "detail": "Direct, about 25 minutes. The backup is the 06:45 Express. Avoid trains bound for Nishi-magome (How-to 18).",
+   "status": ""
+  },
+  {
+   "time": "07:15",
+   "what": "Check in at the Cathay desks",
+   "detail": "Three hours before departure.",
+   "status": ""
+  },
+  {
+   "time": "07:45",
+   "what": "Security and immigration",
+   "detail": "Usually quick, but allow for a queue.",
+   "status": ""
+  },
+  {
+   "time": "08:15",
+   "what": "Breakfast airside",
+   "detail": "Spend leftover yen and IC card balance here.",
+   "status": ""
+  },
+  {
+   "time": "09:40",
+   "what": "Boarding",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "10:10",
+   "what": "CX543 departs Haneda",
+   "detail": "Terminal 3. Hong Kong is one hour behind Tokyo.",
+   "status": "booked"
+  },
+  {
+   "time": "14:25",
+   "what": "Land in Hong Kong",
+   "detail": "Terminal 1. Allow 45 to 60 minutes for immigration, bags and customs.",
+   "status": "booked"
+  },
+  {
+   "time": "15:20",
+   "what": "Red urban taxi to the Sheraton",
+   "detail": "20 Nathan Road, Tsim Sha Tsui. 35 to 45 minutes, roughly HK$300 to 350 with tolls and bag fees. Carry some cash.",
+   "status": ""
+  },
+  {
+   "time": "16:15",
+   "what": "Check in at the Sheraton",
+   "detail": "Ask two things at the desk: whether pool sessions need booking, and the club lounge hours. Friday's late checkout is already confirmed to 18:00.",
+   "status": ""
+  },
+  {
+   "time": "17:15",
+   "what": "Club lounge",
+   "detail": "Drinks and canapés as the harbour lights come on. Sunset is about 17:50.",
+   "status": ""
+  },
+  {
+   "time": "18:50",
+   "what": "Walk to Tsim Sha Tsui Public Pier 1",
+   "detail": "Ten minutes from the hotel, behind the Cultural Centre. Queue early for the best seats.",
+   "status": ""
+  },
+  {
+   "time": "19:30",
+   "what": "Aqua Luna harbour cruise",
+   "detail": "45 minutes on a red-sail junk, one drink included. Confirm the sailing is running before you fly.",
+   "status": "to book"
+  },
+  {
+   "time": "20:00",
+   "what": "A Symphony of Lights",
+   "detail": "The nightly harbour light show. Lasers, searchlights and LED screens on the towers along both shores, set to music, for about ten minutes. You watch it from the boat.",
+   "status": ""
+  },
+  {
+   "time": "20:20",
+   "what": "Avenue of Stars",
+   "detail": "Off the boat and along the Tsim Sha Tsui promenade. Handprints, the Bruce Lee statue and the full Island skyline.",
+   "status": ""
+  },
+  {
+   "time": "20:45",
+   "what": "Dinner in Tsim Sha Tsui",
+   "detail": "Close to the promenade and the hotel.",
+   "status": ""
+  },
+  {
+   "time": "Late",
+   "what": "Bar, or Temple Street night market",
+   "detail": "Only if you have the energy.",
+   "status": ""
+  }
+ ],
+ "footnote": "",
+ "notes": [
+  [
+   "Taxi instead in Tokyo",
+   "The fallback if the train looks wrong on the day. About 25 minutes. Even a 07:15 taxi gets you to Haneda 2.5 hours before departure."
+  ],
+  [
+   "Instead of the taxi in Hong Kong",
+   "First check whether the Agoda booking includes an airport pickup. Otherwise the Airport Express to Kowloon Station, then a 5 to 10 minute taxi, costs about the same for two with more bag handling."
+  ],
+  [
+   "If the show has ended or the cruise is full",
+   "Watch from the Tsim Sha Tsui promenade, five minutes from the hotel. It faces the Hong Kong Island towers, which is the better side. Your harbour view room faces the same way."
+  ]
+ ]
+}

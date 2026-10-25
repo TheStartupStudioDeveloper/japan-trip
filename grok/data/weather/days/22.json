@@ -1,0 +1,141 @@
+{
+ "d": 22,
+ "dow": "Thursday",
+ "leg": "k",
+ "where": "Osaka",
+ "title": "Osaka: flea market, Shinsekai, castle by night",
+ "icon": "sun",
+ "hi": 24,
+ "lo": 16,
+ "rain": 10,
+ "cond": "Sunny all day",
+ "sunset": "17:05",
+ "call": "The best day of the week, confirmed this morning. Sunny all day with no rain: 21° at 09:00 for the Shitennō-ji flea market, 24° at midday in Shinsekai, clear skies and 20° at 18:00 for Umeda Sky at sunset (17:05), and about 19° for the castle at night, with some cloud by 21:00. A fresh north breeze, 4 to 5 m/s, so a light layer for the rooftop and the evening.",
+ "plan": [
+  [
+   "08:45",
+   "Shitennō-ji flea market",
+   "Outdoors"
+  ],
+  [
+   "10:30",
+   "Shinsekai and kushikatsu",
+   "Outdoors"
+  ],
+  [
+   "17:00",
+   "Umeda Sky at sunset",
+   "Open-air rooftop, clear air"
+  ],
+  [
+   "20:00",
+   "Osaka Castle lit up",
+   "Outdoors"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "10% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp group (umitenki), Osaka 3-hourly",
+   "24° / 16°, sunny, 0 mm all day, 21° at 09:00, 24° at noon, 20° and clear at 18:00, wind 4 to 5 m/s (06:17 today)"
+  ],
+  [
+   "tenki.jp, Osaka hourly",
+   "24° / 16°, sunny all day, 0 to 20%, 0 mm, north wind 3 to 5 m/s (17:00 Wed)"
+  ],
+  [
+   "tenki.jp, Kyoto",
+   "23° / 15°, sunny, 0 to 20%, 0 mm, 15° at 06:00"
+  ],
+  [
+   "Japan Meteorological Agency, Kyoto (official)",
+   "Sunny at times, cloudy at times, 10% all day"
+  ],
+  [
+   "Weathernews, Kyoto",
+   "21° / 15°, sun with some cloud, 20%"
+  ],
+  [
+   "Global Forecasting Model, Kyoto",
+   "20° / 12°, fair then clear, 0 mm"
+  ]
+ ],
+ "mm": "0 mm",
+ "gicon": "sun",
+ "gfill": 10,
+ "gtext": "10%",
+ "gmm": "0",
+ "read": "Sunny all day, 24°. Clear for Umeda Sky at sunset.",
+ "chance": [
+  [
+   6,
+   10,
+   0
+  ],
+  [
+   10,
+   12,
+   10
+  ],
+  [
+   12,
+   13,
+   20
+  ],
+  [
+   13,
+   24,
+   10
+  ]
+ ],
+ "mmBars": [],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    18
+   ],
+   [
+    8,
+    19.1
+   ],
+   [
+    10,
+    21.2
+   ],
+   [
+    12,
+    22.4
+   ],
+   [
+    14,
+    24.2
+   ],
+   [
+    16,
+    21.2
+   ],
+   [
+    18,
+    19.2
+   ],
+   [
+    20,
+    18.1
+   ],
+   [
+    22,
+    17
+   ],
+   [
+    24,
+    16.1
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures from tenki.jp's Osaka forecast issued 17:00 Wed 21, confirmed by the 06:17 update today."
+}

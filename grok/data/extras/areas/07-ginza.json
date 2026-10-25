@@ -1,0 +1,347 @@
+{
+ "key": "ginza",
+ "name": "Ginza and east Tokyo",
+ "pat": "g",
+ "kanji": "銀座",
+ "meta": "With Hibiya, Yūrakuchō, Marunouchi, Shimbashi, Tsukiji, Toranomon, Azabudai, Asakusa, Kuramae and Odaiba.",
+ "days": [
+  [
+   "d20",
+   "Tue 20"
+  ],
+  [
+   "d24",
+   "Sat 24"
+  ],
+  [
+   "d25",
+   "Sun 25"
+  ],
+  [
+   "d26",
+   "Mon 26"
+  ]
+ ],
+ "must": [
+  {
+   "dish": "Monjayaki",
+   "line": "Tokyo's gooey, griddle-fried batter of cabbage and seafood, scraped off the hotplate with tiny spatulas.",
+   "where": "kondo"
+  },
+  {
+   "dish": "Tempura at the counter",
+   "line": "Each piece fried to order and handed straight across, crisp, light and never greasy.",
+   "where": "yamanoue"
+  },
+  {
+   "dish": "Katsu sando",
+   "line": "A thick pork cutlet in soft white bread with tonkatsu sauce, the classic Tokyo takeaway.",
+   "where": "bairin"
+  },
+  {
+   "dish": "Anpan",
+   "line": "Ginza's own invention: a soft bun of sweet red bean paste, topped with a salted cherry blossom.",
+   "where": "kimuraya"
+  },
+  {
+   "dish": "Menchi katsu",
+   "line": "A crumbed, deep-fried mince patty, eaten hot in the street in Asakusa.",
+   "where": "asakusa-menchi"
+  },
+  {
+   "dish": "Yakitori under the tracks",
+   "line": "Skewers off the charcoal and a cold beer while the trains rumble overhead.",
+   "where": "tonton"
+  }
+ ],
+ "items": [
+  {
+   "group": "Eat",
+   "key": "tsumugi",
+   "time": "1 hr",
+   "one": "18-dish temple breakfast in Tsukiji",
+   "fits": "Sun 25 slow breakfast. Taxi 5 minutes from the hotel, be there by 08:00 at the weekend, then taxi on to the East Gardens. Sotoroku on the hotel's 18F (buffet to 10:00) is the no-effort fallback.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "arabica-azabudai",
+   "time": "30 min",
+   "one": "Good coffee by Kamiyachō Station",
+   "fits": "Mon 26 after teamLab at about 10:40, if you skip Sky Room or want a coffee for the train. In the basement of Garden Plaza, on your way to Kamiyachō.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "kimuraya",
+   "time": "20 min",
+   "one": "The bakery that invented anpan, 1874",
+   "fits": "Sun 25 afternoon in Ginza. It is on the 4-chōme crossing beside the Wakō clock tower. Grab a cherry blossom anpan as you pass.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "bairin",
+   "time": "45 min",
+   "one": "Ginza's oldest tonkatsu and a famous katsu sando",
+   "fits": "Sun 25 'eat in the complexes' evening, ten minutes from the hotel. Or Mon 26 after Shimbashi: take away a katsu sando for the 06:22 start to Haneda.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "tsunahachi-matsuya",
+   "time": "1 hr",
+   "one": "Walk-in tempura on Matsuya's 8F",
+   "fits": "Sun 25 'eat in the complexes' evening. Matsuya's 8F restaurant floor trades to 22:00, well after the shops close, with an English menu.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "lion",
+   "time": "1.5 hrs",
+   "one": "Japan's oldest beer hall, built 1934",
+   "fits": "Sun 25 dinner if you want something louder than a restaurant floor. On Chūō-dōri in 7-chōme, eight minutes' walk back to the hotel.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "kondo",
+   "time": "1.5 hrs",
+   "one": "Monjayaki on Tsukishima's Monja Street",
+   "fits": "Sun 25 dinner as a change from Ginza. Yūrakuchō line from Ginza-itchōme, two stops, or a 10 minute taxi. Open from 11:30 on Sundays.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "yamanoue",
+   "time": "1.5 hrs",
+   "one": "Counter tempura course on Ginza Six 13F",
+   "fits": "Sun 25 nice dinner, no extra travel: book an 18:00 counter seat on TableCheck, after the Ginza Six rooftop. Top of your budget, so check the course price when booking.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "sushibus",
+   "time": "1 hr 10 min",
+   "one": "All-you-can-eat sushi on a double-decker tour",
+   "fits": "Sun 25 evening: the 17:00 or 19:00 departure from Kajibashi car park near Tokyo Station, 15 minutes from Ginza. ¥16,000 each, sushi and drinks included.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "daikokuya",
+   "time": "45 min",
+   "one": "Classic Asakusa tendon since 1887",
+   "fits": "Mon 26 lunch at about 13:30 after Kappabashi. The queue is shorter after the noon rush. Cash only.",
+   "tags": [
+    "¥",
+    "Walk-in",
+    "Cash"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "asakusa-menchi",
+   "time": "10 min",
+   "one": "Hot menchi katsu to eat in the street",
+   "fits": "Mon 26, a snack between Kappabashi and Sensō-ji, or instead of a sit-down lunch. Two minutes from Kaminarimon.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "uokin",
+   "time": "1.5 hrs",
+   "one": "Big sashimi platters, Shimbashi seafood izakaya",
+   "fits": "Mon 26 Shimbashi dinner at 19:00. A minute from the station, packed on a Monday night. Order the six-kind sashimi platter.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "tonton",
+   "time": "1 hr",
+   "one": "Smoky skewers under the Yūrakuchō tracks",
+   "fits": "Mon 26 dinner, ten minutes' walk from Shimbashi along the tracks. Or graze here first, then finish in Shimbashi.",
+   "tags": [
+    "¥",
+    "Walk-in",
+    "Cash"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "star-bar",
+   "time": "1 hr",
+   "one": "Classic Ginza cocktails, the sidecar is the order",
+   "fits": "Sun 25 after dinner. It is closed on Monday, so Sunday is your night for it. Go before 21:00 for a counter seat.",
+   "tags": [
+    "¥¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "bar-high-five",
+   "time": "1 hr",
+   "one": "World-famous bar, no menu, made to your taste",
+   "fits": "Mon 26 after the Shimbashi dinner, ten minutes' walk into Ginza. Closed Sundays, so Monday is your night. Arrive soon after 20:00.",
+   "tags": [
+    "¥¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "peter-bar",
+   "time": "1 hr",
+   "one": "24th floor cocktails over Hibiya Park",
+   "fits": "Sun 25 at dusk (sunset about 16:55) instead of the department store rooftops. Opens 15:00 on Sundays, ten minutes from the hotel.",
+   "tags": [
+    "¥¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "centifolia",
+   "time": "1.5 hrs",
+   "one": "Theatrical cocktails, flames and fog, antique glass",
+   "fits": "Sat 24 after the fireworks dinner, about 20 minutes by taxi from Odaiba. Closed Sundays and Wednesdays, so not Sun 25. Book on TableCheck.",
+   "tags": [
+    "¥¥¥",
+    "Book"
+   ]
+  },
+  {
+   "group": "Views",
+   "key": "caretta",
+   "time": "20 min",
+   "one": "Free 46th floor view over the bay",
+   "fits": "Any evening on the walk home, five minutes from the hotel. Mon 26 late, a last look at Tokyo lit up before the early flight.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Views",
+   "key": "city-view",
+   "time": "1 hr",
+   "one": "Tokyo Tower at eye level, indoors",
+   "fits": "Sun 25 evening instead of Tokyo Tower or the car meet, best on a wet or windy night. Or Mon 26 evening. Hibiya line from Hibiya to Roppongi, 10 minutes. Book online, arrive about 30 minutes before dark.",
+   "tags": [
+    "¥¥",
+    "Book"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "hamarikyu",
+   "time": "1 to 1.5 hrs",
+   "one": "Bayside garden with a teahouse on the pond",
+   "fits": "Sun 25 instead of the East Gardens, ten minutes' walk from the hotel. Or Tue 20 straight after the Tsukiji breakfast if you finish early: it opens at 09:00, five minutes away.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "kuramae",
+   "time": "45 min",
+   "one": "Bean to bar chocolate in quiet Kuramae",
+   "fits": "Mon 26 between Kappabashi and Sensō-ji, or a dry stop on a wet day. 15 minutes' walk south of Kappabashi.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Night",
+   "key": "yurakucho",
+   "time": "1 to 2 hrs",
+   "one": "Izakaya and yakitori in the railway arches",
+   "fits": "Mon 26 19:00 alternative to Shimbashi, ten minutes' walk. Andy's Shin-Hinomoto by exit C1 is the English-friendly start. Mostly cash.",
+   "tags": [
+    "Cash"
+   ]
+  },
+  {
+   "group": "Further out",
+   "key": "odaiba",
+   "time": "2 hrs",
+   "one": "Bayside malls, beach and promenade",
+   "fits": "Sat 24, if check-in is quick, go out at 15:00 rather than 16:00 and walk the Odaiba Seaside Park boardwalk before the fireworks. Note the Unicorn Gundam statue ended its display in August 2026.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Massage",
+   "key": "headspa-zen",
+   "time": "1 to 1.5 hrs",
+   "one": "Late head spa in Ginza 2-chōme",
+   "fits": "Sun 25 after the shops close, before a late dinner. Open to 23:00.",
+   "tags": [
+    "Book"
+   ]
+  },
+  {
+   "group": "Massage",
+   "key": "zwei-haus",
+   "time": "1 to 1.5 hrs",
+   "one": "Head spa in Ginza 1-chōme",
+   "fits": "Sun 25 mid afternoon, a break from the department stores. Open 10:00 to 22:00.",
+   "tags": [
+    "Book"
+   ]
+  },
+  {
+   "group": "Massage",
+   "key": "buasai",
+   "time": "1 hr",
+   "one": "Thai massage five minutes from the hotel",
+   "fits": "Sat 24 after the fireworks (open to midnight), or Mon 26 after dinner while you pack in your head.",
+   "tags": []
+  },
+  {
+   "group": "Massage",
+   "key": "yuragi",
+   "time": "1 hr",
+   "one": "Late bodywork in Ginza 7-chōme",
+   "fits": "Mon 26 late after Shimbashi, open to midnight. Legs will need it after Asakusa.",
+   "tags": []
+  }
+ ],
+ "notes": "Weather backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24. CANCEL on the Mercure website by 18:00 Japan time on Thu 22 if not needed (free until then). Kabuki-za's October run ends on 20 October, so there is no kabuki on your Ginza days. Star Bar is closed on Mondays and Bar High Five on Sundays: one each night. Book Tempura Yamanoue (TableCheck) or the Sushi Bus (sushi-bus.com) this week if you want either for Sun 25. Tonton and Monja Kondo hours come from older listings, so check Google Maps on the day. The Unicorn Gundam at DiverCity Odaiba came down at the end of August 2026."
+}

@@ -1,0 +1,105 @@
+{
+ "d": 26,
+ "dow": "Monday",
+ "where": "",
+ "title": "teamLab, Tokyo Tower coffee, Kappabashi, Sensō-ji at dusk",
+ "cal": "teamLab, Asakusa",
+ "summary": "teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi kitchen street while the shops are open, lunch in Asakusa, Sensō-ji and the Skytree at dusk, then yakitori under the train tracks.",
+ "rows": [
+  {
+   "time": "07:50",
+   "what": "Leave the Blossom",
+   "detail": "About 25 minutes on foot via Toranomon to Azabudai Hills. Taxi if it is wet.",
+   "status": ""
+  },
+  {
+   "time": "08:30",
+   "what": "teamLab Borderless, first session",
+   "detail": "Arrive a little early to be among the first in. Allow about two hours. The booking can change date or time up to three times.",
+   "status": "booked"
+  },
+  {
+   "time": "10:45",
+   "what": "Sky Room Café & Bar, Mori JP Tower 34F",
+   "detail": "Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. The 33F viewing area is ¥500 each plus a drink. Zōjō-ji, the temple below the tower, is 10 minutes' walk if you want it.",
+   "status": ""
+  },
+  {
+   "time": "11:30",
+   "what": "Hibiya line, then the Ginza line to Tawaramachi",
+   "detail": "From Kamiyachō, Hibiya line to Ginza, change to the Ginza line to Tawaramachi (田原町), about 30 minutes.",
+   "status": ""
+  },
+  {
+   "time": "12:00",
+   "what": "Kappabashi kitchenware street",
+   "detail": "Weekday, so the shops are open. Knives: Kama-asa (free engraving) and Kamata Hakensha. Ceramics: Dengama. Fake food: Ganso food samples. Niimi's giant chef head at the south end. Knives fly in checked bags only.",
+   "status": ""
+  },
+  {
+   "time": "13:30",
+   "what": "Lunch in Asakusa",
+   "detail": "Ten minutes east on foot.",
+   "status": ""
+  },
+  {
+   "time": "14:30",
+   "what": "Sensō-ji, Kaminarimon, Nakamise street",
+   "detail": "Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.",
+   "status": ""
+  },
+  {
+   "time": "16:15",
+   "what": "Skytree views at dusk, no deck",
+   "detail": "The free 8F terrace of the tourist centre opposite Kaminarimon, then Azuma-bashi bridge for the Skytree across the river as it lights up.",
+   "status": ""
+  },
+  {
+   "time": "17:30",
+   "what": "Ginza line back to Shimbashi",
+   "detail": "Asakusa to Shimbashi, about 20 minutes. Drop the shopping at the hotel.",
+   "status": ""
+  },
+  {
+   "time": "17:50",
+   "what": "AirPod at the front desk",
+   "detail": "The Kyoto hotel's parcel is now due today. Ask when dropping the shopping: 京都のホテルから荷物が届いていますか？ If it has not come, ask them to hold it or forward it before the Tuesday 06:22 start.",
+   "status": ""
+  },
+  {
+   "time": "18:30",
+   "what": "Hibiya OKUROJI",
+   "detail": "The restored arcade inside the brick railway arches, by the hotel end. Walk it north towards Yūrakuchō, about 15 minutes. Covered, so good in the rain. Unafuji (the eel place) is in here.",
+   "status": ""
+  },
+  {
+   "time": "18:50",
+   "what": "Tokyo International Forum glass hall",
+   "detail": "Rafael Viñoly's boat-shaped glass atrium, lit up at night, on the walk to dinner. Free, about 20 minutes. Lift to 7F and walk down the ramps. Then two minutes to the Yūrakuchō lanes.",
+   "status": ""
+  },
+  {
+   "time": "19:15",
+   "what": "Dinner under the train tracks, Yūrakuchō",
+   "detail": "The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, pork skewers, motsu stew and cold beer, with the trains rumbling overhead. Start at Yakitori Tonton (the pork cheek skewer), then graze. No booking, mostly cash.",
+   "status": ""
+  },
+  {
+   "time": "Late",
+   "what": "Back to the hotel",
+   "detail": "Finish packing and settle the bill. Tomorrow is the 06:38 train (How-to 18).",
+   "status": ""
+  }
+ ],
+ "footnote": "",
+ "notes": [
+  [
+   "Why Asakusa is today",
+   "Ceramics and knives bought now go home without a trip through Kyoto. Knives fly in checked bags only. And the market on Tuesday comes before you are sushied out. Shops first as they close about 17:00, temple later as the crowds ease."
+  ],
+  [
+   "Other shapes",
+   "Tsukiji can come back here at 08:00 with teamLab moved to 13:30, and Asakusa returns to Tuesday 20. If teamLab moved for wet weather, start in Asakusa about 10:00."
+  ]
+ ]
+}

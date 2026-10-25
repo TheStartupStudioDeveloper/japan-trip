@@ -1,0 +1,51 @@
+# Rebuilds the Grok copy of the trip apps (grok/) whenever Grok, or anyone, changes grok/data/.
+# Never touches the master apps. See grok/GROK.md.
+name: Grok copy rebuild
+on:
+  push:
+    branches: [main]
+    paths: ['grok/data/**', 'source/grok/**', '.github/workflows/grok-build.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: grok-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tools
+        run: |
+          pip install --quiet playwright pillow
+          python -m playwright install --with-deps chromium
+      - name: Build the Grok apps
+        id: build
+        continue-on-error: true
+        run: python3 source/grok/grok_build.py
+      - name: Commit the rebuilt apps
+        run: |
+          git config user.name "grok-copy-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A grok
+          git reset -q grok/data
+          if git diff --cached --quiet; then echo "Nothing to commit"; exit 0; fi
+          if [ "${{ steps.build.outcome }}" = "success" ]; then MSG="Grok copy rebuilt"; else MSG="Grok copy NOT rebuilt: see grok/build-error.txt"; fi
+          git commit -q -m "$MSG"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
+      - name: Fail if the build failed
+        if: steps.build.outcome != 'success'
+        run: |
+          cat grok/build-error.txt || true
+          exit 1

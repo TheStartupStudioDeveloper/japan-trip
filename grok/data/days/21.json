@@ -1,0 +1,126 @@
+{
+ "d": 21,
+ "dow": "Wednesday",
+ "where": "",
+ "title": "Shibuya to Kyoto, straight out to Nara",
+ "cal": "Shinkansen, Nara",
+ "summary": "An early start with the bags on the train. Then Nara, which is flat, outdoors and forgiving, which is what a travel day wants.",
+ "rows": [
+  {
+   "time": "05:55",
+   "what": "Wake, final pack, check out by 06:20",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "06:30",
+   "what": "Taxi to Shinagawa, Kōnan exit",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "07:00",
+   "what": "Shinagawa, ekiben and coffee",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "07:55",
+   "what": "Nozomi 13 to Kyoto",
+   "detail": "Car 9, seats 16-C and 16-D, Green Car.",
+   "status": "done"
+  },
+  {
+   "time": "10:00",
+   "what": "Kyoto Station",
+   "detail": "Step by step: How-to 31.",
+   "status": "done"
+  },
+  {
+   "time": "10:30",
+   "what": "Bags sent to the hotel from Crosta Kyoto",
+   "detail": "Delivered to sequence KYOTO GOJO by 17:00.",
+   "status": "done"
+  },
+  {
+   "time": "11:25",
+   "what": "Kintetsu to Nara",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "12:10",
+   "what": "Kintetsu Nara, up into Higashimuki arcade",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "13:30",
+   "what": "Into Nara Park for the deer",
+   "detail": "No crackers for us. Watched the deer harass everyone else.",
+   "status": "done"
+  },
+  {
+   "time": "14:15",
+   "what": "Kasuga Taisha and the lantern path",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "14:30",
+   "what": "Wakakusa-yama, first peak lookout",
+   "detail": "Amazing views over Nara, and an ice-cold beer from the hut at the top.",
+   "status": "done"
+  },
+  {
+   "time": "15:30",
+   "what": "Nigatsu-dō",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "16:00",
+   "what": "Tōdai-ji and the Great Buddha",
+   "detail": "Past the Isuien garden for photos on the way.",
+   "status": "done"
+  },
+  {
+   "time": "16:30",
+   "what": "Back to Kintetsu Nara",
+   "detail": "Maccas pit stop: burgers, chips and soft serve.",
+   "status": "done"
+  },
+  {
+   "time": "17:00",
+   "what": "Kintetsu back to Kyoto",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "18:40",
+   "what": "AEON Mall Kyoto",
+   "detail": "New runners for Cynthia.",
+   "status": "done"
+  },
+  {
+   "time": "19:15",
+   "what": "Ramen: Honke Daiichi Asahi",
+   "detail": "Queue outside, tickets from the machine inside.",
+   "status": "done"
+  },
+  {
+   "time": "20:15",
+   "what": "Yodobashi Kyoto",
+   "detail": "Suitcase hunt: Gran Sac's on 5F.",
+   "status": "done"
+  },
+  {
+   "time": "21:00",
+   "what": "To sequence KYOTO GOJO, check in",
+   "detail": "",
+   "status": "done"
+  }
+ ],
+ "footnote": "",
+ "notes": []
+}

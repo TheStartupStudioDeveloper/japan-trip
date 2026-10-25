@@ -1,0 +1,149 @@
+{
+ "d": 20,
+ "dow": "Tuesday",
+ "leg": "s",
+ "where": "Tsukiji and Shinjuku",
+ "title": "Tsukiji, omakase lunch, Shinjuku after dark",
+ "icon": "shower",
+ "hi": 26,
+ "lo": 19,
+ "rain": 45,
+ "cond": "Sunny early, drizzle at times from 11:00",
+ "sunset": "17:00",
+ "call": "Sunny for the Roastery: tenki.jp's 07:00 hourly has sun until about 09:00, 21 to 24°. Cloud from 10:00, then light drizzle on and off, 0.2 to 0.4 mm an hour, around 11:00, 14:00 to 15:00 and 17:00 to 18:00, about 1 mm in all. Weathernews has no measurable rain. A small umbrella or a light jacket covers it, and the Shinjuku stores are indoors.",
+ "plan": [
+  [
+   "08:00",
+   "Tsukiji Outer Market",
+   "Open-air stalls"
+  ],
+  [
+   "13:30",
+   "Sushi Tokyo Ten Shinjuku",
+   "Indoors, booked"
+  ],
+  [
+   "17:30",
+   "Shinjuku east side after dark",
+   "Outdoor streets"
+  ],
+  [
+   "20:30",
+   "Hanazono Shrine, Golden Gai",
+   "Outdoors, then tiny bars"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "45% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "26° / 19°, sunny early, then cloudy with drizzle at times from 11:00, 60%, about 1 mm (07:00 today)"
+  ],
+  [
+   "Japan Meteorological Agency, Tokyo (official)",
+   "Cloudy, rain in places until evening, 20 to 30%"
+  ],
+  [
+   "Weathernews, Shibuya",
+   "26° / 19°, cloudy, 40 to 50%, 0 mm hourly"
+  ],
+  [
+   "Global Forecasting Model",
+   "25° / 19°, partly cloudy, 0.6 mm"
+  ],
+  [
+   "AccuWeather",
+   "28° / 21°, clouds and sun"
+  ]
+ ],
+ "mm": "About 1 mm in drizzle, spread through the day",
+ "gicon": "shower",
+ "gfill": 45,
+ "gtext": "45%",
+ "gmm": "1",
+ "read": "Sunny for the Roastery. Drizzle on and off from 11:00, about 1 mm all day.",
+ "chance": [
+  [
+   6,
+   9,
+   10
+  ],
+  [
+   9,
+   17,
+   45
+  ],
+  [
+   17,
+   19,
+   60
+  ],
+  [
+   19,
+   24,
+   35
+  ]
+ ],
+ "mmBars": [
+  [
+   11,
+   12,
+   0.2
+  ],
+  [
+   14,
+   16,
+   0.5
+  ],
+  [
+   17,
+   19,
+   0.8
+  ]
+ ],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    18.5
+   ],
+   [
+    7,
+    20.9
+   ],
+   [
+    9,
+    24.2
+   ],
+   [
+    11,
+    26.1
+   ],
+   [
+    12,
+    26.4
+   ],
+   [
+    15,
+    25
+   ],
+   [
+    18,
+    22.3
+   ],
+   [
+    21,
+    21
+   ],
+   [
+    24,
+    20.1
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures, rain chance and drizzle from tenki.jp's hourly forecast for Shibuya, issued 07:00 today."
+}

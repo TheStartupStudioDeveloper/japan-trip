@@ -1,0 +1,162 @@
+{
+ "d": 25,
+ "dow": "Sunday",
+ "leg": "g",
+ "where": "Gardens and Ginza",
+ "title": "Gardens, sumo show, then Ginza",
+ "icon": "cloud",
+ "hi": 26,
+ "lo": 18,
+ "rain": 55,
+ "cond": "Cloudy, dry until evening",
+ "sunset": "16:55",
+ "call": "Mostly dry, and the new plan fits it well. tenki.jp's hourly for Chiyoda has no rain until about 12:00, so the East Gardens at 09:15 are fine, 23 to 25°. The sumo show and chanko lunch from 12:00 are indoors, covering the brief shower around 13:00. Ginza car-free from 14:45 should be mostly dry, 21 to 23°, with another brief shower possible around 17:00, so carry an umbrella. Steadier rain from about 20:00 for dinner.",
+ "plan": [
+  [
+   "09:15",
+   "Imperial Palace East Gardens",
+   "Outdoors"
+  ],
+  [
+   "12:00",
+   "Asakusa Sumo Club, chanko lunch",
+   "Indoors"
+  ],
+  [
+   "14:45",
+   "Ginza car-free, stores, rooftops",
+   "Brief showers possible"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "55% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Tokyo (Chiyoda, by the hotel) 3-hourly",
+   "26° / 17°, dry until 12:00, a brief shower about 13:00 and 17:00 (under 1 mm), rain from about 20:00, 1 mm an hour (05:00 Sat)"
+  ],
+  [
+   "Weathernews, Shibuya hourly",
+   "Dry until 13:00, 18 to 23°, then rain from 14:00, about 1 to 2 mm an hour into the evening"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "20° / 17°, cloudy, then rain, 70% from 12:00, 2 mm afternoon, under 1 mm evening (20:00 Thu)"
+  ],
+  [
+   "Japan Meteorological Agency, Tokyo (official)",
+   "23° / 17°, 60%, confidence C"
+  ],
+  [
+   "Weathernews, Shibuya",
+   "25° / 17°, rain at times, 60%"
+  ],
+  [
+   "Global Forecasting Model",
+   "24° / 17°, cloudy, 0 mm"
+  ],
+  [
+   "AccuWeather, Tokyo",
+   "25° / 19°, a touch of afternoon rain"
+  ]
+ ],
+ "mm": "Dry until evening, rain from about 21:00",
+ "gicon": "cloud",
+ "gfill": 55,
+ "gtext": "55%",
+ "gmm": "0–2",
+ "read": "Dry for the gardens. Sumo indoors. Ginza mostly dry, rain from 20:00.",
+ "chance": [
+  [
+   0,
+   12,
+   20
+  ],
+  [
+   12,
+   14,
+   50
+  ],
+  [
+   14,
+   17,
+   40
+  ],
+  [
+   17,
+   18,
+   70
+  ],
+  [
+   18,
+   20,
+   40
+  ],
+  [
+   20,
+   24,
+   75
+  ]
+ ],
+ "mmBars": [
+  [
+   13,
+   14,
+   0.5
+  ],
+  [
+   17,
+   18,
+   0.9
+  ],
+  [
+   20,
+   24,
+   3
+  ]
+ ],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    18.4
+   ],
+   [
+    8,
+    20.9
+   ],
+   [
+    10,
+    24.1
+   ],
+   [
+    12,
+    26
+   ],
+   [
+    14,
+    24.1
+   ],
+   [
+    16,
+    21
+   ],
+   [
+    18,
+    20
+   ],
+   [
+    21,
+    18.9
+   ],
+   [
+    24,
+    18.7
+   ]
+  ]
+ },
+ "tnote": "Temperatures and rain chance from tenki.jp's 3-hourly forecast for Chiyoda, issued 05:00 today."
+}

@@ -1,0 +1,90 @@
+{
+ "d": 29,
+ "dow": "Thursday",
+ "where": "",
+ "title": "Ngong Ping cable car, Big Buddha, then the city",
+ "cal": "Big Buddha, city",
+ "summary": "Out to Lantau for the first cable car, back to the Island for lunch and the Sheung Wan shops, a rest at the hotel, then Temple Street at night.",
+ "rows": [
+  {
+   "time": "08:00",
+   "what": "Lounge breakfast",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "08:45",
+   "what": "Train to Tung Chung",
+   "detail": "About 50 minutes, one change.",
+   "status": ""
+  },
+  {
+   "time": "10:00",
+   "what": "Ngong Ping 360 cable car up",
+   "detail": "Crystal cabin, Klook voucher (How-to 20). First car, shortest queues. 25 minutes.",
+   "status": "to book"
+  },
+  {
+   "time": "10:30",
+   "what": "Big Buddha, Po Lin Monastery, Wisdom Path",
+   "detail": "268 steps up. Skip most of the village.",
+   "status": ""
+  },
+  {
+   "time": "12:45",
+   "what": "Cable car down",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "13:20",
+   "what": "Train to Hong Kong Station, Central",
+   "detail": "About 30 minutes.",
+   "status": ""
+  },
+  {
+   "time": "14:00",
+   "what": "Lunch in Central or Sheung Wan",
+   "detail": "Yum cha is Friday's lunch, so eat whatever appeals here.",
+   "status": ""
+  },
+  {
+   "time": "15:00",
+   "what": "Sheung Wan shops",
+   "detail": "Hollywood Road, Cat Street antiques, vintage and resale. Don't forget Man Mo Temple, on Hollywood Road as you pass. Ten minutes inside.",
+   "status": ""
+  },
+  {
+   "time": "16:15",
+   "what": "Egg tart and coffee stop",
+   "detail": "",
+   "status": ""
+  },
+  {
+   "time": "17:00",
+   "what": "Star Ferry from Central to Tsim Sha Tsui",
+   "detail": "On the water close to sunset, about 17:50.",
+   "status": ""
+  },
+  {
+   "time": "18:15",
+   "what": "Optional: Ozone at the Ritz-Carlton",
+   "detail": "Friday is the plan. If you go tonight instead: quick change first, short taxi to ICC, and Friday evening is free.",
+   "status": ""
+  },
+  {
+   "time": "19:30",
+   "what": "Temple Street dinner and night market",
+   "detail": "Claypot rice or street-side seafood, then browse the stalls. A 15 minute walk from the hotel.",
+   "status": ""
+  },
+  {
+   "time": "21:30",
+   "what": "Back at the hotel",
+   "detail": "Or a bar nearby.",
+   "status": ""
+  }
+ ],
+ "footnote": "",
+ "notes": []
+}

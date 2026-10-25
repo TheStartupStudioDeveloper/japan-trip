@@ -1,0 +1,137 @@
+{
+ "d": 19,
+ "dow": "Monday",
+ "leg": "s",
+ "where": "Kamakura and Yokohama",
+ "title": "Kamakura, then Yokohama",
+ "icon": "sun",
+ "hi": 27,
+ "lo": 17,
+ "rain": 20,
+ "cond": "Sunny, cloud from late afternoon",
+ "sunset": "17:00",
+ "call": "A great day for the coast. tenki.jp has Kamakura sunny until about 15:00, 0 to 10%, then cloud for Yokohama with no rain. About 24° when you reach Kamakura at 10:30, 26 to 27° for pancakes and the Yuigahama walk around 12:00 to 14:00. A steady south-westerly, about 4 m/s, so a sea breeze on the beach, and still about 3 m/s on the Vanish coaster and ferris wheel around 16:00 to 18:00, at about 24°. JMA has 20% by evening and a stray shower possible late at night, after you're home. Sunscreen and water.",
+ "plan": [
+  [
+   "08:00",
+   "Starbucks Reserve Roastery",
+   "Indoors"
+  ],
+  [
+   "10:30",
+   "Kamakura: Hachimangū, Komachi-dōri",
+   "Outdoors"
+  ],
+  [
+   "12:00",
+   "Pancakes in Hase, Yuigahama beach walk",
+   "Outdoors by the sea"
+  ],
+  [
+   "15:45",
+   "Yokohama: Cosmo World, Vanish coaster, ferris wheel",
+   "Open-air rides"
+  ],
+  [
+   "19:30",
+   "Foot massage, Kyūryū SPA",
+   "Indoors"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "20% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "Japan Meteorological Agency, Kanagawa (official)",
+   "Cloud with sunny spells, 0 to 10% by day, 20% in the evening, a shower possible late at night"
+  ],
+  [
+   "tenki.jp, Kamakura",
+   "27° / 21°, sunny, cloud from 17:00, 0 to 20%, 0 mm (18:00 today)"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "27° / 18°, sunny then cloudy, 20%, 0 mm"
+  ],
+  [
+   "Japan Meteorological Agency (official)",
+   "Cloud with sunny spells, 0% to midday, 20% at night"
+  ],
+  [
+   "Weathernews, Shibuya",
+   "26° / 17°, sun then cloud, 30%"
+  ],
+  [
+   "Global Forecasting Model",
+   "27° / 20°, partly cloudy, breezy, 0 mm"
+  ],
+  [
+   "AccuWeather",
+   "28° / 21°, rather cloudy and warm"
+  ]
+ ],
+ "mm": "Under 1 mm",
+ "gicon": "sun",
+ "gfill": 20,
+ "gtext": "20%",
+ "gmm": "0",
+ "read": "Sunny to about 15:00, then cloud. Dry. 27° midday, breezy on the beach.",
+ "chance": [
+  [
+   6,
+   12,
+   10
+  ],
+  [
+   12,
+   18,
+   20
+  ],
+  [
+   18,
+   24,
+   20
+  ]
+ ],
+ "mmBars": [],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    20.8
+   ],
+   [
+    9,
+    23.9
+   ],
+   [
+    12,
+    25.7
+   ],
+   [
+    14,
+    26.6
+   ],
+   [
+    16,
+    24.6
+   ],
+   [
+    18,
+    23.6
+   ],
+   [
+    21,
+    22.9
+   ],
+   [
+    24,
+    22.6
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures and rain chance from tenki.jp's hourly forecast for Kamakura, issued 18:00 today."
+}

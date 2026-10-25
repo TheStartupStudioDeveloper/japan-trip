@@ -1,0 +1,120 @@
+{
+ "d": 20,
+ "dow": "Tuesday",
+ "where": "",
+ "title": "Roastery, omakase, Shinjuku",
+ "cal": "Roastery, omakase, Shinjuku",
+ "summary": "Breakfast at the Starbucks Reserve Roastery and a walk along the Meguro River, back to the hotel to pack, a new suitcase, then the omakase lunch at Tokyo Ten Shinjuku, the department stores and Shinjuku after dark.",
+ "rows": [
+  {
+   "time": "07:45",
+   "what": "Train to Nakameguro, walk up the river to the Roastery",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "08:00",
+   "what": "Breakfast at the Starbucks Reserve Roastery",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "09:00",
+   "what": "Meguro River walk to Nakameguro",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "09:30",
+   "what": "Tōkyū Tōyoko line straight through to Harajuku",
+   "detail": "Meiji-jingūmae, no change.",
+   "status": "done"
+  },
+  {
+   "time": "10:00",
+   "what": "Harajuku streets",
+   "detail": "Toy vending machines, clear umbrellas.",
+   "status": "done"
+  },
+  {
+   "time": "11:45",
+   "what": "JR Yamanote line Harajuku to Shinjuku",
+   "detail": "Then the underground moving walkways through the tunnel to Tochō.",
+   "status": "done"
+  },
+  {
+   "time": "12:00",
+   "what": "Government Building deck, North Observation Deck",
+   "detail": "Free, 45th floor.",
+   "status": "done"
+  },
+  {
+   "time": "13:05",
+   "what": "Walk to NEWoMan, New South Exit",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "13:30",
+   "what": "Omakase lunch: Sushi Tokyo Ten Shinjuku",
+   "detail": "Massive, all seafood. The abalone followed by liver got a laugh. The highlight was the egg and the grapes at the end.",
+   "status": "done"
+  },
+  {
+   "time": "15:00",
+   "what": "Takashimaya rooftop",
+   "detail": "The open-air rooftop at Takashimaya. FamilyMart takeaway coffee and a grey jumper.",
+   "status": "done"
+  },
+  {
+   "time": "16:00",
+   "what": "Shinjuku Gyoen stroll",
+   "detail": "Made it in just before the gates closed.",
+   "status": "done"
+  },
+  {
+   "time": "17:00",
+   "what": "Cynthia at RAGTAG Shinjuku",
+   "detail": "G walked the blocks around and bought a toy car.",
+   "status": "done"
+  },
+  {
+   "time": "17:30",
+   "what": "Foot massage, Suosoukan Shinjuku South Exit",
+   "detail": "Half an hour each, next door to RAGTAG.",
+   "status": "done"
+  },
+  {
+   "time": "18:00",
+   "what": "Shinjuku: the 3D cat at the east exit",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "18:15",
+   "what": "Godzilla head, Kabukichō and Kabukichō Tower",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "19:00",
+   "what": "Golden Gai: Anchor",
+   "detail": "First Asahi, and a ninja highball for Cynthia.",
+   "status": "done"
+  },
+  {
+   "time": "19:45",
+   "what": "Omoide Yokochō",
+   "detail": "Dinner and the first sake.",
+   "status": "done"
+  },
+  {
+   "time": "20:45",
+   "what": "JR Yamanote line home to Shibuya",
+   "detail": "Platform 14, East exit, walk up Meiji-dōri.",
+   "status": "done"
+  }
+ ],
+ "footnote": "",
+ "notes": []
+}

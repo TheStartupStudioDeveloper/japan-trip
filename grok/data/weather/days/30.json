@@ -1,0 +1,48 @@
+{
+ "d": 30,
+ "dow": "Friday",
+ "leg": "h",
+ "where": "Pool, yum cha, Ozone",
+ "title": "Pool, yum cha, Ozone at sunset, then fly",
+ "icon": "sun",
+ "hi": 28,
+ "lo": 23,
+ "rain": null,
+ "cond": "Humid, plenty of sunshine",
+ "sunset": "17:50",
+ "call": "Another pool morning, and a clear sunset for Ozone.",
+ "plan": [
+  [
+   "09:45",
+   "Sheraton pool",
+   "Outdoors"
+  ],
+  [
+   "17:40",
+   "Ozone at the Ritz-Carlton",
+   "Sunset view"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "10%, AccuWeather until the Hong Kong Observatory 9-day forecast reaches Tue 27, from Mon 19"
+  ],
+  [
+   "AccuWeather, Hong Kong",
+   "28° / 23°, a quick morning shower, humid"
+  ]
+ ],
+ "mm": "Not forecast yet",
+ "gicon": "sun",
+ "gfill": 10,
+ "gtext": "10%",
+ "gmm": null,
+ "read": "Sunny, hot and humid.",
+ "chance": null,
+ "mmBars": [],
+ "temps": {
+  "est": true
+ },
+ "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+}

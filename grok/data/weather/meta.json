@@ -1,0 +1,305 @@
+{
+ "checked": "2026-10-24T18:10:00+09:00",
+ "checkedLabel": "Sat 24 Oct, 18:10 Tokyo time",
+ "legs": [
+  {
+   "id": "s",
+   "kanji": "渋谷",
+   "name": "Shibuya, Shinjuku and Yokohama",
+   "short": "Shibuya",
+   "dates": "Sat 17 to Wed 21 Oct",
+   "no": "Leg 1 of 4",
+   "range": "30°",
+   "line": "Done",
+   "lede": "The Shibuya leg is done."
+  },
+  {
+   "id": "k",
+   "kanji": "京都",
+   "name": "Kyoto, Nara and Osaka",
+   "short": "Kyoto",
+   "dates": "Wed 21 to Sat 24 Oct",
+   "no": "Leg 2 of 4",
+   "range": "12–24°",
+   "line": "Sunny Osaka, dry Friday, very wet Saturday",
+   "lede": "Thursday is sunny all day in Osaka, 24°. Friday is cloudy and dry until about 21:00, good for Fushimi Inari at 07:00. Saturday has steady rain from midnight, heavier from 09:00, so the bamboo grove is wet but short."
+  },
+  {
+   "id": "g",
+   "kanji": "銀座",
+   "name": "Tokyo: Hibiya and Ginza",
+   "short": "Hibiya",
+   "dates": "Sat 24 to Tue 27 Oct",
+   "no": "Leg 3 of 4",
+   "range": "16–23°",
+   "line": "Wet Saturday, cloudy Sunday, wet Monday",
+   "lede": "Saturday has rain from midday, steady and light over the fireworks. Sunday is cloudy and probably dry. Monday has rain at times from the morning."
+  },
+  {
+   "id": "h",
+   "kanji": "香港",
+   "name": "Hong Kong",
+   "short": "Hong Kong",
+   "dates": "Tue 27 to Sat 31 Oct",
+   "no": "Leg 4 of 4",
+   "range": "26–30°",
+   "line": "Very hot, then a few showers",
+   "lede": "The Hong Kong Observatory has fine, dry, very hot weather to Sat 24, then sunny spells with a shower or two, 26 to 30°, by Tue 27. Champi is now forecast to turn north-east, away from Hong Kong."
+  }
+ ],
+ "typhoon": "<h4>Typhoons</h4><p>Champi is a large, strong typhoon at 950 hPa, almost stalled near Yonaguni overnight. JMA's 16:45 Fri track then takes it north into the East China Sea on Sat 24 (975 hPa) and Sun 25 (990 hPa), west of Kyushu on Mon 26 afternoon (996 hPa), and, as an extratropical low, near the Izu Islands by 15:00 Tue 27 (1004 hPa), moving east at 45 km/h. That's slower than Friday morning's track, so it passes well south of Tokyo after CX543 has left. tenki.jp's forecaster still flags rain from Kyushu to Kanto from the weekend, heavier in places. Hong Kong stays fine.</p><p class=\"backup\"><b>Backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24.</b> King Privilege Room, booked direct on the Mercure website. If the typhoon threatens the Sat 24 Shinkansen, take a Nozomi to Tokyo on Fri 23 instead and stay here (check-in 14:00, check-out 11:00), then move to the Blossom Hibiya nearby on Sat 24. <b>Cancel it on the Mercure website by 18:00 Japan time on Thu 22 if not needed. Free until then.</b></p>",
+ "sources": [
+  [
+   "tenki.jp (Japan Weather Association), Shibuya",
+   "https://tenki.jp/forecast/3/16/4410/13113/10days.html",
+   "Weighted highest. Best at catching rain, hourly timing and temperatures. Feeds Yahoo! Japan Weather. 6-hour rain blocks"
+  ],
+  [
+   "tenki.jp, Tokyo (Chiyoda) 3-hourly",
+   "https://tenki.jp/forecast/3/16/4410/13101/3hours.html",
+   "Nearest to the Blossom Hibiya"
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Chiyoda and Hibiya",
+   "https://tenki.jp/forecast/3/16/4410/13101/10days.html",
+   "Used for Tokyo when the Shibuya page lags"
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Kamakura hourly",
+   "https://tenki.jp/forecast/3/17/4610/14204/1hour.html",
+   "For the Mon 19 coast day"
+  ],
+  [
+   "tenki.jp group (umitenki), Osaka and Kyoto 3-hourly",
+   "https://www.umitenki.jp/citiesweather/detail/261068/14days",
+   "Used when tenki.jp pages lag"
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Nara hourly",
+   "https://tenki.jp/forecast/6/32/6410/29201/1hour.html",
+   "For the Wed 21 Nara afternoon"
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Kyoto Shimogyo",
+   "https://tenki.jp/forecast/6/29/6110/26106/10days.html",
+   "The hotel's ward. Used when the Kyoto city page lags"
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Kyoto",
+   "https://tenki.jp/forecast/6/29/6110/26100/10days.html",
+   ""
+  ],
+  [
+   "tenki.jp (Japan Weather Association), Osaka",
+   "https://tenki.jp/forecast/6/30/6200/27100/10days.html",
+   ""
+  ],
+  [
+   "Japan Meteorological Agency, official 7-day forecast, Tokyo",
+   "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000",
+   "Reaches the trip from Sat 17"
+  ],
+  [
+   "Japan Meteorological Agency, official forecasts and 1-month outlook",
+   "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000",
+   "Official. Its 7-day forecast reaches the trip from Sat 10 Oct"
+  ],
+  [
+   "Weathernews, Shibuya 2-week",
+   "https://weathernews.jp/onebox/tenki/tokyo/13113/",
+   "Japan's largest private forecaster"
+  ],
+  [
+   "Weathernews, Kyoto 2-week",
+   "https://weathernews.jp/onebox/tenki/kyoto/26100/",
+   ""
+  ],
+  [
+   "JMA 1-month outlook, Kanto and Kinki",
+   "https://tenki.jp/long/10300/",
+   ""
+  ],
+  [
+   "Hong Kong Observatory, 9-day and monthly forecast",
+   "https://www.hko.gov.hk/en/wxinfo/month/month.htm",
+   "Official. Its 9-day forecast reaches the trip from about Mon 19 Oct"
+  ],
+  [
+   "AccuWeather, monthly calendars",
+   "https://www.accuweather.com/en/jp/tokyo/226396/october-weather/226396",
+   "Daily detail pages block automated reading"
+  ],
+  [
+   "Global Forecasting Model (European ECMWF, via yr.no)",
+   "https://www.yr.no/en/forecast/daily-table/2-1850147/Japan/Tokyo/Tokyo",
+   "Rain in millimetres by time of day, 10 days out"
+  ],
+  [
+   "Weathernews, Typhoon No. 30 outlook",
+   "https://weathernews.jp/news/202610/140221/",
+   "Tracks after Mon 19 still split"
+  ],
+  [
+   "Weathernews, Typhoon No. 30 Champi",
+   "https://weathernews.jp/news/202610/150201/",
+   "Formed Thu 15. Track after Tue 20 still split"
+  ],
+  [
+   "tenki.jp, Typhoon No. 30 track",
+   "https://tenki.jp/bousai/typhoon/2630/",
+   "JMA official track, updated about every 6 hours"
+  ],
+  [
+   "Dimsum Daily: Hong Kong Observatory on Champi, 18 Oct",
+   "https://www.dimsumdaily.hk/super-typhoon-champi-to-threaten-taiwan-hong-kong-risk-under-30/",
+   "20 to 30% chance for Hong Kong or Guangdong within 9 days"
+  ]
+ ],
+ "missing": [
+  [
+   "Google Weather",
+   "Google's search weather card can't be read from here. Blocked in the browser pane by your site permissions."
+  ],
+  [
+   "Apple Weather",
+   "Only in the Weather app. There is no public web page to read."
+  ],
+  [
+   "AccuWeather daily detail",
+   "Day and night rain amounts block automated reading. The monthly calendar is used instead."
+  ]
+ ],
+ "verdict": "Light rain at the fireworks, easing after 19:00.<br>Sunday mostly dry. Monday wet all day.",
+ "watch": [
+  {
+   "d": 26,
+   "dow": "Mon",
+   "title": "Kappabashi 11:15, Sensō-ji 14:15, Skytree at dusk",
+   "risk": "Rain all day, heaviest 13:00 to 17:00, 1 to 2 mm an hour.",
+   "decide": "Sun 25",
+   "act": "Taxi to teamLab. Umbrellas for Asakusa"
+  },
+  {
+   "d": 27,
+   "dow": "Tue",
+   "title": "Haneda 10:10 to Hong Kong",
+   "risk": "Champi's weak remnant passes near the Izu Islands by 15:00, after you fly. Maybe some rain early.",
+   "decide": "Mon 26 evening",
+   "act": "Check CX543 Monday evening"
+  }
+ ],
+ "sinceLabel": "Since the last check, Sat 24 Oct 08:15",
+ "since": [
+  [
+   "Plan",
+   "Matched: <b>sumo show Sun 25</b>, Kappabashi back to <b>Mon 26</b>"
+  ],
+  [
+   "Sat 24",
+   "Light rain <b>until about 19:00</b>, dry 20:00 to 21:00"
+  ],
+  [
+   "Sun 25",
+   "Dry morning, <b>a brief shower about 13:00 and 17:00</b>, rain from 20:00"
+  ],
+  [
+   "Mon 26",
+   "Rain all day, <b>heaviest 13:00 to 17:00</b>, about 19 mm"
+  ]
+ ],
+ "method": {
+  "intro": "Each day gets one combined rain chance, a weighted average of the sources that reach it. tenki.jp carries the most weight. Its figures also drive the time-of-day charts and millimetres. The others are there to confirm or flag a split.",
+  "sets": [
+   {
+    "label": "Up to 7 days out",
+    "rows": [
+     [
+      "tenki.jp",
+      30,
+      "Best at catching rain, hourly timing and temperature. Can over-call rain"
+     ],
+     [
+      "JMA (official)",
+      25,
+      "Fewest false alarms. Its 7-day forecast only"
+     ],
+     [
+      "Weathernews",
+      25,
+      "Ranked most accurate by Tokyo Shoko Research, 2022 to 2024"
+     ],
+     [
+      "Global model",
+      15,
+      "Millimetres by time of day"
+     ],
+     [
+      "AccuWeather",
+      5,
+      "Text only, no percentages"
+     ]
+    ]
+   },
+   {
+    "label": "8 days and beyond",
+    "rows": [
+     [
+      "tenki.jp",
+      30,
+      ""
+     ],
+     [
+      "Weathernews",
+      30,
+      ""
+     ],
+     [
+      "Global model",
+      25,
+      "The strongest medium-range model"
+     ],
+     [
+      "AccuWeather",
+      15,
+      ""
+     ]
+    ]
+   }
+  ],
+  "rules": [
+   "Where tenki.jp gives 6-hour blocks, its chance is the highest block between 06:00 and midnight, so rain overnight before you're up doesn't count against the day.",
+   "The Global Forecasting Model's millimetres and AccuWeather's wording are turned into a chance: dry 10%, a stray shower 35%, showers or a little rain 50%, rain 70 to 75%, heavy rain 85%.",
+   "When tenki.jp alone calls rain, it's flagged as a split and read as possible, not likely. It catches nearly all real rain but also calls rain that doesn't come.",
+   "Temperatures come from tenki.jp, which beat JMA on temperature error at every range out to 7 days.",
+   "In Hong Kong the Hong Kong Observatory will lead once its 9-day forecast reaches the trip. Google and Apple Weather can't be read from here."
+  ],
+  "evidence": [
+   [
+    "tenki.jp forecast accuracy reports",
+    "https://tenki.jp/lite/forecast_accuracy/index.html",
+    "Quarterly, rain and hourly accuracy against JMA"
+   ],
+   [
+    "Japan Weather Association accuracy, Oct to Dec 2025",
+    "https://weather-jwa.jp/en/news/forecast-accuracy/post12502",
+    "88 to 92% same-day rain, hourly 6 points above JMA, lower temperature error"
+   ],
+   [
+    "Weathernews accuracy 2024",
+    "https://weathernews.jp/news/202506/040136/",
+    "88% hit rate, top for 3 years in a Tokyo Shoko Research ranking. Self-reported"
+   ],
+   [
+    "Independent check of five forecasters, Aug 2025",
+    "https://note.com/omochi2/n/nf3ec3c32ceaf",
+    "tenki.jp caught 95.5% of rain days, most of any, but had the most false alarms. JMA most precise"
+   ],
+   [
+    "Comparison of the Japanese services, Sep 2026",
+    "https://yutakani-nikki.com/2026/09/21/weather-forecast-app-accuracy-comparison/",
+    "JMA, Weathernews and tenki.jp all about 85 to 90% next day. Compare two, and treat a split as a hard call"
+   ]
+  ]
+ },
+ "notes_check": "tenki.jp hourly for Chiyoda, issued 05:00 Sat 24 (the later issue hadn't come through). Typhoon track JMA 16:45 Fri 23."
+}

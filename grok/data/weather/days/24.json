@@ -1,0 +1,169 @@
+{
+ "d": 24,
+ "dow": "Saturday",
+ "leg": "g",
+ "where": "Fushimi Inari, then Tokyo",
+ "title": "Slow Kyoto morning, back to Tokyo, fireworks night",
+ "icon": "rain",
+ "hi": 18,
+ "lo": 16,
+ "rain": 75,
+ "cond": "Heavy rain: Kyoto all morning, Tokyo afternoon",
+ "sunset": "16:55",
+ "call": "Light rain at the fireworks: tenki.jp has 0.3 to 0.4 mm an hour at 18:00 and 19:00, about 18°, light north breeze, then dry from about 20:00, a brief drizzle near 22:00. Raincoats and a warm layer for the show; the walk to dinner should be dry.",
+ "plan": [
+  [
+   "08:30",
+   "Optional: Nijō Castle palace",
+   "Indoors, shoes off"
+  ],
+  [
+   "09:00",
+   "Slow breakfast",
+   "Indoors"
+  ],
+  [
+   "12:01",
+   "Nozomi 16 to Tokyo",
+   "Indoors"
+  ],
+  [
+   "17:30",
+   "Fireworks from the Hilton Odaiba",
+   "Over the bay"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "75% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Tokyo (Chiyoda, by the hotel) 3-hourly",
+   "17° / 16°, light rain at 06:00, cloudy 09:00 to 12:00, light rain 15:00 to 18:00 (0.3 to 0.5 mm an hour), cloudy and dry from 21:00, north wind 2 m/s (05:00 today)"
+  ],
+  [
+   "tenki.jp, Kyoto 3-hourly",
+   "Rain 3 to 4 mm an hour before 07:00, light 09:00 to 12:00 (under 1 mm), dry from 15:00, 19 to 21° (18:00 Fri)"
+  ],
+  [
+   "tenki.jp forecaster, fireworks",
+   "Rain late morning to early evening, heavier at times in the afternoon. About 16° at 17:00, north wind 2 to 3 m/s. Umbrellas banned at the venue; raincoats"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "17° / 16°, cloudy, then rain, 80%, 4 mm: 1 mm 06:00 to 12:00, 3 mm 12:00 to 18:00, under 1 mm 18:00 to 24:00 (20:00 Thu)"
+  ],
+  [
+   "Weathernews, Shibuya hourly",
+   "Rain 12:00 to 18:00, 1 to 2 mm an hour, heaviest 14:00 to 16:00, easing to 1 mm at 17:00 and 18:00, dry from 19:00, 16 to 17°, almost no wind"
+  ],
+  [
+   "Weathernews, Kyoto hourly",
+   "Rain from 22:00 Fri, 1 to 2 mm an hour overnight, about 1 mm an hour 07:00 to 13:00, dry from 14:00, 20°"
+  ],
+  [
+   "tenki.jp, Kyoto",
+   "23° / 18°, rain, then cloudy, 90%, 9 mm: 8 mm 00:00 to 06:00, then 1 mm 06:00 to 12:00 (06:00 today)"
+  ],
+  [
+   "tenki.jp group (umitenki), Kyoto 3-hourly",
+   "Rain all day, about 28 mm: 3 mm 06:00 to 09:00, 4 mm 09:00 to 12:00, heavy 11 mm 12:00 to 18:00 (06:17 today)"
+  ],
+  [
+   "Japan Meteorological Agency, Tokyo (official)",
+   "19° / 14°, 60%, confidence B"
+  ],
+  [
+   "Japan Meteorological Agency, Kyoto (official)",
+   "21° / 18°, 60%, confidence B"
+  ],
+  [
+   "Global Forecasting Model, Kyoto",
+   "20° / 17°, heavy rain all day, 60 mm"
+  ],
+  [
+   "Global Forecasting Model, Tokyo",
+   "17° / 15°, heavy rain morning and afternoon, rain in the evening, 36 mm"
+  ],
+  [
+   "AccuWeather, Tokyo",
+   "22° / 17°, a little afternoon rain"
+  ]
+ ],
+ "mm": "Light, 0.3 to 0.5 mm an hour, 15:00 to 19:00",
+ "gicon": "rain",
+ "gfill": 75,
+ "gtext": "75%",
+ "gmm": "2–4",
+ "read": "Light rain at the fireworks, dry from about 20:00.",
+ "chance": [
+  [
+   6,
+   9,
+   60
+  ],
+  [
+   9,
+   15,
+   40
+  ],
+  [
+   15,
+   21,
+   65
+  ],
+  [
+   21,
+   24,
+   30
+  ]
+ ],
+ "mmBars": [
+  [
+   6,
+   7,
+   0.4
+  ],
+  [
+   14,
+   19,
+   2
+  ]
+ ],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    16.6
+   ],
+   [
+    9,
+    18.1
+   ],
+   [
+    12,
+    17.8
+   ],
+   [
+    15,
+    17.6
+   ],
+   [
+    18,
+    17.5
+   ],
+   [
+    21,
+    17.7
+   ],
+   [
+    24,
+    17.4
+   ]
+  ]
+ },
+ "tnote": "Temperatures, rain chance and millimetres from tenki.jp's 3-hourly forecast for Chiyoda, issued 05:00 today.",
+ "watch": true
+}

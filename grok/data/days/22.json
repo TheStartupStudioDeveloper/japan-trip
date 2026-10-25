@@ -1,0 +1,93 @@
+{
+ "d": 22,
+ "dow": "Thursday",
+ "where": "",
+ "title": "Osaka: flea market, Shinsekai, Dōtonbori, castle by night",
+ "cal": "Osaka day",
+ "summary": "The Shitennō-ji flea market first thing, kushikatsu in Shinsekai, Namba snacks and KOMEHYO, Umeda Sky at sunset, then Dōtonbori, okonomiyaki and the castle lit up.",
+ "rows": [
+  {
+   "time": "07:30",
+   "what": "To Kyoto Station, then JR to Tennōji",
+   "detail": "One subway stop or 15 minutes on foot. JR special rapid to Osaka, about 30 minutes, then the Osaka Loop line to Tennōji, about 20 minutes. Suica covers it all.",
+   "status": "done"
+  },
+  {
+   "time": "08:45",
+   "what": "Shitennō-ji flea market",
+   "detail": "On the 21st and 22nd of every month, from 08:30. Kimono and yukata, pottery, vintage toys and records, masks, food stalls. Breakfast from the stalls. Free. Cash and a tote bag.",
+   "status": "done"
+  },
+  {
+   "time": "11:45",
+   "what": "Shinsekai: Tsūtenkaku and Janjan-Yokochō",
+   "detail": "About 15 minutes on foot west of the temple. The retro neon district under the tower.",
+   "status": "done"
+  },
+  {
+   "time": "12:55",
+   "what": "Midōsuji line to Namba",
+   "detail": "Walk Janjan-Yokochō away from Tsūtenkaku to the end of the covered lane: the Dōbutsuen-mae stairs (red M, 動物園前) are at the junction. Buy the Enjoy Eco Card, about ¥820, then two stops towards Umeda to Namba.",
+   "status": "done"
+  },
+  {
+   "time": "13:15",
+   "what": "Rikuro cheesecake and 551 Hōrai pork buns",
+   "detail": "The jiggly cheesecake: take the freshly baked line for a warm one. 551 Hōrai's pork buns are a minute away. Suitcase: Bic Camera Namba is close by for a quick look, buy later.",
+   "status": "done"
+  },
+  {
+   "time": "14:50",
+   "what": "Namba Yasaka Shrine",
+   "detail": "The giant lion head. About 10 minutes on foot west of Namba. Ten minutes there is enough. Closes about 17:00.",
+   "status": "done"
+  },
+  {
+   "time": "15:30",
+   "what": "Free time: the Dōtonbori bucket list",
+   "detail": "Any order. 1. The Glico Running Man from Ebisu Bridge. 2. Don Quijote ferris wheel, Ebisu Tower: ¥1,000, about 15 minutes, best after dark. 3. Tombori River Cruise, about 20 minutes, once it is dark. 4. Okonomiyaki dinner at Mizuno, the best in Osaka, open to 22:00. 5. Takoyaki at Kukuru under the giant octopus. 6. The big signs: the moving Kani Dōraku crab and the Kuidaore Tarō drummer. 7. Hōzenji Yokochō and the mossy Mizukake Fudō. 8. KOMEHYO, to 20:00. 9. Amerikamura and Kōgaryū takoyaki. 10. A cheap suitcase at Don Quijote. Taxi to the castle about 19:30. Done: all except the Tombori River Cruise.",
+   "status": "done"
+  },
+  {
+   "time": "19:50",
+   "what": "Taxi to Osaka Castle",
+   "detail": "About 15 to 20 minutes, about ¥1,800. Ask for Ōsaka-jō, Ōtemon (大阪城 大手門). Then about 10 minutes on foot to the keep. Note: the first taxi went to Tsūtenkaku (the Hitachi tower) by mistake. Second taxi from Shinsekai about 20:15.",
+   "status": "done"
+  },
+  {
+   "time": "20:40",
+   "what": "Osaka Castle light show, SINFONIA",
+   "detail": "Free projection mapping on the south face of the keep. About six minutes, repeating until 22:00. Standing only. Watch one or two rounds.",
+   "status": "done"
+  },
+  {
+   "time": "20:50",
+   "what": "Walk to Temmabashi",
+   "detail": "From the castle out to Temmabashi station.",
+   "status": "done"
+  },
+  {
+   "time": "21:15",
+   "what": "Keihan line to Kyoto",
+   "detail": "1. Keihan Temmabashi (京阪 天満橋), platform for 京都・出町柳 (Kyoto, Demachiyanagi). 2. Take the 特急 (limited express), about 45 minutes, to 七条 (Shichijō). 3. Taxi about 5 minutes, about ¥800, or walk 18 minutes west along Shichijō then up Karasuma. All on Suica.",
+   "status": ""
+  },
+  {
+   "time": "22:15",
+   "what": "Back at the hotel",
+   "detail": "sequence KYOTO GOJO.",
+   "status": ""
+  }
+ ],
+ "footnote": "",
+ "notes": [
+  [
+   "Walking",
+   "About 10 km with the taxis."
+  ],
+  [
+   "Left out",
+   "The morning castle walk, Daruma kushikatsu, Kuromon Market, the Horie browsing, the Tombori cruise, Hōzenji Yokochō and Umeda Sky."
+  ]
+ ]
+}

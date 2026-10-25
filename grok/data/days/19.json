@@ -1,0 +1,114 @@
+{
+ "d": 19,
+ "dow": "Monday",
+ "where": "",
+ "title": "Tsukiji, Kamakura, then Yokohama",
+ "cal": "Tsukiji, Kamakura, Yokohama",
+ "summary": "Tsukiji for breakfast, then Kamakura: pancakes in Hase, Hase-dera and the Great Buddha. Yokohama from the afternoon: shopping at Queen's Square and Landmark Plaza, the Air Cabin, the Vanish coaster, the ferris wheel at sunset, the Red Brick Warehouses at dusk, dinner in Chinatown and a foot massage.",
+ "rows": [
+  {
+   "time": "07:00",
+   "what": "Left the hotel, Ginza line to Ginza",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "08:10",
+   "what": "Hibiya line delayed, walked from Ginza instead",
+   "detail": "Underground passage east towards Higashi-ginza, Exit A1, then along Harumi-dōri past Kabukiza. About 15 minutes, and a good way to arrive.",
+   "status": "done"
+  },
+  {
+   "time": "08:30",
+   "what": "Tsukiji Outer Market",
+   "detail": "Small bites.",
+   "status": "done"
+  },
+  {
+   "time": "09:00",
+   "what": "JR Shimbashi to Kamakura",
+   "detail": "Yokosuka line from the underground platforms, direct.",
+   "status": "done"
+  },
+  {
+   "time": "10:15",
+   "what": "Enoden to Hase",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "10:30",
+   "what": "Pancakes and coffee, A la Mode Kamakura",
+   "detail": "Breakfast with a sea view. Lovely.",
+   "status": "done"
+  },
+  {
+   "time": "11:30",
+   "what": "Hase-dera",
+   "detail": "Hillside temple with the sea view.",
+   "status": "done"
+  },
+  {
+   "time": "13:00",
+   "what": "The Great Buddha, matcha ice cream on Hase-dōri",
+   "detail": "Ice cream on the way out.",
+   "status": "done"
+  },
+  {
+   "time": "14:19",
+   "what": "Kamakura to Yokohama, first double-decker train",
+   "detail": "Nearly boarded the wrong train. Sat in the Green Car by accident for a few stops and got moved back to an ordinary car.",
+   "status": "done"
+  },
+  {
+   "time": "14:45",
+   "what": "Minatomirai line, off one stop early at Shin-Takashima",
+   "detail": "Walked or rode on to Minatomirai.",
+   "status": "done"
+  },
+  {
+   "time": "15:00",
+   "what": "Queen's Square and Landmark Plaza, ZARA",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "16:30",
+   "what": "Air Cabin to Unga Park",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "17:00",
+   "what": "Cosmo Clock 21 ferris wheel and the Diving Coaster Vanish",
+   "detail": "All done by 17:45.",
+   "status": "done"
+  },
+  {
+   "time": "17:50",
+   "what": "Red Brick Warehouses",
+   "detail": "",
+   "status": "done"
+  },
+  {
+   "time": "18:30",
+   "what": "Dinner: Yokohama Sichuan Mapo, Chinatown",
+   "detail": "Mapo tofu.",
+   "status": "done"
+  },
+  {
+   "time": "19:45",
+   "what": "Foot massage, Kyūryū SPA (Kirin Kowloon)",
+   "detail": "An hour, to 20:45.",
+   "status": "done"
+  },
+  {
+   "time": "20:50",
+   "what": "Train home from Motomachi-Chūkagai",
+   "detail": "Direct to Shibuya, about 40 minutes. Back about 21:40 (How-to 30).",
+   "status": ""
+  }
+ ],
+ "footnote": "",
+ "notes": []
+}

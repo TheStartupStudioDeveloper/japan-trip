@@ -1,0 +1,187 @@
+{
+ "key": "nara",
+ "name": "Nara",
+ "pat": "k",
+ "kanji": "奈良",
+ "meta": "Nara Park, Sanjō-dōri and the old Naramachi quarter.",
+ "days": [
+  [
+   "d21",
+   "Wed 21"
+  ]
+ ],
+ "must": [
+  {
+   "dish": "Kakinoha sushi",
+   "line": "Cured mackerel or salmon on pressed rice, wrapped in a persimmon leaf.",
+   "where": "kakinoha"
+  },
+  {
+   "dish": "Yomogi mochi",
+   "line": "Mugwort rice cake pounded at speed in front of you, filled with red bean.",
+   "where": "nakatanido"
+  },
+  {
+   "dish": "Kinchaku kitsune udon",
+   "line": "Udon hidden inside a fried tofu pouch tied up like a purse.",
+   "where": "mentoan"
+  },
+  {
+   "dish": "Narazuke",
+   "line": "Vegetables pickled for months in sake lees, dark, sweet and boozy.",
+   "where": "sanjo"
+  },
+  {
+   "dish": "Nara sake",
+   "line": "Nara calls itself the birthplace of refined sake. Taste five at the brewery.",
+   "where": "harushika"
+  }
+ ],
+ "items": [
+  {
+   "group": "Eat",
+   "key": "mentoan",
+   "time": "40 min",
+   "one": "Udon tucked inside a fried tofu purse",
+   "fits": "Wed 21 lunch if the Shizuka queue is long and you want to sit down. In Naramachi, past Sarusawa Pond, about 15 minutes from Shizuka.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "hiraso",
+   "time": "45 min",
+   "one": "Kakinoha sushi, sitting down",
+   "fits": "Wed 21 lunch if Shizuka's queue is long or it is pouring. Just south of Sarusawa Pond, under cover.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "uma-no-me",
+   "time": "1 hr",
+   "one": "Homely Nara lunch set in an old house",
+   "fits": "Wed 21 lunch instead of Shizuka if you would rather book. South-east of the park, a detour of about 15 minutes.",
+   "tags": [
+    "¥¥",
+    "Book"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "tsukihitei",
+   "time": "2 hr",
+   "one": "Kaiseki in the forest behind Kasuga",
+   "fits": "Only if you make Nara a long lunch: book for about 13:00 after Kasuga Taisha, and drop Nigatsu-dō.",
+   "tags": [
+    "¥¥¥",
+    "Book"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "mizuya-chaya",
+   "time": "20 min",
+   "one": "Thatched teahouse in the woods",
+   "fits": "Wed 21 at about 14:15, right on your walk from Kasuga Taisha to Tōdai-ji. Matcha and a sweet under the trees. One guide lists it closed on Wednesdays, so check Google Maps first.",
+   "tags": [
+    "¥",
+    "Cash"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "harushika",
+   "time": "30 min",
+   "one": "Five sake tasting at a Naramachi brewery",
+   "fits": "Wed 21 only if you do Naramachi instead of Nigatsu-dō. Daytime only.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "kokuhokan",
+   "time": "40 min",
+   "one": "Ashura and Kōfuku-ji's great statues",
+   "fits": "Wed 21 at 12:45 as you pass Kōfuku-ji, if lunch is quick. The pagoda is wrapped, but the museum is open.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "isuien",
+   "time": "45 min",
+   "one": "Stroll garden that borrows Tōdai-ji's roof",
+   "fits": "Wed 21 at 15:30 instead of Nigatsu-dō, five minutes west of the Nandaimon gate. Closed Tuesdays, so Wednesday is fine. Last entry about 16:00.",
+   "tags": [
+    "¥¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "yoshikien",
+   "time": "30 min",
+   "one": "Moss and pond gardens, free with a passport",
+   "fits": "Next door to Isuien, so add it on Wed 21 at about 16:00. Bring passports.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "sarusawa",
+   "time": "10 min",
+   "one": "Willow pond below the Kōfuku-ji pagoda",
+   "fits": "Wed 21 at lunch, a two minute detour off Sanjō-dōri. Also on the way into Naramachi.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "naramachi",
+   "time": "1 hr",
+   "one": "Old merchant lanes south of the park",
+   "fits": "Wed 21 if Nara finishes early, or as a swap for Nigatsu-dō: ten minutes south of Kōfuku-ji, past Sarusawa Pond.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "koshi-no-ie",
+   "time": "20 min",
+   "one": "Walk through a restored townhouse",
+   "fits": "In Naramachi, with Harushika and Mentoan. Closed Mondays, open Wednesday.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Shopping",
+   "key": "nakagawa-masashichi",
+   "time": "20 min",
+   "one": "Nara linen and tea towels since 1716",
+   "fits": "In Naramachi. Good small gifts if you do the old town.",
+   "tags": []
+  },
+  {
+   "group": "Further out",
+   "key": "horyuji",
+   "time": "Half day",
+   "one": "The world's oldest wooden buildings",
+   "fits": "Not on this trip's Nara afternoon. It is a separate half day, about 15 minutes by JR from Nara plus a 20 minute walk, and only works if you drop Osaka or Arashiyama.",
+   "tags": [
+    "¥¥"
+   ]
+  }
+ ],
+ "notes": "Isuien is closed Tuesdays, so Wed 21 is fine. Kōfuku-ji is only passed in the plan, so the National Treasure Museum is listed as the add-on, not the temple itself. Naramachi shops and the Kōshi-no-ie close around 17:00. Hours for Mentoan, Mizuya Chaya, Harushika and Yoshikien were not confirmed for 2026: check Google Maps the night before."
+}

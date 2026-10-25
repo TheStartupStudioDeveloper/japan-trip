@@ -1,0 +1,96 @@
+{
+ "d": 25,
+ "dow": "Sunday",
+ "where": "",
+ "title": "Palace gardens, Ginza car-free, sumo in Shinjuku",
+ "cal": "Gardens, Ginza",
+ "summary": "The Imperial Palace East Gardens first thing, Ginza car-free from noon and the stores while it is dry, the Shinjuku Sumo Club show at 17:30, dinner in Shinjuku, then a late massage back in Ginza.",
+ "rows": [
+  {
+   "time": "09:15",
+   "what": "Imperial Palace East Gardens",
+   "detail": "About 15 minutes' walk. Opens 09:00, free. Old castle keep foundations and the Ninomaru garden. Take your time.",
+   "status": "done"
+  },
+  {
+   "time": "10:40",
+   "what": "Coffee at Dean & DeLuca",
+   "detail": "On the walk from the gardens to Tokyo Station, instead of a sit-down breakfast.",
+   "status": "done"
+  },
+  {
+   "time": "10:45",
+   "what": "Tokyo Station, Marunouchi façade",
+   "detail": "Ten minutes east from Ōtemon. The red brick front from Gyōkō-dōri, the tree-lined avenue straight out from the palace.",
+   "status": "done"
+  },
+  {
+   "time": "11:00",
+   "what": "KITTE Marunouchi rooftop garden",
+   "detail": "Free 6F terrace right opposite, looking down on the station and the trains. About 20 minutes.",
+   "status": "done"
+  },
+  {
+   "time": "11:30",
+   "what": "Walk to Ginza 7-chōme",
+   "detail": "About 20 minutes south from Tokyo Station, down Sotobori-dōri or Chūō-dōri.",
+   "status": "done"
+  },
+  {
+   "time": "12:30",
+   "what": "Lunch: Ginza Bairin, tonkatsu",
+   "detail": "Ginza's oldest tonkatsu house, since 1927, in the basement at Ginza 7-8-1. Kurobuta (black pork) loin is the order. Daily 11:30 to 20:00, no bookings, queues up to 30 minutes at peak. Cards accepted.",
+   "status": ""
+  },
+  {
+   "time": "13:30",
+   "what": "MUJI Ginza, together",
+   "detail": "Ginza 3-3-5, a few minutes north. Six floors: clothes, homewares, stationery and food. Passports for tax-free.",
+   "status": ""
+  },
+  {
+   "time": "14:15",
+   "what": "Ginza car-free and free shopping",
+   "detail": "Chūō-dōri is pedestrian only until 17:00. Split up or stay together: UNIQLO TOKYO and Daiso (6F) in Marronnier Gate Ginza 2 next to MUJI, then down Chūō-dōri for Itoya stationery, Matsuya, Mitsukoshi at the 4-chōme crossing and Ginza Six. Passports for tax-free.",
+   "status": ""
+  },
+  {
+   "time": "15:45",
+   "what": "Back to the hotel, rest and change",
+   "detail": "About 10 minutes' walk south from the 4-chōme crossing. Drop the shopping, put your feet up.",
+   "status": ""
+  },
+  {
+   "time": "16:30",
+   "what": "Leave the hotel for the sumo: taxi in the rain",
+   "detail": "Taxi from the hotel door, about 25 minutes, about ¥3,500 to ¥4,000. Show: 新宿区大久保2-5-22 SEKISAKU ビル 2階までお願いします。 Leave by 16:45 at the latest. Train if traffic looks bad: How-to 32.",
+   "status": ""
+  },
+  {
+   "time": "17:30",
+   "what": "Shinjuku Sumo Club: sumo show",
+   "detail": "Main venue. About 75 to 90 minutes. Live bouts, English MC, Q&A, a chance to challenge a wrestler (lottery), photos, one drink. SEKISAKU Bldg 2F, 2-5-22 Ōkubo (新宿区大久保2-5-22). Booked on Klook for 2, about AU$74 each. Free cancellation closed (under 24 hours). Doors open 17:00. No entry more than 20 minutes after the start (17:50). Getting there and back: How-to 32.",
+   "status": "booked"
+  },
+  {
+   "time": "19:00",
+   "what": "Marunouchi line back to Ginza",
+   "detail": "Higashi-Shinjuku is close, but simplest: walk back to Shinjuku-sanchōme, Marunouchi line toward 銀座・池袋 to Ginza, about 17 minutes.",
+   "status": ""
+  },
+  {
+   "time": "19:45",
+   "what": "Dinner: mapo tofu ramen or tantanmen at Ginza Rōsokuya",
+   "detail": "The mapo tofu ramen (spicy mince and tofu) is the signature; the tantanmen is the other one. Ginza 1-chōme. Open to 21:30, English menu, ticket machine. Medium spice is mild, so go a level up. Alternative by the sumo: Mōko Tanmen Nakamoto Shinjuku, spicy miso ramen topped with mapo tofu, 15 minutes' walk from the club, open to 23:00.",
+   "status": ""
+  },
+  {
+   "time": "21:15",
+   "what": "Late massage",
+   "detail": "Buasai Ginza (Thai, Ginza 8-chōme, 5 minutes from the hotel, to midnight), YURAGI (Ginza 7-chōme, to midnight) or Head Spa ZEN (Ginza 2-chōme, to 23:00). Book ahead in the afternoon.",
+   "status": "to book"
+  }
+ ],
+ "footnote": "Rain expected in the afternoon: car-free Ginza first, then into the stores when it comes, and back to the hotel before the sumo.",
+ "notes": []
+}

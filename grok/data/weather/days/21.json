@@ -1,0 +1,187 @@
+{
+ "d": 21,
+ "dow": "Wednesday",
+ "leg": "k",
+ "where": "Train to Kyoto, then Nara",
+ "title": "Shinkansen, then Nara",
+ "icon": "shower",
+ "hi": 30,
+ "lo": 18,
+ "rain": 70,
+ "cond": "Sunny and hot, rain from 17:00",
+ "sunset": "17:10",
+ "call": "Good for Nara until mid-afternoon. tenki.jp's 05:00 Nara hourly has clear sun until 15:00, 0 to 10%, peaking at 30° at 13:00, so the deer, Kasuga Taisha and Tōdai-ji should be dry and hot. Light rain from about 16:00, about 1 mm at 17:00, then light rain into the evening. That's the walk to the 16:45 Kintetsu, so umbrellas out from 16:00. JMA still flags thunder possible from late morning: if you hear it, head inside Tōdai-ji or a café. Lots of water.",
+ "plan": [
+  [
+   "07:55",
+   "Nozomi 13",
+   "Indoors, no impact"
+  ],
+  [
+   "10:40",
+   "Kintetsu to Nara",
+   "Indoors"
+  ],
+  [
+   "11:30",
+   "Lunch: Kamameshi Shizuka",
+   "Indoors, via the covered arcade"
+  ],
+  [
+   "12:45",
+   "Nara Park, Kasuga Taisha",
+   "Open ground, the most exposed part of the day"
+  ],
+  [
+   "14:25",
+   "Tōdai-ji",
+   "Main hall is indoors"
+  ],
+  [
+   "16:15",
+   "Walk down to Kintetsu Nara",
+   "20 minutes downhill"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "70% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Nara hourly",
+   "30° / 17°, sunny until 15:00, light rain from 16:00, 1 mm at 17:00, light into the evening (05:00 today)"
+  ],
+  [
+   "tenki.jp, Kyoto",
+   "30° / 21°, cloudy, then rain, 80%, 3 mm"
+  ],
+  [
+   "Japan Meteorological Agency, Kyoto (official)",
+   "Cloudy, rain from the evening, thunder possible late morning to early night, 70% 12:00 to 18:00 (05:00 today)"
+  ],
+  [
+   "Weathernews, Kyoto",
+   "29° / 18°, cloudy with rain at times, 60%"
+  ],
+  [
+   "Global Forecasting Model, Kyoto",
+   "27° / 17°, showers, 6.8 mm"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya), morning departure",
+   "30° / 20°, cloudy, then sunny, 20%, 0 mm"
+  ]
+ ],
+ "mm": "About 5 mm, from 16:00",
+ "gicon": "shower",
+ "gfill": 70,
+ "gtext": "70%",
+ "gmm": "5",
+ "read": "Sunny and 30° until 15:00. Light rain from 16:00, for the walk back.",
+ "chance": [
+  [
+   6,
+   10,
+   0
+  ],
+  [
+   10,
+   15,
+   10
+  ],
+  [
+   15,
+   16,
+   40
+  ],
+  [
+   16,
+   17,
+   50
+  ],
+  [
+   17,
+   18,
+   80
+  ],
+  [
+   18,
+   23,
+   70
+  ],
+  [
+   23,
+   24,
+   20
+  ]
+ ],
+ "mmBars": [
+  [
+   15,
+   17,
+   0.4
+  ],
+  [
+   17,
+   18,
+   1
+  ],
+  [
+   18,
+   23,
+   3.1
+  ]
+ ],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    20.8
+   ],
+   [
+    9,
+    25.8
+   ],
+   [
+    12,
+    29.8
+   ],
+   [
+    13,
+    30.1
+   ],
+   [
+    14,
+    29.8
+   ],
+   [
+    15,
+    28.7
+   ],
+   [
+    16,
+    26.7
+   ],
+   [
+    17,
+    23.8
+   ],
+   [
+    19,
+    20.7
+   ],
+   [
+    21,
+    17.8
+   ],
+   [
+    24,
+    17.6
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures, rain chance and millimetres from tenki.jp's hourly forecast for Nara, issued 05:00 today.",
+ "watch": true
+}

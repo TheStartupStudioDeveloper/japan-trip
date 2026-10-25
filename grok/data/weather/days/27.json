@@ -1,0 +1,70 @@
+{
+ "d": 27,
+ "dow": "Tuesday",
+ "leg": "h",
+ "where": "Haneda to Hong Kong",
+ "title": "Fly to Hong Kong, harbour night",
+ "icon": "part",
+ "hi": 29,
+ "lo": 25,
+ "rain": 30,
+ "cond": "Sunny spells, a shower or two",
+ "sunset": "17:50",
+ "call": "Better than last night. JMA's latest track slows Champi's remnant: it's west of Kyushu on Monday afternoon and only reaches the sea near the Izu Islands, well south of Tokyo, by 15:00 Tuesday, as a weak 1004 hPa low, after you've flown. tenki.jp has Tuesday cloudy then sunny, 40%. There may still be some rain early as it approaches, so umbrellas for the 06:22 walk to Shimbashi, and check CX543 on Monday evening. Hong Kong: sunny spells, a shower or two, 26 to 30°, fine for the harbour cruise.",
+ "plan": [
+  [
+   "06:22",
+   "Walk to Shimbashi, Asakusa line",
+   "8 minutes with bags"
+  ],
+  [
+   "10:10",
+   "CX543 Haneda to Hong Kong",
+   "Booked"
+  ],
+  [
+   "19:30",
+   "Aqua Luna harbour cruise, Hong Kong",
+   "Outdoors"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "30% chance of rain in Hong Kong, Hong Kong Observatory and AccuWeather"
+  ],
+  [
+   "tenki.jp forecaster, Kanto",
+   "The front moves south, gradually improving, with some lingering rain"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya), Haneda morning",
+   "24° / 17°, a shower overnight, under 1 mm, then 30% and dry from 06:00 (20:00 Thu)"
+  ],
+  [
+   "Hong Kong Observatory (official)",
+   "26° to 30°, sunny spells, one or two showers, northeast force 4"
+  ],
+  [
+   "AccuWeather, Hong Kong",
+   "29° / 23°, mostly sunny"
+  ],
+  [
+   "Japan Meteorological Agency typhoon track (16:45 Fri)",
+   "Extratropical low near the Izu Islands at 15:00, 1004 hPa, moving east at 45 km/h"
+  ]
+ ],
+ "mm": "Not forecast yet",
+ "gicon": "part",
+ "gfill": 30,
+ "gtext": "30%",
+ "gmm": null,
+ "read": "Cloudy, then sunny. Champi's weak remnant passes well south after you fly.",
+ "chance": null,
+ "mmBars": [],
+ "temps": {
+  "est": true
+ },
+ "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out.",
+ "watch": true
+}

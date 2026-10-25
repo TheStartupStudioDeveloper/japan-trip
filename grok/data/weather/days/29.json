@@ -1,0 +1,48 @@
+{
+ "d": 29,
+ "dow": "Thursday",
+ "leg": "h",
+ "where": "Lantau, then the city",
+ "title": "Big Buddha, then the city",
+ "icon": "sun",
+ "hi": 29,
+ "lo": 23,
+ "rain": null,
+ "cond": "Plenty of sunshine",
+ "sunset": "17:50",
+ "call": "Ngong Ping 360 stops in high wind or thunderstorms. Looks clear at this range.",
+ "plan": [
+  [
+   "10:00",
+   "Ngong Ping 360 cable car",
+   "Weather dependent"
+  ],
+  [
+   "19:30",
+   "Temple Street night market",
+   "Outdoors"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "10%, AccuWeather until the Hong Kong Observatory 9-day forecast reaches Tue 27, from Mon 19"
+  ],
+  [
+   "AccuWeather, Hong Kong",
+   "29° / 23°, a shower in the afternoon"
+  ]
+ ],
+ "mm": "Not forecast yet",
+ "gicon": "sun",
+ "gfill": 10,
+ "gtext": "10%",
+ "gmm": null,
+ "read": "Sunny and hot.",
+ "chance": null,
+ "mmBars": [],
+ "temps": {
+  "est": true
+ },
+ "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+}

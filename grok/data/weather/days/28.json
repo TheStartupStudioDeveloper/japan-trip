@@ -1,0 +1,48 @@
+{
+ "d": 28,
+ "dow": "Wednesday",
+ "leg": "h",
+ "where": "Pool, the Island, the Peak",
+ "title": "Pool, Hong Kong Island and the Peak",
+ "icon": "sun",
+ "hi": 29,
+ "lo": 24,
+ "rain": null,
+ "cond": "Plenty of sunshine",
+ "sunset": "17:50",
+ "call": "Good pool morning, and clear air helps the sunset at the Peak.",
+ "plan": [
+  [
+   "09:45",
+   "Sheraton pool",
+   "Best sun 10:00 to 14:00"
+  ],
+  [
+   "15:45",
+   "Peak Tram",
+   "Sunset at the Peak 17:50"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "10%, AccuWeather until the Hong Kong Observatory 9-day forecast reaches Tue 27, from Mon 19"
+  ],
+  [
+   "AccuWeather, Hong Kong",
+   "29° / 24°, humid with a touch of rain"
+  ]
+ ],
+ "mm": "Not forecast yet",
+ "gicon": "sun",
+ "gfill": 10,
+ "gtext": "10%",
+ "gmm": null,
+ "read": "Sunny and hot.",
+ "chance": null,
+ "mmBars": [],
+ "temps": {
+  "est": true
+ },
+ "tnote": "Temperature shape estimated from the forecast high and low. Hourly temperatures fill in about 5 days out."
+}

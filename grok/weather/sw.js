@@ -1,0 +1,11 @@
+// Network first (revalidated, never the HTTP cache), so updates show straight away; cached copy when offline.
+const C = 'grok-wx-25d80e7e1b';
+const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"];
+const MINE = 'grok-wx-';
+self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
+self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith(MINE) && k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
+self.addEventListener('fetch', e => {
+  if (e.request.method !== 'GET' || new URL(e.request.url).origin !== location.origin) return;
+  e.respondWith(fetch(e.request, {cache: 'no-cache'}).then(r => { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); return r; })
+    .catch(() => caches.match(e.request, {ignoreSearch: true}).then(m => m || caches.match('index.html'))));
+});

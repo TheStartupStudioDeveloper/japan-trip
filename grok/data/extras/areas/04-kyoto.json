@@ -1,0 +1,381 @@
+{
+ "key": "kyoto",
+ "name": "Kyoto",
+ "pat": "k",
+ "kanji": "京都",
+ "meta": "With Pontochō and Kiyamachi, Gion and Higashiyama, Arashiyama, Kyoto Station and Fushimi.",
+ "days": [
+  [
+   "d21",
+   "Wed 21"
+  ],
+  [
+   "d23",
+   "Fri 23"
+  ],
+  [
+   "d24",
+   "Sat 24"
+  ]
+ ],
+ "must": [
+  {
+   "dish": "Kaiseki",
+   "line": "Kyoto's formal seasonal dinner of many small courses, the city's great food tradition.",
+   "where": "gion-nakatani"
+  },
+  {
+   "dish": "Yudofu",
+   "line": "Silky tofu simmered at the table in kelp broth, made with Kyoto's soft water.",
+   "where": "yudofu-sagano"
+  },
+  {
+   "dish": "Obanzai",
+   "line": "Kyoto home cooking: small plates of simmered vegetables, yuba and fish.",
+   "where": "izakaya-ponto"
+  },
+  {
+   "dish": "Matcha sweets",
+   "line": "Uji matcha with warabi mochi or kuzukiri in black sugar syrup.",
+   "where": "kagizen"
+  },
+  {
+   "dish": "Kyoto-style ramen",
+   "line": "Clear soy and pork broth, thin noodles and a pile of Kujō green onion.",
+   "where": "daiichi-asahi"
+  },
+  {
+   "dish": "Yatsuhashi",
+   "line": "Kyoto's signature sweet: soft cinnamon rice dough folded around red bean paste.",
+   "where": "sannenzaka"
+  },
+  {
+   "dish": "Fushimi sake",
+   "line": "Soft, smooth sake from the city's own brewing district, best as a tasting flight.",
+   "where": "yoramu"
+  }
+ ],
+ "items": [
+  {
+   "group": "Weather backup",
+   "key": "mercure-hibiya",
+   "time": "1 night",
+   "one": "Backup night in Tokyo if the typhoon threatens Sat 24",
+   "fits": "Only if the Sat 24 Nozomi looks at risk: Nozomi to Tokyo on Fri 23, stay here, then move to the Blossom Hibiya nearby on Sat 24. Check-in 14:00, check-out 11:00. Cancel on the Mercure website by 18:00 Japan time on Thu 22 if not needed.",
+   "tags": [
+    "Booked",
+    "Cancel by Thu 22 18:00"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "arabica-arashiyama",
+   "time": "20 min",
+   "one": "Latte on the river by Togetsukyō bridge",
+   "fits": "Sat 24 in light rain only, a takeaway on the walk back to Saga-Arashiyama if it is open by then. The 12:01 Nozomi comes first.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "excafe",
+   "time": "45 min",
+   "one": "Toast-your-own warabi mochi and matcha",
+   "fits": "Not on this plan: Saturday's Arashiyama morning is short, early and wet. Keep it for a dry, slower visit.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "yudofu-sagano",
+   "time": "1 hr",
+   "one": "Tofu hotpot set in a garden house",
+   "fits": "Not on this plan: Saturday's Arashiyama morning ends by about 09:00 for the 12:01 Nozomi.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "izakaya-ponto",
+   "time": "1.5 hrs",
+   "one": "Kyoto small plates on the Pontochō alley",
+   "fits": "Wed 21 casual dinner at 19:00. Right on Pontochō, two minutes from Shijō Bridge. Graze on obanzai and yakitori.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "chao-chao",
+   "time": "45 min",
+   "one": "Kyoto's most famous gyoza, on Kiyamachi",
+   "fits": "Wed 21 dinner if Pontochō looks full or pricey. Open from 17:00 to 02:00 on a Wednesday, so it also works as a late bite.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "menami",
+   "time": "1.5 hrs",
+   "one": "Obanzai counter since 1939, Bib Gourmand",
+   "fits": "Closed Wednesday, so it only works if you swap the dinners and eat in Gion on Wednesday. Then it is Fri 23 at 17:30 on Kiyamachi.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "daiichi-asahi",
+   "time": "45 min incl. queue",
+   "one": "Classic Kyoto shoyu ramen by the station",
+   "fits": "Sat 24 at 10:45 after check-out, instead of an ekiben. Five minutes from Kyoto Station, quick turnover. Be out by 11:30 for the 12:01.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "kagizen",
+   "time": "40 min",
+   "one": "Kuzukiri and matcha in a Gion tea room",
+   "fits": "Fri 23 at about 17:30 on the way down into Gion, if you skip the pagoda drink. On Shijō-dōri, two minutes from Yasaka Shrine.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "endo-yasaka",
+   "time": "2 hrs",
+   "one": "Course tempura in a Gion teahouse",
+   "fits": "Fri 23 special dinner at 18:30. Five minutes' walk from Yasaka Pagoda, so it follows the sunset perfectly. The ¥16,000 Rokuhara course keeps it inside budget.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "gion-nakatani",
+   "time": "2 hrs",
+   "one": "Seasonal kaiseki by the Shirakawa canal",
+   "fits": "Fri 23 special dinner at 18:30. The classic Kyoto kaiseki at the gentle end of the budget, in the prettiest lanes of Gion.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "matsumuro",
+   "time": "2 hrs",
+   "one": "Quiet Kyoto dinner course in north Gion",
+   "fits": "Fri 23 special dinner at 18:30, if Endo and Nakatani are full. Near the top of your budget.",
+   "tags": [
+    "¥¥¥",
+    "Book now"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "k36",
+   "time": "45 min",
+   "one": "Rooftop drink level with Yasaka Pagoda",
+   "fits": "Fri 23 at 17:15, straight after the pagoda at sunset. Then five minutes downhill to an 18:30 dinner at Endo.",
+   "tags": [
+    "¥¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "bees-knees",
+   "time": "1 hr",
+   "one": "Asia's 50 Best speakeasy behind a bookshelf",
+   "fits": "Wed 21 after Pontochō dinner, about ten minutes' walk north. Or Fri 23 after Gion. Closed Sundays.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "escamoteur",
+   "time": "1 hr",
+   "one": "Magician-themed cocktails with swing seats",
+   "fits": "Wed 21 nightcap from 20:00, a few minutes from Pontochō and Kiyamachi.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "yoramu",
+   "time": "1 hr",
+   "one": "Tiny sake bar with tasting flights in English",
+   "fits": "Wed 21 after dinner, a short taxi north of Pontochō. Check it is open that night first.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Views",
+   "key": "kyoto-tower",
+   "time": "40 min",
+   "one": "Up the white tower opposite the station",
+   "fits": "Wed 21 at 17:25 instead of the station building, for the city at dusk. Or Sat 24 if Inari finishes early.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "sanjusangendo",
+   "time": "45 min",
+   "one": "1,001 golden Kannon statues in one hall",
+   "fits": "Fri 23 at 14:30, cutting the rest short. Then a five minute taxi up to Kiyomizu-dera for 15:30. Closes 17:00.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "kodaiji",
+   "time": "45 min",
+   "one": "Zen gardens and a bamboo grove off Ninenzaka",
+   "fits": "Fri 23 at about 16:45, between Ninenzaka and the pagoda. Last entry is about 17:00, so go straight there off the steps.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "kenninji",
+   "time": "45 min",
+   "one": "Twin dragon ceiling behind the Gion teahouses",
+   "fits": "Fri 23 if you swap Kiyomizu for a slower Gion afternoon. Two minutes from Endo, closes 17:00.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "higashi-honganji",
+   "time": "30 min",
+   "one": "Giant wooden hall on the walk to the station",
+   "fits": "Sat 24 at 10:30 on the walk from the hotel to Kyoto Station, right on Karasuma-dōri. Or Fri 23 in the rest window.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "ginkakuji",
+   "time": "1 hr",
+   "one": "The Silver Pavilion and its sand garden",
+   "fits": "The northern Higashiyama half day. Fri 23 at 13:15 instead of resting, then the path south and a taxi to Kiyomizu at 15:30. Closes 17:00.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "philosopher",
+   "time": "45 min",
+   "one": "Canal-side path linking the eastern temples",
+   "fits": "Walk it south from Ginkaku-ji, past Hōnen-in, to Nanzen-ji. About 30 minutes without stops.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "honenin",
+   "time": "20 min",
+   "one": "Thatched gate and sand mounds, rarely busy",
+   "fits": "Five minutes off the Philosopher's Path. Grounds are free and close at 16:00.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "nanzenji",
+   "time": "45 min",
+   "one": "Huge gate and a red brick aqueduct",
+   "fits": "The south end of the Philosopher's Path. Taxi from here to Kiyomizu-dera is about ten minutes.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Further out",
+   "key": "uji",
+   "time": "Half day",
+   "one": "Matcha town and the Phoenix Hall",
+   "fits": "A swap for the Fri 23 Arashiyama morning if the bamboo grove fails you, or if Thursday and Friday get reshuffled. 20 minutes on the JR Nara line.",
+   "tags": []
+  },
+  {
+   "group": "Further out",
+   "key": "fushimi-sake",
+   "time": "1.5 hrs",
+   "one": "Sake warehouses and a tasting, south of Inari",
+   "fits": "Sat 24 only if you come down the mountain by 09:00 and ask for an 11:00 check-out. Two stops on the Keihan line from Inari.",
+   "tags": [
+    "¥"
+   ]
+  },
+  {
+   "group": "Massage",
+   "key": "yumemishi",
+   "time": "1 hr",
+   "one": "Body and foot massage, closest to the hotel",
+   "fits": "Fri 23 in the 12:45 rest window, a few minutes from Nishiki. Opens 12:00.",
+   "tags": []
+  },
+  {
+   "group": "Massage",
+   "key": "hannari",
+   "time": "1 hr",
+   "one": "Body massage beside Nishiki Market",
+   "fits": "Fri 23 straight after Nishiki lunch, or Wed 21 late, open to 22:00.",
+   "tags": []
+  },
+  {
+   "group": "Massage",
+   "key": "quatre",
+   "time": "1.5 hrs",
+   "one": "Head spa near Shijō-Karasuma",
+   "fits": "Fri 23 in the rest window. One subway stop from the hotel. Book ahead.",
+   "tags": [
+    "Book"
+   ]
+  },
+  {
+   "group": "Massage",
+   "key": "headspa-kyoto",
+   "time": "1.5 hrs",
+   "one": "Head spa at Shijō-Kawaramachi",
+   "fits": "Fri 23 after Nishiki, at the east end of the arcades. Closes 19:00. Book ahead.",
+   "tags": [
+    "Book"
+   ]
+  }
+ ],
+ "notes": "Weather backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24. CANCEL on the Mercure website by 18:00 Japan time on Thu 22 if not needed (free until then). Book the Fri 23 Gion dinner this week: Endo Yasaka on TableCheck is the strongest pick, Nakatani is the cheaper kaiseki (closed Sundays only). Menami is closed Wednesdays, so it only fits if you swap the two dinners. Daiichi Asahi is closed Thursdays, no clash. Bee's Knees is closed Sundays, Kagizen Mondays, no clash. Jidai Matsuri, Kyoto's big costume parade, is on Thu 22 from about 12:00 (Imperial Palace to Heian Shrine), and the Kurama Fire Festival is that night: no clash while you are in Osaka, but if you swap Thursday and Friday, expect crowds and road closures in the centre. Hours for eX café, Yudofu Sagano, Sake Bar Yoramu, K36 and the temples were not all confirmed for 2026: check Google Maps the day before."
+}

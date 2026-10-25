@@ -1,0 +1,172 @@
+{
+ "d": 26,
+ "dow": "Monday",
+ "leg": "g",
+ "where": "teamLab and Asakusa",
+ "title": "teamLab, Kappabashi, Asakusa, dinner under the tracks",
+ "icon": "rain",
+ "hi": 19,
+ "lo": 18,
+ "rain": 75,
+ "cond": "Heavy rain early, then rain at times",
+ "sunset": "16:55",
+ "call": "Wet all day. tenki.jp's hourly for Chiyoda has light rain from about 02:00, 0.5 to 1 mm an hour through the morning, heaviest from 13:00 to 17:00 at 1 to 2 mm an hour, then light into the night, about 19 mm in all, cooling to 16°. Its forecaster warns rain could be heavier at times at commuting time. Taxi to teamLab. Kappabashi at 11:15 is in lighter rain, ducking in and out of shops. Sensō-ji at 14:15 and the Skytree at dusk fall in the wettest part, and the tower may be in cloud.",
+ "plan": [
+  [
+   "08:30",
+   "teamLab Borderless",
+   "Indoors"
+  ],
+  [
+   "11:15",
+   "Kappabashi kitchen street",
+   "Shopfronts, some cover"
+  ],
+  [
+   "14:15",
+   "Sensō-ji and Nakamise",
+   "Outdoors"
+  ],
+  [
+   "16:15",
+   "Skytree views at dusk",
+   "Outdoors, may be in cloud"
+  ],
+  [
+   "19:00",
+   "Dinner under the tracks, Yūrakuchō",
+   "Mostly covered"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "75% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Tokyo (Chiyoda, by the hotel) 3-hourly",
+   "19° / 16°, light rain from 02:00, 0.5 to 1 mm an hour through the morning, 1 to 2 mm an hour 13:00 to 17:00, light rain into the night, north wind 2 to 4 m/s (05:00 Sat)"
+  ],
+  [
+   "tenki.jp forecaster, Kanto",
+   "Peak of the rain on Monday morning; heavy at commuting time, roads may flood quickly; warning-level rain possible"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "19° / 18°, cloudy, then rain, 80%, 14 mm: 3 mm 06:00 to 12:00, 7 mm 12:00 to 18:00, 4 mm 18:00 to 24:00 (20:00 Thu)"
+  ],
+  [
+   "Weathernews, Shibuya hourly",
+   "Rain overnight, heavy in the early hours: about 4 mm at 04:00, 8 mm at 05:00, up to 25 mm in the hour to 06:00"
+  ],
+  [
+   "Japan Meteorological Agency, Tokyo (official)",
+   "20° / 17°, 70%, confidence A"
+  ],
+  [
+   "Weathernews, Shibuya",
+   "24° / 19°, rain at times, 60%"
+  ],
+  [
+   "Global Forecasting Model",
+   "21° / 17°, rain afternoon and evening, 8 mm"
+  ],
+  [
+   "AccuWeather, Tokyo",
+   "22° / 19°, cloudy and humid, afternoon rain"
+  ]
+ ],
+ "mm": "About 14 mm on tenki.jp, heavy early on Weathernews",
+ "gicon": "rain",
+ "gfill": 75,
+ "gtext": "75%",
+ "gmm": "14+",
+ "read": "Rain all day, heaviest 13:00 to 17:00. Taxi to teamLab.",
+ "chance": [
+  [
+   0,
+   2,
+   40
+  ],
+  [
+   2,
+   9,
+   75
+  ],
+  [
+   9,
+   13,
+   75
+  ],
+  [
+   13,
+   18,
+   85
+  ],
+  [
+   18,
+   24,
+   70
+  ]
+ ],
+ "mmBars": [
+  [
+   2,
+   9,
+   5
+  ],
+  [
+   9,
+   13,
+   3
+  ],
+  [
+   13,
+   18,
+   7
+  ],
+  [
+   18,
+   24,
+   4
+  ]
+ ],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    3,
+    18.8
+   ],
+   [
+    6,
+    18.5
+   ],
+   [
+    9,
+    19.6
+   ],
+   [
+    12,
+    18.6
+   ],
+   [
+    15,
+    17.6
+   ],
+   [
+    18,
+    16.4
+   ],
+   [
+    21,
+    16.6
+   ],
+   [
+    24,
+    15.7
+   ]
+  ]
+ },
+ "tnote": "Rain chance from tenki.jp's 6-hour blocks. The bars are the Global Forecasting Model's afternoon and evening rain, split by time of day. Temperature shape estimated from the forecast high and low."
+}

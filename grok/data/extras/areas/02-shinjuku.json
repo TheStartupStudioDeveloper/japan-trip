@@ -1,0 +1,189 @@
+{
+ "key": "shinjuku",
+ "name": "Shinjuku",
+ "pat": "s",
+ "kanji": "新宿",
+ "meta": "East and west Shinjuku, Kabukichō, Golden Gai, Shinjuku-sanchōme, Nishi-Shinjuku and Shin-Ōkubo.",
+ "days": [
+  [
+   "d19",
+   "Mon 19"
+  ]
+ ],
+ "must": [
+  {
+   "dish": "Tsukemen",
+   "line": "Thick cold noodles dipped into a rich, concentrated hot broth.",
+   "where": "fuunji"
+  },
+  {
+   "dish": "Tempura",
+   "line": "Prawns, fish and vegetables in a whisper of batter, straight from the oil.",
+   "where": "tsunahachi"
+  },
+  {
+   "dish": "Niboshi ramen",
+   "line": "Ramen built on dried sardines: bold, briny and very Tokyo.",
+   "where": "nagi-goldengai"
+  },
+  {
+   "dish": "Fruit parfait",
+   "line": "Japan's prized fruit layered in a tall glass with cream and ice cream.",
+   "where": "takano-parlour"
+  },
+  {
+   "dish": "Kaiseki",
+   "line": "A seasonal procession of small, exquisite courses.",
+   "where": "kakiden"
+  },
+  {
+   "dish": "Depachika sweets",
+   "line": "Wagashi and pastries boxed like jewellery in the department store basement.",
+   "where": "isetan"
+  }
+ ],
+ "items": [
+  {
+   "group": "Eat",
+   "key": "fuunji",
+   "time": "45 min incl. queue",
+   "one": "Tokyo's favourite tsukemen, near the south exit",
+   "fits": "Mon 19 at 17:00 when it reopens, as a filling start before Omoide Yokochō. Open Mondays, closed Sundays.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "tsunahachi",
+   "time": "1 hr",
+   "one": "Tempura counter in sesame oil since the 1920s",
+   "fits": "Mon 19 dinner instead of grazing at Omoide. On the east side near Shinjuku-sanchōme, so it suits the walk from Kabukichō towards Golden Gai.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "nagi-goldengai",
+   "time": "30 min",
+   "one": "Intense sardine ramen up a Golden Gai stair",
+   "fits": "Mon 19 at 21:00, a late bowl in Golden Gai before the Fukutoshin line home. Open all night.",
+   "tags": [
+    "¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "takano-parlour",
+   "time": "45 min",
+   "one": "Fruit parfaits under Shinjuku's luxury fruit shop",
+   "fits": "Mon 19 at 16:45 after the 3D cat, three minutes away. Or dessert after dinner, last orders 20:30.",
+   "tags": [
+    "¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "isetan",
+   "time": "45 min",
+   "one": "Tokyo's grandest depachika food hall",
+   "fits": "Mon 19 at 16:45, beside Shinjuku-sanchōme, for sweets and a snack before the evening. Also a rainy day stop.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Eat",
+   "key": "kakiden",
+   "time": "2 hrs",
+   "one": "Kyoto kaiseki courses by the east exit",
+   "fits": "Mon 19 special dinner at 18:00 in place of Omoide, then Kabukichō and Golden Gai after. Last orders 20:00.",
+   "tags": [
+    "¥¥¥",
+    "Book"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "benfiddich",
+   "time": "1 hr",
+   "one": "World famous farm-to-glass cocktail counter",
+   "fits": "Mon 19 nightcap after Golden Gai, 15 minutes' walk west. Open to 02:00 and Monday is a quiet night. Taxi home after the trains.",
+   "tags": [
+    "¥¥¥",
+    "Walk-in"
+   ]
+  },
+  {
+   "group": "Drink",
+   "key": "ny-bar",
+   "time": "1 hr",
+   "one": "52nd floor jazz bar from Lost in Translation",
+   "fits": "Mon 19 at 17:00 for sunset (about 17:00) instead of the 3D cat, then down to Omoide. Arrive before 20:00 to skip the music charge.",
+   "tags": [
+    "¥¥¥",
+    "Book"
+   ]
+  },
+  {
+   "group": "Views",
+   "key": "tocho",
+   "time": "45 min",
+   "one": "Free deck 202 metres up in west Shinjuku",
+   "fits": "Mon 19 at 16:15 for dusk, leaving the hotel at 15:45. Both decks are open that day. Then ten minutes' walk to Omoide Yokochō for 17:30.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Sights",
+   "key": "gyoen",
+   "time": "2 hrs",
+   "one": "Formal gardens and lawns by Shinjuku",
+   "fits": "Closed Mondays, so not on Mon 19. Works as a swap for Sun 18 morning instead of Meiji Jingū. Closes 16:00 in October.",
+   "tags": []
+  },
+  {
+   "group": "Shopping",
+   "key": "beams-japan",
+   "time": "1 hr",
+   "one": "Five floors of Japanese craft and labels",
+   "fits": "Mon 19 at 16:45 if you come early, five minutes from the 3D cat. Closes 20:00.",
+   "tags": []
+  },
+  {
+   "group": "Night",
+   "key": "tocho-mapping",
+   "time": "20 min",
+   "one": "Free projection show on the Tocho towers",
+   "fits": "Mon 19 at 18:00, pairs with the deck: leave Omoide at 17:45, watch, then head east to Kabukichō by 18:45.",
+   "tags": [
+    "Free"
+   ]
+  },
+  {
+   "group": "Night",
+   "key": "thermae-yu",
+   "time": "1.5 hrs",
+   "one": "Big hot spring bath in Kabukichō",
+   "fits": "Mon 19 late, a soak after Golden Gai. Open all night, but the late surcharge applies, so earlier is cheaper.",
+   "tags": [
+    "¥¥"
+   ]
+  },
+  {
+   "group": "Further out",
+   "key": "shin-okubo",
+   "time": "2 hrs",
+   "one": "Koreatown: K-pop, skincare, street food",
+   "fits": "One stop on the Yamanote. Mon 19 at 15:30 instead of resting at the hotel, then walk down to Shinjuku for 16:45.",
+   "tags": []
+  }
+ ],
+ "notes": "Shinjuku Gyoen is closed on Mondays, so it only fits a swap day, and its gates close at 16:00 in October. Both Tocho decks are open on Mon 19. Fūunji and BenFiddich close on Sundays, fine for Monday. Takano Fruit Parlour hours are from 2022, so check on the day. Nothing here needs booking this week: book Kakiden or a New York Bar window seat only if you want them."
+}

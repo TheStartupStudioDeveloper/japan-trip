@@ -1,0 +1,110 @@
+{
+ "d": 18,
+ "dow": "Sunday",
+ "leg": "s",
+ "where": "Harajuku and the bay",
+ "title": "Meiji Jingū, the festival, Street Kart",
+ "icon": "sun",
+ "hi": 24,
+ "lo": 14,
+ "rain": 10,
+ "cond": "Sunny",
+ "sunset": "17:00",
+ "call": "Clear all day: sunny on every source, JMA 0% all day. A crisp 14° at dawn for Meiji Jingū, 19° by 09:00, up to 24° by 14:00, and about 21° for Street Kart at 16:00 with a light southerly. Dry all evening, still about 20° at 20:00.",
+ "plan": [
+  [
+   "09:45",
+   "Meiji Jingū",
+   "Forest paths, outdoors"
+  ],
+  [
+   "16:00",
+   "Street Kart",
+   "Open karts, golden hour"
+  ]
+ ],
+ "src": [
+  [
+   "Combined",
+   "10% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp, Tokyo (Shibuya)",
+   "24° / 14°, sunny, 0 to 10%, 0 mm"
+  ],
+  [
+   "Japan Meteorological Agency (official)",
+   "Sunny, 0% all day"
+  ],
+  [
+   "Weathernews, Shibuya",
+   "23° / 14°, sunny, 10%"
+  ],
+  [
+   "Global Forecasting Model",
+   "24° / 15°, clear, 0 mm"
+  ],
+  [
+   "AccuWeather",
+   "24° / 19°, mostly sunny and nice"
+  ]
+ ],
+ "mm": "Under 1 mm",
+ "gicon": "sun",
+ "gfill": 10,
+ "gtext": "10%",
+ "gmm": "0",
+ "read": "Sunny, 0%. 14° at dawn, 24° at 14:00.",
+ "chance": [
+  [
+   6,
+   12,
+   0
+  ],
+  [
+   12,
+   18,
+   10
+  ],
+  [
+   18,
+   24,
+   10
+  ]
+ ],
+ "mmBars": [],
+ "temps": {
+  "est": false,
+  "pts": [
+   [
+    6,
+    14.4
+   ],
+   [
+    9,
+    19
+   ],
+   [
+    12,
+    22.4
+   ],
+   [
+    14,
+    24.1
+   ],
+   [
+    18,
+    20.3
+   ],
+   [
+    21,
+    19.4
+   ],
+   [
+    24,
+    18.9
+   ]
+  ]
+ },
+ "tnote": "Hourly temperatures and rain chance from tenki.jp's hourly forecast for Shibuya."
+}
