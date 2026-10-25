@@ -981,3 +981,27 @@ GO[25] += [
   maps('Marronnier Gate Ginza 2'),
  ]),
 ]
+
+# 25 Oct 11:03: Bairin lunch, Rōsokuya dinner.
+GO[25] = [g for g in GO[25] if not g[0].startswith(('Early lunch, Tokyo Ramen Street', 'Walk to Ginza 3-chōme', 'Dinner in Shinjuku', 'Marunouchi line back to Ginza'))]
+GO[25] += [
+ ('Walk to Ginza 7-chōme', [
+  'From Tokyo Station Yaesu South exit, south along Chūō-dōri through Kyōbashi and Ginza, about 20 minutes. Or Ginza line from Kyōbashi two stops to Ginza.',
+  maps('Ginza Bairin Honten'),
+ ]),
+ ('Lunch: Ginza Bairin', [
+  'Ginza 7-chōme, on Suzuran-dōri (すずらん通り), one block east of Chūō-dōri. Down the stairs to the basement: 銀座梅林 本店.',
+  maps('Ginza Bairin Honten'),
+ ]),
+ ('Marunouchi line back to Ginza', [
+  'Walk back to 新宿三丁目 (Shinjuku-sanchōme), about 15 minutes, or a taxi straight to Ginza 1-chōme: 銀座1丁目 銀座ろうそく屋, about 25 minutes.',
+  '丸ノ内線, platform toward 銀座・池袋 (Ginza, Ikebukuro). Get off at 銀座 (Ginza), about 17 minutes.',
+  maps('Ginza Rosokuya', 'transit', 'r'),
+ ]),
+ ('Dinner: tantanmen at Ginza Rōsokuya', [
+  'Ginza 1-chōme, 銀座東洋ビル 1F. From Ginza station, north up Chūō-dōri, then east past Ginza-itchōme station, about 8 minutes.',
+  maps('Ginza Rosokuya'),
+  '175 DENO Tantanmen backup: Ginza 2-chōme, B1, around the corner.',
+  maps('175 DENO Tantanmen GINZa'),
+ ]),
+]

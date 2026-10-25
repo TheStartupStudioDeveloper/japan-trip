@@ -943,3 +943,15 @@ D[25]['rows'].append(R('10:40', 'Coffee at Dean & DeLuca', 'On the walk from the
 D[25]['rows'].sort(key=lambda x: x[0])
 for _g in CHECK:
     _g[1][:] = [x for x in _g[1] if 'guest laundry' not in x[1]]
+
+# Sun 25 11:03: lunch at Ginza Bairin (tonkatsu), tantanmen at Ginza Rōsokuya for dinner after the sumo instead of Shinjuku.
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('Early lunch, Tokyo Ramen Street', 'Walk to Ginza 3-chōme', 'Dinner in Shinjuku', 'Marunouchi line back to Ginza'))] + [
+ R('11:30', 'Walk to Ginza 7-chōme', 'About 20 minutes south from Tokyo Station, down Sotobori-dōri or Chūō-dōri.'),
+ R('12:00', 'Lunch: Ginza Bairin, tonkatsu', 'Ginza\'s oldest tonkatsu house, since 1927, in a basement in 7-chōme. Kagoshima black pork cutlets, free rice refills. 11:30 to 21:00, no bookings, cards accepted. About ¥1,200 to ¥5,000.'),
+ R('19:00', 'Marunouchi line back to Ginza', 'Higashi-Shinjuku is close, but simplest: walk back to Shinjuku-sanchōme, Marunouchi line toward 銀座・池袋 to Ginza, about 17 minutes.'),
+ R('19:45', 'Dinner: tantanmen at Ginza Rōsokuya', 'Spicy mince ramen with a proper sansho kick, or the famous mapo tofu ramen. Ginza 1-chōme. Open to 21:30, English menu, ticket machine. Medium spice is mild, so go a level up. Backup: 175 DENO Tantanmen, Ginza 2-chōme, to 21:00.'),
+]
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('MUJI, UNIQLO'): D[25]['rows'][_i] = R('13:00', *_x[1:])
+    if _x[1].startswith('Late massage'): D[25]['rows'][_i] = R('21:15', *_x[1:])
+D[25]['rows'].sort(key=lambda x: x[0])
