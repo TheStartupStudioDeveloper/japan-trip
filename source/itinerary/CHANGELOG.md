@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 10:40
+- Gardens done. Added Tokyo Station façade 10:45, KITTE rooftop 11:00, Tokyo Ramen Street lunch 11:30, walk to Ginza 12:10, UNIQLO, MUJI and Daiso 12:30, car-free 14:00.
+
 ## Sun 25 Oct 08:30
 - Shinjuku Sumo Club 17:30 booked on Klook for 2.
 

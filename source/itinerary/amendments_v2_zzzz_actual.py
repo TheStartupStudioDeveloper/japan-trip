@@ -917,3 +917,19 @@ for _i, _x in enumerate(D[25]['rows']):
 # Sun 25 08:50: MUJI, UNIQLO and Daiso during car-free Ginza. All in one block at Ginza 3-chōme.
 D[25]['rows'].append(R('12:30', 'MUJI, UNIQLO TOKYO and Daiso', 'All in one block at Ginza 3-chōme, by Marronnier-dōri. UNIQLO TOKYO, the global flagship, and Daiso (with Standard Products and THREEPPY) share the Marronnier Gate Ginza 2 building. MUJI Ginza, the flagship, is next door. Passports for tax-free.'))
 D[25]['rows'].sort(key=lambda x: x[0])
+
+# Sun 25 10:40: gardens done. Tokyo Station façade, KITTE rooftop, Ramen Street lunch, then the UNIQLO, MUJI and Daiso block.
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith(('Imperial Palace East Gardens', 'Slow breakfast', 'AirPod')):
+        D[25]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith('Walk to Ginza, early lunch')] + [
+ R('10:45', 'Tokyo Station, Marunouchi façade', 'Ten minutes east from Ōtemon. The red brick front from Gyōkō-dōri, the tree-lined avenue straight out from the palace.'),
+ R('11:00', 'KITTE Marunouchi rooftop garden', 'Free 6F terrace right opposite, looking down on the station and the trains. About 20 minutes.'),
+ R('11:30', 'Early lunch, Tokyo Ramen Street', 'Eight ramen shops in a row in the station basement, Yaesu side. Short queues before noon. Ticket machines.'),
+ R('12:10', 'Walk to Ginza 3-chōme', 'About 15 minutes south.'),
+]
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('MUJI, UNIQLO'): D[25]['rows'][_i] = R('12:30', *_x[1:])
+    if _x[1].startswith('Ginza car-free'): D[25]['rows'][_i] = R('14:00', _x[1], 'Chūō-dōri is pedestrian only until 17:00 on Sundays. Walk it while it is dry, then into the stores when the rain arrives.', *_x[3:])
+    if _x[1].startswith('Department stores'): D[25]['rows'][_i] = R('14:30', *_x[1:])
+D[25]['rows'].sort(key=lambda x: x[0])

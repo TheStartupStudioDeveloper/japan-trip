@@ -958,3 +958,26 @@ GO[25] += [
   maps('MUJI Ginza'),
  ]),
 ]
+
+# 25 Oct 10:40: Tokyo Station, KITTE, Ramen Street.
+GO[25] = [g for g in GO[25] if not g[0].startswith('Walk to Ginza')]
+GO[25] += [
+ ('Tokyo Station, Marunouchi façade', [
+  'Out of Ōtemon, cross the moat road and head east along Gyōkō-dōri (行幸通り), the wide avenue with the trees. About 10 minutes.',
+  'The best photo is from the middle of the avenue, looking straight at the domes.',
+  maps('Tokyo Station Marunouchi Building'),
+ ]),
+ ('KITTE Marunouchi rooftop', [
+  'KITTE (キッテ) is the white building at the south end of the station square, the old central post office. Lifts to 6F, then out to the rooftop garden (屋上庭園).',
+  maps('KITTE Marunouchi'),
+ ]),
+ ('Early lunch, Tokyo Ramen Street', [
+  'Into Tokyo Station, follow signs through the passage to 八重洲 (Yaesu), then down to B1: 東京ラーメンストリート (Tokyo Ramen Street), by the Yaesu South exit.',
+  'Buy tickets at the machine outside each shop, then queue.',
+  maps('Tokyo Ramen Street'),
+ ]),
+ ('Walk to Ginza 3-chōme', [
+  'Out the Yaesu South exit, south along Sotobori-dōri under the JR tracks, then left on Marronnier-dōri. About 15 minutes.',
+  maps('Marronnier Gate Ginza 2'),
+ ]),
+]
