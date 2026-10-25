@@ -897,3 +897,51 @@ P('udon-express', ['Breakfast Udon Express'], 'Breakfast Udon Express', '朝う�
 P('katsuda', ['Kyoto Tonkatsu Katsuda', 'Katsuda'], 'Kyoto Tonkatsu Katsuda, Shijō-Karasuma', '京都とんかつ かつ田 四条烏丸店',
   'Katsu fried to order at a counter around the kitchen, with curry sauce, unlimited rice and a lively young crew. Chicken with cheese is the favourite. Beer, and a matcha beer.',
   'Open 11:30 to 22:00. Expect a 10 to 20 minute queue at dinner. Six minutes north of the hotel on Karasuma.', 'Kyoto Tonkatsu Katsuda Shijokarasuma')
+
+# 25 Oct 11:35: cards for the new Ginza, Shinjuku and Asakusa stops, so specific places link to their own card, not the area.
+IGNORE += ['Hibiya line', 'Marunouchi line', 'Ginza-itchōme']
+P('dean-deluca', ['Dean &amp; DeLuca'], 'Dean & DeLuca', 'ディーン&デルーカ',
+  'The New York deli and café chain, with branches in and around Tokyo Station and Marunouchi. Good coffee, pastries and sandwiches to go.',
+  'Several branches near Tokyo Station open from about 07:00.', 'DEAN & DELUCA Marunouchi')
+P('bairin', ['Ginza Bairin'], 'Ginza Bairin', '銀座梅林 本店',
+  'Ginza\'s oldest tonkatsu house, open since 1927, in a basement in Ginza 7-chōme on Suzuran-dōri. Kagoshima black pork cutlets with free refills of rice, a good katsudon, and a hirekatsu (fillet) sando you can also take away.',
+  '11:30 to 21:00, last orders 20:00. No bookings. About ¥1,200 to ¥5,000. Cards accepted.', 'Ginza Bairin Honten')
+P('uniqlo-tokyo', ['UNIQLO TOKYO'], 'UNIQLO TOKYO', 'ユニクロ トウキョウ',
+  'UNIQLO\'s global flagship, four big floors designed by Herzog & de Meuron in the Marronnier Gate Ginza 2 building. The full range, collaborations, a custom T-shirt studio (UTme!) and a flower shop.',
+  'Opens 11:00. Tax-free with passport over ¥5,000.', 'UNIQLO TOKYO Marronnier Gate Ginza 2')
+P('daiso-ginza', ['Daiso'], 'Daiso Ginza', 'ダイソー マロニエゲート銀座店',
+  'Japan\'s 100 yen shop, here as one of its biggest flagships on 6F of Marronnier Gate Ginza 2, together with its sister shops Standard Products (simple homewares) and THREEPPY (cute stationery and kitchen bits).',
+  'Most items ¥110, some more. Same building as UNIQLO TOKYO. Opens 11:00.', 'DAISO Marronnier Gate Ginza')
+P('muji-ginza', ['MUJI'], 'MUJI Ginza', '無印良品 銀座',
+  'MUJI\'s world flagship, six floors at Ginza 3-chōme: clothes, homewares, stationery and food, plus a MUJI Diner and a MUJI Hotel above. Next door to Marronnier Gate.',
+  'Opens 11:00. Tax-free with passport.', 'MUJI Ginza')
+P('marronnier', ['Marronnier Gate Ginza 2', 'Marronnier-dōri'], 'Marronnier Gate Ginza 2', 'マロニエゲート銀座2',
+  'A shopping building at Ginza 3-chōme on Marronnier-dōri, home to UNIQLO TOKYO and the Daiso flagship. MUJI Ginza is next door.',
+  'About eight minutes\' walk from the hotel.', 'Marronnier Gate Ginza 2')
+P('shinjuku-sumo', ['Shinjuku Sumo Club'], 'Shinjuku Sumo Club', '新宿相撲部屋',
+  'A sumo show for visitors in a small hall in Ōkubo, just north of Kabukichō. Former wrestlers explain the rules and rituals, fight live bouts metres from you, pick audience members to take them on, then pose for photos. English MC.',
+  'Booked: Sun 25, 17:30, 2 adults on Klook. SEKISAKU Bldg 2F, 2-5-22 Ōkubo (新宿区大久保2-5-22). Doors open 17:00, no entry after 17:50. About 75 to 90 minutes, one drink included.', '2-5-22 Okubo Shinjuku Tokyo')
+P('rosokuya', ['Ginza Rōsokuya'], 'Ginza Rōsokuya', '銀座 ろうそく屋',
+  'A small Sichuan noodle shop in Ginza 1-chōme known for tantanmen, the spicy sesame and pork mince ramen, with real sansho numbing heat. The mapo tofu ramen is the signature.',
+  'Tue to Sun 11:00 to 21:30, closed Mondays. About ¥1,000 a bowl. Ticket machine, English menu. Medium spice is mild, so go a level up.', 'Ginza Rosokuya')
+P('deno', ['175 DENO Tantanmen'], '175 DENO Tantanmen', '175°DENO担担麺 銀座',
+  'A Sapporo tantanmen chain with a small basement shop in Ginza 2-chōme. Pick your spice and your numbness level from 0 to 5, with or without soup.',
+  'Daily 11:00 to 21:00. English ticket machine.', '175 DENO Tantanmen GINZa')
+P('morijp', ['Mori JP Tower'], 'Azabudai Hills Mori JP Tower', '麻布台ヒルズ 森JPタワー',
+  'The 330 metre main tower of Azabudai Hills, the tallest building in Tokyo. The Sky Room café on 34F looks straight across at Tokyo Tower.',
+  'Same complex as teamLab Borderless, a few minutes\' walk.', 'Azabudai Hills Mori JP Tower')
+P('tonton', ['Yakitori Tonton'], 'Yakitori Tonton', '登運とん',
+  'A smoky yakitori and pork-skewer joint built into the brick arches under the JR tracks at Yūrakuchō, with stools spilling onto the lane. The kashira (pork cheek) skewer is the house specialty.',
+  '11:30 to 23:00 daily at last report. Skewers from about ¥200. English menu. Walk-in. Cash.', 'Yakitori Tonton Yurakucho')
+P('kama-asa', ['Kama-asa'], 'Kama-asa', '釜浅商店',
+  'A Kappabashi knife and cookware shop since 1908, known for Japanese kitchen knives, iron pans and rice pots. Staff help you choose a knife and engrave your name on it for free.',
+  'Open daily about 11:00 to 17:30. Knives go in checked bags only.', 'Kama-asa Kappabashi')
+P('kamata', ['Kamata Hakensha'], 'Kamata Hakensha', 'かまた刃研社',
+  'A small Kappabashi knife specialist with a wall of Japanese blades at every price, and in-house sharpening.',
+  'About 10:00 to 18:00. Free engraving on most knives.', 'Kamata Hakensha Kappabashi')
+P('dengama', ['Dengama'], 'Dengama', '田窯',
+  'A Kappabashi ceramics shop on the corner at the south end, two floors of Japanese tableware: rice bowls, sake cups, plates and teapots, much of it handmade.',
+  'About 10:00 to 18:00. They wrap well for flying.', 'Dengama Kappabashi')
+P('ganso', ['Ganso food samples', 'Ganso'], 'Ganso Shokuhin Sample-ya', '元祖食品サンプル屋',
+  'The fake food shop: the plastic sushi, ramen and parfaits you see in restaurant windows, sold as magnets, keyrings and full-size replicas.',
+  'About 10:00 to 17:30. Good small gifts.', 'Ganso Shokuhin Sample-ya Kappabashi')

@@ -955,3 +955,29 @@ for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('MUJI, UNIQLO'): D[25]['rows'][_i] = R('13:00', *_x[1:])
     if _x[1].startswith('Late massage'): D[25]['rows'][_i] = R('21:15', *_x[1:])
 D[25]['rows'].sort(key=lambda x: x[0])
+
+# Sun 25 11:34: AirPod now arriving Mon 26. Pick it up at the desk when back at the hotel.
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith('AirPod')]
+D[26]['rows'].append(R('17:50', 'AirPod at the front desk', 'The Kyoto hotel\'s parcel is now due today. Ask when dropping the shopping: 京都のホテルから荷物が届いていますか？ If it has not come, ask them to hold it or forward it before the Tuesday 06:22 start.'))
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Dinner under the train tracks'):
+        D[26]['rows'][_i] = R(_x[0], _x[1], 'The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, pork skewers, motsu stew and cold beer, with the trains rumbling overhead. Start at Yakitori Tonton (the pork cheek skewer), then graze. No booking, mostly cash.', *_x[3:])
+
+# Sun 25 11:40: how-tos brought up to date. Laundry done in Kyoto; Daikoku no longer fits Sunday; new how-to for the Shinjuku sumo.
+for _k, _h in enumerate(HOWTO):
+    if _h[0] == 'Laundry, Sun 25':
+        HOWTO[_k] = ('Laundry, if needed', ['Done in Kyoto on Fri 23, so not needed in Tokyo. Kept for reference.'] + list(_h[1]))
+    if _h[0] == 'Daikoku car meet, Sun 25 option':
+        HOWTO[_k] = ('Daikoku car meet', ['No longer fits: Sun 25 evening is the sumo, tantanmen and a massage. Kept for reference.'] + list(_h[1]))
+HOWTO.append(('Ginza to the Shinjuku Sumo Club and back, Sun 25', [
+ 'Booked: 17:30, 2 adults on Klook. Doors open 17:00. No entry after 17:50.',
+ 'Address: SEKISAKU Bldg 2F, 2-5-22 Ōkubo, Shinjuku. For a taxi driver: 新宿区大久保2-5-22 SEKISAKU ビル 2階までお願いします。',
+ 'Out: Ginza station, Marunouchi line (red), platform toward 新宿・荻窪 (Shinjuku, Ogikubo). Off at 新宿三丁目 (Shinjuku-sanchōme), about 17 minutes. Leave Ginza by 16:30.',
+ 'Walk north up Meiji-dōri past Kabukichō, about 15 minutes. If it is raining, take a taxi from the station exit, about 5 minutes.',
+ 'Use the map link in the Klook confirmation email: it drops the pin on the right building.',
+ 'Back: walk to Shinjuku-sanchōme, Marunouchi line toward 銀座・池袋 (Ginza, Ikebukuro), off at 銀座. Then 8 minutes to Ginza Rōsokuya for tantanmen (open to 21:30).',
+]))
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('Shinjuku Sumo Club') and 'How-to 32' not in _x[2]:
+        D[25]['rows'][_i] = R(_x[0], _x[1], _x[2] + ' Getting there and back: How-to 32.', *_x[3:])

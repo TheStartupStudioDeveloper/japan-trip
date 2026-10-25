@@ -1,5 +1,11 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 11:40
+- New place cards so specific places link to their own card instead of the area: Dean & DeLuca, Ginza Bairin, UNIQLO TOKYO, Daiso Ginza, MUJI Ginza, Marronnier Gate Ginza 2, Shinjuku Sumo Club, Ginza Rōsokuya, 175 DENO Tantanmen, Mori JP Tower, Yakitori Tonton, Kama-asa, Kamata Hakensha, Dengama, Ganso. "Hibiya line" and "Marunouchi line" no longer link to Hibiya or Marunouchi.
+- How-tos: 17 laundry marked not needed, 23 Daikoku marked no longer fits, new 32 Ginza to the Shinjuku Sumo Club and back.
+- AirPod now arriving Mon 26: desk pickup moved to Mon 17:50. Dinner under the tracks note expanded.
+- Extras rebuilt to match.
+
 ## Sun 25 Oct 11:03
 - Lunch: Ginza Bairin tonkatsu 12:00 (Ramen Street dropped). UNIQLO, MUJI and Daiso 13:00. Dinner: tantanmen at Ginza Rōsokuya 19:45 after the sumo, instead of Shinjuku. Massage 21:15.
 
