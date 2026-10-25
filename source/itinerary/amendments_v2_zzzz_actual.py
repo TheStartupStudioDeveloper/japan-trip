@@ -1027,3 +1027,12 @@ for _k, _h in enumerate(HOWTO):
          'Change to the Fukutoshin line (brown) toward 池袋, one stop to 東新宿 (Higashi-Shinjuku). Exit A1, about 5 minutes\' walk to the club. Much less walking in the rain than from Shinjuku-sanchōme.',
          'Back: Higashi-Shinjuku, Fukutoshin line one stop to Shinjuku-sanchōme, Marunouchi line toward 銀座・池袋 to Ginza. Then 8 minutes to Ginza Rōsokuya, or a taxi straight there: 銀座1丁目 ろうそく屋.',
         ])
+
+# Sun 25 14:57: Hibiya OKUROJI added to Mon 26 evening. Dinner tonight: Rōsokuya's mapo tofu ramen, with Nakamoto by the sumo as the alternative.
+D[26]['rows'].append(R('18:30', 'Hibiya OKUROJI', 'The restored arcade inside the brick railway arches, by the hotel end. Walk it north towards Yūrakuchō, about 15 minutes. Covered, so good in the rain. Unafuji (the eel place) is in here.'))
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Tokyo International Forum'): D[26]['rows'][_i] = R('18:50', *_x[1:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('Dinner: tantanmen at Ginza Rōsokuya'):
+        D[25]['rows'][_i] = R(_x[0], 'Dinner: mapo tofu ramen or tantanmen at Ginza Rōsokuya', 'The mapo tofu ramen (spicy mince and tofu) is the signature; the tantanmen is the other one. Ginza 1-chōme. Open to 21:30, English menu, ticket machine. Medium spice is mild, so go a level up. Alternative by the sumo: Mōko Tanmen Nakamoto Shinjuku, spicy miso ramen topped with mapo tofu, 15 minutes\' walk from the club, open to 23:00.', *_x[3:])

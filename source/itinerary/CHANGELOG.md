@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 14:57
+- Mon 26: Hibiya OKUROJI walk-through 18:30, Forum 18:50, dinner under the tracks 19:15. New card.
+- Sun 25 dinner: Rōsokuya, mapo tofu ramen or tantanmen; Mōko Tanmen Nakamoto Shinjuku noted as the alternative by the sumo. New card.
+
 ## Sun 25 Oct 14:26
 - Raining. Sumo: taxi from the hotel 16:30, train backup through the underground Hibiya to Ginza passage, Marunouchi then Fukutoshin to Higashi-Shinjuku (How-to 32 rewritten).
 - Tokyo International Forum moved to Mon 26 at 18:45, on the walk to dinner.

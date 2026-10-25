@@ -972,3 +972,12 @@ FIX = {
 for _p in PLACES:
     if _p['key'] in PIDS: _p['g'] = PIDS[_p['key']]
     if _p['key'] in FIX: _p.update(FIX[_p['key']])
+P('okuroji', ['Hibiya OKUROJI', 'OKUROJI'], 'Hibiya OKUROJI', '日比谷OKUROJI',
+  'A 300 metre arcade built into the 100-year-old brick railway arches under the JR tracks between Yūrakuchō and Shimbashi, restored with white vaults and polished floors. Small restaurants and bars along both sides, including the famous Unafuji eel house, plus craft shops. Covered all the way, so a dry walk in the rain.',
+  'Most places open about 11:00 to 23:00. Entrances by the hotel end (Uchisaiwaichō side) and the Yūrakuchō end.', 'Hibiya OKUROJI')
+P('nakamoto', ['Mouko Tanmen Nakamoto'], 'Mōko Tanmen Nakamoto Shinjuku', '蒙古タンメン中本 新宿',
+  'Tokyo\'s cult spicy ramen chain. The house bowl, Mōko Tanmen, is spicy miso ramen with vegetables topped with mapo tofu. Heat is rated 0 to 10; 3 is a pleasant kick, 5 is properly hot.',
+  'Daily 10:00 to 23:00. Order on a screen (no English) before you queue; the line moves fast. About ¥900.', 'Mouko Tanmen Nakamoto Shinjuku')
+PIDS2 = {'nakamoto': 'ChIJw_Dk2SmNGGARIt45HeJo8KI'}
+for _p in PLACES:
+    if _p['key'] in PIDS2: _p['g'] = PIDS2[_p['key']]

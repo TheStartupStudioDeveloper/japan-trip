@@ -1075,3 +1075,16 @@ GO[26] += [
   maps('Tokyo International Forum Glass Building'),
  ]),
 ]
+GO[26] += [
+ ('Hibiya OKUROJI', [
+  'From the hotel, a few minutes east to the railway arches by Uchisaiwaichō. Look for the OKUROJI sign at the south end.',
+  'Walk north through the arcade towards Yūrakuchō, then out and up to the Forum.',
+  maps('Hibiya OKUROJI'),
+ ]),
+]
+GO[25] += [
+ ('Alternative: Nakamoto', [
+  'From the sumo club, west along Ōkubo-dōri past Shin-Ōkubo station, then south to Nishi-Shinjuku 7-chōme, about 15 minutes. Or a short taxi: 蒙古タンメン中本 新宿店.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=Mouko+Tanmen+Nakamoto+Shinjuku&destination_place_id=ChIJw_Dk2SmNGGARIt45HeJo8KI&travelmode=walking https://maps.apple.com/?daddr=Mouko+Tanmen+Nakamoto+Shinjuku&dirflg=w',
+ ]),
+]
