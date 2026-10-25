@@ -933,3 +933,6 @@ for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('Ginza car-free'): D[25]['rows'][_i] = R('14:00', _x[1], 'Chūō-dōri is pedestrian only until 17:00 on Sundays. Walk it while it is dry, then into the stores when the rain arrives.', *_x[3:])
     if _x[1].startswith('Department stores'): D[25]['rows'][_i] = R('14:30', *_x[1:])
 D[25]['rows'].sort(key=lambda x: x[0])
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('AirPod'): D[25]['rows'][_i] = R('20:45', 'AirPod at the front desk', _x[2] + ' Ask when back at the hotel.')
+D[25]['rows'].sort(key=lambda x: x[0])
