@@ -936,3 +936,10 @@ D[25]['rows'].sort(key=lambda x: x[0])
 for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('AirPod'): D[25]['rows'][_i] = R('20:45', 'AirPod at the front desk', _x[2] + ' Ask when back at the hotel.')
 D[25]['rows'].sort(key=lambda x: x[0])
+
+# Sun 25 10:52: breakfast skipped, coffee at Dean & DeLuca on the way to Tokyo Station. Washing done in Kyoto on Fri 23, none needed in Tokyo.
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith('Slow breakfast')]
+D[25]['rows'].append(R('10:40', 'Coffee at Dean & DeLuca', 'On the walk from the gardens to Tokyo Station, instead of a sit-down breakfast.', DN))
+D[25]['rows'].sort(key=lambda x: x[0])
+for _g in CHECK:
+    _g[1][:] = [x for x in _g[1] if 'guest laundry' not in x[1]]

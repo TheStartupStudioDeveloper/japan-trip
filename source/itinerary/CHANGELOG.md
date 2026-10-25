@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 10:52
+- Breakfast skipped; coffee at Dean & DeLuca on the way to Tokyo Station. Washing done in Kyoto on Fri 23, so the Sunday washing slot and the Blossom laundry checklist line are gone.
+
 ## Sun 25 Oct 10:40
 - Gardens done. Added Tokyo Station façade 10:45, KITTE rooftop 11:00, Tokyo Ramen Street lunch 11:30, walk to Ginza 12:10, UNIQLO, MUJI and Daiso 12:30, car-free 14:00.
 
