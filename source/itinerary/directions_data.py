@@ -1005,3 +1005,23 @@ GO[25] += [
   maps('175 DENO Tantanmen GINZa'),
  ]),
 ]
+
+# 25 Oct 11:45: exact Google places on the directions links for the new stops.
+_DPID = {
+ 'Ginza Bairin Honten': 'ChIJt4oOwIeLGGARaR5a7m3ihng', 'Marronnier Gate Ginza 2': 'ChIJX0R9rOWLGGARiepv0NuNZMU', 'MUJI Ginza': 'ChIJETtW9DSLGGAR7kRzP09mFkE',
+ '2-5-22 Okubo, Shinjuku City, Tokyo 169-0072': 'ChIJHYkcy-ONGGAR0oLnccAtVOg', '2-5-22 Okubo Shinjuku Tokyo': 'ChIJHYkcy-ONGGAR0oLnccAtVOg',
+ 'Ginza Rosokuya': 'ChIJnwHZJOSLGGAR3ShaavrtBBk', '175 DENO Tantanmen GINZa': 'ChIJMU5wEuSLGGARnfEFZbwVvOg', 'KITTE Marunouchi': 'ChIJdUbpSvqLGGARCmbc6R7hZJ8',
+ 'KAMA-ASA Kappabashi': 'ChIJExS-5JWOGGAR517q04djH-4', 'Dengama Kappabashi': 'ChIJoTtGg76OGGARY_PxYBgyqGM', 'Hills House Sky Room Cafe Azabudai Hills': 'ChIJF1iB3MKLGGARZmEBNQ1C8zw',
+ 'Buasai Ginza': 'ChIJP3R93imLGGARi9w8YWI__UA', 'YURAGI Ginza': 'ChIJcQQpt2CLGGARF3OAlQ3HfLQ', 'Head Spa ZEN Ginza': 'ChIJdf6UuwuLGGARedICmyxbaUA',
+ 'Yurakucho Sanchoku Inshokugai': None,
+}
+for _d in (25, 26):
+    for _k, (_t, _steps) in enumerate(GO.get(_d, [])):
+        _new = []
+        for _st in _steps:
+            for _q2, _pid in _DPID.items():
+                _enc = 'destination=' + __import__('urllib.parse').parse.quote_plus(_q2) + '&'
+                if _pid and _enc in _st and 'destination_place_id' not in _st:
+                    _st = _st.replace(_enc, _enc + 'destination_place_id=' + _pid + '&')
+            _new.append(_st)
+        GO[_d][_k] = (_t, _new)

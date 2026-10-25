@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 11:45
+- Cards for Ginza Bairin, UNIQLO TOKYO, MUJI Ginza, Daiso, Marronnier Gate, Shinjuku Sumo Club, Rōsokuya, 175 DENO, KITTE, Dean & DeLuca, the Kappabashi shops, Tonton, Sky Room and the Ginza massage places now open the exact Google Maps place. Hours checked against Google: Bairin closes 20:00, Tonton weekends 12:00 to 22:00, Sky Room viewing area ¥500 plus a drink. Directions links on Sun 25 and Mon 26 point to the exact places too.
+
 ## Sun 25 Oct 11:40
 - New place cards so specific places link to their own card instead of the area: Dean & DeLuca, Ginza Bairin, UNIQLO TOKYO, Daiso Ginza, MUJI Ginza, Marronnier Gate Ginza 2, Shinjuku Sumo Club, Ginza Rōsokuya, 175 DENO Tantanmen, Mori JP Tower, Yakitori Tonton, Kama-asa, Kamata Hakensha, Dengama, Ganso. "Hibiya line" and "Marunouchi line" no longer link to Hibiya or Marunouchi.
 - How-tos: 17 laundry marked not needed, 23 Daikoku marked no longer fits, new 32 Ginza to the Shinjuku Sumo Club and back.

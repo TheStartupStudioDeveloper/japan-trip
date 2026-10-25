@@ -945,3 +945,30 @@ P('dengama', ['Dengama'], 'Dengama', '田窯',
 P('ganso', ['Ganso food samples', 'Ganso'], 'Ganso Shokuhin Sample-ya', '元祖食品サンプル屋',
   'The fake food shop: the plastic sushi, ramen and parfaits you see in restaurant windows, sold as magnets, keyrings and full-size replicas.',
   'About 10:00 to 17:30. Good small gifts.', 'Ganso Shokuhin Sample-ya Kappabashi')
+
+# 25 Oct 11:45: exact Google place ids, and hours corrected from Google.
+PIDS = {
+ 'bairin': 'ChIJt4oOwIeLGGARaR5a7m3ihng', 'uniqlo-tokyo': 'ChIJX0R9rOWLGGARiepv0NuNZMU', 'marronnier': 'ChIJX0R9rOWLGGARiepv0NuNZMU',
+ 'daiso-ginza': 'ChIJPeYFtk2LGGAR5mfu1NISoAY', 'muji-ginza': 'ChIJETtW9DSLGGAR7kRzP09mFkE', 'shinjuku-sumo': 'ChIJHYkcy-ONGGAR0oLnccAtVOg',
+ 'rosokuya': 'ChIJnwHZJOSLGGAR3ShaavrtBBk', 'deno': 'ChIJMU5wEuSLGGARnfEFZbwVvOg', 'kitte': 'ChIJdUbpSvqLGGARCmbc6R7hZJ8',
+ 'dean-deluca': 'ChIJMf7kSPiLGGARwIv5ehQzZZE', 'kama-asa': 'ChIJExS-5JWOGGAR517q04djH-4', 'kamata': 'ChIJGf4KAb6OGGARjclSdbpCst0',
+ 'dengama': 'ChIJoTtGg76OGGARY_PxYBgyqGM', 'ganso': 'ChIJXfrPw5WOGGARtaWpQ0neL7U', 'tonton': 'ChIJz-uduu-LGGARmiJ9qVRATAE',
+ 'skyroom': 'ChIJF1iB3MKLGGARZmEBNQ1C8zw', 'buasai': 'ChIJP3R93imLGGARi9w8YWI__UA', 'yuragi': 'ChIJcQQpt2CLGGARF3OAlQ3HfLQ',
+ 'headspa-zen': 'ChIJdf6UuwuLGGARedICmyxbaUA',
+}
+FIX = {
+ 'bairin': dict(t='Daily 11:30 to 20:00. No bookings, expect a queue of up to 30 minutes at peak. About ¥1,200 to ¥5,000. Cards accepted. The kurobuta (black pork) loin is the one reviewers rave about.', w='Ginza\'s oldest tonkatsu house, open since 1927, in the basement at Ginza 7-8-1. Crisp, cooked-to-order cutlets with rice, cabbage and miso soup, a good katsudon, and a hirekatsu (fillet) sando you can also take away.'),
+ 'uniqlo-tokyo': dict(t='Floors 1 to 4 of Marronnier Gate Ginza 2. Daily 11:00 to 21:00. Tax-free with passport. GU is on 5F, Daiso on 6F.'),
+ 'daiso-ginza': dict(t='6F, Marronnier Gate Ginza 2. Daily 11:00 to 21:00. One self-checkout for all three shops. Most items ¥110, THREEPPY ¥330.'),
+ 'muji-ginza': dict(t='Ginza 3-3-5. Daily 11:00 to 21:00. Tax-free with passport. MUJI Diner is in the basement.'),
+ 'marronnier': dict(t='Ginza 3-2-1. Daily 11:00 to 21:00. Floors: B1 to B2 OK supermarket, 1 to 4 UNIQLO TOKYO, 5 GU, 6 Daiso, Standard Products and THREEPPY, 7 Kura Sushi and Musashino Mori Coffee.'),
+ 'tonton': dict(t='Sat and Sun 12:00 to 22:00, weekdays 13:30 to 22:45. Skewers from about ¥200. English menu. Walk-in. Cash. Smoky, so they hand out bags for your things.'),
+ 'skyroom': dict(t='Daily 09:00 to 21:00. No bookings. The 33F viewing area costs ¥500 each plus a drink. It sometimes closes for private events, so check on the day.'),
+ 'kama-asa': dict(t='Daily 11:00 to 17:30 (Fridays to 16:30). Take a queue ticket; English-speaking staff. Free engraving. Knives go in checked bags only.'),
+ 'kamata': dict(t='Daily 10:00 to 18:00. Free engraving, tax-free on the spot.'),
+ 'dengama': dict(t='Daily 10:00 to 18:00; the upstairs teaware floor closes about 15:00. They wrap well for flying and do the tax refund at the till.'),
+ 'ganso': dict(t='Daily 10:00 to 17:30. Also runs a make-your-own fake food workshop.'),
+}
+for _p in PLACES:
+    if _p['key'] in PIDS: _p['g'] = PIDS[_p['key']]
+    if _p['key'] in FIX: _p.update(FIX[_p['key']])

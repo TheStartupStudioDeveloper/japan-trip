@@ -981,3 +981,9 @@ HOWTO.append(('Ginza to the Shinjuku Sumo Club and back, Sun 25', [
 for _i, _x in enumerate(D[25]['rows']):
     if _x[1].startswith('Shinjuku Sumo Club') and 'How-to 32' not in _x[2]:
         D[25]['rows'][_i] = R(_x[0], _x[1], _x[2] + ' Getting there and back: How-to 32.', *_x[3:])
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith('Lunch: Ginza Bairin'):
+        D[25]['rows'][_i] = R(_x[0], _x[1], 'Ginza\'s oldest tonkatsu house, since 1927, in the basement at Ginza 7-8-1. Kurobuta (black pork) loin is the order. Daily 11:30 to 20:00, no bookings, queues up to 30 minutes at peak. Cards accepted.', *_x[3:])
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Sky Room Café'):
+        D[26]['rows'][_i] = R(_x[0], _x[1], 'Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. The 33F viewing area is ¥500 each plus a drink. Zōjō-ji, the temple below the tower, is 10 minutes\' walk if you want it.', *_x[3:])

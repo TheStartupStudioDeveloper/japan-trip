@@ -282,6 +282,10 @@ out = out.replace(a, '<a class="pri" id="sh-p" target="_blank" rel="noopener">Ph
 b = "document.getElementById('sh-m').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(d.m);"
 assert b in out
 out = out.replace(b, "document.getElementById('sh-m').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent((d.l?d.l+' ':'')+d.m);" + "var gg=(window.__JTG||{})[b.dataset.p];document.getElementById('sh-a').href='https://maps.apple.com/?q='+encodeURIComponent(d.l||d.n)+(gg?'&sll='+gg[0]+','+gg[1]+'&z=17':'');", 1)
+# 25 Oct: exact Google place for cards that have a place id (g)
+_pg = "encodeURIComponent((d.l?d.l+' ':'')+d.m);var gg"
+assert _pg in out
+out = out.replace(_pg, "encodeURIComponent((d.l?d.l+' ':'')+d.m)+(d.g?'&query_place_id='+d.g:'');var gg", 1)
 c = 'function shut(){sheet.hidden=true;'
 assert c in out
 out = out.replace(c, 'window.__JTP=P;' + c, 1)

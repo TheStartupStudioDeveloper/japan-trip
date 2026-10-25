@@ -550,7 +550,7 @@ _pieces.append(out[_end:_ts]); seg, c = _link(out[_ts:_cs], None); _pieces.appen
 _pieces.append(out[_cs:]); out = ''.join(_pieces)
 exec(open('summary_section.py', encoding='utf-8').read())
 exec(open('howto_links.py', encoding='utf-8').read())
-_data = {p['key']: dict(n=p['n'], l=p['l'], w=p['w'], t=p['t'], m=p['m']) for p in PLACES}
+_data = {p['key']: dict(n=p['n'], l=p['l'], w=p['w'], t=p['t'], m=p['m'], **({'g': p['g']} if p.get('g') else {})) for p in PLACES}
 out = out.replace('/*PLACES*/', _json.dumps(_data, ensure_ascii=False))
 print('place links:', _n, 'cards:', len(PLACES))
 assert '—' not in out and '--' not in out.split('</style>')[1].split('<script>')[0].replace('<!--', '').replace('-->', '')
