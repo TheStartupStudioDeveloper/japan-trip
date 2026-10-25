@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Sun 25 Oct 12:31
+- Tokyo Station façade, KITTE and the walk done. Bairin lunch 12:30 (queueing). Afternoon combined: MUJI together 13:30, car-free Ginza and free shopping 14:15 (UNIQLO TOKYO, Daiso, Itoya, Matsuya, Mitsukoshi, Ginza Six), rooftops dropped, hotel rest and change 15:45, leave for the sumo 16:30.
+
 ## Sun 25 Oct 11:45
 - Cards for Ginza Bairin, UNIQLO TOKYO, MUJI Ginza, Daiso, Marronnier Gate, Shinjuku Sumo Club, Rōsokuya, 175 DENO, KITTE, Dean & DeLuca, the Kappabashi shops, Tonton, Sky Room and the Ginza massage places now open the exact Google Maps place. Hours checked against Google: Bairin closes 20:00, Tonton weekends 12:00 to 22:00, Sky Room viewing area ¥500 plus a drink. Directions links on Sun 25 and Mon 26 point to the exact places too.
 

@@ -1025,3 +1025,28 @@ for _d in (25, 26):
                     _st = _st.replace(_enc, _enc + 'destination_place_id=' + _pid + '&')
             _new.append(_st)
         GO[_d][_k] = (_t, _new)
+
+# 25 Oct 12:31: afternoon combined.
+GO[25] = [g for g in GO[25] if not g[0].startswith(('MUJI, UNIQLO', 'Ginza car-free', 'Department stores', 'Rooftop gardens', 'Marunouchi line from Ginza to Shinjuku'))]
+GO[25] += [
+ ('MUJI Ginza, together', [
+  'From Bairin, north up Chūō-dōri (car-free) to the 3-chōme block, then left onto Marronnier-dōri. About 8 minutes. MUJI is the building at Ginza 3-3-5.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=MUJI+Ginza&destination_place_id=ChIJETtW9DSLGGAR7kRzP09mFkE&travelmode=walking https://maps.apple.com/?daddr=MUJI+Ginza&dirflg=w',
+ ]),
+ ('Ginza car-free and free shopping', [
+  'UNIQLO TOKYO (floors 1 to 4) and Daiso (6F) are next door in Marronnier Gate Ginza 2.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=Marronnier+Gate+Ginza+2&destination_place_id=ChIJX0R9rOWLGGARiepv0NuNZMU&travelmode=walking https://maps.apple.com/?daddr=Marronnier+Gate+Ginza+2&dirflg=w',
+  'Then south down Chūō-dōri: Itoya (stationery, 2-chōme), Matsuya (3-chōme), Mitsukoshi and the Wakō clock at the 4-chōme crossing, Ginza Six (6-chōme).',
+  maps('Ginza 4-chome Crossing'),
+ ]),
+ ('Back to the hotel, rest and change', [
+  'From the 4-chōme crossing, south-west along Harumi-dōri or Chūō-dōri towards Hibiya and Shimbashi, about 10 minutes.',
+  maps(HOTEL_T),
+ ]),
+ ('Leave the hotel, Marunouchi line', [
+  'Walk to Ginza station, about 10 minutes, and follow the red 丸ノ内線 (Marunouchi line) signs. Platform toward 新宿・荻窪 (Shinjuku, Ogikubo).',
+  'Off at 新宿三丁目 (Shinjuku-sanchōme), about 17 minutes. Exit B5 or E1, then north up Meiji-dōri past Kabukichō, about 15 minutes.',
+  'Or a taxi from the exit: 新宿区大久保2-5-22 SEKISAKU ビル 2階まで, about 5 minutes. Or straight from the hotel, about 25 minutes, about ¥3,500.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=2-5-22+Okubo+Shinjuku+Tokyo&destination_place_id=ChIJHYkcy-ONGGAR0oLnccAtVOg&travelmode=transit https://maps.apple.com/?daddr=2-5-22+Okubo+Shinjuku+Tokyo&dirflg=r',
+ ]),
+]

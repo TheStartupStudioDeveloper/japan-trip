@@ -987,3 +987,16 @@ for _i, _x in enumerate(D[25]['rows']):
 for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Sky Room Café'):
         D[26]['rows'][_i] = R(_x[0], _x[1], 'Coffee with Tokyo Tower right alongside. Open 09:00 to 21:00, no bookings. The 33F viewing area is ¥500 each plus a drink. Zōjō-ji, the temple below the tower, is 10 minutes\' walk if you want it.', *_x[3:])
+
+# Sun 25 12:31: in the Bairin queue. Afternoon combined: MUJI together, then car-free Ginza with free shopping, no rooftops, hotel rest before the sumo.
+for _i, _x in enumerate(D[25]['rows']):
+    if _x[1].startswith(('Tokyo Station, Marunouchi façade', 'KITTE', 'Walk to Ginza 7-chōme')): D[25]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+    if _x[1].startswith('Lunch: Ginza Bairin'): D[25]['rows'][_i] = R('12:30', *_x[1:])
+D[25]['rows'] = [x for x in D[25]['rows'] if not x[1].startswith(('MUJI, UNIQLO', 'Ginza car-free', 'Department stores', 'Rooftop gardens', 'Marunouchi line from Ginza to Shinjuku'))] + [
+ R('13:30', 'MUJI Ginza, together', 'Ginza 3-3-5, a few minutes north. Six floors: clothes, homewares, stationery and food. Passports for tax-free.'),
+ R('14:15', 'Ginza car-free and free shopping', 'Chūō-dōri is pedestrian only until 17:00. Split up or stay together: UNIQLO TOKYO and Daiso (6F) in Marronnier Gate Ginza 2 next to MUJI, then down Chūō-dōri for Itoya stationery, Matsuya, Mitsukoshi at the 4-chōme crossing and Ginza Six. Passports for tax-free.'),
+ R('15:45', 'Back to the hotel, rest and change', 'About 10 minutes\' walk south from the 4-chōme crossing. Drop the shopping, put your feet up.'),
+ R('16:30', 'Leave the hotel, Marunouchi line to Shinjuku-sanchōme', 'Walk to Ginza station, about 10 minutes. Marunouchi line toward 新宿・荻窪, about 17 minutes. Then about 15 minutes on foot north, or a taxi from the exit if it is raining. Aim to arrive by 17:15. How-to 32.'),
+]
+D[25]['rows'].sort(key=lambda x: x[0])
+D[25]['foot'] = 'Rain expected in the afternoon: car-free Ginza first, then into the stores when it comes, and back to the hotel before the sumo.'
