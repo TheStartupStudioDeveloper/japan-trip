@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:05
+- Day bar highlight follows the day on screen (solid black). Today keeps a thin outline when you are looking at another day.
+
 ## Mon 26 Oct 12:00
 - Day bar taps now jump by script: straight to the day just under the bar, re-checked while maps and images load, and stop if you touch or scroll.
 

@@ -371,5 +371,19 @@ _nj = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)re
        "go(a.getAttribute('href').slice(1));try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(x){}},true);})();</script>")
 if 'nav.addEventListener(\'click\'' not in out:
     out = out.replace('</body>', _nj + '</body>', 1)
+# 26 Oct: day bar highlight follows the day on screen. Black = the day you are looking at; today keeps a thin outline when you are elsewhere.
+_spy_css = ('nav.nav a.today{background:none;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}nav.nav a.today small{color:var(--mute)}'
+            'nav.nav a.cur{background:var(--ink)!important;color:var(--paper)!important;box-shadow:none}nav.nav a.cur small{color:var(--paper)!important}')
+_spy = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^=\"#\"]'));"
+        "var items=links.map(function(a){return {a:a,el:document.getElementById(a.getAttribute('href').slice(1))}}).filter(function(x){return x.el});"
+        "var last=null,t=null;function upd(){t=null;var lim=nav.getBoundingClientRect().bottom+40,cur=null;"
+        "var best=-1e9;items.forEach(function(x){var tp=x.el.getBoundingClientRect().top;if(tp<=lim&&tp>best){best=tp;cur=x}});"
+        "if(cur&&cur.el.getBoundingClientRect().bottom<nav.getBoundingClientRect().bottom)cur=null;"
+        "var a=cur?cur.a:null;if(a===last)return;if(last)last.classList.remove('cur');if(a){a.classList.add('cur');"
+        "var r=a.getBoundingClientRect(),w=nav.querySelector('div')||nav;if(r.left<0||r.right>innerWidth){try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}}}last=a}"
+        "addEventListener('scroll',function(){if(!t)t=setTimeout(upd,80)},{passive:true});addEventListener('load',upd);upd();})();</script>")
+if 'nav.nav a.cur' not in out:
+    out = out.replace('</style>', _spy_css + '</style>', 1)
+    out = out.replace('</body>', _spy + '</body>', 1)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))
