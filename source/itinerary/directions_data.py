@@ -1222,3 +1222,39 @@ GO[29] += [
   'For Temple Street show: 佐敦 廟街 (Temple Street, Jordan). For the hotel: 尖沙咀 喜來登酒店. Through the tunnel, about 25 to 30 minutes.',
  ]),
 ]
+
+# Mon 26 evening: Hong Kong detail pass. Directions for the named meals.
+GO[27] += [
+ ('Dinner in Tsim Sha Tsui', [
+  'Mak Man Kee (麥文記麵家), 51 Parkes Street, Jordan: about 15 minutes north up Nathan Road, or MTR one stop to Jordan (佐敦), exit C2. Cash.',
+  maps('Mak Man Kee Noodle Shop 51 Parkes Street Jordan'),
+  'Hutong (胡同), 18/F H Zentre, 15 Middle Road: three minutes east of the hotel. Book first.',
+  maps('Hutong H Zentre 15 Middle Road Tsim Sha Tsui'),
+  'Sky Lounge: top floor of the Sheraton, the lifts in the hotel lobby.',
+ ]),
+]
+GO[28] += [
+ ('Big dinner in Central or SoHo', [
+  'Taxi from the hotel through the Cross-Harbour Tunnel, about 15 to 20 minutes. Or MTR from Tsim Sha Tsui (尖沙咀), Tsuen Wan line, two stops to Central (中環).',
+  'Ho Lee Fook, 3-5 Elgin Street, SoHo: taxi show 中環 伊利近街3號. From Central MTR, the Mid-Levels escalator up to Elgin Street, about 10 minutes.',
+  maps('Ho Lee Fook 3-5 Elgin Street Central'),
+  'Mott 32, basement of the Standard Chartered Bank Building, 4-4A Des Voeux Road Central: Central MTR exit K, about 3 minutes.',
+  maps('Mott 32 Standard Chartered Bank Building Des Voeux Road Central'),
+  'Man Wah, 25/F Mandarin Oriental, 5 Connaught Road Central: Central MTR exit F, about 3 minutes, lifts to 25.',
+  maps('Man Wah Mandarin Oriental Hong Kong'),
+ ]),
+]
+GO[30] += [
+ ('Yum cha lunch', [
+  'Celestial Court: 2/F of the Sheraton, in the hotel.',
+  'Spring Moon: 1/F, The Peninsula, on Salisbury Road, about 5 to 10 minutes west of the hotel.',
+  maps('Spring Moon The Peninsula Hong Kong'),
+  'Maxim\'s Palace: 2/F, City Hall Low Block, Central. Star Ferry to Central Pier 7, then about 5 minutes east along the waterfront.',
+  maps('Maxims Palace City Hall Central'),
+ ]),
+ ('Dinner', [
+  'Lei Garden, Shop 2068-70, 2/F Water Zone, Elements: down from Ozone in the ICC lifts to the mall, then follow the Water Zone signs.',
+  maps('Lei Garden Elements Water Zone'),
+  'Back to the hotel from Elements: taxi from the Elements taxi stand, about 10 minutes. Show 尖沙咀 喜來登酒店.',
+ ]),
+]
