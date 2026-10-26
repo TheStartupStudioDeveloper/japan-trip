@@ -2,26 +2,26 @@
  "d": 29,
  "dow": "Thursday",
  "where": "",
- "title": "Ngong Ping cable car, Big Buddha, then the city",
- "cal": "Big Buddha, city",
- "summary": "Out to Lantau for the first cable car, back to the Island for lunch and the Sheung Wan shops, a rest at the hotel, then Temple Street at night.",
+ "title": "Lantau in the morning, the Peak at sunset",
+ "cal": "Big Buddha, the Peak",
+ "summary": "Out to Lantau for the first cable car, lunch in Central, then the Peak for sunset and Temple Street at night. Check the wind at breakfast: if the cable car is not running, switch to the backup below.",
  "rows": [
   {
    "time": "08:00",
-   "what": "Lounge breakfast",
-   "detail": "",
+   "what": "Lounge breakfast, go or no-go check",
+   "detail": "Hong Kong Observatory warnings and wind, and the Ngong Ping 360 service status on np360.com.hk. Suspended or a reduced service: switch to the backup below.",
    "status": ""
   },
   {
    "time": "08:45",
    "what": "Train to Tung Chung",
-   "detail": "About 50 minutes, one change.",
+   "detail": "About 50 minutes, one change at Lai King (How-to 20).",
    "status": ""
   },
   {
    "time": "10:00",
-   "what": "Ngong Ping 360 cable car up",
-   "detail": "Crystal cabin, Klook voucher (How-to 20). First car, shortest queues. 25 minutes.",
+   "what": "Ngong Ping 360 Crystal cabin up",
+   "detail": "Klook voucher, valid any day to 31 October (How-to 20). First car, shortest queues. 25 minutes.",
    "status": "to book"
   },
   {
@@ -38,44 +38,38 @@
   },
   {
    "time": "13:20",
-   "what": "Train to Hong Kong Station, Central",
-   "detail": "About 30 minutes.",
+   "what": "Tung Chung line to Hong Kong Station",
+   "detail": "About 30 minutes, direct. Hong Kong Station joins Central underground.",
    "status": ""
   },
   {
    "time": "14:00",
-   "what": "Lunch in Central or Sheung Wan",
-   "detail": "Yum cha is Friday's lunch, so eat whatever appeals here.",
+   "what": "Lunch in Central",
+   "detail": "Roast goose at Yat Lok on Stanley Street is about ten minutes' walk. Yum cha is Friday's lunch.",
    "status": ""
   },
   {
-   "time": "15:00",
-   "what": "Sheung Wan shops",
-   "detail": "Hollywood Road, Cat Street antiques, vintage and resale. Don't forget Man Mo Temple, on Hollywood Road as you pass. Ten minutes inside.",
+   "time": "15:45",
+   "what": "Peak Tram up",
+   "detail": "Standard one-way ticket, prebooked. Garden Road lower terminus, about 15 minutes' walk from lunch. Sit on the right going up, then Lugard Road for the best free view (How-to 19).",
+   "status": "to book"
+  },
+  {
+   "time": "17:50",
+   "what": "Sunset at the Peak",
+   "detail": "Stay while the city lights come on.",
    "status": ""
   },
   {
-   "time": "16:15",
-   "what": "Egg tart and coffee stop",
-   "detail": "",
-   "status": ""
-  },
-  {
-   "time": "17:00",
-   "what": "Star Ferry from Central to Tsim Sha Tsui",
-   "detail": "On the water close to sunset, about 17:50.",
-   "status": ""
-  },
-  {
-   "time": "18:15",
-   "what": "Optional: Ozone at the Ritz-Carlton",
-   "detail": "Friday is the plan. If you go tonight instead: quick change first, short taxi to ICC, and Friday evening is free.",
+   "time": "18:45",
+   "what": "Taxi down",
+   "detail": "From the rank by the Peak Galleria. Show 佐敦 廟街 (Temple Street, Jordan), or 尖沙咀 喜來登酒店 for the hotel. Tram seats face backwards going down.",
    "status": ""
   },
   {
    "time": "19:30",
    "what": "Temple Street dinner and night market",
-   "detail": "Claypot rice or street-side seafood, then browse the stalls. A 15 minute walk from the hotel.",
+   "detail": "Order the claypot rice first, it takes 20 minutes, then browse the stalls. A 15 minute walk from the hotel.",
    "status": ""
   },
   {
