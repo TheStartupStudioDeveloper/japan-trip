@@ -1049,3 +1049,20 @@ for _x in D[26]['rows']:
     _rr.append(_x)
 _rr.append(R('17:55', 'Book nook kit at HANDS Ginza', 'Floors 5 to 9 of Marronnier Gate Ginza 1, next to the UNIQLO and MUJI block. The hobby and craft floor has the miniature book nook kits. Ask: ブックヌックのキットはありますか？ (Book nook no kitto wa arimasu ka?) Tax-free on 9F with passports. Then 10 minutes to the hotel to drop the shopping.'))
 D[26]['rows'] = sorted(_rr, key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Mon 26 11:12: shorter day. Skytree from the street only, Forum dropped, dinner at Chen Jia Xu Cai under the tracks, then back early to pack and watch Godzilla.
+D[26]['title'] = 'teamLab, Kappabashi, Sensō-ji, mapo tofu under the tracks, early night'
+D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi and Sensō-ji, a look at the Skytree from the street, a book nook kit at HANDS, then mapo tofu under the tracks and back early to pack and watch Godzilla.'
+_keep = ('Leave the Blossom', 'teamLab Borderless', 'Sky Room Café', 'Hibiya line, then the Ginza line to Tawaramachi', 'Kappabashi kitchenware street', 'Lunch in Asakusa', 'Sensō-ji')
+D[26]['rows'] = [x for x in D[26]['rows'] if x[1].startswith(_keep)] + [
+ R('15:30', 'Skytree from the street', 'Three minutes east of Kaminarimon to Azuma-bashi bridge (吾妻橋) for the Skytree across the river, with the golden Asahi flame. No deck, no terrace, just the view.'),
+ R('15:45', 'Ginza line back to Ginza', 'Asakusa to Ginza, about 18 minutes, direct. Exit towards Marronnier-dōri.'),
+ R('16:10', 'Book nook kit at HANDS Ginza', 'Floors 5 to 9 of Marronnier Gate Ginza 1, next to the UNIQLO and MUJI block. The hobby and craft floor has the miniature book nook kits. Ask: ブックヌックのキットはありますか？ (Book nook no kitto wa arimasu ka?) Tax-free on 9F with passports.'),
+ R('16:50', 'Back to the hotel, AirPod at the desk, start packing', 'About 10 minutes\' walk. Ask at the desk: 京都のホテルから荷物が届いていますか？ If it has not come, ask them to forward it.'),
+ R('18:00', 'Walk through Hibiya OKUROJI to dinner', 'In through the arches at the hotel end and north through the arcade towards Yūrakuchō, about 15 minutes. Covered all the way.'),
+ R('18:20', 'Dinner: mapo tofu at Chen Jia Xu Cai', 'Sichuan under the JR tracks at the Tokyo Station end of Yūrakuchō. The handmade mapo tofu is the famous dish; tantanmen and Sichuan noodles too, spice level your choice. Open 17:30 to 23:00. Rōsokuya is closed Mondays.'),
+ R('19:30', 'Back to the hotel: pack, Godzilla, early night', 'About 15 minutes\' walk, or the JR one stop Yūrakuchō to Shimbashi. Bags ready tonight for the 06:22 start. Set two alarms.'),
+]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Sensō-ji'): D[26]['rows'][_i] = R('14:30', _x[1], 'A few minutes from lunch. Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.', *_x[3:])

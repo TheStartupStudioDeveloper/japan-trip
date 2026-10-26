@@ -1101,3 +1101,30 @@ GO[26] += [
   maps(HOTEL_T),
  ]),
 ]
+
+# 26 Oct 11:12: shorter Monday.
+GO[26] = [g for g in GO[26] if g[0].startswith(('Leave the Blossom', 'Sky Room Café', 'Hibiya line, then the Ginza line to Tawaramachi', 'Kappabashi kitchenware street', 'Lunch in Asakusa', 'Sensō-ji', 'Ginza line back to Ginza', 'Book nook kit at HANDS Ginza'))]
+GO[26] += [
+ ('Skytree from the street', [
+  'From Kaminarimon, east along Kaminarimon-dōri to the river, about 3 minutes. Azuma-bashi bridge (吾妻橋) has the classic view: Skytree behind the Asahi building and its golden flame.',
+  'Back to Asakusa station: the Ginza line entrances are at the Kaminarimon end of Asakusa-dōri.',
+  maps('Azumabashi Bridge Asakusa'),
+ ]),
+ ('Back to the hotel, AirPod', [
+  'From HANDS, south-west along Sotobori-dōri towards Hibiya, about 10 minutes.',
+  maps(HOTEL_T),
+ ]),
+ ('Walk through Hibiya OKUROJI', [
+  'From the hotel, a few minutes east to the railway arches. The OKUROJI entrance is at the south end by Uchisaiwaichō.',
+  'Walk north through the arcade to the Yūrakuchō end, then keep going north along the tracks past Yūrakuchō station towards Tokyo Station, about 10 more minutes.',
+  maps('Hibiya OKUROJI'),
+ ]),
+ ('Dinner: mapo tofu at Chen Jia Xu Cai', [
+  'Under the tracks at Kajibashi (鍛冶橋高架下), between Yūrakuchō and Tokyo Station, on the Marunouchi side. Sign: 陳家私菜.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=ChenJiaXuCai+Yurakucho&destination_place_id=ChIJC2L9XvCLGGARhXyh90uUelg&travelmode=walking https://maps.apple.com/?daddr=ChenJiaXuCai+Yurakucho&dirflg=w',
+ ]),
+ ('Back to the hotel: pack', [
+  'Walk back south along the tracks, about 15 minutes, or JR Yamanote one stop from Yūrakuchō to Shimbashi (Hibiya exit), then 5 minutes.',
+  gmt(HOTEL_T),
+ ]),
+]

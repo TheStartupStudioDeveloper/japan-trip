@@ -986,3 +986,8 @@ P('hands-ginza', ['HANDS Ginza'], 'HANDS Ginza', 'ハンズ銀座',
   'Daily 11:00 to 21:00. Tax-free counter on 9F, passports needed. Ask: ブックヌックのキットはありますか？', 'HANDS Ginza Marronnier Gate')
 for _p in PLACES:
     if _p['key'] == 'hands-ginza': _p['g'] = 'ChIJyak5_-SLGGARvezBKVRicSA'
+P('chen', ['Chen Jia Xu Cai'], 'Chen Jia Xu Cai Yūrakuchō', '陳家私菜 有楽町店',
+  'A Sichuan restaurant built into the brick railway arches under the JR tracks (鍛冶橋高架下), at the Tokyo Station end of Yūrakuchō. Famous for its handmade mapo tofu, plus tantanmen and Sichuan noodles where you pick the spice level. Reviewers warn the heat is real.',
+  'Mon to Sat 11:30 to 15:00 and 17:30 to 23:00. About ¥1,200 to ¥2,500 a head.', 'ChenJiaXuCai Yurakucho')
+for _p in PLACES:
+    if _p['key'] == 'chen': _p['g'] = 'ChIJC2L9XvCLGGARhXyh90uUelg'
