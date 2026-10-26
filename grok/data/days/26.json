@@ -2,9 +2,9 @@
  "d": 26,
  "dow": "Monday",
  "where": "",
- "title": "teamLab, Tokyo Tower coffee, Kappabashi, Sensō-ji at dusk",
+ "title": "teamLab, Kappabashi, HANDS, yakitori under the tracks, early night",
  "cal": "teamLab, Asakusa",
- "summary": "teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi kitchen street while the shops are open, lunch in Asakusa, Sensō-ji and the Skytree at dusk, then yakitori under the train tracks.",
+ "summary": "teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi, a look at the Skytree from the street, a book nook kit at HANDS, the Forum, then yakitori and beers under the train tracks and back early to pack and watch Godzilla.",
  "rows": [
   {
    "time": "07:50",
@@ -37,57 +37,63 @@
    "status": ""
   },
   {
-   "time": "13:30",
-   "what": "Lunch in Asakusa",
-   "detail": "Ten minutes east on foot.",
+   "time": "12:45",
+   "what": "Ganso Food Sample Shop, fake food",
+   "detail": "The fake food you see in restaurant windows, at the north end of Kappabashi-dōri: sushi, ramen and parfait replicas as magnets, keyrings and full-size pieces. They also run a make-your-own workshop at set times; ask in store if there is a spot today (普通は予約が必要です: usually booked ahead). Open 10:00 to 17:30.",
    "status": ""
+  },
+  {
+   "time": "13:45",
+   "what": "Spicy udon at Marugame Seimen, Asakusa",
+   "detail": "Quick bite on the way to the bridge. Spicy options on the board: 肉辛まぜうどん (spicy beef mixed udon, ¥890) or 旨辛豚つけ汁うどん (spicy pork dipping udon, ¥990). Grab tempura from the counter as you slide along, pay at the end.",
+   "status": "done"
+  },
+  {
+   "time": "14:10",
+   "what": "Sensō-ji, quick photo stop",
+   "detail": "A short walk over from Marugame for a photo of the temple, then on to the bridge.",
+   "status": "done"
   },
   {
    "time": "14:30",
-   "what": "Sensō-ji, Kaminarimon, Nakamise street",
-   "detail": "Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.",
+   "what": "Skytree from the street",
+   "detail": "From Sensō-ji, back out through Kaminarimon and east about 3 minutes to Azuma-bashi bridge (吾妻橋) for the Skytree across the river, with the golden Asahi flame. Asakusa station is at the bridge end.",
    "status": ""
   },
   {
-   "time": "16:15",
-   "what": "Skytree views at dusk, no deck",
-   "detail": "The free 8F terrace of the tourist centre opposite Kaminarimon, then Azuma-bashi bridge for the Skytree across the river as it lights up.",
+   "time": "14:40",
+   "what": "Ginza line back to Ginza",
+   "detail": "Asakusa to Ginza, about 18 minutes, direct. Exit towards Marronnier-dōri.",
+   "status": "done"
+  },
+  {
+   "time": "15:05",
+   "what": "Book nook kit at HANDS Ginza",
+   "detail": "Floors 5 to 9 of Marronnier Gate Ginza 1. The hobby and craft floor has the miniature book nook kits. Ask: ブックヌックのキットはありますか？ Tax-free on 9F with passports. About 30 to 40 minutes.",
+   "status": "done"
+  },
+  {
+   "time": "15:45",
+   "what": "Tokyo International Forum glass hall",
+   "detail": "Three minutes from HANDS, across the JR tracks at Yūrakuchō. The boat-shaped glass atrium by Rafael Viñoly. Lift to 7F and walk down the ramps. Free, about 20 minutes.",
    "status": ""
   },
   {
-   "time": "17:30",
-   "what": "Ginza line back to Shimbashi",
-   "detail": "Asakusa to Shimbashi, about 20 minutes. Drop the shopping at the hotel.",
-   "status": ""
+   "time": "16:10",
+   "what": "Walked the lanes under the tracks back to the hotel",
+   "detail": "A look at the Yūrakuchō lanes and OKUROJI on the way back; dinner there later.",
+   "status": "done"
   },
   {
-   "time": "17:50",
-   "what": "AirPod at the front desk",
-   "detail": "The Kyoto hotel's parcel is now due today. Ask when dropping the shopping: 京都のホテルから荷物が届いていますか？ If it has not come, ask them to hold it or forward it before the Tuesday 06:22 start.",
+   "time": "16:40",
+   "what": "Back at the hotel: book the taxi, AirPod, rest",
+   "detail": "At the desk: 明日の朝6時40分に羽田空港第3ターミナルまでタクシーを予約できますか？定額運賃でお願いします。 And: 京都のホテルから荷物が届いていますか？",
    "status": ""
   },
   {
    "time": "18:30",
-   "what": "Hibiya OKUROJI",
-   "detail": "The restored arcade inside the brick railway arches, by the hotel end. Walk it north towards Yūrakuchō, about 15 minutes. Covered, so good in the rain. Unafuji (the eel place) is in here.",
-   "status": ""
-  },
-  {
-   "time": "18:50",
-   "what": "Tokyo International Forum glass hall",
-   "detail": "Rafael Viñoly's boat-shaped glass atrium, lit up at night, on the walk to dinner. Free, about 20 minutes. Lift to 7F and walk down the ramps. Then two minutes to the Yūrakuchō lanes.",
-   "status": ""
-  },
-  {
-   "time": "19:15",
-   "what": "Dinner under the train tracks, Yūrakuchō",
-   "detail": "The Gādo-shita lanes under the JR tracks between Yūrakuchō and Shimbashi, five minutes from the hotel. Yakitori, pork skewers, motsu stew and cold beer, with the trains rumbling overhead. Start at Yakitori Tonton (the pork cheek skewer), then graze. No booking, mostly cash.",
-   "status": ""
-  },
-  {
-   "time": "Late",
-   "what": "Back to the hotel",
-   "detail": "Finish packing and settle the bill. Tomorrow is the 06:38 train (How-to 18).",
+   "what": "Dinner: yakitori and beers under the tracks",
+   "detail": "Back down to the lanes, a few minutes from the hotel: Yūrakuchō Sanchoku Inshokugai and Yakitori Tonton (open to 22:45), or the Shimbashi gādo-shita izakaya. Mostly cash, some cover charges. Then pack, Godzilla, early night. Set two alarms for 06:00.",
    "status": ""
   }
  ],
