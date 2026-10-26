@@ -398,7 +398,7 @@ _now_css = ('#jtnow{position:fixed;left:calc(24px + 2.6rem + 10px + env(safe-are
             'border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.18);cursor:pointer}'
             '#jtnow[hidden]{display:none}#jtnow svg{width:1.15rem;height:1.15rem}@media print{#jtnow{display:none}}')
 _now = ('<button type="button" id="jtnow" aria-label="Jump to now" title="Jump to now" hidden>'
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></button>'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></svg></button>'
         "<script>(function(){var n=new Date();if(n.getFullYear()!==2026||n.getMonth()!==9)return;var day=document.getElementById('d'+n.getDate());if(!day)return;"
         "window.__jtToday=true;try{if(location.hash)history.replaceState(null,'',location.pathname+location.search)}catch(e){}"
         "var nav=document.querySelector('nav.nav'),btn=document.getElementById('jtnow');btn.hidden=false;"
