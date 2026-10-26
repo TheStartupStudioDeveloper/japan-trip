@@ -1141,6 +1141,22 @@ GO[26] += [
  ]),
 ]
 GO[27] = [g for g in GO[27] if not g[0].startswith(('Leave the hotel, walk to Shimbashi', 'Airport Rapid Limited Express'))]
+# Mon 26 20:15: back to the train on Tue 27, taxi as backup
+GO[27] = [g for g in GO[27] if not g[0].startswith(('Taxi to Haneda',))]
+GO[27] = [
+ ('Check out, walk to Shimbashi', [
+  'East to Shimbashi Station, about 8 to 10 minutes with the bags. Follow the 都営浅草線 (Toei Asakusa line) signs and take the lifts (エレベーター) down.',
+  'Platform 1, toward 西馬込・羽田空港. Tap Suica.',
+  maps('Shimbashi Station Toei Asakusa Line'),
+ ]),
+ ('Train direct to Haneda Terminal 3', [
+  'Board the 06:38 エアポート快特 (Airport Rapid Limited Express). The board must say 羽田空港 (Haneda Airport).',
+  'Backups: 06:45 or 06:58 急行 (Express) to 羽田空港, also direct. Never a train for 西馬込 (Nishi-magome).',
+  'Get off at 羽田空港第3ターミナル (Haneda Terminal 3), the first airport stop. Lifts up to 3F departures.',
+  'Taxi backup from the hotel: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 About 25 to 30 minutes.',
+  gmt('Haneda Airport Terminal 3'),
+ ]),
+] + GO[27]
 GO[27] += [
  ('Taxi to Haneda Terminal 3', [
   'From the hotel entrance. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 Flat fare: 定額運賃で.',
@@ -1258,3 +1274,5 @@ GO[30] += [
   'Back to the hotel from Elements: taxi from the Elements taxi stand, about 10 minutes. Show 尖沙咀 喜來登酒店.',
  ]),
 ]
+
+GO[27] = [g for g in GO[27] if not g[0].startswith('Taxi to Haneda')]

@@ -4,24 +4,36 @@
  "where": "",
  "title": "Haneda to Hong Kong, harbour night",
  "cal": "Fly to Hong Kong",
- "summary": "An early taxi to Haneda with the bags, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights. No pool today, because the sun is nearly gone by check-in.",
+ "summary": "A relaxed early train to Haneda with the bags, ahead of the morning rush, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights. No pool today, because the sun is nearly gone by check-in.",
  "rows": [
   {
    "time": "06:00",
    "what": "Wake, shower, final pack",
-   "detail": "Bags packed the night before.",
+   "detail": "Bags packed and the bill settled the night before, so checkout is just handing over the keys.",
    "status": ""
   },
   {
-   "time": "06:40",
-   "what": "Taxi to Haneda Terminal 3",
-   "detail": "Booked through the front desk the night before. About 20 to 25 minutes at this hour. Ask for the flat fare (定額運賃): about ¥5,900 from Minato ward plus expressway tolls, so roughly ¥6,000 to ¥7,000. Card or Suica. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 Train backup: How-to 18.",
+   "time": "06:20",
+   "what": "Check out, walk to Shimbashi",
+   "detail": "About 8 to 10 minutes with the bags, east to Shimbashi Station. Follow the 都営浅草線 (Toei Asakusa line) signs and take the lifts (エレベーター) down. Platform 1, toward 西馬込・羽田空港. Tap Suica.",
    "status": ""
   },
   {
-   "time": "07:15",
+   "time": "06:38",
+   "what": "Train direct to Haneda Terminal 3",
+   "detail": "エアポート快特 (Airport Rapid Limited Express), the board must say 羽田空港. No changes. Off at 羽田空港第3ターミナル (Terminal 3), about 07:05. Roughly ¥550 each on Suica. Missed it? The 06:45 and 06:58 急行 (Express) are just as direct, about 07:17 and 07:30 at T3. All three beat the morning rush, which builds from about 07:30. Never board a train for 西馬込 (Nishi-magome). How-to 18.",
+   "status": ""
+  },
+  {
+   "time": "07:05",
+   "what": "Arrive Haneda Terminal 3",
+   "detail": "Lifts straight up to the 3F departures hall. Plenty of time: grab a coffee before the Cathay desks.",
+   "status": ""
+  },
+  {
+   "time": "07:20",
    "what": "Check in at the Cathay desks",
-   "detail": "Three hours before departure.",
+   "detail": "Departures 3F. Check the screens for the Cathay Pacific counter for CX543.",
    "status": ""
   },
   {
@@ -112,8 +124,8 @@
  "footnote": "",
  "notes": [
   [
-   "Train instead in Tokyo",
-   "The backup if the taxi has not shown by 06:50: walk to Shimbashi, Asakusa line platform 1, the 06:38 or 06:45 direct to Terminal 3 (How-to 18)."
+   "Taxi instead in Tokyo",
+   "If it is pouring, the bags are a pain, or anything looks wrong at the station: taxi from the hotel front desk or rank, about 25 to 30 minutes. Quoted about A$107. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 (Haneda Terminal 3, departures, please.)"
   ],
   [
    "Instead of the taxi in Hong Kong",
