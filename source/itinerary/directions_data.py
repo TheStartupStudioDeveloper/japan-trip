@@ -1145,21 +1145,21 @@ GO[27] = [g for g in GO[27] if not g[0].startswith(('Leave the hotel, walk to Sh
 GO[27] = [g for g in GO[27] if not g[0].startswith(('Taxi to Haneda',))]
 GO[27] = [
  ('Check out, walk to Shimbashi', [
-  'East to Shimbashi Station, about 8 to 10 minutes with the bags. Follow the 都営浅草線 (Toei Asakusa line) signs and take the lifts (エレベーター) down.',
-  'Platform 1, toward 西馬込・羽田空港. Tap Suica.',
+  'East to Shimbashi Station (新橋駅), about 8 to 10 minutes with the bags. Follow the 都営浅草線 (Toei Asakusa line) signs and take the lifts (エレベーター) down.',
+  'Platform 1, toward 西馬込・羽田空港 (Nishi-magome / Haneda Airport). Tap Suica.',
   maps('Shimbashi Station Toei Asakusa Line'),
  ]),
  ('Train direct to Haneda Terminal 3', [
   'Board the 06:38 エアポート快特 (Airport Rapid Limited Express). The board must say 羽田空港 (Haneda Airport).',
-  'Backups: 06:45 or 06:58 急行 (Express) to 羽田空港, also direct. Never a train for 西馬込 (Nishi-magome).',
+  'Backups: 06:45 or 06:58 急行 (Express) to 羽田空港 (Haneda Airport), also direct. Never a train for 西馬込 (Nishi-magome).',
   'Get off at 羽田空港第3ターミナル (Haneda Terminal 3), the first airport stop. Lifts up to 3F departures.',
-  'Taxi backup from the hotel: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 About 25 to 30 minutes.',
+  'Taxi backup from the hotel: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 (Haneda Airport Terminal 3, departures lobby, please.) About 25 to 30 minutes.',
   gmt('Haneda Airport Terminal 3'),
  ]),
 ] + GO[27]
 GO[27] += [
  ('Taxi to Haneda Terminal 3', [
-  'From the hotel entrance. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 Flat fare: 定額運賃で.',
+  'From the hotel entrance. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 (Haneda Airport Terminal 3, departures lobby, please.) Flat fare: 定額運賃で.',
   'Drop-off is at the 3F departures kerb. The Cathay Pacific desks are inside.',
   maps('Haneda Airport Terminal 3', 'driving', 'd'),
  ]),
