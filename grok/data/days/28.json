@@ -2,9 +2,9 @@
  "d": 28,
  "dow": "Wednesday",
  "where": "",
- "title": "Pool, Hong Kong Island and the Peak",
- "cal": "Pool, the Peak",
- "summary": "The main Island day and the main night out. Up the Peak early by tram, time at the top through sunset, taxi down.",
+ "title": "Central and Sheung Wan at street level, big night out",
+ "cal": "Central, big night",
+ "summary": "Plan B, set on Mon 26 from the wind forecast: the Peak moves to Thursday. A pool morning, then Central and Sheung Wan on foot, back to rest and change, and the big night out.",
  "rows": [
   {
    "time": "09:00",
@@ -14,44 +14,44 @@
   },
   {
    "time": "09:45",
-   "what": "Sheraton pool until about 13:00",
-   "detail": "Optional. This is the best block for sun. Read, tan, swim. Light lunch at the hotel.",
+   "what": "Sheraton pool, optional, until about 12:30",
+   "detail": "The best block for sun. Read, tan, swim.",
+   "status": ""
+  },
+  {
+   "time": "13:00",
+   "what": "Star Ferry to Central",
+   "detail": "From the pier beside the Clock Tower. Ten minutes across the harbour, Octopus at the gate.",
    "status": ""
   },
   {
    "time": "13:30",
-   "what": "Star Ferry to Central",
-   "detail": "Ten minutes across the harbour.",
-   "status": ""
-  },
-  {
-   "time": "14:00",
    "what": "Graham Street Market, Tai Kwun, PMQ, Mid-Levels escalator",
-   "detail": "The old street market first, then design and architecture, all within a few blocks.",
+   "detail": "The old street market first, then design and architecture, all within a few blocks. A quick bite on the way: Lan Fong Yuen milk tea and a pork chop bun, at the bottom of the market.",
    "status": ""
   },
   {
-   "time": "15:45",
-   "what": "Peak Tram up",
-   "detail": "Standard one-way ticket, prebooked. Sit on the right going up. Then Lugard Road for the best free view, and take your time at the top (How-to 19).",
-   "status": "to book"
-  },
-  {
-   "time": "17:50",
-   "what": "Sunset at the Peak",
-   "detail": "Stay while the city lights come on.",
+   "time": "15:30",
+   "what": "Sheung Wan: Hollywood Road, Cat Street, Man Mo Temple",
+   "detail": "West along Hollywood Road for antiques, vintage and resale. Cat Street is the lane just below. Man Mo Temple is on Hollywood Road: ten minutes inside.",
    "status": ""
   },
   {
-   "time": "18:45",
-   "what": "Taxi down",
-   "detail": "Tram seats face backwards on the way down, so skip it.",
+   "time": "16:30",
+   "what": "Egg tart and coffee",
+   "detail": "Tai Cheong Bakery, Lyndhurst Terrace, near the bottom of the escalator. Check the hours on the day.",
+   "status": ""
+  },
+  {
+   "time": "17:15",
+   "what": "Back to the hotel to rest and change",
+   "detail": "Star Ferry from Central Pier 7, on the water close to sunset (17:50).",
    "status": ""
   },
   {
    "time": "19:30",
-   "what": "Dinner in Central or SoHo",
-   "detail": "The big dinner of the trip. Book ahead.",
+   "what": "Big dinner in Central or SoHo",
+   "detail": "The big dinner of the trip. Book ahead. Short taxi through the tunnel, or the MTR two stops to Central.",
    "status": "to book"
   },
   {
@@ -70,8 +70,8 @@
  "footnote": "",
  "notes": [
   [
-   "Fast Track",
-   "Klook's Peak Tram Fast Track only runs Friday to Sunday. If the Peak moves to Friday 30, that is the ticket to buy."
+   "Tonight, about 20:00: weather recheck",
+   "Check the Observatory 9-day forecast and warnings for Thursday and Friday. If Thursday looks windy or cloudy and Friday calmer, switch to the backup (the box under Thursday). The Peak stays on Thursday either way."
   ]
  ]
 }
