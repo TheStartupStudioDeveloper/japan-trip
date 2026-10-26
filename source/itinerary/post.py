@@ -358,5 +358,18 @@ _tt_html = ('<button type="button" id="jttop" aria-label="Back to top" title="Ba
 if 'id="jttop"' not in out:
     out = out.replace('</style>', _tt_css + '</style>', 1)
     out = out.replace('</body>', _tt_html + '</body>', 1)
+# 26 Oct: day bar jumps done in script so they land on the right day on iPhone: instant jump under the bar,
+# then re-checked as maps and images load, and stopped as soon as you touch or scroll yourself.
+_nj = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)return;"
+       "function go(id){var el=document.getElementById(id);if(!el)return;var n=0,stop=false;"
+       "function off(){stop=true;removeEventListener('touchstart',off);removeEventListener('wheel',off)}"
+       "addEventListener('touchstart',off,{passive:true});addEventListener('wheel',off,{passive:true});"
+       "function fix(){if(stop)return;var y=el.getBoundingClientRect().top+window.pageYOffset-nav.getBoundingClientRect().height-6;"
+       "if(Math.abs(window.pageYOffset-y)>3)window.scrollTo({top:y,behavior:'instant'});if(++n<8)setTimeout(fix,n<3?120:300);else off()}fix();"
+       "try{history.replaceState(null,'','#'+id)}catch(e){}}"
+       "nav.addEventListener('click',function(e){var a=e.target.closest('a[href^=\"#\"]');if(!a)return;e.preventDefault();e.stopImmediatePropagation();"
+       "go(a.getAttribute('href').slice(1));try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(x){}},true);})();</script>")
+if 'nav.addEventListener(\'click\'' not in out:
+    out = out.replace('</body>', _nj + '</body>', 1)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))

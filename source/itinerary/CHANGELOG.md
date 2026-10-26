@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:00
+- Day bar taps now jump by script: straight to the day just under the bar, re-checked while maps and images load, and stop if you touch or scroll.
+
 ## Mon 26 Oct 11:45
 - Tue 27: taxi to Haneda T3 at 06:40 (flat fare, about ¥5,900 plus tolls), wake 06:00. Train kept as backup in How-to 18. Mon 26: book the taxi at the front desk at 17:00.
 
