@@ -1187,3 +1187,7 @@ GO[26] += [
   'To ask about the workshop: 今日、食品サンプル作り体験はできますか？ (Can we do the fake food workshop today?)',
  ]),
 ]
+# 26 Oct 13:25: exact pin for Azuma Bridge.
+for _k, (_t, _st) in enumerate(GO[26]):
+    if _t.startswith('Skytree from the street'):
+        GO[26][_k] = (_t, [x if 'Azumabashi+Bridge' not in x else 'Maps: https://www.google.com/maps/dir/?api=1&destination=Azuma+Bridge+Asakusa&destination_place_id=ChIJE_vaNPOPGGARyHuNN8Y_AsQ&travelmode=walking https://maps.apple.com/?daddr=35.710155,139.79885&q=Azuma+Bridge&dirflg=w' for x in _st])
