@@ -4,18 +4,18 @@
  "leg": "h",
  "where": "Haneda to Hong Kong",
  "title": "Fly to Hong Kong, harbour night",
- "icon": "part",
+ "icon": "rain",
  "hi": 29,
  "lo": 25,
- "rain": 30,
- "cond": "Sunny spells, a shower or two",
+ "rain": 60,
+ "cond": "Tokyo heavy rain early, Hong Kong cloudy",
  "sunset": "17:50",
- "call": "Better than last night. JMA's latest track slows Champi's remnant: it's west of Kyushu on Monday afternoon and only reaches the sea near the Izu Islands, well south of Tokyo, by 15:00 Tuesday, as a weak 1004 hPa low, after you've flown. tenki.jp has Tuesday cloudy then sunny, 40%. There may still be some rain early as it approaches, so umbrellas for the 06:22 walk to Shimbashi, and check CX543 on Monday evening. Hong Kong: sunny spells, a shower or two, 26 to 30°, fine for the harbour cruise.",
+ "call": "Tokyo is the watch. tenki.jp's forecaster has the low moving away on Tuesday, but with steady, locally heavy rain from dawn into the morning along the southern Kanto coast, which is where Haneda is, easing by midday. Now a taxi from the hotel at 06:40, so the rain matters less: allow a little extra time on the expressway, and check CX543 in the Cathay app on Monday night and Tuesday morning. Hong Kong: mainly cloudy, sunny periods later, 26 to 30°, breezy north-easterly, fine for the evening harbour cruise.",
  "plan": [
   [
-   "06:22",
-   "Walk to Shimbashi, Asakusa line",
-   "8 minutes with bags"
+   "06:40",
+   "Taxi to Haneda Terminal 3",
+   "Booked at the front desk"
   ],
   [
    "10:10",
@@ -31,7 +31,19 @@
  "src": [
   [
    "Combined",
-   "30% chance of rain in Hong Kong, Hong Kong Observatory and AccuWeather"
+   "60% chance of rain, tenki.jp weighted highest"
+  ],
+  [
+   "tenki.jp forecaster, Kanto (12:25 Sun)",
+   "Low moves away. Steady, locally heavy rain from dawn into the morning along the southern Kanto coast, Haneda included; easing by midday. Warning-level rain possible in Chiba and Kanagawa"
+  ],
+  [
+   "tenki.jp forecaster, typhoon (03:00 Sun)",
+   "Champi 992 hPa over the East China Sea, may land on Kyushu Mon 26, then extratropical, moving from off Shikoku to south of Honshu"
+  ],
+  [
+   "Hong Kong Observatory (official)",
+   "26° to 30°, mainly cloudy, a few light rain patches early, sunny periods later, east to north-east force 4, force 5 offshore later"
   ],
   [
    "tenki.jp forecaster, Kanto",
@@ -42,24 +54,16 @@
    "24° / 17°, a shower overnight, under 1 mm, then 30% and dry from 06:00 (20:00 Thu)"
   ],
   [
-   "Hong Kong Observatory (official)",
-   "26° to 30°, sunny spells, one or two showers, northeast force 4"
-  ],
-  [
    "AccuWeather, Hong Kong",
    "29° / 23°, mostly sunny"
-  ],
-  [
-   "Japan Meteorological Agency typhoon track (16:45 Fri)",
-   "Extratropical low near the Izu Islands at 15:00, 1004 hPa, moving east at 45 km/h"
   ]
  ],
  "mm": "Not forecast yet",
- "gicon": "part",
- "gfill": 30,
- "gtext": "30%",
+ "gicon": "rain",
+ "gfill": 60,
+ "gtext": "60%",
  "gmm": null,
- "read": "Cloudy, then sunny. Champi's weak remnant passes well south after you fly.",
+ "read": "Heavy rain at dawn in Tokyo: the 06:40 taxi takes care of it. Hong Kong cloudy, 30°.",
  "chance": null,
  "mmBars": [],
  "temps": {
