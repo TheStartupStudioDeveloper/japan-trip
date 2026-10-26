@@ -12,4 +12,6 @@ The essentials, in case you can't read it yet:
 - Weather: Hong Kong Observatory first. Check typhoon and rainstorm signals before any outdoor day.
 - Casual food: yum cha, roast meats, wonton noodles, cha chaan teng, claypot rice, egg tarts. No seafood-heavy meals, no eel, no fancy multi-course dinners.
 
+- Hong Kong is on Plan B (set Mon 26 on the wind forecast): Wed 28 Central and Sheung Wan and the big night out, Thu 29 Lantau then the Peak at sunset, Fri 30 relaxed. On Wed 28 at about 20:00 Hong Kong time, do the wind recheck for Thu and Fri WITHOUT being asked and message G: stay with Plan B or switch to the backup, with the new timings. The steps are in GROK.md under 'Wind decision for the cable car'.
+
 His apps (Grok copy): https://thestartupstudiodeveloper.github.io/japan-trip/grok/ plus /grok/extras/, /grok/weather/, /grok/expenses/.
