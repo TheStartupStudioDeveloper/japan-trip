@@ -119,19 +119,19 @@
    },
    {
     "leg": "h",
-    "text": "Peak Tram one-way up, about 15:45 on the clearest evening (Wed 28 by default)"
+    "text": "Peak Tram one-way up, about 15:45 on Thu 29 (Plan B). Stays on Thursday in the backup too"
    },
    {
     "leg": "h",
-    "text": "Dinner in Central or SoHo for the same evening as the Peak, 19:30"
+    "text": "Big dinner in Central or SoHo, Wed 28 at 19:30"
    },
    {
     "leg": "h",
-    "text": "Pick the Ngong Ping day for the voucher, first car at 10:00 (Thu 29 by default)"
+    "text": "Ngong Ping first car at 10:00 on Thu 29 (Plan B). Fri 30 is the wind backup, same voucher"
    },
    {
     "leg": "h",
-    "text": "Ozone at the Ritz-Carlton: choose Thursday or Friday by the cloud, then book"
+    "text": "Ozone at the Ritz-Carlton, Fri 30 at 17:40: book once Friday looks clear"
    }
   ]
  },
@@ -161,6 +161,10 @@
    {
     "leg": "h",
     "text": "Tue 27: ask the Sheraton: pool sessions, lounge hours, Fri 30 checkout after 18:00, bags to 20:30"
+   },
+   {
+    "leg": "h",
+    "text": "Wed 28 about 20:00: recheck the Observatory for Thursday and Friday wind and cloud. Stay with Plan B or switch to the backup"
    }
   ]
  }
