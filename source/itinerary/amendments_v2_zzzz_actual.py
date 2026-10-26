@@ -1126,3 +1126,14 @@ for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Tokyo International Forum'): D[26]['rows'][_i] = R('15:35', *_x[1:])
     if _x[1].startswith('Yakitori and beers'): D[26]['rows'][_i] = R('16:00', *_x[1:])
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Mon 26 14:24: walked over to Sensō-ji for a photo after the udon.
+D[26]['rows'].append(R('14:10', 'Sensō-ji, quick photo stop', 'A short walk over from Marugame for a photo of the temple, then on to the bridge.', DN))
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Spicy udon at Marugame'): D[26]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+    if _x[1].startswith('Skytree from the street'): D[26]['rows'][_i] = R('14:30', _x[1], 'From Sensō-ji, back out through Kaminarimon and east about 3 minutes to Azuma-bashi bridge (吾妻橋) for the Skytree across the river, with the golden Asahi flame. Asakusa station is at the bridge end.', *_x[3:])
+    if _x[1].startswith('Ginza line back to Ginza'): D[26]['rows'][_i] = R('14:40', *_x[1:])
+    if _x[1].startswith('Book nook kit at HANDS'): D[26]['rows'][_i] = R('15:05', *_x[1:])
+    if _x[1].startswith('Tokyo International Forum'): D[26]['rows'][_i] = R('15:45', *_x[1:])
+    if _x[1].startswith('Yakitori and beers'): D[26]['rows'][_i] = R('16:10', *_x[1:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
