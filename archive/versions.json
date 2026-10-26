@@ -60,5 +60,35 @@
    }
   ],
   "commit": "de82166"
+ },
+ {
+  "n": 3,
+  "slug": "ss3-2026-10-26",
+  "label": "Steady state 3",
+  "when": "26 Oct 2026, 20:17",
+  "date": "2026-10-26",
+  "note": "Plan B in place, before Grok takes over the live apps",
+  "apps": [
+   {
+    "app": "Itinerary",
+    "path": "itinerary/",
+    "pdf": "Japan-Hong-Kong-Master-Itinerary-V2.pdf"
+   },
+   {
+    "app": "Extras",
+    "path": "extras/",
+    "pdf": "JHK-Extras.pdf"
+   },
+   {
+    "app": "Weather",
+    "path": "weather/",
+    "pdf": "JHK-Weather.pdf"
+   },
+   {
+    "app": "Expenses",
+    "path": "expenses/",
+    "pdf": null
+   }
+  ]
  }
 ]
