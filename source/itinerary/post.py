@@ -340,5 +340,11 @@ for _d, _t in _sg['SYNCED'].items():
 print('directions:', _gon)
 # 21 Oct: map URLs written into how-to steps become links
 out = re.sub(r'(<section class="decide block" id="h\d+">.*?</section>)', lambda m: re.sub(r'(?<![="\'])(https://www\.google\.com/maps/[^\s<]+)', r'<a href="\1" target="_blank" rel="noopener">Google Maps</a>', m.group(1)), out, flags=re.S)
+# 26 Oct: day bar fixed at the top from the start: moved above the cover, still sticky.
+_m = re.search(r'<nav class="nav"[^>]*>.*?</nav>\s*', out, re.S)
+if _m and out.find('<div class="wrap">') < _m.start():
+    _nav = _m.group(0); out = out[:_m.start()] + out[_m.end():]
+    _w = out.find('<div class="wrap">'); out = out[:_w] + _nav + out[_w:]
+    out = out.replace('</style>', 'nav.nav{margin-top:0!important;top:0}@media screen{body > nav.nav{position:-webkit-sticky;position:sticky}}</style>', 1)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))

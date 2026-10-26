@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 11:26
+- Day bar moved to the top of the page, under the toolbar, and stays pinned to the top while scrolling.
+
 ## Mon 26 Oct 11:14
 - Dinner: yakitori and beers under the tracks, winging it, Shimbashi end, OKUROJI and the Yūrakuchō lanes (Tonton) 18:00. Chen dropped. Back to pack 19:45.
 
