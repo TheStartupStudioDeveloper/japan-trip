@@ -361,14 +361,18 @@ if 'id="jttop"' not in out:
 # 26 Oct: day bar jumps done in script so they land on the right day on iPhone: instant jump under the bar,
 # then re-checked as maps and images load, and stopped as soon as you touch or scroll yourself.
 _nj = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)return;"
-       "function go(id){var el=document.getElementById(id);if(!el)return;var n=0,stop=false;"
-       "function off(){stop=true;removeEventListener('touchstart',off);removeEventListener('wheel',off)}"
-       "addEventListener('touchstart',off,{passive:true});addEventListener('wheel',off,{passive:true});"
-       "function fix(){if(stop)return;var y=el.getBoundingClientRect().top+window.pageYOffset-nav.getBoundingClientRect().height-6;"
-       "if(Math.abs(window.pageYOffset-y)>3)window.scrollTo({top:y,behavior:'instant'});if(++n<8)setTimeout(fix,n<3?120:300);else off()}fix();"
+       "function setCur(a){[].forEach.call(nav.querySelectorAll('a.cur'),function(x){if(x!==a)x.classList.remove('cur')});if(a)a.classList.add('cur')}"
+       "function go(id,a){var el=document.getElementById(id);if(!el)return;var stop=false,n=0;"
+       "window.__jtLock=Date.now()+1800;setCur(a);try{a.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'})}catch(x){}"
+       "function off(){stop=true;window.__jtLock=0;removeEventListener('touchstart',off);removeEventListener('wheel',off)}"
+       "function target(){return el.getBoundingClientRect().top+window.pageYOffset-nav.getBoundingClientRect().height-6}"
+       "setTimeout(function(){addEventListener('touchstart',off,{passive:true});addEventListener('wheel',off,{passive:true})},50);"
+       "window.scrollTo({top:target(),behavior:'smooth'});"
+       "function fix(){if(stop)return;var y=target();if(Math.abs(window.pageYOffset-y)>3)window.scrollTo({top:y,behavior:n<1?'smooth':'auto'});"
+       "if(++n<4)setTimeout(fix,500);else{window.__jtLock=0;removeEventListener('touchstart',off);removeEventListener('wheel',off)}}setTimeout(fix,900);"
        "try{history.replaceState(null,'','#'+id)}catch(e){}}"
        "nav.addEventListener('click',function(e){var a=e.target.closest('a[href^=\"#\"]');if(!a)return;e.preventDefault();e.stopImmediatePropagation();"
-       "go(a.getAttribute('href').slice(1));try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(x){}},true);})();</script>")
+       "go(a.getAttribute('href').slice(1),a)},true);})();</script>")
 if 'nav.addEventListener(\'click\'' not in out:
     out = out.replace('</body>', _nj + '</body>', 1)
 # 26 Oct: day bar highlight follows the day on screen. Black = the day you are looking at; today keeps a thin outline when you are elsewhere.
@@ -376,11 +380,11 @@ _spy_css = ('nav.nav a.today{background:none;color:var(--ink);box-shadow:inset 0
             'nav.nav a.cur{background:var(--ink)!important;color:var(--paper)!important;box-shadow:none}nav.nav a.cur small{color:var(--paper)!important}')
 _spy = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^=\"#\"]'));"
         "var items=links.map(function(a){return {a:a,el:document.getElementById(a.getAttribute('href').slice(1))}}).filter(function(x){return x.el});"
-        "var last=null,t=null;function upd(){t=null;var lim=nav.getBoundingClientRect().bottom+40,cur=null;"
+        "var last=null,t=null;function upd(){t=null;if(window.__jtLock&&Date.now()<window.__jtLock){t=setTimeout(upd,150);return}last=nav.querySelector('a.cur');var lim=nav.getBoundingClientRect().bottom+40,cur=null;"
         "var best=-1e9;items.forEach(function(x){var tp=x.el.getBoundingClientRect().top;if(tp<=lim&&tp>best){best=tp;cur=x}});"
         "if(cur&&cur.el.getBoundingClientRect().bottom<nav.getBoundingClientRect().bottom)cur=null;"
         "var a=cur?cur.a:null;if(a===last)return;if(last)last.classList.remove('cur');if(a){a.classList.add('cur');"
-        "var r=a.getBoundingClientRect(),w=nav.querySelector('div')||nav;if(r.left<0||r.right>innerWidth){try{a.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}}}last=a}"
+        "var r=a.getBoundingClientRect();if(r.left<0||r.right>innerWidth){try{a.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'})}catch(e){}}}last=a}"
         "addEventListener('scroll',function(){if(!t)t=setTimeout(upd,80)},{passive:true});addEventListener('load',upd);upd();})();</script>")
 if 'nav.nav a.cur' not in out:
     out = out.replace('</style>', _spy_css + '</style>', 1)

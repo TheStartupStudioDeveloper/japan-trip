@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:10
+- Day bar taps: the tapped day lights up straight away and stays lit while the page glides smoothly to it; no flicker through other days.
+
 ## Mon 26 Oct 12:05
 - Day bar highlight follows the day on screen (solid black). Today keeps a thin outline when you are looking at another day.
 
