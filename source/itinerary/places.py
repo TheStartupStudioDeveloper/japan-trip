@@ -991,3 +991,78 @@ P('chen', ['Chen Jia Xu Cai'], 'Chen Jia Xu Cai Yūrakuchō', '陳家私菜 有�
   'Mon to Sat 11:30 to 15:00 and 17:30 to 23:00. About ¥1,200 to ¥2,500 a head.', 'ChenJiaXuCai Yurakucho')
 for _p in PLACES:
     if _p['key'] == 'chen': _p['g'] = 'ChIJC2L9XvCLGGARhXyh90uUelg'
+
+# ---------------- Mon 26 Oct: Hong Kong detail pass. Cards shared with J&HK Extras ----------------
+P('hutong', ['Hutong'], 'Hutong', '胡同',
+  'A long running Northern Chinese restaurant high up in Tsim Sha Tsui, styled like an old Beijing courtyard house with red lanterns and carved screens. Known for the Red Lantern crispy soft shell crab buried in dried chillies and a flaming Peking duck.',
+  'Now on 18/F, H Zentre, 15 Middle Road, three minutes from the Sheraton. Daily 12:00 to midnight at last listing. Expensive, about HK$700 to 1,000 a head. Reservations essential: hutong.com.hk or +852 3428 8342.', 'Hutong H Zentre 15 Middle Road Tsim Sha Tsui')
+P('mak-man-kee', ['Mak Man Kee'], 'Mak Man Kee', '麥文記麵家',
+  "A Jordan noodle shop serving Hong Kong's classic wonton noodles: thin, springy egg noodles and plump prawn wontons in a clear, savoury broth, in a tiny bowl. Fast, cheap and a Michelin Bib Gourmand.",
+  "Daily 12:00 to 00:30. Under HK$100 a head. Walk-in. No credit cards, bring cash. 51 Parkes Street, Jordan, about 15 minutes' walk north of the hotel.", 'Mak Man Kee Noodle Shop 51 Parkes Street Jordan')
+P('man-wah', ['Man Wah'], 'Man Wah', '文華廳',
+  'The Michelin starred Cantonese restaurant on the 25th floor of the Mandarin Oriental, freshly redesigned in dark blue and brass, with windows over the harbour. Classic Cantonese done with polish: Peking duck served two ways, barbecued Iberian pork with longan honey, lobster in a rich fish broth.',
+  'Dinner nightly from 18:00 to about 22:30 (some listings say 18:30 to 22:00). From about HK$800 a head before drinks. Smart casual. Not on OpenTable: book on the Mandarin Oriental website or call +852 2825 4003. Cards accepted.', 'Man Wah Mandarin Oriental Hong Kong 25F')
+P('mott32', ['Mott 32'], 'Mott 32', '卅二公館',
+  'A glamorous basement dining room under the Standard Chartered Bank building, famous for its apple wood roasted Peking duck. Also known for Iberico pork char siu and the soft quail egg siu mai. Big, dark and buzzy, and a proper night out.',
+  'Dinner 17:30 to midnight, lunch 11:30 to 14:30. About HK$1,000 a head. Book by phone +852 2885 8688 or on mott32.com, and pre-order the Peking duck and char siu when you book.', 'Mott 32 Standard Chartered Bank Building Des Voeux Road Central')
+P('ho-lee-fook', ['Ho Lee Fook'], 'Ho Lee Fook', 'Ho Lee Fook',
+  'A loud, fun SoHo dining room with a wall of gold waving cats, mahjong tiles and 1980s Cantopop on the stereo. Creative Cantonese with real wok hei: kurobuta pork char siu, crispy three yellow chicken, steamed razor clams with glass noodles.',
+  'Dinner only, 18:00 to 22:30 Sun to Wed, to 23:30 Thu to Sat. Cheaper than the other two, roughly HK$500 to 800 a head with drinks. Book online at holeefook.com.hk or +852 2810 0860. Ask about dishes that need pre-ordering.', 'Ho Lee Fook 3-5 Elgin Street Central')
+P('lan-fong-yuen', ['Lan Fong Yuen'], 'Lan Fong Yuen', '蘭芳園',
+  'A cramped old cha chaan teng and dai pai dong stall on Gage Street, said to be where Hong Kong milk tea was first strained through a silk stocking. Have the smooth, strong milk tea with a pork chop bun.',
+  'Mon to Sat 07:30 to 18:00, closed Sunday. Cheap. Walk-in, share tables, be quick. 2 Gage Street, at the bottom of Graham Street Market.', 'Lan Fong Yuen 2 Gage Street Central')
+P('yat-lok', ['Yat Lok'], 'Yat Lok', '一樂燒鵝',
+  'A small, plain roast meat shop in Central with a Michelin star for its roast goose: crackling skin, juicy meat, sold by the quarter. Order it over lai fun rice noodles in clear broth with a little goose fat. The char siu is excellent too.',
+  'Daily 10:00 to 20:30. About HK$150 to 300 a head. Walk-in, expect a short queue and shared tables. 34-38 Stanley Street, Central.', 'Yat Lok Roast Goose 34 Stanley Street Central')
+P('bakehouse', ['Bakehouse'], 'Bakehouse', 'Bakehouse',
+  'The egg tart everyone in Hong Kong talks about now: a sourdough pastry shell, flaky and buttery, around a barely set custard, served warm. Good coffee too. For the 1950s classic with a short crust, Tai Cheong Bakery is two blocks away on Lyndhurst Terrace.',
+  'Daily 08:00 to 21:00. Egg tart HK$14, coffee about HK$45. SoHo shop at 5 Staunton Street is takeaway only, beside the Mid-Levels escalator. There is also a branch at 44 Hankow Road, TST, five minutes from the hotel.', 'Bakehouse 5 Staunton Street SoHo')
+P('hing-kee', ['Hing Kee'], 'Hing Kee Restaurant', '興記菜館',
+  'The best known claypot rice on Temple Street. Rice is cooked in clay pots over a flame until a crisp crust forms at the bottom, topped with things like pork brisket, Chinese sausage or chicken, then finished with sweet soy. Also good: the crispy oyster omelette and fried squid. Four Seasons Pot Rice on Arthur Street is the charcoal fired rival, with queues from 18:00, and Temple Street Spicy Crabs at the Nanking Street corner does street-side typhoon shelter style seafood.',
+  '15 Temple Street, Yau Ma Tei. Evenings 17:30 to midnight. Claypots about HK$50 to 100, around HK$100 to 150 a head. Cash only. Walk-in. Claypots take 20 minutes, so order first.', 'Hing Kee Restaurant 15 Temple Street Yau Ma Tei')
+P('maxims-city-hall', ['Maxim&#x27;s Palace'], "Maxim's Palace, City Hall", '大會堂美心皇宮',
+  'The classic big Hong Kong yum cha hall: a huge, noisy room with chandeliers and harbour views, where staff push steaming trolleys of dim sum between the tables and you point at what you want. Very popular, and the full old style experience.',
+  "Dim sum by trolley Mon to Sat 11:00 to 15:00. About HK$200 to 300 a head. Call +852 2521 1303 to ask about a booking, otherwise expect to queue at lunch. 2/F, City Hall Low Block, five minutes' walk from the Central Star Ferry pier.", "Maxim's Palace City Hall Central")
+P('spring-moon', ['Spring Moon'], 'Spring Moon', '嘉麟樓',
+  "The Peninsula's Michelin starred Cantonese restaurant, all 1920s Art Deco wood panelling and stained glass. Refined, beautifully made dim sum at lunch, with a resident tea master. The calm, upscale way to do yum cha.",
+  "Lunch Mon to Sat 11:30 to 14:30, Sunday from 11:00. About HK$500 to 800 a head at lunch. Smart casual. Book on peninsula.com or call +852 2696 6760. Ten minutes' walk from the Sheraton.", 'Spring Moon The Peninsula Hong Kong')
+P('celestial-court', ['Celestial Court'], 'Celestial Court', '天寶閣',
+  'The Cantonese restaurant on the 2nd floor of your own hotel, Michelin listed and a favourite with local families. A recently refreshed dim sum list at lunch. No windows, but no travel and no queue on your last day.',
+  'Mon to Sat 11:30 to 15:00 and 18:00 to 22:00, Sunday from 10:30. Mid priced. Book online at celestialcourt.hk or call +852 2732 6991.', 'Celestial Court Sheraton Hong Kong Hotel')
+P('lei-garden-elements', ['Lei Garden'], 'Lei Garden, Elements', '利苑酒家 圓方',
+  'One branch of a trusted Hong Kong Cantonese chain, in the Elements mall directly below Ozone. Good roast meats and crispy roast pork, steamed egg white with crab, and slow boiled soups. Reliable rather than flashy, and right where you need it.',
+  'Shop 2068-70, 2/F, Water Zone, Elements. Lunch and dinner daily. A full dinner for two runs just over HK$500 a head without wine. Book by phone, +852 2196 8133.', 'Lei Garden Elements Water Zone')
+P('bar-leone', ['Bar Leone'], 'Bar Leone', 'Bar Leone',
+  "A small, warm Roman style neighbourhood bar that was named the World's Best Bar in 2025 and is No. 3 on Asia's 50 Best Bars 2026. Simple, perfect Italian drinks, vinyl on the turntable and a crowd spilling onto the street.",
+  '11-15 Bridges Street, Central. From 17:00 until late. Walk-in only, no bookings, and queues of an hour or more on busy nights. Mid priced.', 'Bar Leone Bridges Street Central')
+P('coa', ['Coa'], 'Coa', 'Coa',
+  "A tiny agave bar with a 41 page menu of tequila and mezcal, and among the most awarded bars in Asia: No. 24 on Asia's 50 Best Bars 2026. Bright, clever cocktails that even non tequila drinkers love.",
+  'Shop A, LG/F, Wah Shin House, 6-10 Shin Hing Street, Central, near Hollywood Road. Tue to Sun 18:00 to midnight, Fri and Sat to 01:00. Closed Monday. No bookings: leave your number with the door staff to join the waitlist.', 'COA bar Shin Hing Street Central')
+P('argo', ['Argo'], 'Argo', 'Argo',
+  "The bar at the Four Seasons, with big windows over Victoria Harbour and a menu built around ingredients under threat from climate change. No. 37 on Asia's 50 Best Bars 2026. Polished, calm and a great place for the view.",
+  '1/F, Four Seasons Hotel, Central. Mon to Thu 17:00 to 01:00, Fri and Sat to 02:00. Book online or on +852 3196 8882. Smart casual, no beachwear or sportswear.', 'ARGO Four Seasons Hotel Hong Kong')
+P('darkside', ['DarkSide'], 'DarkSide', 'DarkSide',
+  "The Rosewood's moody bar of dark spirits, cognac and cigars, with live jazz every night. Multi award winning in Time Out's bar awards, and ten minutes' walk along the waterfront from the Sheraton.",
+  '2/F, Rosewood Hong Kong, Victoria Dockside. Sun to Thu 17:00 to midnight, Fri and Sat to 01:00. Jazz from 20:15 Tue to Thu. Book online or +852 3891 8732. Smart casual, sleeved shirts and covered shoes.', 'DarkSide Rosewood Hong Kong')
+P('sky-lounge', ['Sky Lounge'], 'Sky Lounge, Sheraton', 'Sky Lounge',
+  'The bar on the top floor of your hotel, looking straight across the harbour to the Island skyline. Cocktails, wine and afternoon tea, with a front row seat for A Symphony of Lights at 20:00.',
+  'Daily 14:30 to 23:00. Walk-in. Casual dress.', 'Sky Lounge Sheraton Hong Kong Hotel')
+P('tai-cheong', ['Tai Cheong Bakery', 'Tai Cheong'], 'Tai Cheong Bakery', '泰昌餅家',
+  'The egg tart bakery made famous by the last Governor, Chris Patten, who called them the best in Hong Kong. A short, crumbly butter crust around a glossy, wobbly custard, sold warm over the counter since 1954.',
+  'G/F, 35 Lyndhurst Terrace, Central, near the bottom of the Mid-Levels escalator. Daily 09:30 to 19:30. About HK$12 a tart. Takeaway only, cash or Octopus. There is also a branch in the Peak Galleria at the top of the Peak Tram.', 'Tai Cheong Bakery 35 Lyndhurst Terrace Central')
+P('catst-hk', ['Cat Street'], 'Cat Street (Upper Lascar Row)', '摩羅上街',
+  'A short pedestrian lane just below Hollywood Road, lined with stalls and small shops selling antiques, old coins, Mao era posters, jade, snuff bottles and curios. Mostly reproductions, so buy what you like rather than as an investment.',
+  'Stalls from about 10:00 to 18:00. Bargain politely. Cash is easiest.', 'Upper Lascar Row Cat Street Sheung Wan')
+P('lkf', ['Lan Kwai Fong'], 'Lan Kwai Fong', '蘭桂坊',
+  "A steep L shaped lane of bars and clubs in Central, Hong Kong's best known party street. Loud, crowded and fun after 22:00, with drinks spilling onto the street. SoHo and the better cocktail bars are a few minutes uphill.",
+  "Busiest Thursday to Saturday. Wednesday is ladies' night at many bars. Takeaway drinks from 7-Eleven are a local habit.", 'Lan Kwai Fong Central Hong Kong')
+P('icc', ['ICC', 'International Commerce Centre'], 'International Commerce Centre (ICC)', '環球貿易廣場',
+  "Hong Kong's tallest building, 484 metres, on the West Kowloon waterfront above Kowloon Station and the Elements mall. The Ritz-Carlton occupies the top floors, with Ozone on 118. Sky100, the paid observation deck, is on the 100th floor.",
+  'From the Sheraton: a 10 minute taxi (show 環球貿易廣場 麗思卡爾頓酒店), or the MTR to Kowloon Station and walk up through Elements. Ritz-Carlton lifts are on the ground floor of the ICC, signed to the hotel lobby on 103.', 'International Commerce Centre Ritz-Carlton entrance')
+P('hko', ['Hong Kong Observatory', 'the Observatory', 'Observatory'], 'Hong Kong Observatory', '香港天文台',
+  "Hong Kong's official weather service. It issues the 9-day forecast and every warning that changes plans: typhoon signals (1, 3, 8 and up), rainstorm warnings (amber, red, black) and the Strong Monsoon Signal. The MyObservatory app shows them on the phone.",
+  '9-day forecast: hko.gov.hk/en/wxinfo/currwx/fnd.htm. Warnings in force: hko.gov.hk/en/wxinfo/dailywx/wxwarntoday.htm. Typhoon Signal 8 or Black Rainstorm: stay in or go back to the hotel.', 'Hong Kong Observatory')
+for _p in PLACES:
+    if _p['key'] in ('hutong','mak-man-kee','man-wah','mott32','ho-lee-fook','lan-fong-yuen','yat-lok','bakehouse','hing-kee','maxims-city-hall',
+                     'spring-moon','celestial-court','lei-garden-elements','bar-leone','coa','argo','darkside','sky-lounge','tai-cheong','catst-hk','lkf','icc','hko'):
+        _p['days'] = [0, 27, 28, 29, 30, 99, None]
