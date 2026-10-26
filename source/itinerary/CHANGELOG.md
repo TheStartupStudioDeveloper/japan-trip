@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:12
+- Evening as one walk south from Ginza: HANDS 16:10, Forum 16:50, yakitori and beers in the Yūrakuchō lanes then OKUROJI 17:15, hotel 18:15 (book the taxi, AirPod, pack, Godzilla). No return trip to the hotel in between.
+
 ## Mon 26 Oct 12:10
 - Day bar taps: the tapped day lights up straight away and stays lit while the page glides smoothly to it; no flicker through other days.
 

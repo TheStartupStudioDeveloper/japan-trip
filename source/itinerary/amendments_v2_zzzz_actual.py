@@ -1091,3 +1091,12 @@ for _k, _h in enumerate(HOWTO):
          'Plan: taxi from the hotel at 06:40, booked at the front desk on Monday. About 20 to 25 minutes. Ask for the flat fare (定額運賃), about ¥5,900 from Minato ward plus tolls.',
          'Driver phrase: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 (Haneda Terminal 3, departures, please.)',
          'If the taxi does not show by 06:50, take the train:'] + list(_h[1]))
+
+# Mon 26 12:12: one walk south from Ginza: HANDS, Forum, the Yūrakuchō lanes and OKUROJI, then the hotel. No double trip.
+D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Back to the hotel, AirPod at the desk', 'Yakitori and beers under the tracks', 'Back to the hotel: pack', 'Book tomorrow\'s taxi', 'Book nook kit at HANDS'))] + [
+ R('16:10', 'Book nook kit at HANDS Ginza', 'Floors 5 to 9 of Marronnier Gate Ginza 1. The hobby and craft floor has the miniature book nook kits. Ask: ブックヌックのキットはありますか？ Tax-free on 9F with passports. About 30 to 40 minutes.'),
+ R('16:50', 'Tokyo International Forum glass hall', 'Three minutes from HANDS, across the JR tracks at Yūrakuchō. The boat-shaped glass atrium by Rafael Viñoly. Lift to 7F and walk down the ramps. Free, about 20 minutes.'),
+ R('17:15', 'Yakitori and beers under the tracks, heading south', 'Out of the Forum on the Yūrakuchō side, straight into the lanes under the arches: Yūrakuchō Sanchoku Inshokugai and Yakitori Tonton (pork cheek skewer). A stick or two and a beer, then keep walking south through Hibiya OKUROJI to the hotel end. Mostly cash, some places charge a ¥300 to ¥500 cover.'),
+ R('18:15', 'Back to the hotel: taxi, AirPod, pack, Godzilla', 'Out of the arches at the hotel end, 2 to 3 minutes to the Blossom. At the desk: book tomorrow\'s taxi (明日の朝6時40分に羽田空港第3ターミナルまでタクシーを予約できますか？定額運賃でお願いします。) and ask about the AirPod (京都のホテルから荷物が届いていますか？). Then pack, Godzilla, early night. Set two alarms.'),
+]
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

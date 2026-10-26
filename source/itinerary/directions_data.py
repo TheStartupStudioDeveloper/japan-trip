@@ -1148,3 +1148,27 @@ GO[27] += [
   maps('Haneda Airport Terminal 3', 'driving', 'd'),
  ]),
 ]
+
+# 26 Oct 12:12: one walk south.
+GO[26] = [g for g in GO[26] if not g[0].startswith(('Back to the hotel, AirPod', 'Yakitori and beers under the tracks', 'Back to the hotel: pack', 'Book nook kit at HANDS Ginza', 'Tokyo International Forum'))]
+GO[26] += [
+ ('Book nook kit at HANDS Ginza', [
+  'Marronnier Gate Ginza 1 (マロニエゲート銀座1), lifts to 5F to 9F. Check the directory by the lifts for the hobby and craft floor (ホビー・クラフト).',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=HANDS+Ginza&destination_place_id=ChIJyak5_-SLGGARvezBKVRicSA&travelmode=walking https://maps.apple.com/?daddr=HANDS+Ginza&dirflg=w',
+ ]),
+ ('Tokyo International Forum', [
+  'From HANDS, west under the JR tracks at Yūrakuchō station, about 3 minutes. The Glass Building (ガラス棟) is the long glass hall on the station side.',
+  'Lift to 7F, walk down the ramps.',
+  maps('Tokyo International Forum Glass Building'),
+ ]),
+ ('Yakitori and beers under the tracks, heading south', [
+  'Out of the Forum on the Yūrakuchō station side. Yakitori Tonton (登運とん) and Yūrakuchō Sanchoku Inshokugai (有楽町産直飲食街) are in the arches just south of the station.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=Yakitori+Ton+Ton+Yurakucho&destination_place_id=ChIJz-uduu-LGGARmiJ9qVRATAE&travelmode=walking https://maps.apple.com/?daddr=Yakitori+Ton+Ton+Yurakucho&dirflg=w',
+  'Then keep south along the tracks into Hibiya OKUROJI, the restored arcade, and walk it to the end.',
+  maps('Hibiya OKUROJI'),
+ ]),
+ ('Back to the hotel: taxi, AirPod, pack', [
+  'From the south end of OKUROJI, 2 to 3 minutes west to the hotel.',
+  maps(HOTEL_T),
+ ]),
+]
