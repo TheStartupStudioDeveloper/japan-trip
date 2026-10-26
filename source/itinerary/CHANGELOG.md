@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 11:14
+- Dinner: yakitori and beers under the tracks, winging it, Shimbashi end, OKUROJI and the Yūrakuchō lanes (Tonton) 18:00. Chen dropped. Back to pack 19:45.
+
 ## Mon 26 Oct 11:12
 - Shorter Monday: Skytree from Azuma-bashi only 15:30, Ginza line back 15:45, HANDS book nook 16:10, hotel, AirPod and packing 16:50, walk through OKUROJI 18:00, dinner at Chen Jia Xu Cai (mapo tofu, under the tracks) 18:20, back to pack and watch Godzilla 19:30. Forum and Tonton dropped; Rōsokuya is closed Mondays. New card.
 

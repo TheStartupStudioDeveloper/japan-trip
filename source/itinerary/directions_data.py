@@ -1128,3 +1128,15 @@ GO[26] += [
   gmt(HOTEL_T),
  ]),
 ]
+GO[26] = [g for g in GO[26] if not g[0].startswith(('Walk through Hibiya OKUROJI', 'Dinner: mapo tofu at Chen'))]
+GO[26] += [
+ ('Yakitori and beers under the tracks', [
+  'Shimbashi end: from the hotel, a few minutes east to the arches. The Shimbashi gādo-shita (ガード下) izakaya run along the tracks north of JR Shimbashi.',
+  'Then north through Hibiya OKUROJI, the restored arcade inside the arches.',
+  maps('Hibiya OKUROJI'),
+  'Yūrakuchō end: out of OKUROJI, keep north along the tracks to Yūrakuchō Sanchoku Inshokugai (有楽町産直飲食街), the open-air stools under the arches.',
+  maps('Yurakucho Sanchoku Inshokugai'),
+  'Yakitori Tonton (登運とん), on the lane just south of Yūrakuchō station.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=Yakitori+Ton+Ton+Yurakucho&destination_place_id=ChIJz-uduu-LGGARmiJ9qVRATAE&travelmode=walking https://maps.apple.com/?daddr=Yakitori+Ton+Ton+Yurakucho&dirflg=w',
+ ]),
+]

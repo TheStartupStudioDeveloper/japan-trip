@@ -1066,3 +1066,13 @@ D[26]['rows'] = [x for x in D[26]['rows'] if x[1].startswith(_keep)] + [
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
 for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Sensō-ji'): D[26]['rows'][_i] = R('14:30', _x[1], 'A few minutes from lunch. Kaminarimon gate, Nakamise street, the main hall. If Nakamise is jammed, take the side lanes.', *_x[3:])
+
+# Mon 26 11:14: dinner is yakitori and beers, winging it under the tracks, walking both ends. Chen dropped.
+D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Walk through Hibiya OKUROJI', 'Dinner: mapo tofu at Chen'))] + [
+ R('18:00', 'Yakitori and beers under the tracks, both ends', 'Wing it. Start at the Shimbashi end by the hotel, walk north through Hibiya OKUROJI (the restored arcade), then out into the old Yūrakuchō lanes: Yūrakuchō Sanchoku Inshokugai and Yakitori Tonton (pork cheek skewer, 13:30 to 22:45 Mondays). Graze a stick or two and a beer, move on. Mostly cash, some places charge a ¥300 to ¥500 cover.'),
+]
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Back to the hotel: pack'): D[26]['rows'][_i] = R('19:45', _x[1], 'About 10 minutes\' walk back south along the tracks, or JR one stop from Yūrakuchō to Shimbashi. Bags ready tonight for the 06:22 start. Set two alarms.', *_x[3:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+D[26]['title'] = 'teamLab, Kappabashi, Sensō-ji, yakitori under the tracks, early night'
+D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi and Sensō-ji, a look at the Skytree from the street, a book nook kit at HANDS, then yakitori and beers under the train tracks and back early to pack and watch Godzilla.'
