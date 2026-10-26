@@ -87,6 +87,20 @@ if DUMP:
     print('Grok data written to', DATA)
     raise SystemExit(0)
 
+# ---------- guard: a Claude weather chat may still update source/weather/weather.html. If its check is newer, take it ----------
+try:
+    _wh = open(os.path.join(REPO, 'source', 'weather', 'weather.html'), encoding='utf-8').read()
+    _wx = json.loads(re.search(r'<script type="application/json" id="wx">(.*?)</script>', _wh, re.S).group(1))
+    _gm = rd(os.path.join(DATA, 'weather', 'meta.json'))
+    if datetime.datetime.fromisoformat(_wx['checked']) > datetime.datetime.fromisoformat(_gm['checked']):
+        for _d in _wx.pop('days'):
+            wr(os.path.join(DATA, 'weather', 'days', f'{int(_d["d"]):02d}.json'), _d)
+        _wx['watch'] = _wx.get('watch') or []
+        wr(os.path.join(DATA, 'weather', 'meta.json'), _wx)
+        print('weather: took the newer check from source/weather/weather.html', _wx['checkedLabel'])
+except Exception as _e:
+    print('weather guard skipped:', _e)
+
 # ---------- check every data file first, with a plain-English error that names the file ----------
 _bad = []
 for f in sorted(glob.glob(os.path.join(DATA, '**', '*.json'), recursive=True)):

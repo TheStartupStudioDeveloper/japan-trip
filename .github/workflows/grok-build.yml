@@ -4,7 +4,7 @@ name: Live apps rebuild from grok/data
 on:
   push:
     branches: [main]
-    paths: ['grok/data/**', 'source/grok/**', '.github/workflows/grok-build.yml']
+    paths: ['grok/data/**', 'source/**', '.github/workflows/grok-build.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
       - name: Tools
         run: |
           pip install --quiet playwright pillow
-          python -m playwright install --with-deps chromium
+          python -m playwright install --with-deps chromium-headless-shell || python -m playwright install --with-deps chromium
       - name: Build the Grok apps
         id: build
         continue-on-error: true
@@ -37,8 +37,7 @@ jobs:
           FILES="grok index.html sw.js manifest.webmanifest extras/index.html extras/sw.js extras/manifest.webmanifest weather/index.html weather/sw.js weather/manifest.webmanifest expenses/index.html expenses/sw.js expenses/manifest.webmanifest"
           for i in 1 2 3 4 5 6; do
             git add -A $FILES
-            git reset -q grok/data
-            if git diff --cached --quiet; then echo "Nothing to commit"; exit 0; fi
+              if git diff --cached --quiet; then echo "Nothing to commit"; exit 0; fi
             if [ "${{ steps.build.outcome }}" = "success" ]; then MSG="Live apps rebuilt from grok/data"; else MSG="Live apps NOT rebuilt: see grok/build-error.txt"; fi
             git commit -q -m "$MSG"
             if git push -q origin HEAD:main; then exit 0; fi
