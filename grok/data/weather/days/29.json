@@ -2,20 +2,30 @@
  "d": 29,
  "dow": "Thursday",
  "leg": "h",
- "where": "Lantau, then the city",
- "title": "Big Buddha, then the city",
- "icon": "sun",
+ "where": "Lantau, the Peak",
+ "title": "Lantau in the morning, the Peak at sunset",
+ "icon": "part",
  "hi": 29,
- "lo": 23,
- "rain": null,
- "cond": "Plenty of sunshine",
+ "lo": 25,
+ "rain": 10,
+ "cond": "Cloudy early, then mainly fine",
  "sunset": "17:50",
- "call": "Ngong Ping 360 stops in high wind or thunderstorms. Looks clear at this range.",
+ "call": "Cloudy early, then mainly fine, 25 to 29°. East force 4 to 5, occasionally 6 on high ground early, which is exactly where the Ngong Ping 360 runs: it slows or stops in strong wind. Check the Observatory warnings and the cable car status on np360.com.hk at 08:00. If it is suspended or on a reduced service, switch to the backup: pool and yum cha today, Lantau on Friday. The Peak Tram is not stopped by wind, and the afternoon clears for a 17:50 sunset at the top.",
  "plan": [
+  [
+   "08:00",
+   "Go or no-go check",
+   "Observatory and np360.com.hk"
+  ],
   [
    "10:00",
    "Ngong Ping 360 cable car",
-   "Weather dependent"
+   "Wind sensitive"
+  ],
+  [
+   "15:45",
+   "Peak Tram, sunset 17:50",
+   "Clearing later"
   ],
   [
    "19:30",
@@ -26,19 +36,23 @@
  "src": [
   [
    "Combined",
-   "10%, AccuWeather until the Hong Kong Observatory 9-day forecast reaches Tue 27, from Mon 19"
+   "10%, the Hong Kong Observatory weighted highest"
+  ],
+  [
+   "Hong Kong Observatory (official, 06:35 Mon 26)",
+   "25° to 29°, cloudy at first, mainly fine later, east force 4 to 5, occasionally force 6 on high ground at first"
   ],
   [
    "AccuWeather, Hong Kong",
    "29° / 23°, a shower in the afternoon"
   ]
  ],
- "mm": "Not forecast yet",
- "gicon": "sun",
+ "mm": "Low risk. No rain forecast to plan around",
+ "gicon": "part",
  "gfill": 10,
  "gtext": "10%",
- "gmm": null,
- "read": "Sunny and hot.",
+ "gmm": "0",
+ "read": "Gusty early on high ground: check the cable car at 08:00. Clearing for the Peak.",
  "chance": null,
  "mmBars": [],
  "temps": {
