@@ -29,5 +29,35 @@
    }
   ],
   "commit": "9b336bf"
+ },
+ {
+  "n": 2,
+  "slug": "ss2-2026-10-26",
+  "label": "Steady state 2",
+  "when": "26 Oct 2026, 18:50",
+  "date": "2026-10-26",
+  "note": "Before the Hong Kong Plan B change: Japan done to Mon 26 afternoon, Tue 27 taxi to Haneda, Hong Kong days as originally planned. Grok copy and handover as at 25 Oct.",
+  "apps": [
+   {
+    "app": "Itinerary",
+    "path": "itinerary/",
+    "pdf": "Japan-Hong-Kong-Master-Itinerary-V2.pdf"
+   },
+   {
+    "app": "Extras",
+    "path": "extras/",
+    "pdf": "JHK-Extras.pdf"
+   },
+   {
+    "app": "Weather",
+    "path": "weather/",
+    "pdf": "JHK-Weather.pdf"
+   },
+   {
+    "app": "Expenses",
+    "path": "expenses/",
+    "pdf": null
+   }
+  ]
  }
 ]
