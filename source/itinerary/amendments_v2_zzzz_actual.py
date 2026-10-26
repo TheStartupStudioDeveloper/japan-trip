@@ -1116,3 +1116,13 @@ D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappa
 # Mon 26 12:38: Ganso fake food shop added, now, at the north end of Kappabashi.
 D[26]['rows'].append(R('12:45', 'Ganso Food Sample Shop, fake food', 'The fake food you see in restaurant windows, at the north end of Kappabashi-dōri: sushi, ramen and parfait replicas as magnets, keyrings and full-size pieces. They also run a make-your-own workshop at set times; ask in store if there is a spot today (普通は予約が必要です: usually booked ahead). Open 10:00 to 17:30.'))
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Mon 26 13:46: quick spicy udon at Marugame Seimen, Asakusa ROX area, on the way to the bridge.
+D[26]['rows'].append(R('13:45', 'Spicy udon at Marugame Seimen, Asakusa', 'Quick bite on the way to the bridge. Spicy options on the board: 肉辛まぜうどん (spicy beef mixed udon, ¥890) or 旨辛豚つけ汁うどん (spicy pork dipping udon, ¥990). Grab tempura from the counter as you slide along, pay at the end.'))
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith('Skytree from the street'): D[26]['rows'][_i] = R('14:20', _x[1], 'About 8 minutes east from Marugame to Azuma-bashi bridge (吾妻橋) for the Skytree across the river, with the golden Asahi flame. Asakusa station is at the bridge end.', *_x[3:])
+    if _x[1].startswith('Ginza line back to Ginza'): D[26]['rows'][_i] = R('14:30', *_x[1:])
+    if _x[1].startswith('Book nook kit at HANDS'): D[26]['rows'][_i] = R('14:55', *_x[1:])
+    if _x[1].startswith('Tokyo International Forum'): D[26]['rows'][_i] = R('15:35', *_x[1:])
+    if _x[1].startswith('Yakitori and beers'): D[26]['rows'][_i] = R('16:00', *_x[1:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

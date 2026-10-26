@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 13:46
+- Spicy udon at Marugame Seimen, Asakusa 13:45. Skytree from Azuma-bashi 14:20, Ginza line 14:30, HANDS 14:55, Forum 15:35, yakitori 16:00, hotel 17:00.
+
 ## Mon 26 Oct 12:38
 - Ganso Food Sample Shop added at 12:45, north end of Kappabashi, with the workshop question.
 
