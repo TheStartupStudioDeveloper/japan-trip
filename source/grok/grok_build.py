@@ -1,7 +1,6 @@
-# Grok copy of the trip apps, for the Hong Kong leg (Claude is not available in Hong Kong).
-# The Grok copy lives in grok/ and is published at https://thestartupstudiodeveloper.github.io/japan-trip/grok/
-# Grok edits only the small data files in grok/data/. This script rebuilds the four Grok apps from them,
-# using the master's own build scripts in a scratch folder, so the master apps are never touched.
+# Hong Kong leg (Claude is not available in Hong Kong): Grok drives the LIVE apps.
+# Grok edits only the small data files in grok/data/. This script rebuilds the four live apps (itinerary, extras,
+# weather, expenses at the usual URLs) from them, using the master's own build scripts in a scratch folder.
 #
 #   python3 source/grok/grok_build.py          rebuild grok/ from grok/data/ (the GitHub Action runs this on every push)
 #   python3 source/grok/grok_build.py --dump   one-off: write the master's current data out as grok/data/ (done 25 Oct 2026)
@@ -48,13 +47,12 @@ for f in glob.glob(os.path.join(REPO, 'source', 'mapview', '*.py')):
 os.makedirs(os.path.join(FR, 'source', 'expenses'))
 shutil.copy(os.path.join(REPO, 'source', 'expenses', 'log_synced.json'), os.path.join(FR, 'source', 'expenses'))
 
-# apptools for the Grok copy: Grok links, Grok storage keys, no PDFs
+# apptools for the live apps under Grok: same links and storage as always, chat button opens Grok, no PDF rendering
 at = open(os.path.join(REPO, 'source', 'apptools.py'), encoding='utf-8').read()
-at = at.replace(f"BASE = '{BASE}'", f"BASE = '{GBASE}'")
 at = re.sub(r"(CHAT = \{.*?\n\})", "CHAT = {'': 'https://grok.com/', 'extras': 'https://grok.com/', 'weather': 'https://grok.com/', 'expenses': 'https://grok.com/'}", at, flags=re.S)
-at = at.replace('Chat with Claude', 'Open Grok').replace("key = 'jt-off-' +", "key = 'grok-jt-off-' +")
+at = at.replace('Chat with Claude', 'Open Grok')
 at = at.replace("def render_pdf(src_html_path, pdf_path, footer):",
-              "def render_pdf(src_html_path, pdf_path, footer):\n    open(pdf_path, 'wb').write(b'%PDF-1.4 Grok copy, no PDF'); return\n\ndef _render_pdf_unused(src_html_path, pdf_path, footer):")
+              "def render_pdf(src_html_path, pdf_path, footer):\n    open(pdf_path, 'wb').write(b'%PDF-1.4'); return\n\ndef _render_pdf_unused(src_html_path, pdf_path, footer):")
 open(os.path.join(FR, 'source', 'apptools.py'), 'w', encoding='utf-8').write(at)
 
 # itinerary build: point it at the stand-in repo and add the Grok overlay after the last amendments file
@@ -143,57 +141,21 @@ run(['python3', 'extras_build.py', FR], os.path.join(IT, 'extras'))
 run(['python3', 'expenses_build.py', FR], os.path.join(IT, 'expenses'))
 run(['python3', os.path.join(REPO, 'source', 'weather', 'weather_site.py'), os.path.join(W, 'weather.html'), FR], W)
 
-# ---------- make it the Grok copy: own names, own storage, own links, a banner ----------
-NAMES = {'': ('Grok Itinerary', 'Japan & Hong Kong (Grok copy)'), 'extras': ('Grok Extras', 'J&HK Extras (Grok copy)'),
-         'weather': ('Grok Weather', 'J&HK Weather (Grok copy)'), 'expenses': ('Grok Expenses', 'J&HK Expenses (Grok copy)')}
-KEYS = ['jhk-final-checks-v3', 'jhk-expense-log-v1', 'jt-adds-v1', 'jt-edit-at-v1', 'jt-inotes-v1', 'jt-mode', 'jt-notes-v1',
-        'jt-order-v1', 'jt-pos-v1', 'jt-removed-v1', 'jt-ticks-v1', 'jt-times-v1']
-BANNER = ('<div class="grok-copy" style="background:#000;color:#fff;font:600 .78rem/1.3 \'Instrument\',Arial,sans-serif;'
-          'text-align:center;padding:.45rem 1rem">Grok copy, updated by Grok for Hong Kong. Built {when} Hong Kong time.'
-          ' <a href="' + BASE + '" style="color:#fff">Master</a></div>')
+# ---------- publish into the LIVE apps (the ones on G's home screen) ----------
+# Since Mon 26 Oct 2026, Grok drives the live apps from grok/data/. Same URLs, same storage keys (ticks and notes kept),
+# same icons and PDFs. Only index.html, manifest and sw.js are replaced. Backups: archive/ss3-2026-10-26, branch backup-before-grok-live-2026-10-26.
 hk = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime('%a %d %b %H:%M')
-for app, (short, name) in NAMES.items():
-    src = os.path.join(FR, app) if app else FR
-    dst = os.path.join(OUTG, app) if app else OUTG
-    os.makedirs(dst, exist_ok=True)
-    h = open(os.path.join(src, 'index.html'), encoding='utf-8').read()
-    for k in KEYS:
-        h = h.replace(f"'{k}'", f"'grok-{k}'").replace(f'"{k}"', f'"grok-{k}"')
-    h = re.sub(r'(["\'])jt-off-', r'\1grok-jt-off-', h)
-    h = re.sub(r'https://claude\.ai/(?:code/session_|chat/)[\w-]+', 'https://grok.com/', h)
-    h = re.sub(r'https://thestartupstudiodeveloper\.github\.io/japan-trip/(?=(extras/|weather/|expenses/)?(["\'#?]|$))', GBASE, h)
-    h = re.sub(r'<meta name="apple-mobile-web-app-title" content="[^"]*">', f'<meta name="apple-mobile-web-app-title" content="{short}">', h)
-    h = re.sub(r'<title>(.*?)</title>', lambda m: f'<title>{m.group(1)} (Grok copy)</title>', h, count=1)
-    h = h.replace('Paste it into the itinerary chat', 'Paste it into Grok').replace('Paste it into the chat', 'Paste it into Grok').replace('Copy for Claude', 'Copy for Grok').replace('Chat with Claude', 'Open Grok')
-    h = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + BANNER.format(when=hk), h, count=1)
-    open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(h)
-    m = rd(os.path.join(src, 'manifest.webmanifest')); m['name'] = name; m['short_name'] = short
-    wr(os.path.join(dst, 'manifest.webmanifest'), m)
-    sw = open(os.path.join(src, 'sw.js'), encoding='utf-8').read()
-    sw = re.sub(r"(['\"])(jhk|wx|ex|exp|xs|mv)-", r"\1grok-\2-", sw)
-    sw = sw.replace('.pdf', '.pdf-none') if '.pdf' in sw else sw
-    sw = re.sub(r",\s*['\"][^'\"]+\.pdf-none['\"]", '', sw)
-    open(os.path.join(dst, 'sw.js'), 'w', encoding='utf-8').write(sw)
-    # icons: the master icon with a GROK band, so the home-screen apps are easy to tell apart
-    from PIL import Image, ImageDraw
-    im = Image.open(os.path.join(src, 'icon-512.png')).convert('RGB')
-    dr = ImageDraw.Draw(im)
-    dr.rectangle([0, 0, 512, 92], fill=(255, 255, 255)); dr.rectangle([0, 92, 512, 100], fill=(0, 0, 0))
-    try:
-        from PIL import ImageFont
-        fp = glob.glob('/usr/share/fonts/**/DejaVuSans-Bold.ttf', recursive=True)
-        ft = ImageFont.truetype(fp[0], 66) if fp else ImageFont.load_default()
-    except Exception:
-        from PIL import ImageFont; ft = ImageFont.load_default()
-    dr.text((256, 47), 'GROK', fill=(0, 0, 0), font=ft, anchor='mm')
-    im.save(os.path.join(dst, 'icon-512.png'))
-    im.resize((192, 192), Image.LANCZOS).save(os.path.join(dst, 'icon-192.png'))
-    im.resize((180, 180), Image.LANCZOS).save(os.path.join(dst, 'icon-180.png'))
-open(os.path.join(OUTG, '.nojekyll'), 'w').write('')
 for app in ('', 'extras', 'weather', 'expenses'):
-    for pdf in glob.glob(os.path.join(OUTG, app, '*.pdf')):
-        os.remove(pdf)
+    src = os.path.join(FR, app) if app else FR
+    dst = os.path.join(REPO, app) if app else REPO
+    h = open(os.path.join(src, 'index.html'), encoding='utf-8').read()
+    h = re.sub(r'https://claude\.ai/(?:code/session_|chat/)[\w-]+', 'https://grok.com/', h)
+    h = h.replace('Paste it into the itinerary chat', 'Paste it into Grok').replace('Paste it into the chat', 'Paste it into Grok').replace('Copy for Claude', 'Copy for Grok').replace('Chat with Claude', 'Open Grok')
+    assert len(h) > 20000, 'built page looks empty: ' + (app or 'itinerary')
+    open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(h)
+    shutil.copy(os.path.join(src, 'manifest.webmanifest'), os.path.join(dst, 'manifest.webmanifest'))
+    shutil.copy(os.path.join(src, 'sw.js'), os.path.join(dst, 'sw.js'))
 wr(os.path.join(OUTG, 'build.json'), {'built_hkt': hk, 'built_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-                                      'data_hash': hashlib.md5(''.join(open(f, 'rb').read().hex() for f in sorted(glob.glob(os.path.join(DATA, '**', '*.json'), recursive=True))).encode()).hexdigest()[:10]})
+                                      'target': 'live apps', 'data_hash': hashlib.md5(''.join(open(f, 'rb').read().hex() for f in sorted(glob.glob(os.path.join(DATA, '**', '*.json'), recursive=True))).encode()).hexdigest()[:10]})
 shutil.rmtree(W)
-print('Grok apps built into', OUTG, hk)
+print('Live apps built from grok/data', hk)

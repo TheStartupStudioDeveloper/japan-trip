@@ -10,6 +10,8 @@ Home-screen web apps, published with GitHub Pages:
 
 The same pages are also published on claude.ai. Every update goes to both.
 
+**Hong Kong leg (from Mon 26 Oct 2026): Grok drives the live apps.** The source of truth is `grok/data/` (brief in `grok/GROK.md`). Every push that changes it runs `.github/workflows/grok-build.yml`, which runs `source/grok/grok_build.py` and rewrites the live `index.html`, `extras/`, `weather/` and `expenses/`. The claude.ai copies are not updated in this period. Restore point: Steady state 3 (`archive/ss3-2026-10-26`), branch `backup-before-grok-live-2026-10-26`. Claude: edit `grok/data/`, not the amendments, until the data is merged back after the trip.
+
 ## Layout
 - `index.html`, `manifest.webmanifest`, `sw.js`, `icon-*.png`: the itinerary web app (built, do not edit by hand).
 - `weather/`: the Trip Weather web app (built, do not edit by hand).

@@ -1,5 +1,12 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 18:20. Grok takes over the live apps
+- Steady state 3 saved first (archive/ss3-2026-10-26, branch backup-before-grok-live-2026-10-26).
+- The live Itinerary, Extras, Weather and Expenses are now rebuilt from grok/data/ by the GitHub Action on every change, so Grok's edits land in the apps already on the phone. Same addresses, ticks and notes kept. Chat buttons open Grok; Copy for Claude is now Copy for Grok.
+- The separate Grok copy apps (grok/) are removed.
+- First Grok edit: Mon 26 dinner is now Lawson noodles and hot chicken.
+- Weather now shows the Hong Kong Observatory wind forecast (06:35 Mon 26) with Plan B.
+
 ## Mon 26 Oct 16:52. Hong Kong Plan B
 - Why: Hong Kong Observatory 9-day forecast, issued 06:35 Mon 26. Wed 28 east force 4 to 5, occasionally 6 offshore and on high ground, mainly cloudy with sunny intervals. Thu 29 cloudy early then mainly fine. Fri 30 fine, east to north-east force 3 to 4. Rain risk low, no typhoon. The cable car slows or stops in strong wind, and the Peak is cloudier on Wednesday.
 - Wed 28 is now Central and Sheung Wan at street level and the big night out: pool to 12:30, Star Ferry 13:00, Graham Street Market, Tai Kwun, PMQ and the escalator 13:30, Sheung Wan (Hollywood Road, Cat Street, Man Mo Temple) 15:30, egg tart 16:30, ferry back to rest 17:15, big dinner 19:30, bars. Weather recheck note for about 20:00.

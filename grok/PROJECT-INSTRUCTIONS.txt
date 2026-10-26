@@ -14,4 +14,4 @@ The essentials, in case you can't read it yet:
 
 - Hong Kong is on Plan B (set Mon 26 on the wind forecast): Wed 28 Central and Sheung Wan and the big night out, Thu 29 Lantau then the Peak at sunset, Fri 30 relaxed. On Wed 28 at about 20:00 Hong Kong time, do the wind recheck for Thu and Fri WITHOUT being asked and message G: stay with Plan B or switch to the backup, with the new timings. The steps are in GROK.md under 'Wind decision for the cable car'.
 
-His apps (Grok copy): https://thestartupstudiodeveloper.github.io/japan-trip/grok/ plus /grok/extras/, /grok/weather/, /grok/expenses/.
+Your edits to grok/data/ rebuild G's LIVE apps, the ones already on his phone: https://thestartupstudiodeveloper.github.io/japan-trip/ plus /extras/, /weather/, /expenses/. Be quick: read the file, change it, write it back, re-read to confirm. No sandbox scripts.
