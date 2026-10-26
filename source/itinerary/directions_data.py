@@ -1191,3 +1191,9 @@ GO[26] += [
 for _k, (_t, _st) in enumerate(GO[26]):
     if _t.startswith('Skytree from the street'):
         GO[26][_k] = (_t, [x if 'Azumabashi+Bridge' not in x else 'Maps: https://www.google.com/maps/dir/?api=1&destination=Azuma+Bridge+Asakusa&destination_place_id=ChIJE_vaNPOPGGARyHuNN8Y_AsQ&travelmode=walking https://maps.apple.com/?daddr=35.710155,139.79885&q=Azuma+Bridge&dirflg=w' for x in _st])
+GO[26] += [
+ ('Dinner: yakitori and beers under the tracks', [
+  'From the hotel, a few minutes east to the arches. Shimbashi end first, or north through OKUROJI to the Yūrakuchō lanes, about 10 minutes.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=Yakitori+Ton+Ton+Yurakucho&destination_place_id=ChIJz-uduu-LGGARmiJ9qVRATAE&travelmode=walking https://maps.apple.com/?daddr=Yakitori+Ton+Ton+Yurakucho&dirflg=w',
+ ]),
+]

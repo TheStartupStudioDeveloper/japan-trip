@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 16:40
+- Ginza line and HANDS done. Walked the lanes under the tracks back to the hotel (done). Back at the hotel 16:40: taxi booking and AirPod. Dinner under the tracks 18:30.
+
 ## Mon 26 Oct 14:24
 - Marugame done. Sensō-ji quick photo stop 14:10 (done). Skytree from Azuma-bashi 14:30, Ginza line 14:40, HANDS 15:05, Forum 15:45, yakitori 16:10.
 

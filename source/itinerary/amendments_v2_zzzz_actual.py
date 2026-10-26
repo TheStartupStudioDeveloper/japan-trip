@@ -1137,3 +1137,11 @@ for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Tokyo International Forum'): D[26]['rows'][_i] = R('15:45', *_x[1:])
     if _x[1].startswith('Yakitori and beers'): D[26]['rows'][_i] = R('16:10', *_x[1:])
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Mon 26 16:40: back at the hotel after walking under the tracks. Dinner later, back down to the lanes.
+for _i, _x in enumerate(D[26]['rows']):
+    if _x[1].startswith(('Ginza line back to Ginza', 'Book nook kit at HANDS')): D[26]['rows'][_i] = R(_x[0], _x[1], _x[2], DN)
+    if _x[1].startswith('Yakitori and beers under the tracks'): D[26]['rows'][_i] = R('16:10', 'Walked the lanes under the tracks back to the hotel', 'A look at the Yūrakuchō lanes and OKUROJI on the way back; dinner there later.', DN)
+    if _x[1].startswith('Back to the hotel: taxi'): D[26]['rows'][_i] = R('16:40', 'Back at the hotel: book the taxi, AirPod, rest', 'At the desk: 明日の朝6時40分に羽田空港第3ターミナルまでタクシーを予約できますか？定額運賃でお願いします。 And: 京都のホテルから荷物が届いていますか？')
+D[26]['rows'].append(R('18:30', 'Dinner: yakitori and beers under the tracks', 'Back down to the lanes, a few minutes from the hotel: Yūrakuchō Sanchoku Inshokugai and Yakitori Tonton (open to 22:45), or the Shimbashi gādo-shita izakaya. Mostly cash, some cover charges. Then pack, Godzilla, early night. Set two alarms for 06:00.'))
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
