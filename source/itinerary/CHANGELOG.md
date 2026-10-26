@@ -439,6 +439,12 @@
 
 Saved as the steady state and renamed "Japan & Hong Kong Master Itinerary V2", online and in the PDF. Content and layout are identical to V2.7. It gathers everything from V2.0 to V2.7 below.
 
+Expenses update, 26 October
+- Applied the Log as you go paste copied 26 Oct 18:18 (synced time set to it). 13 new items, estimates at ¥1 = A$0.0091. Four amounts confirmed with one zero fewer than typed (massage ¥7,000, taxi to the Shinkansen ¥4,500, taxi to the bamboo forest ¥5,000, taxi to Kinkaku-ji ¥3,200).
+- Paid by G: Crosta Kyoto luggage transfer ¥7,500 (Wed 21); taxi Dōtonbori to Osaka Castle ¥4,200 (Thu 22); taxis to the bamboo forest ¥5,000, to Kinkaku-ji ¥3,200, Kinkaku-ji to Kyoto Station ¥3,700 (Fri 23); taxi to the station ¥2,000 (Sat 24).
+- Paid by Cynthia: massage in Shinjuku ¥7,000 (Tue 20); taxi to the Shinkansen ¥4,500 and limited express Kyoto to Nara return ¥3,500 (Wed 21); Ichiban ¥3,740 (Fri 23); katsu lunch ¥6,900 and taxi to the sumo ¥4,900 (Sun 25); coffee at Sky House ¥3,600 (Mon 26).
+- Skipped as already in the ledger: Golden Gai drinks, yakitori dinner, Shinkansen breakfast.
+
 Expenses: Log as you go clears only once applied, 22 October
 - Replaces "copy only new items, mark them sent". Copy now always copies everything still on the list, plus a last line "Copied <date and time with offset>", so nothing is lost if a paste goes missing.
 - Each item records when it was added. The page carries a synced time (source/expenses/log_synced.json). When Claude applies a paste, it sets that time to the paste's "Copied" time and republishes. On open, the page clears only items added before the synced time; anything added after the copy stays.
