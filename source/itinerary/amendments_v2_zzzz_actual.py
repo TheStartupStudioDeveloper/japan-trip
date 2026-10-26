@@ -1145,3 +1145,84 @@ for _i, _x in enumerate(D[26]['rows']):
     if _x[1].startswith('Back to the hotel: taxi'): D[26]['rows'][_i] = R('16:40', 'Back at the hotel: book the taxi, AirPod, rest', 'At the desk: 明日の朝6時40分に羽田空港第3ターミナルまでタクシーを予約できますか？定額運賃でお願いします。 And: 京都のホテルから荷物が届いていますか？')
 D[26]['rows'].append(R('18:30', 'Dinner: yakitori and beers under the tracks', 'Back down to the lanes, a few minutes from the hotel: Yūrakuchō Sanchoku Inshokugai and Yakitori Tonton (open to 22:45), or the Shimbashi gādo-shita izakaya. Mostly cash, some cover charges. Then pack, Godzilla, early night. Set two alarms for 06:00.'))
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Mon 26 16:52: Hong Kong moves to Plan B on the Observatory wind forecast (issued 06:35 Mon 26).
+# Wed 28 east force 4 to 5, occasionally 6 offshore and on high ground, mainly cloudy: the Peak moves to Thursday sunset.
+# Thu 29 cloudy early then mainly fine: Lantau in the morning, the Peak at sunset. Fri 30 fine and calmer: the wind backup.
+D[27]['sum'] = D[27]['sum'].replace('An early train to Haneda', 'An early taxi to Haneda')
+for _i, _n in enumerate(D[27].get('notes') or []):
+    if _n[0] == 'Taxi instead in Tokyo':
+        D[27]['notes'][_i] = ('Train instead in Tokyo', 'The backup if the taxi has not shown by 06:50: walk to Shimbashi, Asakusa line platform 1, the 06:38 or 06:45 direct to Terminal 3 (How-to 18).')
+
+D[28]['title'] = 'Central and Sheung Wan at street level, big night out'
+D[28]['cal'] = 'Central, big night'
+D[28]['sum'] = 'Plan B, set on Mon 26 from the wind forecast: the Peak moves to Thursday. A pool morning, then Central and Sheung Wan on foot, back to rest and change, and the big night out.'
+_bars = [r for r in D[28]['rows'] if r[0] in ('Late', 'Optional')]
+D[28]['rows'] = [
+ R('09:00', 'Lounge breakfast', ''),
+ R('09:45', 'Sheraton pool, optional, until about 12:30', 'The best block for sun. Read, tan, swim.'),
+ R('13:00', 'Star Ferry to Central', 'From the pier beside the Clock Tower. Ten minutes across the harbour, Octopus at the gate.'),
+ R('13:30', 'Graham Street Market, Tai Kwun, PMQ, Mid-Levels escalator', 'The old street market first, then design and architecture, all within a few blocks. A quick bite on the way: Lan Fong Yuen milk tea and a pork chop bun, at the bottom of the market.'),
+ R('15:30', 'Sheung Wan: Hollywood Road, Cat Street, Man Mo Temple', 'West along Hollywood Road for antiques, vintage and resale. Cat Street is the lane just below. Man Mo Temple is on Hollywood Road: ten minutes inside.'),
+ R('16:30', 'Egg tart and coffee', 'Tai Cheong Bakery, Lyndhurst Terrace, near the bottom of the escalator. Check the hours on the day.'),
+ R('17:15', 'Back to the hotel to rest and change', 'Star Ferry from Central Pier 7, on the water close to sunset (17:50).'),
+ R('19:30', 'Big dinner in Central or SoHo', 'The big dinner of the trip. Book ahead. Short taxi through the tunnel, or the MTR two stops to Central.', TB),
+] + _bars
+D[28]['notes'] = [
+ ('Tonight, about 20:00: weather recheck', 'Check the Observatory 9-day forecast and warnings for Thursday and Friday. If Thursday looks windy or cloudy and Friday calmer, switch to the backup (the box under Thursday). The Peak stays on Thursday either way.'),
+]
+
+_BACKUP = ('Backup plan: if the wind stops the cable car', [
+ ('1. Wed 28, about 20:00', 'Recheck the Observatory 9-day forecast and warnings for Thursday and Friday. Switch to the backup if Thursday shows force 6 or more on high ground during the day, a Strong Monsoon Signal, or rain or low cloud, and Friday still looks calmer.'),
+ ('2. Thu 29, 08:00', 'Final check. If Ngong Ping 360 is suspended or running a reduced service, switch to the backup.'),
+ ('3. The backup: swap the mornings', 'Thursday becomes the relaxed day (pool, yum cha 12:30) but keep the Peak Tram at 15:45 and sunset on Thursday (the Peak Tram is not stopped by wind), then Temple Street. Friday becomes: 08:00 lounge breakfast, 08:45 train to Tung Chung, 10:00 cable car, 12:45 down, about 14:15 back at the hotel, pool and pack, 17:20 check out, 17:40 Ozone, 19:15 dinner, 20:45 taxi to the airport.'),
+ ('4. If the cable car is stopped on both days', 'Bus 23 from Tung Chung Town Centre bus terminus to Ngong Ping, about 45 minutes, or skip Lantau and give the time to the pool, Central or Sheung Wan.'),
+ ('5. The voucher', 'The Klook Crystal voucher is valid any day to 31 October, so no change is needed to the booking.'),
+])
+
+D[29]['title'] = 'Lantau in the morning, the Peak at sunset'
+D[29]['cal'] = 'Big Buddha, the Peak'
+D[29]['sum'] = 'Out to Lantau for the first cable car, lunch in Central, then the Peak for sunset and Temple Street at night. Check the wind at breakfast: if the cable car is not running, switch to the backup below.'
+D[29]['rows'] = [
+ R('08:00', 'Lounge breakfast, go or no-go check', 'Hong Kong Observatory warnings and wind, and the Ngong Ping 360 service status on np360.com.hk. Suspended or a reduced service: switch to the backup below.'),
+ R('08:45', 'Train to Tung Chung', 'About 50 minutes, one change at Lai King (How-to 20).'),
+ R('10:00', 'Ngong Ping 360 Crystal cabin up', 'Klook voucher, valid any day to 31 October (How-to 20). First car, shortest queues. 25 minutes.', TB),
+ R('10:30', 'Big Buddha, Po Lin Monastery, Wisdom Path', '268 steps up. Skip most of the village.'),
+ R('12:45', 'Cable car down', ''),
+ R('13:20', 'Tung Chung line to Hong Kong Station', 'About 30 minutes, direct. Hong Kong Station joins Central underground.'),
+ R('14:00', 'Lunch in Central', 'Roast goose at Yat Lok on Stanley Street is about ten minutes\' walk. Yum cha is Friday\'s lunch.'),
+ R('15:45', 'Peak Tram up', 'Standard one-way ticket, prebooked. Garden Road lower terminus, about 15 minutes\' walk from lunch. Sit on the right going up, then Lugard Road for the best free view (How-to 19).', TB),
+ R('17:50', 'Sunset at the Peak', 'Stay while the city lights come on.'),
+ R('18:45', 'Taxi down', 'From the rank by the Peak Galleria. Show 佐敦 廟街 (Temple Street, Jordan), or 尖沙咀 喜來登酒店 for the hotel. Tram seats face backwards going down.'),
+ R('19:30', 'Temple Street dinner and night market', 'Order the claypot rice first, it takes 20 minutes, then browse the stalls. A 15 minute walk from the hotel.'),
+ R('21:30', 'Back at the hotel', 'Or a bar nearby.'),
+]
+D[29]['notes'] = []
+D[29]['extra'] = _BACKUP
+
+D[30]['notes'] = [n for n in (D[30].get('notes') or []) if n[0] not in ('If you missed the Peak or Ngong Ping', 'If Ozone was Thursday')]
+D[30]['extra'] = _BACKUP
+
+SWAPS[:] = [
+ ('Ngong Ping on Friday, instead of Thursday', 'The wind backup (the box under Thursday). Lantau on Friday morning, back at the hotel about 14:15 to pack. Thursday takes the pool and yum cha, and keeps the Peak at sunset.', 'Costs the easy last morning. A big day before a red-eye.'),
+] + [s for s in SWAPS if not s[0].startswith('Ngong Ping on Friday')]
+for _i, _s in enumerate(SWAPS):
+    if _s[0].startswith("Dragon's Back"):
+        SWAPS[_i] = (_s[0], 'Replaces the Big Buddha on Thursday morning, from 08:30 to about 13:30.', "Costs the cable car. Join Thursday's plan at lunch in Central at 14:00, before the Peak.")
+LEGS['h']['sum'] = 'Optional pool time in the sunny hours and evenings in the city. Wednesday is Central and Sheung Wan on foot and the big night out. Thursday is the Big Buddha in the morning and the Peak at sunset, with a wind backup that moves Lantau to Friday. Friday has a late checkout: pool, yum cha and Ozone at sunset before the 00:30 flight.'
+
+_ck = {
+ 'Peak Tram one-way up, about 15:45 on the clearest evening (Wed 28 by default)': 'Peak Tram one-way up, about 15:45 on Thu 29 (Plan B). Stays on Thursday in the backup too',
+ 'Dinner in Central or SoHo for the same evening as the Peak, 19:30': 'Big dinner in Central or SoHo, Wed 28 at 19:30',
+ 'Pick the Ngong Ping day for the voucher, first car at 10:00 (Thu 29 by default)': 'Ngong Ping first car at 10:00 on Thu 29 (Plan B). Fri 30 is the wind backup, same voucher',
+ 'Ozone at the Ritz-Carlton: choose Thursday or Friday by the cloud, then book': 'Ozone at the Ritz-Carlton, Fri 30 at 17:40: book once Friday looks clear',
+}
+for _sec in CHECK:
+    for _i, (_k, _t) in enumerate(_sec[1]):
+        if _t in _ck: _sec[1][_i] = (_k, _ck[_t])
+for _sec in CHECK:
+    if _sec[0].startswith('On the ground'):
+        _sec[1].append(('h', 'Wed 28 about 20:00: recheck the Observatory for Thursday and Friday wind and cloud. Stay with Plan B or switch to the backup'))
+for _k, _h in enumerate(HOWTO):
+    if _h[0] == 'Peak Tram':
+        HOWTO[_k] = (_h[0], ['Book a standard one-way ticket up, for about 15:45 on Thu 29 (Plan B). The Peak Tram is not stopped by wind. Klook Fast Track runs Friday to Sunday only.'] + list(_h[1][1:]))

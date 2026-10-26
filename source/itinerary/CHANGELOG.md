@@ -1,5 +1,15 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 16:52. Hong Kong Plan B
+- Why: Hong Kong Observatory 9-day forecast, issued 06:35 Mon 26. Wed 28 east force 4 to 5, occasionally 6 offshore and on high ground, mainly cloudy with sunny intervals. Thu 29 cloudy early then mainly fine. Fri 30 fine, east to north-east force 3 to 4. Rain risk low, no typhoon. The cable car slows or stops in strong wind, and the Peak is cloudier on Wednesday.
+- Wed 28 is now Central and Sheung Wan at street level and the big night out: pool to 12:30, Star Ferry 13:00, Graham Street Market, Tai Kwun, PMQ and the escalator 13:30, Sheung Wan (Hollywood Road, Cat Street, Man Mo Temple) 15:30, egg tart 16:30, ferry back to rest 17:15, big dinner 19:30, bars. Weather recheck note for about 20:00.
+- Thu 29 is Lantau in the morning and the Peak at sunset: breakfast and a go or no-go check 08:00, Tung Chung 08:45, cable car 10:00, down 12:45, lunch in Central 14:00, Peak Tram 15:45, sunset 17:50, taxi down 18:45, Temple Street 19:30. Ozone on Thursday dropped.
+- Fri 30 unchanged as the default.
+- New boxed backup plan on Thu 29 and Fri 30: the Wed 20:00 recheck, the Thu 08:00 check, swap the mornings (Lantau to Friday, the Peak stays on Thursday), bus 23 if the cable car is stopped both days, the voucher is good to 31 October.
+- Directions moved with the rows. Swaps, Hong Kong leg summary, checklist and How-to 19 updated. Tue 27 summary and note now say taxi, with the train as the backup.
+- Extras: Man Wah, The Bakehouse, Yat Lok and Tai O lines updated to the new days.
+- Grok copy updated to match, with the backup in its brief.
+
 ## Mon 26 Oct 16:40
 - Ginza line and HANDS done. Walked the lanes under the tracks back to the hotel (done). Back at the hotel 16:40: taxi booking and AirPod. Dinner under the tracks 18:30.
 

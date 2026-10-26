@@ -1197,3 +1197,28 @@ GO[26] += [
   'Maps: https://www.google.com/maps/dir/?api=1&destination=Yakitori+Ton+Ton+Yurakucho&destination_place_id=ChIJz-uduu-LGGARmiJ9qVRATAE&travelmode=walking https://maps.apple.com/?daddr=Yakitori+Ton+Ton+Yurakucho&dirflg=w',
  ]),
 ]
+
+# Mon 26 16:52: Hong Kong Plan B. The Peak moves to Thursday sunset; Sheung Wan, the egg tart and the ferry back move to Wednesday.
+def _take(d, k):
+    for _g in GO[d]:
+        if _g[0] == k: return _g
+    return None
+_peak, _taxi = _take(28, 'Peak Tram up'), _take(28, 'Taxi down')
+_shw, _egg, _sfc = _take(29, 'Sheung Wan shops'), _take(29, 'Egg tart'), _take(29, 'Star Ferry from Central')
+_np, _hks = _take(29, 'Ngong Ping 360 cable car up'), _take(29, 'Train to Hong Kong Station')
+GO[28] = [g for g in GO[28] if g[0] not in ('Peak Tram up', 'Taxi down')]
+GO[28] += [('Sheung Wan: Hollywood Road', _shw[1]), ('Egg tart and coffee', _egg[1]), ('Back to the hotel to rest and change', _sfc[1])]
+GO[29] = [g for g in GO[29] if g[0] not in ('Sheung Wan shops', 'Egg tart', 'Star Ferry from Central', 'Optional: Ozone', 'Ngong Ping 360 cable car up', 'Train to Hong Kong Station')]
+GO[29] += [
+ ('Ngong Ping 360 Crystal cabin up', _np[1]),
+ ('Tung Chung line to Hong Kong Station', _hks[1]),
+ ('Lunch in Central', [
+  'From Hong Kong Station, follow the signs to Central and up to Queen\'s Road Central. Yat Lok (一樂燒鵝) is at 34 Stanley Street, about 10 minutes.',
+  'https://www.google.com/maps/dir/?api=1&destination=Yat+Lok+Restaurant+Stanley+Street+Central&travelmode=walking',
+ ]),
+ ('Peak Tram up', ['From Stanley Street, walk up to Garden Road (花園道 山頂纜車總站), about 15 minutes uphill, or a short taxi.'] + [s for s in _peak[1] if not s.startswith('Lower terminus')]),
+ ('Taxi down', [
+  'Taxi rank by the Peak Galleria (山頂廣場), across from the Peak Tower.',
+  'For Temple Street show: 佐敦 廟街 (Temple Street, Jordan). For the hotel: 尖沙咀 喜來登酒店. Through the tunnel, about 25 to 30 minutes.',
+ ]),
+]
