@@ -1140,3 +1140,11 @@ GO[26] += [
   'Maps: https://www.google.com/maps/dir/?api=1&destination=Yakitori+Ton+Ton+Yurakucho&destination_place_id=ChIJz-uduu-LGGARmiJ9qVRATAE&travelmode=walking https://maps.apple.com/?daddr=Yakitori+Ton+Ton+Yurakucho&dirflg=w',
  ]),
 ]
+GO[27] = [g for g in GO[27] if not g[0].startswith(('Leave the hotel, walk to Shimbashi', 'Airport Rapid Limited Express'))]
+GO[27] += [
+ ('Taxi to Haneda Terminal 3', [
+  'From the hotel entrance. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 Flat fare: 定額運賃で.',
+  'Drop-off is at the 3F departures kerb. The Cathay Pacific desks are inside.',
+  maps('Haneda Airport Terminal 3', 'driving', 'd'),
+ ]),
+]

@@ -1076,3 +1076,18 @@ for _i, _x in enumerate(D[26]['rows']):
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
 D[26]['title'] = 'teamLab, Kappabashi, Sensō-ji, yakitori under the tracks, early night'
 D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi and Sensō-ji, a look at the Skytree from the street, a book nook kit at HANDS, then yakitori and beers under the train tracks and back early to pack and watch Godzilla.'
+
+# Mon 26 11:45: taxi to Haneda on Tue 27 instead of the train. Booked through the hotel the night before.
+D[27]['rows'] = [x for x in D[27]['rows'] if not x[1].startswith(('Leave the hotel, walk to Shimbashi', 'Airport Rapid Limited Express'))]
+for _i, _x in enumerate(D[27]['rows']):
+    if _x[1].startswith('Wake, shower'): D[27]['rows'][_i] = R('06:00', _x[1], 'Bags packed the night before.', *_x[3:])
+D[27]['rows'].append(R('06:40', 'Taxi to Haneda Terminal 3', 'Booked through the front desk the night before. About 20 to 25 minutes at this hour. Ask for the flat fare (定額運賃): about ¥5,900 from Minato ward plus expressway tolls, so roughly ¥6,000 to ¥7,000. Card or Suica. Show: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 Train backup: How-to 18.'))
+D[27]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+D[26]['rows'].append(R('17:00', 'Book tomorrow\'s taxi at the front desk', 'Ask: 明日の朝6時40分に羽田空港第3ターミナルまでタクシーを予約できますか？定額運賃でお願いします。 (A taxi to Haneda Terminal 3 at 06:40 tomorrow, flat fare, please.)'))
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+for _k, _h in enumerate(HOWTO):
+    if _h[0] == 'Train to Haneda, Tue 27':
+        HOWTO[_k] = ('Taxi or train to Haneda, Tue 27', [
+         'Plan: taxi from the hotel at 06:40, booked at the front desk on Monday. About 20 to 25 minutes. Ask for the flat fare (定額運賃), about ¥5,900 from Minato ward plus tolls.',
+         'Driver phrase: 羽田空港 第3ターミナル 出発ロビーまでお願いします。 (Haneda Terminal 3, departures, please.)',
+         'If the taxi does not show by 06:50, take the train:'] + list(_h[1]))
