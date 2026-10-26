@@ -1180,3 +1180,10 @@ GO[26] += [
   maps('Azumabashi Bridge Asakusa'),
  ]),
 ]
+GO[26] += [
+ ('Ganso Food Sample Shop', [
+  'North end of Kappabashi-dōri, Nishi-Asakusa 3-7-6, on the east side. Look for the window full of plastic food.',
+  'Maps: https://www.google.com/maps/dir/?api=1&destination=Ganso+Food+Sample+Shop+Kappabashi&destination_place_id=ChIJXfrPw5WOGGARtaWpQ0neL7U&travelmode=walking https://maps.apple.com/?daddr=Ganso+Food+Sample+Shop+Kappabashi&dirflg=w',
+  'To ask about the workshop: 今日、食品サンプル作り体験はできますか？ (Can we do the fake food workshop today?)',
+ ]),
+]

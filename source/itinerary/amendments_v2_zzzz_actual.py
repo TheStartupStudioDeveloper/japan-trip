@@ -1112,3 +1112,7 @@ for _i, _x in enumerate(D[26]['rows']):
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
 D[26]['title'] = 'teamLab, Kappabashi, HANDS, yakitori under the tracks, early night'
 D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi, a look at the Skytree from the street, a book nook kit at HANDS, the Forum, then yakitori and beers under the train tracks and back early to pack and watch Godzilla.'
+
+# Mon 26 12:38: Ganso fake food shop added, now, at the north end of Kappabashi.
+D[26]['rows'].append(R('12:45', 'Ganso Food Sample Shop, fake food', 'The fake food you see in restaurant windows, at the north end of Kappabashi-dōri: sushi, ramen and parfait replicas as magnets, keyrings and full-size pieces. They also run a make-your-own workshop at set times; ask in store if there is a spot today (普通は予約が必要です: usually booked ahead). Open 10:00 to 17:30.'))
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))

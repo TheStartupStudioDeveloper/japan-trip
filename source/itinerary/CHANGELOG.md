@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:38
+- Ganso Food Sample Shop added at 12:45, north end of Kappabashi, with the workshop question.
+
 ## Mon 26 Oct 12:37
 - Lunch in Asakusa and Sensō-ji dropped. Skytree from Azuma-bashi 14:00, Ginza line 14:15, HANDS 14:40, Forum 15:20, yakitori under the tracks 15:45, hotel 17:00.
 
