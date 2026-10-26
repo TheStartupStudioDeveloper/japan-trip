@@ -1172,3 +1172,11 @@ GO[26] += [
   maps(HOTEL_T),
  ]),
 ]
+GO[26] = [g for g in GO[26] if not g[0].startswith(('Lunch in Asakusa', 'Sensō-ji', 'Skytree from the street'))]
+GO[26] += [
+ ('Skytree from the street', [
+  'From Kappabashi, east along Asakusa-dōri past Tawaramachi to the river, about 15 minutes. Azuma-bashi bridge (吾妻橋) has the view: Skytree behind the Asahi building and its golden flame.',
+  'Asakusa station (Ginza line) is right at the bridge end.',
+  maps('Azumabashi Bridge Asakusa'),
+ ]),
+]

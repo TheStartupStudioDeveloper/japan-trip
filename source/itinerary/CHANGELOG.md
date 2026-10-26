@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:37
+- Lunch in Asakusa and Sensō-ji dropped. Skytree from Azuma-bashi 14:00, Ginza line 14:15, HANDS 14:40, Forum 15:20, yakitori under the tracks 15:45, hotel 17:00.
+
 ## Mon 26 Oct 12:25
 - Opens on today at the Now line during the trip (the remembered position no longer overrides it; also after 30 minutes away). Day taps no longer write the day into the address.
 - New pin button beside the up arrow, bottom left: jumps to today at the current time.

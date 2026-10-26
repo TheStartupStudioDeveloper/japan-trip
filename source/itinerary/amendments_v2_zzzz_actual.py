@@ -1100,3 +1100,15 @@ D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Back to the h
  R('18:15', 'Back to the hotel: taxi, AirPod, pack, Godzilla', 'Out of the arches at the hotel end, 2 to 3 minutes to the Blossom. At the desk: book tomorrow\'s taxi (明日の朝6時40分に羽田空港第3ターミナルまでタクシーを予約できますか？定額運賃でお願いします。) and ask about the AirPod (京都のホテルから荷物が届いていますか？). Then pack, Godzilla, early night. Set two alarms.'),
 ]
 D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+
+# Mon 26 12:37: lunch and Sensō-ji out. The afternoon moves forward.
+D[26]['rows'] = [x for x in D[26]['rows'] if not x[1].startswith(('Lunch in Asakusa', 'Sensō-ji'))]
+_tm = {'Skytree from the street': ('14:00', 'About 15 minutes east from Kappabashi to Azuma-bashi bridge (吾妻橋) for the Skytree across the river, with the golden Asahi flame. Just the view.'),
+       'Ginza line back to Ginza': ('14:15', None), 'Book nook kit at HANDS Ginza': ('14:40', None), 'Tokyo International Forum glass hall': ('15:20', None),
+       'Yakitori and beers under the tracks, heading south': ('15:45', None), 'Back to the hotel: taxi, AirPod, pack, Godzilla': ('17:00', None)}
+for _i, _x in enumerate(D[26]['rows']):
+    for _k, (_t, _n) in _tm.items():
+        if _x[1].startswith(_k): D[26]['rows'][_i] = R(_t, _x[1], _n if _n else _x[2], *_x[3:])
+D[26]['rows'].sort(key=lambda x: (not x[0][0].isdigit(), x[0]))
+D[26]['title'] = 'teamLab, Kappabashi, HANDS, yakitori under the tracks, early night'
+D[26]['sum'] = 'teamLab Borderless first thing, coffee beside Tokyo Tower, Kappabashi, a look at the Skytree from the street, a book nook kit at HANDS, the Forum, then yakitori and beers under the train tracks and back early to pack and watch Godzilla.'
