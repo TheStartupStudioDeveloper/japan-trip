@@ -5,36 +5,31 @@
  "where": "Pool, yum cha, Ozone",
  "title": "Pool, yum cha, Ozone at sunset, then fly",
  "icon": "sun",
- "hi": 30,
- "lo": 25,
- "rain": 10,
- "cond": "Fine, light easterly",
+ "hi": 28,
+ "lo": 23,
+ "rain": null,
+ "cond": "Humid, plenty of sunshine",
  "sunset": "17:50",
- "call": "Fine, 25 to 30°, east to north-east force 3 to 4: the calmest and clearest day. The best pool morning and a clear sunset at Ozone. If Thursday switched to the backup, this is the Ngong Ping day: 08:45 train, 10:00 cable car, back at the hotel about 14:15.",
+ "call": "Fine, 25 to 30°, light easterly. The best day for the pool, and the backup day for Lantau if Thursday's cable car is stopped.",
  "plan": [
   [
    "09:45",
-   "Sheraton pool, or Lantau in the backup",
+   "Sheraton pool",
    "Outdoors"
   ],
   [
    "17:40",
    "Ozone at the Ritz-Carlton",
    "Sunset view"
-  ],
-  [
-   "20:45",
-   "Taxi to the airport",
-   ""
   ]
  ],
  "src": [
   [
    "Combined",
-   "10%, the Hong Kong Observatory weighted highest"
+   "10%, AccuWeather until the Hong Kong Observatory 9-day forecast reaches Tue 27, from Mon 19"
   ],
   [
-   "Hong Kong Observatory (official, 06:35 Mon 26)",
+   "Hong Kong Observatory (official)",
    "25° to 30°, fine, east to north-east force 3 to 4"
   ],
   [
@@ -42,12 +37,12 @@
    "28° / 23°, a quick morning shower, humid"
   ]
  ],
- "mm": "Low risk. No rain forecast to plan around",
+ "mm": "Not forecast yet",
  "gicon": "sun",
  "gfill": 10,
  "gtext": "10%",
- "gmm": "0",
- "read": "Fine and the calmest day. The backup day for the cable car.",
+ "gmm": null,
+ "read": "Sunny, hot and humid.",
  "chance": null,
  "mmBars": [],
  "temps": {

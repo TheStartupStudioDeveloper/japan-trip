@@ -10,12 +10,12 @@
  "rain": 60,
  "cond": "Tokyo heavy rain early, Hong Kong cloudy",
  "sunset": "17:50",
- "call": "Tokyo is the watch. tenki.jp's forecaster has the low moving away on Tuesday, but with steady, locally heavy rain from dawn into the morning along the southern Kanto coast, which is where Haneda is, easing by midday. Now a taxi from the hotel at 06:40, so the rain matters less: allow a little extra time on the expressway, and check CX543 in the Cathay app on Monday night and Tuesday morning. Hong Kong: mainly cloudy, sunny periods later, 26 to 30°, breezy north-easterly, fine for the evening harbour cruise.",
+ "call": "Rain until about 08:00, then clearing. tenki.jp's hourly for Chiyoda has about 1 mm an hour through the night, 2 mm at 02:00, still raining when you leave at about 06:30, cloudy and dry from 09:00, 16°. Its forecaster puts the peak tonight to dawn, with local bursts of about 30 mm an hour in southern Kanto. The taxi is the right call: allow extra time for wet roads, and check CX543 in the Cathay app before you leave. Light northerly wind, so take-off should be fine once the rain eases. Hong Kong: mostly cloudy, sunny spells later, 26 to 30°, a fresh easterly for the harbour cruise.",
  "plan": [
   [
-   "06:40",
+   "06:30",
    "Taxi to Haneda Terminal 3",
-   "Booked at the front desk"
+   "In the rain"
   ],
   [
    "10:10",
@@ -25,7 +25,7 @@
   [
    "19:30",
    "Aqua Luna harbour cruise, Hong Kong",
-   "Outdoors"
+   "Outdoors, breezy"
   ]
  ],
  "src": [
@@ -34,24 +34,16 @@
    "60% chance of rain, tenki.jp weighted highest"
   ],
   [
-   "tenki.jp forecaster, Kanto (12:25 Sun)",
-   "Low moves away. Steady, locally heavy rain from dawn into the morning along the southern Kanto coast, Haneda included; easing by midday. Warning-level rain possible in Chiba and Kanagawa"
-  ],
-  [
-   "tenki.jp forecaster, typhoon (03:00 Sun)",
-   "Champi 992 hPa over the East China Sea, may land on Kyushu Mon 26, then extratropical, moving from off Shikoku to south of Honshu"
-  ],
-  [
-   "Hong Kong Observatory (official)",
-   "26° to 30°, mainly cloudy, a few light rain patches early, sunny periods later, east to north-east force 4, force 5 offshore later"
-  ],
-  [
-   "tenki.jp forecaster, Kanto",
-   "The front moves south, gradually improving, with some lingering rain"
+   "tenki.jp, Tokyo (Chiyoda) hourly",
+   "Rain about 1 mm an hour from 01:00 to 08:00, 2 mm at 02:00, cloudy and dry from 09:00, 16 to 21°, north wind 3 m/s (08:00 Mon)"
   ],
   [
    "tenki.jp, Tokyo (Shibuya), Haneda morning",
    "24° / 17°, a shower overnight, under 1 mm, then 30% and dry from 06:00 (20:00 Thu)"
+  ],
+  [
+   "Hong Kong Observatory (official)",
+   "26° to 30°, mostly cloudy, a few light rain patches early, sunny spells later, east to north-east force 4, 5 offshore later"
   ],
   [
    "AccuWeather, Hong Kong",
@@ -63,7 +55,7 @@
  "gfill": 60,
  "gtext": "60%",
  "gmm": null,
- "read": "Heavy rain at dawn in Tokyo: the 06:40 taxi takes care of it. Hong Kong cloudy, 30°.",
+ "read": "Rain until about 08:00 for the taxi, dry by the 10:10 flight. Hong Kong cloudy, 30°.",
  "chance": null,
  "mmBars": [],
  "temps": {

@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-26T06:35:00+08:00",
- "checkedLabel": "Mon 26 Oct, Hong Kong Observatory 06:35 Hong Kong time",
+ "checked": "2026-10-26T18:05:00+09:00",
+ "checkedLabel": "Mon 26 Oct, 18:05 Tokyo time",
  "legs": [
   {
    "id": "s",
@@ -43,11 +43,11 @@
    "dates": "Tue 27 to Sat 31 Oct",
    "no": "Leg 4 of 4",
    "range": "26–30°",
-   "line": "Breezy and cloudy midweek, fine Friday",
-   "lede": "The Hong Kong Observatory (06:35 Mon 26) has a fresh easterly: force 4 to 5, occasionally 6 offshore and on high ground on Wednesday and early Thursday, then force 3 to 4 and fine on Friday. 25 to 30°, rain risk low, no typhoon. Plan B is set: the Peak on Thursday sunset, Friday is the cable car backup."
+   "line": "Very hot, then a few showers",
+   "lede": "The Hong Kong Observatory has fine, dry, very hot weather to Sat 24, then sunny spells with a shower or two, 26 to 30°, by Tue 27. Champi is now forecast to turn north-east, away from Hong Kong."
   }
  ],
- "typhoon": "<h4>Typhoons</h4><p>None near Hong Kong. The Observatory (06:35 Mon 26) has no tropical cyclone affecting Hong Kong through Fri 30. Champi is an extratropical low south of Japan.</p>",
+ "typhoon": "<h4>Typhoons</h4><p>Champi has become an extratropical low, moving north-east past Kyushu and south of Shikoku tonight. A front stalled near the Izu Islands, with a new low on it, is driving Tokyo's rain: peak tonight to dawn Tue 27, locally about 30 mm an hour in southern Kanto, up to 120 mm by noon, then easing in the morning. Hong Kong is unaffected: a fresh easterly midweek, fine by Friday.</p><p class=\"backup\"><b>Backup booked: Mercure Tokyo Hibiya, Fri 23 to Sat 24.</b> King Privilege Room, booked direct on the Mercure website. If the typhoon threatens the Sat 24 Shinkansen, take a Nozomi to Tokyo on Fri 23 instead and stay here (check-in 14:00, check-out 11:00), then move to the Blossom Hibiya nearby on Sat 24. <b>Cancel it on the Mercure website by 18:00 Japan time on Thu 22 if not needed. Free until then.</b></p>",
  "sources": [
   [
    "tenki.jp (Japan Weather Association), Shibuya",
@@ -169,46 +169,46 @@
    "Day and night rain amounts block automated reading. The monthly calendar is used instead."
   ]
  ],
- "verdict": "Hong Kong on Plan B: windy and cloudier Wednesday, so the Peak moves to Thursday sunset.<br>Thursday gusty early on high ground: check the cable car at 08:00. Friday fine and calmer, the backup day.",
+ "verdict": "Rain until about 08:00 tomorrow, dry by the flight.<br>Hong Kong cloudy and breezy Wednesday, fine Thursday afternoon and Friday.",
  "watch": [
+  {
+   "d": 27,
+   "dow": "Tue",
+   "title": "Taxi to Haneda, CX543 10:10",
+   "risk": "Rain about 1 mm an hour until about 08:00, locally heavy before dawn. Dry from 09:00.",
+   "decide": "Tue morning",
+   "act": "Allow extra time for the taxi. Check CX543"
+  },
   {
    "d": 28,
    "dow": "Wed",
    "title": "20:00 recheck for Thursday and Friday",
    "risk": "Force 6 on high ground on Thursday, a Strong Monsoon Signal, or rain or low cloud on Thursday with a calmer Friday means switching to the backup.",
    "decide": "Wed 28, about 20:00",
-   "act": "Read the Observatory 9-day forecast and warnings. Stay with Plan B or swap Lantau to Friday"
+   "act": "Read the Observatory forecast and warnings. Stay with Plan B or swap Lantau to Friday"
   },
   {
    "d": 29,
    "dow": "Thu",
-   "title": "Ngong Ping 360 at 10:00, the Peak at sunset",
-   "risk": "East force 4 to 5, occasionally 6 on high ground early. The cable car slows or stops in strong wind. Cloudy early, then mainly fine.",
-   "decide": "Thu 29, 08:00",
-   "act": "Check Observatory warnings and np360.com.hk. Suspended or reduced: switch to the backup. The Peak Tram runs either way"
+   "title": "Ngong Ping 360",
+   "risk": "East wind force 6 at times on high ground early, easing.",
+   "decide": "Thu 08:00",
+   "act": "Check the cable car before leaving. Fri 30 is the backup"
   }
  ],
  "sinceLabel": "Since the last check, Sun 25 Oct 15:40",
  "since": [
   [
-   "Plan",
-   "<b>Plan B</b>: the Peak moves from Wednesday to <b>Thursday sunset</b>. Friday is the cable car backup"
+   "Tue 27",
+   "Rain <b>eases by about 08:00</b>, dry from 09:00. Taxi a good call"
   ],
   [
-   "Wed 28",
-   "<b>East force 4 to 5, occasionally 6</b> offshore and on high ground. Mainly cloudy, sunny intervals"
+   "Plan",
+   "Matched to <b>Hong Kong Plan B</b>: Central Wed, Lantau and the Peak Thu"
   ],
   [
    "Thu 29",
-   "Force 6 on high ground <b>early</b>, then easing. Cloudy early, <b>mainly fine</b> later"
-  ],
-  [
-   "Fri 30",
-   "<b>Fine</b>, east to north-east force 3 to 4. The calmest day"
-  ],
-  [
-   "Tue 27",
-   "Taxi to Haneda at <b>06:40</b>, the train is the backup"
+   "<b>Mainly fine</b> after early cloud, wind easing"
   ]
  ],
  "method": {
@@ -305,5 +305,5 @@
    ]
   ]
  },
- "notes_check": "Hong Kong Observatory 9-day forecast (06:35 Mon 26). Japan days as at the 15:40 Sun 25 check."
+ "notes_check": "tenki.jp hourly for Chiyoda (08:00 Mon 26), tenki.jp forecaster's Kanto article (Mon 26), Hong Kong Observatory 9-day forecast (Mon 26)."
 }

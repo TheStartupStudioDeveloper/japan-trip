@@ -2,52 +2,52 @@
  "d": 28,
  "dow": "Wednesday",
  "leg": "h",
- "where": "Central, Sheung Wan",
- "title": "Central and Sheung Wan, big night out",
- "icon": "part",
- "hi": 28,
- "lo": 25,
- "rain": 20,
- "cond": "Mainly cloudy, sunny intervals, windy",
+ "where": "Pool, the Island, the Peak",
+ "title": "Pool, Central and Sheung Wan, big night out",
+ "icon": "sun",
+ "hi": 29,
+ "lo": 24,
+ "rain": null,
+ "cond": "Plenty of sunshine",
  "sunset": "17:50",
- "call": "Mainly cloudy with sunny intervals, 25 to 28°, east force 4 to 5, occasionally 6 offshore and on high ground. That is why the Peak moved to Thursday: Wednesday is the cloudier, windier day up top. The pool is still worth a try in the sunny intervals, and Central, Sheung Wan and the night out are all at street level. Recheck the Observatory at about 20:00 for Thursday and Friday.",
+ "call": "The windiest, cloudiest day, which is why Plan B moved the Peak and the cable car off it. Mostly cloudy, a few light rain patches early, sunny intervals later, 25 to 28°, east force 4 to 5. The street-level afternoon in Central and Sheung Wan suits it, and the Star Ferry will be a little choppy. Pool is cool in the wind.",
  "plan": [
   [
    "09:45",
    "Sheraton pool",
-   "Sunny intervals, breezy"
+   "Cloudy, breezy"
   ],
   [
    "13:00",
-   "Star Ferry, Central and Sheung Wan on foot",
-   "Street level, fine in wind"
+   "Star Ferry, Central and Sheung Wan",
+   "Street level"
   ],
   [
-   "20:00",
-   "Weather recheck for Thu and Fri",
-   "Plan B or the backup"
+   "19:30",
+   "Big dinner, bars",
+   "Indoors"
   ]
  ],
  "src": [
   [
    "Combined",
-   "20%, the Hong Kong Observatory weighted highest"
+   "10%, AccuWeather until the Hong Kong Observatory 9-day forecast reaches Tue 27, from Mon 19"
   ],
   [
-   "Hong Kong Observatory (official, 06:35 Mon 26)",
-   "25° to 28°, mainly cloudy with sunny intervals, east force 4 to 5, occasionally force 6 offshore and on high ground"
+   "Hong Kong Observatory (official)",
+   "25° to 28°, mostly cloudy, a few light rain patches early, sunny intervals later, east force 4 to 5, 6 offshore and on high ground"
   ],
   [
    "AccuWeather, Hong Kong",
    "29° / 24°, humid with a touch of rain"
   ]
  ],
- "mm": "Low risk. No rain forecast to plan around",
- "gicon": "part",
- "gfill": 20,
- "gtext": "20%",
- "gmm": "0",
- "read": "Breezy and cloudier. A street-level day, so it works.",
+ "mm": "Not forecast yet",
+ "gicon": "sun",
+ "gfill": 10,
+ "gtext": "10%",
+ "gmm": null,
+ "read": "Cloudy and breezy. Street-level Central and Sheung Wan suits it.",
  "chance": null,
  "mmBars": [],
  "temps": {
