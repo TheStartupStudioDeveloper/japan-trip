@@ -1,5 +1,9 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 12:25
+- Opens on today at the Now line during the trip (the remembered position no longer overrides it; also after 30 minutes away). Day taps no longer write the day into the address.
+- New pin button beside the up arrow, bottom left: jumps to today at the current time.
+
 ## Mon 26 Oct 12:12
 - Evening as one walk south from Ginza: HANDS 16:10, Forum 16:50, yakitori and beers in the Yūrakuchō lanes then OKUROJI 17:15, hotel 18:15 (book the taxi, AirPod, pack, Godzilla). No return trip to the hotel in between.
 

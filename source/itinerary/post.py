@@ -370,7 +370,7 @@ _nj = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)re
        "window.scrollTo({top:target(),behavior:'smooth'});"
        "function fix(){if(stop)return;var y=target();if(Math.abs(window.pageYOffset-y)>3)window.scrollTo({top:y,behavior:n<1?'smooth':'auto'});"
        "if(++n<4)setTimeout(fix,500);else{window.__jtLock=0;removeEventListener('touchstart',off);removeEventListener('wheel',off)}}setTimeout(fix,900);"
-       "try{history.replaceState(null,'','#'+id)}catch(e){}}"
+       "}"
        "nav.addEventListener('click',function(e){var a=e.target.closest('a[href^=\"#\"]');if(!a)return;e.preventDefault();e.stopImmediatePropagation();"
        "go(a.getAttribute('href').slice(1),a)},true);})();</script>")
 if 'nav.addEventListener(\'click\'' not in out:
@@ -389,5 +389,29 @@ _spy = ("<script>(function(){var nav=document.querySelector('nav.nav');if(!nav)r
 if 'nav.nav a.cur' not in out:
     out = out.replace('</style>', _spy_css + '</style>', 1)
     out = out.replace('</body>', _spy + '</body>', 1)
+# 26 Oct: open on today at the Now line (the remembered position is skipped while today is a trip day), and a pin button beside the up arrow that jumps back to now.
+_rs = "function restore(){if(location.hash)return;"
+assert _rs in out
+out = out.replace(_rs, "function restore(){if(location.hash||window.__jtToday)return;", 1)
+_now_css = ('#jtnow{position:fixed;left:calc(24px + 2.6rem + 10px + env(safe-area-inset-left));bottom:calc(14px + env(safe-area-inset-bottom));z-index:15;'
+            'appearance:none;-webkit-appearance:none;width:2.6rem;height:2.6rem;padding:0;display:flex;align-items:center;justify-content:center;'
+            'border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.18);cursor:pointer}'
+            '#jtnow[hidden]{display:none}#jtnow svg{width:1.15rem;height:1.15rem}@media print{#jtnow{display:none}}')
+_now = ('<button type="button" id="jtnow" aria-label="Jump to now" title="Jump to now" hidden>'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></button>'
+        "<script>(function(){var n=new Date();if(n.getFullYear()!==2026||n.getMonth()!==9)return;var day=document.getElementById('d'+n.getDate());if(!day)return;"
+        "window.__jtToday=true;try{if(location.hash)history.replaceState(null,'',location.pathname+location.search)}catch(e){}"
+        "var nav=document.querySelector('nav.nav'),btn=document.getElementById('jtnow');btn.hidden=false;"
+        "function tgt(){return document.querySelector('#'+day.id+' .nowm')||day}"
+        "function y(){var t=tgt(),h=nav?nav.getBoundingClientRect().height:0;return t.getBoundingClientRect().top+window.pageYOffset-h-(t===day?6:innerHeight*0.3)}"
+        "function lock(){window.__jtLock=Date.now()+1500;var a=nav&&nav.querySelector('a[href=\"#'+day.id+'\"]');if(a){[].forEach.call(nav.querySelectorAll('a.cur'),function(x){x.classList.remove('cur')});a.classList.add('cur')}}"
+        "function jump(sm){lock();window.scrollTo({top:Math.max(0,y()),behavior:sm?'smooth':'auto'})}"
+        "var done=false,touched=false;addEventListener('touchstart',function(){touched=true},{passive:true,once:true});"
+        "function first(){if(touched)return;jump(false)}first();setTimeout(first,150);addEventListener('load',function(){setTimeout(first,120);setTimeout(first,600)});"
+        "btn.addEventListener('click',function(){jump(true);setTimeout(function(){window.scrollTo({top:Math.max(0,y()),behavior:'smooth'})},700)});"
+        "document.addEventListener('visibilitychange',function(){if(!document.hidden&&window.__jtAway&&Date.now()-window.__jtAway>30*60000)jump(false);if(document.hidden)window.__jtAway=Date.now()})})();</script>")
+if 'id="jtnow"' not in out:
+    out = out.replace('</style>', _now_css + '</style>', 1)
+    out = out.replace('</body>', _now + '</body>', 1)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))
