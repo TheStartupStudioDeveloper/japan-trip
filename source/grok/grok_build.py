@@ -27,8 +27,41 @@ def wr(p, v):
     open(p, 'a').write('\n')
 
 
+STUB = tempfile.mkdtemp(prefix='pwstub-')
+os.makedirs(os.path.join(STUB, 'playwright'))
+open(os.path.join(STUB, 'playwright', '__init__.py'), 'w').write('')
+# The master scripts only use a browser to redraw home-screen icons and PDFs, which the live apps keep as they are.
+# A stand-in saves installing Chromium on every rebuild (the slow part).
+open(os.path.join(STUB, 'playwright', 'async_api.py'), 'w').write('''
+class _Page:
+    async def goto(self, *a, **k): pass
+    async def wait_for_timeout(self, *a, **k): pass
+    async def set_content(self, *a, **k): pass
+    async def emulate_media(self, *a, **k): pass
+    async def screenshot(self, path=None, **k):
+        if path:
+            from PIL import Image
+            Image.new('RGB', (512, 512), (0, 0, 0)).save(path)
+    async def pdf(self, path=None, **k):
+        if path: open(path, 'wb').write(b'%PDF-1.4')
+    async def close(self): pass
+class _Browser:
+    async def new_page(self, *a, **k): return _Page()
+    async def close(self): pass
+class _Chromium:
+    async def launch(self, *a, **k): return _Browser()
+class _PW:
+    chromium = _Chromium()
+    async def __aenter__(self): return self
+    async def __aexit__(self, *a): return False
+def async_playwright(): return _PW()
+''')
+
+
 def run(cmd, cwd, env=None):
-    r = subprocess.run(cmd, cwd=cwd, env=dict(os.environ, **(env or {})), capture_output=True, text=True)
+    env = dict(os.environ, **(env or {}))
+    env['PYTHONPATH'] = STUB + os.pathsep + env.get('PYTHONPATH', '')
+    r = subprocess.run(cmd, cwd=cwd, env=env, capture_output=True, text=True)
     if r.returncode:
         sys.stderr.write(r.stdout[-3000:] + r.stderr[-6000:])
         raise SystemExit(f'failed: {" ".join(cmd)} in {cwd}')

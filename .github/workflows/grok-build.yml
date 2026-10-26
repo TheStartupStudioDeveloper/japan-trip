@@ -14,7 +14,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,8 +24,7 @@ jobs:
           python-version: '3.12'
       - name: Tools
         run: |
-          pip install --quiet playwright pillow
-          python -m playwright install --with-deps chromium-headless-shell || python -m playwright install --with-deps chromium
+          pip install --quiet pillow
       - name: Build the Grok apps
         id: build
         continue-on-error: true
