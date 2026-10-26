@@ -346,5 +346,17 @@ if _m and out.find('<div class="wrap">') < _m.start():
     _nav = _m.group(0); out = out[:_m.start()] + out[_m.end():]
     _w = out.find('<div class="wrap">'); out = out[:_w] + _nav + out[_w:]
     out = out.replace('</style>', 'nav.nav{margin-top:0!important;top:0}@media screen{body > nav.nav{position:-webkit-sticky;position:sticky}}</style>', 1)
+# 26 Oct: scroll to top button, bottom left, icon only, matches the Clean/Edit pill. Shows after scrolling down.
+_tt_css = ('#jttop{position:fixed;left:calc(24px + env(safe-area-inset-left));bottom:calc(14px + env(safe-area-inset-bottom));z-index:15;'
+           'appearance:none;-webkit-appearance:none;width:2.6rem;height:2.6rem;padding:0;display:flex;align-items:center;justify-content:center;'
+           'border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:999px;box-shadow:0 3px 12px rgba(0,0,0,.18);cursor:pointer;'
+           'opacity:0;pointer-events:none;transition:opacity .2s}#jttop.show{opacity:1;pointer-events:auto}#jttop svg{width:1.1rem;height:1.1rem}@media print{#jttop{display:none}}')
+_tt_html = ('<button type="button" id="jttop" aria-label="Back to top" title="Back to top">'
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>'
+            "<script>(function(){var b=document.getElementById('jttop');function f(){b.classList.toggle('show',window.scrollY>600)}"
+            "addEventListener('scroll',f,{passive:true});f();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})})})();</script>")
+if 'id="jttop"' not in out:
+    out = out.replace('</style>', _tt_css + '</style>', 1)
+    out = out.replace('</body>', _tt_html + '</body>', 1)
 open(OUT, 'w', encoding='utf-8').write(out)
 print('post: day maps', len([v for v in E['days'].values() if v]), 'size', len(out))

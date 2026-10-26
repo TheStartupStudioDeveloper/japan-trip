@@ -1,5 +1,8 @@
 # Japan & Hong Kong Final Itinerary: changelog
 
+## Mon 26 Oct 11:29
+- Back-to-top button: round, icon only, bottom left, appears after scrolling down. Matches the Edit pill.
+
 ## Mon 26 Oct 11:26
 - Day bar moved to the top of the page, under the toolbar, and stays pinned to the top while scrolling.
 
