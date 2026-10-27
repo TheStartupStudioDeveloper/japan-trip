@@ -9,6 +9,7 @@ Handover: the Grok copy was taken from the master on Sun 25 Oct 2026 (Japan days
 ## Tue 27 Oct
 - 2026-10-27 14:30: Landed Hong Kong Terminal 1 at 14:30 (planned 14:25 on CX543).
 - Added AUD estimates (at ~HK$1 = A$0.1815) to HK$ quotes in the plan (taxis and dinners).
+- Expenses app: the default currency in the "Log as you go" form is still ¥ (hardcoded in the build script). Select HK$ manually when adding Hong Kong costs. Grok will convert on paste.
 
 ## Wed 28 Oct
 
