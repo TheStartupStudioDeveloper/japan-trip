@@ -4,7 +4,7 @@
  "where": "",
  "title": "Haneda to Hong Kong, harbour night",
  "cal": "Fly to Hong Kong",
- "summary": "A relaxed early train to Haneda with the bags, ahead of the morning rush, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights. No pool today, because the sun is nearly gone by check-in.",
+ "summary": "What happened. Landed Hong Kong Terminal 1 at 14:30. A relaxed early train to Haneda with the bags, ahead of the morning rush, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights. No pool today, because the sun is nearly gone by check-in.",
  "rows": [
   {
    "time": "06:00",
@@ -61,10 +61,10 @@
    "status": "booked"
   },
   {
-   "time": "14:25",
+   "time": "14:30",
    "what": "Land in Hong Kong",
-   "detail": "Terminal 1. Allow 45 to 60 minutes for immigration, bags and customs. No arrival card needed (How-to 33).",
-   "status": "booked"
+   "detail": "Terminal 1 at 14:30 (planned 14:25). Allow 45 to 60 minutes for immigration, bags and customs. No arrival card needed (How-to 33).",
+   "status": "done"
   },
   {
    "time": "15:20",
