@@ -4,7 +4,7 @@
  "where": "",
  "title": "Haneda to Hong Kong, harbour night",
  "cal": "Fly to Hong Kong",
- "summary": "What happened. Landed Hong Kong Terminal 1 at 14:30. A relaxed early train to Haneda with the bags, ahead of the morning rush, then the first Hong Kong night on the harbour: a junk boat cruise timed for the 20:00 Symphony of Lights. No pool today, because the sun is nearly gone by check-in.",
+ "summary": "What happened. Landed Hong Kong Terminal 1 at 14:30. A relaxed early train to Haneda with the bags, ahead of the morning rush, then the first Hong Kong night on the harbour: watch the 20:00 Symphony of Lights from the Tsim Sha Tsui promenade, with a champagne supper. Skipped the junk boat cruise. No pool today, because the sun is nearly gone by check-in.",
  "rows": [
   {
    "time": "06:00",
@@ -85,39 +85,33 @@
    "status": ""
   },
   {
-   "time": "18:50",
-   "what": "Walk to Tsim Sha Tsui Public Pier 1",
-   "detail": "Ten minutes from the hotel, past the Cultural Centre to the Clock Tower. Be at the pier by about 19:10 for the best seats on the open deck (How-to 34).",
+   "time": "19:00",
+   "what": "Champagne supper",
+   "detail": "Enjoy a champagne supper at the hotel (Sky Lounge or in-room) or nearby in Tsim Sha Tsui, building the evening around the harbour views.",
    "status": ""
   },
   {
-   "time": "19:30",
-   "what": "Aqua Luna harbour cruise",
-   "detail": "The 19:30 Symphony of Lights sailing from Tsim Sha Tsui Public Pier 1: 45 minutes on a red-sail junk, one drink included. Book on Klook or aqualuna.com.hk. Cancelled at Typhoon Signal 3 or a Red Rainstorm (How-to 34).",
-   "status": "to book"
+   "time": "19:40",
+   "what": "Walk to Tsim Sha Tsui Promenade",
+   "detail": "Five to ten minutes from the hotel to the waterfront promenade facing Hong Kong Island. Arrive early for a good railing spot. Best free view of the show.",
+   "status": ""
   },
   {
    "time": "20:00",
-   "what": "A Symphony of Lights",
-   "detail": "The nightly harbour light show. Lasers, searchlights and LED screens on the towers along both shores, set to music, for about ten minutes. You watch it from the boat.",
+   "what": "A Symphony of Lights from the promenade",
+   "detail": "The nightly harbour light show. Lasers, searchlights and LED screens on the towers along both shores, set to music, for about ten minutes. Watch it free from the Tsim Sha Tsui promenade (Avenue of Stars area). Skipped the Aqua Luna cruise.",
    "status": ""
   },
   {
    "time": "20:20",
-   "what": "Avenue of Stars",
-   "detail": "Off the boat and along the Tsim Sha Tsui promenade. Handprints, the Bruce Lee statue and the full Island skyline.",
-   "status": ""
-  },
-  {
-   "time": "20:45",
-   "what": "Dinner in Tsim Sha Tsui",
-   "detail": "Close to the promenade and the hotel. Easy and late: Mak Man Kee wonton noodles in Jordan, to 00:30, cash. Something special: Hutong, book ahead. Or a drink at the Sky Lounge on the top floor of the Sheraton.",
+   "what": "Avenue of Stars stroll",
+   "detail": "Along the Tsim Sha Tsui promenade. Handprints, the Bruce Lee statue and the full Island skyline. Continue the champagne supper vibe if desired.",
    "status": ""
   },
   {
    "time": "Late",
    "what": "Bar, or Temple Street night market",
-   "detail": "Only if you have the energy.",
+   "detail": "Only if you have the energy. Or back to the hotel Sky Lounge for more drinks.",
    "status": ""
   }
  ],
@@ -132,12 +126,12 @@
    "First check whether the Agoda booking includes an airport pickup. Otherwise the Airport Express to Kowloon Station, then a 5 to 10 minute taxi, costs about the same for two with more bag handling."
   ],
   [
-   "If the show has ended or the cruise is full",
-   "Watch from the Tsim Sha Tsui promenade, five minutes from the hotel. It faces the Hong Kong Island towers, which is the better side. Your harbour view room faces the same way."
+   "Watching the Symphony of Lights",
+   "From the Tsim Sha Tsui promenade, five minutes from the hotel. It faces the Hong Kong Island towers, which is the better side. Your harbour view room faces the same way. Free and easy; arrive by 19:45 for a good spot."
   ],
   [
    "If CX543 is late",
-   "Under an hour late: go straight to the pier from the hotel, or drop the bags and go. Later than that: rebook the 20:30 or 21:30 Aqua Luna sailing on Klook, or watch the 20:00 show from the promenade or the Sheraton Sky Lounge."
+   "Under an hour late: still fine for the promenade show. Later: watch from the promenade or the Sheraton Sky Lounge."
   ]
  ]
 }
