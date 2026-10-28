@@ -2,9 +2,9 @@
   "d": 28,
   "dow": "Wednesday",
   "where": "",
-  "title": "Central and Sheung Wan at street level, big night out",
-  "cal": "Central, big night",
-  "summary": "Plan B, set on Mon 26 from the wind forecast: the Peak moves to Thursday. Extra pool or short promenade on this side, then one later Star Ferry to Central. Same street-level afternoon (markets, Tai Kwun, PMQ, Sheung Wan), then stay out for the big dinner and bars without returning to the hotel in between.",
+  "title": "Central and Sheung Wan at street level, Peak by tram",
+  "cal": "Central, Peak done",
+  "summary": "Extra pool / short promenade, one Star Ferry to Central. Street-level afternoon: markets, Tai Kwun, PMQ, Sheung Wan, siu mai at One Dim Sum, pizza. Walked through the zoo area, then Peak Tram up for evening views. Peak is done; no need to repeat tomorrow.",
   "rows": [
     {
       "time": "09:00",
@@ -27,8 +27,8 @@
     {
       "time": "15:00",
       "what": "Graham Street Market, Tai Kwun, PMQ, Mid-Levels escalator",
-      "detail": "The old street market first, then design and architecture, all within a few blocks. A quick bite on the way: Lan Fong Yuen milk tea and a pork chop bun, at the bottom of the market on Gage Street (closed Sundays, fine today). Ride the Mid-Levels escalator up to Hollywood Road for Tai Kwun and PMQ.",
-      "status": ""
+      "detail": "The old street market first, then design and architecture, all within a few blocks. Siu mai at One Dim Sum (Lyndhurst Terrace), pizza nearby. Walked through the zoo / Hong Kong Park area. Ride the Mid-Levels escalator up to Hollywood Road for Tai Kwun and PMQ.",
+      "status": "done"
     },
     {
       "time": "16:45",
@@ -43,21 +43,15 @@
       "status": ""
     },
     {
-      "time": "19:30",
-      "what": "Big dinner in Central or SoHo",
-      "detail": "The big dinner of the trip. Pick one and book today. Ho Lee Fook in SoHo: loud, fun, creative Cantonese, about HK$500 to 800 a head (est. A$91 to 145). Mott 32: the famous Peking duck, pre-order it when you book, about HK$1,000 (est. A$182). Man Wah: Mandarin Oriental 25F, harbour view, from about HK$800 (est. A$145). Already on the Island; no return trip needed.",
-      "status": "to book"
+      "time": "Evening",
+      "what": "Peak Tram up from Garden Road",
+      "detail": "Walked from Central area to Garden Road terminus. Round-trip tram for night views. Sky Terrace 428 if open (closes 10 PM). Peak done this evening; skip on Thursday.",
+      "status": "done"
     },
     {
       "time": "Late",
-      "what": "Bars in Central",
-      "detail": "Bar Leone on Bridges Street: walk-in only, expect a queue. Coa on Shin Hing Street: leave your number for the waitlist on the way to dinner. Argo at the Four Seasons: bookable, harbour view. Lan Kwai Fong if you want a party. Home at the end: taxi through the tunnel, or the MTR from Central to Tsim Sha Tsui, two stops, last trains about 00:30.",
-      "status": ""
-    },
-    {
-      "time": "Optional",
-      "what": "Or the old tram and the Star Ferry home",
-      "detail": "Instead of the taxi or train: ride the old tram from Central to Wan Chai, upper deck, about 15 minutes with the neon on. Then take the Star Ferry home from Wan Chai. It adds about half an hour. The last ferry from Wan Chai is 23:00, so leave the bars by about 22:15.",
+      "what": "Bars in Central or home",
+      "detail": "Bar Leone on Bridges Street: walk-in only, expect a queue. Coa on Shin Hing Street: leave your number for the waitlist. Argo at the Four Seasons: bookable, harbour view. Lan Kwai Fong if you want a party. Home at the end: taxi through the tunnel, or the MTR from Central to Tsim Sha Tsui, two stops, last trains about 00:30. Or Peak down then ferry/MTR.",
       "status": ""
     }
   ],
@@ -65,7 +59,7 @@
   "notes": [
     [
       "Tonight, about 20:00: weather recheck",
-      "Check the Observatory 9-day forecast and warnings for Thursday and Friday. If Thursday looks windy or cloudy and Friday calmer, switch to the backup (the box under Thursday). The Peak stays on Thursday either way."
+      "Check the Observatory 9-day forecast and warnings for Thursday and Friday. Peak already done this evening."
     ],
     [
       "If it rains",
@@ -77,7 +71,7 @@
     ],
     [
       "Flow",
-      "One ferry over mid-afternoon, stay out for dinner and bars. No mid-evening return to the hotel."
+      "One ferry over mid-afternoon, Central street level + Peak Tram this evening. No Peak tomorrow."
     ]
   ]
 }
