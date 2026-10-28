@@ -1,85 +1,83 @@
 {
- "d": 28,
- "dow": "Wednesday",
- "where": "",
- "title": "Central and Sheung Wan at street level, big night out",
- "cal": "Central, big night",
- "summary": "Plan B, set on Mon 26 from the wind forecast: the Peak moves to Thursday. A pool morning, then Central and Sheung Wan on foot, back to rest and change, and the big night out.",
- "rows": [
-  {
-   "time": "09:00",
-   "what": "Lounge breakfast",
-   "detail": "",
-   "status": ""
-  },
-  {
-   "time": "09:45",
-   "what": "Sheraton pool, optional, until about 12:30",
-   "detail": "The best block for sun. Read, tan, swim.",
-   "status": ""
-  },
-  {
-   "time": "13:00",
-   "what": "Star Ferry to Central",
-   "detail": "From the pier beside the Clock Tower. Ten minutes across the harbour, Octopus at the gate.",
-   "status": ""
-  },
-  {
-   "time": "13:30",
-   "what": "Graham Street Market, Tai Kwun, PMQ, Mid-Levels escalator",
-   "detail": "The old street market first, then design and architecture, all within a few blocks. A quick bite on the way: Lan Fong Yuen milk tea and a pork chop bun, at the bottom of the market on Gage Street (closed Sundays, fine today). Ride the Mid-Levels escalator up to Hollywood Road for Tai Kwun and PMQ.",
-   "status": ""
-  },
-  {
-   "time": "15:30",
-   "what": "Sheung Wan: Hollywood Road, Cat Street, Man Mo Temple",
-   "detail": "West along Hollywood Road for antiques, vintage and resale. Cat Street is the lane just below. Man Mo Temple is on Hollywood Road: ten minutes inside.",
-   "status": ""
-  },
-  {
-   "time": "16:30",
-   "what": "Egg tart and coffee",
-   "detail": "Tai Cheong Bakery, 35 Lyndhurst Terrace, near the bottom of the escalator: the classic short crust, daily 09:30 to 19:30, takeaway. Or Bakehouse on Staunton Street for the sourdough version and a proper coffee, to 21:00.",
-   "status": ""
-  },
-  {
-   "time": "17:15",
-   "what": "Back to the hotel to rest and change",
-   "detail": "Star Ferry from Central Pier 7, on the water close to sunset (17:50).",
-   "status": ""
-  },
-  {
-   "time": "19:30",
-   "what": "Big dinner in Central or SoHo",
-   "detail": "The big dinner of the trip. Pick one and book today. Ho Lee Fook in SoHo: loud, fun, creative Cantonese, about HK$500 to 800 a head (est. A$91 to 145). Mott 32: the famous Peking duck, pre-order it when you book, about HK$1,000 (est. A$182). Man Wah: Mandarin Oriental 25F, harbour view, from about HK$800 (est. A$145). Taxi through the tunnel, about 15 minutes, or the MTR two stops to Central.",
-   "status": "to book"
-  },
-  {
-   "time": "Late",
-   "what": "Bars in Central",
-   "detail": "Bar Leone on Bridges Street: walk-in only, expect a queue. Coa on Shin Hing Street: leave your number for the waitlist on the way to dinner. Argo at the Four Seasons: bookable, harbour view. Lan Kwai Fong if you want a party. Home: taxi through the tunnel, or the MTR from Central to Tsim Sha Tsui, two stops, last trains about 00:30.",
-   "status": ""
-  },
-  {
-   "time": "Optional",
-   "what": "Or the old tram and the Star Ferry home",
-   "detail": "Instead of the taxi or train: ride the old tram from Central to Wan Chai, upper deck, about 15 minutes with the neon on. Then take the Star Ferry home from Wan Chai. It adds about half an hour. The last ferry from Wan Chai is 23:00, so leave the bars by about 22:15.",
-   "status": ""
-  }
- ],
- "footnote": "",
- "notes": [
-  [
-   "Tonight, about 20:00: weather recheck",
-   "Check the Observatory 9-day forecast and warnings for Thursday and Friday. If Thursday looks windy or cloudy and Friday calmer, switch to the backup (the box under Thursday). The Peak stays on Thursday either way."
+  "d": 28,
+  "dow": "Wednesday",
+  "where": "",
+  "title": "Central and Sheung Wan at street level, big night out",
+  "cal": "Central, big night",
+  "summary": "Plan B, set on Mon 26 from the wind forecast: the Peak moves to Thursday. Extra pool or short promenade on this side, then one later Star Ferry to Central. Same street-level afternoon (markets, Tai Kwun, PMQ, Sheung Wan), then stay out for the big dinner and bars without returning to the hotel in between.",
+  "rows": [
+    {
+      "time": "09:00",
+      "what": "Lounge breakfast",
+      "detail": "",
+      "status": ""
+    },
+    {
+      "time": "09:45",
+      "what": "Sheraton pool, until about 13:30",
+      "detail": "The best block for sun. Read, tan, swim. Optional short walk along the promenade / Avenue of Stars on the way to the pier if you want the harbour view before crossing.",
+      "status": ""
+    },
+    {
+      "time": "14:30",
+      "what": "Star Ferry to Central",
+      "detail": "From the pier beside the Clock Tower. Ten minutes across the harbour, Octopus at the gate. One trip over; stay out for the evening.",
+      "status": ""
+    },
+    {
+      "time": "15:00",
+      "what": "Graham Street Market, Tai Kwun, PMQ, Mid-Levels escalator",
+      "detail": "The old street market first, then design and architecture, all within a few blocks. A quick bite on the way: Lan Fong Yuen milk tea and a pork chop bun, at the bottom of the market on Gage Street (closed Sundays, fine today). Ride the Mid-Levels escalator up to Hollywood Road for Tai Kwun and PMQ.",
+      "status": ""
+    },
+    {
+      "time": "16:45",
+      "what": "Sheung Wan: Hollywood Road, Cat Street, Man Mo Temple",
+      "detail": "West along Hollywood Road for antiques, vintage and resale. Cat Street is the lane just below. Man Mo Temple is on Hollywood Road: ten minutes inside.",
+      "status": ""
+    },
+    {
+      "time": "17:45",
+      "what": "Egg tart and coffee",
+      "detail": "Tai Cheong Bakery, 35 Lyndhurst Terrace, near the bottom of the escalator: the classic short crust, daily 09:30 to 19:30, takeaway. Or Bakehouse on Staunton Street for the sourdough version and a proper coffee, to 21:00.",
+      "status": ""
+    },
+    {
+      "time": "19:30",
+      "what": "Big dinner in Central or SoHo",
+      "detail": "The big dinner of the trip. Pick one and book today. Ho Lee Fook in SoHo: loud, fun, creative Cantonese, about HK$500 to 800 a head (est. A$91 to 145). Mott 32: the famous Peking duck, pre-order it when you book, about HK$1,000 (est. A$182). Man Wah: Mandarin Oriental 25F, harbour view, from about HK$800 (est. A$145). Already on the Island; no return trip needed.",
+      "status": "to book"
+    },
+    {
+      "time": "Late",
+      "what": "Bars in Central",
+      "detail": "Bar Leone on Bridges Street: walk-in only, expect a queue. Coa on Shin Hing Street: leave your number for the waitlist on the way to dinner. Argo at the Four Seasons: bookable, harbour view. Lan Kwai Fong if you want a party. Home at the end: taxi through the tunnel, or the MTR from Central to Tsim Sha Tsui, two stops, last trains about 00:30.",
+      "status": ""
+    },
+    {
+      "time": "Optional",
+      "what": "Or the old tram and the Star Ferry home",
+      "detail": "Instead of the taxi or train: ride the old tram from Central to Wan Chai, upper deck, about 15 minutes with the neon on. Then take the Star Ferry home from Wan Chai. It adds about half an hour. The last ferry from Wan Chai is 23:00, so leave the bars by about 22:15.",
+      "status": ""
+    }
   ],
-  [
-   "If it rains",
-   "Central and Sheung Wan still work: Tai Kwun and PMQ are partly covered, and the Mid-Levels escalator is roofed. Swap the pool for a slow lounge breakfast. Check the Observatory: Red or Black Rainstorm means stay in until it lifts (How-to 35)."
-  ],
-  [
-   "Ladies' night",
-   "Wednesday is ladies' night at many Lan Kwai Fong bars. Busy from about 22:00."
+  "footnote": "",
+  "notes": [
+    [
+      "Tonight, about 20:00: weather recheck",
+      "Check the Observatory 9-day forecast and warnings for Thursday and Friday. If Thursday looks windy or cloudy and Friday calmer, switch to the backup (the box under Thursday). The Peak stays on Thursday either way."
+    ],
+    [
+      "If it rains",
+      "Central and Sheung Wan still work: Tai Kwun and PMQ are partly covered, and the Mid-Levels escalator is roofed. Swap the pool for a slow lounge breakfast. Check the Observatory: Red or Black Rainstorm means stay in until it lifts (How-to 35)."
+    ],
+    [
+      "Ladies' night",
+      "Wednesday is ladies' night at many Lan Kwai Fong bars. Busy from about 22:00."
+    ],
+    [
+      "Flow",
+      "One ferry over mid-afternoon, stay out for dinner and bars. No mid-evening return to the hotel."
+    ]
   ]
- ]
 }
