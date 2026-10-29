@@ -2,9 +2,9 @@
   "d": 30,
   "dow": "Friday",
   "where": "",
-  "title": "Big Buddha morning, pool, yum cha, Ozone at sunset, then departure",
-  "cal": "Big Buddha, pool, Ozone, fly",
-  "summary": "Breakfast then out to Lantau for Ngong Ping 360 / Big Buddha morning. Back for pool time, yum cha, spare window, pack, Ozone at sunset, dinner, then taxi to airport. Late checkout to 18:00.",
+  "title": "Big Buddha morning, optional Island tram, yum cha, Ozone, departure",
+  "cal": "Big Buddha, tram optional, Ozone, fly",
+  "summary": "Breakfast then out to Lantau for Ngong Ping 360 / Big Buddha morning (Crystal cabin / fast-lane options available). Optional double-decker tram on Hong Kong Island later. Then yum cha, spare window, pack, Ozone at sunset, dinner, taxi to airport. Late checkout to 18:00.",
   "rows": [
     {
       "time": "08:00",
@@ -15,7 +15,7 @@
     {
       "time": "08:45",
       "what": "To Tung Chung / Ngong Ping 360",
-      "detail": "Options: MTR (TST to Tung Chung via Lai King or Hong Kong Station, ~40-50 min, then short walk from Exit B); taxi from hotel to Tung Chung terminal (~30-40 min, ~HK$220-300 incl. tolls, urban red taxi); or E-series bus. See notes for details. Cable car up for Big Buddha / Po Lin.",
+      "detail": "Options: MTR (~40-50 min); taxi from hotel to Tung Chung terminal (~30-40 min, ~HK$220-320 incl. tolls). Cable car: Standard round-trip ~HK$295; Crystal (glass floor) round-trip ~HK$365. Crystal has shorter queues / priority boarding feel. Book on Klook or official for best rates. Fast-lane / pickup packages also available (see notes).",
       "status": ""
     },
     {
@@ -26,8 +26,8 @@
     },
     {
       "time": "Early afternoon",
-      "what": "Back to hotel / pool",
-      "detail": "Return via MTR or taxi. Optional pool time.",
+      "what": "Back to hotel / pool or Island tram (optional)",
+      "detail": "Return via MTR or taxi. Optional: Star Ferry or MTR to Central/Sheung Wan, then double-decker tram (Ding Ding) eastbound through Central → Wan Chai → Causeway Bay. Flat ~HK$3.30, upper deck. Runs late.",
       "status": ""
     },
     {
@@ -94,8 +94,12 @@
   "footnote": "",
   "notes": [
     [
-      "Getting to Ngong Ping 360",
-      "1. MTR: From TST, Tung Chung Line (change at Lai King or via Hong Kong Station), ~40-50 min total, Exit B short walk to terminal. Cheapest and reliable. 2. Taxi: Urban red taxi from hotel to Tung Chung Cable Car Terminal, ~30-40 min, ~HK$220-300 incl. tunnel/bridge tolls. Easy door-to-door. 3. Bus: E-series (e.g. E21/E23) from Kowloon to Tung Chung. No dedicated e-taxi service for this route; regular taxis (some hybrid/electric) or Uber (dispatches licensed taxis) are the options. Blue Lantau taxis only operate on Lantau itself."
+      "Getting to Ngong Ping 360 & cabins",
+      "Taxi from TST/Sheraton to Tung Chung terminal: ~30-40 min, ~HK$220-320 incl. tolls (urban red taxi). MTR is cheaper/reliable. Crystal Cabin round-trip ~HK$365 (glass floor, shorter queues); Standard ~HK$295. Book online (Klook or official webstore.np360.com.hk) for better rates and priority. Fast-lane / hotel-pickup packages exist on Klook (group coach from central TST points like Holiday Inn Golden Mile)."
+    ],
+    [
+      "Optional Island tram",
+      "After returning from Lantau: Star Ferry or MTR to Central/Sheung Wan, then Ding Ding tram eastbound for the classic ride. Flat fare ~HK$3.30."
     ],
     [
       "Latest safe timing",
