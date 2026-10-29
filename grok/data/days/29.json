@@ -2,80 +2,40 @@
   "d": 29,
   "dow": "Thursday",
   "where": "",
-  "title": "Lantau in the morning, free afternoon/evening",
-  "cal": "Big Buddha, Temple Street",
-  "summary": "Out to Lantau for the first cable car, lunch in Central, then free afternoon (Peak already done Wednesday evening). Evening: Temple Street dinner and night market. Check the wind at breakfast: if the cable car is not running, switch to the backup below.",
+  "title": "Rest, pool, lounge supper, Nathan Road markets",
+  "cal": "Pool, lounge, markets",
+  "summary": "Breakfast from 8am, then rest and pool time. Lounge at the hotel for drinks and supper from 17:30, then walk up Nathan Road to the markets. Big Buddha / Ngong Ping moved to Friday morning.",
   "rows": [
     {
       "time": "08:00",
-      "what": "Lounge breakfast, go or no-go check",
-      "detail": "Hong Kong Observatory warnings and wind, and the Ngong Ping 360 service status on np360.com.hk. Suspended or a reduced service: switch to the backup below.",
-      "status": ""
-    },
-    {
-      "time": "08:45",
-      "what": "Train to Tung Chung",
-      "detail": "About 50 minutes, one change at Lai King (How-to 20).",
-      "status": ""
-    },
-    {
-      "time": "10:00",
-      "what": "Ngong Ping 360 Crystal cabin up",
-      "detail": "Klook voucher, valid any day to 31 October (How-to 20). First car, shortest queues. 25 minutes.",
-      "status": "to book"
-    },
-    {
-      "time": "10:30",
-      "what": "Big Buddha, Po Lin Monastery, Wisdom Path",
-      "detail": "268 steps up. Skip most of the village.",
-      "status": ""
-    },
-    {
-      "time": "12:45",
-      "what": "Cable car down",
+      "what": "Lounge breakfast",
       "detail": "",
+      "status": "done"
+    },
+    {
+      "time": "Morning",
+      "what": "Rest and pool",
+      "detail": "Relaxed morning after breakfast.",
       "status": ""
     },
     {
-      "time": "13:20",
-      "what": "Tung Chung line to Hong Kong Station",
-      "detail": "About 30 minutes, direct. Hong Kong Station joins Central underground.",
+      "time": "17:30",
+      "what": "Lounge drinks and supper",
+      "detail": "At the hotel lounge.",
       "status": ""
     },
     {
-      "time": "14:00",
-      "what": "Lunch in Central",
-      "detail": "Yat Lok, 34-38 Stanley Street: Michelin starred roast goose, order a quarter over lai fun noodles, plus char siu. Daily 10:00 to 20:30, walk-in, short queue, about ten minutes from Hong Kong Station. Yum cha is Friday's lunch.",
-      "status": ""
-    },
-    {
-      "time": "Afternoon",
-      "what": "Free time in Central or back to hotel",
-      "detail": "Peak already done Wednesday evening. Options: more street wandering, shopping, pool/lounge rest, or early return to TST. No tram up.",
-      "status": ""
-    },
-    {
-      "time": "19:30",
-      "what": "Temple Street dinner and night market",
-      "detail": "Hing Kee, 15 Temple Street: claypot rice, order it first as it takes 20 minutes, plus the oyster omelette. Evenings from 17:30, cash only, walk-in. Then browse the stalls. A 15 minute walk from the hotel, or MTR one stop to Jordan.",
-      "status": ""
-    },
-    {
-      "time": "21:30",
-      "what": "Back at the hotel",
-      "detail": "Or a bar nearby.",
+      "time": "Evening",
+      "what": "Walk to markets up Nathan Road",
+      "detail": "From the hotel up Nathan Road for the night markets / Temple Street area. Casual stroll after supper.",
       "status": ""
     }
   ],
   "footnote": "",
   "notes": [
     [
-      "Peak already done",
-      "Did the Peak Tram and views Wednesday evening. No need to repeat Thursday."
-    ],
-    [
-      "If it rains",
-      "Lantau in the rain is grim and the cable car may close. Swap to the backup (the box below) and spend the morning at the pool or in the lounge."
+      "Big Buddha",
+      "Shifted to Friday morning after breakfast. Peak already done Wednesday."
     ]
   ]
 }
