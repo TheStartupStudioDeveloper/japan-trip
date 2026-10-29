@@ -2,9 +2,9 @@
   "d": 29,
   "dow": "Thursday",
   "where": "",
-  "title": "Rest, pool, lounge supper, Nathan Road markets",
-  "cal": "Pool, lounge, markets",
-  "summary": "Breakfast from 8am, then rest and pool time. Lounge at the hotel for drinks and supper from 17:30, then walk up Nathan Road to the markets. Big Buddha / Ngong Ping moved to Friday morning.",
+  "title": "Rest, pool, Nathan Road shopping, lounge drinks and dinner",
+  "cal": "Pool, shopping, lounge",
+  "summary": "Breakfast from 8am, then rest and pool time. Afternoon/evening: walk up Nathan Road for shopping, then lounge at the hotel for drinks and supper from around 17:30. Big Buddha / Ngong Ping moved to Friday morning.",
   "rows": [
     {
       "time": "08:00",
@@ -19,15 +19,15 @@
       "status": ""
     },
     {
-      "time": "17:30",
-      "what": "Lounge drinks and supper",
-      "detail": "At the hotel lounge.",
+      "time": "Afternoon",
+      "what": "Walk up Nathan Road for shopping",
+      "detail": "Casual stroll and shopping along Nathan Road before returning for lounge time.",
       "status": ""
     },
     {
-      "time": "Evening",
-      "what": "Walk to markets up Nathan Road",
-      "detail": "From the hotel up Nathan Road for the night markets / Temple Street area. Casual stroll after supper.",
+      "time": "17:30",
+      "what": "Lounge drinks and supper",
+      "detail": "At the hotel lounge.",
       "status": ""
     }
   ],
