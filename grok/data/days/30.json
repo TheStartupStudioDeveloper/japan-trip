@@ -1,99 +1,109 @@
 {
- "d": 30,
- "dow": "Friday",
- "where": "",
- "title": "Pool, yum cha, Ozone at sunset, then departure",
- "cal": "Pool, Ozone, fly",
- "summary": "Late checkout is confirmed to 18:00, so the room is yours all day. A pool morning, yum cha, a spare window for anything missed, a slow pack and shower, Ozone at sunset, dinner, then a taxi at 20:45.",
- "rows": [
-  {
-   "time": "09:00",
-   "what": "Lounge breakfast",
-   "detail": "",
-   "status": ""
-  },
-  {
-   "time": "09:45",
-   "what": "Sheraton pool",
-   "detail": "Optional. The best sun of the day.",
-   "status": ""
-  },
-  {
-   "time": "12:00",
-   "what": "Quick change, head out",
-   "detail": "",
-   "status": ""
-  },
-  {
-   "time": "12:30",
-   "what": "Yum cha lunch",
-   "detail": "Three good choices, book one today. Celestial Court, 2F of your hotel: Michelin listed, no travel, Mon to Sat 11:30 to 15:00. Spring Moon at The Peninsula, ten minutes' walk: calm and refined, about HK$500 to 800 a head (est. A$91 to 145), smart casual. Maxim's Palace, City Hall, Central: the big noisy trolley hall, 11:00 to 15:00, ferry across. Most places stop dim sum about 15:00. How to order: How-to 36.",
-   "status": ""
-  },
-  {
-   "time": "14:00",
-   "what": "Spare window",
-   "detail": "About two hours for anything missed. Central by Star Ferry, M+ and the West Kowloon waterfront, or Nathan Road.",
-   "status": ""
-  },
-  {
-   "time": "16:15",
-   "what": "Back at the hotel, pack and shower",
-   "detail": "No rush. Ask at the desk whether checkout can go later still.",
-   "status": ""
-  },
-  {
-   "time": "17:20",
-   "what": "Check out",
-   "detail": "You have until 18:00. Leaving now catches the sunset at Ozone. Suitcases go to the concierge.",
-   "status": ""
-  },
-  {
-   "time": "17:40",
-   "what": "Ozone at the Ritz-Carlton",
-   "detail": "Short taxi to ICC, 118th floor. Sunset at 17:50, then the lights. Open from 16:00. No flip flops, and no open shoes or sleeveless tops for men.",
-   "status": "to book"
-  },
-  {
-   "time": "19:15",
-   "what": "Dinner",
-   "detail": "Lei Garden in Elements, directly below Ozone: reliable Cantonese and roast meats, book by phone. Or back in Tsim Sha Tsui close to the bags.",
-   "status": ""
-  },
-  {
-   "time": "20:30",
-   "what": "Collect bags at the Sheraton",
-   "detail": "",
-   "status": ""
-  },
-  {
-   "time": "20:45",
-   "what": "Taxi to the airport",
-   "detail": "From the hotel driveway. Show: 機場 一號客運大樓 國泰航空. 30 to 40 minutes at that hour, roughly HK$300 to 400 (est. A$54 to 73). Latest safe taxi 21:15. Backup: the Airport Express from Kowloon Station (How-to 37).",
-   "status": ""
-  },
-  {
-   "time": "21:30",
-   "what": "Check in at the Cathay desks",
-   "detail": "Terminal 1. Three hours before departure.",
-   "status": ""
-  },
-  {
-   "time": "00:30",
-   "what": "CX105 departs for Melbourne",
-   "detail": "Saturday 31 October, Terminal 1. Lands Melbourne Terminal 2 at 12:30.",
-   "status": "booked"
-  }
- ],
- "footnote": "",
- "notes": [
-  [
-   "Latest safe timing",
-   "A taxi at 21:15 puts you at the airport by 22:00, which is 2.5 hours before departure."
+  "d": 30,
+  "dow": "Friday",
+  "where": "",
+  "title": "Big Buddha morning, pool, yum cha, Ozone at sunset, then departure",
+  "cal": "Big Buddha, pool, Ozone, fly",
+  "summary": "Breakfast then out to Lantau for Ngong Ping 360 / Big Buddha morning. Back for pool time, yum cha, spare window, pack, Ozone at sunset, dinner, then taxi to airport. Late checkout to 18:00.",
+  "rows": [
+    {
+      "time": "08:00",
+      "what": "Lounge breakfast",
+      "detail": "Then head out for Big Buddha.",
+      "status": ""
+    },
+    {
+      "time": "08:45",
+      "what": "To Tung Chung / Ngong Ping 360",
+      "detail": "Options: MTR (TST to Tung Chung via Lai King or Hong Kong Station, ~40-50 min, then short walk from Exit B); taxi from hotel to Tung Chung terminal (~30-40 min, ~HK$220-300 incl. tolls, urban red taxi); or E-series bus. See notes for details. Cable car up for Big Buddha / Po Lin.",
+      "status": ""
+    },
+    {
+      "time": "Morning",
+      "what": "Big Buddha, Po Lin Monastery",
+      "detail": "268 steps. Skip most of the village. Cable car back down when ready.",
+      "status": ""
+    },
+    {
+      "time": "Early afternoon",
+      "what": "Back to hotel / pool",
+      "detail": "Return via MTR or taxi. Optional pool time.",
+      "status": ""
+    },
+    {
+      "time": "12:30",
+      "what": "Yum cha lunch",
+      "detail": "Three good choices, book one today. Celestial Court, 2F of your hotel: Michelin listed, no travel, Mon to Sat 11:30 to 15:00. Spring Moon at The Peninsula, ten minutes' walk: calm and refined, about HK$500 to 800 a head (est. A$91 to 145), smart casual. Maxim's Palace, City Hall, Central: the big noisy trolley hall, 11:00 to 15:00, ferry across. Most places stop dim sum about 15:00. How to order: How-to 36.",
+      "status": ""
+    },
+    {
+      "time": "14:00",
+      "what": "Spare window",
+      "detail": "About two hours for anything missed. Central by Star Ferry, M+ and the West Kowloon waterfront, or Nathan Road.",
+      "status": ""
+    },
+    {
+      "time": "16:15",
+      "what": "Back at the hotel, pack and shower",
+      "detail": "No rush. Ask at the desk whether checkout can go later still.",
+      "status": ""
+    },
+    {
+      "time": "17:20",
+      "what": "Check out",
+      "detail": "You have until 18:00. Leaving now catches the sunset at Ozone. Suitcases go to the concierge.",
+      "status": ""
+    },
+    {
+      "time": "17:40",
+      "what": "Ozone at the Ritz-Carlton",
+      "detail": "Short taxi to ICC, 118th floor. Sunset at 17:50, then the lights. Open from 16:00. No flip flops, and no open shoes or sleeveless tops for men.",
+      "status": "to book"
+    },
+    {
+      "time": "19:15",
+      "what": "Dinner",
+      "detail": "Lei Garden in Elements, directly below Ozone: reliable Cantonese and roast meats, book by phone. Or back in Tsim Sha Tsui close to the bags.",
+      "status": ""
+    },
+    {
+      "time": "20:30",
+      "what": "Collect bags at the Sheraton",
+      "detail": "",
+      "status": ""
+    },
+    {
+      "time": "20:45",
+      "what": "Taxi to the airport",
+      "detail": "From the hotel driveway. Show: 機場 一號客運大樓 國泰航空. 30 to 40 minutes at that hour, roughly HK$300 to 400 (est. A$54 to 73). Latest safe taxi 21:15. Backup: the Airport Express from Kowloon Station (How-to 37).",
+      "status": ""
+    },
+    {
+      "time": "21:30",
+      "what": "Check in at the Cathay desks",
+      "detail": "Terminal 1. Three hours before departure.",
+      "status": ""
+    },
+    {
+      "time": "00:30",
+      "what": "CX105 departs for Melbourne",
+      "detail": "Saturday 31 October, Terminal 1. Lands Melbourne Terminal 2 at 12:30.",
+      "status": "booked"
+    }
   ],
-  [
-   "If Friday is wet or grey",
-   "Skip the pool. M+ and the West Kowloon waterfront is the indoor option, and the room is yours until 18:00."
+  "footnote": "",
+  "notes": [
+    [
+      "Getting to Ngong Ping 360",
+      "1. MTR: From TST, Tung Chung Line (change at Lai King or via Hong Kong Station), ~40-50 min total, Exit B short walk to terminal. Cheapest and reliable. 2. Taxi: Urban red taxi from hotel to Tung Chung Cable Car Terminal, ~30-40 min, ~HK$220-300 incl. tunnel/bridge tolls. Easy door-to-door. 3. Bus: E-series (e.g. E21/E23) from Kowloon to Tung Chung. No dedicated e-taxi service for this route; regular taxis (some hybrid/electric) or Uber (dispatches licensed taxis) are the options. Blue Lantau taxis only operate on Lantau itself."
+    ],
+    [
+      "Latest safe timing",
+      "A taxi at 21:15 puts you at the airport by 22:00, which is 2.5 hours before departure."
+    ],
+    [
+      "If Friday is wet or grey",
+      "Skip the pool. M+ and the West Kowloon waterfront is the indoor option, and the room is yours until 18:00. Cable car may close in high winds."
+    ]
   ]
- ]
 }
