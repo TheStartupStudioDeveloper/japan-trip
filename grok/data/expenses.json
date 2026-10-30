@@ -37,5 +37,7 @@
  {"id":"e090","order":90,"date":"2026-10-26","item":"teamLab Borderless","payer":"G","aud":102.58,"status":"paid"},
  {"id":"e091","order":91,"date":"2026-10-26","item":"Coffee at Sky House (¥3,600)","payer":"Cynthia","aud":32.82,"status":"estimate","note":"Converted at ¥1 = A$0.0091"},
  {"id":"e100","order":100,"date":"2026-10-27","item":"Sheraton Hong Kong, 3 nights","payer":"Cynthia","aud":1260.0,"status":"paid"},
- {"id":"e101","order":101,"date":"2026-10-30","item":"Late checkout to 18:00 (HK$1,925 plus 13%)","payer":"Cynthia","aud":391.55,"status":"estimate","parent":"e100","note":"Update to the actual AUD once paid"}
+ {"id":"e101","order":101,"date":"2026-10-30","item":"Late checkout to 18:00 (HK$1,925 plus 13%)","payer":"Cynthia","aud":391.55,"status":"estimate","parent":"e100","note":"Update to the actual AUD once paid"},
+ {"id":"e102","order":102,"date":"2026-10-27","item":"Taxi to Sheraton from airport (HK$330)","payer":"Cynthia","aud":62.7,"status":"estimate","note":"Converted at approx HK$1 = A$0.19"},
+ {"id":"e103","order":103,"date":"2026-10-28","item":"Peak Tram (HK$232)","payer":"Cynthia","aud":44.08,"status":"estimate","note":"Converted at approx HK$1 = A$0.19"}
 ]
