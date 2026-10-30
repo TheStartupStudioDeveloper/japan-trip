@@ -2,78 +2,54 @@
   "d": 30,
   "dow": "Friday",
   "where": "",
-  "title": "Big Buddha morning, optional Island tram, yum cha, Ozone, departure",
-  "cal": "Big Buddha, tram optional, Ozone, fly",
-  "summary": "Breakfast then out to Lantau for Ngong Ping 360 / Big Buddha morning (Crystal cabin / fast-lane options available). Optional double-decker tram on Hong Kong Island later. Then yum cha, spare window, pack, Ozone at sunset, dinner, taxi to airport. Late checkout to 18:00.",
+  "title": "Breakfast, promenade, Temple Street, Dim Sum Here, pool, checkout, lounge, airport",
+  "cal": "Promenade, dim sum, pool, fly",
+  "summary": "Huge hotel breakfast, promenade walk, Temple Street to find Cynthia her bag, Dim Sum at Dim Sum Here, back to hotel for afternoon pool. Checkout at 18:00, lounge until taxi to airport for the late flight.",
   "rows": [
     {
-      "time": "08:00",
-      "what": "Lounge breakfast",
-      "detail": "Then head out for Big Buddha.",
-      "status": ""
-    },
-    {
-      "time": "08:45",
-      "what": "To Tung Chung / Ngong Ping 360",
-      "detail": "Options: MTR (~40-50 min); taxi from hotel to Tung Chung terminal (~30-40 min, ~HK$220-320 incl. tolls). Cable car: Standard round-trip ~HK$295; Crystal (glass floor) round-trip ~HK$365. Crystal has shorter queues / priority boarding feel. Book on Klook or official for best rates. Fast-lane / pickup packages also available (see notes).",
-      "status": ""
+      "time": "Morning",
+      "what": "Huge hotel breakfast",
+      "detail": "",
+      "status": "done"
     },
     {
       "time": "Morning",
-      "what": "Big Buddha, Po Lin Monastery",
-      "detail": "268 steps. Skip most of the village. Cable car back down when ready.",
+      "what": "Promenade walk",
+      "detail": "After breakfast.",
+      "status": "done"
+    },
+    {
+      "time": "Late morning",
+      "what": "Temple Street shopping",
+      "detail": "Walked up to Temple Street to find Cynthia her bag.",
+      "status": "done"
+    },
+    {
+      "time": "Lunch",
+      "what": "Dim Sum at Dim Sum Here",
+      "detail": "Jordan / Temple Street area. Casual and good.",
+      "status": "done"
+    },
+    {
+      "time": "Afternoon",
+      "what": "Back at hotel, pool",
+      "detail": "Just arrived back. Pool for the afternoon.",
       "status": ""
     },
     {
-      "time": "Early afternoon",
-      "what": "Back to hotel / pool or Island tram (optional)",
-      "detail": "Return via MTR or taxi. Optional: Star Ferry or MTR to Central/Sheung Wan, then double-decker tram (Ding Ding) eastbound through Central → Wan Chai → Causeway Bay. Flat ~HK$3.30, upper deck. Runs late.",
-      "status": ""
-    },
-    {
-      "time": "12:30",
-      "what": "Yum cha lunch",
-      "detail": "Three good choices, book one today. Celestial Court, 2F of your hotel: Michelin listed, no travel, Mon to Sat 11:30 to 15:00. Spring Moon at The Peninsula, ten minutes' walk: calm and refined, about HK$500 to 800 a head (est. A$91 to 145), smart casual. Maxim's Palace, City Hall, Central: the big noisy trolley hall, 11:00 to 15:00, ferry across. Most places stop dim sum about 15:00. How to order: How-to 36.",
-      "status": ""
-    },
-    {
-      "time": "14:00",
-      "what": "Spare window",
-      "detail": "About two hours for anything missed. Central by Star Ferry, M+ and the West Kowloon waterfront, or Nathan Road.",
-      "status": ""
-    },
-    {
-      "time": "16:15",
-      "what": "Back at the hotel, pack and shower",
-      "detail": "No rush. Ask at the desk whether checkout can go later still.",
-      "status": ""
-    },
-    {
-      "time": "17:20",
+      "time": "18:00",
       "what": "Check out",
-      "detail": "You have until 18:00. Leaving now catches the sunset at Ozone. Suitcases go to the concierge.",
+      "detail": "Late checkout. Bags to concierge.",
       "status": ""
     },
     {
-      "time": "17:40",
-      "what": "Ozone at the Ritz-Carlton",
-      "detail": "Short taxi to ICC, 118th floor. Sunset at 17:50, then the lights. Open from 16:00. No flip flops, and no open shoes or sleeveless tops for men.",
-      "status": "to book"
-    },
-    {
-      "time": "19:15",
-      "what": "Dinner",
-      "detail": "Lei Garden in Elements, directly below Ozone: reliable Cantonese and roast meats, book by phone. Or back in Tsim Sha Tsui close to the bags.",
+      "time": "Evening",
+      "what": "Hotel lounge",
+      "detail": "Until ready for the airport taxi.",
       "status": ""
     },
     {
-      "time": "20:30",
-      "what": "Collect bags at the Sheraton",
-      "detail": "",
-      "status": ""
-    },
-    {
-      "time": "20:45",
+      "time": "~20:45",
       "what": "Taxi to the airport",
       "detail": "From the hotel driveway. Show: 機場 一號客運大樓 國泰航空. 30 to 40 minutes at that hour, roughly HK$300 to 400 (est. A$54 to 73). Latest safe taxi 21:15. Backup: the Airport Express from Kowloon Station (How-to 37).",
       "status": ""
@@ -94,20 +70,12 @@
   "footnote": "",
   "notes": [
     [
-      "Getting to Ngong Ping 360 & cabins",
-      "Taxi from TST/Sheraton to Tung Chung terminal: ~30-40 min, ~HK$220-320 incl. tolls (urban red taxi). MTR is cheaper/reliable. Crystal Cabin round-trip ~HK$365 (glass floor, shorter queues); Standard ~HK$295. Book online (Klook or official webstore.np360.com.hk) for better rates and priority. Fast-lane / hotel-pickup packages exist on Klook (group coach from central TST points like Holiday Inn Golden Mile)."
-    ],
-    [
-      "Optional Island tram",
-      "After returning from Lantau: Star Ferry or MTR to Central/Sheung Wan, then Ding Ding tram eastbound for the classic ride. Flat fare ~HK$3.30."
+      "Actual day",
+      "Skipped Big Buddha. Did promenade, Temple Street bag shopping, Dim Sum Here, then pool afternoon."
     ],
     [
       "Latest safe timing",
       "A taxi at 21:15 puts you at the airport by 22:00, which is 2.5 hours before departure."
-    ],
-    [
-      "If Friday is wet or grey",
-      "Skip the pool. M+ and the West Kowloon waterfront is the indoor option, and the room is yours until 18:00. Cable car may close in high winds."
     ]
   ]
 }
